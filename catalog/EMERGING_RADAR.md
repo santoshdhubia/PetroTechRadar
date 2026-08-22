@@ -30,7 +30,7 @@ New AI, agentic, MCP, LLM and rapid-development petroleum/subsurface projects.
 | 24 | [Eng-qusain/MWD-Drilling-Optimization-AI](https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI) | Drilling / AI | Emerging | 0 | 0 | 2026-05-11 | 64.9 |
 | 25 | [athasfin/smart-well-log-visualizer](https://github.com/athasfin/smart-well-log-visualizer) | Petrophysics | Emerging | 0 | 0 | 2026-05-02 | 64.8 |
 | 26 | [benjium/petra-ai](https://github.com/benjium/petra-ai) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-18 | 64.5 |
-| 27 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 64.5 |
+| 27 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 64.4 |
 | 28 | [anyperc3nt/vision_seismic](https://github.com/anyperc3nt/vision_seismic) | Seismic / AI | Emerging | 0 | 0 | 2026-02-28 | 63.7 |
 | 29 | [luiscm17/pilot-ai-drill](https://github.com/luiscm17/pilot-ai-drill) | Drilling / AI | Emerging | 1 | 0 | 2025-12-05 | 63.1 |
 | 30 | [Ashutos0762/AI-Reservoir-Property-Estimation](https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation) | Reservoir / AI | Emerging | 1 | 0 | 2025-11-10 | 62.7 |

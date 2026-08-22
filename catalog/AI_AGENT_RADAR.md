@@ -32,7 +32,7 @@ Domain-specific AI agents, MCP tools, RAG systems and engineering copilots.
 | 26 | [danielscholl/osdu-agent](https://github.com/danielscholl/osdu-agent) | AI / OSDU | Emerging | 0 | 1 | 2026-03-16 | 64.9 |
 | 27 | [Eng-qusain/MWD-Drilling-Optimization-AI](https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI) | Drilling / AI | Emerging | 0 | 0 | 2026-05-11 | 64.9 |
 | 28 | [benjium/petra-ai](https://github.com/benjium/petra-ai) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-18 | 64.5 |
-| 29 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 64.5 |
+| 29 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 64.4 |
 | 30 | [leocd91/geoscience-ML-tutorial](https://github.com/leocd91/geoscience-ML-tutorial) | Geoscience / AI | Reference | 46 | 14 | 2026-04-22 | 64.2 |
 | 31 | [LukasMosser/SNIST](https://github.com/LukasMosser/SNIST) | Seismic / AI | Research | 48 | 6 | 2024-07-25 | 63.8 |
 | 32 | [anyperc3nt/vision_seismic](https://github.com/anyperc3nt/vision_seismic) | Seismic / AI | Emerging | 0 | 0 | 2026-02-28 | 63.7 |
