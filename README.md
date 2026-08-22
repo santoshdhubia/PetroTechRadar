@@ -35,7 +35,8 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 | **Emerging / AI / vibe-coded** | **43** |
 | **Research repositories** | **28** |
 | **Reference resources** | **12** |
-| **Metrics refresh** | **Weekly** |
+| **Papers with Code** | **33** |
+| **Data refresh** | **Weekly** |
 
 ---
 
@@ -45,11 +46,12 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 |---|---|
 | 🤖 **[AI Agents, MCP & Engineering Copilots](catalog/AI_AGENT_RADAR.md)** | Petroleum agents, reservoir copilots, drilling RAG, OSDU agents and MCP servers |
 | 🌊 **[Seismic & Geophysics](catalog/SEISMIC_RADAR.md)** | FWI, RTM, inversion, SEG-Y, wave propagation, seismic ML and visualization |
-| 🧪 **[Research Radar](catalog/RESEARCH_RADAR.md)** | Reproducible papers, datasets, research implementations and benchmarks |
+| 🧪 **[Research Radar](catalog/RESEARCH_RADAR.md)** | Research code, datasets, technical methods and benchmarks |
 | 🚀 **[Emerging & Vibe-Coded](catalog/EMERGING_RADAR.md)** | New apps, experimental tools, rapid prototypes and early-stage projects |
 | 🏆 **[Top Ranked Repositories](catalog/TOP_REPOSITORIES.md)** | Highest PetroTechRadar scores based on technical relevance + activity |
-| 📊 **[Full Live Matrix](catalog/PETROTECHRADAR_V1.csv)** | Complete repository dataset and metrics |
 | 📚 **[Papers with Code](catalog/PAPERS_WITH_CODE.md)** | Peer-reviewed paper–code pairs with citation and reproducibility metrics |
+| 📊 **[Full Repository Matrix](catalog/PETROTECHRADAR_V1.csv)** | Complete curated V1 repository dataset and metrics |
+| 🗂️ **[Other Repositories](catalog/OTHER_REPOSITORIES.csv)** | Additional projects retained for reference or future re-evaluation |
 
 ---
 
@@ -65,7 +67,7 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 | 🗄 **Data & OSDU** | OSDU, interoperability, conversion, standards, semantic layers |
 | 🌋 **Geothermal** | Prospectivity, seismicity, exploration and geothermal AI |
 | 🗺 **Geoscience** | Interpretation, geostatistics, geological ML and visualization |
-| ⚙ **Production** | Optimization, predictive maintenance and operational analytics |
+| ⚙ **Production** | Optimization and operational analytics |
 
 ---
 
@@ -91,6 +93,8 @@ Every tracked repository can include:
 
 ### **[→ Open the full PetroTechRadar matrix](catalog/PETROTECHRADAR_V1.csv)**
 
+GitHub metadata and generated rankings are refreshed periodically so the radar remains current.
+
 ---
 
 ## How Ranking Works
@@ -113,13 +117,11 @@ The GitHub component is logarithmically scaled so very large repositories do not
 
 ## 🌐 Live Dashboard
 
-Search, filter and sort the whole radar by:
+Search, filter and sort the radar by:
 
 **Domain · Tier · Stars · Stars/month · Latest activity · PetroTechRadar Score**
 
 ### **[Open PetroTechRadar Live Dashboard](https://santoshdhubia.github.io/PetroTechRadar/)**
-
-> The dashboard becomes active after GitHub Pages is enabled.
 
 ---
 
@@ -134,74 +136,29 @@ Search, filter and sort the whole radar by:
 
 ---
 
----
-
 ## 📚 Papers with Code
 
 PetroTechRadar also tracks **peer-reviewed geophysics and computational-geophysics papers with public code**.
 
-The paper matrix adds scientific-impact metrics to repository health:
+The paper matrix combines scientific impact with repository health:
 
 **Journal · Year · Topic · GitHub repository · Stars · Reproducibility · Total citations · Citations/year · Papers-with-Code Score**
 
-Citation impact is included as a factor, but it is balanced with **citations/year** so recent papers are not unfairly penalized.
+Citation impact is balanced with **citations/year** so recent papers are not unfairly penalized.
 
 - **[Papers with Code matrix](catalog/PAPERS_WITH_CODE.md)**
 - **[Scoring methodology](catalog/PAPERS_WITH_CODE_METHOD.md)**
 - **[Interactive Papers dashboard](https://santoshdhubia.github.io/PetroTechRadar/papers.html)**
 
-Citation metrics refresh from **OpenAlex**; repository-health metrics refresh from GitHub.
+Citation metrics are sourced from **OpenAlex** and repository-health metrics from GitHub.
 
 <!-- TOP-CITED-PAPERS:START -->
 
 ### 🔥 Top Cited Papers with Code
 
-_Citation metrics have not been refreshed yet. Run **Actions → Refresh PetroTechRadar** once to populate this table._
+_Citation metrics are populated by the PetroTechRadar data refresh._
 
 <!-- TOP-CITED-PAPERS:END -->
-
-## Automated Weekly Refresh
-
-```text
-GitHub repositories
-        ↓
-Live metadata collection
-        ↓
-Stars / forks / issues / activity
-        ↓
-PetroTechRadar score
-        ↓
-Markdown matrices + JSON + CSV
-        ↓
-GitHub Pages dashboard
-```
-
-Run manually from **Actions → Refresh PetroTechRadar → Run workflow**, or let the scheduled workflow refresh it each week.
-
----
-
-## Repository Structure
-
-```text
-catalog/
-├── PETROTECHRADAR_V1.csv
-├── TOP_REPOSITORIES.md
-├── EMERGING_RADAR.md
-├── AI_AGENT_RADAR.md
-├── SEISMIC_RADAR.md
-└── RESEARCH_RADAR.md
-
-scripts/
-├── update_github_metrics.py
-└── generate_outputs.py
-
-docs/
-├── index.html
-└── data/
-    ├── radar.json
-    ├── radar.csv
-    └── stats.json
-```
 
 ---
 
@@ -213,8 +170,7 @@ Projects are considered when they offer meaningful relevance to:
 
 Priority is given to repositories with meaningful technical implementation, petroleum/subsurface-specific logic, reproducible research, active development, emerging AI/agent workflows, useful domain formats, or new approaches to engineering automation.
 
----
-
+Projects that are relevant but not selected for the current curated V1 remain available in **[Other Repositories](catalog/OTHER_REPOSITORIES.csv)** for future re-evaluation.
 
 ---
 
@@ -230,7 +186,7 @@ Priority is given to repositories with meaningful technical implementation, petr
 
 [Live Dashboard](https://santoshdhubia.github.io/PetroTechRadar/) ·
 [Full Matrix](catalog/PETROTECHRADAR_V1.csv) ·
-[Emerging Radar](catalog/EMERGING_RADAR.md) ·
-[AI Agent Radar](catalog/AI_AGENT_RADAR.md)
+[Papers with Code](catalog/PAPERS_WITH_CODE.md) ·
+[Emerging Radar](catalog/EMERGING_RADAR.md)
 
 </div>
