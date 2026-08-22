@@ -1,92 +1,55 @@
 # PetroTechRadar
 
-**A curated radar of emerging software, open-source projects, research code, AI-assisted tools and developer experiments for oil & gas, geoscience and subsurface engineering.**
+**A live technology radar for oil & gas, geoscience and subsurface software.**
 
-PetroTechRadar is intended to answer a simple question:
+PetroTechRadar tracks established open-source tools together with emerging AI-assisted, agentic, research and rapidly developed software for petroleum and subsurface workflows.
 
-> **What useful software is being built right now for oil & gas and subsurface workflows?**
+## Live radar
 
-The radar covers both established open-source foundations and early-stage projects, including small prototypes, research repositories, AI/ML experiments, agentic tools, data utilities, visualization applications and "vibe-coded" technical software.
+The repository maintains a refreshable matrix of **100+ curated repositories** with:
 
-## Scope
+**Stars · Forks · Open issues · Watchers · Language · License · Created date · Last push · Repository age · Stars/month · GitHub Activity Score · PetroTechRadar Score**
 
-The catalogue is organized around the petroleum and subsurface workflow:
+GitHub metrics are refreshed automatically every week.
 
-- Seismic processing, imaging, RTM, FWI and inversion
-- Geological interpretation and geomodelling
-- Petrophysics and well-log analysis
-- Reservoir engineering and simulation
-- Drilling and well engineering
-- Production engineering and optimization
-- Data standards, SEG-Y, LAS and OSDU
-- AI/ML, LLMs, agents and document intelligence
-- Visualization and technical applications
-- Geothermal and adjacent subsurface technologies
+### Explore the matrices
 
-## Radar classification
+- [Full live repository matrix](catalog/PETROTECHRADAR_V1.csv)
+- [Top-ranked repositories](catalog/TOP_REPOSITORIES.md)
+- [Emerging & vibe-coded radar](catalog/EMERGING_RADAR.md)
+- [AI agents, MCP & engineering copilots](catalog/AI_AGENT_RADAR.md)
+- [Seismic & geophysics radar](catalog/SEISMIC_RADAR.md)
+- [Research radar](catalog/RESEARCH_RADAR.md)
 
-Each project is classified by **domain**, **maturity** and **emerging-technology signal**.
+## Interactive dashboard
 
-### Maturity
+After GitHub Pages is enabled, the dashboard is available at:
 
-`Idea → Prototype → Research → Usable → Established → Mature`
+**https://santoshdhubia.github.io/PetroTechRadar/**
 
-### Emerging signal
+It supports search, domain/tier filters, and sorting by PetroTechRadar Score, stars, stars/month and latest activity.
 
-Projects can be flagged as emerging where they involve newer development patterns such as:
+## What makes PetroTechRadar different?
 
-`LLM` · `Agent` · `RAG` · `Machine Learning` · `Computer Vision` · `GPU/CUDA` · `Streamlit` · `Gradio` · `Rapid Prototype` · `Vibe Coding`
+This is not only an “awesome list”. It separates **technical relevance** from **GitHub popularity**. A new petroleum-specific AI agent or FWI implementation may have few stars while still being technically important, so stars contribute to the ranking but do not dominate it.
 
-## Catalogue
+## Radar tiers
 
-The structured master catalogue is maintained in:
-
-- [`catalog/projects.csv`](catalog/projects.csv)
-- [`catalog/NEW_THIS_WEEK.md`](catalog/NEW_THIS_WEEK.md)
-- [`catalog/EMERGING_PROJECTS.md`](catalog/EMERGING_PROJECTS.md)
-
-## Categories
-
-| Domain | Catalogue |
+| Tier | Meaning |
 |---|---|
-| Seismic & Imaging | [`categories/seismic.md`](categories/seismic.md) |
-| Petrophysics | [`categories/petrophysics.md`](categories/petrophysics.md) |
-| Reservoir Engineering | [`categories/reservoir.md`](categories/reservoir.md) |
-| AI / ML / Agents | [`categories/ai-ml.md`](categories/ai-ml.md) |
-| Drilling & Wells | [`categories/drilling.md`](categories/drilling.md) |
-| Geological / Subsurface | [`categories/geology.md`](categories/geology.md) |
-| Data / OSDU / Formats | [`categories/data.md`](categories/data.md) |
-| Geothermal | [`categories/geothermal.md`](categories/geothermal.md) |
+| **Core** | Established and practically useful software |
+| **Emerging** | New AI, agentic, MCP, LLM and rapid-development projects |
+| **Research** | Reproducible research code, datasets and technical methods |
+| **Reference** | Useful standards, tutorials, supporting tools and datasets |
 
-## Initial seed projects
+## Automated refresh
 
-| Project | Area | Why it is on the radar |
-|---|---|---|
-| [equinor/segyio](https://github.com/equinor/segyio) | Seismic data | Important open SEG-Y foundation |
-| [OPM/ResInsight](https://github.com/OPM/ResInsight) | Reservoir | Mature open reservoir visualization |
-| [agilescientific/welly](https://github.com/agilescientific/welly) | Petrophysics | Practical Python well-log toolkit |
-| [NDF-Poli-USP/spyro](https://github.com/NDF-Poli-USP/spyro) | Seismic / FWI | Research wave-propagation and FWI software |
-| [EugPal/reservoir-surrogate](https://github.com/EugPal/reservoir-surrogate) | AI / Reservoir | Emerging surrogate-model experiment |
-| [Ursula-Iturraran/ML_full_wave_Inversion](https://github.com/Ursula-Iturraran/ML_full_wave_Inversion) | AI / FWI | ML + seismic inversion experiment |
+`.github/workflows/refresh-radar.yml` runs every Sunday and can also be started manually from **Actions → Refresh PetroTechRadar → Run workflow**.
 
-## What belongs here?
+It refreshes repository metrics, recalculates scores, regenerates Markdown matrices, regenerates the JSON/CSV dashboard feed, and commits only when data changes.
 
-A project is a good candidate if it is useful or potentially useful to petroleum, geoscience or subsurface professionals and falls into at least one of these groups:
-
-1. Open-source technical software
-2. Research code with practical potential
-3. Newly developed AI/ML or LLM-based tools
-4. Small experimental applications
-5. Rapidly built / vibe-coded prototypes
-6. Data conversion, QC or visualization utilities
-7. New developer frameworks relevant to subsurface workflows
-
-This repository is intentionally broader than a traditional "awesome list". The objective is not only to catalogue established software, but to identify **what is emerging**.
-
-## Suggested project record
-
-See [`templates/project-entry.md`](templates/project-entry.md).
+Automated refresh commits use the author name **Santosh Dhubia**.
 
 ## Status
 
-**Private working repository — initial build.**
+**Private development repository — preparing for V1 public release.**

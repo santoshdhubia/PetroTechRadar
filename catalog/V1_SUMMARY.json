@@ -1,0 +1,26 @@
+{
+  "version": "1.0-public-candidate",
+  "repository_count": 115,
+  "removed_during_cleanup": 18,
+  "tiers": {
+    "Core": 32,
+    "Emerging": 43,
+    "Research": 28,
+    "Reference": 12
+  },
+  "top_level_domains": {
+    "Seismic": 32,
+    "Data": 17,
+    "Drilling": 6,
+    "Geophysics": 5,
+    "Geoscience": 8,
+    "Petrophysics": 11,
+    "Reservoir": 12,
+    "AI": 14,
+    "Geothermal": 8,
+    "Production": 1,
+    "Geostatistics": 1
+  },
+  "metrics_verified_now": 2,
+  "metrics_pending_refresh": 113
+}
