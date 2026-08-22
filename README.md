@@ -149,6 +149,14 @@ Citation impact is included as a factor, but it is balanced with **citations/yea
 
 Citation metrics refresh from **OpenAlex**; repository-health metrics refresh from GitHub.
 
+<!-- TOP-CITED-PAPERS:START -->
+
+### 🔥 Top Cited Papers with Code
+
+_Citation metrics have not been refreshed yet. Run **Actions → Refresh PetroTechRadar** once to populate this table._
+
+<!-- TOP-CITED-PAPERS:END -->
+
 ## Automated Weekly Refresh
 
 ```text
