@@ -2,22 +2,22 @@
   "repository_count": 115,
   "tiers": {
     "Core": 32,
+    "Emerging": 43,
     "Research": 28,
-    "Reference": 12,
-    "Emerging": 43
+    "Reference": 12
   },
   "domains": {
-    "Reservoir": 12,
     "Seismic": 32,
-    "Geophysics": 5,
-    "Data": 17,
-    "Petrophysics": 11,
-    "Geoscience": 8,
-    "Drilling": 6,
     "AI": 14,
+    "Data": 17,
+    "Drilling": 6,
+    "Geophysics": 5,
+    "Geoscience": 8,
+    "Petrophysics": 11,
+    "Reservoir": 12,
     "Geothermal": 8,
-    "Geostatistics": 1,
-    "Production": 1
+    "Production": 1,
+    "Geostatistics": 1
   },
   "last_verified": "2026-08-22"
 }

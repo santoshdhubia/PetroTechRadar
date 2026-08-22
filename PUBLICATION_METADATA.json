@@ -1,0 +1,19 @@
+{
+  "description": "Curated technology radar for open-source and emerging oil & gas, geoscience and subsurface software \u2014 with live GitHub metrics and Papers with Code.",
+  "topics": [
+    "geophysics",
+    "oil-and-gas",
+    "subsurface",
+    "seismic",
+    "petrophysics",
+    "reservoir-engineering",
+    "fwi",
+    "geothermal",
+    "osdu",
+    "machine-learning",
+    "llm",
+    "ai-agents",
+    "papers-with-code"
+  ],
+  "recommended_release_tag": "v1.0"
+}

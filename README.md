@@ -1,10 +1,12 @@
+<p align="center"><img src="assets/petrotechradar-hero.png" alt="PetroTechRadar — Technology Radar for the Subsurface" width="100%"></p>
+
 <div align="center">
 
 # ⛽ PetroTechRadar
 
 ### Open-source & emerging technology radar for oil & gas, geoscience and subsurface engineering
 
-**115 curated repositories · live GitHub metrics · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
+**115 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
 
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Explore%20Radar-2ea44f?style=for-the-badge)](https://santoshdhubia.github.io/PetroTechRadar/)
 [![Repository Matrix](https://img.shields.io/badge/Repository%20Matrix-CSV-blue?style=for-the-badge)](catalog/PETROTECHRADAR_V1.csv)
@@ -47,6 +49,7 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 | 🚀 **[Emerging & Vibe-Coded](catalog/EMERGING_RADAR.md)** | New apps, experimental tools, rapid prototypes and early-stage projects |
 | 🏆 **[Top Ranked Repositories](catalog/TOP_REPOSITORIES.md)** | Highest PetroTechRadar scores based on technical relevance + activity |
 | 📊 **[Full Live Matrix](catalog/PETROTECHRADAR_V1.csv)** | Complete repository dataset and metrics |
+| 📚 **[Papers with Code](catalog/PAPERS_WITH_CODE.md)** | Peer-reviewed paper–code pairs with citation and reproducibility metrics |
 
 ---
 
@@ -153,17 +156,7 @@ Citation metrics refresh from **OpenAlex**; repository-health metrics refresh fr
 
 ### 🔥 Top Cited Papers with Code
 
-| Paper | Journal | Year | Citations | Cit./yr | Code |
-|---|---|---:|---:|---:|---|
-| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,843** | 108.4 | [GitHub](https://github.com/obspy/obspy) |
-| Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **610** | 76.2 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
-| [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **520** | 52.0 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
-| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **428** | 35.7 | [GitHub](https://github.com/simpeg/simpeg) |
-| Mitigating local minima in full-waveform inversion by expanding the search space | Geophysical Journal International | 2013 | **321** | 22.9 | [GitHub](https://github.com/slimgroup/PenaltyMethodGJI) |
-
-**[→ View all Papers with Code](catalog/PAPERS_WITH_CODE.md)** · **[Rank by citations](catalog/TOP_CITED_PAPERS.md)**
-
-_Citations: OpenAlex · automatically refreshed._
+_Citation metrics have not been refreshed yet. Run **Actions → Refresh PetroTechRadar** once to populate this table._
 
 <!-- TOP-CITED-PAPERS:END -->
 
@@ -221,6 +214,13 @@ Projects are considered when they offer meaningful relevance to:
 Priority is given to repositories with meaningful technical implementation, petroleum/subsurface-specific logic, reproducible research, active development, emerging AI/agent workflows, useful domain formats, or new approaches to engineering automation.
 
 ---
+
+
+---
+
+## Project Governance
+
+[Methodology](METHODOLOGY.md) · [Contributing](CONTRIBUTING.md) · [Submit](SUBMIT.md) · [Disclaimer](DISCLAIMER.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [MIT License](LICENSE)
 
 <div align="center">
 
