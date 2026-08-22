@@ -1,5 +1,291 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PetroTechRadar</title><meta name="description" content="Live radar of open-source and emerging software for oil & gas, geoscience and subsurface engineering."><style>
-:root{--bg:#08111f;--panel:#101b2d;--panel2:#152238;--text:#e9f1fb;--muted:#9db0c7;--line:#263955;--accent:#46c2a9}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}a{color:#9fc0ff;text-decoration:none}.wrap{max-width:1450px;margin:auto;padding:28px}header{padding:24px 0 18px}h1{font-size:clamp(32px,5vw,58px);margin:0 0 8px;letter-spacing:-.03em}.sub{color:var(--muted);font-size:18px;max-width:900px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}.stat strong{display:block;font-size:28px;margin-bottom:3px}.stat span{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.07em}.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:18px 0}input,select{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:12px}.tablebox{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}table{width:100%;border-collapse:collapse;min-width:1050px}th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}th{position:sticky;top:0;background:#0d1829;color:#bdd0e7}tbody tr:hover{background:var(--panel2)}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#1a2d47;color:#d8e8fb;font-size:12px}.score{font-weight:700;color:var(--accent)}footer{color:var(--muted);padding:30px 0;font-size:13px}@media(max-width:800px){.toolbar{grid-template-columns:1fr 1fr}.wrap{padding:16px}}
-</style></head><body><div class="wrap"><header><h1>PetroTechRadar</h1><div class="sub">A live, curated technology radar for oil & gas, geoscience and subsurface software — established open source, research code, AI agents, MCP, RAG and emerging developer projects.</div></header><section class="stats"><div class="stat"><strong id="repoCount">—</strong><span>Repositories</span></div><div class="stat"><strong id="coreCount">—</strong><span>Core</span></div><div class="stat"><strong id="emergingCount">—</strong><span>Emerging</span></div><div class="stat"><strong id="researchCount">—</strong><span>Research</span></div><div class="stat"><strong id="verifiedDate">—</strong><span>Last verified</span></div></section><section class="toolbar"><input id="search" placeholder="Search repository, domain, focus..."><select id="tier"><option value="">All tiers</option></select><select id="domain"><option value="">All domains</option></select><select id="sort"><option value="score">Radar score</option><option value="stars">Stars</option><option value="velocity">Stars / month</option><option value="recent">Latest push</option></select></section><div class="tablebox"><table><thead><tr><th>#</th><th>Repository</th><th>Domain</th><th>Focus</th><th>Tier</th><th>Stars</th><th>Forks</th><th>Stars/mo</th><th>Last push</th><th>Radar score</th></tr></thead><tbody id="rows"></tbody></table></div><footer>Live data is generated from the PetroTechRadar catalogue. GitHub metrics refresh automatically every week.</footer></div><script>
-let all=[];const num=v=>{const x=Number(v);return Number.isFinite(x)?x:0};const uniq=v=>[...new Set(v.filter(Boolean))].sort();function add(id,vals){const e=document.getElementById(id);uniq(vals).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;e.appendChild(o)})}function render(){const q=document.getElementById('search').value.toLowerCase().trim(),tier=document.getElementById('tier').value,domain=document.getElementById('domain').value,sort=document.getElementById('sort').value;let rows=all.filter(r=>{const b=`${r.repository} ${r.domain} ${r.focus}`.toLowerCase();return(!q||b.includes(q))&&(!tier||r.tier===tier)&&(!domain||r.domain===domain)});rows.sort((a,b)=>sort==='stars'?num(b.stars)-num(a.stars):sort==='velocity'?num(b.stars_per_month)-num(a.stars_per_month):sort==='recent'?String(b.pushed_at).localeCompare(String(a.pushed_at)):num(b.petrotech_radar_score)-num(a.petrotech_radar_score));document.getElementById('rows').innerHTML=rows.map((r,i)=>`<tr><td>${i+1}</td><td><a href="${r.url}" target="_blank" rel="noopener">${r.repository}</a></td><td>${r.domain||'—'}</td><td>${r.focus||'—'}</td><td><span class="pill">${r.tier||'—'}</span></td><td>${num(r.stars).toLocaleString()}</td><td>${num(r.forks).toLocaleString()}</td><td>${num(r.stars_per_month).toFixed(2)}</td><td>${(r.pushed_at||'—').slice(0,10)}</td><td class="score">${r.petrotech_radar_score||'—'}</td></tr>`).join('')}Promise.all([fetch('./data/radar.json').then(r=>r.json()),fetch('./data/stats.json').then(r=>r.json())]).then(([radar,stats])=>{all=radar.repositories||[];repoCount.textContent=stats.repository_count||all.length;coreCount.textContent=(stats.tiers||{}).Core||0;emergingCount.textContent=(stats.tiers||{}).Emerging||0;researchCount.textContent=(stats.tiers||{}).Research||0;verifiedDate.textContent=stats.last_verified||'Pending';add('tier',all.map(r=>r.tier));add('domain',all.map(r=>r.domain));['search','tier','domain','sort'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',render));render()}).catch(err=>{document.getElementById('rows').innerHTML=`<tr><td colspan="10">Run the refresh workflow once to generate live dashboard data.</td></tr>`});
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PetroTechRadar — Subsurface Technology Radar</title>
+<meta name="description" content="Curated technology intelligence for oil & gas, geoscience and the subsurface — repositories, emerging tools and papers with code.">
+<style>
+:root{
+  --bg:#08131b;--panel:#10211f;--panel2:#132a27;--text:#f3f7f4;--muted:#96aaa3;
+  --line:#29453f;--line2:#35564e;--green:#4f8f80;--amber:#e2a14d;--amber2:#f0b35d;--link:#e6b36c
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:var(--link);text-decoration:none}.wrap{max-width:1480px;margin:auto;padding:30px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}
+.brand-mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(145deg,#1f4f46,#142d31);border:1px solid #3b6f63;display:grid;place-items:center}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}.navlink,.tab,.btn{font:inherit}
+.navlink{padding:8px 10px;border-radius:9px;border:1px solid transparent;color:#a7b9b2;font-size:12px;font-weight:700;background:transparent;cursor:pointer}
+.navlink.active,.navlink:hover{border-color:#3e665c;background:#11221f;color:#f4faf6}
+.hero{position:relative;overflow:hidden;border:1px solid #29463f;border-radius:24px;padding:34px;background:linear-gradient(135deg,#0d1b1d 0%,#17352f 52%,#102126 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 18%,rgba(226,161,69,.12),transparent 30%),radial-gradient(circle at 18% 85%,rgba(61,132,117,.12),transparent 34%);pointer-events:none}
+.hero:after{content:"";position:absolute;right:-80px;bottom:-110px;width:420px;height:240px;border-radius:50%;border:1px solid #456f64;box-shadow:0 0 0 32px rgba(63,111,99,.15),0 0 0 64px rgba(63,111,99,.09),0 0 0 96px rgba(63,111,99,.05)}
+.topline{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:999px;background:#173027;border:1px solid #42695d;color:#c4d4ce;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,66px);line-height:.98;margin:18px 0 12px;letter-spacing:-.045em;max-width:760px}
+.accent{color:var(--amber2)}.sub{color:#b5c3be;font-size:18px;line-height:1.55;max-width:880px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{border:1px solid #41675e;background:#162a27;color:#f2f7f4;padding:11px 14px;border-radius:11px;font-weight:700;font-size:13px;cursor:pointer}
+.btn.primary{background:#e19b3d;border-color:#e6ab5c;color:#1f170d}
+.mini-radar{width:250px;min-width:250px;height:170px;border-radius:18px;background:linear-gradient(180deg,#132825,#0d1b1d);border:1px solid #35564e;display:grid;place-items:center;overflow:hidden}
+.mini-radar svg{width:220px;height:145px}
+.stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:18px 0 22px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;position:relative;overflow:hidden}
+.stat:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,#e0a353,#4f8f80,transparent);opacity:.8}
+.stat strong{display:block;font-size:26px}.stat span{color:#91a49d;font-size:11px;text-transform:uppercase;letter-spacing:.07em}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:26px 0 12px}
+.section-title h2{font-size:22px;margin:0}.muted{color:var(--muted);font-size:13px}
+.areas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.area{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;cursor:pointer;transition:.2s transform,.2s border-color,.2s background}
+.area:hover{transform:translateY(-2px);border-color:#4c7c70;background:var(--panel2)}
+.area strong{display:block;margin-top:10px;font-size:14px}.area span{display:block;color:#8da19a;font-size:12px;margin-top:4px;line-height:1.4}
+.icon{width:34px;height:34px;border-radius:10px;background:#19352f;display:grid;place-items:center;font-size:17px}
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.insight{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px}
+.insight small{display:block;color:#869a93;text-transform:uppercase;letter-spacing:.07em;font-size:10px;margin-bottom:7px}
+.insight strong{font-size:15px}.insight span{display:block;color:#97aaa4;font-size:12px;margin-top:5px;line-height:1.4}
+.tabs{display:flex;gap:8px;margin-top:26px;flex-wrap:wrap}
+.tab{border:1px solid var(--line2);background:var(--panel);color:#adbbb6;padding:9px 12px;border-radius:10px;font-weight:700;font-size:13px;cursor:pointer}
+.tab.active{background:var(--amber);border-color:#e6ad60;color:#24190d}
+.feature-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin:14px 0 22px}
+.feature{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}
+.feature h3{margin:0 0 5px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{padding:6px 8px;border-radius:999px;background:#17312c;border:1px solid #3f685e;color:#c7d5d0;font-size:11px}
+.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:12px 0}
+input,select{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line2);border-radius:11px;padding:12px;font-size:14px}
+.tablebox{overflow:auto;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;min-width:1050px}th,td{padding:12px;border-bottom:1px solid #244039;text-align:left;font-size:13px}
+th{background:#0d1b1a;color:#c2d0cb;position:sticky;top:0}tbody tr:hover{background:#142b27}
+.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#1a372f;color:#dce8e4;font-size:11px}
+.score{font-weight:800;color:var(--amber2)}.empty{padding:26px;text-align:center;color:#8fa29b}
+.method{display:none;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:12px}
+.method.show{display:block}.method h3{margin-top:0}.method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.method-card{background:#0d1b1a;border:1px solid #244039;border-radius:14px;padding:15px}.method-card strong{display:block;margin-bottom:7px}
+.method-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+footer{color:#80958e;padding:28px 0 6px;font-size:12px;text-align:center}
+@media(max-width:1100px){.stats{grid-template-columns:repeat(3,1fr)}.areas{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.topline{display:block}.mini-radar{margin-top:20px;width:100%}}
+@media(max-width:760px){.wrap{padding:16px}.nav{align-items:flex-start;flex-direction:column}.hero{padding:22px}.stats{grid-template-columns:repeat(2,1fr)}.areas,.insights,.method-grid{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.mini-radar{min-width:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav">
+  <div class="brand"><div class="brand-mark">◉</div><span>PetroTechRadar</span></div>
+  <div class="navlinks">
+    <button class="navlink active" data-nav="overview">Overview</button>
+    <button class="navlink" data-nav="repositories">Repositories</button>
+    <button class="navlink" data-nav="papers">Papers</button>
+    <button class="navlink" data-nav="methodology">Methodology</button>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="topline">
+    <div>
+      <div class="eyebrow">● Live subsurface technology radar</div>
+      <h1>Discover what is being built for the <span class="accent">subsurface</span>.</h1>
+      <div class="sub">Curated open-source software, emerging AI agents, research code and papers with code across seismic, petrophysics, reservoir engineering, drilling, OSDU and geothermal.</div>
+      <div class="hero-actions">
+        <button class="btn primary" id="explore">Explore repositories</button>
+        <button class="btn" id="showPapers">Papers with Code</button>
+        <button class="btn" id="showEmerging">Emerging radar</button>
+      </div>
+    </div>
+    <div class="mini-radar">
+      <svg viewBox="0 0 220 145" role="img" aria-label="Radar over geological layers">
+        <path d="M0 105 C35 93 58 115 94 101 C130 86 156 106 220 89 L220 145 L0 145Z" fill="#102c37"/>
+        <path d="M0 118 C46 106 71 127 110 113 C148 99 174 118 220 104" fill="none" stroke="#2b6b64" stroke-width="2"/>
+        <path d="M0 130 C44 119 82 138 123 125 C161 114 188 129 220 119" fill="none" stroke="#31536b" stroke-width="2"/>
+        <circle cx="110" cy="52" r="26" fill="none" stroke="#64d2bb" stroke-opacity=".7"/>
+        <circle cx="110" cy="52" r="43" fill="none" stroke="#64d2bb" stroke-opacity=".35"/>
+        <path d="M110 52 L174 22" stroke="#64d2bb" stroke-width="2"/>
+        <circle cx="143" cy="37" r="4" fill="#64d2bb"/>
+        <circle cx="78" cy="71" r="4" fill="#8ab4ff"/>
+        <circle cx="166" cy="72" r="4" fill="#d6a85f"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><strong id="repoCount">—</strong><span>Repositories</span></div>
+  <div class="stat"><strong id="paperCount">—</strong><span>Papers with Code</span></div>
+  <div class="stat"><strong id="coreCount">—</strong><span>Core tools</span></div>
+  <div class="stat"><strong id="emergingCount">—</strong><span>Emerging</span></div>
+  <div class="stat"><strong id="researchCount">—</strong><span>Research</span></div>
+  <div class="stat"><strong id="verifiedDate">—</strong><span>Last verified</span></div>
+</section>
+
+<div class="section-title"><div><h2>Explore by technology area</h2><div class="muted">Jump directly into the subsurface stack.</div></div></div>
+
+<section class="areas">
+  <div class="area" data-key="seismic"><div class="icon">🌊</div><strong>Seismic & Imaging</strong><span>FWI, RTM, inversion, SEG-Y and seismic ML</span></div>
+  <div class="area" data-key="petrophysics"><div class="icon">🧾</div><strong>Petrophysics</strong><span>LAS, well logs, saturation, permeability and rock physics</span></div>
+  <div class="area" data-key="reservoir"><div class="icon">🛢️</div><strong>Reservoir</strong><span>Simulation, PVT, DCA, material balance and surrogates</span></div>
+  <div class="area" data-key="ai"><div class="icon">🤖</div><strong>AI, Agents & MCP</strong><span>LLMs, RAG, engineering copilots and domain agents</span></div>
+  <div class="area" data-key="osdu"><div class="icon">🗄️</div><strong>Data & OSDU</strong><span>Interoperability, standards, SDKs and semantic layers</span></div>
+  <div class="area" data-key="drilling"><div class="icon">🛠️</div><strong>Drilling & Wells</strong><span>MWD/LWD, ROP, pore pressure and drilling intelligence</span></div>
+  <div class="area" data-key="geothermal"><div class="icon">🌋</div><strong>Geothermal</strong><span>Prospectivity, seismicity, exploration and geothermal AI</span></div>
+  <div class="area" data-key="geoscience"><div class="icon">🗺️</div><strong>Geoscience</strong><span>Interpretation, geological ML and visualization</span></div>
+</section>
+
+<section class="insights">
+  <div class="insight"><small>Emerging signal</small><strong>AI-assisted engineering workflows</strong><span>Agents and MCP tooling are appearing around deterministic subsurface libraries.</span></div>
+  <div class="insight"><small>Research momentum</small><strong>FWI + learned objectives</strong><span>Recent code releases cluster around inversion, learned misfits and priors.</span></div>
+  <div class="insight"><small>Data infrastructure</small><strong>OSDU remains foundational</strong><span>SDKs, converters and semantic tooling anchor subsurface interoperability.</span></div>
+</section>
+
+<div class="tabs">
+  <button class="tab active" data-view="repositories">Repositories</button>
+  <button class="tab" data-view="papers">Papers with Code</button>
+  <button class="tab" data-view="emerging">Emerging</button>
+</div>
+
+<section class="feature-grid">
+  <div class="feature"><h3>🔥 Trending & active</h3><p>Use Radar Score, stars/month and last activity to surface current signals rather than only all-time popularity.</p><div class="chips"><span class="chip">AI agents</span><span class="chip">FWI</span><span class="chip">OSDU</span><span class="chip">Petrophysics</span></div></div>
+  <div class="feature"><h3>📚 Research signal</h3><p>Papers with Code combines citation impact, citation velocity, reproducibility and repository health.</p><div class="chips"><span class="chip">Citations</span><span class="chip">Reproducibility</span><span class="chip">GitHub health</span></div></div>
+</section>
+
+<div class="section-title"><div><h2 id="listTitle">Repository radar</h2><div class="muted" id="listSub">Search, filter and rank the curated repository universe.</div></div></div>
+
+<section class="toolbar" id="repoToolbar">
+  <input id="search" placeholder="Search repository, domain, focus...">
+  <select id="tier"><option value="">All tiers</option></select>
+  <select id="domain"><option value="">All domains</option></select>
+  <select id="sort">
+    <option value="score">Radar score</option>
+    <option value="stars">Stars</option>
+    <option value="velocity">Stars / month</option>
+    <option value="recent">Latest push</option>
+  </select>
+</section>
+
+<section class="toolbar" id="paperToolbar" style="display:none">
+  <input id="paperSearch" placeholder="Search paper, journal, topic...">
+  <select id="paperTopic"><option value="">All topics</option></select>
+  <select id="paperJournal"><option value="">All journals</option></select>
+  <select id="paperSort">
+    <option value="score">Paper score</option>
+    <option value="citations">Citations</option>
+    <option value="velocity">Citations / year</option>
+    <option value="stars">GitHub stars</option>
+  </select>
+</section>
+
+<div class="tablebox"><table><thead id="thead"></thead><tbody id="rows"><tr><td class="empty">Loading live radar data…</td></tr></tbody></table></div>
+
+<section class="method" id="method">
+  <h3>How PetroTechRadar ranks</h3>
+  <div class="method-grid">
+    <div class="method-card"><strong>Repository Radar Score</strong><p>Technical curation is combined with GitHub activity. Popularity matters, but stars alone do not define technical value.</p></div>
+    <div class="method-card"><strong>Papers with Code Score</strong><p>Technical relevance, reproducibility, code health, venue quality, citations, citations/year and GitHub traction are combined.</p></div>
+  </div>
+</section>
+
+<footer>PetroTechRadar · Curated technology intelligence for the subsurface · Metrics refreshed periodically</footer>
+</div>
+
+<script>
+let repos=[],papers=[],stats={},view='repositories';
+const $=id=>document.getElementById(id);
+const num=v=>Number.isFinite(Number(v))?Number(v):0;
+const uniq=a=>[...new Set(a.filter(Boolean))].sort();
+
+function fillSelect(id,vals){
+  const e=$(id);
+  while(e.options.length>1)e.remove(1);
+  uniq(vals).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;e.appendChild(o)})
+}
+function repoHead(){
+  $('thead').innerHTML='<tr><th>#</th><th>Repository</th><th>Domain</th><th>Focus</th><th>Tier</th><th>Stars</th><th>Forks</th><th>Stars/mo</th><th>Last push</th><th>Radar score</th></tr>'
+}
+function paperHead(){
+  $('thead').innerHTML='<tr><th>#</th><th>Paper</th><th>Journal</th><th>Year</th><th>Topic</th><th>Citations</th><th>Cit./yr</th><th>GitHub ★</th><th>Repro.</th><th>Score</th></tr>'
+}
+function renderRepos(){
+  repoHead();
+  const q=$('search').value.toLowerCase().trim(),t=$('tier').value,d=$('domain').value,s=$('sort').value;
+  let rows=repos.filter(r=>{
+    const blob=`${r.repository||''} ${r.domain||''} ${r.focus||''}`.toLowerCase();
+    return(!q||blob.includes(q))&&(!t||r.tier===t)&&(!d||r.domain===d)&&(view!=='emerging'||r.tier==='Emerging')
+  });
+  rows.sort((a,b)=>s==='stars'?num(b.stars)-num(a.stars):s==='velocity'?num(b.stars_per_month)-num(a.stars_per_month):s==='recent'?String(b.pushed_at||'').localeCompare(String(a.pushed_at||'')):num(b.petrotech_radar_score)-num(a.petrotech_radar_score));
+  $('rows').innerHTML=rows.length?rows.map((r,i)=>`<tr><td>${i+1}</td><td><a href="${r.url}" target="_blank" rel="noopener">${r.repository}</a></td><td>${r.domain||'—'}</td><td>${r.focus||'—'}</td><td><span class="pill">${r.tier||'—'}</span></td><td>${r.stars===''||r.stars==null?'—':num(r.stars).toLocaleString()}</td><td>${r.forks===''||r.forks==null?'—':num(r.forks).toLocaleString()}</td><td>${r.stars_per_month===''||r.stars_per_month==null?'—':num(r.stars_per_month).toFixed(2)}</td><td>${(r.pushed_at||'—').slice(0,10)}</td><td class="score">${r.petrotech_radar_score||'—'}</td></tr>`).join(''):'<tr><td colspan="10"><div class="empty">No matching repositories.</div></td></tr>'
+}
+function renderPapers(){
+  paperHead();
+  const q=$('paperSearch').value.toLowerCase().trim(),t=$('paperTopic').value,j=$('paperJournal').value,s=$('paperSort').value;
+  let rows=papers.filter(r=>{
+    const blob=`${r.paper_title||''} ${r.topic||''} ${r.journal||''} ${r.repository||''}`.toLowerCase();
+    return(!q||blob.includes(q))&&(!t||r.topic===t)&&(!j||r.journal===j)
+  });
+  rows.sort((a,b)=>s==='citations'?num(b.citations)-num(a.citations):s==='velocity'?num(b.citations_per_year)-num(a.citations_per_year):s==='stars'?num(b.repo_stars)-num(a.repo_stars):num(b.papers_with_code_score)-num(a.papers_with_code_score));
+  $('rows').innerHTML=rows.length?rows.map((r,i)=>`<tr><td>${i+1}</td><td>${r.paper_url?`<a href="${r.paper_url}" target="_blank" rel="noopener">${r.paper_title}</a>`:r.paper_title}<br><a href="${r.repo_url}" target="_blank" rel="noopener">GitHub code</a></td><td>${r.journal||'—'}</td><td>${r.year||'—'}</td><td>${r.topic||'—'}</td><td>${r.citations||'—'}</td><td>${r.citations_per_year||'—'}</td><td>${r.repo_stars||'—'}</td><td><span class="pill">${r.reproducibility||'—'}</span></td><td class="score">${r.papers_with_code_score||'—'}</td></tr>`).join(''):'<tr><td colspan="10"><div class="empty">No matching papers.</div></td></tr>'
+}
+function setView(v){
+  view=v;
+  $('method').classList.remove('show');
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
+  const papersView=v==='papers';
+  $('repoToolbar').style.display=papersView?'none':'grid';
+  $('paperToolbar').style.display=papersView?'grid':'none';
+  $('listTitle').textContent=papersView?'Papers with Code':v==='emerging'?'Emerging radar':'Repository radar';
+  $('listSub').textContent=papersView?'Citation-aware research entries with reproducibility and repository-health signals.':v==='emerging'?'Early-stage, agentic and rapidly developing subsurface projects.':'Search, filter and rank the curated repository universe.';
+  papersView?renderPapers():renderRepos();
+  $('listTitle').scrollIntoView({behavior:'smooth',block:'start'})
+}
+function showMethod(){
+  view='methodology';
+  $('method').classList.add('show');
+  $('listTitle').textContent='Methodology';
+  $('listSub').textContent='Technical curation plus live activity and research-impact signals.';
+  $('method').scrollIntoView({behavior:'smooth',block:'center'})
+}
+
+Promise.all([
+  fetch('./data/radar.json').then(r=>r.json()),
+  fetch('./data/stats.json').then(r=>r.json()),
+  fetch('./data/papers.json').then(r=>r.json()).catch(()=>({papers:[]}))
+]).then(([r,s,p])=>{
+  repos=r.repositories||[];
+  stats=s||{};
+  papers=p.papers||[];
+  $('repoCount').textContent=stats.repository_count||repos.length;
+  $('paperCount').textContent=papers.length||'—';
+  $('coreCount').textContent=(stats.tiers||{}).Core||0;
+  $('emergingCount').textContent=(stats.tiers||{}).Emerging||0;
+  $('researchCount').textContent=(stats.tiers||{}).Research||0;
+  $('verifiedDate').textContent=stats.last_verified||'Pending';
+  fillSelect('tier',repos.map(x=>x.tier));
+  fillSelect('domain',repos.map(x=>x.domain));
+  fillSelect('paperTopic',papers.map(x=>x.topic));
+  fillSelect('paperJournal',papers.map(x=>x.journal));
+  renderRepos()
+}).catch(()=>{
+  $('rows').innerHTML='<tr><td colspan="10"><div class="empty">Live data is not available yet. Run the Refresh PetroTechRadar workflow once.</div></td></tr>'
+});
+
+['search','tier','domain','sort'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',renderRepos));
+['paperSearch','paperTopic','paperJournal','paperSort'].forEach(id=>$(id).addEventListener(id==='paperSearch'?'input':'change',renderPapers));
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));
+document.querySelectorAll('.area').forEach(a=>a.addEventListener('click',()=>{
+  const key=a.dataset.key.toLowerCase();
+  $('search').value=key==='ai'?'ai':key;
+  $('tier').value='';
+  $('domain').value='';
+  setView('repositories');
+  renderRepos()
+}));
+document.querySelectorAll('.navlink').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.navlink').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  b.dataset.nav==='methodology'?showMethod():setView(b.dataset.nav==='papers'?'papers':b.dataset.nav==='repositories'?'repositories':'repositories')
+}));
+$('explore').addEventListener('click',()=>setView('repositories'));
+$('showPapers').addEventListener('click',()=>setView('papers'));
+$('showEmerging').addEventListener('click',()=>setView('emerging'));
+</script>
+</body>
+</html>
