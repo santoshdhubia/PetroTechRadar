@@ -131,6 +131,24 @@ Search, filter and sort the whole radar by:
 
 ---
 
+---
+
+## 📚 Papers with Code
+
+PetroTechRadar also tracks **peer-reviewed geophysics and computational-geophysics papers with public code**.
+
+The paper matrix adds scientific-impact metrics to repository health:
+
+**Journal · Year · Topic · GitHub repository · Stars · Reproducibility · Total citations · Citations/year · Papers-with-Code Score**
+
+Citation impact is included as a factor, but it is balanced with **citations/year** so recent papers are not unfairly penalized.
+
+- **[Papers with Code matrix](catalog/PAPERS_WITH_CODE.md)**
+- **[Scoring methodology](catalog/PAPERS_WITH_CODE_METHOD.md)**
+- **[Interactive Papers dashboard](https://santoshdhubia.github.io/PetroTechRadar/papers.html)**
+
+Citation metrics refresh from **OpenAlex**; repository-health metrics refresh from GitHub.
+
 ## Automated Weekly Refresh
 
 ```text
