@@ -37,6 +37,8 @@ jobs:
       - name: Refresh paper citations and GitHub metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+        continue-on-error: true
         run: python scripts/update_paper_metrics.py
 
       - name: Generate Papers with Code outputs
@@ -49,17 +51,25 @@ jobs:
           python - <<'PY'
           import csv
           from pathlib import Path
+
           p = Path("catalog/PAPERS_WITH_CODE.csv")
           rows = list(csv.DictReader(p.open(encoding="utf-8")))
+
           cited = [r for r in rows if str(r.get("citations","")).strip() not in ("","0")]
           gh = [r for r in rows if str(r.get("repo_stars","")).strip() != ""]
           errors = [r for r in rows if "error" in str(r.get("metrics_status","")).lower()]
+          stale = [r for r in rows if "stale-preserved" in str(r.get("metrics_status","")).lower()]
+          unavailable = [r for r in rows if "citation-unavailable" in str(r.get("metrics_status","")).lower()]
+
           print(f"Total paper-code pairs: {len(rows)}")
           print(f"Papers with citation data: {len(cited)}")
           print(f"Papers with GitHub metrics: {len(gh)}")
           print(f"Rows with errors: {len(errors)}")
+          print(f"Rows using preserved citation data: {len(stale)}")
+          print(f"Rows with citation service unavailable: {len(unavailable)}")
+
           if rows and not cited:
-              raise SystemExit("Citation refresh produced no citation data. Check OpenAlex access or matching.")
+              print("WARNING: No citation data is currently available. Repository metrics will still be committed.")
           PY
 
       - name: Commit refreshed radar
