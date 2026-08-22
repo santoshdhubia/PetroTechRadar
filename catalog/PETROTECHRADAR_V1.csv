@@ -88,7 +88,7 @@ FanSmale/TDMF-FWI,https://github.com/FanSmale/TDMF-FWI,Seismic,FWI research,Rese
 florianwittkamp/FD_ACOUSTIC,https://github.com/florianwittkamp/FD_ACOUSTIC,Seismic,Acoustic FD modeling,Research,99,42,0,4,Jupyter Notebook,GPL-3.0,2016-03-30T14:44:43Z,2023-05-01T18:42:49Z,False,1663,124.7,0.79,27.8,65.7,OK,2026-08-22
 LukasMosser/stochastic_seismic_waveform_inversion,https://github.com/LukasMosser/stochastic_seismic_waveform_inversion,Seismic,Stochastic FWI,Research,57,16,2,2,Jupyter Notebook,MIT,2019-05-28T13:45:58Z,2019-12-09T16:54:41Z,False,35067,86.8,0.66,24.2,64.7,OK,2026-08-22
 swag-kaust/ASOFI3D,https://github.com/swag-kaust/ASOFI3D,Seismic,3D wave simulation,Research,36,14,6,13,C,GPL-2.0,2016-08-02T10:56:42Z,2019-04-03T21:49:31Z,False,22585,120.6,0.3,22.9,64.3,OK,2026-08-22
-wavetomo/FWI-EDU,https://github.com/wavetomo/FWI-EDU,Seismic,FWI education,Research,12,2,0,1,C,MIT,2026-03-03T12:47:53Z,2026-07-17T03:04:40Z,False,3162,5.6,2.13,50.9,72.7,OK,2026-08-22
+wavetomo/FWI-EDU,https://github.com/wavetomo/FWI-EDU,Seismic,FWI education,Research,12,2,0,1,C,MIT,2026-03-03T12:47:53Z,2026-07-17T03:04:40Z,False,3162,5.6,2.12,50.9,72.7,OK,2026-08-22
 WilmerZhu/EASTASIA_FWI,https://github.com/WilmerZhu/EASTASIA_FWI,Seismic,Regional FWI,Research,0,0,0,0,Python,MIT,2026-01-29T07:21:17Z,2026-03-08T12:57:58Z,False,515,6.7,0.0,30.9,66.7,OK,2026-08-22
 xhffffff/crf-fwi,https://github.com/xhffffff/crf-fwi,Seismic,FWI,Research,2,1,0,0,Python,MIT,2026-06-07T17:34:11Z,2026-06-07T17:45:27Z,False,2439,2.5,0.8,42.0,70.0,OK,2026-08-22
 XU-SB/Optimal-Geometry-FWI,https://github.com/XU-SB/Optimal-Geometry-FWI,Seismic,Acquisition geometry + FWI,Research,3,1,0,0,Jupyter Notebook,,2025-12-18T07:13:17Z,2025-12-18T07:37:47Z,False,16138,8.1,0.37,33.7,67.5,OK,2026-08-22

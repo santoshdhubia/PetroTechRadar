@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T09:54:47.469987+00:00",
+  "generated_at": "2026-08-22T10:01:40.846387+00:00",
   "repository_count": 115,
   "repositories": [
     {
@@ -571,7 +571,7 @@
       "archived": "False",
       "size_kb": "3162",
       "age_months": "5.6",
-      "stars_per_month": "2.13",
+      "stars_per_month": "2.12",
       "github_activity_score": "50.9",
       "petrotech_radar_score": "72.7",
       "metrics_status": "OK",
