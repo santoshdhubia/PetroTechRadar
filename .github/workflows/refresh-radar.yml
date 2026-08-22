@@ -1,33 +1,94 @@
 name: Refresh PetroTechRadar
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "30 3 * * 0"  # Sunday 09:00 IST
+
 permissions:
   contents: write
+
 concurrency:
   group: petrotechradar-refresh
   cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh GitHub metrics
+
+      - name: Refresh GitHub repository metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_github_metrics.py
-      - name: Generate matrices and dashboard data
+
+      - name: Generate repository matrices and dashboard data
         run: python scripts/generate_outputs.py
+
+      - name: Refresh paper citations and GitHub metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_paper_metrics.py
+
+      - name: Generate Papers with Code outputs
+        run: python scripts/generate_paper_outputs.py
+
+      - name: Show paper refresh summary
+        shell: bash
+        run: |
+          echo "Papers with Code refresh summary:"
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p = Path("catalog/PAPERS_WITH_CODE.csv")
+          rows = list(csv.DictReader(p.open(encoding="utf-8")))
+          cited = [r for r in rows if str(r.get("citations","")).strip() not in ("","0")]
+          gh = [r for r in rows if str(r.get("repo_stars","")).strip() != ""]
+          errors = [r for r in rows if "error" in str(r.get("metrics_status","")).lower()]
+          print(f"Total paper-code pairs: {len(rows)}")
+          print(f"Papers with citation data: {len(cited)}")
+          print(f"Papers with GitHub metrics: {len(gh)}")
+          print(f"Rows with errors: {len(errors)}")
+          if rows and not cited:
+              raise SystemExit("Citation refresh produced no citation data. Check OpenAlex access or matching.")
+          PY
+
       - name: Commit refreshed radar
+        shell: bash
         run: |
           git config user.name "Santosh Dhubia"
           git config user.email "santoshdhubia@users.noreply.github.com"
-          git add catalog/PETROTECHRADAR_V1.csv catalog/metrics_refresh_status.json catalog/TOP_REPOSITORIES.md catalog/EMERGING_RADAR.md catalog/RESEARCH_RADAR.md catalog/SEISMIC_RADAR.md catalog/AI_AGENT_RADAR.md docs/data/radar.json docs/data/radar.csv docs/data/stats.json
-          if git diff --cached --quiet; then echo "No metric changes."; exit 0; fi
+
+          git add catalog/PETROTECHRADAR_V1.csv
+          git add catalog/metrics_refresh_status.json
+          git add catalog/TOP_REPOSITORIES.md
+          git add catalog/EMERGING_RADAR.md
+          git add catalog/RESEARCH_RADAR.md
+          git add catalog/SEISMIC_RADAR.md
+          git add catalog/AI_AGENT_RADAR.md
+          git add docs/data/radar.json
+          git add docs/data/radar.csv
+          git add docs/data/stats.json
+
+          git add catalog/PAPERS_WITH_CODE.csv
+          git add catalog/PAPERS_WITH_CODE.md
+          git add catalog/TOP_CITED_PAPERS.md
+          git add docs/data/papers.json
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No metric changes."
+            exit 0
+          fi
+
           git commit -m "Refresh PetroTechRadar metrics"
           git push
