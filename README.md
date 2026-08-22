@@ -174,6 +174,16 @@ Projects that are relevant but not selected for the current curated V1 remain av
 
 ---
 
+## Disclaimer
+
+PetroTechRadar is an independent curated technology index. Inclusion or ranking of a repository, paper, organization or project does **not constitute endorsement, certification or commercial recommendation**.
+
+GitHub metrics, citation counts and automated metadata may change over time and should be independently verified before technical, academic or commercial use.
+
+**[Read the full disclaimer](DISCLAIMER.md)**
+
+---
+
 ## Project Governance
 
 [Methodology](METHODOLOGY.md) · [Contributing](CONTRIBUTING.md) · [Submit](SUBMIT.md) · [Disclaimer](DISCLAIMER.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [MIT License](LICENSE)
