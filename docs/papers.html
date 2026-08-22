@@ -1,1 +1,178 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>PetroTechRadar — Papers with Code</title><style>body{font-family:system-ui;margin:0;background:#08111f;color:#e9f1fb}.w{max-width:1400px;margin:auto;padding:28px}a{color:#9fc0ff}input,select{padding:11px;background:#101b2d;color:white;border:1px solid #263955;border-radius:9px}.c{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin:18px 0}.b{overflow:auto;border:1px solid #263955;border-radius:12px}table{border-collapse:collapse;width:100%;min-width:1100px}th,td{padding:10px;border-bottom:1px solid #263955;text-align:left}th{background:#0d1829}.s{color:#46c2a9;font-weight:700}</style></head><body><div class="w"><a href="./">← Main radar</a><h1>📚 Papers with Code</h1><p>Geophysics and computational-geophysics papers with reproducible code. Citation impact is included, but age-normalized.</p><div class="c"><input id="q" placeholder="Search paper, topic, journal"><select id="topic"><option value="">All topics</option></select><select id="sort"><option value="score">Paper score</option><option value="citations">Citations</option><option value="velocity">Citations/year</option><option value="stars">GitHub stars</option></select></div><div class="b"><table><thead><tr><th>#</th><th>Paper</th><th>Journal</th><th>Year</th><th>Topic</th><th>Citations</th><th>Cit./yr</th><th>GitHub ★</th><th>Repro.</th><th>Score</th></tr></thead><tbody id="rows"></tbody></table></div></div><script>let all=[];const n=v=>Number(v)||0;function render(){const q=document.getElementById('q').value.toLowerCase(),t=document.getElementById('topic').value,s=document.getElementById('sort').value;let r=all.filter(x=>(`${x.paper_title} ${x.topic} ${x.journal}`.toLowerCase().includes(q))&&(!t||x.topic===t));r.sort((a,b)=>s==='citations'?n(b.citations)-n(a.citations):s==='velocity'?n(b.citations_per_year)-n(a.citations_per_year):s==='stars'?n(b.repo_stars)-n(a.repo_stars):n(b.papers_with_code_score)-n(a.papers_with_code_score));rows.innerHTML=r.map((x,i)=>`<tr><td>${i+1}</td><td>${x.paper_url?`<a href="${x.paper_url}" target="_blank">${x.paper_title}</a>`:x.paper_title}<br><a href="${x.repo_url}" target="_blank">GitHub code</a></td><td>${x.journal}</td><td>${x.year}</td><td>${x.topic}</td><td>${x.citations||'—'}</td><td>${x.citations_per_year||'—'}</td><td>${x.repo_stars||'—'}</td><td>${x.reproducibility}</td><td class="s">${x.papers_with_code_score||'—'}</td></tr>`).join('')}fetch('./data/papers.json').then(r=>r.json()).then(d=>{all=d.papers||[];[...new Set(all.map(x=>x.topic))].sort().forEach(v=>{let o=document.createElement('option');o.value=o.textContent=v;topic.appendChild(o)});['q','topic','sort'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));render()})</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PetroTechRadar — Papers with Code</title>
+<meta name="description" content="Citation-aware papers with public code across geophysics and computational subsurface research.">
+<style>
+:root{--bg:#f5f9ff;--panel:#fff;--panel2:#eef5ff;--text:#17324a;--muted:#718397;--line:#d7e3f3;--line2:#cbdcf3;--blue:#2f80ed;--blue2:#56ccf2;--navy:#153b66}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1450px;margin:auto;padding:28px}
+.nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:10px 0;background:rgba(245,249,255,.95);backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
+.brand-mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(145deg,#dbeafe,#eff6ff);border:1px solid #b7d2f5;display:grid;place-items:center;color:var(--blue)}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap}
+.navlink{padding:8px 10px;border-radius:9px;border:1px solid transparent;color:#60758a;font-size:12px;font-weight:700}
+.navlink:hover,.navlink.active{background:#eaf3ff;border-color:#b7d2f5;color:var(--blue)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:center;background:linear-gradient(135deg,#edf5ff,#e2efff 58%,#f9fbff);border:1px solid var(--line2);border-radius:24px;padding:30px;overflow:hidden}
+.eyebrow{display:inline-flex;padding:7px 10px;border-radius:999px;background:#e3efff;border:1px solid #bdd6f7;color:#2769b8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+h1{font-size:clamp(36px,5vw,58px);line-height:1;margin:16px 0 10px;color:var(--navy);letter-spacing:-.035em}
+.sub{font-size:17px;line-height:1.55;color:#58728c;max-width:850px}
+.hero-art{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+.hero-art svg{width:100%;height:160px;display:block}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 24px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px;position:relative;overflow:hidden}
+.stat:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,var(--blue),var(--blue2),transparent)}
+.stat strong{display:block;font-size:26px;color:var(--navy)}
+.stat span{font-size:11px;color:#6d8092;text-transform:uppercase;letter-spacing:.07em}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0 24px}
+.feature{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.feature h3{margin:0 0 6px;color:#234f7b;font-size:17px}
+.feature p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.toolbar{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin:12px 0}
+input,select{width:100%;padding:12px;background:#fff;color:#23435c;border:1px solid var(--line2);border-radius:11px;font-size:14px}
+.tablebox{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:16px}
+table{width:100%;border-collapse:collapse;min-width:1160px}
+th,td{padding:12px;border-bottom:1px solid #e4edf7;text-align:left;font-size:13px;vertical-align:top}
+th{position:sticky;top:0;background:var(--panel2);color:#365e7a}
+tbody tr:hover{background:#f7fbff}
+.paper-title{font-weight:700;color:#1f5d9f;line-height:1.4}
+.code-link{display:inline-block;margin-top:5px;font-size:12px}
+.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#e9f3ff;color:#2f6eae;font-size:11px}
+.score{font-weight:800;color:var(--blue)}
+.empty{text-align:center;color:#7d90a2;padding:28px}
+footer{text-align:center;color:#8193a3;font-size:12px;padding:28px 0 6px}
+@media(max-width:950px){.hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.wrap{padding:16px}.nav{align-items:flex-start;flex-direction:column}.stats,.toolbar{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav">
+    <a class="brand" href="./"><div class="brand-mark">◉</div><span>PetroTechRadar</span></a>
+    <div class="navlinks">
+      <a class="navlink" href="./">Overview</a>
+      <a class="navlink" href="./#ptr-repositories">Repositories</a>
+      <a class="navlink active" href="papers.html">Papers</a>
+      <a class="navlink" href="https://github.com/santoshdhubia/PetroTechRadar/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">Methodology</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">📚 Citation-aware research radar</div>
+      <h1>Papers with Code</h1>
+      <div class="sub">Peer-reviewed geophysics and computational-subsurface papers with public code, ranked using citation impact, citation velocity, reproducibility and repository health.</div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 300 160" role="img" aria-label="Research citation and code graphic">
+        <rect x="24" y="92" width="38" height="46" rx="6" fill="#d9eaff"/>
+        <rect x="82" y="72" width="38" height="66" rx="6" fill="#b8d6fa"/>
+        <rect x="140" y="50" width="38" height="88" rx="6" fill="#8fc0f8"/>
+        <rect x="198" y="30" width="38" height="108" rx="6" fill="#5ca0f0"/>
+        <path d="M36 72 C84 92 120 42 164 60 S228 64 274 24" fill="none" stroke="#2f80ed" stroke-width="3"/>
+        <circle cx="274" cy="24" r="6" fill="#2f80ed"/>
+        <path d="M72 24 h42 l12 12 -12 12 H72 l-12-12z" fill="#eef5ff" stroke="#9fc4f1"/>
+        <path d="M83 36 h20" stroke="#2f80ed" stroke-width="3"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><strong id="paperCount">—</strong><span>Papers tracked</span></div>
+    <div class="stat"><strong id="citedCount">—</strong><span>With citation data</span></div>
+    <div class="stat"><strong id="topicCount">—</strong><span>Research topics</span></div>
+    <div class="stat"><strong id="repoCount">—</strong><span>Code repositories</span></div>
+  </section>
+
+  <section class="feature-grid">
+    <div class="feature"><h3>Scientific impact</h3><p>Total citations and citations/year are kept separate so recent work is not automatically penalized against older papers.</p></div>
+    <div class="feature"><h3>Reproducibility signal</h3><p>Public code, repository health and reproducibility are combined with technical relevance rather than relying on citation count alone.</p></div>
+  </section>
+
+  <section class="toolbar">
+    <input id="q" placeholder="Search paper, topic, journal, repository...">
+    <select id="topic"><option value="">All topics</option></select>
+    <select id="journal"><option value="">All journals</option></select>
+    <select id="sort">
+      <option value="score">Paper score</option>
+      <option value="citations">Citations</option>
+      <option value="velocity">Citations/year</option>
+      <option value="stars">GitHub stars</option>
+      <option value="year">Newest papers</option>
+    </select>
+  </section>
+
+  <div class="tablebox">
+    <table>
+      <thead><tr><th>#</th><th>Paper</th><th>Journal</th><th>Year</th><th>Topic</th><th>Citations</th><th>Cit./yr</th><th>GitHub ★</th><th>Repro.</th><th>Score</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="10" class="empty">Loading papers…</td></tr></tbody>
+    </table>
+  </div>
+
+  <footer>PetroTechRadar · Papers with Code · Created and curated by <a href="https://www.linkedin.com/in/santoshdhubia/" target="_blank" rel="noopener">Santosh Dhubia ↗</a></footer>
+</div>
+
+<script>
+let all=[];
+const n=v=>Number(v)||0;
+const esc=s=>String(s??'');
+function fill(id,vals){
+  const e=document.getElementById(id);
+  [...new Set(vals.filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;e.appendChild(o);
+  });
+}
+function render(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const t=document.getElementById('topic').value;
+  const j=document.getElementById('journal').value;
+  const s=document.getElementById('sort').value;
+  let r=all.filter(x=>{
+    const blob=`${x.paper_title||''} ${x.topic||''} ${x.journal||''} ${x.repository||''}`.toLowerCase();
+    return (!q||blob.includes(q))&&(!t||x.topic===t)&&(!j||x.journal===j);
+  });
+  r.sort((a,b)=>
+    s==='citations'?n(b.citations)-n(a.citations):
+    s==='velocity'?n(b.citations_per_year)-n(a.citations_per_year):
+    s==='stars'?n(b.repo_stars)-n(a.repo_stars):
+    s==='year'?n(b.year)-n(a.year):
+    n(b.papers_with_code_score)-n(a.papers_with_code_score)
+  );
+  document.getElementById('rows').innerHTML=r.length?r.map((x,i)=>`
+    <tr>
+      <td>${i+1}</td>
+      <td>
+        ${x.paper_url?`<a class="paper-title" href="${x.paper_url}" target="_blank" rel="noopener">${esc(x.paper_title)}</a>`:`<span class="paper-title">${esc(x.paper_title)}</span>`}
+        <br><a class="code-link" href="${x.repo_url}" target="_blank" rel="noopener">GitHub code ↗</a>
+      </td>
+      <td>${esc(x.journal)||'—'}</td>
+      <td>${esc(x.year)||'—'}</td>
+      <td>${esc(x.topic)||'—'}</td>
+      <td>${x.citations===''||x.citations==null?'—':x.citations}</td>
+      <td>${x.citations_per_year===''||x.citations_per_year==null?'—':x.citations_per_year}</td>
+      <td>${x.repo_stars===''||x.repo_stars==null?'—':x.repo_stars}</td>
+      <td><span class="pill">${esc(x.reproducibility)||'—'}</span></td>
+      <td class="score">${x.papers_with_code_score||'—'}</td>
+    </tr>`).join(''):'<tr><td colspan="10" class="empty">No matching papers.</td></tr>';
+}
+fetch('./data/papers.json').then(r=>r.json()).then(d=>{
+  all=d.papers||[];
+  document.getElementById('paperCount').textContent=all.length;
+  document.getElementById('citedCount').textContent=all.filter(x=>String(x.citations??'').trim()!=='').length;
+  document.getElementById('topicCount').textContent=new Set(all.map(x=>x.topic).filter(Boolean)).size;
+  document.getElementById('repoCount').textContent=new Set(all.map(x=>x.repository).filter(Boolean)).size;
+  fill('topic',all.map(x=>x.topic));
+  fill('journal',all.map(x=>x.journal));
+  ['q','topic','journal','sort'].forEach(id=>document.getElementById(id).addEventListener(id==='q'?'input':'change',render));
+  render();
+}).catch(()=>{
+  document.getElementById('rows').innerHTML='<tr><td colspan="10" class="empty">Paper data is not available yet. Run the PetroTechRadar refresh workflow.</td></tr>';
+});
+</script>
+</body>
+</html>
