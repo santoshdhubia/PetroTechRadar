@@ -1,0 +1,33 @@
+name: Refresh PetroTechRadar
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 3 * * 0"  # Sunday 09:00 IST
+permissions:
+  contents: write
+concurrency:
+  group: petrotechradar-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh GitHub metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_github_metrics.py
+      - name: Generate matrices and dashboard data
+        run: python scripts/generate_outputs.py
+      - name: Commit refreshed radar
+        run: |
+          git config user.name "Santosh Dhubia"
+          git config user.email "santoshdhubia@users.noreply.github.com"
+          git add catalog/PETROTECHRADAR_V1.csv catalog/metrics_refresh_status.json catalog/TOP_REPOSITORIES.md catalog/EMERGING_RADAR.md catalog/RESEARCH_RADAR.md catalog/SEISMIC_RADAR.md catalog/AI_AGENT_RADAR.md docs/data/radar.json docs/data/radar.csv docs/data/stats.json
+          if git diff --cached --quiet; then echo "No metric changes."; exit 0; fi
+          git commit -m "Refresh PetroTechRadar metrics"
+          git push
