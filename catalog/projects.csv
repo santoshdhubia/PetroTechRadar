@@ -1,0 +1,11 @@
+project,url,category,sub_category,summary,maturity,emerging,tags,status
+equinor/segyio,https://github.com/equinor/segyio,Seismic / Data,SEG-Y,Library for reading and writing SEG-Y seismic data.,Mature,No,segy; seismic; python; c++,Seed
+OPM/ResInsight,https://github.com/OPM/ResInsight,Reservoir,Visualization,Open-source reservoir visualization and analysis application.,Mature,No,reservoir; visualization; simulation,Seed
+agilescientific/welly,https://github.com/agilescientific/welly,Petrophysics,Well Logs,Python tools for working with well and well-log data.,Established,No,well logs; las; petrophysics; python,Seed
+andymcdgeo/Petrophysics-Python-Series,https://github.com/andymcdgeo/Petrophysics-Python-Series,Petrophysics,Learning / Workflows,Python-based petrophysics examples and workflows.,Educational,No,petrophysics; python; well logs,Seed
+NDF-Poli-USP/spyro,https://github.com/NDF-Poli-USP/spyro,Seismic,FWI / Wave Propagation,Wave propagation and full-waveform inversion research software.,Research,Yes,fwi; wave propagation; seismic; python,Seed
+gganssle/tle_fwi,https://github.com/gganssle/tle_fwi,Seismic,FWI,Full-waveform inversion implementation / experiment.,Prototype / Research,Yes,fwi; seismic; inversion,Seed
+Ursula-Iturraran/ML_full_wave_Inversion,https://github.com/Ursula-Iturraran/ML_full_wave_Inversion,AI / ML,Seismic FWI,Machine-learning experiment related to full-waveform inversion.,Prototype,Yes,machine learning; fwi; seismic,Seed
+equinor/resfo,https://github.com/equinor/resfo,Reservoir / Data,Simulation Data,Tools for reservoir simulation file formats and related data handling.,Active,No,reservoir; simulation; data; python,Seed
+EugPal/reservoir-surrogate,https://github.com/EugPal/reservoir-surrogate,AI / ML,Reservoir,Surrogate-model experimentation for reservoir simulation.,Prototype,Yes,reservoir; surrogate model; machine learning,Seed
+MboleNgome/enhanced-oil-recovery,https://github.com/MboleNgome/enhanced-oil-recovery,Reservoir,EOR,Recent enhanced-oil-recovery coding project.,Prototype,Yes,eor; reservoir; petroleum engineering,Candidate
