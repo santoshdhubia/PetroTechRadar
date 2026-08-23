@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-23T17:15:15.588481+00:00",
-  "window_7d_start": "2026-08-16T17:15:15.588481+00:00",
-  "window_180d_start": "2026-02-24T17:15:15.588481+00:00",
+  "generated_at": "2026-08-23T17:21:13.050276+00:00",
+  "window_7d_start": "2026-08-16T17:21:13.050276+00:00",
+  "window_180d_start": "2026-02-24T17:21:13.050276+00:00",
   "summary": {
     "tracked_repositories": 156,
     "repositories_with_open_7d": 11,

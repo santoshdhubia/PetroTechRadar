@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T17:15:15.487666+00:00",
+  "generated_at": "2026-08-23T17:21:12.960636+00:00",
   "repository_count": 156,
   "repositories": [
     {
@@ -980,7 +980,7 @@
       "size_kb": "231694",
       "age_months": "85.2",
       "stars_per_month": "1.44",
-      "github_activity_score": "49.5",
+      "github_activity_score": "49.4",
       "petrotech_radar_score": "77.8",
       "metrics_status": "OK",
       "last_verified": "2026-08-23",
@@ -1315,7 +1315,7 @@
       "archived": "False",
       "size_kb": "435938",
       "age_months": "28.6",
-      "stars_per_month": "38.14",
+      "stars_per_month": "38.13",
       "github_activity_score": "84.8",
       "petrotech_radar_score": "73.0",
       "metrics_status": "OK",
