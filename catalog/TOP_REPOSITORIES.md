@@ -27,7 +27,7 @@ Highest-ranked repositories using technical curation plus current GitHub activit
 | 21 | [NatLabRockies/GEOPHIRES-X](https://github.com/NatLabRockies/GEOPHIRES-X) | National Lab Rockies | Geothermal | Core | 61 | 42 | 2026-07-16 | 83.3 |
 | 22 | [bp/resqpy](https://github.com/bp/resqpy) | bp | Reservoir / Data | Core | 67 | 18 | 2026-08-03 | 82.9 |
 | 23 | [mwburgoyne/pyResToolbox](https://github.com/mwburgoyne/pyResToolbox) | mwburgoyne | Reservoir | Core | 92 | 19 | 2026-08-22 | 82.6 |
-| 24 | [equinor/ecalc](https://github.com/equinor/ecalc) | Equinor | Production / Energy | Core | 52 | 10 | 2026-08-21 | 82.4 |
+| 24 | [equinor/ecalc](https://github.com/equinor/ecalc) | Equinor | Production / Energy | Core | 52 | 10 | 2026-08-21 | 82.3 |
 | 25 | [yohanesnuwara/GeoPySics](https://github.com/yohanesnuwara/GeoPySics) | yohanesnuwara | Geophysics | Core | 103 | 44 | 2026-04-22 | 81.7 |
 | 26 | [SeequentEvo/evo-python-sdk](https://github.com/SeequentEvo/evo-python-sdk) | Seequent | Data / Geoscience | Core | 12 | 46 | 2026-08-20 | 81.7 |
 | 27 | [SeequentEvo/evo-schemas](https://github.com/SeequentEvo/evo-schemas) | Seequent | Data / Geoscience | Core | 17 | 21 | 2026-08-20 | 81.4 |

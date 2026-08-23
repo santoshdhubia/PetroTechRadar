@@ -6,7 +6,9 @@
 
 ### Open-source & emerging technology radar for oil & gas, geoscience and subsurface engineering
 
-**115 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
+<!-- RADAR-HEADLINE:START -->
+**156 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
+<!-- RADAR-HEADLINE:END -->
 
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Explore%20Radar-2ea44f?style=for-the-badge)](https://santoshdhubia.github.io/PetroTechRadar/)
 [![Repository Matrix](https://img.shields.io/badge/Repository%20Matrix-CSV-blue?style=for-the-badge)](catalog/PETROTECHRADAR_V1.csv)
@@ -28,15 +30,19 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 
 ## Radar Snapshot
 
-| Metric | Current V1 |
+<!-- RADAR-STATS:START -->
+| Metric | Current live radar |
 |---|---:|
-| **Repositories tracked** | **115** |
-| **Core tools** | **32** |
-| **Emerging / AI / vibe-coded** | **43** |
-| **Research repositories** | **28** |
-| **Reference resources** | **12** |
+| **Repositories tracked** | **156** |
+| **Core tools** | **61** |
+| **Emerging / AI / vibe-coded** | **44** |
+| **Research repositories** | **36** |
+| **Reference resources** | **15** |
 | **Papers with Code** | **33** |
 | **Data refresh** | **Weekly** |
+
+_This block is generated automatically from the live catalogue and paper datasets._
+<!-- RADAR-STATS:END -->
 
 ---
 
