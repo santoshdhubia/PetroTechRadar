@@ -5,7 +5,7 @@ Domain-specific AI agents, MCP tools, RAG systems and engineering copilots.
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
 | 1 | [NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo) | NVIDIA | AI / Scientific Computing | Research | 3,189 | 760 | 2026-08-22 | 85.2 |
-| 2 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.3 |
+| 2 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.2 |
 | 3 | [NVIDIA/physicsnemo-cfd](https://github.com/NVIDIA/physicsnemo-cfd) | NVIDIA | AI / Scientific Computing | Research | 146 | 30 | 2026-08-18 | 78.0 |
 | 4 | [GeoscienceAustralia/uncover-ml](https://github.com/GeoscienceAustralia/uncover-ml) | GeoscienceAustralia | Geoscience / AI | Research | 33 | 22 | 2026-06-23 | 75.9 |
 | 5 | [DIG-Kaust/MLgeoscience](https://github.com/DIG-Kaust/MLgeoscience) | DIG-Kaust | Geoscience / AI | Research | 99 | 39 | 2025-12-30 | 73.8 |

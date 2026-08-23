@@ -4,15 +4,15 @@ Seismic imaging, FWI, inversion, data and geophysical tools.
 
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
-| 1 | [simpeg/simpeg](https://github.com/simpeg/simpeg) | simpeg | Computational Geophysics | Core | 669 | 292 | 2026-08-22 | 88.4 |
-| 2 | [gimli-org/gimli](https://github.com/gimli-org/gimli) | gimli-org | Computational Geophysics | Core | 505 | 163 | 2026-08-19 | 87.2 |
+| 1 | [simpeg/simpeg](https://github.com/simpeg/simpeg) | SimPEG | Computational Geophysics | Core | 669 | 292 | 2026-08-22 | 88.4 |
+| 2 | [gimli-org/gimli](https://github.com/gimli-org/gimli) | pyGIMLi | Computational Geophysics | Core | 505 | 163 | 2026-08-19 | 87.2 |
 | 3 | [PyLops/pylops](https://github.com/PyLops/pylops) | PyLops | Computational Geophysics | Core | 534 | 124 | 2026-08-14 | 86.9 |
-| 4 | [OpendTect/OpendTect](https://github.com/OpendTect/OpendTect) | OpendTect | Seismic / Interpretation | Core | 136 | 54 | 2026-08-23 | 84.3 |
+| 4 | [OpendTect/OpendTect](https://github.com/OpendTect/OpendTect) | OpendTect | Seismic / Interpretation | Core | 136 | 54 | 2026-08-23 | 84.2 |
 | 5 | [JintaoLee-Roger/cigvis](https://github.com/JintaoLee-Roger/cigvis) | JintaoLee-Roger | Seismic | Core | 145 | 23 | 2026-08-13 | 83.6 |
 | 6 | [equinor/segyio](https://github.com/equinor/segyio) | Equinor | Seismic / Data | Core | 581 | 227 | 2025-12-03 | 83.4 |
 | 7 | [yohanesnuwara/GeoPySics](https://github.com/yohanesnuwara/GeoPySics) | yohanesnuwara | Geophysics | Core | 103 | 44 | 2026-04-22 | 81.7 |
 | 8 | [waynegm/OpendTect-Plugins](https://github.com/waynegm/OpendTect-Plugins) | waynegm | Seismic | Core | 40 | 10 | 2026-02-12 | 78.5 |
-| 9 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.3 |
+| 9 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.2 |
 | 10 | [trhallam/segysak](https://github.com/trhallam/segysak) | trhallam | Seismic / Data | Core | 123 | 35 | 2025-08-21 | 77.8 |
 | 11 | [agilescientific/bruges](https://github.com/agilescientific/bruges) | Agile Scientific | Seismic | Core | 312 | 117 | 2023-12-19 | 74.4 |
 | 12 | [wavetomo/FWI-EDU](https://github.com/wavetomo/FWI-EDU) | wavetomo | Seismic | Research | 12 | 2 | 2026-07-17 | 72.6 |
