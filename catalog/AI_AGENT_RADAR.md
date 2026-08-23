@@ -21,12 +21,12 @@ Domain-specific AI agents, MCP tools, RAG systems and engineering copilots.
 | 15 | [nhdzTVlxb/ROGII---Wellbore-Geology-Prediction](https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction) | Drilling / Geology / AI | Emerging | 0 | 0 | 2026-08-17 | 66.5 |
 | 16 | [rasulsaxobidinov-debug/GeoThermAI-Explorer](https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer) | Geothermal / AI | Emerging | 0 | 0 | 2026-08-13 | 66.4 |
 | 17 | [yohanesnuwara/MLGeo](https://github.com/yohanesnuwara/MLGeo) | Geoscience / AI | Research | 88 | 60 | 2024-05-09 | 66.2 |
-| 18 | [NimahMasuud/agd2026-geothermal-ai](https://github.com/NimahMasuud/agd2026-geothermal-ai) | Geothermal / AI | Emerging | 1 | 0 | 2026-06-07 | 66.2 |
-| 19 | [mosalama74/drilling-report-qa](https://github.com/mosalama74/drilling-report-qa) | AI / Drilling | Emerging | 0 | 0 | 2026-07-28 | 66.2 |
-| 20 | [EugPal/reservoir-surrogate](https://github.com/EugPal/reservoir-surrogate) | Reservoir / AI | Emerging | 0 | 0 | 2026-07-29 | 66.2 |
+| 18 | [mosalama74/drilling-report-qa](https://github.com/mosalama74/drilling-report-qa) | AI / Drilling | Emerging | 0 | 0 | 2026-07-28 | 66.2 |
+| 19 | [EugPal/reservoir-surrogate](https://github.com/EugPal/reservoir-surrogate) | Reservoir / AI | Emerging | 0 | 0 | 2026-07-29 | 66.2 |
+| 20 | [NimahMasuud/agd2026-geothermal-ai](https://github.com/NimahMasuud/agd2026-geothermal-ai) | Geothermal / AI | Emerging | 1 | 0 | 2026-06-07 | 66.1 |
 | 21 | [hatimCanDoIt/PETROLOGIC-AI](https://github.com/hatimCanDoIt/PETROLOGIC-AI) | AI / Petrophysics | Emerging | 0 | 0 | 2026-07-15 | 66.0 |
-| 22 | [prakashkrish-DataGeek/AI-Petrovision](https://github.com/prakashkrish-DataGeek/AI-Petrovision) | AI / Petrophysics | Emerging | 1 | 0 | 2026-05-20 | 65.9 |
-| 23 | [UsmanHWU/CrewAI_Reservoir](https://github.com/UsmanHWU/CrewAI_Reservoir) | AI / Reservoir | Emerging | 0 | 0 | 2026-06-08 | 65.4 |
+| 22 | [prakashkrish-DataGeek/AI-Petrovision](https://github.com/prakashkrish-DataGeek/AI-Petrovision) | AI / Petrophysics | Emerging | 1 | 0 | 2026-05-20 | 65.8 |
+| 23 | [UsmanHWU/CrewAI_Reservoir](https://github.com/UsmanHWU/CrewAI_Reservoir) | AI / Reservoir | Emerging | 0 | 0 | 2026-06-08 | 65.3 |
 | 24 | [olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network](https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network) | Seismic / AI | Research | 51 | 30 | 2021-10-28 | 65.1 |
 | 25 | [AmirMardan/paper_lowFequencyExtrapolation](https://github.com/AmirMardan/paper_lowFequencyExtrapolation) | Seismic / AI | Research | 2 | 0 | 2025-09-11 | 65.0 |
 | 26 | [danielscholl/osdu-agent](https://github.com/danielscholl/osdu-agent) | AI / OSDU | Emerging | 0 | 1 | 2026-03-16 | 64.9 |
@@ -41,14 +41,14 @@ Domain-specific AI agents, MCP tools, RAG systems and engineering copilots.
 | 35 | [ezygeo-ai/3D-Seismic-Attribute](https://github.com/ezygeo-ai/3D-Seismic-Attribute) | Seismic / AI | Research | 23 | 9 | 2020-06-20 | 62.9 |
 | 36 | [Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN](https://github.com/Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN) | Petrophysics / AI | Research | 21 | 10 | 2021-11-10 | 62.9 |
 | 37 | [Ashutos0762/AI-Reservoir-Property-Estimation](https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation) | Reservoir / AI | Emerging | 1 | 0 | 2025-11-10 | 62.7 |
-| 38 | [SanmTex/AI-driven-Petrophysics-Workflow](https://github.com/SanmTex/AI-driven-Petrophysics-Workflow) | Petrophysics / AI | Emerging | 0 | 0 | 2025-11-13 | 62.0 |
+| 38 | [SanmTex/AI-driven-Petrophysics-Workflow](https://github.com/SanmTex/AI-driven-Petrophysics-Workflow) | Petrophysics / AI | Emerging | 0 | 0 | 2025-11-13 | 61.9 |
 | 39 | [AadeshSalecha/geothermal-green-ai-hackathon](https://github.com/AadeshSalecha/geothermal-green-ai-hackathon) | Geothermal / AI | Emerging | 0 | 0 | 2025-10-26 | 61.6 |
 | 40 | [MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs](https://github.com/MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs) | Petrophysics / AI | Research | 12 | 3 | 2020-08-13 | 61.5 |
 | 41 | [yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant](https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant) | AI / Geophysics | Emerging | 0 | 1 | 2025-09-12 | 61.5 |
 | 42 | [fadhilazz/geo_ai_v3](https://github.com/fadhilazz/geo_ai_v3) | Geothermal / AI | Emerging | 0 | 0 | 2025-08-26 | 61.0 |
-| 43 | [MJRobillard/salton_trough_geothermal_ai](https://github.com/MJRobillard/salton_trough_geothermal_ai) | Geothermal / AI | Emerging | 0 | 0 | 2025-08-07 | 60.4 |
-| 44 | [DivyyaM/AI-BasedPermeability-Prediction](https://github.com/DivyyaM/AI-BasedPermeability-Prediction) | Petrophysics / AI | Emerging | 2 | 0 | 2025-04-21 | 59.9 |
-| 45 | [Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models](https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models) | Geothermal / AI | Emerging | 1 | 0 | 2025-05-23 | 59.9 |
+| 43 | [MJRobillard/salton_trough_geothermal_ai](https://github.com/MJRobillard/salton_trough_geothermal_ai) | Geothermal / AI | Emerging | 0 | 0 | 2025-08-07 | 60.3 |
+| 44 | [Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models](https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models) | Geothermal / AI | Emerging | 1 | 0 | 2025-05-23 | 59.9 |
+| 45 | [DivyyaM/AI-BasedPermeability-Prediction](https://github.com/DivyyaM/AI-BasedPermeability-Prediction) | Petrophysics / AI | Emerging | 2 | 0 | 2025-04-21 | 59.8 |
 | 46 | [AyaAlahdl/Seismic2Velocity_Submission_Pipeline](https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline) | Seismic / AI | Emerging | 0 | 0 | 2025-06-04 | 59.3 |
 | 47 | [lijingwang/DataScienceForGeosciences](https://github.com/lijingwang/DataScienceForGeosciences) | Geoscience / AI | Reference | 54 | 23 | 2023-06-29 | 54.8 |
 

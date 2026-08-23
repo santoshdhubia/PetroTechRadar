@@ -30,8 +30,8 @@ Seismic imaging, FWI, inversion, data and geophysical tools.
 | 24 | [13262233692/015-seismic-fwi-engine](https://github.com/13262233692/015-seismic-fwi-engine) | Seismic | Emerging | 0 | 0 | 2026-06-17 | 65.5 |
 | 25 | [olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network](https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network) | Seismic / AI | Research | 51 | 30 | 2021-10-28 | 65.1 |
 | 26 | [AmirMardan/paper_lowFequencyExtrapolation](https://github.com/AmirMardan/paper_lowFequencyExtrapolation) | Seismic / AI | Research | 2 | 0 | 2025-09-11 | 65.0 |
-| 27 | [bshin/fd-atcfwi](https://github.com/bshin/fd-atcfwi) | Seismic | Research | 3 | 1 | 2025-07-03 | 64.8 |
-| 28 | [LukasMosser/stochastic_seismic_waveform_inversion](https://github.com/LukasMosser/stochastic_seismic_waveform_inversion) | Seismic | Research | 57 | 16 | 2019-12-09 | 64.7 |
+| 27 | [LukasMosser/stochastic_seismic_waveform_inversion](https://github.com/LukasMosser/stochastic_seismic_waveform_inversion) | Seismic | Research | 57 | 16 | 2019-12-09 | 64.7 |
+| 28 | [bshin/fd-atcfwi](https://github.com/bshin/fd-atcfwi) | Seismic | Research | 3 | 1 | 2025-07-03 | 64.7 |
 | 29 | [swag-kaust/ASOFI3D](https://github.com/swag-kaust/ASOFI3D) | Seismic | Research | 36 | 14 | 2019-04-03 | 64.3 |
 | 30 | [groupeLIAMG/bh_tomo](https://github.com/groupeLIAMG/bh_tomo) | Geophysics | Research | 37 | 21 | 2019-12-08 | 64.1 |
 | 31 | [LukasMosser/SNIST](https://github.com/LukasMosser/SNIST) | Seismic / AI | Research | 48 | 6 | 2024-07-25 | 63.8 |
