@@ -1,0 +1,3 @@
+repository,url,domain,focus,tier,stars,forks,open_issues,watchers,language,license,created_at,pushed_at,archived,size_kb,age_months,stars_per_month,github_activity_score,petrotech_radar_score,metrics_status,last_verified
+OpendTect/OpendTect,https://github.com/OpendTect/OpendTect,Seismic / Interpretation,Open-source seismic interpretation platform,Core,,,,,,,,,,,,,,Pending refresh,
+OpendTect/odpy,https://github.com/OpendTect/odpy,Seismic / Data,Python integration and data access for OpendTect,Core,,,,,,,,,,,,,,Pending refresh,
