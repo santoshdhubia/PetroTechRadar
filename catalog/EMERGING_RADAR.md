@@ -4,7 +4,7 @@ New AI, agentic, MCP, LLM and rapid-development petroleum/subsurface projects.
 
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
-| 1 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 9 | 15 | 2026-08-13 | 72.1 |
+| 1 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 9 | 15 | 2026-08-13 | 72.0 |
 | 2 | [gabrielserrao/Claude-for-reservoir-engineering](https://github.com/gabrielserrao/Claude-for-reservoir-engineering) | gabrielserrao | AI / Reservoir | Emerging | 36 | 5 | 2026-05-21 | 70.7 |
 | 3 | [gabrielserrao/pyrestoolbox-mcp](https://github.com/gabrielserrao/pyrestoolbox-mcp) | gabrielserrao | AI / Reservoir | Emerging | 44 | 17 | 2026-03-11 | 70.6 |
 | 4 | [danielscholl-osdu/osdu-mcp-server](https://github.com/danielscholl-osdu/osdu-mcp-server) | danielscholl-osdu | AI / OSDU | Emerging | 6 | 7 | 2026-08-03 | 70.6 |

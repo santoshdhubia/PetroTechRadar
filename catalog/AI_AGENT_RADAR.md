@@ -10,7 +10,7 @@ Domain-specific AI agents, MCP tools, RAG systems and engineering copilots.
 | 4 | [GeoscienceAustralia/uncover-ml](https://github.com/GeoscienceAustralia/uncover-ml) | GeoscienceAustralia | Geoscience / AI | Research | 33 | 22 | 2026-06-23 | 75.9 |
 | 5 | [DIG-Kaust/MLgeoscience](https://github.com/DIG-Kaust/MLgeoscience) | DIG-Kaust | Geoscience / AI | Research | 99 | 39 | 2025-12-30 | 73.8 |
 | 6 | [NVIDIA/earth2studio](https://github.com/NVIDIA/earth2studio) | NVIDIA | Earth Science / AI | Reference | 1,090 | 247 | 2026-08-22 | 73.0 |
-| 7 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 9 | 15 | 2026-08-13 | 72.1 |
+| 7 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 9 | 15 | 2026-08-13 | 72.0 |
 | 8 | [gabrielserrao/Claude-for-reservoir-engineering](https://github.com/gabrielserrao/Claude-for-reservoir-engineering) | gabrielserrao | AI / Reservoir | Emerging | 36 | 5 | 2026-05-21 | 70.7 |
 | 9 | [gabrielserrao/pyrestoolbox-mcp](https://github.com/gabrielserrao/pyrestoolbox-mcp) | gabrielserrao | AI / Reservoir | Emerging | 44 | 17 | 2026-03-11 | 70.6 |
 | 10 | [danielscholl-osdu/osdu-mcp-server](https://github.com/danielscholl-osdu/osdu-mcp-server) | danielscholl-osdu | AI / OSDU | Emerging | 6 | 7 | 2026-08-03 | 70.6 |
