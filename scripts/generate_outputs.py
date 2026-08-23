@@ -13,11 +13,25 @@ CATALOGS=[
 DATA=ROOT/"docs"/"data"; DATA.mkdir(parents=True,exist_ok=True)
 
 ORG_MAP={
-    "equinor":"Equinor","opendtect":"OpendTect","seequentevo":"Seequent",
-    "bp":"bp","sede-open":"Shell / SEDE","schlumberger":"SLB",
-    "azure":"Microsoft / Azure","microsoft":"Microsoft / Azure","nvidia":"NVIDIA",
-    "opm":"OPM","agilescientific":"Agile Scientific","geos-dev":"GEOS Consortium",
-    "natlabrockies":"National Lab Rockies"
+    "equinor":"Equinor",
+    "opendtect":"OpendTect",
+    "seequentevo":"Seequent",
+    "bp":"bp",
+    "sede-open":"Shell / SEDE",
+    "schlumberger":"SLB",
+    "azure":"Microsoft / Azure",
+    "microsoft":"Microsoft / Azure",
+    "nvidia":"NVIDIA",
+    "opm":"OPM",
+    "agilescientific":"Agile Scientific",
+    "geos-dev":"GEOS Consortium",
+    "natlabrockies":"National Lab Rockies",
+    "simpeg":"SimPEG",
+    "pylops":"PyLops",
+    "gempy-project":"GemPy",
+    "loop3d":"Loop3D",
+    "gimli-org":"pyGIMLi",
+    "kinverarity1":"lasio",
 }
 
 def n(v):
@@ -36,7 +50,6 @@ def organization_for(r):
     owner=(r.get("repository") or "").split("/",1)[0]
     return ORG_MAP.get(owner.lower(),owner or "Community")
 
-# Combine all curated catalogues, de-duplicating by repository.
 combined={}
 for catalog in CATALOGS:
     if not catalog.exists():
@@ -45,7 +58,6 @@ for catalog in CATALOGS:
         for src in csv.DictReader(f):
             repo=(src.get("repository") or "").strip()
             if not repo: continue
-            # Main catalogue wins if a duplicate exists there; otherwise first occurrence wins.
             if repo.lower() not in combined:
                 combined[repo.lower()]=dict(src)
 
