@@ -50,6 +50,14 @@ def organization_for(r):
     owner=(r.get("repository") or "").split("/",1)[0]
     return ORG_MAP.get(owner.lower(),owner or "Community")
 
+def replace_block(text,start_marker,end_marker,new_body):
+    start=text.find(start_marker)
+    end=text.find(end_marker)
+    if start<0 or end<0 or end<start:
+        return text,False
+    end+=len(end_marker)
+    return text[:start]+start_marker+"\n"+new_body.rstrip()+"\n"+end_marker+text[end:],True
+
 combined={}
 for catalog in CATALOGS:
     if not catalog.exists():
@@ -125,10 +133,64 @@ domains=Counter((r.get("domain") or "").split(" / ")[0] for r in rows if r.get("
 organizations=Counter(r.get("organization","") for r in rows if r.get("organization"))
 dates=[r.get("last_verified") for r in rows if r.get("last_verified")]
 
-(DATA/"stats.json").write_text(json.dumps({
+stats={
     "repository_count":len(rows),
     "tiers":dict(tiers),
     "domains":dict(domains),
     "organizations":dict(organizations),
     "last_verified":max(dates) if dates else ""
-},indent=2),encoding="utf-8")
+}
+(DATA/"stats.json").write_text(json.dumps(stats,indent=2),encoding="utf-8")
+
+# Keep README statistics synchronized with generated catalogue data.
+readme_path=ROOT/"README.md"
+if readme_path.exists():
+    text=readme_path.read_text(encoding="utf-8")
+    papers_count=0
+    papers_path=DATA/"papers.json"
+    if papers_path.exists():
+        try:
+            p=json.loads(papers_path.read_text(encoding="utf-8"))
+            papers_count=len(p.get("papers",[]))
+        except Exception:
+            papers_count=0
+
+    headline=(
+        f"**{len(rows)} curated repositories · {papers_count} Papers with Code · live GitHub metrics · "
+        "citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · "
+        "Reservoir · Drilling · OSDU · Geothermal**"
+    )
+    snapshot="\n".join([
+        "| Metric | Current live radar |",
+        "|---|---:|",
+        f"| **Repositories tracked** | **{len(rows)}** |",
+        f"| **Core tools** | **{tiers.get('Core',0)}** |",
+        f"| **Emerging / AI / vibe-coded** | **{tiers.get('Emerging',0)}** |",
+        f"| **Research repositories** | **{tiers.get('Research',0)}** |",
+        f"| **Reference resources** | **{tiers.get('Reference',0)}** |",
+        f"| **Papers with Code** | **{papers_count}** |",
+        "| **Data refresh** | **Weekly** |",
+        "",
+        "_This block is generated automatically from the live catalogue and paper datasets._"
+    ])
+
+    # One-time conversion of the legacy hard-coded README to managed blocks.
+    legacy_head="**115 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**"
+    if "<!-- RADAR-HEADLINE:START -->" not in text and legacy_head in text:
+        text=text.replace(legacy_head,"<!-- RADAR-HEADLINE:START -->\n"+headline+"\n<!-- RADAR-HEADLINE:END -->",1)
+
+    legacy_snapshot="""| Metric | Current V1 |
+|---|---:|
+| **Repositories tracked** | **115** |
+| **Core tools** | **32** |
+| **Emerging / AI / vibe-coded** | **43** |
+| **Research repositories** | **28** |
+| **Reference resources** | **12** |
+| **Papers with Code** | **33** |
+| **Data refresh** | **Weekly** |"""
+    if "<!-- RADAR-STATS:START -->" not in text and legacy_snapshot in text:
+        text=text.replace(legacy_snapshot,"<!-- RADAR-STATS:START -->\n"+snapshot+"\n<!-- RADAR-STATS:END -->",1)
+
+    text,_=replace_block(text,"<!-- RADAR-HEADLINE:START -->","<!-- RADAR-HEADLINE:END -->",headline)
+    text,_=replace_block(text,"<!-- RADAR-STATS:START -->","<!-- RADAR-STATS:END -->",snapshot)
+    readme_path.write_text(text,encoding="utf-8")
