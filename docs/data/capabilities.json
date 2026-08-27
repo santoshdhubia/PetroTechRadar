@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-08-27T06:24:28.229063+00:00",
+  "mode": "test",
+  "repository_count": 10,
+  "errors": [],
+  "repositories": [
+    {
+      "repository": "equinor/segyio",
+      "url": "https://github.com/equinor/segyio",
+      "language": "Python",
+      "description": "Fast Python library for SEGY files.",
+      "default_branch": "main",
+      "capabilities": [
+        "SEG-Y I/O",
+        "seismic processing",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "public_api_count": 233
+    },
+    {
+      "repository": "trhallam/segysak",
+      "url": "https://github.com/trhallam/segysak",
+      "language": "Python",
+      "description": "SEGY Swiss Army Knife for Seismic Data",
+      "default_branch": "main",
+      "capabilities": [
+        "SEG-Y I/O",
+        "seismic processing",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "public_api_count": 151
+    },
+    {
+      "repository": "PyLops/pylops",
+      "url": "https://github.com/PyLops/pylops",
+      "language": "Python",
+      "description": "PyLops – A Linear-Operator Library for Python",
+      "default_branch": "dev",
+      "capabilities": [
+        "inversion"
+      ],
+      "public_api_count": 10
+    },
+    {
+      "repository": "simpeg/simpeg",
+      "url": "https://github.com/simpeg/simpeg",
+      "language": "Python",
+      "description": "Simulation and Parameter Estimation in Geophysics  -  A python package for simulation and gradient based parameter estimation in the context of geophysical applications.",
+      "default_branch": "main",
+      "capabilities": [
+        "inversion",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "public_api_count": 61
+    },
+    {
+      "repository": "devitocodes/devito",
+      "url": "https://github.com/devitocodes/devito",
+      "language": "Python",
+      "description": "DSL and compiler framework for automated finite-differences and stencil computation",
+      "default_branch": "main",
+      "capabilities": [
+        "inversion",
+        "grids and surfaces"
+      ],
+      "public_api_count": 316
+    },
+    {
+      "repository": "ar4/deepwave",
+      "url": "https://github.com/ar4/deepwave",
+      "language": "Python",
+      "description": "Wave propagation modules for PyTorch.",
+      "default_branch": "master",
+      "capabilities": [
+        "seismic processing",
+        "inversion",
+        "FWI",
+        "wave simulation",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "public_api_count": 221
+    },
+    {
+      "repository": "OPM/opm-simulators",
+      "url": "https://github.com/OPM/opm-simulators",
+      "language": "C++",
+      "description": "OPM Flow and experimental simulators, including components such as well models etc.",
+      "default_branch": "master",
+      "capabilities": [
+        "grids and surfaces"
+      ],
+      "public_api_count": 7
+    },
+    {
+      "repository": "OPM/ResInsight",
+      "url": "https://github.com/OPM/ResInsight",
+      "language": "C++",
+      "description": "3D viewer and post processing of reservoir models",
+      "default_branch": "dev",
+      "capabilities": [
+        "seismic processing",
+        "reservoir simulation",
+        "geomechanics",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "public_api_count": 209
+    },
+    {
+      "repository": "GEOS-DEV/GEOS",
+      "url": "https://github.com/GEOS-DEV/GEOS",
+      "language": "C++",
+      "description": "GEOS Simulation Framework",
+      "default_branch": "develop",
+      "capabilities": [
+        "geomechanics",
+        "grids and surfaces"
+      ],
+      "public_api_count": 269
+    },
+    {
+      "repository": "equinor/xtgeo",
+      "url": "https://github.com/equinor/xtgeo",
+      "language": "Python",
+      "description": "XTGeo Python class library for subsurface Surfaces, Cubes, Wells, Grids, Points, etc",
+      "default_branch": "main",
+      "capabilities": [
+        "SEG-Y I/O",
+        "seismic processing",
+        "grids and surfaces",
+        "well data"
+      ],
+      "public_api_count": 342
+    }
+  ]
+}
