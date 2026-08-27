@@ -1,0 +1,52 @@
+name: Build capability index
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Index mode"
+        required: true
+        default: "test"
+        type: choice
+        options:
+          - test
+          - all
+  schedule:
+    - cron: "35 3 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build function and capability index
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CAPABILITY_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'all' }}
+        run: python scripts/build_capability_index.py
+      - name: Show summary
+        run: |
+          python - <<'PY'
+          import json
+          c=json.load(open('docs/data/capabilities.json', encoding='utf-8'))
+          f=json.load(open('docs/data/functions.json', encoding='utf-8'))
+          print('Mode:', c['mode'])
+          print('Repositories:', c['repository_count'])
+          print('Public API symbols:', f['function_count'])
+          print('Errors:', len(c['errors']))
+          for e in c['errors']:
+              print(' -', e['repository'], e['error'])
+          PY
+      - name: Commit generated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/capabilities.json docs/data/functions.json
+          git diff --cached --quiet || git commit -m "Refresh repository capability index"
+          git push
