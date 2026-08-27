@@ -1,347 +1,147 @@
 #!/usr/bin/env python3
-"""Build a quality-ranked public API/capability index for PetroTechRadar.
-
-The index is intentionally selective: it prefers exported/documented APIs,
-labels API quality, suppresses obvious internal helpers, and separates primary
-capabilities from broader secondary associations.
-"""
+"""Build a quality-ranked public API/capability index for PetroTechRadar."""
 from __future__ import annotations
-
-import ast
-import json
-import os
-import re
-import time
-import urllib.parse
-import urllib.request
+import ast, json, os, re, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "docs" / "data"
-TOKEN = os.getenv("GITHUB_TOKEN", "")
-MODE = os.getenv("CAPABILITY_MODE", "test")
-
-TEST_REPOS = [
-    "equinor/segyio", "trhallam/segysak", "PyLops/pylops", "simpeg/simpeg",
-    "devitocodes/devito", "ar4/deepwave", "OPM/opm-simulators",
-    "OPM/ResInsight", "GEOS-DEV/GEOS", "equinor/xtgeo",
-]
-
-MAJOR_ORGS = {
-    "Equinor", "OPM", "NVIDIA", "GEOS Consortium", "SimPEG", "PyLops",
-    "GemPy", "pyGIMLi", "Loop3D", "Devito", "OpendTect", "SEG-Y",
-}
-
-CAPABILITY_TERMS = {
-    "SEG-Y I/O": ["seg-y", "segy", "trace header", "binary header"],
-    "seismic processing": ["seismic processing", "filtering", "stacking", "migration"],
-    "inversion": ["inversion", "inverse problem", "adjoint", "gradient based"],
-    "FWI": ["full waveform inversion", "fwi"],
-    "wave simulation": ["wave equation", "wave propagation", "acoustic", "elastic wave"],
-    "reservoir simulation": ["reservoir simulation", "black oil", "compositional", "flow simulator"],
-    "geomechanics": ["geomechanics", "poroelastic", "rock mechanics"],
-    "geological modelling": ["geological model", "structural model", "implicit modelling"],
-    "grids and surfaces": ["grid model", "surface model", "corner point grid", "mesh"],
-    "well data": ["well log", "well data", "trajectory", "well path"],
-    "visualization": ["visualization", "3d viewer", "interactive viewer"],
-    "data assimilation": ["data assimilation", "ensemble smoother", "history matching"],
-}
-
-GENERIC_LOW_VALUE = {
-    "keys", "values", "items", "update", "close", "flush", "reload", "sort",
-    "copy", "get", "set", "read", "write", "run", "main", "size", "begin", "end",
-}
-
-
-def api(url: str):
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "PetroTechRadar-CapabilityIndexer/0.2"}
-    if TOKEN:
-        headers["Authorization"] = f"Bearer {TOKEN}"
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode("utf-8"))
-
-
-def raw(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "PetroTechRadar-CapabilityIndexer/0.2"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", errors="replace")
-
-
-def get_repo_meta(repo: str):
-    return api(f"https://api.github.com/repos/{repo}")
-
-
-def get_tree(repo: str, branch: str):
-    d = api(f"https://api.github.com/repos/{repo}/git/trees/{urllib.parse.quote(branch, safe='')}?recursive=1")
-    return d.get("tree", [])
-
-
-def get_readme(repo: str) -> str:
-    try:
-        d = api(f"https://api.github.com/repos/{repo}/readme")
-        return raw(d["download_url"]) if d.get("download_url") else ""
-    except Exception:
-        return ""
-
-
-def module_name(path: str) -> str:
-    p = path.replace("/", ".")
-    for prefix in ("src.", "python."):
-        if p.startswith(prefix):
-            p = p[len(prefix):]
-    return re.sub(r"\.(py|pyi)$", "", p).replace(".__init__", "")
-
-
-def py_signature(node) -> str:
-    args = []
-    a = node.args
-    positional = list(a.posonlyargs) + list(a.args)
-    defaults_pad = [None] * (len(positional) - len(a.defaults)) + list(a.defaults)
-    for arg, default in zip(positional, defaults_pad):
-        s = arg.arg
-        if arg.annotation:
-            try: s += ": " + ast.unparse(arg.annotation)
-            except Exception: pass
-        if default is not None:
-            try: s += "=" + ast.unparse(default)
-            except Exception: s += "=..."
-        args.append(s)
-    if a.vararg: args.append("*" + a.vararg.arg)
-    for arg, default in zip(a.kwonlyargs, a.kw_defaults):
-        s = arg.arg
-        if default is not None:
-            try: s += "=" + ast.unparse(default)
-            except Exception: s += "=..."
-        args.append(s)
-    if a.kwarg: args.append("**" + a.kwarg.arg)
-    return f"{node.name}({', '.join(args)})"
-
-
-def entry(name, kind, signature, description, path):
-    return {
-        "name": name,
-        "kind": kind,
-        "signature": signature,
-        "description": description.strip()[:500],
-        "source_file": path,
-    }
-
-
-def extract_python(path: str, source: str):
-    out = []
-    try:
-        tree = ast.parse(source)
-    except SyntaxError:
-        return out
-    mod = module_name(path)
-    for node in tree.body:
-        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)) and not node.name.startswith("_"):
-            doc = ast.get_docstring(node) or ""
-            out.append(entry(f"{mod}.{node.name}" if mod else node.name, "function", py_signature(node), doc.split("\n\n")[0], path))
-        elif isinstance(node, ast.ClassDef) and not node.name.startswith("_"):
-            doc = ast.get_docstring(node) or ""
-            cname = f"{mod}.{node.name}" if mod else node.name
-            out.append(entry(cname, "class", node.name, doc.split("\n\n")[0], path))
-            for child in node.body:
-                if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef)) and not child.name.startswith("_"):
-                    cdoc = ast.get_docstring(child) or ""
-                    out.append(entry(f"{cname}.{child.name}", "method", py_signature(child), cdoc.split("\n\n")[0], path))
-    return out
-
-
-def extract_cpp(path: str, source: str):
-    out = []
-    rx = re.compile(r"^[ \t]*(?:inline\s+|static\s+|virtual\s+|constexpr\s+)*([\w:<>,*&\s]+?)\s+([A-Za-z_]\w*)\s*\(([^;{}]*)\)\s*(?:const\s*)?(?:noexcept\s*)?;", re.M)
-    for _, name, args in rx.findall(source):
-        if name.startswith("_") or name in {"if", "for", "while", "switch"}: continue
-        out.append(entry(name, "function/declaration", f"{name}({re.sub(r'\s+', ' ', args).strip()})", "", path))
-    return out[:300]
-
-
-def extract_java(path: str, source: str):
-    out = []
-    rx = re.compile(r"public\s+(?:static\s+)?(?:final\s+)?[\w<>\[\], ?]+\s+([A-Za-z_]\w*)\s*\(([^)]*)\)")
-    for name, args in rx.findall(source):
-        out.append(entry(name, "method", f"{name}({re.sub(r'\s+', ' ', args).strip()})", "", path))
-    return out[:300]
-
-
-def extract_ts(path: str, source: str):
-    out = []
-    rx = re.compile(r"export\s+(?:async\s+)?(?:function|class)\s+([A-Za-z_]\w*)\s*(?:\(([^)]*)\))?")
-    for name, args in rx.findall(source):
-        sig = f"{name}({re.sub(r'\s+', ' ', args).strip()})" if args else name
-        out.append(entry(name, "export", sig, "", path))
-    return out[:300]
-
-
-def simple_name(symbol: str) -> str:
-    return symbol.rsplit(".", 1)[-1]
-
-
-def classify_symbol(f: dict, readme_low: str) -> tuple[str, int, list[str]]:
-    """Return (api_level, quality_score, evidence)."""
-    evidence = []
-    score = 0
-    desc = (f.get("description") or "").strip()
-    name = f["name"]
-    short = simple_name(name)
-    path = f.get("source_file", "").lower()
-
-    if desc:
-        score += 3
-        evidence.append("docstring/documentation")
-    if len(desc) >= 40:
-        score += 1
-    # Exact-ish symbol mention in README is a strong public-use signal.
-    if len(short) >= 4 and re.search(rf"(?<!\w){re.escape(short.lower())}(?!\w)", readme_low):
-        score += 4
-        evidence.append("mentioned in README")
-    if path.endswith("/__init__.py") or path.endswith("/index.ts") or path.endswith("/index.js") or "/api/" in path:
-        score += 3
-        evidence.append("export/API entrypoint")
-    if "/include/" in path:
-        score += 2
-        evidence.append("public header")
-    if "internal use" in desc.lower() or "/internal/" in path or "/detail/" in path:
-        score -= 5
-        evidence.append("internal hint")
-    if short.lower() in GENERIC_LOW_VALUE and not desc and "mentioned in README" not in evidence:
-        score -= 3
-        evidence.append("generic undocumented method")
-
-    if score >= 6:
-        return "primary_public", score, evidence
-    if score >= 2:
-        return "documented_public", score, evidence
-    return "internal_or_low_value", score, evidence
-
-
-def infer_capabilities(description: str, readme: str):
-    desc_low = (description or "").lower()
-    readme_low = readme.lower()
-    primary, secondary, scores = [], [], {}
-    for cap, terms in CAPABILITY_TERMS.items():
-        desc_hits = sum(1 for t in terms if t in desc_low)
-        readme_hits = sum(readme_low.count(t) for t in terms)
-        score = desc_hits * 5 + min(readme_hits, 5)
-        scores[cap] = score
-        if desc_hits or readme_hits >= 2:
-            primary.append(cap)
-        elif readme_hits == 1:
-            secondary.append(cap)
-    return primary, secondary, {k: v for k, v in scores.items() if v > 0}
-
-
-def candidate_files(tree):
-    files = [x["path"] for x in tree if x.get("type") == "blob" and x.get("size", 0) <= 250_000]
-    selected = []
-    for p in files:
-        low = p.lower(); base = low.rsplit("/", 1)[-1]
-        if any(part in low for part in ("/test/", "/tests/", "/example/", "/examples/", "/vendor/", "/third_party/", "/build/")):
-            continue
-        if p.endswith((".py", ".pyi")) and ("/__init__.py" in low or "/api" in low or "/io" in low or "/tools" in low or "/core" in low or low.count("/") <= 3):
-            selected.append(p)
-        elif p.endswith((".h", ".hpp", ".hh")) and ("include/" in low or "/api" in low):
-            selected.append(p)
-        elif p.endswith(".java") and ("src/main/" in low or low.count("/") <= 4):
-            selected.append(p)
-        elif p.endswith((".ts", ".tsx", ".js")) and ("src/" in low and ("index." in base or "api" in low)):
-            selected.append(p)
-    return selected[:50]
-
-
-def index_repo(repo: str):
-    print(f"Indexing {repo}", flush=True)
-    meta = get_repo_meta(repo)
-    branch = meta.get("default_branch", "main")
-    tree = get_tree(repo, branch)
-    readme = get_readme(repo)
-    readme_low = readme.lower()
-    funcs = []
-    for path in candidate_files(tree):
-        url = f"https://raw.githubusercontent.com/{repo}/{urllib.parse.quote(branch, safe='')}/{urllib.parse.quote(path, safe='/')}"
-        try:
-            src = raw(url)
-        except Exception as e:
-            print(f"  skip {path}: {e}")
-            continue
-        if path.endswith((".py", ".pyi")): funcs.extend(extract_python(path, src))
-        elif path.endswith((".h", ".hpp", ".hh")): funcs.extend(extract_cpp(path, src))
-        elif path.endswith(".java"): funcs.extend(extract_java(path, src))
-        elif path.endswith((".ts", ".tsx", ".js")): funcs.extend(extract_ts(path, src))
-        time.sleep(0.02)
-
-    dedup = {}
-    for f in funcs:
-        key = (f["name"], f.get("signature", ""))
-        if key not in dedup or (not dedup[key].get("description") and f.get("description")):
-            dedup[key] = f
-
-    classified = []
-    level_counts = {"primary_public": 0, "documented_public": 0, "internal_or_low_value": 0}
-    for f in dedup.values():
-        level, score, evidence = classify_symbol(f, readme_low)
-        f["api_level"] = level
-        f["quality_score"] = score
-        f["evidence"] = evidence
-        level_counts[level] += 1
-        classified.append(f)
-
-    # Publish only usable API entries; low-value/internal entries remain summarized in counts.
-    usable = [f for f in classified if f["api_level"] != "internal_or_low_value"]
-    usable.sort(key=lambda f: (-f["quality_score"], 0 if f.get("description") else 1, f["name"]))
-    usable = usable[:500]
-
-    primary_caps, secondary_caps, cap_scores = infer_capabilities(meta.get("description") or "", readme[:150_000])
-    return {
-        "repository": repo,
-        "url": meta.get("html_url"),
-        "language": meta.get("language"),
-        "description": meta.get("description"),
-        "default_branch": branch,
-        "primary_capabilities": primary_caps,
-        "secondary_capabilities": secondary_caps,
-        "capability_scores": cap_scores,
-        "public_api_count": len(usable),
-        "api_level_counts": level_counts,
-        "functions": usable,
-    }
-
-
-def choose_repos():
-    if MODE == "test":
-        return TEST_REPOS
-    radar = json.loads((OUT_DIR / "radar.json").read_text(encoding="utf-8"))
-    return sorted({r["repository"] for r in radar.get("repositories", []) if r.get("tier") == "Core" and r.get("organization") in MAJOR_ORGS})
-
-
+ROOT=Path(__file__).resolve().parents[1]; OUT_DIR=ROOT/'docs'/'data'
+TOKEN=os.getenv('GITHUB_TOKEN',''); MODE=os.getenv('CAPABILITY_MODE','test')
+TEST_REPOS=['equinor/segyio','trhallam/segysak','PyLops/pylops','simpeg/simpeg','devitocodes/devito','ar4/deepwave','OPM/opm-simulators','OPM/ResInsight','GEOS-DEV/GEOS','equinor/xtgeo']
+MAJOR_ORGS={'Equinor','OPM','NVIDIA','GEOS Consortium','SimPEG','PyLops','GemPy','pyGIMLi','Loop3D','Devito','OpendTect','SEG-Y'}
+CAPABILITY_TERMS={
+'SEG-Y I/O':['seg-y','segy','trace header','binary header'],'seismic processing':['seismic processing','filtering','stacking','migration'],
+'inversion':['inversion','inverse problem','adjoint','gradient based'],'FWI':['full waveform inversion','fwi'],'wave simulation':['wave equation','wave propagation','acoustic','elastic wave'],
+'reservoir simulation':['reservoir simulation','black oil','compositional','flow simulator'],'geomechanics':['geomechanics','poroelastic','rock mechanics'],
+'geological modelling':['geological model','structural model','implicit modelling'],'grids and surfaces':['grid model','surface model','corner point grid','mesh'],
+'well data':['well log','well data','trajectory','well path'],'visualization':['visualization','3d viewer','interactive viewer'],'data assimilation':['data assimilation','ensemble smoother','history matching']}
+GENERIC={'keys','values','items','update','close','flush','reload','sort','copy','get','set','read','write','run','main','size','begin','end'}
+def api(url):
+ h={'Accept':'application/vnd.github+json','User-Agent':'PetroTechRadar-CapabilityIndexer/0.3'}
+ if TOKEN:h['Authorization']=f'Bearer {TOKEN}'
+ with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=30) as r:return json.loads(r.read().decode())
+def raw(url):
+ with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'PetroTechRadar-CapabilityIndexer/0.3'}),timeout=30) as r:return r.read().decode('utf-8',errors='replace')
+def meta(repo):return api(f'https://api.github.com/repos/{repo}')
+def tree(repo,branch):return api(f"https://api.github.com/repos/{repo}/git/trees/{urllib.parse.quote(branch,safe='')}?recursive=1").get('tree',[])
+def readme(repo):
+ try:
+  d=api(f'https://api.github.com/repos/{repo}/readme'); return raw(d['download_url']) if d.get('download_url') else ''
+ except Exception:return ''
+def modname(p):
+ s=p.replace('/','.')
+ for x in ('src.','python.'): s=s[len(x):] if s.startswith(x) else s
+ return re.sub(r'\.(py|pyi)$','',s).replace('.__init__','')
+def sig(n):
+ a=n.args; pos=list(a.posonlyargs)+list(a.args); defs=[None]*(len(pos)-len(a.defaults))+list(a.defaults); out=[]
+ for x,d in zip(pos,defs):
+  z=x.arg
+  if d is not None:
+   try:z+='='+ast.unparse(d)
+   except:z+='=...'
+  out.append(z)
+ if a.vararg:out.append('*'+a.vararg.arg)
+ out += [x.arg for x in a.kwonlyargs]
+ if a.kwarg:out.append('**'+a.kwarg.arg)
+ return f"{n.name}({', '.join(out)})"
+def ent(name,kind,signature,desc,path,exported=False):return {'name':name,'kind':kind,'signature':signature,'description':desc.strip()[:500],'source_file':path,'exported':exported}
+def py_extract(path,src):
+ try:t=ast.parse(src)
+ except SyntaxError:return []
+ m=modname(path); out=[]; exports=set()
+ # __all__ and import/re-export names make package APIs visible even when implementation lives deeper.
+ for n in t.body:
+  if isinstance(n,ast.Assign) and any(isinstance(x,ast.Name) and x.id=='__all__' for x in n.targets):
+   if isinstance(n.value,(ast.List,ast.Tuple,ast.Set)):
+    exports.update(x.value for x in n.value.elts if isinstance(x,ast.Constant) and isinstance(x.value,str))
+  if path.endswith('__init__.py') and isinstance(n,(ast.ImportFrom,ast.Import)):
+   for a in n.names:
+    if not a.name.startswith('_'): exports.add(a.asname or a.name.rsplit('.',1)[-1])
+ for n in t.body:
+  if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef)) and not n.name.startswith('_'):
+   d=ast.get_docstring(n) or ''; out.append(ent(f'{m}.{n.name}' if m else n.name,'function',sig(n),d.split('\n\n')[0],path,n.name in exports or path.endswith('__init__.py')))
+  elif isinstance(n,ast.ClassDef) and not n.name.startswith('_'):
+   d=ast.get_docstring(n) or ''; cn=f'{m}.{n.name}' if m else n.name; out.append(ent(cn,'class',n.name,d.split('\n\n')[0],path,n.name in exports or path.endswith('__init__.py')))
+   for c in n.body:
+    if isinstance(c,(ast.FunctionDef,ast.AsyncFunctionDef)) and not c.name.startswith('_'):
+     d=ast.get_docstring(c) or ''; out.append(ent(f'{cn}.{c.name}','method',sig(c),d.split('\n\n')[0],path,False))
+ return out
+def cpp_extract(path,src):
+ out=[]
+ # Capture declarations and inline definitions from public/include/API headers, including templates and qualifiers.
+ rx=re.compile(r'^[ \t]*(?:template\s*<[^;{}]+>\s*)?(?:inline\s+|static\s+|virtual\s+|constexpr\s+|explicit\s+|friend\s+)*[\w:<>,*&\s]+?\s+([A-Za-z_]\w*)\s*\(([^;{}()]*(?:\([^)]*\)[^;{}()]*)*)\)\s*(?:const\s*)?(?:noexcept(?:\([^)]*\))?\s*)?(?:override\s*)?(?:;|\{)',re.M)
+ for name,args in rx.findall(src):
+  if name.startswith('_') or name in {'if','for','while','switch','return'}:continue
+  out.append(ent(name,'function/declaration',f"{name}({re.sub(r'\s+',' ',args).strip()})",'',path,True))
+ # Public class/struct types are useful callable/API anchors in C++ projects.
+ for kind,name in re.findall(r'\b(class|struct)\s+(?:\w+\s+)*([A-Za-z_]\w*)\s*(?::[^\{]+)?\{',src):
+  if not name.startswith('_'):out.append(ent(name,kind,name,'',path,True))
+ return out[:500]
+def other_extract(path,src):
+ out=[]
+ if path.endswith('.java'):
+  for n,a in re.findall(r'public\s+(?:static\s+)?(?:final\s+)?[\w<>\[\], ?]+\s+([A-Za-z_]\w*)\s*\(([^)]*)\)',src):out.append(ent(n,'method',f'{n}({a})','',path,True))
+ else:
+  for n,a in re.findall(r'export\s+(?:async\s+)?(?:function|class)\s+([A-Za-z_]\w*)\s*(?:\(([^)]*)\))?',src):out.append(ent(n,'export',f'{n}({a})' if a else n,'',path,True))
+ return out[:400]
+def classify(f,rlow):
+ d=f.get('description',''); short=f['name'].rsplit('.',1)[-1]; p=f['source_file'].lower(); score=0; ev=[]
+ if d:score+=3;ev.append('documentation')
+ if len(d)>=40:score+=1
+ if f.get('exported'):score+=5;ev.append('package/public export')
+ if len(short)>=4 and re.search(rf'(?<!\w){re.escape(short.lower())}(?!\w)',rlow):score+=4;ev.append('mentioned in README')
+ if '/include/' in p or p.startswith('include/'):score+=3;ev.append('public header')
+ if 'internal use' in d.lower() or '/internal/' in p or '/detail/' in p:score-=5;ev.append('internal hint')
+ if short.lower() in GENERIC and not d and not f.get('exported'):score-=3
+ return ('primary_public' if score>=7 else 'documented_public' if score>=3 else 'internal_or_low_value',score,ev)
+def caps(desc,r):
+ dl=(desc or '').lower(); rl=r.lower(); pri=[];sec=[];scores={}
+ for cap,terms in CAPABILITY_TERMS.items():
+  dh=sum(t in dl for t in terms); rh=sum(rl.count(t) for t in terms); sc=dh*5+min(rh,5)
+  if sc:scores[cap]=sc
+  if dh or rh>=2:pri.append(cap)
+  elif rh==1:sec.append(cap)
+ return pri,sec,scores
+def candidates(t):
+ fs=[x['path'] for x in t if x.get('type')=='blob' and x.get('size',0)<=300000]; sel=[]
+ for p in fs:
+  l=p.lower(); b=l.rsplit('/',1)[-1]
+  if any(x in l for x in ('/test/','/tests/','/examples/','/vendor/','/third_party/','/build/')):continue
+  if p.endswith(('.py','.pyi')):
+   # Include package entrypoints plus likely public operator/API modules; fixes libraries such as PyLops.
+   if '__init__.py' in l or '/api' in l or '/io' in l or '/tools' in l or '/core' in l or '/operators/' in l or '/optimization/' in l or '/basicoperators/' in l or l.count('/')<=4:sel.append(p)
+  elif p.endswith(('.h','.hpp','.hh')) and ('include/' in l or '/api' in l or l.count('/')<=4):sel.append(p)
+  elif p.endswith('.java') and ('src/main/' in l or l.count('/')<=4):sel.append(p)
+  elif p.endswith(('.ts','.tsx','.js')) and 'src/' in l and ('index.' in b or 'api' in l):sel.append(p)
+ # Higher allowance, but final ranking/caps keep output bounded.
+ return sel[:100]
+def index(repo):
+ print('Indexing',repo,flush=True); m=meta(repo); branch=m.get('default_branch','main'); tr=tree(repo,branch); rd=readme(repo); rl=rd.lower(); funcs=[]
+ for p in candidates(tr):
+  u=f"https://raw.githubusercontent.com/{repo}/{urllib.parse.quote(branch,safe='')}/{urllib.parse.quote(p,safe='/')}"
+  try:s=raw(u)
+  except Exception as e:print(' skip',p,e);continue
+  funcs += py_extract(p,s) if p.endswith(('.py','.pyi')) else cpp_extract(p,s) if p.endswith(('.h','.hpp','.hh')) else other_extract(p,s); time.sleep(.015)
+ dd={}
+ for f in funcs:
+  k=(f['name'],f.get('signature',''))
+  if k not in dd or (not dd[k].get('description') and f.get('description')):dd[k]=f
+ counts={'primary_public':0,'documented_public':0,'internal_or_low_value':0}; usable=[]
+ for f in dd.values():
+  lev,sc,ev=classify(f,rl); f['api_level']=lev;f['quality_score']=sc;f['evidence']=ev;f.pop('exported',None);counts[lev]+=1
+  if lev!='internal_or_low_value':usable.append(f)
+ usable.sort(key=lambda x:(-x['quality_score'],0 if x.get('description') else 1,x['name']))
+ # Cap per repository to prevent large frameworks dominating search results.
+ usable=usable[:300]
+ pri,sec,cs=caps(m.get('description') or '',rd[:150000])
+ return {'repository':repo,'url':m.get('html_url'),'language':m.get('language'),'description':m.get('description'),'default_branch':branch,'primary_capabilities':pri,'secondary_capabilities':sec,'capability_scores':cs,'public_api_count':len(usable),'api_level_counts':counts,'functions':usable}
+def choose():
+ if MODE=='test':return TEST_REPOS
+ r=json.loads((OUT_DIR/'radar.json').read_text(encoding='utf-8'));return sorted({x['repository'] for x in r.get('repositories',[]) if x.get('tier')=='Core' and x.get('organization') in MAJOR_ORGS})
 def main():
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    indexed, errors = [], []
-    for repo in choose_repos():
-        try:
-            indexed.append(index_repo(repo))
-        except Exception as e:
-            print(f"ERROR {repo}: {e}", flush=True)
-            errors.append({"repository": repo, "error": str(e)})
-    generated_at = datetime.now(timezone.utc).isoformat()
-    capabilities = {
-        "generated_at": generated_at, "mode": MODE, "repository_count": len(indexed),
-        "errors": errors,
-        "repositories": [{k: v for k, v in r.items() if k != "functions"} for r in indexed],
-    }
-    functions = {
-        "generated_at": generated_at, "mode": MODE, "repository_count": len(indexed),
-        "function_count": sum(len(r["functions"]) for r in indexed),
-        "repositories": [{"repository": r["repository"], "functions": r["functions"]} for r in indexed],
-    }
-    (OUT_DIR / "capabilities.json").write_text(json.dumps(capabilities, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (OUT_DIR / "functions.json").write_text(json.dumps(functions, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Indexed {len(indexed)} repos, {functions['function_count']} usable public API symbols, {len(errors)} errors")
-
-
-if __name__ == "__main__":
-    main()
+ OUT_DIR.mkdir(parents=True,exist_ok=True); indexed=[];errors=[]
+ for repo in choose():
+  try:indexed.append(index(repo))
+  except Exception as e:print('ERROR',repo,e);errors.append({'repository':repo,'error':str(e)})
+ now=datetime.now(timezone.utc).isoformat(); c={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'errors':errors,'repositories':[{k:v for k,v in x.items() if k!='functions'} for x in indexed]}; f={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'function_count':sum(len(x['functions']) for x in indexed),'repositories':[{'repository':x['repository'],'functions':x['functions']} for x in indexed]}
+ (OUT_DIR/'capabilities.json').write_text(json.dumps(c,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');(OUT_DIR/'functions.json').write_text(json.dumps(f,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');print(f"Indexed {len(indexed)} repos, {f['function_count']} usable API symbols, {len(errors)} errors")
+if __name__=='__main__':main()
