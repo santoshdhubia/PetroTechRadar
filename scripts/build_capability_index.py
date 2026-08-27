@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build a public API/capability index for PetroTechRadar repositories.
+"""Build a quality-ranked public API/capability index for PetroTechRadar.
 
-V0.1 intentionally indexes a representative test set. The extractor prefers
-public/documented APIs and avoids indexing every internal helper.
+The index is intentionally selective: it prefers exported/documented APIs,
+labels API quality, suppresses obvious internal helpers, and separates primary
+capabilities from broader secondary associations.
 """
 from __future__ import annotations
 
@@ -11,7 +12,6 @@ import json
 import os
 import re
 import time
-import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -23,20 +23,11 @@ TOKEN = os.getenv("GITHUB_TOKEN", "")
 MODE = os.getenv("CAPABILITY_MODE", "test")
 
 TEST_REPOS = [
-    "equinor/segyio",
-    "trhallam/segysak",
-    "PyLops/pylops",
-    "simpeg/simpeg",
-    "devitocodes/devito",
-    "ar4/deepwave",
-    "OPM/opm-simulators",
-    "OPM/ResInsight",
-    "GEOS-DEV/GEOS",
-    "equinor/xtgeo",
+    "equinor/segyio", "trhallam/segysak", "PyLops/pylops", "simpeg/simpeg",
+    "devitocodes/devito", "ar4/deepwave", "OPM/opm-simulators",
+    "OPM/ResInsight", "GEOS-DEV/GEOS", "equinor/xtgeo",
 ]
 
-# In all-mode we start from the live radar and target established/core repos
-# from named organizations. This can be broadened after reviewing extraction QC.
 MAJOR_ORGS = {
     "Equinor", "OPM", "NVIDIA", "GEOS Consortium", "SimPEG", "PyLops",
     "GemPy", "pyGIMLi", "Loop3D", "Devito", "OpendTect", "SEG-Y",
@@ -44,22 +35,27 @@ MAJOR_ORGS = {
 
 CAPABILITY_TERMS = {
     "SEG-Y I/O": ["seg-y", "segy", "trace header", "binary header"],
-    "seismic processing": ["seismic processing", "filter", "stack", "migration"],
-    "inversion": ["inversion", "inverse problem", "adjoint", "gradient"],
+    "seismic processing": ["seismic processing", "filtering", "stacking", "migration"],
+    "inversion": ["inversion", "inverse problem", "adjoint", "gradient based"],
     "FWI": ["full waveform inversion", "fwi"],
-    "wave simulation": ["wave equation", "wave propagation", "acoustic", "elastic"],
+    "wave simulation": ["wave equation", "wave propagation", "acoustic", "elastic wave"],
     "reservoir simulation": ["reservoir simulation", "black oil", "compositional", "flow simulator"],
-    "geomechanics": ["geomechanics", "poroelastic", "mechanics"],
+    "geomechanics": ["geomechanics", "poroelastic", "rock mechanics"],
     "geological modelling": ["geological model", "structural model", "implicit modelling"],
-    "grids and surfaces": ["grid", "surface", "mesh"],
+    "grids and surfaces": ["grid model", "surface model", "corner point grid", "mesh"],
     "well data": ["well log", "well data", "trajectory", "well path"],
-    "visualization": ["visualization", "viewer", "plot"],
+    "visualization": ["visualization", "3d viewer", "interactive viewer"],
     "data assimilation": ["data assimilation", "ensemble smoother", "history matching"],
+}
+
+GENERIC_LOW_VALUE = {
+    "keys", "values", "items", "update", "close", "flush", "reload", "sort",
+    "copy", "get", "set", "read", "write", "run", "main", "size", "begin", "end",
 }
 
 
 def api(url: str):
-    headers = {"Accept": "application/vnd.github+json", "User-Agent": "PetroTechRadar-CapabilityIndexer/0.1"}
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "PetroTechRadar-CapabilityIndexer/0.2"}
     if TOKEN:
         headers["Authorization"] = f"Bearer {TOKEN}"
     req = urllib.request.Request(url, headers=headers)
@@ -68,10 +64,7 @@ def api(url: str):
 
 
 def raw(url: str) -> str:
-    headers = {"User-Agent": "PetroTechRadar-CapabilityIndexer/0.1"}
-    if TOKEN and "api.github.com" in url:
-        headers["Authorization"] = f"Bearer {TOKEN}"
-    req = urllib.request.Request(url, headers=headers)
+    req = urllib.request.Request(url, headers={"User-Agent": "PetroTechRadar-CapabilityIndexer/0.2"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8", errors="replace")
 
@@ -81,8 +74,8 @@ def get_repo_meta(repo: str):
 
 
 def get_tree(repo: str, branch: str):
-    ref = api(f"https://api.github.com/repos/{repo}/git/trees/{urllib.parse.quote(branch, safe='')}?recursive=1")
-    return ref.get("tree", [])
+    d = api(f"https://api.github.com/repos/{repo}/git/trees/{urllib.parse.quote(branch, safe='')}?recursive=1")
+    return d.get("tree", [])
 
 
 def get_readme(repo: str) -> str:
@@ -126,6 +119,16 @@ def py_signature(node) -> str:
     return f"{node.name}({', '.join(args)})"
 
 
+def entry(name, kind, signature, description, path):
+    return {
+        "name": name,
+        "kind": kind,
+        "signature": signature,
+        "description": description.strip()[:500],
+        "source_file": path,
+    }
+
+
 def extract_python(path: str, source: str):
     out = []
     try:
@@ -136,55 +139,107 @@ def extract_python(path: str, source: str):
     for node in tree.body:
         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)) and not node.name.startswith("_"):
             doc = ast.get_docstring(node) or ""
-            out.append({"name": f"{mod}.{node.name}" if mod else node.name, "kind": "function", "signature": py_signature(node), "description": doc.split("\n\n")[0][:500], "source_file": path})
+            out.append(entry(f"{mod}.{node.name}" if mod else node.name, "function", py_signature(node), doc.split("\n\n")[0], path))
         elif isinstance(node, ast.ClassDef) and not node.name.startswith("_"):
             doc = ast.get_docstring(node) or ""
-            out.append({"name": f"{mod}.{node.name}" if mod else node.name, "kind": "class", "signature": node.name, "description": doc.split("\n\n")[0][:500], "source_file": path})
+            cname = f"{mod}.{node.name}" if mod else node.name
+            out.append(entry(cname, "class", node.name, doc.split("\n\n")[0], path))
             for child in node.body:
                 if isinstance(child, (ast.FunctionDef, ast.AsyncFunctionDef)) and not child.name.startswith("_"):
                     cdoc = ast.get_docstring(child) or ""
-                    out.append({"name": f"{mod}.{node.name}.{child.name}", "kind": "method", "signature": py_signature(child), "description": cdoc.split("\n\n")[0][:500], "source_file": path})
+                    out.append(entry(f"{cname}.{child.name}", "method", py_signature(child), cdoc.split("\n\n")[0], path))
     return out
 
 
 def extract_cpp(path: str, source: str):
     out = []
-    # Conservative public declaration matcher for headers; skips operators/macros.
     rx = re.compile(r"^[ \t]*(?:inline\s+|static\s+|virtual\s+|constexpr\s+)*([\w:<>,*&\s]+?)\s+([A-Za-z_]\w*)\s*\(([^;{}]*)\)\s*(?:const\s*)?(?:noexcept\s*)?;", re.M)
-    for ret, name, args in rx.findall(source):
+    for _, name, args in rx.findall(source):
         if name.startswith("_") or name in {"if", "for", "while", "switch"}: continue
-        out.append({"name": name, "kind": "function/declaration", "signature": f"{name}({re.sub(r'\\s+', ' ', args).strip()})", "description": "", "source_file": path})
-    return out[:250]
+        out.append(entry(name, "function/declaration", f"{name}({re.sub(r'\s+', ' ', args).strip()})", "", path))
+    return out[:300]
 
 
 def extract_java(path: str, source: str):
     out = []
     rx = re.compile(r"public\s+(?:static\s+)?(?:final\s+)?[\w<>\[\], ?]+\s+([A-Za-z_]\w*)\s*\(([^)]*)\)")
     for name, args in rx.findall(source):
-        if name.startswith("_"): continue
-        out.append({"name": name, "kind": "method", "signature": f"{name}({re.sub(r'\\s+', ' ', args).strip()})", "description": "", "source_file": path})
-    return out[:250]
+        out.append(entry(name, "method", f"{name}({re.sub(r'\s+', ' ', args).strip()})", "", path))
+    return out[:300]
 
 
 def extract_ts(path: str, source: str):
     out = []
     rx = re.compile(r"export\s+(?:async\s+)?(?:function|class)\s+([A-Za-z_]\w*)\s*(?:\(([^)]*)\))?")
     for name, args in rx.findall(source):
-        out.append({"name": name, "kind": "export", "signature": f"{name}({re.sub(r'\\s+', ' ', args).strip()})" if args else name, "description": "", "source_file": path})
-    return out[:250]
+        sig = f"{name}({re.sub(r'\s+', ' ', args).strip()})" if args else name
+        out.append(entry(name, "export", sig, "", path))
+    return out[:300]
 
 
-def infer_capabilities(text: str):
-    low = text.lower()
-    return [cap for cap, terms in CAPABILITY_TERMS.items() if any(t in low for t in terms)]
+def simple_name(symbol: str) -> str:
+    return symbol.rsplit(".", 1)[-1]
+
+
+def classify_symbol(f: dict, readme_low: str) -> tuple[str, int, list[str]]:
+    """Return (api_level, quality_score, evidence)."""
+    evidence = []
+    score = 0
+    desc = (f.get("description") or "").strip()
+    name = f["name"]
+    short = simple_name(name)
+    path = f.get("source_file", "").lower()
+
+    if desc:
+        score += 3
+        evidence.append("docstring/documentation")
+    if len(desc) >= 40:
+        score += 1
+    # Exact-ish symbol mention in README is a strong public-use signal.
+    if len(short) >= 4 and re.search(rf"(?<!\w){re.escape(short.lower())}(?!\w)", readme_low):
+        score += 4
+        evidence.append("mentioned in README")
+    if path.endswith("/__init__.py") or path.endswith("/index.ts") or path.endswith("/index.js") or "/api/" in path:
+        score += 3
+        evidence.append("export/API entrypoint")
+    if "/include/" in path:
+        score += 2
+        evidence.append("public header")
+    if "internal use" in desc.lower() or "/internal/" in path or "/detail/" in path:
+        score -= 5
+        evidence.append("internal hint")
+    if short.lower() in GENERIC_LOW_VALUE and not desc and "mentioned in README" not in evidence:
+        score -= 3
+        evidence.append("generic undocumented method")
+
+    if score >= 6:
+        return "primary_public", score, evidence
+    if score >= 2:
+        return "documented_public", score, evidence
+    return "internal_or_low_value", score, evidence
+
+
+def infer_capabilities(description: str, readme: str):
+    desc_low = (description or "").lower()
+    readme_low = readme.lower()
+    primary, secondary, scores = [], [], {}
+    for cap, terms in CAPABILITY_TERMS.items():
+        desc_hits = sum(1 for t in terms if t in desc_low)
+        readme_hits = sum(readme_low.count(t) for t in terms)
+        score = desc_hits * 5 + min(readme_hits, 5)
+        scores[cap] = score
+        if desc_hits or readme_hits >= 2:
+            primary.append(cap)
+        elif readme_hits == 1:
+            secondary.append(cap)
+    return primary, secondary, {k: v for k, v in scores.items() if v > 0}
 
 
 def candidate_files(tree):
     files = [x["path"] for x in tree if x.get("type") == "blob" and x.get("size", 0) <= 250_000]
     selected = []
     for p in files:
-        low = p.lower()
-        base = low.rsplit("/", 1)[-1]
+        low = p.lower(); base = low.rsplit("/", 1)[-1]
         if any(part in low for part in ("/test/", "/tests/", "/example/", "/examples/", "/vendor/", "/third_party/", "/build/")):
             continue
         if p.endswith((".py", ".pyi")) and ("/__init__.py" in low or "/api" in low or "/io" in low or "/tools" in low or "/core" in low or low.count("/") <= 3):
@@ -195,8 +250,7 @@ def candidate_files(tree):
             selected.append(p)
         elif p.endswith((".ts", ".tsx", ".js")) and ("src/" in low and ("index." in base or "api" in low)):
             selected.append(p)
-    # Keep CI/API cost bounded. Public API quality matters more than exhaustive internals.
-    return selected[:40]
+    return selected[:50]
 
 
 def index_repo(repo: str):
@@ -205,6 +259,7 @@ def index_repo(repo: str):
     branch = meta.get("default_branch", "main")
     tree = get_tree(repo, branch)
     readme = get_readme(repo)
+    readme_low = readme.lower()
     funcs = []
     for path in candidate_files(tree):
         url = f"https://raw.githubusercontent.com/{repo}/{urllib.parse.quote(branch, safe='')}/{urllib.parse.quote(path, safe='/')}"
@@ -218,24 +273,41 @@ def index_repo(repo: str):
         elif path.endswith(".java"): funcs.extend(extract_java(path, src))
         elif path.endswith((".ts", ".tsx", ".js")): funcs.extend(extract_ts(path, src))
         time.sleep(0.02)
-    # Prefer documented symbols, then keep a capped, deduplicated public API sample.
+
     dedup = {}
     for f in funcs:
         key = (f["name"], f.get("signature", ""))
         if key not in dedup or (not dedup[key].get("description") and f.get("description")):
             dedup[key] = f
-    funcs = sorted(dedup.values(), key=lambda f: (0 if f.get("description") else 1, f["name"]))[:500]
-    combined = "\n".join([meta.get("description") or "", readme[:120_000]] + [f.get("description", "") for f in funcs if f.get("description")])
-    caps = infer_capabilities(combined)
+
+    classified = []
+    level_counts = {"primary_public": 0, "documented_public": 0, "internal_or_low_value": 0}
+    for f in dedup.values():
+        level, score, evidence = classify_symbol(f, readme_low)
+        f["api_level"] = level
+        f["quality_score"] = score
+        f["evidence"] = evidence
+        level_counts[level] += 1
+        classified.append(f)
+
+    # Publish only usable API entries; low-value/internal entries remain summarized in counts.
+    usable = [f for f in classified if f["api_level"] != "internal_or_low_value"]
+    usable.sort(key=lambda f: (-f["quality_score"], 0 if f.get("description") else 1, f["name"]))
+    usable = usable[:500]
+
+    primary_caps, secondary_caps, cap_scores = infer_capabilities(meta.get("description") or "", readme[:150_000])
     return {
         "repository": repo,
         "url": meta.get("html_url"),
         "language": meta.get("language"),
         "description": meta.get("description"),
         "default_branch": branch,
-        "capabilities": caps,
-        "public_api_count": len(funcs),
-        "functions": funcs,
+        "primary_capabilities": primary_caps,
+        "secondary_capabilities": secondary_caps,
+        "capability_scores": cap_scores,
+        "public_api_count": len(usable),
+        "api_level_counts": level_counts,
+        "functions": usable,
     }
 
 
@@ -243,11 +315,7 @@ def choose_repos():
     if MODE == "test":
         return TEST_REPOS
     radar = json.loads((OUT_DIR / "radar.json").read_text(encoding="utf-8"))
-    repos = []
-    for r in radar.get("repositories", []):
-        if r.get("tier") == "Core" and r.get("organization") in MAJOR_ORGS:
-            repos.append(r["repository"])
-    return sorted(set(repos))
+    return sorted({r["repository"] for r in radar.get("repositories", []) if r.get("tier") == "Core" and r.get("organization") in MAJOR_ORGS})
 
 
 def main():
@@ -261,22 +329,18 @@ def main():
             errors.append({"repository": repo, "error": str(e)})
     generated_at = datetime.now(timezone.utc).isoformat()
     capabilities = {
-        "generated_at": generated_at,
-        "mode": MODE,
-        "repository_count": len(indexed),
+        "generated_at": generated_at, "mode": MODE, "repository_count": len(indexed),
         "errors": errors,
         "repositories": [{k: v for k, v in r.items() if k != "functions"} for r in indexed],
     }
     functions = {
-        "generated_at": generated_at,
-        "mode": MODE,
-        "repository_count": len(indexed),
+        "generated_at": generated_at, "mode": MODE, "repository_count": len(indexed),
         "function_count": sum(len(r["functions"]) for r in indexed),
         "repositories": [{"repository": r["repository"], "functions": r["functions"]} for r in indexed],
     }
     (OUT_DIR / "capabilities.json").write_text(json.dumps(capabilities, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT_DIR / "functions.json").write_text(json.dumps(functions, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Indexed {len(indexed)} repos, {functions['function_count']} public API symbols, {len(errors)} errors")
+    print(f"Indexed {len(indexed)} repos, {functions['function_count']} usable public API symbols, {len(errors)} errors")
 
 
 if __name__ == "__main__":
