@@ -30,16 +30,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CAPABILITY_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'all' }}
         run: python scripts/build_capability_index.py
+      - name: Benchmark function search usability
+        run: python scripts/benchmark_function_search.py
       - name: Show summary
         run: |
           python - <<'PY'
           import json
           c=json.load(open('docs/data/capabilities.json', encoding='utf-8'))
           f=json.load(open('docs/data/functions.json', encoding='utf-8'))
+          b=json.load(open('docs/data/function_search_benchmark.json', encoding='utf-8'))
           print('Mode:', c['mode'])
           print('Repositories:', c['repository_count'])
           print('Public API symbols:', f['function_count'])
           print('Errors:', len(c['errors']))
+          print('Repository Top-5 accuracy:', b['summary']['repository_top5_accuracy'])
+          print('Useful function Top-5 accuracy:', b['summary']['useful_function_top5_accuracy'])
+          print('Target:', b['summary']['target'])
           for e in c['errors']:
               print(' -', e['repository'], e['error'])
           PY
@@ -47,6 +53,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/capabilities.json docs/data/functions.json
+          git add docs/data/capabilities.json docs/data/functions.json docs/data/function_search_benchmark.json
           git diff --cached --quiet || git commit -m "Refresh repository capability index"
           git push
