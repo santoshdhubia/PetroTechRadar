@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T06:24:28.229063+00:00",
+  "generated_at": "2026-08-27T07:41:04.087535+00:00",
   "mode": "test",
   "repository_count": 10,
   "errors": [],
@@ -10,13 +10,19 @@
       "language": "Python",
       "description": "Fast Python library for SEGY files.",
       "default_branch": "main",
-      "capabilities": [
-        "SEG-Y I/O",
-        "seismic processing",
-        "grids and surfaces",
-        "visualization"
+      "primary_capabilities": [
+        "SEG-Y I/O"
       ],
-      "public_api_count": 233
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "SEG-Y I/O": 10
+      },
+      "public_api_count": 199,
+      "api_level_counts": {
+        "primary_public": 63,
+        "documented_public": 136,
+        "internal_or_low_value": 34
+      }
     },
     {
       "repository": "trhallam/segysak",
@@ -24,13 +30,19 @@
       "language": "Python",
       "description": "SEGY Swiss Army Knife for Seismic Data",
       "default_branch": "main",
-      "capabilities": [
-        "SEG-Y I/O",
-        "seismic processing",
-        "grids and surfaces",
-        "visualization"
+      "primary_capabilities": [
+        "SEG-Y I/O"
       ],
-      "public_api_count": 151
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "SEG-Y I/O": 10
+      },
+      "public_api_count": 101,
+      "api_level_counts": {
+        "primary_public": 1,
+        "documented_public": 100,
+        "internal_or_low_value": 141
+      }
     },
     {
       "repository": "PyLops/pylops",
@@ -38,10 +50,19 @@
       "language": "Python",
       "description": "PyLops – A Linear-Operator Library for Python",
       "default_branch": "dev",
-      "capabilities": [
+      "primary_capabilities": [
         "inversion"
       ],
-      "public_api_count": 10
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 5
+      },
+      "public_api_count": 0,
+      "api_level_counts": {
+        "primary_public": 0,
+        "documented_public": 0,
+        "internal_or_low_value": 14
+      }
     },
     {
       "repository": "simpeg/simpeg",
@@ -49,12 +70,19 @@
       "language": "Python",
       "description": "Simulation and Parameter Estimation in Geophysics  -  A python package for simulation and gradient based parameter estimation in the context of geophysical applications.",
       "default_branch": "main",
-      "capabilities": [
-        "inversion",
-        "grids and surfaces",
-        "visualization"
+      "primary_capabilities": [
+        "inversion"
       ],
-      "public_api_count": 61
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 10
+      },
+      "public_api_count": 13,
+      "api_level_counts": {
+        "primary_public": 1,
+        "documented_public": 12,
+        "internal_or_low_value": 62
+      }
     },
     {
       "repository": "devitocodes/devito",
@@ -62,11 +90,19 @@
       "language": "Python",
       "description": "DSL and compiler framework for automated finite-differences and stencil computation",
       "default_branch": "main",
-      "capabilities": [
-        "inversion",
-        "grids and surfaces"
+      "primary_capabilities": [],
+      "secondary_capabilities": [
+        "inversion"
       ],
-      "public_api_count": 316
+      "capability_scores": {
+        "inversion": 1
+      },
+      "public_api_count": 180,
+      "api_level_counts": {
+        "primary_public": 11,
+        "documented_public": 169,
+        "internal_or_low_value": 257
+      }
     },
     {
       "repository": "ar4/deepwave",
@@ -74,15 +110,24 @@
       "language": "Python",
       "description": "Wave propagation modules for PyTorch.",
       "default_branch": "master",
-      "capabilities": [
-        "seismic processing",
-        "inversion",
-        "FWI",
-        "wave simulation",
-        "grids and surfaces",
-        "visualization"
+      "primary_capabilities": [
+        "wave simulation"
       ],
-      "public_api_count": 221
+      "secondary_capabilities": [
+        "inversion",
+        "FWI"
+      ],
+      "capability_scores": {
+        "inversion": 1,
+        "FWI": 1,
+        "wave simulation": 10
+      },
+      "public_api_count": 500,
+      "api_level_counts": {
+        "primary_public": 35,
+        "documented_public": 474,
+        "internal_or_low_value": 0
+      }
     },
     {
       "repository": "OPM/opm-simulators",
@@ -90,10 +135,15 @@
       "language": "C++",
       "description": "OPM Flow and experimental simulators, including components such as well models etc.",
       "default_branch": "master",
-      "capabilities": [
-        "grids and surfaces"
-      ],
-      "public_api_count": 7
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 2,
+      "api_level_counts": {
+        "primary_public": 0,
+        "documented_public": 2,
+        "internal_or_low_value": 5
+      }
     },
     {
       "repository": "OPM/ResInsight",
@@ -101,14 +151,24 @@
       "language": "C++",
       "description": "3D viewer and post processing of reservoir models",
       "default_branch": "dev",
-      "capabilities": [
-        "seismic processing",
-        "reservoir simulation",
-        "geomechanics",
-        "grids and surfaces",
+      "primary_capabilities": [
         "visualization"
       ],
-      "public_api_count": 209
+      "secondary_capabilities": [
+        "reservoir simulation",
+        "geomechanics"
+      ],
+      "capability_scores": {
+        "reservoir simulation": 1,
+        "geomechanics": 1,
+        "visualization": 9
+      },
+      "public_api_count": 212,
+      "api_level_counts": {
+        "primary_public": 1,
+        "documented_public": 211,
+        "internal_or_low_value": 89
+      }
     },
     {
       "repository": "GEOS-DEV/GEOS",
@@ -116,11 +176,19 @@
       "language": "C++",
       "description": "GEOS Simulation Framework",
       "default_branch": "develop",
-      "capabilities": [
-        "geomechanics",
-        "grids and surfaces"
+      "primary_capabilities": [],
+      "secondary_capabilities": [
+        "geomechanics"
       ],
-      "public_api_count": 269
+      "capability_scores": {
+        "geomechanics": 1
+      },
+      "public_api_count": 103,
+      "api_level_counts": {
+        "primary_public": 7,
+        "documented_public": 96,
+        "internal_or_low_value": 215
+      }
     },
     {
       "repository": "equinor/xtgeo",
@@ -128,13 +196,22 @@
       "language": "Python",
       "description": "XTGeo Python class library for subsurface Surfaces, Cubes, Wells, Grids, Points, etc",
       "default_branch": "main",
-      "capabilities": [
-        "SEG-Y I/O",
-        "seismic processing",
-        "grids and surfaces",
+      "primary_capabilities": [
+        "SEG-Y I/O"
+      ],
+      "secondary_capabilities": [
         "well data"
       ],
-      "public_api_count": 342
+      "capability_scores": {
+        "SEG-Y I/O": 3,
+        "well data": 1
+      },
+      "public_api_count": 425,
+      "api_level_counts": {
+        "primary_public": 9,
+        "documented_public": 416,
+        "internal_or_low_value": 113
+      }
     }
   ]
 }
