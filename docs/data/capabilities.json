@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T07:41:04.087535+00:00",
+  "generated_at": "2026-08-27T08:40:10.958555+00:00",
   "mode": "test",
   "repository_count": 10,
   "errors": [],
@@ -17,11 +17,11 @@
       "capability_scores": {
         "SEG-Y I/O": 10
       },
-      "public_api_count": 199,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 63,
-        "documented_public": 136,
-        "internal_or_low_value": 34
+        "primary_public": 143,
+        "documented_public": 178,
+        "internal_or_low_value": 36
       }
     },
     {
@@ -37,11 +37,11 @@
       "capability_scores": {
         "SEG-Y I/O": 10
       },
-      "public_api_count": 101,
+      "public_api_count": 105,
       "api_level_counts": {
         "primary_public": 1,
-        "documented_public": 100,
-        "internal_or_low_value": 141
+        "documented_public": 104,
+        "internal_or_low_value": 202
       }
     },
     {
@@ -57,10 +57,10 @@
       "capability_scores": {
         "inversion": 5
       },
-      "public_api_count": 0,
+      "public_api_count": 51,
       "api_level_counts": {
-        "primary_public": 0,
-        "documented_public": 0,
+        "primary_public": 45,
+        "documented_public": 6,
         "internal_or_low_value": 14
       }
     },
@@ -77,11 +77,11 @@
       "capability_scores": {
         "inversion": 10
       },
-      "public_api_count": 13,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 1,
-        "documented_public": 12,
-        "internal_or_low_value": 62
+        "primary_public": 13,
+        "documented_public": 388,
+        "internal_or_low_value": 290
       }
     },
     {
@@ -97,11 +97,11 @@
       "capability_scores": {
         "inversion": 1
       },
-      "public_api_count": 180,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 11,
-        "documented_public": 169,
-        "internal_or_low_value": 257
+        "primary_public": 204,
+        "documented_public": 514,
+        "internal_or_low_value": 989
       }
     },
     {
@@ -122,10 +122,10 @@
         "FWI": 1,
         "wave simulation": 10
       },
-      "public_api_count": 500,
+      "public_api_count": 300,
       "api_level_counts": {
         "primary_public": 35,
-        "documented_public": 474,
+        "documented_public": 646,
         "internal_or_low_value": 0
       }
     },
@@ -138,11 +138,11 @@
       "primary_capabilities": [],
       "secondary_capabilities": [],
       "capability_scores": {},
-      "public_api_count": 2,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 0,
-        "documented_public": 2,
-        "internal_or_low_value": 5
+        "primary_public": 5,
+        "documented_public": 848,
+        "internal_or_low_value": 0
       }
     },
     {
@@ -163,11 +163,11 @@
         "geomechanics": 1,
         "visualization": 9
       },
-      "public_api_count": 212,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 1,
-        "documented_public": 211,
-        "internal_or_low_value": 89
+        "primary_public": 0,
+        "documented_public": 1250,
+        "internal_or_low_value": 0
       }
     },
     {
@@ -183,11 +183,11 @@
       "capability_scores": {
         "geomechanics": 1
       },
-      "public_api_count": 103,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 7,
-        "documented_public": 96,
-        "internal_or_low_value": 215
+        "primary_public": 8,
+        "documented_public": 623,
+        "internal_or_low_value": 240
       }
     },
     {
@@ -206,11 +206,11 @@
         "SEG-Y I/O": 3,
         "well data": 1
       },
-      "public_api_count": 425,
+      "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 9,
-        "documented_public": 416,
-        "internal_or_low_value": 113
+        "primary_public": 300,
+        "documented_public": 540,
+        "internal_or_low_value": 158
       }
     }
   ]
