@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T02:22:51.588088+00:00",
+  "generated_at": "2026-08-28T15:59:32.709290+00:00",
   "mode": "all",
   "repository_count": 24,
   "function_count": 5549,
@@ -44648,19 +44648,6 @@
           ]
         },
         {
-          "name": "resdata.set_abort_handler",
-          "kind": "function",
-          "signature": "set_abort_handler(function)",
-          "description": "Set callback function for util_abort, which is called prior to std::abort()",
-          "source_file": "python/resdata/__init__.py",
-          "api_level": "primary_public",
-          "quality_score": 9,
-          "evidence": [
-            "documentation",
-            "package/public export"
-          ]
-        },
-        {
           "name": "resdata.grid.rd_grid.Grid",
           "kind": "class",
           "signature": "Grid",
@@ -48501,6 +48488,19 @@
           "signature": "num_segments()",
           "description": "",
           "source_file": "lib/include/resdata/well/well_state.hpp",
+          "api_level": "primary_public",
+          "quality_score": 8,
+          "evidence": [
+            "package/public export",
+            "public header"
+          ]
+        },
+        {
+          "name": "open",
+          "kind": "function/declaration",
+          "signature": "open(const std::string &filename, std::ios_base::openmode mode, bool fmt_file = false, bool endian_flip_header = RD_ENDIAN_FLIP)",
+          "description": "",
+          "source_file": "lib/include/resdata/FortIO.hpp",
           "api_level": "primary_public",
           "quality_score": 8,
           "evidence": [

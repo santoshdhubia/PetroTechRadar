@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T02:22:51.588088+00:00",
+  "generated_at": "2026-08-28T15:59:32.709290+00:00",
   "mode": "all",
   "repository_count": 24,
   "errors": [],
@@ -270,7 +270,7 @@
       "api_level_counts": {
         "primary_public": 39,
         "documented_public": 534,
-        "internal_or_low_value": 261
+        "internal_or_low_value": 265
       }
     },
     {
@@ -300,9 +300,9 @@
       "capability_scores": {},
       "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 955,
+        "primary_public": 954,
         "documented_public": 192,
-        "internal_or_low_value": 354
+        "internal_or_low_value": 352
       }
     },
     {
@@ -400,7 +400,7 @@
       "public_api_count": 300,
       "api_level_counts": {
         "primary_public": 300,
-        "documented_public": 540,
+        "documented_public": 541,
         "internal_or_low_value": 158
       }
     },
