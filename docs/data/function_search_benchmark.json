@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generated_from": "2026-08-28T02:11:20.095598+00:00",
+    "generated_from": "2026-08-28T02:22:51.588088+00:00",
     "ranking": "task-aware-v2",
     "queries": 25,
-    "repository_top5_accuracy": 0.96,
-    "useful_function_top5_accuracy": 0.88,
+    "repository_top5_accuracy": 0.8,
+    "useful_function_top5_accuracy": 0.64,
     "target": 0.8
   },
   "tests": [
@@ -26,33 +26,6 @@
           "api_level": "documented_public"
         },
         {
-          "score": 36.2,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_headers.TraceHeaders",
-          "signature": "TraceHeaders",
-          "description": "A convenience class for accessing and iterating over a SEG-Y files trace\nheaders. This class should be used with a context manager.",
-          "source_file": "segysak/segy/_segy_headers.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 36.0,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_headers.TraceHeaders.to_dataframe",
-          "signature": "to_dataframe(self, selection=None)",
-          "description": "Return the Trace Headers as a DataFrame",
-          "source_file": "segysak/segy/_segy_headers.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 35.4,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_headers.segy_header_scrape",
-          "signature": "segy_header_scrape(segy_file, partial_scan=None, bytes_filter=None, chunk=100000, **segyio_kwargs)",
-          "description": "Scape all data from segy trace headers",
-          "source_file": "segysak/segy/_segy_headers.py",
-          "api_level": "documented_public"
-        },
-        {
           "score": 35.3,
           "repository": "equinor/segyio",
           "name": "segyio.trace.FileFieldAccessor",
@@ -60,6 +33,33 @@
           "description": "Sequence of rows of trace headers in a SEG-Y file.",
           "source_file": "python/segyio/trace.py",
           "api_level": "documented_public"
+        },
+        {
+          "score": 34.5,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.tracefield",
+          "signature": "tracefield(self)",
+          "description": "Access the trace header layouts for this SEG-Y file.",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 32.6,
+          "repository": "equinor/segyio",
+          "name": "segyio.trace.RowFieldAccessor",
+          "signature": "RowFieldAccessor",
+          "description": "Sequence of trace headers in a single trace (row).",
+          "source_file": "python/segyio/trace.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 32.1,
+          "repository": "equinor/segyio",
+          "name": "segyio.tracefield.TraceField",
+          "signature": "TraceField",
+          "description": "Trace header field enumerator",
+          "source_file": "python/segyio/tracefield.py",
+          "api_level": "primary_public"
         }
       ]
     },
@@ -81,15 +81,6 @@
           "api_level": "primary_public"
         },
         {
-          "score": 22.9,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._xarray_writer.SegyWriter",
-          "signature": "SegyWriter",
-          "description": "Handles the writing of SEG-Y files from compatible Datasets. Usually this\nclass would not be used and SEGY-SAK users can write SEG-Y file via the `seisio` accessor.",
-          "source_file": "segysak/segy/_xarray_writer.py",
-          "api_level": "documented_public"
-        },
-        {
           "score": 22.3,
           "repository": "equinor/segyio",
           "name": "segyio.segy.SegyFile",
@@ -99,21 +90,30 @@
           "api_level": "primary_public"
         },
         {
-          "score": 21.7,
-          "repository": "trhallam/segysak",
-          "name": "segysak._cli.cli",
-          "signature": "cli(version, debug_level, file, chunks)",
-          "description": "The SEG-Y Swiss Army Knife (SEGY-SAK) is a tool for managing segy data.\nIt can read and dump ebcidc headers, scan trace headers, convert SEG-Y to SEISNC and vice versa.",
-          "source_file": "segysak/_cli.py",
+          "score": 21.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array",
+          "signature": "from_array(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from an n-dimentional array. Create a structured\nSEGY file with defaulted headers from a 2-, 3- or 4-dimensional array.\nilines, xlines, offsets and samples are inferred from the size of the\narray. Please refer to the documentation for functions from_array2D,\nfrom_array3D and from_array4D to see how the arrays are interpreted.",
+          "source_file": "python/segyio/tools.py",
           "api_level": "documented_public"
         },
         {
-          "score": 21.4,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_headers.segy_header_scan",
-          "signature": "segy_header_scan(segy_file, max_traces_scan=1000, **segyio_kwargs)",
-          "description": "Perform a scan of the segy file headers and return ranges.",
-          "source_file": "segysak/segy/_segy_headers.py",
+          "score": 21.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array2D",
+          "signature": "from_array2D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from a 2D array\nCreate an structured SEGY file with defaulted headers from a 2-dimensional\narray. The file is inline-sorted and structured as a slice, i.e. it has one\niline and the xlinecount equals the tracecount. The tracecount and\nsamplecount are inferred from the size of the array. Structure-defining\nfields in the binary header and in the traceheaders are set accordingly.\nSuch fields include, but are not limited to iline, xline and offset. The\nfile also contains a defa",
+          "source_file": "python/segyio/tools.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 21.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array3D",
+          "signature": "from_array3D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from a 3D array\nCreate an structured SEGY file with defaulted headers from a 3-dimensional\narray. The file is inline-sorted. ilines, xlines and samples are inferred\nfrom the array. Structure-defining fields in the binary header and\nin the traceheaders are set accordingly. Such fields include, but are not\nlimited to iline, xline and offset. The file also contains a defaulted\ntextual header.",
+          "source_file": "python/segyio/tools.py",
           "api_level": "documented_public"
         }
       ]
@@ -201,15 +201,6 @@
           "api_level": "primary_public"
         },
         {
-          "score": 28.6,
-          "repository": "trhallam/segysak",
-          "name": "segysak.seisnc.create_empty_seisnc",
-          "signature": "create_empty_seisnc(ncfile, dims)",
-          "description": "Creates an on disk blank seisnc (NetCDF) file.",
-          "source_file": "segysak/seisnc.py",
-          "api_level": "documented_public"
-        },
-        {
           "score": 28.4,
           "repository": "equinor/segyio",
           "name": "segyio.trace.FileFieldAccessor",
@@ -226,6 +217,15 @@
           "description": "Access the trace header layouts for this SEG-Y file.",
           "source_file": "python/segyio/segy.py",
           "api_level": "primary_public"
+        },
+        {
+          "score": 27.8,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array",
+          "signature": "from_array(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from an n-dimentional array. Create a structured\nSEGY file with defaulted headers from a 2-, 3- or 4-dimensional array.\nilines, xlines, offsets and samples are inferred from the size of the\narray. Please refer to the documentation for functions from_array2D,\nfrom_array3D and from_array4D to see how the arrays are interpreted.",
+          "source_file": "python/segyio/tools.py",
+          "api_level": "documented_public"
         }
       ]
     },
@@ -234,52 +234,52 @@
       "expected_repositories": [
         "trhallam/segysak"
       ],
-      "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 48.4,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_loader.segy_freeloader",
-          "signature": "segy_freeloader(segyfile, vert_domain='TWT', data_type='AMP', return_geometry=False, extra_byte_fields=None, head_df=None, segyio_kwargs=None, **dim_kwargs)",
-          "description": "Freeform loader for SEG-Y data. This loader allows you to load SEG-Y into\nan xarray.Dataset using an arbitrary number of header locations to create\nothogonal dimensions. This is an eager loader and will transfer the entire\nSEG-Y and requested header information to memory.",
-          "source_file": "segysak/segy/_segy_loader.py",
+          "score": 27.0,
+          "repository": "equinor/segyio",
+          "name": "segyio.field.Field.reload",
+          "signature": "reload(self)",
+          "description": "This object will read header when it is constructed, which means it\nmight be out-of-date if the file is updated through some other handle.",
+          "source_file": "python/segyio/field.py",
           "api_level": "documented_public"
         },
         {
-          "score": 48.3,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._segy_loader.segy_loader",
-          "signature": "segy_loader(segyfile, cdp=None, iline=None, xline=None, cdp_x=None, cdp_y=None, offset=None, vert_domain='TWT', data_type='AMP', ix_crop=None, cdp_crop=None, xy_crop=None, z_crop=None, return_geometry=False, extra_byte_fields=None, head_df=None, **segyio_kwargs)",
-          "description": "Load SEG-Y file into xarray.Dataset",
-          "source_file": "segysak/segy/_segy_loader.py",
+          "score": 26.3,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile",
+          "signature": "SegyFile",
+          "description": "This class is not meant to be instantiated directly, but rather obtained\nfrom ``segyio.open`` or ``segyio.create``.",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 25.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array",
+          "signature": "from_array(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from an n-dimentional array. Create a structured\nSEGY file with defaulted headers from a 2-, 3- or 4-dimensional array.\nilines, xlines, offsets and samples are inferred from the size of the\narray. Please refer to the documentation for functions from_array2D,\nfrom_array3D and from_array4D to see how the arrays are interpreted.",
+          "source_file": "python/segyio/tools.py",
           "api_level": "documented_public"
         },
         {
-          "score": 47.5,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._xarray.SgyBackendEntrypoint.open_dataset",
-          "signature": "open_dataset(self, filename_or_obj, dim_byte_fields, drop_variables=None, head_df=None, extra_byte_fields=None, segyio_kwargs=None)",
-          "description": "Open a SEGY file with a native Xarray front end.",
-          "source_file": "segysak/segy/_xarray.py",
+          "score": 25.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array2D",
+          "signature": "from_array2D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from a 2D array\nCreate an structured SEGY file with defaulted headers from a 2-dimensional\narray. The file is inline-sorted and structured as a slice, i.e. it has one\niline and the xlinecount equals the tracecount. The tracecount and\nsamplecount are inferred from the size of the array. Structure-defining\nfields in the binary header and in the traceheaders are set accordingly.\nSuch fields include, but are not limited to iline, xline and offset. The\nfile also contains a defa",
+          "source_file": "python/segyio/tools.py",
           "api_level": "documented_public"
         },
         {
-          "score": 44.5,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._xarray_writer.SegyWriter",
-          "signature": "SegyWriter",
-          "description": "Handles the writing of SEG-Y files from compatible Datasets. Usually this\nclass would not be used and SEGY-SAK users can write SEG-Y file via the `seisio` accessor.",
-          "source_file": "segysak/segy/_xarray_writer.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 44.4,
-          "repository": "trhallam/segysak",
-          "name": "segysak.segy._xarray_writer.SegyWriter.to_segy",
-          "signature": "to_segy(self, ds, data_var='data', vert_dimension='samples', dead_trace_var=None, trace_header_map=None, **dim_kwargs)",
-          "description": "Output xarray dataset to SEG-Y format.",
-          "source_file": "segysak/segy/_xarray_writer.py",
+          "score": 25.2,
+          "repository": "equinor/segyio",
+          "name": "segyio.tools.from_array3D",
+          "signature": "from_array3D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+          "description": "Create a new SEGY file from a 3D array\nCreate an structured SEGY file with defaulted headers from a 3-dimensional\narray. The file is inline-sorted. ilines, xlines and samples are inferred\nfrom the array. Structure-defining fields in the binary header and\nin the traceheaders are set accordingly. Such fields include, but are not\nlimited to iline, xline and offset. The file also contains a defaulted\ntextual header.",
+          "source_file": "python/segyio/tools.py",
           "api_level": "documented_public"
         }
       ]
@@ -345,52 +345,52 @@
       "expected_repositories": [
         "PyLops/pylops"
       ],
-      "repository_top5_hit": false,
+      "repository_top5_hit": true,
       "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 24.1,
-          "repository": "devitocodes/devito",
-          "name": "devito.checkpointing.checkpoint.CheckpointOperator.apply",
-          "signature": "apply(self, t_start, t_end)",
-          "description": "If the devito operator requires some extra arguments in the call to apply\nthey can be stored in the args property of this object so pyRevolve calls\npyRevolve.Operator.apply() without caring about these extra arguments while\nthis method passes them on correctly to devito.Operator",
-          "source_file": "devito/checkpointing/checkpoint.py",
+          "score": 14.0,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.regression.Regression.apply",
+          "signature": "apply(self, t, x)",
+          "description": "Return values along y-axis given certain ``t`` location(s) along\nt-axis and regression coefficients ``x``",
+          "source_file": "pylops/basicoperators/regression.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.3,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.functionoperator.FunctionOperator",
+          "signature": "FunctionOperator",
+          "description": "Function Operator.",
+          "source_file": "pylops/basicoperators/functionoperator.py",
           "api_level": "primary_public"
         },
         {
-          "score": 21.7,
-          "repository": "devitocodes/devito",
-          "name": "devito.operator.operator.Operator.apply",
-          "signature": "apply(self, **kwargs)",
-          "description": "Execute the Operator.",
-          "source_file": "devito/operator/operator.py",
+          "score": 13.3,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.memoizeoperator.MemoizeOperator",
+          "signature": "MemoizeOperator",
+          "description": "Memoize Operator.",
+          "source_file": "pylops/basicoperators/memoizeoperator.py",
           "api_level": "primary_public"
         },
         {
-          "score": 16.9,
-          "repository": "devitocodes/devito",
-          "name": "devito.ir.equations.equation.IREq.apply",
-          "signature": "apply(self, func)",
-          "description": "Apply a callable to `self` and each expr-like attribute carried by `self`,\nthus triggering a reconstruction.",
-          "source_file": "devito/ir/equations/equation.py",
+          "score": 12.1,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.block.Block",
+          "signature": "Block",
+          "description": "Block operator.",
+          "source_file": "pylops/basicoperators/block.py",
           "api_level": "primary_public"
         },
         {
-          "score": 16.2,
-          "repository": "devitocodes/devito",
-          "name": "devito.operator.profiling.NcuProfiling",
-          "signature": "NcuProfiling",
-          "description": "String-like profiling mode carrying the Operator selected for NCU.",
-          "source_file": "devito/operator/profiling.py",
-          "api_level": "primary_public"
-        },
-        {
-          "score": 14.8,
-          "repository": "devitocodes/devito",
-          "name": "devito.operator.operator.Operator",
-          "signature": "Operator",
-          "description": "Generate, JIT-compile and run C code starting from an ordered sequence\nof symbolic expressions.",
-          "source_file": "devito/operator/operator.py",
+          "score": 12.1,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.blockdiag.BlockDiag",
+          "signature": "BlockDiag",
+          "description": "Block-diagonal operator.",
+          "source_file": "pylops/basicoperators/blockdiag.py",
           "api_level": "primary_public"
         }
       ]
@@ -457,53 +457,53 @@
         "devitocodes/devito",
         "ar4/deepwave"
       ],
-      "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 30.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.acoustic.Acoustic",
-          "signature": "Acoustic",
-          "description": "Convenience nn.Module wrapper for acoustic wave propagation.",
-          "source_file": "src/deepwave/acoustic.py",
+          "score": 10.0,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
           "api_level": "primary_public"
         },
         {
-          "score": 30.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.acoustic.acoustic",
-          "signature": "acoustic(v, rho, grid_spacing, dt, source_amplitudes_p=None, source_locations_p=None, source_amplitudes_z=None, source_locations_z=None, source_amplitudes_y=None, source_locations_y=None, source_amplitudes_x=None, source_locations_x=None, receiver_locations_p=None, receiver_locations_z=None, receiver_locations_y=None, receiver_locations_x=None, accuracy=4, pml_width=20, pml_freq=None, max_vel=None, survey_pad=None, pressure_0=None, vz_0=None, vy_0=None, vx_0=None, phi_z_0=None, phi_y_0=None, phi_x_0=None, psi_z_0=None, psi_y_0=None, psi_x_0=None, origin=None, nt=None, model_gradient_sampling_interval=1, freq_taper_frac=0.0, time_pad_frac=0.0, time_taper=False, forward_callback=None, backward_callback=None, callback_frequency=1, python_backend=False, storage_mode='device', storage_path='.', storage_compression=False)",
-          "description": "Acoustic wave propagation (functional interface).",
-          "source_file": "src/deepwave/acoustic.py",
-          "api_level": "primary_public"
-        },
-        {
-          "score": 29.5,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.acoustic.AcousticForwardFunc",
-          "signature": "AcousticForwardFunc",
-          "description": "Autograd function for the forward pass of acoustic wave propagation.",
-          "source_file": "src/deepwave/acoustic.py",
+          "score": 8.8,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.find_wavelengths",
+          "signature": "find_wavelengths(self, step=None, nsteps=None, lags=None)",
+          "description": "Picks the wavelengths of the fold by finding the maximum and\nminimums of the s-variogram\nthe fold wavelength is the first minimum but it is more reliable to\nuse the first maximum\nas the estimate of the wavelength.",
+          "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
           "api_level": "documented_public"
         },
         {
-          "score": 29.5,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.acoustic.acoustic_python",
-          "signature": "acoustic_python(pml_profiles, grid_spacing, dt, nt, step_ratio, accuracy, pml_width, n_shots, forward_callback, backward_callback, callback_frequency, storage_mode_str, storage_path, storage_compression, *args)",
-          "description": "Python backend for acoustic wave propagation.",
-          "source_file": "src/deepwave/acoustic.py",
+          "score": 8.8,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary",
+          "signature": "PlanewaveXYPrimary",
+          "description": "NSEM planewave source for both polarizations (x and y)\nestimated from a single 1D primary models.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
           "api_level": "documented_public"
         },
         {
-          "score": 29.4,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.acoustic.AcousticForwardFunc.forward",
-          "signature": "forward(ctx, pml_profiles, grid_spacing, dt, nt, step_ratio, accuracy, pml_width, n_shots, forward_callback, backward_callback, callback_frequency, storage_mode_str, storage_path, storage_compression, *args)",
-          "description": "Performs the forward propagation of the acoustic wave equation.",
-          "source_file": "src/deepwave/acoustic.py",
-          "api_level": "primary_public"
+          "score": 6.1,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.Planewave",
+          "signature": "Planewave",
+          "description": "Source class for the 1D and pseudo-3D problems.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 4.9,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.s_eDeriv",
+          "signature": "s_eDeriv(self, simulation, v, adjoint=False)",
+          "description": "Derivative of electric source term with respect to model",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
         }
       ]
     },
@@ -513,52 +513,52 @@
         "devitocodes/devito",
         "ar4/deepwave"
       ],
-      "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 30.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.elastic.Elastic",
-          "signature": "Elastic",
-          "description": "A PyTorch Module for elastic wave propagation.",
-          "source_file": "src/deepwave/elastic.py",
+          "score": 10.0,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
           "api_level": "primary_public"
         },
         {
-          "score": 30.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.elastic.elastic",
-          "signature": "elastic(lamb, mu, buoyancy, grid_spacing, dt, source_amplitudes_z=None, source_amplitudes_y=None, source_amplitudes_x=None, source_amplitudes_p=None, source_locations_z=None, source_locations_y=None, source_locations_x=None, source_locations_p=None, receiver_locations_z=None, receiver_locations_y=None, receiver_locations_x=None, receiver_locations_p=None, accuracy=4, pml_width=20, pml_freq=None, max_vel=None, survey_pad=None, vz_0=None, vy_0=None, vx_0=None, sigmazz_0=None, sigmayz_0=None, sigmaxz_0=None, sigmayy_0=None, sigmaxy_0=None, sigmaxx_0=None, m_vzz_0=None, m_vzy_0=None, m_vzx_0=None, m_vyz_0=None, m_vxz_0=None, m_vyy_0=None, m_vyx_0=None, m_vxy_0=None, m_vxx_0=None, m_sigmazzz_0=None, m_sigmayzy_0=None, m_sigmaxzx_0=None, m_sigmayzz_0=None, m_sigmaxzz_0=None, m_sigmayyy_0=None, m_sigmaxyy_0=None, m_sigmaxyx_0=None, m_sigmaxxx_0=None, origin=None, nt=None, model_gradient_sampling_interval=1, freq_taper_frac=0.0, time_pad_frac=0.0, time_taper=False, forward_callback=None, backward_callback=None, callback_frequency=1, python_backend=False, storage_mode='device', storage_path='.', storage_compression=False)",
-          "description": "Elastic wave propagation (functional interface).",
-          "source_file": "src/deepwave/elastic.py",
+          "score": 8.8,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.find_wavelengths",
+          "signature": "find_wavelengths(self, step=None, nsteps=None, lags=None)",
+          "description": "Picks the wavelengths of the fold by finding the maximum and\nminimums of the s-variogram\nthe fold wavelength is the first minimum but it is more reliable to\nuse the first maximum\nas the estimate of the wavelength.",
+          "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.8,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary",
+          "signature": "PlanewaveXYPrimary",
+          "description": "NSEM planewave source for both polarizations (x and y)\nestimated from a single 1D primary models.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 7.2,
+          "repository": "OpendTect/OpendTect",
+          "name": "ElasticLayer",
+          "signature": "ElasticLayer(float thkness,float pvel,float svel,float den)",
+          "description": "",
+          "source_file": "include/Algo/ailayer.h",
           "api_level": "primary_public"
         },
         {
-          "score": 29.5,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.elastic.ElasticForwardFunc",
-          "signature": "ElasticForwardFunc",
-          "description": "Forward propagation of the elastic wave equation.",
-          "source_file": "src/deepwave/elastic.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 29.5,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.elastic.elastic_python",
-          "signature": "elastic_python(pml_profiles, grid_spacing, dt, nt, step_ratio, accuracy, pml_width, n_shots, forward_callback, backward_callback, callback_frequency, storage_mode_str, storage_path, storage_compression, *args)",
-          "description": "Performs the forward propagation of the elastic wave equation.",
-          "source_file": "src/deepwave/elastic.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 29.4,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.elastic.ElasticForwardFunc.forward",
-          "signature": "forward(ctx, pml_profiles, grid_spacing, dt, nt, step_ratio, accuracy, pml_width, n_shots, forward_callback, backward_callback, callback_frequency, storage_mode_str, storage_path, storage_compression, *args)",
-          "description": "Performs the forward propagation of the elastic wave equation.",
-          "source_file": "src/deepwave/elastic.py",
+          "score": 7.2,
+          "repository": "OpendTect/OpendTect",
+          "name": "ElasticLayer",
+          "signature": "ElasticLayer(float thkness,float ai,float si, float den,bool needcompthkness)",
+          "description": "",
+          "source_file": "include/Algo/ailayer.h",
           "api_level": "primary_public"
         }
       ]
@@ -571,51 +571,51 @@
         "PyLops/pylops"
       ],
       "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 31.8,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_common.test_cosine_taper_end_full_taper",
-          "signature": "test_cosine_taper_end_full_taper()",
-          "description": "Test cosine_taper_end with full taper (n_taper equals signal length).",
-          "source_file": "tests/test_common.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 29.4,
-          "repository": "ar4/deepwave",
-          "name": "docs.example_fwi.Model",
-          "signature": "Model",
-          "description": "A PyTorch module that represents the velocity model.",
-          "source_file": "docs/example_fwi.py",
+          "score": 24.0,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.poststack.PoststackInversion",
+          "signature": "PoststackInversion(data, wav, m0=None, explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, epsRL1=None, **kwargs_solver)",
+          "description": "Post-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/poststack.py",
           "api_level": "primary_public"
         },
         {
-          "score": 29.3,
-          "repository": "ar4/deepwave",
-          "name": "docs.example_fwi.Model.forward",
-          "signature": "forward(self)",
-          "description": "Performs the forward pass of the model.",
-          "source_file": "docs/example_fwi.py",
+          "score": 23.9,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackInversion",
+          "signature": "PrestackInversion(data, theta, wav, m0=None, linearization='akirich', explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, returnres=False, epsRL1=None, kind='centered', vsvp=0.5, **kwargs_solver)",
+          "description": "Pre-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/prestack.py",
           "api_level": "primary_public"
         },
         {
-          "score": 28.3,
-          "repository": "ar4/deepwave",
-          "name": "docs.example_fwi.taper",
-          "signature": "taper(x)",
-          "description": "Tapers the ends of traces using a cosine taper.",
-          "source_file": "docs/example_fwi.py",
-          "api_level": "documented_public"
+          "score": 18.9,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.DirectiveList.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directives list.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 28.3,
-          "repository": "ar4/deepwave",
-          "name": "docs.example_joint_migration_inversion.closure",
-          "signature": "closure()",
-          "description": "Closure function for the LBFGS optimiser.",
-          "source_file": "docs/example_joint_migration_inversion.py",
+          "score": 18.9,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.InversionDirective.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directive.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 17.8,
+          "repository": "simpeg/simpeg",
+          "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.resolve_1Dinversions",
+          "signature": "resolve_1Dinversions(mesh, dobs, src_height, freqs, m0, mref, mapping, relative=0.08, floor=1e-14, rxOffset=7.86)",
+          "description": "Perform a single 1D inversion for a RESOLVE sounding for Horizontal\nCoplanar Coil data (both real and imaginary).",
+          "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
           "api_level": "documented_public"
         }
       ]
@@ -626,52 +626,52 @@
         "ar4/deepwave",
         "devitocodes/devito"
       ],
-      "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 27.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.common.check_extents_match_wavefields_shape",
-          "signature": "check_extents_match_wavefields_shape(extents, wavefields, pad)",
-          "description": "Checks if wavefield shapes match the calculated extents and padding.",
-          "source_file": "src/deepwave/common.py",
+          "score": 11.5,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.utils.maths.gradient_from_tetrahedron",
+          "signature": "gradient_from_tetrahedron(tetrahedron, value)",
+          "description": "Compute the gradient of values within tetrahedral elements",
+          "source_file": "LoopStructural/utils/maths.py",
           "api_level": "documented_public"
         },
         {
-          "score": 27.6,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.common.get_survey_extents_from_wavefields",
-          "signature": "get_survey_extents_from_wavefields(wavefields, origin, pml_width)",
-          "description": "Determine the extent of the model to extract from the wavefields.",
-          "source_file": "src/deepwave/common.py",
-          "api_level": "documented_public"
+          "score": 10.3,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.gradient.Gradient",
+          "signature": "Gradient",
+          "description": "Gradient.",
+          "source_file": "pylops/basicoperators/gradient.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 27.2,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_acoustic.test_gradcheck_partial_wavefields",
-          "signature": "test_gradcheck_partial_wavefields()",
-          "description": "Test gradcheck with wavefields that do not cover the model.",
-          "source_file": "tests/test_acoustic.py",
-          "api_level": "documented_public"
+          "score": 10.0,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 27.2,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_acoustic.test_wavefield_decays",
-          "signature": "test_wavefield_decays(nx, dx)",
-          "description": "Test that the PML causes the wavefield amplitude to decay.",
-          "source_file": "tests/test_acoustic.py",
-          "api_level": "documented_public"
+          "score": 9.9,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_feature_gradient",
+          "signature": "evaluate_feature_gradient(self, feature_name, xyz, scale=True)",
+          "description": "Evaluate the gradient of the geological feature at a location",
+          "source_file": "LoopStructural/modelling/core/geological_model.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 27.2,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_callbacks_acoustic.test_acoustic_callback_wavefield_modification",
-          "signature": "test_acoustic_callback_wavefield_modification(python_backend)",
-          "description": "Check that the wavefield can be modified in the forward callback.",
-          "source_file": "tests/test_callbacks_acoustic.py",
+          "score": 8.8,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.interpolators._api.LoopInterpolator.evaluate_gradient",
+          "signature": "evaluate_gradient(self, locations)",
+          "description": "Evaluate the gradient of the interpolator at locations",
+          "source_file": "LoopStructural/interpolators/_api.py",
           "api_level": "documented_public"
         }
       ]
@@ -681,52 +681,52 @@
       "expected_repositories": [
         "devitocodes/devito"
       ],
-      "repository_top5_hit": true,
-      "useful_function_top5_hit": true,
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
       "results": [
         {
-          "score": 28.8,
-          "repository": "devitocodes/devito",
-          "name": "devito.finite_differences.differentiable.Weights",
-          "signature": "Weights",
-          "description": "The weights (or coefficients) of a finite-difference expansion.",
-          "source_file": "devito/finite_differences/differentiable.py",
+          "score": 13.3,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.functionoperator.FunctionOperator",
+          "signature": "FunctionOperator",
+          "description": "Function Operator.",
+          "source_file": "pylops/basicoperators/functionoperator.py",
           "api_level": "primary_public"
         },
         {
-          "score": 28.8,
-          "repository": "devitocodes/devito",
-          "name": "devito.finite_differences.rsfd.d45",
-          "signature": "d45(expr, dim, x0=None, expand=True)",
-          "description": "Rotated staggered grid finite-differences (RSFD) discretization\nof the derivative of `expr` along `dim` at point `x0`.",
-          "source_file": "devito/finite_differences/rsfd.py",
+          "score": 13.3,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.memoizeoperator.MemoizeOperator",
+          "signature": "MemoizeOperator",
+          "description": "Memoize Operator.",
+          "source_file": "pylops/basicoperators/memoizeoperator.py",
           "api_level": "primary_public"
         },
         {
-          "score": 28.8,
-          "repository": "devitocodes/devito",
-          "name": "devito.finite_differences.rsfd.drot",
-          "signature": "drot(expr, dim, dir=1, x0=None)",
-          "description": "Finite difference approximation of the derivative along dir\nof a Function `f` at point `x0`.",
-          "source_file": "devito/finite_differences/rsfd.py",
+          "score": 12.8,
+          "repository": "PyLops/pylops",
+          "name": "noxfile.build",
+          "signature": "build(session)",
+          "description": "Build an SDist and wheel.",
+          "source_file": "noxfile.py",
           "api_level": "primary_public"
         },
         {
-          "score": 28.8,
-          "repository": "devitocodes/devito",
-          "name": "devito.finite_differences.interpolation.interp_at",
-          "signature": "interp_at(expr, source, target, interp_order)",
-          "description": "Build a symbolic 0-order FD interpolation operator on `expr` that maps\nvalues from `source` indices to `target` indices, only on the\ndimensions where the two locations differ.",
-          "source_file": "devito/finite_differences/interpolation.py",
+          "score": 12.1,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.block.Block",
+          "signature": "Block",
+          "description": "Block operator.",
+          "source_file": "pylops/basicoperators/block.py",
           "api_level": "primary_public"
         },
         {
-          "score": 28.1,
-          "repository": "devitocodes/devito",
-          "name": "devito.finite_differences.operators.laplace",
-          "signature": "laplace(func, shift=None, order=None, method='FD', side=None, **kwargs)",
-          "description": "Laplacian of the input Function.",
-          "source_file": "devito/finite_differences/operators.py",
+          "score": 12.1,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.blockdiag.BlockDiag",
+          "signature": "BlockDiag",
+          "description": "Block-diagonal operator.",
+          "source_file": "pylops/basicoperators/blockdiag.py",
           "api_level": "primary_public"
         }
       ]
@@ -740,48 +740,48 @@
       "useful_function_top5_hit": false,
       "results": [
         {
+          "score": 24.5,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+          "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+          "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 21.8,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_base",
+          "signature": "simulation_vector_base(vector)",
+          "description": "Returns base name of a simulation vector on Eclipse format.\nE.g. WOPR for WOPR:OP_1 and ROIP for ROIP_REG:1.\nSome description: If a vector contains a :, the first up to 5 characters describe the vector\nbase. In that case, if the vector base name is shorter than 5 characters, _ is used to fill\nup the first five characters. Therefore splitting on first _ and limiting to max five\ncharacters to identify the base name.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 19.1,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_description",
+          "signature": "simulation_vector_description(vector, user_defined_vector_definitions=None)",
+          "description": "Returns a more human friendly description of the simulation vector if possible,\notherwise returns the input as is.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 15.2,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.historical_vector",
+          "signature": "historical_vector(vector, smry_meta=None, return_historical=True)",
+          "description": "This function is trying to make a best guess on converting between historical and\nnon-historical vector names.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
           "score": 14.6,
           "repository": "OPM/opm-simulators",
           "name": "ReservoirBaseProblem",
           "signature": "ReservoirBaseProblem",
           "description": "",
           "source_file": "examples/problems/reservoirproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 14.6,
-          "repository": "OPM/opm-simulators",
-          "name": "ReservoirProblem",
-          "signature": "ReservoirProblem",
-          "description": "",
-          "source_file": "examples/problems/reservoirproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 14.2,
-          "repository": "OPM/opm-simulators",
-          "name": "SimulationName",
-          "signature": "SimulationName",
-          "description": "",
-          "source_file": "examples/problems/co2injectionproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 13.6,
-          "repository": "OPM/ResInsight",
-          "name": "EclipseFileType",
-          "signature": "EclipseFileType",
-          "description": "",
-          "source_file": "ApplicationLibCode/Application/RiaEclipseFileNameTools.h",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 13.6,
-          "repository": "OPM/ResInsight",
-          "name": "RiaEclipseFileNameTools",
-          "signature": "RiaEclipseFileNameTools(const QString& fileName)",
-          "description": "",
-          "source_file": "ApplicationLibCode/Application/RiaEclipseFileNameTools.h",
           "api_level": "documented_public"
         }
       ]
@@ -796,48 +796,48 @@
       "useful_function_top5_hit": false,
       "results": [
         {
+          "score": 24.5,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+          "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+          "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 21.8,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_base",
+          "signature": "simulation_vector_base(vector)",
+          "description": "Returns base name of a simulation vector on Eclipse format.\nE.g. WOPR for WOPR:OP_1 and ROIP for ROIP_REG:1.\nSome description: If a vector contains a :, the first up to 5 characters describe the vector\nbase. In that case, if the vector base name is shorter than 5 characters, _ is used to fill\nup the first five characters. Therefore splitting on first _ and limiting to max five\ncharacters to identify the base name.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 19.1,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_description",
+          "signature": "simulation_vector_description(vector, user_defined_vector_definitions=None)",
+          "description": "Returns a more human friendly description of the simulation vector if possible,\notherwise returns the input as is.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 15.2,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.historical_vector",
+          "signature": "historical_vector(vector, smry_meta=None, return_historical=True)",
+          "description": "This function is trying to make a best guess on converting between historical and\nnon-historical vector names.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
           "score": 14.6,
           "repository": "OPM/opm-simulators",
           "name": "ReservoirBaseProblem",
           "signature": "ReservoirBaseProblem",
           "description": "",
           "source_file": "examples/problems/reservoirproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 14.6,
-          "repository": "OPM/opm-simulators",
-          "name": "ReservoirProblem",
-          "signature": "ReservoirProblem",
-          "description": "",
-          "source_file": "examples/problems/reservoirproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 14.2,
-          "repository": "OPM/opm-simulators",
-          "name": "SimulationName",
-          "signature": "SimulationName",
-          "description": "",
-          "source_file": "examples/problems/co2injectionproblem.hh",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 13.6,
-          "repository": "OPM/ResInsight",
-          "name": "EclipseFileType",
-          "signature": "EclipseFileType",
-          "description": "",
-          "source_file": "ApplicationLibCode/Application/RiaEclipseFileNameTools.h",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 13.6,
-          "repository": "OPM/ResInsight",
-          "name": "RiaEclipseFileNameTools",
-          "signature": "RiaEclipseFileNameTools(const QString& fileName)",
-          "description": "",
-          "source_file": "ApplicationLibCode/Application/RiaEclipseFileNameTools.h",
           "api_level": "documented_public"
         }
       ]
@@ -916,40 +916,40 @@
           "api_level": "primary_public"
         },
         {
-          "score": 22.2,
-          "repository": "trhallam/segysak",
-          "name": "segysak._accessor.SegysakDatasetAccessor.calc_corner_points",
-          "signature": "calc_corner_points(self)",
-          "description": "Calculate the corner points of the 3d geometry or end points of a 2D line.",
-          "source_file": "segysak/_accessor.py",
+          "score": 16.9,
+          "repository": "OPM/ResInsight",
+          "name": "activeGridView",
+          "signature": "activeGridView()",
+          "description": "",
+          "source_file": "ApplicationLibCode/Application/RiaApplication.h",
           "api_level": "documented_public"
         },
         {
-          "score": 22.2,
-          "repository": "trhallam/segysak",
-          "name": "segysak._accessor.SeisGeom.calc_corner_points",
-          "signature": "calc_corner_points(self)",
-          "description": "Calculate the corner points of the geometry or end points of a 2D line.",
-          "source_file": "segysak/_accessor.py",
-          "api_level": "documented_public"
+          "score": 16.2,
+          "repository": "equinor/xtgeo",
+          "name": "xtgeo.grid3d._gridprop_export.to_file",
+          "signature": "to_file(gridprop, pfile, fformat='roff', name=None, append=False, dtype=None, fmt=None, rle=False)",
+          "description": "Export the grid property to file.",
+          "source_file": "src/xtgeo/grid3d/_gridprop_export.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 17.2,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_common.test_check_points_per_wavelength_list_complex_grid_spacing_element",
-          "signature": "test_check_points_per_wavelength_list_complex_grid_spacing_element()",
-          "description": "Test check_points_per_wavelength with complex grid_spacing element in list.",
-          "source_file": "tests/test_common.py",
-          "api_level": "documented_public"
+          "score": 15.1,
+          "repository": "equinor/xtgeo",
+          "name": "xtgeo.grid3d._grdecl_grid.GrdeclGrid.to_file",
+          "signature": "to_file(self, filename, fileformat='grdecl', rle=False)",
+          "description": "write the grdeclgrid to a file.\n:param filename: path to file to write.\n:param fileformat: Either \"grdecl\" or \"bgrdecl\" to\n    indicate binary or ascii format.\n:param rle: Boolean flag indicating whether to use Run-Length Encoding (RLE)\n            compression when writing the file (only for grdecl).",
+          "source_file": "src/xtgeo/grid3d/_grdecl_grid.py",
+          "api_level": "primary_public"
         },
         {
-          "score": 17.2,
-          "repository": "ar4/deepwave",
-          "name": "tests.test_common.test_check_points_per_wavelength_negative_grid_spacing_element",
-          "signature": "test_check_points_per_wavelength_negative_grid_spacing_element()",
-          "description": "Test check_points_per_wavelength with a negative grid_spacing element.",
-          "source_file": "tests/test_common.py",
-          "api_level": "documented_public"
+          "score": 15.1,
+          "repository": "equinor/xtgeo",
+          "name": "xtgeo.grid3d._roff_grid.RoffGrid.to_file",
+          "signature": "to_file(self, filelike, roff_format=roffio.Format.BINARY)",
+          "description": "Writes the RoffGrid to a roff file\nArgs:\n    filelike (str or byte stream): The file to write to.",
+          "source_file": "src/xtgeo/grid3d/_roff_grid.py",
+          "api_level": "primary_public"
         }
       ]
     },
@@ -961,6 +961,15 @@
       "repository_top5_hit": true,
       "useful_function_top5_hit": true,
       "results": [
+        {
+          "score": 17.5,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.well_set_model.WellSetModel",
+          "signature": "WellSetModel",
+          "description": "Class to load and store Xtgeo Wells",
+          "source_file": "webviz_subsurface/_models/well_set_model.py",
+          "api_level": "documented_public"
+        },
         {
           "score": 16.2,
           "repository": "equinor/xtgeo",
@@ -993,15 +1002,6 @@
           "repository": "equinor/xtgeo",
           "name": "well_mask_shoulder",
           "signature": "well_mask_shoulder(double *swig_np_dbl_inplaceflat_v1, // lvec long n_swig_np_dbl_inplaceflat_v1, // nvec int *swig_np_int_inplaceflat_v1, // inlog long n_swig_np_int_inplaceflat_v1, // ninlog int *swig_np_int_inplaceflat_v2, // mask long n_swig_np_int_inplaceflat_v2, // nmask double distance)",
-          "description": "",
-          "source_file": "src/lib/include/xtgeo/xtgeo.h",
-          "api_level": "primary_public"
-        },
-        {
-          "score": 16.2,
-          "repository": "equinor/xtgeo",
-          "name": "well_surf_picks",
-          "signature": "well_surf_picks(double *swig_np_dbl_in_v1, //*xv long n_swig_np_dbl_in_v1, // nxv double *swig_np_dbl_in_v2, //*yv long n_swig_np_dbl_in_v2, // nyv double *swig_np_dbl_in_v3, //*zv long n_swig_np_dbl_in_v3, // nzv double *swig_np_dbl_in_v4, //*mdv long n_swig_np_dbl_in_v4, // nmdv int ncol, int nrow, double xori, double yori, double xinc, double yinc, int yflip, double rot, double *swig_np_dbl_in_v5, // *surfv long n_swig_np_dbl_in_v5, // nsurf, double *swig_np_dbl_aout_v1, //*xoutv, long n_swig_np_dbl_aout_v1, double *swig_np_dbl_aout_v2, //*youtv, long n_swig_np_dbl_aout_v2, double *swig_np_dbl_aout_v3, //*zoutv, long n_swig_np_dbl_aout_v3, double *swig_np_dbl_aout_v4, //*mdoutv, long n_swig_np_dbl_aout_v4, int *swig_np_int_aout_v1, //*zoutv, long n_swig_np_int_aout_v1)",
           "description": "",
           "source_file": "src/lib/include/xtgeo/xtgeo.h",
           "api_level": "primary_public"
@@ -1053,13 +1053,13 @@
           "api_level": "primary_public"
         },
         {
-          "score": 10.9,
-          "repository": "equinor/xtgeo",
-          "name": "adjust_boxgrid_layers_from_regsurfs",
-          "signature": "adjust_boxgrid_layers_from_regsurfs(Grid &grd, const std::vector<regsurf::RegularSurface> &rsurfs, const double tolerance = numerics::TOLERANCE)",
-          "description": "",
-          "source_file": "src/lib/include/xtgeo/grid3d.hpp",
-          "api_level": "primary_public"
+          "score": 17.6,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel",
+          "signature": "SurfaceSetModel",
+          "description": "Class to load and calculate statistical surfaces from an FMU Ensemble",
+          "source_file": "webviz_subsurface/_models/surface_set_model.py",
+          "api_level": "documented_public"
         }
       ]
     },
@@ -1250,6 +1250,15 @@
           "api_level": "primary_public"
         },
         {
+          "score": 9.9,
+          "repository": "equinor/fmu-dataio",
+          "name": "docs.ext.pydantic_autosummary.extract_summary",
+          "signature": "extract_summary(doc, document)",
+          "description": "Extract summary from docstring.",
+          "source_file": "docs/ext/pydantic_autosummary/__init__.py",
+          "api_level": "primary_public"
+        },
+        {
           "score": 9.8,
           "repository": "equinor/segyio",
           "name": "segyio.segy.SegyFile.gather",
@@ -1259,30 +1268,21 @@
           "api_level": "primary_public"
         },
         {
-          "score": 9.2,
-          "repository": "trhallam/segysak",
-          "name": "segysak._seismic_dataset.create_seismic_dataset",
-          "signature": "create_seismic_dataset(twt=None, depth=None, cdp=None, iline=None, xline=None, offset=None, segysak_attr=True, **dim_args)",
-          "description": "Create a blank seismic dataset by setting the dimension sizes (d#) or by passing\narrays for known dimensions.",
-          "source_file": "segysak/_seismic_dataset.py",
-          "api_level": "documented_public"
-        },
-        {
-          "score": 9.2,
-          "repository": "trhallam/segysak",
-          "name": "tests.test_seismic_dataset.TestCreateSeismicDataset",
-          "signature": "TestCreateSeismicDataset",
-          "description": "Test creating a seismic dataset with various dimensions and sizes",
-          "source_file": "tests/test_seismic_dataset.py",
+          "score": 8.8,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
           "api_level": "documented_public"
         },
         {
           "score": 8.8,
-          "repository": "ar4/deepwave",
-          "name": "deepwave.common.extract_locations",
-          "signature": "extract_locations(name, locations, extents, pad, n_batch, device, dtype=torch.long, eps=0.1)",
-          "description": "Sets locations relative to the extracted model and prepares them.",
-          "source_file": "src/deepwave/common.py",
+          "repository": "equinor/ert",
+          "name": "ert.config.observation_quality_control.qc_seismic_observations",
+          "signature": "qc_seismic_observations(observations, shape_registry)",
+          "description": "Perform quality control checks on seismic observations.",
+          "source_file": "src/ert/config/observation_quality_control.py",
           "api_level": "documented_public"
         }
       ]
@@ -1323,15 +1323,6 @@
           "api_level": "documented_public"
         },
         {
-          "score": 10.4,
-          "repository": "trhallam/segysak",
-          "name": "segysak._seismic_dataset.create_seismic_dataset",
-          "signature": "create_seismic_dataset(twt=None, depth=None, cdp=None, iline=None, xline=None, offset=None, segysak_attr=True, **dim_args)",
-          "description": "Create a blank seismic dataset by setting the dimension sizes (d#) or by passing\narrays for known dimensions.",
-          "source_file": "segysak/_seismic_dataset.py",
-          "api_level": "documented_public"
-        },
-        {
           "score": 10.3,
           "repository": "equinor/segyio",
           "name": "segyio.depth.Depth",
@@ -1339,6 +1330,15 @@
           "description": "The Depth implements the array interface, where every array element, the\ndepth, is a numpy.ndarray of a horizontal cut of the volume. As all arrays\nit can be random accessed, iterated over, and read strided. Please note\nthat SEG-Y data is laid out trace-by-trace on disk, so accessing horizontal\ncuts (fixed z-coordinates in a cartesian grid) is *very* inefficient.",
           "source_file": "python/segyio/depth.py",
           "api_level": "primary_public"
+        },
+        {
+          "score": 8.8,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
+          "api_level": "documented_public"
         }
       ]
     },
@@ -1360,39 +1360,39 @@
           "api_level": "primary_public"
         },
         {
-          "score": 9.2,
-          "repository": "trhallam/segysak",
-          "name": "segysak._seismic_dataset.create_seismic_dataset",
-          "signature": "create_seismic_dataset(twt=None, depth=None, cdp=None, iline=None, xline=None, offset=None, segysak_attr=True, **dim_args)",
-          "description": "Create a blank seismic dataset by setting the dimension sizes (d#) or by passing\narrays for known dimensions.",
-          "source_file": "segysak/_seismic_dataset.py",
+          "score": 8.8,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
           "api_level": "documented_public"
         },
         {
-          "score": 9.2,
-          "repository": "trhallam/segysak",
-          "name": "tests.test_seismic_dataset.TestCreateSeismicDataset",
-          "signature": "TestCreateSeismicDataset",
-          "description": "Test creating a seismic dataset with various dimensions and sizes",
-          "source_file": "tests/test_seismic_dataset.py",
+          "score": 8.8,
+          "repository": "equinor/ert",
+          "name": "ert.config.observation_quality_control.qc_seismic_observations",
+          "signature": "qc_seismic_observations(observations, shape_registry)",
+          "description": "Perform quality control checks on seismic observations.",
+          "source_file": "src/ert/config/observation_quality_control.py",
           "api_level": "documented_public"
         },
         {
-          "score": 8.0,
-          "repository": "trhallam/segysak",
-          "name": "segysak._seismic_dataset.create2d_dataset",
-          "signature": "create2d_dataset(dims, first_sample=0, sample_rate=1, first_cdp=1, cdp_step=1, first_offset=None, offset_step=None, vert_domain='TWT', vert_units=None)",
-          "description": "Create a regular 2D seismic dataset from basic geometry.",
-          "source_file": "segysak/_seismic_dataset.py",
+          "score": 8.8,
+          "repository": "equinor/fmu-dataio",
+          "name": "examples.example_exports.export_rms_data.export_surface_maps.export_seismic_amplitude_surface",
+          "signature": "export_seismic_amplitude_surface()",
+          "description": "Export metadata for a seismic amplitude surface",
+          "source_file": "examples/example_exports/export_rms_data/export_surface_maps.py",
           "api_level": "documented_public"
         },
         {
-          "score": 8.0,
-          "repository": "trhallam/segysak",
-          "name": "segysak._seismic_dataset.create3d_dataset",
-          "signature": "create3d_dataset(dims, first_sample=0, sample_rate=1, first_iline=1, iline_step=1, first_xline=1, xline_step=1, first_offset=None, offset_step=None, vert_domain='TWT', vert_units=None)",
-          "description": "Create a regular 3D seismic dataset from basic grid geometry with optional\noffset dimension for pre-stack data.",
-          "source_file": "segysak/_seismic_dataset.py",
+          "score": 8.7,
+          "repository": "equinor/dlisio",
+          "name": "dlisio.dlis.measurement.Measurement.samples",
+          "signature": "samples(self)",
+          "description": "Measurment samples",
+          "source_file": "python/dlisio/dlis/measurement.py",
           "api_level": "documented_public"
         }
       ]

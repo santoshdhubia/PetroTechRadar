@@ -1,148 +1,47 @@
 {
-  "generated_at": "2026-08-28T02:11:20.095598+00:00",
-  "mode": "test",
-  "repository_count": 10,
+  "generated_at": "2026-08-28T02:22:51.588088+00:00",
+  "mode": "all",
+  "repository_count": 24,
   "errors": [],
   "repositories": [
     {
-      "repository": "equinor/segyio",
-      "url": "https://github.com/equinor/segyio",
-      "language": "Python",
-      "description": "Fast Python library for SEGY files.",
-      "default_branch": "main",
-      "primary_capabilities": [
-        "SEG-Y I/O"
-      ],
-      "secondary_capabilities": [],
-      "capability_scores": {
-        "SEG-Y I/O": 10
-      },
-      "public_api_count": 300,
-      "api_level_counts": {
-        "primary_public": 143,
-        "documented_public": 178,
-        "internal_or_low_value": 36
-      }
-    },
-    {
-      "repository": "trhallam/segysak",
-      "url": "https://github.com/trhallam/segysak",
-      "language": "Python",
-      "description": "SEGY Swiss Army Knife for Seismic Data",
-      "default_branch": "main",
-      "primary_capabilities": [
-        "SEG-Y I/O"
-      ],
-      "secondary_capabilities": [],
-      "capability_scores": {
-        "SEG-Y I/O": 10
-      },
-      "public_api_count": 105,
-      "api_level_counts": {
-        "primary_public": 1,
-        "documented_public": 104,
-        "internal_or_low_value": 202
-      }
-    },
-    {
-      "repository": "PyLops/pylops",
-      "url": "https://github.com/PyLops/pylops",
-      "language": "Python",
-      "description": "PyLops – A Linear-Operator Library for Python",
-      "default_branch": "dev",
-      "primary_capabilities": [
-        "inversion"
-      ],
-      "secondary_capabilities": [],
-      "capability_scores": {
-        "inversion": 5
-      },
-      "public_api_count": 51,
-      "api_level_counts": {
-        "primary_public": 45,
-        "documented_public": 6,
-        "internal_or_low_value": 14
-      }
-    },
-    {
-      "repository": "simpeg/simpeg",
-      "url": "https://github.com/simpeg/simpeg",
-      "language": "Python",
-      "description": "Simulation and Parameter Estimation in Geophysics  -  A python package for simulation and gradient based parameter estimation in the context of geophysical applications.",
-      "default_branch": "main",
-      "primary_capabilities": [
-        "inversion"
-      ],
-      "secondary_capabilities": [],
-      "capability_scores": {
-        "inversion": 10
-      },
-      "public_api_count": 300,
-      "api_level_counts": {
-        "primary_public": 13,
-        "documented_public": 388,
-        "internal_or_low_value": 290
-      }
-    },
-    {
-      "repository": "devitocodes/devito",
-      "url": "https://github.com/devitocodes/devito",
-      "language": "Python",
-      "description": "DSL and compiler framework for automated finite-differences and stencil computation",
-      "default_branch": "main",
-      "primary_capabilities": [],
-      "secondary_capabilities": [
-        "inversion"
-      ],
-      "capability_scores": {
-        "inversion": 1
-      },
-      "public_api_count": 300,
-      "api_level_counts": {
-        "primary_public": 204,
-        "documented_public": 514,
-        "internal_or_low_value": 989
-      }
-    },
-    {
-      "repository": "ar4/deepwave",
-      "url": "https://github.com/ar4/deepwave",
-      "language": "Python",
-      "description": "Wave propagation modules for PyTorch.",
-      "default_branch": "master",
-      "primary_capabilities": [
-        "wave simulation"
-      ],
-      "secondary_capabilities": [
-        "inversion",
-        "FWI"
-      ],
-      "capability_scores": {
-        "inversion": 1,
-        "FWI": 1,
-        "wave simulation": 10
-      },
-      "public_api_count": 300,
-      "api_level_counts": {
-        "primary_public": 35,
-        "documented_public": 646,
-        "internal_or_low_value": 0
-      }
-    },
-    {
-      "repository": "OPM/opm-simulators",
-      "url": "https://github.com/OPM/opm-simulators",
+      "repository": "GEOS-DEV/GEOS",
+      "url": "https://github.com/GEOS-DEV/GEOS",
       "language": "C++",
-      "description": "OPM Flow and experimental simulators, including components such as well models etc.",
-      "default_branch": "master",
+      "description": "GEOS Simulation Framework",
+      "default_branch": "develop",
       "primary_capabilities": [],
-      "secondary_capabilities": [],
-      "capability_scores": {},
+      "secondary_capabilities": [
+        "geomechanics"
+      ],
+      "capability_scores": {
+        "geomechanics": 1
+      },
       "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 5,
-        "documented_public": 848,
-        "internal_or_low_value": 0
+        "primary_public": 8,
+        "documented_public": 596,
+        "internal_or_low_value": 256
+      }
+    },
+    {
+      "repository": "Loop3D/LoopStructural",
+      "url": "https://github.com/Loop3D/LoopStructural",
+      "language": "Python",
+      "description": "LoopStructural is an open-source 3D structural geological modelling library. ",
+      "default_branch": "master",
+      "primary_capabilities": [
+        "geological modelling"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "geological modelling": 8
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 20,
+        "documented_public": 339,
+        "internal_or_low_value": 256
       }
     },
     {
@@ -171,23 +70,315 @@
       }
     },
     {
-      "repository": "GEOS-DEV/GEOS",
-      "url": "https://github.com/GEOS-DEV/GEOS",
+      "repository": "OPM/opm-common",
+      "url": "https://github.com/OPM/opm-common",
       "language": "C++",
-      "description": "GEOS Simulation Framework",
-      "default_branch": "develop",
+      "description": "Common components for OPM, in particular build system (cmake).",
+      "default_branch": "master",
       "primary_capabilities": [],
       "secondary_capabilities": [
-        "geomechanics"
+        "reservoir simulation"
       ],
       "capability_scores": {
-        "geomechanics": 1
+        "reservoir simulation": 1
       },
       "public_api_count": 300,
       "api_level_counts": {
-        "primary_public": 8,
-        "documented_public": 596,
-        "internal_or_low_value": 256
+        "primary_public": 14,
+        "documented_public": 1178,
+        "internal_or_low_value": 0
+      }
+    },
+    {
+      "repository": "OPM/opm-grid",
+      "url": "https://github.com/OPM/opm-grid",
+      "language": "C++",
+      "description": "DUNE module supporting grids in a corner-point format",
+      "default_branch": "master",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 4,
+        "documented_public": 1528,
+        "internal_or_low_value": 0
+      }
+    },
+    {
+      "repository": "OPM/opm-simulators",
+      "url": "https://github.com/OPM/opm-simulators",
+      "language": "C++",
+      "description": "OPM Flow and experimental simulators, including components such as well models etc.",
+      "default_branch": "master",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 5,
+        "documented_public": 848,
+        "internal_or_low_value": 0
+      }
+    },
+    {
+      "repository": "OpendTect/OpendTect",
+      "url": "https://github.com/OpendTect/OpendTect",
+      "language": "C++",
+      "description": "4cce3e7a",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [
+        "seismic processing"
+      ],
+      "capability_scores": {
+        "seismic processing": 1
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 1966,
+        "documented_public": 0,
+        "internal_or_low_value": 0
+      }
+    },
+    {
+      "repository": "OpendTect/odpy",
+      "url": "https://github.com/OpendTect/odpy",
+      "language": "Python",
+      "description": "odpy is a framework for research and deployment that allows for basic interactions with the OpendTect software and database",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [
+        "well data"
+      ],
+      "capability_scores": {
+        "well data": 1
+      },
+      "public_api_count": 125,
+      "api_level_counts": {
+        "primary_public": 0,
+        "documented_public": 125,
+        "internal_or_low_value": 14
+      }
+    },
+    {
+      "repository": "PyLops/pylops",
+      "url": "https://github.com/PyLops/pylops",
+      "language": "Python",
+      "description": "PyLops – A Linear-Operator Library for Python",
+      "default_branch": "dev",
+      "primary_capabilities": [
+        "inversion"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 5
+      },
+      "public_api_count": 51,
+      "api_level_counts": {
+        "primary_public": 45,
+        "documented_public": 6,
+        "internal_or_low_value": 14
+      }
+    },
+    {
+      "repository": "equinor/dlisio",
+      "url": "https://github.com/equinor/dlisio",
+      "language": "Python",
+      "description": "Python library for working with the well log formats Digital Log Interchange Standard (DLIS V1) and Log Information Standard (LIS79)",
+      "default_branch": "master",
+      "primary_capabilities": [
+        "well data"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "well data": 7
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 191,
+        "documented_public": 159,
+        "internal_or_low_value": 194
+      }
+    },
+    {
+      "repository": "equinor/ecalc",
+      "url": "https://github.com/equinor/ecalc",
+      "language": "Python",
+      "description": "eCalc™ is a software tool for calculation of energy demand and greenhouse gas emissions from oil and gas production and processing.",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 223,
+      "api_level_counts": {
+        "primary_public": 4,
+        "documented_public": 219,
+        "internal_or_low_value": 179
+      }
+    },
+    {
+      "repository": "equinor/ert",
+      "url": "https://github.com/equinor/ert",
+      "language": "Python",
+      "description": "ERT - Ensemble based Reservoir Tool - is designed for running ensembles of dynamical models such as reservoir models, in order to do sensitivity analysis and data assimilation. ERT supports data assimilation using the Ensemble Smoother (ES) and Ensemble Smoother with Multiple Data Assimilation (ES-MDA).",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "data assimilation"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "data assimilation": 15
+      },
+      "public_api_count": 109,
+      "api_level_counts": {
+        "primary_public": 7,
+        "documented_public": 102,
+        "internal_or_low_value": 424
+      }
+    },
+    {
+      "repository": "equinor/fmu-dataio",
+      "url": "https://github.com/equinor/fmu-dataio",
+      "language": "Python",
+      "description": "FMU data standard and data export with rich metadata in the FMU context",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 17,
+        "documented_public": 781,
+        "internal_or_low_value": 144
+      }
+    },
+    {
+      "repository": "equinor/neqsim",
+      "url": "https://github.com/equinor/neqsim",
+      "language": "Java",
+      "description": "NeqSim is a library for calculation of fluid behavior, phase equilibrium and process simulation",
+      "default_branch": "master",
+      "primary_capabilities": [],
+      "secondary_capabilities": [
+        "visualization"
+      ],
+      "capability_scores": {
+        "visualization": 1
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 39,
+        "documented_public": 534,
+        "internal_or_low_value": 261
+      }
+    },
+    {
+      "repository": "equinor/osdu-sdk-python",
+      "url": "https://github.com/equinor/osdu-sdk-python",
+      "language": "Python",
+      "description": "Python SDK for working with OSDU",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 145,
+      "api_level_counts": {
+        "primary_public": 13,
+        "documented_public": 132,
+        "internal_or_low_value": 1
+      }
+    },
+    {
+      "repository": "equinor/resdata",
+      "url": "https://github.com/equinor/resdata",
+      "language": "C++",
+      "description": "Software for reading and writing the result files from the Eclipse reservoir simulator.",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 955,
+        "documented_public": 192,
+        "internal_or_low_value": 354
+      }
+    },
+    {
+      "repository": "equinor/resfo",
+      "url": "https://github.com/equinor/resfo",
+      "language": "Python",
+      "description": "Parser and Writer of the reservoir fortran ouput data format. That means files with extensions such as .EGRID, .INIT, .SMRY, .UNSMRY, .GRID, .FEGRID, .FINIT, etc. Such files are generated by many reservoir simulators such as OPM flow, Eclipse, etc.",
+      "default_branch": "main",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 34,
+      "api_level_counts": {
+        "primary_public": 2,
+        "documented_public": 32,
+        "internal_or_low_value": 77
+      }
+    },
+    {
+      "repository": "equinor/segyio",
+      "url": "https://github.com/equinor/segyio",
+      "language": "Python",
+      "description": "Fast Python library for SEGY files.",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "SEG-Y I/O"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "SEG-Y I/O": 10
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 143,
+        "documented_public": 178,
+        "internal_or_low_value": 36
+      }
+    },
+    {
+      "repository": "equinor/webviz",
+      "url": "https://github.com/equinor/webviz",
+      "language": "TypeScript",
+      "description": "Visualization of ensembles of subsurface models for various data types (seismic, reservoir simulation responses, RFT, 3D grids, 2D maps, production network tree etc.)",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "reservoir simulation",
+        "grids and surfaces",
+        "visualization"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "reservoir simulation": 5,
+        "grids and surfaces": 5,
+        "visualization": 5
+      },
+      "public_api_count": 61,
+      "api_level_counts": {
+        "primary_public": 0,
+        "documented_public": 61,
+        "internal_or_low_value": 111
+      }
+    },
+    {
+      "repository": "equinor/webviz-subsurface",
+      "url": "https://github.com/equinor/webviz-subsurface",
+      "language": "Python",
+      "description": "Webviz-config plugins for subsurface data.",
+      "default_branch": "master",
+      "primary_capabilities": [],
+      "secondary_capabilities": [],
+      "capability_scores": {},
+      "public_api_count": 261,
+      "api_level_counts": {
+        "primary_public": 5,
+        "documented_public": 256,
+        "internal_or_low_value": 283
       }
     },
     {
@@ -211,6 +402,72 @@
         "primary_public": 300,
         "documented_public": 540,
         "internal_or_low_value": 158
+      }
+    },
+    {
+      "repository": "gempy-project/gempy",
+      "url": "https://github.com/gempy-project/gempy",
+      "language": "Python",
+      "description": "GemPy is an open-source, Python-based 3-D structural geological modeling software, which allows the implicit (i.e. automatic) creation of complex geological models from interface and orientation data. It also offers support for stochastic modeling to address parameter and model uncertainties.",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "inversion",
+        "geological modelling",
+        "visualization"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 3,
+        "geological modelling": 10,
+        "visualization": 5
+      },
+      "public_api_count": 40,
+      "api_level_counts": {
+        "primary_public": 0,
+        "documented_public": 40,
+        "internal_or_low_value": 103
+      }
+    },
+    {
+      "repository": "gimli-org/gimli",
+      "url": "https://github.com/gimli-org/pyGIMLi",
+      "language": "Python",
+      "description": "Geophysical Inversion and Modeling Library :earth_africa:",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "inversion",
+        "grids and surfaces"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 10,
+        "grids and surfaces": 3
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 46,
+        "documented_public": 2485,
+        "internal_or_low_value": 52
+      }
+    },
+    {
+      "repository": "simpeg/simpeg",
+      "url": "https://github.com/simpeg/simpeg",
+      "language": "Python",
+      "description": "Simulation and Parameter Estimation in Geophysics  -  A python package for simulation and gradient based parameter estimation in the context of geophysical applications.",
+      "default_branch": "main",
+      "primary_capabilities": [
+        "inversion"
+      ],
+      "secondary_capabilities": [],
+      "capability_scores": {
+        "inversion": 10
+      },
+      "public_api_count": 300,
+      "api_level_counts": {
+        "primary_public": 13,
+        "documented_public": 388,
+        "internal_or_low_value": 290
       }
     }
   ]
