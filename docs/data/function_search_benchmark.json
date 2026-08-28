@@ -1,0 +1,1400 @@
+{
+  "summary": {
+    "generated_from": "2026-08-28T01:57:09.628474+00:00",
+    "queries": 25,
+    "repository_top5_accuracy": 0.48,
+    "useful_function_top5_accuracy": 0.4,
+    "target": 0.8
+  },
+  "tests": [
+    {
+      "query": "Read SEG-Y trace headers",
+      "expected_repositories": [
+        "equinor/segyio"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 13.98,
+          "repository": "equinor/segyio",
+          "name": "segyio.utils.parse_trace_headers_layout",
+          "signature": "parse_trace_headers_layout(xml)",
+          "description": "Parse an XML string into a dict of header name: TraceHeaderLayoutEntry.",
+          "source_file": "python/segyio/utils.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 12.48,
+          "repository": "equinor/segyio",
+          "name": "segyio.trace.FileFieldAccessor",
+          "signature": "FileFieldAccessor",
+          "description": "Sequence of rows of trace headers in a SEG-Y file.",
+          "source_file": "python/segyio/trace.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 12.46,
+          "repository": "equinor/segyio",
+          "name": "segy_traceheaders",
+          "signature": "segy_traceheaders(const char* binheader, int* traceheader_count)",
+          "description": "",
+          "source_file": "lib/include/segyio/segy.h",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 11.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.tracefield",
+          "signature": "tracefield(self)",
+          "description": "Access the trace header layouts for this SEG-Y file.",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.98,
+          "repository": "equinor/segyio",
+          "name": "segyio.trace.RowFieldAccessor",
+          "signature": "RowFieldAccessor",
+          "description": "Sequence of trace headers in a single trace (row).",
+          "source_file": "python/segyio/trace.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Read SEG-Y traces",
+      "expected_repositories": [
+        "equinor/segyio"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 6.96,
+          "repository": "equinor/segyio",
+          "name": "segy_traces",
+          "signature": "segy_traces(segy_datasource*, int*)",
+          "description": "",
+          "source_file": "lib/include/segyio/segy.h",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 5.86,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._figures.timeseries_figure.TimeSeriesFigure.create_vector_observation_traces",
+          "signature": "create_vector_observation_traces(self)",
+          "description": "Adds observations to the plot",
+          "source_file": "webviz_subsurface/_figures/timeseries_figure.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 3.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.depth.Depth",
+          "signature": "Depth",
+          "description": "The Depth implements the array interface, where every array element, the\ndepth, is a numpy.ndarray of a horizontal cut of the volume. As all arrays\nit can be random accessed, iterated over, and read strided. Please note\nthat SEG-Y data is laid out trace-by-trace on disk, so accessing horizontal\ncuts (fixed z-coordinates in a cartesian grid) is *very* inefficient.",
+          "source_file": "python/segyio/depth.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 3.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.gather.Group.trace",
+          "signature": "trace(self)",
+          "description": "A generator of the the read-only traces in this group",
+          "source_file": "python/segyio/gather.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 3.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.tracefield",
+          "signature": "tracefield(self)",
+          "description": "Access the trace header layouts for this SEG-Y file.",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Get inline and crossline data from SEG-Y",
+      "expected_repositories": [
+        "equinor/segyio",
+        "trhallam/segysak"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 9.96,
+          "repository": "equinor/segyio",
+          "name": "segy_crossline_indices",
+          "signature": "segy_crossline_indices(segy_datasource*, int xl, int sorting, int inline_count, int crossline_count, int offsets, void* buf)",
+          "description": "",
+          "source_file": "lib/include/segyio/segy.h",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "equinor/segyio",
+          "name": "segy_inline_indices",
+          "signature": "segy_inline_indices(segy_datasource*, int il, int sorting, int inline_count, int crossline_count, int offsets, void* buf)",
+          "description": "",
+          "source_file": "lib/include/segyio/segy.h",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.data.Data",
+          "signature": "Data",
+          "description": "Class for defining data in SimPEG.",
+          "source_file": "simpeg/data.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.data.SyntheticData",
+          "signature": "SyntheticData",
+          "description": "Synthetic data class.",
+          "source_file": "simpeg/data.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.data_misfit.L2DataMisfit",
+          "signature": "L2DataMisfit",
+          "description": "Least-squares data misfit.",
+          "source_file": "simpeg/data_misfit.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Create a new SEG-Y file",
+      "expected_repositories": [
+        "equinor/segyio"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 16.98,
+          "repository": "equinor/neqsim",
+          "name": "devtools.new_task.create_task",
+          "signature": "create_task(title, task_type='B', author='', prompt='', scale='', report_depth='', notebooks='', config_file='', intake_pause='')",
+          "description": "Create a new task folder from the template.",
+          "source_file": "devtools/new_task.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 16.36,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.horman.create_horizon_file",
+          "signature": "create_horizon_file(data, inl_range, crl_range)",
+          "description": "Creates horizon file in .char format",
+          "source_file": "odpy/horman.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 16.34,
+          "repository": "equinor/segyio",
+          "name": "segyio.create.create",
+          "signature": "create(filename, spec, layout_xml=None)",
+          "description": "Create a new segy file.",
+          "source_file": "python/segyio/create.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 15.48,
+          "repository": "equinor/neqsim",
+          "name": "devtools.new_skill.create_skill",
+          "signature": "create_skill(name, description=None)",
+          "description": "Create a new skill folder with SKILL.md template.",
+          "source_file": "devtools/new_skill.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.98,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.dbman.getNewEntryFileName",
+          "signature": "getNewEntryFileName(objnm, trgrp, trl, overwrite=False, args={})",
+          "description": "Registers a new OpendTect dataset to database",
+          "source_file": "odpy/dbman.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Load SEG-Y into xarray",
+      "expected_repositories": [
+        "trhallam/segysak"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.96,
+          "repository": "equinor/dlisio",
+          "name": "dlisio.dlis.load.load",
+          "signature": "load(path, error_handler=None)",
+          "description": "Loads a file and returns one filehandle pr logical file.",
+          "source_file": "python/dlisio/dlis/load.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.84,
+          "repository": "equinor/dlisio",
+          "name": "dlisio.lis.load.load",
+          "signature": "load(path, error_handler=None)",
+          "description": "Loads and indexes a LIS file",
+          "source_file": "python/dlisio/lis/load.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "equinor/dlisio",
+          "name": "dlisio.dlis.file.LogicalFile.load",
+          "signature": "load(self)",
+          "description": "Force load all objects - mainly indended for debugging",
+          "source_file": "python/dlisio/dlis/file.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.34,
+          "repository": "equinor/neqsim",
+          "name": "devtools.neqsim_runner.models.Checkpoint.load",
+          "signature": "load(cls, path)",
+          "description": "Load checkpoint from a JSON file.",
+          "source_file": "devtools/neqsim_runner/models.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.98,
+          "repository": "equinor/neqsim",
+          "name": "devtools.stid_download.download_doc_files",
+          "signature": "download_doc_files(inst_code, all_docs, out_dir)",
+          "description": "Download PDF files for documents into out_dir.",
+          "source_file": "devtools/stid_download.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Perform seismic inversion",
+      "expected_repositories": [
+        "PyLops/pylops",
+        "simpeg/simpeg"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 12.08,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.poststack.PoststackInversion",
+          "signature": "PoststackInversion(data, wav, m0=None, explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, epsRL1=None, **kwargs_solver)",
+          "description": "Post-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/poststack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 11.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackInversion",
+          "signature": "PrestackInversion(data, theta, wav, m0=None, linearization='akirich', explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, returnres=False, epsRL1=None, kind='centered', vsvp=0.5, **kwargs_solver)",
+          "description": "Pre-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.DirectiveList.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directives list.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.InversionDirective.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directive.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Apply convolution operator",
+      "expected_repositories": [
+        "PyLops/pylops"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 10.48,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.regression.Regression.apply",
+          "signature": "apply(self, t, x)",
+          "description": "Return values along y-axis given certain ``t`` location(s) along\nt-axis and regression coefficients ``x``",
+          "source_file": "pylops/basicoperators/regression.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.functionoperator.FunctionOperator",
+          "signature": "FunctionOperator",
+          "description": "Function Operator.",
+          "source_file": "pylops/basicoperators/functionoperator.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.memoizeoperator.MemoizeOperator",
+          "signature": "MemoizeOperator",
+          "description": "Memoize Operator.",
+          "source_file": "pylops/basicoperators/memoizeoperator.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/neqsim",
+          "name": "devtools.neqsim_studio.edit.FlowsheetEditor.apply_command",
+          "signature": "apply_command(self, text, run=True)",
+          "description": "Parse and apply a natural-language edit instruction.",
+          "source_file": "devtools/neqsim_studio/edit.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.46,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.block.Block",
+          "signature": "Block",
+          "description": "Block operator.",
+          "source_file": "pylops/basicoperators/block.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Solve least squares inverse problem",
+      "expected_repositories": [
+        "PyLops/pylops",
+        "simpeg/simpeg"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 11.6,
+          "repository": "OPM/opm-common",
+          "name": "LinearSolverProblem",
+          "signature": "LinearSolverProblem",
+          "description": "",
+          "source_file": "opm/common/Exceptions.hpp",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 10.48,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.UpdateSensitivityWeights",
+          "signature": "UpdateSensitivityWeights",
+          "description": "Sensitivity weighting for linear and non-linear least-squares inverse problems.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.98,
+          "repository": "simpeg/simpeg",
+          "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.resolve_1Dinversions",
+          "signature": "resolve_1Dinversions(mesh, dobs, src_height, freqs, m0, mref, mapping, relative=0.08, floor=1e-14, rxOffset=7.86)",
+          "description": "Perform a single 1D inversion for a RESOLVE sounding for Horizontal\nCoplanar Coil data (both real and imaginary).",
+          "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.interpolators._constant_norm.ConstantNormFDIInterpolator.solve_system",
+          "signature": "solve_system(self, solver=None, tol=None, solver_kwargs=None)",
+          "description": "Solve the system of equations for the constant norm finite difference interpolator.",
+          "source_file": "LoopStructural/interpolators/_constant_norm.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.interpolators._constant_norm.ConstantNormInterpolator.solve_system",
+          "signature": "solve_system(self, solver=None, tol=None, solver_kwargs=None)",
+          "description": "Solve the system of equations iteratively for the constant norm interpolator.",
+          "source_file": "LoopStructural/interpolators/_constant_norm.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Run acoustic wave propagation",
+      "expected_repositories": [
+        "devitocodes/devito",
+        "ar4/deepwave"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.find_wavelengths",
+          "signature": "find_wavelengths(self, step=None, nsteps=None, lags=None)",
+          "description": "Picks the wavelengths of the fold by finding the maximum and\nminimums of the s-variogram\nthe fold wavelength is the first minimum but it is more reliable to\nuse the first maximum\nas the estimate of the wavelength.",
+          "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary",
+          "signature": "PlanewaveXYPrimary",
+          "description": "NSEM planewave source for both polarizations (x and y)\nestimated from a single 1D primary models.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 5.98,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.Planewave",
+          "signature": "Planewave",
+          "description": "Source class for the 1D and pseudo-3D problems.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 4.48,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.s_eDeriv",
+          "signature": "s_eDeriv(self, simulation, v, adjoint=False)",
+          "description": "Derivative of electric source term with respect to model",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Run elastic wave propagation",
+      "expected_repositories": [
+        "devitocodes/devito",
+        "ar4/deepwave"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.find_wavelengths",
+          "signature": "find_wavelengths(self, step=None, nsteps=None, lags=None)",
+          "description": "Picks the wavelengths of the fold by finding the maximum and\nminimums of the s-variogram\nthe fold wavelength is the first minimum but it is more reliable to\nuse the first maximum\nas the estimate of the wavelength.",
+          "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary",
+          "signature": "PlanewaveXYPrimary",
+          "description": "NSEM planewave source for both polarizations (x and y)\nestimated from a single 1D primary models.",
+          "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 6.96,
+          "repository": "OpendTect/OpendTect",
+          "name": "ElasticLayer",
+          "signature": "ElasticLayer(float thkness,float pvel,float svel,float den)",
+          "description": "",
+          "source_file": "include/Algo/ailayer.h",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 6.96,
+          "repository": "OpendTect/OpendTect",
+          "name": "ElasticLayer",
+          "signature": "ElasticLayer(float thkness,float ai,float si, float den,bool needcompthkness)",
+          "description": "",
+          "source_file": "include/Algo/ailayer.h",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Full waveform inversion FWI",
+      "expected_repositories": [
+        "devitocodes/devito",
+        "ar4/deepwave",
+        "PyLops/pylops"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.poststack.PoststackInversion",
+          "signature": "PoststackInversion(data, wav, m0=None, explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, epsRL1=None, **kwargs_solver)",
+          "description": "Post-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/poststack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackInversion",
+          "signature": "PrestackInversion(data, theta, wav, m0=None, linearization='akirich', explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, returnres=False, epsRL1=None, kind='centered', vsvp=0.5, **kwargs_solver)",
+          "description": "Pre-stack linearized seismic inversion.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.DirectiveList.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directives list.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.InversionDirective.inversion",
+          "signature": "inversion(self)",
+          "description": "Inversion object associated with the directive.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "simpeg/simpeg",
+          "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.resolve_1Dinversions",
+          "signature": "resolve_1Dinversions(mesh, dobs, src_height, freqs, m0, mref, mapping, relative=0.08, floor=1e-14, rxOffset=7.86)",
+          "description": "Perform a single 1D inversion for a RESOLVE sounding for Horizontal\nCoplanar Coil data (both real and imaginary).",
+          "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Compute wavefield gradient",
+      "expected_repositories": [
+        "ar4/deepwave",
+        "devitocodes/devito"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 10.98,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.utils.maths.gradient_from_tetrahedron",
+          "signature": "gradient_from_tetrahedron(tetrahedron, value)",
+          "description": "Compute the gradient of values within tetrahedral elements",
+          "source_file": "LoopStructural/utils/maths.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.gradient.Gradient",
+          "signature": "Gradient",
+          "description": "Gradient.",
+          "source_file": "pylops/basicoperators/gradient.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_feature_gradient",
+          "signature": "evaluate_feature_gradient(self, feature_name, xyz, scale=True)",
+          "description": "Evaluate the gradient of the geological feature at a location",
+          "source_file": "LoopStructural/modelling/core/geological_model.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.interpolators._api.LoopInterpolator.evaluate_gradient",
+          "signature": "evaluate_gradient(self, locations)",
+          "description": "Evaluate the gradient of the interpolator at locations",
+          "source_file": "LoopStructural/interpolators/_api.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_model_gradient",
+          "signature": "evaluate_model_gradient(self, points, scale)",
+          "description": "Evaluate the gradient of the stratigraphic column at each location",
+          "source_file": "LoopStructural/modelling/core/geological_model.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Build finite difference operator",
+      "expected_repositories": [
+        "devitocodes/devito"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 10.98,
+          "repository": "gempy-project/gempy",
+          "name": "examples.tutorials.b_fundamentals.c03_grids.build_model",
+          "signature": "build_model(project_name, resolution, refinement)",
+          "description": "Build the simple fault model with a given resolution/refinement, so the\ndifference between grid configurations further down is the only thing that varies.",
+          "source_file": "examples/tutorials/b_fundamentals/c03_grids.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.functionoperator.FunctionOperator",
+          "signature": "FunctionOperator",
+          "description": "Function Operator.",
+          "source_file": "pylops/basicoperators/functionoperator.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "PyLops/pylops",
+          "name": "pylops.basicoperators.memoizeoperator.MemoizeOperator",
+          "signature": "MemoizeOperator",
+          "description": "Memoize Operator.",
+          "source_file": "pylops/basicoperators/memoizeoperator.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "equinor/neqsim",
+          "name": "devtools.presentations.generate_agent_skill_overview.DeckBuilder.build",
+          "signature": "build(self)",
+          "description": "Build and return the complete presentation.",
+          "source_file": "devtools/presentations/generate_agent_skill_overview.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.34,
+          "repository": "PyLops/pylops",
+          "name": "noxfile.build",
+          "signature": "build(session)",
+          "description": "Build an SDist and wheel.",
+          "source_file": "noxfile.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Run reservoir simulation",
+      "expected_repositories": [
+        "OPM/opm-simulators"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 15.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+          "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+          "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_base",
+          "signature": "simulation_vector_base(vector)",
+          "description": "Returns base name of a simulation vector on Eclipse format.\nE.g. WOPR for WOPR:OP_1 and ROIP for ROIP_REG:1.\nSome description: If a vector contains a :, the first up to 5 characters describe the vector\nbase. In that case, if the vector base name is shorter than 5 characters, _ is used to fill\nup the first five characters. Therefore splitting on first _ and limiting to max five\ncharacters to identify the base name.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_description",
+          "signature": "simulation_vector_description(vector, user_defined_vector_definitions=None)",
+          "description": "Returns a more human friendly description of the simulation vector if possible,\notherwise returns the input as is.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.58,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation",
+          "signature": "BaseEM1DSimulation",
+          "description": "Base simulation class for simulating the EM response over a 1D layered Earth\nfor a single sounding. The simulation computes the fields by solving the\nHankel transform solutions from Electromagnetic Theory for Geophysical\nApplications: Chapter 4 (Ward and Hohmann, 1988).",
+          "source_file": "simpeg/electromagnetics/base_1d.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.historical_vector",
+          "signature": "historical_vector(vector, smry_meta=None, return_historical=True)",
+          "description": "This function is trying to make a best guess on converting between historical and\nnon-historical vector names.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Access reservoir simulation results",
+      "expected_repositories": [
+        "OPM/ResInsight",
+        "OPM/opm-simulators"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 15.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+          "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+          "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_base",
+          "signature": "simulation_vector_base(vector)",
+          "description": "Returns base name of a simulation vector on Eclipse format.\nE.g. WOPR for WOPR:OP_1 and ROIP for ROIP_REG:1.\nSome description: If a vector contains a :, the first up to 5 characters describe the vector\nbase. In that case, if the vector base name is shorter than 5 characters, _ is used to fill\nup the first five characters. Therefore splitting on first _ and limiting to max five\ncharacters to identify the base name.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_description",
+          "signature": "simulation_vector_description(vector, user_defined_vector_definitions=None)",
+          "description": "Returns a more human friendly description of the simulation vector if possible,\notherwise returns the input as is.",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "equinor/neqsim",
+          "name": "devtools.validate_task_results.validate",
+          "signature": "validate(results)",
+          "description": "Return (errors, warnings) for a parsed results.json dict.",
+          "source_file": "devtools/validate_task_results.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.58,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation",
+          "signature": "BaseEM1DSimulation",
+          "description": "Base simulation class for simulating the EM response over a 1D layered Earth\nfor a single sounding. The simulation computes the fields by solving the\nHankel transform solutions from Electromagnetic Theory for Geophysical\nApplications: Chapter 4 (Ward and Hohmann, 1988).",
+          "source_file": "simpeg/electromagnetics/base_1d.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Visualize reservoir model",
+      "expected_repositories": [
+        "OPM/ResInsight"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.96,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.core.geological_model.GeologicalModel",
+          "signature": "GeologicalModel",
+          "description": "A geological model is the recipe for building a 3D model and  can include\nthe rescaling of the model between 0 and 1.",
+          "source_file": "LoopStructural/modelling/core/geological_model.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.poststack.PoststackLinearModelling",
+          "signature": "PoststackLinearModelling(wav, nt0, spatdims=None, explicit=False, sparse=False, kind='centered', name=None)",
+          "description": "Post-stack linearized seismic modelling operator.",
+          "source_file": "pylops/avo/poststack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackLinearModelling",
+          "signature": "PrestackLinearModelling(wav, theta, vsvp=0.5, nt0=1, spatdims=None, linearization='akirich', explicit=False, kind='centered', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.58,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.prestack.PrestackWaveletModelling",
+          "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+          "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+          "source_file": "pylops/avo/prestack.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "PyLops/pylops",
+          "name": "pylops.avo.avo.AVOLinearModelling",
+          "signature": "AVOLinearModelling",
+          "description": "AVO Linearized modelling.",
+          "source_file": "pylops/avo/avo.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Work with corner point grids",
+      "expected_repositories": [
+        "equinor/xtgeo",
+        "OPM/ResInsight"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.98,
+          "repository": "gempy-project/gempy",
+          "name": "gempy.core.data.grid_modules.regular_grid.RegularGrid.from_corners_box",
+          "signature": "from_corners_box(cls, pivot, point_x_axis, distance_point3, zmin, zmax, resolution, plot=True)",
+          "description": "Always rotate around the z axis towards the positive x axis. \nThe distance_point3 is the distance from the pivot to the point3.",
+          "source_file": "gempy/core/data/grid_modules/regular_grid.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.export.geoh5.add_points_from_df",
+          "signature": "add_points_from_df(filename, df, name='pointset', overwrite=True, columns=None, groupname='Loop', x_col='X', y_col='Y', z_col='Z')",
+          "description": "Add points to a geoh5 file from a pandas DataFrame. The DataFrame must have columns 'name', 'X', 'Y', 'Z' for the point locations.\nAdditional columns can be added as data associated with the points.\nParameters\n----------\nfilename: str\n    Path to the geoh5 file.\ndf: pandas.DataFrame\n    DataFrame containing point data. Must have columns 'name', 'X', 'Y', 'Z'. Additional columns will be added as data.\noverwrite: bool, optional\n    Whether to overwrite existing points with the same name. Default i",
+          "source_file": "LoopStructural/export/geoh5.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.get_indicator_function_points",
+          "signature": "get_indicator_function_points(self, ifx_type='contacts')",
+          "description": "returns the points indicated as p[art of contact or fault anisotropies.",
+          "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.utils.maths.regular_tetraherdron_for_points",
+          "signature": "regular_tetraherdron_for_points(xyz, scale_parameter)",
+          "description": "Generate regular tetrahedrons centered at given 3D points.",
+          "source_file": "LoopStructural/utils/maths.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/fmu-dataio",
+          "name": "tests.test_units.test_checksum_md5.test_checksum_md5_for_points",
+          "signature": "test_checksum_md5_for_points(monkeypatch, tmp_path, mock_global_config, points, points_fformat)",
+          "description": "Test that the MD5 hash in the metadata is equal to one computed for\nthe exported file for an xtgeo.Points",
+          "source_file": "tests/test_units/test_checksum_md5.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Read well data",
+      "expected_repositories": [
+        "equinor/xtgeo"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 15.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.well.get_well_layers",
+          "signature": "get_well_layers(wells, planned_wells, surface_name, surface, dropdown_file)",
+          "description": "Make circles around well in layered map view\nArgs:\n    wells: dictionary of  type {wellfile: xtgeo.Well(wellfile)}\n    planned_wells: dictionary of type {wellfile: xtgeo.Well(wellfile)}\n    surface_name: Name of surface\n    surface: xtgeo surface\n    dropdown_file: A well file from dropdown value\nReturns:\n    List of well layers with data for well circles and trajectory",
+          "source_file": "webviz_subsurface/_datainput/well.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 15.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.well_completions.read_well_connection_status",
+          "signature": "read_well_connection_status(ensemble_path, well_connection_status_file)",
+          "description": "Reads csv file with well connection status data from the scratch disk.\nMerges together files from all realizations, does some fixing of the column\ndata types, and returns it as a pandas dataframe.",
+          "source_file": "webviz_subsurface/_datainput/well_completions.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 15.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.dataframe",
+          "signature": "dataframe(self)",
+          "description": "Returns the well attributes data as a dataframe with the well eclipse\nalias and categories as columns",
+          "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 15.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.dataframe_melted",
+          "signature": "dataframe_melted(self)",
+          "description": "Returns the well attributes data as melted dataframe, that means with\nonly three columns: WELL, CATEGORY and VALUE",
+          "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 13.96,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.data",
+          "signature": "data(self)",
+          "description": "Returns the well attributes on the transformed format",
+          "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Work with surfaces",
+      "expected_repositories": [
+        "equinor/xtgeo"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 8.48,
+          "repository": "Loop3D/LoopStructural",
+          "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.surfaces",
+          "signature": "surfaces(self, value=None, bounding_box=None, name=None, colours=None)",
+          "description": "Find the surfaces of the geological feature at a given value",
+          "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/fmu-dataio",
+          "name": "tests.test_export_rms.conftest.fault_surfaces_triangulated",
+          "signature": "fault_surfaces_triangulated(tsurf, mock_fault_model)",
+          "description": "Mock for triangulated fault surfaces on TSurf format.",
+          "source_file": "tests/test_export_rms/conftest.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/fmu-dataio",
+          "name": "tests.test_export_rms.test_utils.test_get_surfaces_in_general2d_folder",
+          "signature": "test_get_surfaces_in_general2d_folder(mock_project_variable)",
+          "description": "Test that get_surfaces_in_general2d_folder only picks up non-empty surfaces",
+          "source_file": "tests/test_export_rms/test_utils.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/fmu-dataio",
+          "name": "tests.test_export_rms.test_utils.test_get_surfaces_in_general2d_folder_all_empty",
+          "signature": "test_get_surfaces_in_general2d_folder_all_empty(mock_project_variable)",
+          "description": "Test that an error is raised if all surfaces are empty",
+          "source_file": "tests/test_export_rms/test_utils.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel",
+          "signature": "SurfaceSetModel",
+          "description": "Class to load and calculate statistical surfaces from an FMU Ensemble",
+          "source_file": "webviz_subsurface/_models/surface_set_model.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Geomechanics simulation",
+      "expected_repositories": [
+        "GEOS-DEV/GEOS",
+        "OPM/ResInsight"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 9.58,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation",
+          "signature": "BaseEM1DSimulation",
+          "description": "Base simulation class for simulating the EM response over a 1D layered Earth\nfor a single sounding. The simulation computes the fields by solving the\nHankel transform solutions from Electromagnetic Theory for Geophysical\nApplications: Chapter 4 (Ward and Hohmann, 1988).",
+          "source_file": "simpeg/electromagnetics/base_1d.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.electromagnetics.base.BaseEMSimulation",
+          "signature": "BaseEMSimulation",
+          "description": "Base electromagnetic simulation class",
+          "source_file": "simpeg/electromagnetics/base.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.34,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.data_misfit.BaseDataMisfit.simulation",
+          "signature": "simulation(self)",
+          "description": "A SimPEG simulation object.",
+          "source_file": "simpeg/data_misfit.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.34,
+          "repository": "simpeg/simpeg",
+          "name": "simpeg.directives._directives.InversionDirective.simulation",
+          "signature": "simulation(self)",
+          "description": "Return simulation for all data misfits.",
+          "source_file": "simpeg/directives/_directives.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+          "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+          "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+          "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Mesh or grid operations",
+      "expected_repositories": [
+        "GEOS-DEV/GEOS",
+        "equinor/xtgeo"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 14.48,
+          "repository": "gempy-project/gempy",
+          "name": "gempy.core.data.grid_modules.topography.Topography.from_unstructured_mesh",
+          "signature": "from_unstructured_mesh(cls, regular_grid, xyz_vertices)",
+          "description": "Creates a topography object from an unstructured mesh of XYZ vertices.",
+          "source_file": "gempy/core/data/grid_modules/topography.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 10.48,
+          "repository": "gempy-project/gempy",
+          "name": "gempy.modules.mesh_extranction.marching_cubes.extract_mesh_for_element",
+          "signature": "extract_mesh_for_element(structural_element, regular_grid, scalar_field, mask=None)",
+          "description": "Extract a mesh for a single structural element using marching cubes.",
+          "source_file": "gempy/modules/mesh_extranction/marching_cubes.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "equinor/resdata",
+          "name": "resdata.grid.rd_grid.Grid",
+          "signature": "Grid",
+          "description": "Class for loading and internalizing GRID/EGRID files.",
+          "source_file": "python/resdata/grid/rd_grid.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "equinor/xtgeo",
+          "name": "xtgeo.grid3d._egrid.EGrid.to_file",
+          "signature": "to_file(self, filelike, fileformat='egrid')",
+          "description": "write the EGrid to file.\nArgs:\n    filelike (str,Path,stream): The egrid file to write to.\n    file_format (resfo.Format): The format of the file.",
+          "source_file": "src/xtgeo/grid3d/_egrid.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.84,
+          "repository": "equinor/xtgeo",
+          "name": "xtgeo.grid3d._gridprop_export.to_file",
+          "signature": "to_file(gridprop, pfile, fformat='roff', name=None, append=False, dtype=None, fmt=None, rle=False)",
+          "description": "Export the grid property to file.",
+          "source_file": "src/xtgeo/grid3d/_gridprop_export.py",
+          "api_level": "primary_public"
+        }
+      ]
+    },
+    {
+      "query": "Read Eclipse reservoir data",
+      "expected_repositories": [
+        "OPM/ResInsight",
+        "equinor/xtgeo"
+      ],
+      "repository_top5_hit": false,
+      "useful_function_top5_hit": false,
+      "results": [
+        {
+          "score": 15.98,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.make_interpolants_from_raw_data",
+          "signature": "make_interpolants_from_raw_data(raw, construct)",
+          "description": "Creates a list of interpolants from raw Eclipse table data using\nthe given construct callable.",
+          "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 14.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.create_dry_gas",
+          "signature": "create_dry_gas(self, raw, unit_system)",
+          "description": "Creates interpolants for dry gas from the given raw Eclipse data and uses\na dry gas unit converter based on the given unit system.",
+          "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 14.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.create_wet_gas",
+          "signature": "create_wet_gas(self, raw, unit_system)",
+          "description": "Creates interpolants for wet gas from the given raw Eclipse data and uses\na wet gas unit converter based on the given unit system.",
+          "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 14.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.from_ecl_init_file",
+          "signature": "from_ecl_init_file(ecl_init_file, keep_unit_system=True)",
+          "description": "Reads the given Eclipse file and creates a Gas object from its data.",
+          "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 14.48,
+          "repository": "equinor/webviz-subsurface",
+          "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.create_dead_oil",
+          "signature": "create_dead_oil(self, raw, const_compr, unit_system)",
+          "description": "Creates interpolants for dead oil (with and without constant compressibility)\nfrom the given raw Eclipse data and uses a dead oil (or pvcdo) unit converter\nbased on the given unit system.",
+          "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Extract seismic gather",
+      "expected_repositories": [
+        "equinor/segyio",
+        "trhallam/segysak"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 9.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.gather.Gather",
+          "signature": "Gather",
+          "description": "A gather is in this context the intersection of lines in a cube, i.e. all\nthe offsets at some inline/crossline intersection. The primary data type is\nnumpy.ndarray, with dimensions depending on the range of offsets specified.",
+          "source_file": "python/segyio/gather.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.46,
+          "repository": "equinor/fmu-dataio",
+          "name": "docs.ext.pydantic_autosummary.extract_summary",
+          "signature": "extract_summary(doc, document)",
+          "description": "Extract summary from docstring.",
+          "source_file": "docs/ext/pydantic_autosummary/__init__.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 9.34,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.gather",
+          "signature": "gather(self)",
+          "description": "Interact with segy in gather mode",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/ert",
+          "name": "ert.config.observation_quality_control.qc_seismic_observations",
+          "signature": "qc_seismic_observations(observations, shape_registry)",
+          "description": "Perform quality control checks on seismic observations.",
+          "source_file": "src/ert/config/observation_quality_control.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Access seismic depth slice",
+      "expected_repositories": [
+        "equinor/segyio"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 17.46,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.depth_slice",
+          "signature": "depth_slice(self)",
+          "description": "Interact with segy in depth slice mode (fixed z-coordinate)",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 14.84,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.depth_slice",
+          "signature": "depth_slice(self, value)",
+          "description": "depth macro assignment",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 12.1,
+          "repository": "OPM/ResInsight",
+          "name": "SeismicSliceDirection",
+          "signature": "SeismicSliceDirection",
+          "description": "",
+          "source_file": "ApplicationLibCode/Application/RiaSeismicDefines.h",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 9.96,
+          "repository": "equinor/segyio",
+          "name": "segyio.depth.Depth",
+          "signature": "Depth",
+          "description": "The Depth implements the array interface, where every array element, the\ndepth, is a numpy.ndarray of a horizontal cut of the volume. As all arrays\nit can be random accessed, iterated over, and read strided. Please note\nthat SEG-Y data is laid out trace-by-trace on disk, so accessing horizontal\ncuts (fixed z-coordinates in a cartesian grid) is *very* inefficient.",
+          "source_file": "python/segyio/depth.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
+          "api_level": "documented_public"
+        }
+      ]
+    },
+    {
+      "query": "Find seismic samples and offsets",
+      "expected_repositories": [
+        "equinor/segyio"
+      ],
+      "repository_top5_hit": true,
+      "useful_function_top5_hit": true,
+      "results": [
+        {
+          "score": 9.46,
+          "repository": "equinor/segyio",
+          "name": "segyio.segy.SegyFile.samples",
+          "signature": "samples(self)",
+          "description": "Return the array of samples with appropriate intervals.",
+          "source_file": "python/segyio/segy.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "OpendTect/odpy",
+          "name": "odpy.seisman.getSeismicDBList",
+          "signature": "getSeismicDBList(reload=False, args={})",
+          "description": "Gets information on available seismics from database for a survey",
+          "source_file": "odpy/seisman.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/ert",
+          "name": "ert.config.observation_quality_control.qc_seismic_observations",
+          "signature": "qc_seismic_observations(observations, shape_registry)",
+          "description": "Perform quality control checks on seismic observations.",
+          "source_file": "src/ert/config/observation_quality_control.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.48,
+          "repository": "equinor/fmu-dataio",
+          "name": "examples.example_exports.export_rms_data.export_surface_maps.export_seismic_amplitude_surface",
+          "signature": "export_seismic_amplitude_surface()",
+          "description": "Export metadata for a seismic amplitude surface",
+          "source_file": "examples/example_exports/export_rms_data/export_surface_maps.py",
+          "api_level": "documented_public"
+        },
+        {
+          "score": 8.36,
+          "repository": "equinor/dlisio",
+          "name": "dlisio.dlis.measurement.Measurement.samples",
+          "signature": "samples(self)",
+          "description": "Measurment samples",
+          "source_file": "python/dlisio/dlis/measurement.py",
+          "api_level": "documented_public"
+        }
+      ]
+    }
+  ]
+}
