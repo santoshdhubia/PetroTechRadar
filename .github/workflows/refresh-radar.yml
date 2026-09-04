@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - ".github/workflows/refresh-radar.yml"
+      - "scripts/discover_repositories.py"
       - "scripts/generate_issue_activity.py"
       - "scripts/sync_dashboard_index.py"
       - "catalog/ADDITIONAL_REPOSITORIES.csv"
@@ -33,6 +34,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Discover new subsurface repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+        run: python scripts/discover_repositories.py
 
       - name: Refresh GitHub repository metrics
         env:
@@ -61,9 +68,24 @@ jobs:
       - name: Synchronize dashboard navigation and live counts
         run: python scripts/sync_dashboard_index.py
 
-      - name: Show paper refresh summary
+      - name: Show discovery and paper refresh summary
         shell: bash
         run: |
+          echo "Repository discovery summary:"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('catalog/discovery_summary.json')
+          if p.exists():
+              d=json.load(p.open(encoding='utf-8'))
+              print(f"Raw unique repositories: {d.get('raw_unique',0)}")
+              print(f"New candidates: {d.get('new_candidates',0)}")
+              print(f"Auto-added: {d.get('auto_added',0)}")
+              print(f"Review only: {d.get('review_only',0)}")
+          else:
+              print('No discovery summary generated.')
+          PY
+
           echo "Papers with Code refresh summary:"
           python - <<'PY'
           import csv
@@ -97,6 +119,8 @@ jobs:
 
           git add catalog/PETROTECHRADAR_V1.csv
           git add catalog/ADDITIONAL_REPOSITORIES.csv
+          git add catalog/DISCOVERY_CANDIDATES.csv
+          git add catalog/discovery_summary.json
           git add catalog/metrics_refresh_status.json
           git add catalog/TOP_REPOSITORIES.md
           git add catalog/EMERGING_RADAR.md
@@ -121,5 +145,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Refresh PetroTechRadar metrics"
+          git commit -m "Refresh PetroTechRadar metrics and discovery"
           git push
