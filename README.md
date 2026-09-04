@@ -164,10 +164,10 @@ Citation metrics are sourced from **OpenAlex** and repository-health metrics fro
 
 | Paper | Journal | Year | Citations | Cit./yr | Code |
 |---|---|---:|---:|---:|---|
-| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,850** | 108.8 | [GitHub](https://github.com/obspy/obspy) |
-| Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **614** | 76.8 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
+| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,854** | 109.1 | [GitHub](https://github.com/obspy/obspy) |
+| Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **616** | 77.0 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
 | [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **523** | 52.3 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
-| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **429** | 35.8 | [GitHub](https://github.com/simpeg/simpeg) |
+| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **431** | 35.9 | [GitHub](https://github.com/simpeg/simpeg) |
 | Mitigating local minima in full-waveform inversion by expanding the search space | Geophysical Journal International | 2013 | **324** | 23.1 | [GitHub](https://github.com/slimgroup/PenaltyMethodGJI) |
 
 **[→ View all Papers with Code](catalog/PAPERS_WITH_CODE.md)** · **[Rank by citations](catalog/TOP_CITED_PAPERS.md)**

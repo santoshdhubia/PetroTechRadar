@@ -13,12 +13,12 @@
       "code_health": "Very High",
       "technical_relevance": "87",
       "venue_score": "90",
-      "citations": "1850",
-      "citations_per_year": "108.82",
+      "citations": "1854",
+      "citations_per_year": "109.06",
       "openalex_id": "https://openalex.org/W2112393517",
       "repo_stars": "1332",
       "repo_forks": "565",
-      "repo_last_push": "2026-08-28T11:09:14Z",
+      "repo_last_push": "2026-09-03T14:53:12Z",
       "repo_license": "NOASSERTION",
       "citation_score": "100",
       "citation_velocity_score": "100",
@@ -26,7 +26,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "96.4",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "pyGIMLi: An open-source library for modelling and inversion in geophysics",
@@ -44,17 +44,17 @@
       "citations": "523",
       "citations_per_year": "52.3",
       "openalex_id": "https://openalex.org/W2742540029",
-      "repo_stars": "505",
+      "repo_stars": "506",
       "repo_forks": "163",
       "repo_last_push": "2026-08-19T11:28:08Z",
       "repo_license": "NOASSERTION",
       "citation_score": "90.6",
       "citation_velocity_score": "86.3",
-      "github_score": "93.3",
+      "github_score": "93.1",
       "reproducibility_score": "100",
       "papers_with_code_score": "95.1",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications",
@@ -69,20 +69,20 @@
       "code_health": "Very High",
       "technical_relevance": "98",
       "venue_score": "90",
-      "citations": "429",
-      "citations_per_year": "35.75",
+      "citations": "431",
+      "citations_per_year": "35.92",
       "openalex_id": "https://openalex.org/W1790833911",
-      "repo_stars": "672",
+      "repo_stars": "673",
       "repo_forks": "292",
-      "repo_last_push": "2026-08-28T23:00:45Z",
+      "repo_last_push": "2026-08-31T16:05:18Z",
       "repo_license": "MIT",
-      "citation_score": "87.7",
-      "citation_velocity_score": "78.3",
-      "github_score": "97.8",
+      "citation_score": "87.8",
+      "citation_velocity_score": "78.4",
+      "github_score": "97.7",
       "reproducibility_score": "100",
       "papers_with_code_score": "94.4",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "A framework for simulation and inversion in electromagnetics",
@@ -97,20 +97,20 @@
       "code_health": "Very High",
       "technical_relevance": "96",
       "venue_score": "90",
-      "citations": "174",
-      "citations_per_year": "17.4",
+      "citations": "175",
+      "citations_per_year": "17.5",
       "openalex_id": "https://openalex.org/W2529422904",
-      "repo_stars": "672",
+      "repo_stars": "673",
       "repo_forks": "292",
-      "repo_last_push": "2026-08-28T23:00:45Z",
+      "repo_last_push": "2026-08-31T16:05:18Z",
       "repo_license": "MIT",
-      "citation_score": "74.7",
-      "citation_velocity_score": "63.2",
-      "github_score": "97.8",
+      "citation_score": "74.8",
+      "citation_velocity_score": "63.4",
+      "github_score": "97.7",
       "reproducibility_score": "100",
       "papers_with_code_score": "90.5",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "SeisBench \u2014 A Toolbox for Machine Learning in Seismology",
@@ -125,20 +125,20 @@
       "code_health": "Very High",
       "technical_relevance": "91",
       "venue_score": "90",
-      "citations": "178",
-      "citations_per_year": "35.6",
+      "citations": "179",
+      "citations_per_year": "35.8",
       "openalex_id": "https://openalex.org/W4220904918",
       "repo_stars": "414",
       "repo_forks": "118",
       "repo_last_push": "2026-08-19T09:17:43Z",
       "repo_license": "GPL-3.0",
-      "citation_score": "75.0",
-      "citation_velocity_score": "78.2",
-      "github_score": "90.8",
+      "citation_score": "75.1",
+      "citation_velocity_score": "78.3",
+      "github_score": "90.5",
       "reproducibility_score": "100",
-      "papers_with_code_score": "90.4",
+      "papers_with_code_score": "90.3",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "PyLops\u2014A linear-operator Python library for scalable algebra and optimization",
@@ -158,15 +158,15 @@
       "openalex_id": "https://openalex.org/W2994167575",
       "repo_stars": "534",
       "repo_forks": "124",
-      "repo_last_push": "2026-08-25T17:43:47Z",
+      "repo_last_push": "2026-09-02T20:29:18Z",
       "repo_license": "LGPL-3.0",
       "citation_score": "68.2",
       "citation_velocity_score": "61.3",
-      "github_score": "92.9",
+      "github_score": "93.0",
       "reproducibility_score": "100",
-      "papers_with_code_score": "88.0",
+      "papers_with_code_score": "88.1",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Deep-learning inversion: A next-generation seismic velocity model building method",
@@ -181,20 +181,20 @@
       "code_health": "High",
       "technical_relevance": "93",
       "venue_score": "94",
-      "citations": "614",
-      "citations_per_year": "76.75",
+      "citations": "616",
+      "citations_per_year": "77.0",
       "openalex_id": "https://openalex.org/W2912052494",
       "repo_stars": "222",
       "repo_forks": "55",
       "repo_last_push": "2022-08-28T02:18:26Z",
       "repo_license": "",
       "citation_score": "92.9",
-      "citation_velocity_score": "94.5",
+      "citation_velocity_score": "94.6",
       "github_score": "49.5",
       "reproducibility_score": "88",
       "papers_with_code_score": "87.4",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "An open-source full 3D electromagnetic modeler for 1D VTI media in Python: empymod",
@@ -209,20 +209,20 @@
       "code_health": "Very High",
       "technical_relevance": "90",
       "venue_score": "94",
-      "citations": "104",
-      "citations_per_year": "10.4",
+      "citations": "105",
+      "citations_per_year": "10.5",
       "openalex_id": "https://openalex.org/W2626673453",
       "repo_stars": "98",
       "repo_forks": "23",
       "repo_last_push": "2026-07-24T13:26:45Z",
       "repo_license": "Apache-2.0",
-      "citation_score": "67.3",
-      "citation_velocity_score": "52.8",
-      "github_score": "74.3",
+      "citation_score": "67.4",
+      "citation_velocity_score": "53.0",
+      "github_score": "74.1",
       "reproducibility_score": "100",
       "papers_with_code_score": "85.2",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Mitigating local minima in full-waveform inversion by expanding the search space",
@@ -250,7 +250,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "82.6",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "PETGEM: A parallel code for 3D CSEM forward modeling using edge finite elements",
@@ -274,11 +274,11 @@
       "repo_license": "BSD-3-Clause",
       "citation_score": "64.1",
       "citation_velocity_score": "50.5",
-      "github_score": "69.6",
+      "github_score": "69.4",
       "reproducibility_score": "100",
       "papers_with_code_score": "82.3",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Measurement of intrinsic and scattering attenuation of shear waves in two sedimentary basins and comparison to crystalline sites in Germany",
@@ -293,20 +293,20 @@
       "code_health": "Very High",
       "technical_relevance": "83",
       "venue_score": "92",
-      "citations": "65",
-      "citations_per_year": "5.91",
+      "citations": "67",
+      "citations_per_year": "6.09",
       "openalex_id": "https://openalex.org/W2308598531",
       "repo_stars": "34",
       "repo_forks": "16",
       "repo_last_push": "2026-05-07T11:21:49Z",
       "repo_license": "MIT",
-      "citation_score": "60.6",
-      "citation_velocity_score": "42.0",
-      "github_score": "62.8",
+      "citation_score": "61.0",
+      "citation_velocity_score": "42.5",
+      "github_score": "62.5",
       "reproducibility_score": "100",
-      "papers_with_code_score": "80.4",
+      "papers_with_code_score": "80.5",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "3-D Bayesian variational full waveform inversion",
@@ -324,17 +324,17 @@
       "citations": "77",
       "citations_per_year": "19.25",
       "openalex_id": "https://openalex.org/W4319727201",
-      "repo_stars": "59",
+      "repo_stars": "60",
       "repo_forks": "13",
       "repo_last_push": "2025-07-29T07:31:16Z",
       "repo_license": "",
       "citation_score": "63.0",
       "citation_velocity_score": "65.3",
-      "github_score": "51.8",
+      "github_score": "51.7",
       "reproducibility_score": "88",
       "papers_with_code_score": "80.3",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Quantitative imaging of water, ice, and air in permafrost systems through petrophysical joint inversion of seismic refraction and electrical resistivity data",
@@ -362,7 +362,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "79.9",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Parallel 3-D marine controlled-source electromagnetic modelling using high-order tetrahedral N\u00e9d\u00e9lec elements",
@@ -386,11 +386,11 @@
       "repo_license": "BSD-3-Clause",
       "citation_score": "58.5",
       "citation_velocity_score": "45.2",
-      "github_score": "69.6",
+      "github_score": "69.4",
       "reproducibility_score": "88",
-      "papers_with_code_score": "78.6",
+      "papers_with_code_score": "78.5",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Constrained non-linear AVO inversion based on the adjoint-state optimization",
@@ -405,20 +405,20 @@
       "code_health": "High",
       "technical_relevance": "93",
       "venue_score": "90",
-      "citations": "34",
-      "citations_per_year": "6.8",
+      "citations": "35",
+      "citations_per_year": "7.0",
       "openalex_id": "https://openalex.org/W4292329159",
       "repo_stars": "23",
       "repo_forks": "2",
       "repo_last_push": "2026-02-13T11:26:00Z",
       "repo_license": "MIT",
-      "citation_score": "51.4",
-      "citation_velocity_score": "44.6",
-      "github_score": "49.6",
+      "citation_score": "51.8",
+      "citation_velocity_score": "45.2",
+      "github_score": "49.3",
       "reproducibility_score": "100",
-      "papers_with_code_score": "78.2",
+      "papers_with_code_score": "78.3",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "GPR-FWI-Py: Open-source Python software for multi-scale regularized full waveform inversion in Ground Penetrating Radar using random excitation sources",
@@ -433,20 +433,20 @@
       "code_health": "High",
       "technical_relevance": "95",
       "venue_score": "90",
-      "citations": "38",
-      "citations_per_year": "19.0",
+      "citations": "39",
+      "citations_per_year": "19.5",
       "openalex_id": "https://openalex.org/W4407246841",
       "repo_stars": "32",
       "repo_forks": "3",
       "repo_last_push": "2025-04-16T22:09:53Z",
       "repo_license": "",
-      "citation_score": "53.0",
-      "citation_velocity_score": "65.1",
-      "github_score": "38.2",
+      "citation_score": "53.3",
+      "citation_velocity_score": "65.6",
+      "github_score": "37.9",
       "reproducibility_score": "88",
       "papers_with_code_score": "77.4",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Geophysical inversion and optimal transport",
@@ -474,7 +474,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "76.4",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Magma chamber detected beneath an arc volcano with full-waveform inversion of active-source seismic data",
@@ -502,7 +502,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "73.8",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Downward continuation of marine seismic reflection data: an undervalued tool to improve velocity models",
@@ -526,11 +526,11 @@
       "repo_license": "GPL-3.0",
       "citation_score": "35.9",
       "citation_velocity_score": "25.3",
-      "github_score": "44.2",
+      "github_score": "44.0",
       "reproducibility_score": "100",
       "papers_with_code_score": "73.0",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "VIP: Variational Inversion Package with example implementations of Bayesian tomographic imaging",
@@ -548,17 +548,17 @@
       "citations": "7",
       "citations_per_year": "2.33",
       "openalex_id": "https://openalex.org/W4399140146",
-      "repo_stars": "59",
+      "repo_stars": "60",
       "repo_forks": "13",
       "repo_last_push": "2025-07-29T07:31:16Z",
       "repo_license": "",
       "citation_score": "30.1",
       "citation_velocity_score": "26.1",
-      "github_score": "51.8",
+      "github_score": "51.7",
       "reproducibility_score": "100",
       "papers_with_code_score": "72.6",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Design, implementation and application of the Marchenko plane-wave algorithm",
@@ -578,15 +578,43 @@
       "openalex_id": "https://openalex.org/W4383820076",
       "repo_stars": "176",
       "repo_forks": "66",
-      "repo_last_push": "2026-08-25T12:36:48Z",
+      "repo_last_push": "2026-09-03T08:36:57Z",
       "repo_license": "NOASSERTION",
       "citation_score": "0.0",
       "citation_velocity_score": "0.0",
-      "github_score": "83.5",
+      "github_score": "83.7",
       "reproducibility_score": "100",
-      "papers_with_code_score": "71.1",
+      "papers_with_code_score": "71.2",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
+    },
+    {
+      "paper_title": "Full-waveform earthquake source inversion using simulation-based inference",
+      "journal": "Geophysical Journal International",
+      "year": "2025",
+      "topic": "Waveform Inversion / Bayesian ML",
+      "doi": "10.1093/gji/ggaf112",
+      "repository": "asaoulis/seismo-sbi",
+      "repo_url": "https://github.com/asaoulis/seismo-sbi",
+      "paper_url": "https://doi.org/10.1093/gji/ggaf112",
+      "reproducibility": "High",
+      "code_health": "High",
+      "technical_relevance": "92",
+      "venue_score": "92",
+      "citations": "6",
+      "citations_per_year": "3.0",
+      "openalex_id": "https://openalex.org/W4408983431",
+      "repo_stars": "14",
+      "repo_forks": "0",
+      "repo_last_push": "2026-08-25T12:37:49Z",
+      "repo_license": "",
+      "citation_score": "28.1",
+      "citation_velocity_score": "30.1",
+      "github_score": "51.3",
+      "reproducibility_score": "88",
+      "papers_with_code_score": "71.1",
+      "metrics_status": "citation-ok:doi;github-ok",
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Acoustic full waveform inversion for 2-D ambient noise source imaging",
@@ -614,35 +642,7 @@
       "reproducibility_score": "100",
       "papers_with_code_score": "70.5",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
-    },
-    {
-      "paper_title": "Full-waveform earthquake source inversion using simulation-based inference",
-      "journal": "Geophysical Journal International",
-      "year": "2025",
-      "topic": "Waveform Inversion / Bayesian ML",
-      "doi": "10.1093/gji/ggaf112",
-      "repository": "asaoulis/seismo-sbi",
-      "repo_url": "https://github.com/asaoulis/seismo-sbi",
-      "paper_url": "https://doi.org/10.1093/gji/ggaf112",
-      "reproducibility": "High",
-      "code_health": "High",
-      "technical_relevance": "92",
-      "venue_score": "92",
-      "citations": "5",
-      "citations_per_year": "2.5",
-      "openalex_id": "https://openalex.org/W4408983431",
-      "repo_stars": "14",
-      "repo_forks": "0",
-      "repo_last_push": "2026-08-25T12:37:49Z",
-      "repo_license": "",
-      "citation_score": "25.9",
-      "citation_velocity_score": "27.2",
-      "github_score": "51.6",
-      "reproducibility_score": "88",
-      "papers_with_code_score": "70.5",
-      "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "A Deep Learning-Based Time Shift Objective Function for Full Waveform Inversion",
@@ -666,11 +666,11 @@
       "repo_license": "",
       "citation_score": "10.0",
       "citation_velocity_score": "15.1",
-      "github_score": "38.7",
+      "github_score": "38.5",
       "reproducibility_score": "100",
       "papers_with_code_score": "68.5",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Implicit full waveform inversion imaging",
@@ -688,17 +688,17 @@
       "citations": "0",
       "citations_per_year": "0.0",
       "openalex_id": "https://openalex.org/W7168086261",
-      "repo_stars": "5",
+      "repo_stars": "6",
       "repo_forks": "1",
       "repo_last_push": "2026-08-06T15:53:17Z",
       "repo_license": "MIT",
       "citation_score": "0.0",
       "citation_velocity_score": "0.0",
-      "github_score": "47.7",
+      "github_score": "48.4",
       "reproducibility_score": "100",
       "papers_with_code_score": "66.7",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "libEMMI MGFD: A program of marine controlled-source electromagnetic modelling and inversion using frequency-domain multigrid solver",
@@ -722,11 +722,11 @@
       "repo_license": "GPL-3.0",
       "citation_score": "10.0",
       "citation_velocity_score": "6.2",
-      "github_score": "49.7",
+      "github_score": "49.4",
       "reproducibility_score": "88",
       "papers_with_code_score": "65.0",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Deep learning-based self-supervised multiparameter inversion",
@@ -750,11 +750,11 @@
       "repo_license": "MIT",
       "citation_score": "",
       "citation_velocity_score": "",
-      "github_score": "24.9",
+      "github_score": "24.7",
       "reproducibility_score": "100",
       "papers_with_code_score": "64.0",
       "metrics_status": "citation-unverified;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "InverseBench: Benchmarking Diffusion Models for Inverse Problems",
@@ -773,7 +773,7 @@
       "citations_per_year": "",
       "openalex_id": "",
       "repo_stars": "125",
-      "repo_forks": "17",
+      "repo_forks": "18",
       "repo_last_push": "2026-07-16T07:30:56Z",
       "repo_license": "MIT",
       "citation_score": "",
@@ -782,7 +782,7 @@
       "reproducibility_score": "88",
       "papers_with_code_score": "63.7",
       "metrics_status": "citation-unverified;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Supervised pre-training and prior-guided fine-tuning for deep learning-based scatter interpolation and geophysical inversion",
@@ -806,11 +806,11 @@
       "repo_license": "",
       "citation_score": "0.0",
       "citation_velocity_score": "0.0",
-      "github_score": "5.5",
+      "github_score": "5.3",
       "reproducibility_score": "100",
-      "papers_with_code_score": "61.5",
+      "papers_with_code_score": "61.4",
       "metrics_status": "citation-ok:title:1.000;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Geophysical inversion software WAVE-Inversion and associated FWI/joint inversion studies",
@@ -838,7 +838,7 @@
       "reproducibility_score": "88",
       "papers_with_code_score": "59.9",
       "metrics_status": "citation-unverified;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "An iterative weighted least-square fitting method for crustal anisotropy using receiver functions",
@@ -866,7 +866,7 @@
       "reproducibility_score": "88",
       "papers_with_code_score": "59.8",
       "metrics_status": "citation-ok:doi;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Multi-Region Full Waveform Inversion for Ground Penetrating Radar Common-offset Data",
@@ -894,7 +894,7 @@
       "reproducibility_score": "88",
       "papers_with_code_score": "56.9",
       "metrics_status": "citation-unverified;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     },
     {
       "paper_title": "Frequency-Domain Adapt-Then-Combine Full Waveform Inversion",
@@ -918,11 +918,11 @@
       "repo_license": "",
       "citation_score": "",
       "citation_velocity_score": "",
-      "github_score": "27.5",
+      "github_score": "27.2",
       "reproducibility_score": "70",
-      "papers_with_code_score": "52.0",
+      "papers_with_code_score": "51.9",
       "metrics_status": "citation-unverified;github-ok",
-      "last_verified": "2026-08-30"
+      "last_verified": "2026-09-04"
     }
   ]
 }
