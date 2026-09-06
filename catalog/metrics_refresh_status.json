@@ -1,12 +1,6 @@
 {
-  "refreshed_at": "2026-09-04T17:04:26.883062+00:00",
+  "refreshed_at": "2026-09-06T08:04:17.814806+00:00",
   "repository_count": 157,
-  "successful": 156,
-  "errors": [
-    {
-      "repository": "JintaoLee-Roger/cigvis",
-      "catalog": "PETROTECHRADAR_V1.csv",
-      "error": "HTTP Error 504: Gateway Timeout"
-    }
-  ]
+  "successful": 157,
+  "errors": []
 }

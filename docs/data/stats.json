@@ -7,8 +7,8 @@
     "Emerging": 44
   },
   "domains": {
-    "Computational Geophysics": 3,
     "Geology": 2,
+    "Computational Geophysics": 3,
     "Reservoir": 25,
     "PVT": 1,
     "AI": 20,
@@ -25,10 +25,10 @@
     "Emissions": 1
   },
   "organizations": {
-    "SimPEG": 1,
     "GemPy": 1,
-    "PyLops": 1,
+    "SimPEG": 1,
     "pyGIMLi": 1,
+    "PyLops": 1,
     "GEOS Consortium": 1,
     "OPM": 6,
     "Equinor": 13,
@@ -59,17 +59,17 @@
     "whimian": 1,
     "igp-gravity": 1,
     "xin2zhang": 1,
-    "Accenture": 1,
     "lanl": 1,
+    "Accenture": 1,
     "qzhng": 1,
     "gabrielserrao": 2,
     "danielscholl-osdu": 1,
-    "DeepWave-KAUST": 1,
     "danielscholl": 2,
+    "DeepWave-KAUST": 1,
     "chadleong": 1,
     "aaspip": 1,
-    "xhffffff": 1,
     "SLB": 2,
+    "xhffffff": 1,
     "orkahub": 1,
     "lfrincond": 1,
     "scuervo91": 1,
@@ -95,8 +95,8 @@
     "rasulsaxobidinov-debug": 1,
     "EugPal": 1,
     "NimahMasuud": 1,
-    "hatimCanDoIt": 1,
     "florianwittkamp": 1,
+    "hatimCanDoIt": 1,
     "prakashkrish-DataGeek": 1,
     "13262233692": 1,
     "olivesgatech": 1,
@@ -127,8 +127,8 @@
     "fadhilazz": 1,
     "MJRobillard": 1,
     "Tari91": 1,
-    "MboleNgome": 1,
     "DivyyaM": 1,
+    "MboleNgome": 1,
     "AyaAlahdl": 1,
     "lijingwang": 1,
     "hvt1609": 1,
@@ -136,5 +136,5 @@
     "pariveda": 1,
     "micmurawski": 1
   },
-  "last_verified": "2026-09-04"
+  "last_verified": "2026-09-06"
 }

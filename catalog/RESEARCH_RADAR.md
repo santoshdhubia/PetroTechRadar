@@ -4,20 +4,20 @@ Research code, datasets and reproducible technical methods.
 
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
-| 1 | [NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo) | NVIDIA | AI / Scientific Computing | Research | 3,221 | 776 | 2026-09-04 | 85.2 |
-| 2 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.1 |
-| 3 | [NVIDIA/physicsnemo-cfd](https://github.com/NVIDIA/physicsnemo-cfd) | NVIDIA | AI / Scientific Computing | Research | 149 | 30 | 2026-08-18 | 77.9 |
-| 4 | [GeoscienceAustralia/uncover-ml](https://github.com/GeoscienceAustralia/uncover-ml) | GeoscienceAustralia | Geoscience / AI | Research | 34 | 22 | 2026-06-23 | 75.7 |
-| 5 | [sede-open/Core2Relperm](https://github.com/sede-open/Core2Relperm) | Shell / SEDE | Reservoir / Core Analysis | Research | 67 | 18 | 2026-02-19 | 73.8 |
+| 1 | [NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo) | NVIDIA | AI / Scientific Computing | Research | 3,223 | 776 | 2026-09-04 | 85.2 |
+| 2 | [sede-open/synthoseis](https://github.com/sede-open/synthoseis) | Shell / SEDE | Seismic / AI | Research | 130 | 38 | 2026-08-18 | 78.0 |
+| 3 | [NVIDIA/physicsnemo-cfd](https://github.com/NVIDIA/physicsnemo-cfd) | NVIDIA | AI / Scientific Computing | Research | 149 | 30 | 2026-08-18 | 77.8 |
+| 4 | [sede-open/Core2Relperm](https://github.com/sede-open/Core2Relperm) | Shell / SEDE | Reservoir / Core Analysis | Research | 67 | 18 | 2026-09-06 | 77.0 |
+| 5 | [GeoscienceAustralia/uncover-ml](https://github.com/GeoscienceAustralia/uncover-ml) | GeoscienceAustralia | Geoscience / AI | Research | 34 | 22 | 2026-06-23 | 75.7 |
 | 6 | [DIG-Kaust/MLgeoscience](https://github.com/DIG-Kaust/MLgeoscience) | DIG-Kaust | Geoscience / AI | Research | 99 | 39 | 2025-12-30 | 73.6 |
-| 7 | [wavetomo/FWI-EDU](https://github.com/wavetomo/FWI-EDU) | wavetomo | Seismic | Research | 12 | 2 | 2026-07-17 | 72.5 |
+| 7 | [wavetomo/FWI-EDU](https://github.com/wavetomo/FWI-EDU) | wavetomo | Seismic | Research | 12 | 2 | 2026-07-17 | 72.4 |
 | 8 | [xin2zhang/MCTomo](https://github.com/xin2zhang/MCTomo) | xin2zhang | Geophysics | Research | 62 | 22 | 2025-11-11 | 71.8 |
 | 9 | [lanl/owl](https://github.com/lanl/owl) | lanl | Seismic / Geophysics | Research | 6 | 2 | 2026-07-04 | 71.5 |
 | 10 | [OPM/opm-geochemistry](https://github.com/OPM/opm-geochemistry) | OPM | Reservoir / Geochemistry | Research | 2 | 3 | 2026-08-07 | 71.3 |
 | 11 | [qzhng/improved-pinn-seismic-fwi](https://github.com/qzhng/improved-pinn-seismic-fwi) | qzhng | Seismic / AI | Research | 1 | 1 | 2026-08-27 | 70.6 |
-| 12 | [DeepWave-KAUST/SiameseFit-pub](https://github.com/DeepWave-KAUST/SiameseFit-pub) | DeepWave-KAUST | Seismic / AI | Research | 3 | 1 | 2026-06-17 | 70.3 |
+| 12 | [DeepWave-KAUST/SiameseFit-pub](https://github.com/DeepWave-KAUST/SiameseFit-pub) | DeepWave-KAUST | Seismic / AI | Research | 3 | 1 | 2026-06-17 | 70.2 |
 | 13 | [aaspip/geofwi3d](https://github.com/aaspip/geofwi3d) | aaspip | Seismic / AI | Research | 6 | 0 | 2026-05-20 | 69.9 |
-| 14 | [xhffffff/crf-fwi](https://github.com/xhffffff/crf-fwi) | xhffffff | Seismic | Research | 2 | 1 | 2026-06-07 | 69.8 |
+| 14 | [xhffffff/crf-fwi](https://github.com/xhffffff/crf-fwi) | xhffffff | Seismic | Research | 2 | 1 | 2026-06-07 | 69.7 |
 | 15 | [GarretMaloney/GeothermalAI](https://github.com/GarretMaloney/GeothermalAI) | GarretMaloney | Geothermal / AI | Research | 0 | 0 | 2026-07-31 | 68.8 |
 | 16 | [bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region](https://github.com/bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region) | bpari004 | Geothermal / Seismicity | Research | 0 | 0 | 2026-06-05 | 67.9 |
 | 17 | [FanSmale/TDMF-FWI](https://github.com/FanSmale/TDMF-FWI) | FanSmale | Seismic | Research | 1 | 0 | 2026-04-13 | 67.8 |
