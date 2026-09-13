@@ -4,35 +4,35 @@ Highest-ranked repositories using technical curation plus current GitHub activit
 
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
-| 1 | [gempy-project/gempy](https://github.com/gempy-project/gempy) | GemPy | Geology / Modeling | Core | 1,338 | 280 | 2026-09-05 | 88.5 |
-| 2 | [simpeg/simpeg](https://github.com/simpeg/simpeg) | SimPEG | Computational Geophysics | Core | 673 | 292 | 2026-09-04 | 88.4 |
-| 3 | [gimli-org/gimli](https://github.com/gimli-org/gimli) | pyGIMLi | Computational Geophysics | Core | 506 | 163 | 2026-08-19 | 87.0 |
-| 4 | [PyLops/pylops](https://github.com/PyLops/pylops) | PyLops | Computational Geophysics | Core | 534 | 124 | 2026-09-02 | 86.9 |
-| 5 | [GEOS-DEV/GEOS](https://github.com/GEOS-DEV/GEOS) | GEOS Consortium | Reservoir / Geomechanics | Core | 286 | 108 | 2026-09-06 | 86.8 |
-| 6 | [OPM/ResInsight](https://github.com/OPM/ResInsight) | OPM | Reservoir | Core | 218 | 102 | 2026-09-04 | 86.7 |
-| 7 | [OPM/opm-simulators](https://github.com/OPM/opm-simulators) | OPM | Reservoir / Simulation | Core | 162 | 151 | 2026-09-05 | 86.5 |
-| 8 | [equinor/ert](https://github.com/equinor/ert) | Equinor | Reservoir / Data Assimilation | Core | 161 | 140 | 2026-09-04 | 86.4 |
-| 9 | [Loop3D/LoopStructural](https://github.com/Loop3D/LoopStructural) | Loop3D | Geology / Modeling | Core | 286 | 57 | 2026-09-01 | 85.4 |
-| 10 | [equinor/neqsim](https://github.com/equinor/neqsim) | Equinor | PVT / Process | Core | 150 | 66 | 2026-09-06 | 85.4 |
-| 11 | [NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo) | NVIDIA | AI / Scientific Computing | Research | 3,223 | 776 | 2026-09-04 | 85.2 |
-| 12 | [equinor/resdata](https://github.com/equinor/resdata) | Equinor | Reservoir / Data | Core | 128 | 103 | 2026-09-04 | 85.2 |
-| 13 | [equinor/xtgeo](https://github.com/equinor/xtgeo) | Equinor | Geoscience / Reservoir | Core | 122 | 67 | 2026-09-04 | 85.2 |
-| 14 | [OPM/opm-common](https://github.com/OPM/opm-common) | OPM | Reservoir / Simulation | Core | 40 | 123 | 2026-09-04 | 84.5 |
-| 15 | [OpendTect/OpendTect](https://github.com/OpendTect/OpendTect) | OpendTect | Seismic / Interpretation | Core | 136 | 55 | 2026-09-06 | 84.3 |
-| 16 | [equinor/webviz-subsurface](https://github.com/equinor/webviz-subsurface) | Equinor | Reservoir / Visualization | Core | 62 | 62 | 2026-08-26 | 84.3 |
-| 17 | [NatLabRockies/GEOPHIRES-X](https://github.com/NatLabRockies/GEOPHIRES-X) | National Lab Rockies | Geothermal | Core | 62 | 43 | 2026-09-02 | 83.9 |
-| 18 | [kinverarity1/lasio](https://github.com/kinverarity1/lasio) | lasio | Petrophysics / Data | Core | 400 | 174 | 2026-02-13 | 83.7 |
-| 19 | [JintaoLee-Roger/cigvis](https://github.com/JintaoLee-Roger/cigvis) | JintaoLee-Roger | Seismic | Core | 146 | 23 | 2026-08-13 | 83.4 |
-| 20 | [OPM/opm-grid](https://github.com/OPM/opm-grid) | OPM | Reservoir / Simulation | Core | 29 | 80 | 2026-09-03 | 83.4 |
-| 21 | [equinor/segyio](https://github.com/equinor/segyio) | Equinor | Seismic / Data | Core | 582 | 227 | 2025-12-03 | 83.1 |
-| 22 | [bp/resqpy](https://github.com/bp/resqpy) | bp | Reservoir / Data | Core | 67 | 18 | 2026-09-01 | 83.1 |
-| 23 | [mwburgoyne/pyResToolbox](https://github.com/mwburgoyne/pyResToolbox) | mwburgoyne | Reservoir | Core | 93 | 20 | 2026-09-05 | 82.7 |
-| 24 | [equinor/ecalc](https://github.com/equinor/ecalc) | Equinor | Production / Energy | Core | 53 | 10 | 2026-09-04 | 82.3 |
-| 25 | [SeequentEvo/evo-python-sdk](https://github.com/SeequentEvo/evo-python-sdk) | Seequent | Data / Geoscience | Core | 12 | 47 | 2026-09-03 | 81.7 |
-| 26 | [yohanesnuwara/GeoPySics](https://github.com/yohanesnuwara/GeoPySics) | yohanesnuwara | Geophysics | Core | 104 | 44 | 2026-04-22 | 81.5 |
-| 27 | [SeequentEvo/evo-schemas](https://github.com/SeequentEvo/evo-schemas) | Seequent | Data / Geoscience | Core | 18 | 22 | 2026-08-30 | 81.4 |
-| 28 | [equinor/fmu-dataio](https://github.com/equinor/fmu-dataio) | Equinor | Data / Geoscience | Core | 11 | 20 | 2026-09-04 | 81.4 |
-| 29 | [bp/ResSimpy](https://github.com/bp/ResSimpy) | bp | Reservoir / Simulation | Core | 23 | 8 | 2026-09-04 | 81.3 |
-| 30 | [SeequentEvo/evo-data-converters](https://github.com/SeequentEvo/evo-data-converters) | Seequent | Data / Geoscience | Core | 11 | 27 | 2026-08-25 | 81.2 |
+| 1 | [gempy-project/gempy](https://github.com/gempy-project/gempy) | GemPy | Geology / Modeling | Core | 1,340 | 280 | 2026-09-12 | 88.4 |
+| 2 | [simpeg/simpeg](https://github.com/simpeg/simpeg) | SimPEG | Computational Geophysics | Core | 675 | 293 | 2026-09-10 | 88.4 |
+| 3 | [PyLops/pylops](https://github.com/PyLops/pylops) | PyLops | Computational Geophysics | Core | 535 | 125 | 2026-09-10 | 87.0 |
+| 4 | [gimli-org/gimli](https://github.com/gimli-org/gimli) | pyGIMLi | Computational Geophysics | Core | 506 | 163 | 2026-08-19 | 86.8 |
+| 5 | [GEOS-DEV/GEOS](https://github.com/GEOS-DEV/GEOS) | GEOS Consortium | Reservoir / Geomechanics | Core | 286 | 108 | 2026-09-12 | 86.8 |
+| 6 | [OPM/ResInsight](https://github.com/OPM/ResInsight) | OPM | Reservoir | Core | 218 | 103 | 2026-09-12 | 86.8 |
+| 7 | [OPM/opm-simulators](https://github.com/OPM/opm-simulators) | OPM | Reservoir / Simulation | Core | 165 | 154 | 2026-09-11 | 86.5 |
+| 8 | [equinor/ert](https://github.com/equinor/ert) | Equinor | Reservoir / Data Assimilation | Core | 161 | 140 | 2026-09-11 | 86.4 |
+| 9 | [equinor/neqsim](https://github.com/equinor/neqsim) | Equinor | PVT / Process | Core | 151 | 67 | 2026-09-13 | 85.4 |
+| 10 | [Loop3D/LoopStructural](https://github.com/Loop3D/LoopStructural) | Loop3D | Geology / Modeling | Core | 286 | 57 | 2026-09-01 | 85.3 |
+| 11 | [NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo) | NVIDIA | AI / Scientific Computing | Research | 3,245 | 782 | 2026-09-12 | 85.2 |
+| 12 | [equinor/resdata](https://github.com/equinor/resdata) | Equinor | Reservoir / Data | Core | 127 | 103 | 2026-09-11 | 85.2 |
+| 13 | [equinor/xtgeo](https://github.com/equinor/xtgeo) | Equinor | Geoscience / Reservoir | Core | 122 | 67 | 2026-09-10 | 85.2 |
+| 14 | [OPM/opm-common](https://github.com/OPM/opm-common) | OPM | Reservoir / Simulation | Core | 40 | 125 | 2026-09-11 | 84.5 |
+| 15 | [OpendTect/OpendTect](https://github.com/OpendTect/OpendTect) | OpendTect | Seismic / Interpretation | Core | 136 | 55 | 2026-09-13 | 84.3 |
+| 16 | [equinor/webviz-subsurface](https://github.com/equinor/webviz-subsurface) | Equinor | Reservoir / Visualization | Core | 62 | 62 | 2026-08-26 | 84.2 |
+| 17 | [NatLabRockies/GEOPHIRES-X](https://github.com/NatLabRockies/GEOPHIRES-X) | National Lab Rockies | Geothermal | Core | 62 | 44 | 2026-09-08 | 83.9 |
+| 18 | [kinverarity1/lasio](https://github.com/kinverarity1/lasio) | lasio | Petrophysics / Data | Core | 401 | 175 | 2026-02-13 | 83.6 |
+| 19 | [JintaoLee-Roger/cigvis](https://github.com/JintaoLee-Roger/cigvis) | JintaoLee-Roger | Seismic | Core | 146 | 23 | 2026-08-13 | 83.2 |
+| 20 | [OPM/opm-grid](https://github.com/OPM/opm-grid) | OPM | Reservoir / Simulation | Core | 29 | 81 | 2026-09-03 | 83.2 |
+| 21 | [equinor/segyio](https://github.com/equinor/segyio) | Equinor | Seismic / Data | Core | 582 | 227 | 2025-12-03 | 83.0 |
+| 22 | [bp/resqpy](https://github.com/bp/resqpy) | bp | Reservoir / Data | Core | 67 | 18 | 2026-09-01 | 83.0 |
+| 23 | [mwburgoyne/pyResToolbox](https://github.com/mwburgoyne/pyResToolbox) | mwburgoyne | Reservoir | Core | 93 | 20 | 2026-09-05 | 82.6 |
+| 24 | [equinor/ecalc](https://github.com/equinor/ecalc) | Equinor | Production / Energy | Core | 53 | 10 | 2026-09-11 | 82.3 |
+| 25 | [SeequentEvo/evo-python-sdk](https://github.com/SeequentEvo/evo-python-sdk) | Seequent | Data / Geoscience | Core | 12 | 47 | 2026-09-10 | 81.7 |
+| 26 | [waynegm/OpendTect-Plugins](https://github.com/waynegm/OpendTect-Plugins) | waynegm | Seismic | Core | 39 | 10 | 2026-09-13 | 81.6 |
+| 27 | [yohanesnuwara/GeoPySics](https://github.com/yohanesnuwara/GeoPySics) | yohanesnuwara | Geophysics | Core | 105 | 45 | 2026-04-22 | 81.4 |
+| 28 | [bp/ResSimpy](https://github.com/bp/ResSimpy) | bp | Reservoir / Simulation | Core | 23 | 8 | 2026-09-11 | 81.4 |
+| 29 | [SeequentEvo/evo-schemas](https://github.com/SeequentEvo/evo-schemas) | Seequent | Data / Geoscience | Core | 18 | 23 | 2026-09-09 | 81.4 |
+| 30 | [SeequentEvo/evo-data-converters](https://github.com/SeequentEvo/evo-data-converters) | Seequent | Data / Geoscience | Core | 11 | 27 | 2026-09-11 | 81.4 |
 
 _Generated automatically from the live curated catalogues._

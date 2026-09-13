@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-06T08:04:00.273259+00:00",
+  "generated_at": "2026-09-13T08:29:29.074829+00:00",
   "queries": 21,
-  "raw_unique": 221,
-  "new_candidates": 123,
+  "raw_unique": 223,
+  "new_candidates": 125,
   "auto_added": 0,
-  "review_only": 123,
+  "review_only": 125,
   "auto_added_repositories": []
 }
