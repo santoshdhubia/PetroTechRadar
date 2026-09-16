@@ -7,7 +7,7 @@
 ### Open-source & emerging technology radar for oil & gas, geoscience and subsurface engineering
 
 <!-- RADAR-HEADLINE:START -->
-**156 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
+**163 curated repositories · 33 Papers with Code · live GitHub metrics · citation-aware research ranking · AI/Agent radar · FWI/Seismic · Petrophysics · Reservoir · Drilling · OSDU · Geothermal**
 <!-- RADAR-HEADLINE:END -->
 
 [![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-Explore%20Radar-2ea44f?style=for-the-badge)](https://santoshdhubia.github.io/PetroTechRadar/)
@@ -33,11 +33,11 @@ Unlike a traditional “awesome list”, PetroTechRadar combines **technical cur
 <!-- RADAR-STATS:START -->
 | Metric | Current live radar |
 |---|---:|
-| **Repositories tracked** | **156** |
-| **Core tools** | **61** |
-| **Emerging / AI / vibe-coded** | **44** |
+| **Repositories tracked** | **163** |
+| **Core tools** | **62** |
+| **Emerging / AI / vibe-coded** | **48** |
 | **Research repositories** | **36** |
-| **Reference resources** | **15** |
+| **Reference resources** | **17** |
 | **Papers with Code** | **33** |
 | **Data refresh** | **Weekly** |
 
@@ -164,10 +164,10 @@ Citation metrics are sourced from **OpenAlex** and repository-health metrics fro
 
 | Paper | Journal | Year | Citations | Cit./yr | Code |
 |---|---|---:|---:|---:|---|
-| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,859** | 109.3 | [GitHub](https://github.com/obspy/obspy) |
+| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,862** | 109.5 | [GitHub](https://github.com/obspy/obspy) |
 | Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **619** | 77.4 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
-| [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **525** | 52.5 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
-| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **433** | 36.1 | [GitHub](https://github.com/simpeg/simpeg) |
+| [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **526** | 52.6 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
+| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **435** | 36.2 | [GitHub](https://github.com/simpeg/simpeg) |
 | Mitigating local minima in full-waveform inversion by expanding the search space | Geophysical Journal International | 2013 | **325** | 23.2 | [GitHub](https://github.com/slimgroup/PenaltyMethodGJI) |
 
 **[→ View all Papers with Code](catalog/PAPERS_WITH_CODE.md)** · **[Rank by citations](catalog/TOP_CITED_PAPERS.md)**
