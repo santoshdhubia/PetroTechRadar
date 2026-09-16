@@ -21,6 +21,6 @@ ewencai/ASCtoSEGY,watch,"Relevant MATLAB/Octave SEG-Y utility with LGPL license,
 ewencai/segyml,watch,"Interesting PyTorch-aware SEG-Y I/O concept with GPL license, but currently very small and new; monitor for API/documentation maturity."
 jairam25/Petrostream,watch,"Ambitious browser petroleum engineering suite spanning many domains, but claims are broad, adoption is minimal, and no license is recorded in discovery metadata; requires deeper validation."
 rubensrudio/AI-Compress-Seismic-v1,watch,"Interesting AI-assisted seismic compression stack with Apache-2.0 and recent activity, but zero visible adoption and performance/losslessness claims need validation."
-q299264-cyber/borehole-vug-detection,watch,"Highly relevant carbonate/image-log application with DLIS input, but extremely new, one-star project and no license recorded. Strong candidate if it matures."
+q299264-cyber/borehole-vug-detection,approve,"User-approved for the curated catalogue after review. Highly relevant carbonate petrophysics application: automatic vug detection and quantification from DLIS ultrasonic borehole image logs. Early-stage status should remain visible."
 claramtd/agora-line001-poland,watch,"Relevant reproducible 2D seismic processing/QC implementation with MIT license, but appears case-study/research specific rather than a general-purpose package."
 Kiranmayb/Well-Log-Facies-Classifier-V1.3,watch,"Relevant automated lithofacies ML pipeline with GPL-3.0, but no visible adoption and limited evidence yet of reusable package maturity."
