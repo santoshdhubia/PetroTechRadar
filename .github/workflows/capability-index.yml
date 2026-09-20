@@ -1,6 +1,11 @@
 name: Build capability index
 
 on:
+  pull_request:
+    paths:
+      - "scripts/build_capability_index.py"
+      - "scripts/benchmark_function_search.py"
+      - ".github/workflows/capability-index.yml"
   workflow_dispatch:
     inputs:
       mode:
@@ -28,7 +33,7 @@ jobs:
       - name: Build function and capability index
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CAPABILITY_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'all' }}
+          CAPABILITY_MODE: ${{ github.event_name == 'pull_request' && 'test' || (github.event_name == 'workflow_dispatch' && inputs.mode || 'all') }}
         run: python scripts/build_capability_index.py
       - name: Benchmark function search usability
         run: python scripts/benchmark_function_search.py
@@ -52,6 +57,7 @@ jobs:
               print(' -', e['repository'], e['error'])
           PY
       - name: Commit generated index
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
