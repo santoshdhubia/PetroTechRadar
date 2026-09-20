@@ -15,6 +15,26 @@ CAPABILITY_TERMS={
 'reservoir simulation':['reservoir simulation','black oil','compositional','flow simulator'],'geomechanics':['geomechanics','poroelastic','rock mechanics'],
 'geological modelling':['geological model','structural model','implicit modelling'],'grids and surfaces':['grid model','surface model','corner point grid','mesh'],
 'well data':['well log','well data','trajectory','well path'],'visualization':['visualization','3d viewer','interactive viewer'],'data assimilation':['data assimilation','ensemble smoother','history matching']}
+ROLE_RULES={
+ 'segy_io':['seg-y i/o'],'seismic_processing':['seismic processing'],'inversion_engine':['inversion'],
+ 'fwi_engine':['fwi'],'wave_propagation':['wave simulation'],'reservoir_simulation':['reservoir simulation'],
+ 'geomechanics':['geomechanics'],'geological_modelling':['geological modelling'],'grid_surface_io':['grids and surfaces'],
+ 'well_data_io':['well data'],'visualization':['visualization'],'data_assimilation':['data assimilation']}
+NOT_BEST_FOR_BY_ROLE={
+ 'segy_io':['interactive_3d_visualization'],'wave_propagation':['general_well_log_io'],
+ 'reservoir_simulation':['lightweight_segy_qc'],'visualization':['low_level_file_parsing'],
+ 'geological_modelling':['segy_header_inspection'],'data_assimilation':['basic_file_io']}
+def infer_roles(primary,secondary):
+ caps=set(primary)|set(secondary); roles=[]
+ for role,wanted in ROLE_RULES.items():
+  if caps.intersection(wanted):roles.append(role)
+ return roles
+def infer_not_best_for(roles):
+ out=[]
+ for role in roles:
+  for item in NOT_BEST_FOR_BY_ROLE.get(role,[]):
+   if item not in out:out.append(item)
+ return out
 GENERIC={'keys','values','items','update','close','flush','reload','sort','copy','get','set','read','write','run','main','size','begin','end'}
 SEARCH_STOP=GENERIC|{'self','cls','none','true','false','return','returns','value','values','data','file','from','into','using','with','this','that','class','function','method','object','array','list','string','int','float','bool','const','public','private','src','python','include'}
 def shard_name(repo):return repo.lower().replace('/','__')+'.json'
@@ -146,7 +166,8 @@ def index(repo):
  # Keep a high safety ceiling, but do not truncate useful APIs at the old 300-symbol limit.
  usable=usable[:MAX_INDEXED_APIS]
  pri,sec,cs=caps(m.get('description') or '',rd[:150000])
- return {'repository':repo,'url':m.get('html_url'),'language':m.get('language'),'description':m.get('description'),'default_branch':branch,'primary_capabilities':pri,'secondary_capabilities':sec,'capability_scores':cs,'public_api_count':len(usable),'api_level_counts':counts,'functions':usable}
+ roles=infer_roles(pri,sec)
+ return {'repository':repo,'url':m.get('html_url'),'language':m.get('language'),'description':m.get('description'),'default_branch':branch,'primary_capabilities':pri,'secondary_capabilities':sec,'roles':roles,'not_best_for':infer_not_best_for(roles),'capability_scores':cs,'public_api_count':len(usable),'api_level_counts':counts,'functions':usable}
 def choose():
  if MODE=='test':return TEST_REPOS
  r=json.loads((OUT_DIR/'radar.json').read_text(encoding='utf-8'));return sorted({x['repository'] for x in r.get('repositories',[]) if x.get('tier')=='Core' and x.get('organization') in MAJOR_ORGS})
@@ -163,7 +184,7 @@ def main():
   shard=f"functions/{shard_name(x['repository'])}"; shard_map[x['repository']]=shard; full_count+=len(x['functions'])
   payload={'generated_at':now,'repository':x['repository'],'language':x.get('language'),'function_count':len(x['functions']),'functions':x['functions']}
   (OUT_DIR/shard).write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-  search_repos.append({'repository':x['repository'],'shard':shard,'language':x.get('language'),'description':x.get('description'),'primary_capabilities':x.get('primary_capabilities',[]),'secondary_capabilities':x.get('secondary_capabilities',[]),'public_api_count':len(x['functions']),'terms':repo_search_terms(x)})
+  search_repos.append({'repository':x['repository'],'shard':shard,'language':x.get('language'),'description':x.get('description'),'primary_capabilities':x.get('primary_capabilities',[]),'secondary_capabilities':x.get('secondary_capabilities',[]),'roles':x.get('roles',[]),'not_best_for':x.get('not_best_for',[]),'public_api_count':len(x['functions']),'terms':repo_search_terms(x)})
  c={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'errors':errors,'repositories':[{k:v for k,v in x.items() if k!='functions'} for x in indexed]}
  # Legacy aggregate remains intentionally bounded for backward compatibility; MCP uses shards.
  legacy={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'function_count':sum(min(len(x['functions']),LEGACY_PER_REPO) for x in indexed),'legacy_per_repository_limit':LEGACY_PER_REPO,'repositories':[{'repository':x['repository'],'functions':x['functions'][:LEGACY_PER_REPO]} for x in indexed]}
