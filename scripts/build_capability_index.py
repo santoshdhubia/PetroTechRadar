@@ -4,8 +4,9 @@ from __future__ import annotations
 import ast, json, os, re, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]; OUT_DIR=ROOT/'docs'/'data'
+ROOT=Path(__file__).resolve().parents[1]; OUT_DIR=ROOT/'docs'/'data'; SHARD_DIR=OUT_DIR/'functions'
 TOKEN=os.getenv('GITHUB_TOKEN',''); MODE=os.getenv('CAPABILITY_MODE','test')
+LEGACY_PER_REPO=int(os.getenv('LEGACY_FUNCTIONS_PER_REPO','300')); MAX_INDEXED_APIS=int(os.getenv('MAX_INDEXED_APIS','2000')); SEARCH_TERM_LIMIT=int(os.getenv('SEARCH_TERM_LIMIT','80'))
 TEST_REPOS=['equinor/segyio','trhallam/segysak','PyLops/pylops','simpeg/simpeg','devitocodes/devito','ar4/deepwave','OPM/opm-simulators','OPM/ResInsight','GEOS-DEV/GEOS','equinor/xtgeo']
 MAJOR_ORGS={'Equinor','OPM','NVIDIA','GEOS Consortium','SimPEG','PyLops','GemPy','pyGIMLi','Loop3D','Devito','OpendTect','SEG-Y'}
 CAPABILITY_TERMS={
@@ -15,6 +16,18 @@ CAPABILITY_TERMS={
 'geological modelling':['geological model','structural model','implicit modelling'],'grids and surfaces':['grid model','surface model','corner point grid','mesh'],
 'well data':['well log','well data','trajectory','well path'],'visualization':['visualization','3d viewer','interactive viewer'],'data assimilation':['data assimilation','ensemble smoother','history matching']}
 GENERIC={'keys','values','items','update','close','flush','reload','sort','copy','get','set','read','write','run','main','size','begin','end'}
+SEARCH_STOP=GENERIC|{'self','cls','none','true','false','return','returns','value','values','data','file','from','into','using','with','this','that','class','function','method','object','array','list','string','int','float','bool','const','public','private','src','python','include'}
+def shard_name(repo):return repo.lower().replace('/','__')+'.json'
+def repo_search_terms(repo_row):
+ text=' '.join([repo_row.get('repository',''),repo_row.get('description') or '',repo_row.get('language') or '',*repo_row.get('primary_capabilities',[]),*repo_row.get('secondary_capabilities',[])])
+ counts={}
+ def add(v,w=1):
+  for t in re.split(r'[^a-z0-9+#.-]+',str(v).lower()):
+   if len(t)>2 and t not in SEARCH_STOP:counts[t]=counts.get(t,0)+w
+ add(text,4)
+ for f in repo_row.get('functions',[]):
+  add(f.get('name',''),3);add(f.get('description',''),1);add(f.get('source_file',''),1)
+ return [k for k,_ in sorted(counts.items(),key=lambda kv:(-kv[1],kv[0]))[:SEARCH_TERM_LIMIT]]
 def api(url):
  h={'Accept':'application/vnd.github+json','User-Agent':'PetroTechRadar-CapabilityIndexer/0.3'}
  if TOKEN:h['Authorization']=f'Bearer {TOKEN}'
@@ -130,18 +143,35 @@ def index(repo):
   lev,sc,ev=classify(f,rl); f['api_level']=lev;f['quality_score']=sc;f['evidence']=ev;f.pop('exported',None);counts[lev]+=1
   if lev!='internal_or_low_value':usable.append(f)
  usable.sort(key=lambda x:(-x['quality_score'],0 if x.get('description') else 1,x['name']))
- # Cap per repository to prevent large frameworks dominating search results.
- usable=usable[:300]
+ # Keep a high safety ceiling, but do not truncate useful APIs at the old 300-symbol limit.
+ usable=usable[:MAX_INDEXED_APIS]
  pri,sec,cs=caps(m.get('description') or '',rd[:150000])
  return {'repository':repo,'url':m.get('html_url'),'language':m.get('language'),'description':m.get('description'),'default_branch':branch,'primary_capabilities':pri,'secondary_capabilities':sec,'capability_scores':cs,'public_api_count':len(usable),'api_level_counts':counts,'functions':usable}
 def choose():
  if MODE=='test':return TEST_REPOS
  r=json.loads((OUT_DIR/'radar.json').read_text(encoding='utf-8'));return sorted({x['repository'] for x in r.get('repositories',[]) if x.get('tier')=='Core' and x.get('organization') in MAJOR_ORGS})
 def main():
- OUT_DIR.mkdir(parents=True,exist_ok=True); indexed=[];errors=[]
+ OUT_DIR.mkdir(parents=True,exist_ok=True); SHARD_DIR.mkdir(parents=True,exist_ok=True); indexed=[];errors=[]
  for repo in choose():
   try:indexed.append(index(repo))
   except Exception as e:print('ERROR',repo,e);errors.append({'repository':repo,'error':str(e)})
- now=datetime.now(timezone.utc).isoformat(); c={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'errors':errors,'repositories':[{k:v for k,v in x.items() if k!='functions'} for x in indexed]}; f={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'function_count':sum(len(x['functions']) for x in indexed),'repositories':[{'repository':x['repository'],'functions':x['functions']} for x in indexed]}
- (OUT_DIR/'capabilities.json').write_text(json.dumps(c,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');(OUT_DIR/'functions.json').write_text(json.dumps(f,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');print(f"Indexed {len(indexed)} repos, {f['function_count']} usable API symbols, {len(errors)} errors")
+ now=datetime.now(timezone.utc).isoformat()
+ # Remove stale shards so deleted/unindexed repositories cannot linger in MCP search.
+ for p in SHARD_DIR.glob('*.json'):p.unlink()
+ shard_map={}; search_repos=[]; full_count=0
+ for x in indexed:
+  shard=f"functions/{shard_name(x['repository'])}"; shard_map[x['repository']]=shard; full_count+=len(x['functions'])
+  payload={'generated_at':now,'repository':x['repository'],'language':x.get('language'),'function_count':len(x['functions']),'functions':x['functions']}
+  (OUT_DIR/shard).write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+  search_repos.append({'repository':x['repository'],'shard':shard,'language':x.get('language'),'description':x.get('description'),'primary_capabilities':x.get('primary_capabilities',[]),'secondary_capabilities':x.get('secondary_capabilities',[]),'public_api_count':len(x['functions']),'terms':repo_search_terms(x)})
+ c={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'errors':errors,'repositories':[{k:v for k,v in x.items() if k!='functions'} for x in indexed]}
+ # Legacy aggregate remains intentionally bounded for backward compatibility; MCP uses shards.
+ legacy={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'function_count':sum(min(len(x['functions']),LEGACY_PER_REPO) for x in indexed),'legacy_per_repository_limit':LEGACY_PER_REPO,'repositories':[{'repository':x['repository'],'functions':x['functions'][:LEGACY_PER_REPO]} for x in indexed]}
+ search_index={'generated_at':now,'mode':MODE,'repository_count':len(indexed),'repositories':search_repos}
+ manifest={'version':1,'generated_at':now,'mode':MODE,'repository_count':len(indexed),'function_count':full_count,'shards':shard_map,'legacy_functions_file':'functions.json','search_index':'search_index.json'}
+ (OUT_DIR/'capabilities.json').write_text(json.dumps(c,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ (OUT_DIR/'functions.json').write_text(json.dumps(legacy,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ (OUT_DIR/'search_index.json').write_text(json.dumps(search_index,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ (OUT_DIR/'function_manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ print(f"Indexed {len(indexed)} repos, {full_count} usable API symbols in shards, {legacy['function_count']} legacy symbols, {len(errors)} errors")
 if __name__=='__main__':main()
