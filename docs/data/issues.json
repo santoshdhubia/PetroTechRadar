@@ -1,16 +1,148 @@
 {
-  "generated_at": "2026-09-16T12:24:17.417837+00:00",
-  "window_7d_start": "2026-09-09T12:24:17.417837+00:00",
-  "window_180d_start": "2026-03-20T12:24:17.417837+00:00",
+  "generated_at": "2026-09-20T08:47:09.200206+00:00",
+  "window_7d_start": "2026-09-13T08:47:09.200206+00:00",
+  "window_180d_start": "2026-03-24T08:47:09.200206+00:00",
   "summary": {
     "tracked_repositories": 163,
-    "repositories_with_open_7d": 13,
+    "repositories_with_open_7d": 11,
     "repositories_with_open_180d": 33,
-    "open_issues_7d": 46,
-    "open_issues_180d": 486
+    "open_issues_7d": 54,
+    "open_issues_180d": 505
   },
   "errors": [],
   "repositories": [
+    {
+      "repository": "equinor/neqsim",
+      "organization": "Equinor",
+      "domain": "PVT / Process",
+      "tier": "Core",
+      "radar_score": 85.4,
+      "repo_url": "https://github.com/equinor/neqsim",
+      "open_7d": 20,
+      "open_180d": 46,
+      "no_response_7d": 19,
+      "unassigned_7d": 17,
+      "issues_7d_url": "https://github.com/equinor/neqsim/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/neqsim/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 3819,
+          "title": "research-scan: 1 paper opportunities found (top score 40)",
+          "url": "https://github.com/equinor/neqsim/issues/3819",
+          "created_at": "2026-09-20T06:11:32Z",
+          "updated_at": "2026-09-20T06:11:32Z",
+          "comments": 0,
+          "author": "github-actions[bot]",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": [
+            "automated",
+            "paperlab",
+            "research-scan"
+          ]
+        },
+        {
+          "number": 3818,
+          "title": "CPA's bond test is `charge[i] * charge[j] < 0`, so the `1A` and `2A` site schemes cannot associate with themselves",
+          "url": "https://github.com/equinor/neqsim/issues/3818",
+          "created_at": "2026-09-19T21:42:42Z",
+          "updated_at": "2026-09-19T21:42:42Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3817,
+          "title": "`PhasePCSAFT.dF_HC_SAFTdVdV()` is short a factor of `dnSAFT/dV`, and `PhasePCSAFTa` inherits the short version",
+          "url": "https://github.com/equinor/neqsim/issues/3817",
+          "created_at": "2026-09-19T21:41:20Z",
+          "updated_at": "2026-09-19T21:41:20Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3816,
+          "title": "`PhasePCSAFTRahmat.calcVolume` converges past a packing fraction of one and answers with a state the model is not defined at",
+          "url": "https://github.com/equinor/neqsim/issues/3816",
+          "created_at": "2026-09-19T21:40:08Z",
+          "updated_at": "2026-09-19T21:40:08Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3815,
+          "title": "`TPflashSAFT.run()` reads the feed before its own `init(0)`, so it solves a zero feed and never finds the split",
+          "url": "https://github.com/equinor/neqsim/issues/3815",
+          "created_at": "2026-09-19T21:35:46Z",
+          "updated_at": "2026-09-19T21:35:46Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3814,
+          "title": "`PhaseSAFTVRMie.dF_HC_SAFTdT()` omits the chain contact value's temperature dependence, so `Hres`/`Sres` are wrong for every fluid with `m > 1`",
+          "url": "https://github.com/equinor/neqsim/issues/3814",
+          "created_at": "2026-09-19T21:34:43Z",
+          "updated_at": "2026-09-19T21:34:43Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3813,
+          "title": "`PhasePCSAFT.getdDSAFTdT()` carries an extra `3\u00b7d\u00b2`, so PC-SAFT `Hres`/`Sres` are ~5% wrong",
+          "url": "https://github.com/equinor/neqsim/issues/3813",
+          "created_at": "2026-09-19T21:29:33Z",
+          "updated_at": "2026-09-19T21:29:33Z",
+          "comments": 0,
+          "author": "PatrickMockridge",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 3808,
+          "title": "research-scan: 1 paper opportunities found (top score 33)",
+          "url": "https://github.com/equinor/neqsim/issues/3808",
+          "created_at": "2026-09-19T06:11:30Z",
+          "updated_at": "2026-09-19T06:11:30Z",
+          "comments": 0,
+          "author": "github-actions[bot]",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": [
+            "automated",
+            "paperlab",
+            "research-scan"
+          ]
+        }
+      ]
+    },
     {
       "repository": "equinor/ert",
       "organization": "Equinor",
@@ -18,13 +150,67 @@
       "tier": "Core",
       "radar_score": 86.4,
       "repo_url": "https://github.com/equinor/ert",
-      "open_7d": 13,
+      "open_7d": 11,
       "open_180d": 143,
       "no_response_7d": 9,
-      "unassigned_7d": 10,
-      "issues_7d_url": "https://github.com/equinor/ert/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/ert/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "unassigned_7d": 9,
+      "issues_7d_url": "https://github.com/equinor/ert/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/ert/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": [
+        {
+          "number": 14476,
+          "title": "ErtClient websocket connection will crash on retryable errors",
+          "url": "https://github.com/equinor/ert/issues/14476",
+          "created_at": "2026-09-18T13:42:31Z",
+          "updated_at": "2026-09-18T13:44:08Z",
+          "comments": 0,
+          "author": "berland",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 14474,
+          "title": "Everest client crashes on websocket flakyness",
+          "url": "https://github.com/equinor/ert/issues/14474",
+          "created_at": "2026-09-18T12:56:55Z",
+          "updated_at": "2026-09-18T13:34:43Z",
+          "comments": 1,
+          "author": "berland",
+          "author_association": "CONTRIBUTOR",
+          "assigned": true,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 14466,
+          "title": "Create Plot doesn't honor observation's ensemble",
+          "url": "https://github.com/equinor/ert/issues/14466",
+          "created_at": "2026-09-16T17:30:07Z",
+          "updated_at": "2026-09-16T17:30:07Z",
+          "comments": 0,
+          "author": "achaikou",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 14462,
+          "title": "Inconsistent specification of weights in CLI and GUI for restart runs.",
+          "url": "https://github.com/equinor/ert/issues/14462",
+          "created_at": "2026-09-16T13:18:47Z",
+          "updated_at": "2026-09-17T07:49:57Z",
+          "comments": 0,
+          "author": "xjules",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
+        },
         {
           "number": 14454,
           "title": "Rename dark_storage to something appropriate",
@@ -77,189 +263,6 @@
           "author_association": "CONTRIBUTOR",
           "assigned": false,
           "labels": []
-        },
-        {
-          "number": 14431,
-          "title": "Selecting data type-separator removes selection highlight",
-          "url": "https://github.com/equinor/ert/issues/14431",
-          "created_at": "2026-09-14T10:08:29Z",
-          "updated_at": "2026-09-14T10:08:29Z",
-          "comments": 0,
-          "author": "eilskra",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "bug"
-          ]
-        },
-        {
-          "number": 14430,
-          "title": "Remove log statement after logging code has been fixed",
-          "url": "https://github.com/equinor/ert/issues/14430",
-          "created_at": "2026-09-14T10:05:28Z",
-          "updated_at": "2026-09-14T10:05:28Z",
-          "comments": 0,
-          "author": "berland",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": []
-        },
-        {
-          "number": 14428,
-          "title": "Changing y-label in `Distribution`-plot only works when Histogram is selected and not `GKDE`",
-          "url": "https://github.com/equinor/ert/issues/14428",
-          "created_at": "2026-09-14T08:12:32Z",
-          "updated_at": "2026-09-14T08:36:33Z",
-          "comments": 1,
-          "author": "eilskra",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "bug"
-          ]
-        },
-        {
-          "number": 14424,
-          "title": "Make update strategies visible in GUI",
-          "url": "https://github.com/equinor/ert/issues/14424",
-          "created_at": "2026-09-11T11:27:28Z",
-          "updated_at": "2026-09-16T08:18:10Z",
-          "comments": 1,
-          "author": "xjules",
-          "author_association": "CONTRIBUTOR",
-          "assigned": true,
-          "labels": [
-            "improvement",
-            "GUI"
-          ]
-        }
-      ]
-    },
-    {
-      "repository": "equinor/neqsim",
-      "organization": "Equinor",
-      "domain": "PVT / Process",
-      "tier": "Core",
-      "radar_score": 85.4,
-      "repo_url": "https://github.com/equinor/neqsim",
-      "open_7d": 10,
-      "open_180d": 33,
-      "no_response_7d": 9,
-      "unassigned_7d": 9,
-      "issues_7d_url": "https://github.com/equinor/neqsim/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/neqsim/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 3739,
-          "title": "calcPTphaseEnvelope does not converge on UMR-PRU for ordinary natural gas, and returns unconverged points",
-          "url": "https://github.com/equinor/neqsim/issues/3739",
-          "created_at": "2026-09-16T10:02:12Z",
-          "updated_at": "2026-09-16T12:02:26Z",
-          "comments": 0,
-          "author": "dupuypablo",
-          "author_association": "COLLABORATOR",
-          "assigned": true,
-          "labels": []
-        },
-        {
-          "number": 3736,
-          "title": "Qualify Furst electrolyte H2\u2013NaCl brine flash: hydrogen-rich dense oil root at 323 K and 100 bara",
-          "url": "https://github.com/equinor/neqsim/issues/3736",
-          "created_at": "2026-09-16T06:30:16Z",
-          "updated_at": "2026-09-16T06:30:16Z",
-          "comments": 0,
-          "author": "EvenSol",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": []
-        },
-        {
-          "number": 3734,
-          "title": "research-scan: 1 paper opportunities found (top score 35)",
-          "url": "https://github.com/equinor/neqsim/issues/3734",
-          "created_at": "2026-09-16T06:12:14Z",
-          "updated_at": "2026-09-16T06:12:14Z",
-          "comments": 0,
-          "author": "github-actions[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "automated",
-            "paperlab",
-            "research-scan"
-          ]
-        },
-        {
-          "number": 3727,
-          "title": "Missing UNIFAC interaction parameter is silently treated as zero instead of throwing",
-          "url": "https://github.com/equinor/neqsim/issues/3727",
-          "created_at": "2026-09-15T12:05:32Z",
-          "updated_at": "2026-09-15T12:05:32Z",
-          "comments": 0,
-          "author": "dupuypablo",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": []
-        },
-        {
-          "number": 3726,
-          "title": "TODO: ethylene has no UMR-PRU group assignment and needs a regressed C2H4 group",
-          "url": "https://github.com/equinor/neqsim/issues/3726",
-          "created_at": "2026-09-15T12:05:30Z",
-          "updated_at": "2026-09-15T12:05:30Z",
-          "comments": 0,
-          "author": "dupuypablo",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": []
-        },
-        {
-          "number": 3724,
-          "title": "research-scan: 1 paper opportunities found (top score 38)",
-          "url": "https://github.com/equinor/neqsim/issues/3724",
-          "created_at": "2026-09-15T06:12:12Z",
-          "updated_at": "2026-09-15T06:12:12Z",
-          "comments": 0,
-          "author": "github-actions[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "automated",
-            "paperlab",
-            "research-scan"
-          ]
-        },
-        {
-          "number": 3718,
-          "title": "research-scan: 1 paper opportunities found (top score 40)",
-          "url": "https://github.com/equinor/neqsim/issues/3718",
-          "created_at": "2026-09-14T06:15:30Z",
-          "updated_at": "2026-09-14T06:15:30Z",
-          "comments": 0,
-          "author": "github-actions[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "automated",
-            "paperlab",
-            "research-scan"
-          ]
-        },
-        {
-          "number": 3697,
-          "title": "research-scan: 1 paper opportunities found (top score 45)",
-          "url": "https://github.com/equinor/neqsim/issues/3697",
-          "created_at": "2026-09-13T06:15:05Z",
-          "updated_at": "2026-09-13T06:15:05Z",
-          "comments": 0,
-          "author": "github-actions[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "automated",
-            "paperlab",
-            "research-scan"
-          ]
         }
       ]
     },
@@ -271,18 +274,44 @@
       "radar_score": 86.8,
       "repo_url": "https://github.com/OPM/ResInsight",
       "open_7d": 7,
-      "open_180d": 69,
+      "open_180d": 70,
       "no_response_7d": 6,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OPM/ResInsight/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/ResInsight/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "unassigned_7d": 1,
+      "issues_7d_url": "https://github.com/OPM/ResInsight/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/ResInsight/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": [
+        {
+          "number": 14775,
+          "title": "Grid Calculation does not initially expose imported properties",
+          "url": "https://github.com/OPM/ResInsight/issues/14775",
+          "created_at": "2026-09-17T10:14:54Z",
+          "updated_at": "2026-09-17T10:14:54Z",
+          "comments": 0,
+          "author": "RezaeiDoust",
+          "author_association": "COLLABORATOR",
+          "assigned": false,
+          "labels": [
+            "Bug"
+          ]
+        },
+        {
+          "number": 14772,
+          "title": "Modernize command file interface: forward Ricf commands to object-oriented Rimc methods",
+          "url": "https://github.com/OPM/ResInsight/issues/14772",
+          "created_at": "2026-09-16T13:01:58Z",
+          "updated_at": "2026-09-16T13:01:58Z",
+          "comments": 0,
+          "author": "kriben",
+          "author_association": "COLLABORATOR",
+          "assigned": true,
+          "labels": []
+        },
         {
           "number": 14767,
           "title": "Well Target Mapping: improve transmissibility filtering when growing cluster",
           "url": "https://github.com/OPM/ResInsight/issues/14767",
           "created_at": "2026-09-16T10:53:31Z",
-          "updated_at": "2026-09-16T10:53:42Z",
+          "updated_at": "2026-09-17T12:04:38Z",
           "comments": 0,
           "author": "kriben",
           "author_association": "COLLABORATOR",
@@ -330,18 +359,6 @@
           "labels": []
         },
         {
-          "number": 14752,
-          "title": "Well Target Mapping: use data filter to limit valid clusters",
-          "url": "https://github.com/OPM/ResInsight/issues/14752",
-          "created_at": "2026-09-14T11:14:28Z",
-          "updated_at": "2026-09-14T11:14:28Z",
-          "comments": 0,
-          "author": "kriben",
-          "author_association": "COLLABORATOR",
-          "assigned": true,
-          "labels": []
-        },
-        {
           "number": 14750,
           "title": "Add property filtering to ensemble contour maps",
           "url": "https://github.com/OPM/ResInsight/issues/14750",
@@ -354,19 +371,308 @@
           "labels": [
             "Enhancement"
           ]
+        }
+      ]
+    },
+    {
+      "repository": "NVIDIA/physicsnemo",
+      "organization": "NVIDIA",
+      "domain": "AI / Scientific Computing",
+      "tier": "Research",
+      "radar_score": 85.3,
+      "repo_url": "https://github.com/NVIDIA/physicsnemo",
+      "open_7d": 7,
+      "open_180d": 17,
+      "no_response_7d": 6,
+      "unassigned_7d": 6,
+      "issues_7d_url": "https://github.com/NVIDIA/physicsnemo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/NVIDIA/physicsnemo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 2012,
+          "title": "Checkpoint loading can mix model weights and training state from different epochs",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/2012",
+          "created_at": "2026-09-19T22:44:45Z",
+          "updated_at": "2026-09-19T22:44:45Z",
+          "comments": 0,
+          "author": "peterdsharpe",
+          "author_association": "COLLABORATOR",
+          "assigned": false,
+          "labels": [
+            "bug"
+          ]
         },
         {
-          "number": 14748,
-          "title": "Visualize well paths and surfaces without loading a grid",
-          "url": "https://github.com/OPM/ResInsight/issues/14748",
-          "created_at": "2026-09-13T08:19:39Z",
-          "updated_at": "2026-09-13T08:22:59Z",
+          "number": 2007,
+          "title": "\ud83d\udc1b[BUG]: power_spectrum in metrics.general puts the zero frequency half a cell off along an odd width",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/2007",
+          "created_at": "2026-09-18T14:43:27Z",
+          "updated_at": "2026-09-18T14:43:27Z",
           "comments": 0,
-          "author": "magnesj",
-          "author_association": "MEMBER",
+          "author": "Nicholas022400701",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 2005,
+          "title": "\ud83d\udc1b[BUG]: cdf in metrics.general.histogram drops earlier inputs from the last cumulative bin",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/2005",
+          "created_at": "2026-09-18T14:10:13Z",
+          "updated_at": "2026-09-18T14:10:13Z",
+          "comments": 0,
+          "author": "Nicholas022400701",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 2003,
+          "title": "\ud83d\udc1b[BUG]: Variance in metrics.general.ensemble_metrics ignores the dim argument",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/2003",
+          "created_at": "2026-09-18T13:38:08Z",
+          "updated_at": "2026-09-18T13:38:08Z",
+          "comments": 0,
+          "author": "Nicholas022400701",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 2001,
+          "title": "GradientsFiniteDifference/GradientsSpectral (and PhysicsInformer) silently assume a periodic domain \u2014 non-periodic BCs get a wrong residual at the boundary with no warning",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/2001",
+          "created_at": "2026-09-17T18:13:49Z",
+          "updated_at": "2026-09-18T05:01:57Z",
+          "comments": 1,
+          "author": "barrosyan",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 1998,
+          "title": "\ud83d\udc1b[BUG]: AeroJEPA ignores unbatched TokenSet masks and decode_field_chunked accepts invalid arguments",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/1998",
+          "created_at": "2026-09-17T15:21:42Z",
+          "updated_at": "2026-09-17T15:21:42Z",
+          "comments": 0,
+          "author": "harshaa765",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 1990,
+          "title": "\ud83d\udc1b[BUG]: ValueError: infer_schema(func) in @torch.library.custom_op due to stringified type annotations (from __future__ import annotations)",
+          "url": "https://github.com/NVIDIA/physicsnemo/issues/1990",
+          "created_at": "2026-09-14T23:06:56Z",
+          "updated_at": "2026-09-16T20:08:04Z",
+          "comments": 0,
+          "author": "DenizCanELCI",
+          "author_association": "NONE",
           "assigned": true,
           "labels": [
-            "Enhancement"
+            "bug",
+            "? - Needs Triage"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "simpeg/simpeg",
+      "organization": "SimPEG",
+      "domain": "Computational Geophysics",
+      "tier": "Core",
+      "radar_score": 88.4,
+      "repo_url": "https://github.com/simpeg/simpeg",
+      "open_7d": 2,
+      "open_180d": 6,
+      "no_response_7d": 2,
+      "unassigned_7d": 2,
+      "issues_7d_url": "https://github.com/simpeg/simpeg/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/simpeg/simpeg/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 1806,
+          "title": "DOC: Add a user guide for MetaSimulations",
+          "url": "https://github.com/simpeg/simpeg/issues/1806",
+          "created_at": "2026-09-17T17:31:34Z",
+          "updated_at": "2026-09-17T17:31:47Z",
+          "comments": 0,
+          "author": "santisoler",
+          "author_association": "MEMBER",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 1805,
+          "title": "MNT: Add test run with latest versions of our dependencies",
+          "url": "https://github.com/simpeg/simpeg/issues/1805",
+          "created_at": "2026-09-17T17:29:19Z",
+          "updated_at": "2026-09-17T17:31:57Z",
+          "comments": 0,
+          "author": "santisoler",
+          "author_association": "MEMBER",
+          "assigned": false,
+          "labels": [
+            "maintenance"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "OPM/opm-common",
+      "organization": "OPM",
+      "domain": "Reservoir / Simulation",
+      "tier": "Core",
+      "radar_score": 84.5,
+      "repo_url": "https://github.com/OPM/opm-common",
+      "open_7d": 2,
+      "open_180d": 5,
+      "no_response_7d": 1,
+      "unassigned_7d": 2,
+      "issues_7d_url": "https://github.com/OPM/opm-common/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/opm-common/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 5382,
+          "title": "SPE10-MOD02-01 from opm-tests aborts at initialisation: SOGCR = -5.55e-17 fails an exact `< 0` end-point check",
+          "url": "https://github.com/OPM/opm-common/issues/5382",
+          "created_at": "2026-09-20T01:46:47Z",
+          "updated_at": "2026-09-20T01:46:47Z",
+          "comments": 0,
+          "author": "whahnsr",
+          "author_association": "NONE",
+          "assigned": false,
+          "labels": []
+        },
+        {
+          "number": 5371,
+          "title": "Changing the Fundamental Data Processing Model for the Schedule Object",
+          "url": "https://github.com/OPM/opm-common/issues/5371",
+          "created_at": "2026-09-16T12:30:34Z",
+          "updated_at": "2026-09-18T09:22:35Z",
+          "comments": 2,
+          "author": "bska",
+          "author_association": "MEMBER",
+          "assigned": false,
+          "labels": []
+        }
+      ]
+    },
+    {
+      "repository": "equinor/xtgeo",
+      "organization": "Equinor",
+      "domain": "Geoscience / Reservoir",
+      "tier": "Core",
+      "radar_score": 85.2,
+      "repo_url": "https://github.com/equinor/xtgeo",
+      "open_7d": 1,
+      "open_180d": 35,
+      "no_response_7d": 1,
+      "unassigned_7d": 1,
+      "issues_7d_url": "https://github.com/equinor/xtgeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/xtgeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 1795,
+          "title": "Improve filtering methods, typically based on 'asmasked' and/or 'activeonly'",
+          "url": "https://github.com/equinor/xtgeo/issues/1795",
+          "created_at": "2026-09-17T16:39:12Z",
+          "updated_at": "2026-09-17T16:45:35Z",
+          "comments": 0,
+          "author": "ErichSuter",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": []
+        }
+      ]
+    },
+    {
+      "repository": "NatLabRockies/GEOPHIRES-X",
+      "organization": "National Lab Rockies",
+      "domain": "Geothermal",
+      "tier": "Core",
+      "radar_score": 84.0,
+      "repo_url": "https://github.com/NatLabRockies/GEOPHIRES-X",
+      "open_7d": 1,
+      "open_180d": 12,
+      "no_response_7d": 1,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 522,
+          "title": "Upgrade numpy-financial (unpin from 1.0.0)",
+          "url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues/522",
+          "created_at": "2026-09-18T15:57:32Z",
+          "updated_at": "2026-09-18T15:57:37Z",
+          "comments": 0,
+          "author": "softwareengineerprogrammer",
+          "author_association": "COLLABORATOR",
+          "assigned": true,
+          "labels": [
+            "bug"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "equinor/fmu-dataio",
+      "organization": "Equinor",
+      "domain": "Data / Geoscience",
+      "tier": "Core",
+      "radar_score": 81.4,
+      "repo_url": "https://github.com/equinor/fmu-dataio",
+      "open_7d": 1,
+      "open_180d": 10,
+      "no_response_7d": 1,
+      "unassigned_7d": 1,
+      "issues_7d_url": "https://github.com/equinor/fmu-dataio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/fmu-dataio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 1856,
+          "title": "Remove special handling of PERT distribution in test after ERT 26",
+          "url": "https://github.com/equinor/fmu-dataio/issues/1856",
+          "created_at": "2026-09-17T11:02:06Z",
+          "updated_at": "2026-09-17T11:02:06Z",
+          "comments": 0,
+          "author": "GibranAlfa",
+          "author_association": "CONTRIBUTOR",
+          "assigned": false,
+          "labels": []
+        }
+      ]
+    },
+    {
+      "repository": "Azure/osdu-spi-stack",
+      "organization": "Microsoft / Azure",
+      "domain": "Data / OSDU",
+      "tier": "Core",
+      "radar_score": 76.3,
+      "repo_url": "https://github.com/Azure/osdu-spi-stack",
+      "open_7d": 1,
+      "open_180d": 4,
+      "no_response_7d": 1,
+      "unassigned_7d": 1,
+      "issues_7d_url": "https://github.com/Azure/osdu-spi-stack/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/osdu-spi-stack/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": [
+        {
+          "number": 227,
+          "title": "spi info always reports an empty azure.region",
+          "url": "https://github.com/Azure/osdu-spi-stack/issues/227",
+          "created_at": "2026-09-16T12:24:03Z",
+          "updated_at": "2026-09-16T12:24:03Z",
+          "comments": 0,
+          "author": "danielscholl",
+          "author_association": "COLLABORATOR",
+          "assigned": false,
+          "labels": [
+            "bug"
           ]
         }
       ]
@@ -376,49 +682,21 @@
       "organization": "Microsoft / Azure",
       "domain": "Data / OSDU",
       "tier": "Core",
-      "radar_score": 76.8,
+      "radar_score": 76.4,
       "repo_url": "https://github.com/Azure/osdu-spi-partition",
-      "open_7d": 3,
-      "open_180d": 3,
-      "no_response_7d": 3,
-      "unassigned_7d": 3,
-      "issues_7d_url": "https://github.com/Azure/osdu-spi-partition/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/osdu-spi-partition/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "open_7d": 1,
+      "open_180d": 1,
+      "no_response_7d": 1,
+      "unassigned_7d": 1,
+      "issues_7d_url": "https://github.com/Azure/osdu-spi-partition/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/osdu-spi-partition/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": [
         {
-          "number": 142,
-          "title": "\u2699\ufe0f CODEOWNERS: missing or unresolvable owners",
-          "url": "https://github.com/Azure/osdu-spi-partition/issues/142",
-          "created_at": "2026-09-16T12:24:30Z",
-          "updated_at": "2026-09-16T12:24:30Z",
-          "comments": 0,
-          "author": "osdu-spi-automation[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "human-required"
-          ]
-        },
-        {
-          "number": 141,
-          "title": "\u2699\ufe0f Deploy onboarding: required CI configuration missing",
-          "url": "https://github.com/Azure/osdu-spi-partition/issues/141",
-          "created_at": "2026-09-16T12:24:28Z",
-          "updated_at": "2026-09-16T12:24:28Z",
-          "comments": 0,
-          "author": "osdu-spi-automation[bot]",
-          "author_association": "CONTRIBUTOR",
-          "assigned": false,
-          "labels": [
-            "human-required"
-          ]
-        },
-        {
-          "number": 140,
-          "title": "\ud83d\udce5 Upstream Sync Ready for Review - 2026-09-12",
-          "url": "https://github.com/Azure/osdu-spi-partition/issues/140",
-          "created_at": "2026-09-12T00:31:09Z",
-          "updated_at": "2026-09-15T00:33:40Z",
+          "number": 151,
+          "title": "\ud83d\udce5 Upstream Sync Ready for Review - 2026-09-17",
+          "url": "https://github.com/Azure/osdu-spi-partition/issues/151",
+          "created_at": "2026-09-17T00:32:14Z",
+          "updated_at": "2026-09-17T00:32:14Z",
           "comments": 0,
           "author": "osdu-spi-automation[bot]",
           "author_association": "CONTRIBUTOR",
@@ -437,172 +715,13 @@
       "tier": "Core",
       "radar_score": 81.1,
       "repo_url": "https://github.com/equinor/webviz",
-      "open_7d": 2,
-      "open_180d": 60,
-      "no_response_7d": 2,
-      "unassigned_7d": 2,
-      "issues_7d_url": "https://github.com/equinor/webviz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/webviz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 1893,
-          "title": "Simplified integration test data",
-          "url": "https://github.com/equinor/webviz/issues/1893",
-          "created_at": "2026-09-10T08:20:32Z",
-          "updated_at": "2026-09-10T08:20:32Z",
-          "comments": 0,
-          "author": "anders-kiaer",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": []
-        },
-        {
-          "number": 1892,
-          "title": "Use in-place volume units from parquet columns metadata",
-          "url": "https://github.com/equinor/webviz/issues/1892",
-          "created_at": "2026-09-10T07:06:42Z",
-          "updated_at": "2026-09-10T07:07:13Z",
-          "comments": 0,
-          "author": "anders-kiaer",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": []
-        }
-      ]
-    },
-    {
-      "repository": "NVIDIA/physicsnemo",
-      "organization": "NVIDIA",
-      "domain": "AI / Scientific Computing",
-      "tier": "Research",
-      "radar_score": 85.2,
-      "repo_url": "https://github.com/NVIDIA/physicsnemo",
-      "open_7d": 2,
-      "open_180d": 11,
-      "no_response_7d": 1,
-      "unassigned_7d": 2,
-      "issues_7d_url": "https://github.com/NVIDIA/physicsnemo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/NVIDIA/physicsnemo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 1990,
-          "title": "\ud83d\udc1b[BUG]: ValueError: infer_schema(func) in @torch.library.custom_op due to stringified type annotations (from __future__ import annotations)",
-          "url": "https://github.com/NVIDIA/physicsnemo/issues/1990",
-          "created_at": "2026-09-14T23:06:56Z",
-          "updated_at": "2026-09-14T23:06:56Z",
-          "comments": 0,
-          "author": "DenizCanELCI",
-          "author_association": "NONE",
-          "assigned": false,
-          "labels": [
-            "bug",
-            "? - Needs Triage"
-          ]
-        },
-        {
-          "number": 1986,
-          "title": "\ud83d\udc1b[BUG]: torch.compile + ShardTensor failures with regional model recipe",
-          "url": "https://github.com/NVIDIA/physicsnemo/issues/1986",
-          "created_at": "2026-09-11T16:21:22Z",
-          "updated_at": "2026-09-11T17:20:01Z",
-          "comments": 3,
-          "author": "jleinonen",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "bug",
-            "? - Needs Triage"
-          ]
-        }
-      ]
-    },
-    {
-      "repository": "Azure/osdu-spi",
-      "organization": "Microsoft / Azure",
-      "domain": "Data / OSDU",
-      "tier": "Core",
-      "radar_score": 78.2,
-      "repo_url": "https://github.com/Azure/osdu-spi",
-      "open_7d": 2,
-      "open_180d": 8,
-      "no_response_7d": 2,
-      "unassigned_7d": 2,
-      "issues_7d_url": "https://github.com/Azure/osdu-spi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/osdu-spi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 176,
-          "title": "Deploy lane: preflight requires.loads, requires.groups, and dependencies against status facts",
-          "url": "https://github.com/Azure/osdu-spi/issues/176",
-          "created_at": "2026-09-10T17:24:53Z",
-          "updated_at": "2026-09-10T17:24:53Z",
-          "comments": 0,
-          "author": "danielscholl",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "enhancement"
-          ]
-        },
-        {
-          "number": 175,
-          "title": "Deploy lane: materialize Key Vault bindings for suites",
-          "url": "https://github.com/Azure/osdu-spi/issues/175",
-          "created_at": "2026-09-10T17:24:51Z",
-          "updated_at": "2026-09-10T17:24:51Z",
-          "comments": 0,
-          "author": "danielscholl",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "enhancement"
-          ]
-        }
-      ]
-    },
-    {
-      "repository": "Azure/osdu-spi-stack",
-      "organization": "Microsoft / Azure",
-      "domain": "Data / OSDU",
-      "tier": "Core",
-      "radar_score": 76.2,
-      "repo_url": "https://github.com/Azure/osdu-spi-stack",
-      "open_7d": 2,
-      "open_180d": 4,
-      "no_response_7d": 2,
-      "unassigned_7d": 2,
-      "issues_7d_url": "https://github.com/Azure/osdu-spi-stack/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/osdu-spi-stack/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 227,
-          "title": "spi info always reports an empty azure.region",
-          "url": "https://github.com/Azure/osdu-spi-stack/issues/227",
-          "created_at": "2026-09-16T12:24:03Z",
-          "updated_at": "2026-09-16T12:24:03Z",
-          "comments": 0,
-          "author": "danielscholl",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "bug"
-          ]
-        },
-        {
-          "number": 205,
-          "title": "[feat] spi status shows active service pins",
-          "url": "https://github.com/Azure/osdu-spi-stack/issues/205",
-          "created_at": "2026-09-10T19:36:07Z",
-          "updated_at": "2026-09-10T19:36:07Z",
-          "comments": 0,
-          "author": "danielscholl",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "enhancement"
-          ]
-        }
-      ]
+      "open_7d": 0,
+      "open_180d": 59,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/equinor/webviz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/webviz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
     },
     {
       "repository": "OPM/opm-simulators",
@@ -611,172 +730,12 @@
       "tier": "Core",
       "radar_score": 86.5,
       "repo_url": "https://github.com/OPM/opm-simulators",
-      "open_7d": 1,
-      "open_180d": 13,
-      "no_response_7d": 1,
-      "unassigned_7d": 1,
-      "issues_7d_url": "https://github.com/OPM/opm-simulators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/opm-simulators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 7402,
-          "title": "Radial model problems",
-          "url": "https://github.com/OPM/opm-simulators/issues/7402",
-          "created_at": "2026-09-12T15:45:59Z",
-          "updated_at": "2026-09-12T15:45:59Z",
-          "comments": 0,
-          "author": "EdmundStephens",
-          "author_association": "NONE",
-          "assigned": false,
-          "labels": []
-        }
-      ]
-    },
-    {
-      "repository": "NatLabRockies/GEOPHIRES-X",
-      "organization": "National Lab Rockies",
-      "domain": "Geothermal",
-      "tier": "Core",
-      "radar_score": 83.9,
-      "repo_url": "https://github.com/NatLabRockies/GEOPHIRES-X",
-      "open_7d": 1,
-      "open_180d": 13,
-      "no_response_7d": 1,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 519,
-          "title": "Drilling and completion costs per well variants do not report indirect costs consistently",
-          "url": "https://github.com/NatLabRockies/GEOPHIRES-X/issues/519",
-          "created_at": "2026-09-09T19:32:19Z",
-          "updated_at": "2026-09-09T19:32:25Z",
-          "comments": 0,
-          "author": "softwareengineerprogrammer",
-          "author_association": "COLLABORATOR",
-          "assigned": true,
-          "labels": [
-            "bug",
-            "documentation"
-          ]
-        }
-      ]
-    },
-    {
-      "repository": "NVIDIA/earth2studio",
-      "organization": "NVIDIA",
-      "domain": "Earth Science / AI",
-      "tier": "Reference",
-      "radar_score": 73.1,
-      "repo_url": "https://github.com/NVIDIA/earth2studio",
-      "open_7d": 1,
-      "open_180d": 9,
-      "no_response_7d": 1,
-      "unassigned_7d": 1,
-      "issues_7d_url": "https://github.com/NVIDIA/earth2studio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/NVIDIA/earth2studio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 1153,
-          "title": "\ud83d\ude80[FEA]: Huggingface hub for downloading models",
-          "url": "https://github.com/NVIDIA/earth2studio/issues/1153",
-          "created_at": "2026-09-11T16:56:48Z",
-          "updated_at": "2026-09-11T16:56:53Z",
-          "comments": 0,
-          "author": "NickGeneva",
-          "author_association": "COLLABORATOR",
-          "assigned": false,
-          "labels": [
-            "enhancement"
-          ]
-        }
-      ]
-    },
-    {
-      "repository": "simpeg/simpeg",
-      "organization": "SimPEG",
-      "domain": "Computational Geophysics",
-      "tier": "Core",
-      "radar_score": 88.4,
-      "repo_url": "https://github.com/simpeg/simpeg",
-      "open_7d": 1,
-      "open_180d": 4,
-      "no_response_7d": 0,
-      "unassigned_7d": 1,
-      "issues_7d_url": "https://github.com/simpeg/simpeg/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/simpeg/simpeg/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 1804,
-          "title": "ENH: Add dedicated simulation for a Magnetization.",
-          "url": "https://github.com/simpeg/simpeg/issues/1804",
-          "created_at": "2026-09-12T19:15:51Z",
-          "updated_at": "2026-09-15T14:54:38Z",
-          "comments": 6,
-          "author": "jcapriot",
-          "author_association": "MEMBER",
-          "assigned": false,
-          "labels": []
-        }
-      ]
-    },
-    {
-      "repository": "equinor/segyio",
-      "organization": "Equinor",
-      "domain": "Seismic / Data",
-      "tier": "Core",
-      "radar_score": 83.0,
-      "repo_url": "https://github.com/equinor/segyio",
-      "open_7d": 1,
-      "open_180d": 1,
-      "no_response_7d": 1,
-      "unassigned_7d": 1,
-      "issues_7d_url": "https://github.com/equinor/segyio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/segyio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": [
-        {
-          "number": 665,
-          "title": "Bad sample interval written due to floating point truncation",
-          "url": "https://github.com/equinor/segyio/issues/665",
-          "created_at": "2026-09-11T12:12:02Z",
-          "updated_at": "2026-09-15T19:57:12Z",
-          "comments": 0,
-          "author": "TheZappie",
-          "author_association": "NONE",
-          "assigned": false,
-          "labels": []
-        }
-      ]
-    },
-    {
-      "repository": "equinor/xtgeo",
-      "organization": "Equinor",
-      "domain": "Geoscience / Reservoir",
-      "tier": "Core",
-      "radar_score": 85.2,
-      "repo_url": "https://github.com/equinor/xtgeo",
       "open_7d": 0,
-      "open_180d": 34,
+      "open_180d": 13,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/xtgeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/xtgeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "equinor/fmu-dataio",
-      "organization": "Equinor",
-      "domain": "Data / Geoscience",
-      "tier": "Core",
-      "radar_score": 81.5,
-      "repo_url": "https://github.com/equinor/fmu-dataio",
-      "open_7d": 0,
-      "open_180d": 11,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/fmu-dataio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/fmu-dataio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OPM/opm-simulators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/opm-simulators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -784,14 +743,14 @@
       "organization": "paulbruffett",
       "domain": "Data / AI",
       "tier": "Emerging",
-      "radar_score": 66.1,
+      "radar_score": 66.0,
       "repo_url": "https://github.com/paulbruffett/oil-and-gas-semantic",
       "open_7d": 0,
       "open_180d": 11,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/paulbruffett/oil-and-gas-semantic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/paulbruffett/oil-and-gas-semantic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/paulbruffett/oil-and-gas-semantic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/paulbruffett/oil-and-gas-semantic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -805,8 +764,23 @@
       "open_180d": 9,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/GEOS-DEV/GEOS/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/GEOS-DEV/GEOS/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/GEOS-DEV/GEOS/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/GEOS-DEV/GEOS/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "NVIDIA/earth2studio",
+      "organization": "NVIDIA",
+      "domain": "Earth Science / AI",
+      "tier": "Reference",
+      "radar_score": 73.2,
+      "repo_url": "https://github.com/NVIDIA/earth2studio",
+      "open_7d": 0,
+      "open_180d": 9,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/NVIDIA/earth2studio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/NVIDIA/earth2studio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -814,14 +788,14 @@
       "organization": "pyGIMLi",
       "domain": "Computational Geophysics",
       "tier": "Core",
-      "radar_score": 86.8,
+      "radar_score": 87.2,
       "repo_url": "https://github.com/gimli-org/gimli",
       "open_7d": 0,
       "open_180d": 8,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/gimli-org/gimli/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/gimli-org/gimli/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/gimli-org/gimli/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/gimli-org/gimli/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -835,8 +809,23 @@
       "open_180d": 8,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/ecalc/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/ecalc/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/ecalc/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/ecalc/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "Azure/osdu-spi",
+      "organization": "Microsoft / Azure",
+      "domain": "Data / OSDU",
+      "tier": "Core",
+      "radar_score": 78.2,
+      "repo_url": "https://github.com/Azure/osdu-spi",
+      "open_7d": 0,
+      "open_180d": 8,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/Azure/osdu-spi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/osdu-spi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -844,14 +833,14 @@
       "organization": "Seequent",
       "domain": "AI / Geoscience",
       "tier": "Emerging",
-      "radar_score": 72.3,
+      "radar_score": 72.2,
       "repo_url": "https://github.com/SeequentEvo/evo-mcp",
       "open_7d": 0,
       "open_180d": 8,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SeequentEvo/evo-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SeequentEvo/evo-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/SeequentEvo/evo-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SeequentEvo/evo-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -865,23 +854,8 @@
       "open_180d": 5,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/resdata/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/resdata/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "OPM/opm-common",
-      "organization": "OPM",
-      "domain": "Reservoir / Simulation",
-      "tier": "Core",
-      "radar_score": 84.5,
-      "repo_url": "https://github.com/OPM/opm-common",
-      "open_7d": 0,
-      "open_180d": 3,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OPM/opm-common/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/opm-common/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/resdata/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/resdata/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -895,8 +869,8 @@
       "open_180d": 3,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/bp/resqpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/bp/resqpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/bp/resqpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/bp/resqpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -904,14 +878,14 @@
       "organization": "PyLops",
       "domain": "Computational Geophysics",
       "tier": "Core",
-      "radar_score": 87.0,
+      "radar_score": 86.9,
       "repo_url": "https://github.com/PyLops/pylops",
       "open_7d": 0,
       "open_180d": 2,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/PyLops/pylops/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/PyLops/pylops/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/PyLops/pylops/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/PyLops/pylops/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -919,29 +893,14 @@
       "organization": "Loop3D",
       "domain": "Geology / Modeling",
       "tier": "Core",
-      "radar_score": 85.2,
+      "radar_score": 85.5,
       "repo_url": "https://github.com/Loop3D/LoopStructural",
       "open_7d": 0,
       "open_180d": 2,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Loop3D/LoopStructural/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Loop3D/LoopStructural/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "equinor/webviz-subsurface",
-      "organization": "Equinor",
-      "domain": "Reservoir / Visualization",
-      "tier": "Core",
-      "radar_score": 84.2,
-      "repo_url": "https://github.com/equinor/webviz-subsurface",
-      "open_7d": 0,
-      "open_180d": 2,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/webviz-subsurface/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/webviz-subsurface/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Loop3D/LoopStructural/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Loop3D/LoopStructural/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -955,8 +914,8 @@
       "open_180d": 2,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/LASight/las-frontend/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/LASight/las-frontend/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/LASight/las-frontend/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/LASight/las-frontend/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -970,8 +929,8 @@
       "open_180d": 2,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OPM/opm-flowgeomechanics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/opm-flowgeomechanics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OPM/opm-flowgeomechanics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/opm-flowgeomechanics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -985,23 +944,38 @@
       "open_180d": 1,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/gempy-project/gempy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/gempy-project/gempy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/gempy-project/gempy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/gempy-project/gempy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
-      "repository": "SeequentEvo/evo-schemas",
-      "organization": "Seequent",
-      "domain": "Data / Geoscience",
+      "repository": "equinor/webviz-subsurface",
+      "organization": "Equinor",
+      "domain": "Reservoir / Visualization",
       "tier": "Core",
-      "radar_score": 81.4,
-      "repo_url": "https://github.com/SeequentEvo/evo-schemas",
+      "radar_score": 84.5,
+      "repo_url": "https://github.com/equinor/webviz-subsurface",
       "open_7d": 0,
       "open_180d": 1,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SeequentEvo/evo-schemas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SeequentEvo/evo-schemas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/webviz-subsurface/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/webviz-subsurface/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "equinor/segyio",
+      "organization": "Equinor",
+      "domain": "Seismic / Data",
+      "tier": "Core",
+      "radar_score": 82.9,
+      "repo_url": "https://github.com/equinor/segyio",
+      "open_7d": 0,
+      "open_180d": 1,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/equinor/segyio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/segyio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1015,8 +989,23 @@
       "open_180d": 1,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SeequentEvo/evo-data-converters/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SeequentEvo/evo-data-converters/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/SeequentEvo/evo-data-converters/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SeequentEvo/evo-data-converters/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "SeequentEvo/evo-schemas",
+      "organization": "Seequent",
+      "domain": "Data / Geoscience",
+      "tier": "Core",
+      "radar_score": 81.3,
+      "repo_url": "https://github.com/SeequentEvo/evo-schemas",
+      "open_7d": 0,
+      "open_180d": 1,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/SeequentEvo/evo-schemas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SeequentEvo/evo-schemas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1024,14 +1013,14 @@
       "organization": "lfrincond",
       "domain": "Seismic",
       "tier": "Emerging",
-      "radar_score": 69.3,
+      "radar_score": 69.2,
       "repo_url": "https://github.com/lfrincond/Seismic_Imaging26",
       "open_7d": 0,
       "open_180d": 1,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/lfrincond/Seismic_Imaging26/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/lfrincond/Seismic_Imaging26/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/lfrincond/Seismic_Imaging26/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/lfrincond/Seismic_Imaging26/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1045,8 +1034,8 @@
       "open_180d": 1,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yalaudah/facies_classification_benchmark/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yalaudah/facies_classification_benchmark/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yalaudah/facies_classification_benchmark/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yalaudah/facies_classification_benchmark/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1060,8 +1049,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OpendTect/OpendTect/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OpendTect/OpendTect/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OpendTect/OpendTect/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OpendTect/OpendTect/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1069,14 +1058,14 @@
       "organization": "lasio",
       "domain": "Petrophysics / Data",
       "tier": "Core",
-      "radar_score": 83.6,
+      "radar_score": 83.5,
       "repo_url": "https://github.com/kinverarity1/lasio",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/kinverarity1/lasio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/kinverarity1/lasio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/kinverarity1/lasio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/kinverarity1/lasio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1084,14 +1073,14 @@
       "organization": "OPM",
       "domain": "Reservoir / Simulation",
       "tier": "Core",
-      "radar_score": 83.4,
+      "radar_score": 83.3,
       "repo_url": "https://github.com/OPM/opm-grid",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OPM/opm-grid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/opm-grid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OPM/opm-grid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/opm-grid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1099,14 +1088,14 @@
       "organization": "JintaoLee-Roger",
       "domain": "Seismic",
       "tier": "Core",
-      "radar_score": 83.2,
+      "radar_score": 83.1,
       "repo_url": "https://github.com/JintaoLee-Roger/cigvis",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/JintaoLee-Roger/cigvis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/JintaoLee-Roger/cigvis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/JintaoLee-Roger/cigvis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/JintaoLee-Roger/cigvis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1114,14 +1103,14 @@
       "organization": "mwburgoyne",
       "domain": "Reservoir",
       "tier": "Core",
-      "radar_score": 82.6,
+      "radar_score": 82.5,
       "repo_url": "https://github.com/mwburgoyne/pyResToolbox",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/mwburgoyne/pyResToolbox/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/mwburgoyne/pyResToolbox/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/mwburgoyne/pyResToolbox/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/mwburgoyne/pyResToolbox/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1129,14 +1118,14 @@
       "organization": "waynegm",
       "domain": "Seismic",
       "tier": "Core",
-      "radar_score": 81.6,
+      "radar_score": 81.7,
       "repo_url": "https://github.com/waynegm/OpendTect-Plugins",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/waynegm/OpendTect-Plugins/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/waynegm/OpendTect-Plugins/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/waynegm/OpendTect-Plugins/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/waynegm/OpendTect-Plugins/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1144,14 +1133,14 @@
       "organization": "Seequent",
       "domain": "Data / Geoscience",
       "tier": "Core",
-      "radar_score": 81.6,
+      "radar_score": 81.7,
       "repo_url": "https://github.com/SeequentEvo/evo-python-sdk",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SeequentEvo/evo-python-sdk/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SeequentEvo/evo-python-sdk/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/SeequentEvo/evo-python-sdk/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SeequentEvo/evo-python-sdk/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1165,8 +1154,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/bp/ResSimpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/bp/ResSimpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/bp/ResSimpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/bp/ResSimpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1180,8 +1169,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yohanesnuwara/GeoPySics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yohanesnuwara/GeoPySics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yohanesnuwara/GeoPySics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yohanesnuwara/GeoPySics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1189,14 +1178,14 @@
       "organization": "Microsoft / Azure",
       "domain": "Data / OSDU",
       "tier": "Core",
-      "radar_score": 80.7,
+      "radar_score": 80.6,
       "repo_url": "https://github.com/Azure/osdu-developer",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Azure/osdu-developer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/osdu-developer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Azure/osdu-developer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/osdu-developer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1204,29 +1193,14 @@
       "organization": "yohanesnuwara",
       "domain": "Reservoir",
       "tier": "Core",
-      "radar_score": 80.2,
+      "radar_score": 80.1,
       "repo_url": "https://github.com/yohanesnuwara/pyreservoir",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yohanesnuwara/pyreservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yohanesnuwara/pyreservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "JintaoLee-Roger/cigsegy",
-      "organization": "JintaoLee-Roger",
-      "domain": "Seismic / Processing",
-      "tier": "Core",
-      "radar_score": 80.1,
-      "repo_url": "https://github.com/JintaoLee-Roger/cigsegy",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/JintaoLee-Roger/cigsegy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/JintaoLee-Roger/cigsegy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yohanesnuwara/pyreservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yohanesnuwara/pyreservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1240,8 +1214,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/agilescientific/welly/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/agilescientific/welly/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/agilescientific/welly/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/agilescientific/welly/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "JintaoLee-Roger/cigsegy",
+      "organization": "JintaoLee-Roger",
+      "domain": "Seismic / Processing",
+      "tier": "Core",
+      "radar_score": 80.0,
+      "repo_url": "https://github.com/JintaoLee-Roger/cigsegy",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/JintaoLee-Roger/cigsegy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/JintaoLee-Roger/cigsegy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1255,8 +1244,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/dlisio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/dlisio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/dlisio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/dlisio/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1264,14 +1253,14 @@
       "organization": "Equinor",
       "domain": "Reservoir / Data",
       "tier": "Core",
-      "radar_score": 79.7,
+      "radar_score": 79.6,
       "repo_url": "https://github.com/equinor/resfo",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/resfo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/resfo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/resfo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/resfo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1279,14 +1268,14 @@
       "organization": "geo-kit",
       "domain": "Reservoir / Geoscience",
       "tier": "Core",
-      "radar_score": 79.4,
+      "radar_score": 79.3,
       "repo_url": "https://github.com/geo-kit/GeoView",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/geo-kit/GeoView/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/geo-kit/GeoView/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/geo-kit/GeoView/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/geo-kit/GeoView/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1294,14 +1283,14 @@
       "organization": "Shell / SEDE",
       "domain": "Seismic / AI",
       "tier": "Research",
-      "radar_score": 78.4,
+      "radar_score": 78.5,
       "repo_url": "https://github.com/sede-open/synthoseis",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/sede-open/synthoseis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/sede-open/synthoseis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/sede-open/synthoseis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/sede-open/synthoseis/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1315,8 +1304,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/geoscixyz/geosci-labs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/geoscixyz/geosci-labs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/geoscixyz/geosci-labs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/geoscixyz/geosci-labs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1324,14 +1313,14 @@
       "organization": "NVIDIA",
       "domain": "AI / Scientific Computing",
       "tier": "Research",
-      "radar_score": 77.7,
+      "radar_score": 77.6,
       "repo_url": "https://github.com/NVIDIA/physicsnemo-cfd",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/NVIDIA/physicsnemo-cfd/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/NVIDIA/physicsnemo-cfd/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/NVIDIA/physicsnemo-cfd/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/NVIDIA/physicsnemo-cfd/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1339,14 +1328,14 @@
       "organization": "trhallam",
       "domain": "Seismic / Data",
       "tier": "Core",
-      "radar_score": 77.5,
+      "radar_score": 77.4,
       "repo_url": "https://github.com/trhallam/segysak",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/trhallam/segysak/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/trhallam/segysak/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/trhallam/segysak/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/trhallam/segysak/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1354,14 +1343,14 @@
       "organization": "OpendTect",
       "domain": "Seismic / Data",
       "tier": "Core",
-      "radar_score": 77.1,
+      "radar_score": 77.0,
       "repo_url": "https://github.com/OpendTect/odpy",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OpendTect/odpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OpendTect/odpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OpendTect/odpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OpendTect/odpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1369,14 +1358,14 @@
       "organization": "Shell / SEDE",
       "domain": "Reservoir / Core Analysis",
       "tier": "Research",
-      "radar_score": 76.9,
+      "radar_score": 76.8,
       "repo_url": "https://github.com/sede-open/Core2Relperm",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/sede-open/Core2Relperm/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/sede-open/Core2Relperm/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/sede-open/Core2Relperm/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/sede-open/Core2Relperm/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1390,8 +1379,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/GeoscienceAustralia/uncover-ml/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/GeoscienceAustralia/uncover-ml/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/GeoscienceAustralia/uncover-ml/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/GeoscienceAustralia/uncover-ml/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1405,8 +1394,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/andymcdgeo/Petrophysics-Python-Series/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/andymcdgeo/Petrophysics-Python-Series/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/andymcdgeo/Petrophysics-Python-Series/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/andymcdgeo/Petrophysics-Python-Series/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1420,8 +1409,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/agilescientific/bruges/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/agilescientific/bruges/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/agilescientific/bruges/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/agilescientific/bruges/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1435,8 +1424,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/agilescientific/striplog/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/agilescientific/striplog/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/agilescientific/striplog/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/agilescientific/striplog/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1444,14 +1433,14 @@
       "organization": "geosoft-as",
       "domain": "Data / OSDU",
       "tier": "Core",
-      "radar_score": 73.7,
+      "radar_score": 73.6,
       "repo_url": "https://github.com/geosoft-as/osdu-uom",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/geosoft-as/osdu-uom/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/geosoft-as/osdu-uom/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/geosoft-as/osdu-uom/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/geosoft-as/osdu-uom/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1465,8 +1454,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/DIG-Kaust/MLgeoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/DIG-Kaust/MLgeoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/DIG-Kaust/MLgeoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/DIG-Kaust/MLgeoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1480,8 +1469,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/toddheitmann/PetroPy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/toddheitmann/PetroPy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/toddheitmann/PetroPy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/toddheitmann/PetroPy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1495,8 +1484,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yohanesnuwara/reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yohanesnuwara/reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yohanesnuwara/reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yohanesnuwara/reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1510,8 +1499,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/lanl/owl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/lanl/owl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/lanl/owl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/lanl/owl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1525,8 +1514,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/wavetomo/FWI-EDU/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/wavetomo/FWI-EDU/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/wavetomo/FWI-EDU/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/wavetomo/FWI-EDU/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1534,14 +1523,14 @@
       "organization": "softwareunderground",
       "domain": "Geoscience",
       "tier": "Reference",
-      "radar_score": 72.2,
+      "radar_score": 72.1,
       "repo_url": "https://github.com/softwareunderground/awesome-open-geoscience",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/softwareunderground/awesome-open-geoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/softwareunderground/awesome-open-geoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/softwareunderground/awesome-open-geoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/softwareunderground/awesome-open-geoscience/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1555,8 +1544,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/whimian/pyGeoPressure/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/whimian/pyGeoPressure/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/whimian/pyGeoPressure/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/whimian/pyGeoPressure/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1570,8 +1559,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/igp-gravity/geoist/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/igp-gravity/geoist/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/igp-gravity/geoist/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/igp-gravity/geoist/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1579,14 +1568,14 @@
       "organization": "aaspip",
       "domain": "Seismic / AI",
       "tier": "Research",
-      "radar_score": 71.8,
+      "radar_score": 71.7,
       "repo_url": "https://github.com/aaspip/geofwi3d",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/aaspip/geofwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/aaspip/geofwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/aaspip/geofwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/aaspip/geofwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1600,8 +1589,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/xin2zhang/MCTomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/xin2zhang/MCTomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/xin2zhang/MCTomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/xin2zhang/MCTomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1609,14 +1598,14 @@
       "organization": "Accenture",
       "domain": "Data / OSDU",
       "tier": "Core",
-      "radar_score": 71.3,
+      "radar_score": 71.2,
       "repo_url": "https://github.com/Accenture/OSDU-Ontology",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Accenture/OSDU-Ontology/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Accenture/OSDU-Ontology/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Accenture/OSDU-Ontology/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Accenture/OSDU-Ontology/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1630,8 +1619,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/osdu-sdk-python/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/osdu-sdk-python/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/osdu-sdk-python/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/osdu-sdk-python/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1639,14 +1628,14 @@
       "organization": "OPM",
       "domain": "Reservoir / Geochemistry",
       "tier": "Research",
-      "radar_score": 71.1,
+      "radar_score": 71.0,
       "repo_url": "https://github.com/OPM/opm-geochemistry",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OPM/opm-geochemistry/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OPM/opm-geochemistry/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OPM/opm-geochemistry/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OPM/opm-geochemistry/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1654,29 +1643,14 @@
       "organization": "qzhng",
       "domain": "Seismic / AI",
       "tier": "Research",
-      "radar_score": 70.9,
+      "radar_score": 70.8,
       "repo_url": "https://github.com/qzhng/improved-pinn-seismic-fwi",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/qzhng/improved-pinn-seismic-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/qzhng/improved-pinn-seismic-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "gabrielserrao/Claude-for-reservoir-engineering",
-      "organization": "gabrielserrao",
-      "domain": "AI / Reservoir",
-      "tier": "Emerging",
-      "radar_score": 70.3,
-      "repo_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/qzhng/improved-pinn-seismic-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/qzhng/improved-pinn-seismic-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1684,14 +1658,29 @@
       "organization": "danielscholl-osdu",
       "domain": "AI / OSDU",
       "tier": "Emerging",
-      "radar_score": 70.3,
+      "radar_score": 70.4,
       "repo_url": "https://github.com/danielscholl-osdu/osdu-mcp-server",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/danielscholl-osdu/osdu-mcp-server/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/danielscholl-osdu/osdu-mcp-server/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/danielscholl-osdu/osdu-mcp-server/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/danielscholl-osdu/osdu-mcp-server/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "gabrielserrao/Claude-for-reservoir-engineering",
+      "organization": "gabrielserrao",
+      "domain": "AI / Reservoir",
+      "tier": "Emerging",
+      "radar_score": 70.2,
+      "repo_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/gabrielserrao/Claude-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1699,29 +1688,14 @@
       "organization": "gabrielserrao",
       "domain": "AI / Reservoir",
       "tier": "Emerging",
-      "radar_score": 70.2,
+      "radar_score": 70.1,
       "repo_url": "https://github.com/gabrielserrao/pyrestoolbox-mcp",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/gabrielserrao/pyrestoolbox-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/gabrielserrao/pyrestoolbox-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "DeepWave-KAUST/SiameseFit-pub",
-      "organization": "DeepWave-KAUST",
-      "domain": "Seismic / AI",
-      "tier": "Research",
-      "radar_score": 70.1,
-      "repo_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/gabrielserrao/pyrestoolbox-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/gabrielserrao/pyrestoolbox-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1735,8 +1709,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/danielscholl/self-managed-osdu/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/danielscholl/self-managed-osdu/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/danielscholl/self-managed-osdu/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/danielscholl/self-managed-osdu/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "DeepWave-KAUST/SiameseFit-pub",
+      "organization": "DeepWave-KAUST",
+      "domain": "Seismic / AI",
+      "tier": "Research",
+      "radar_score": 70.0,
+      "repo_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/DeepWave-KAUST/SiameseFit-pub/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1750,8 +1739,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/chadleong/osdu-viz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/chadleong/osdu-viz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/chadleong/osdu-viz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/chadleong/osdu-viz/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1765,8 +1754,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Schlumberger/distpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Schlumberger/distpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Schlumberger/distpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Schlumberger/distpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1774,14 +1763,14 @@
       "organization": "xhffffff",
       "domain": "Seismic",
       "tier": "Research",
-      "radar_score": 69.6,
+      "radar_score": 69.5,
       "repo_url": "https://github.com/xhffffff/crf-fwi",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/xhffffff/crf-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/xhffffff/crf-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/xhffffff/crf-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/xhffffff/crf-fwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1795,8 +1784,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/orkahub/res-eng-mat-bal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/orkahub/res-eng-mat-bal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/orkahub/res-eng-mat-bal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/orkahub/res-eng-mat-bal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "WilmerZhu/EASTASIA_FWI",
+      "organization": "WilmerZhu",
+      "domain": "Seismic",
+      "tier": "Research",
+      "radar_score": 69.3,
+      "repo_url": "https://github.com/WilmerZhu/EASTASIA_FWI",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/WilmerZhu/EASTASIA_FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/WilmerZhu/EASTASIA_FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1810,8 +1814,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/scuervo91/reservoirpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/scuervo91/reservoirpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/scuervo91/reservoirpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/scuervo91/reservoirpy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1819,14 +1823,14 @@
       "organization": "JuliaEarth",
       "domain": "Seismic / Processing",
       "tier": "Emerging",
-      "radar_score": 69.0,
+      "radar_score": 68.9,
       "repo_url": "https://github.com/JuliaEarth/SeisKit.jl",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/JuliaEarth/SeisKit.jl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/JuliaEarth/SeisKit.jl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/JuliaEarth/SeisKit.jl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/JuliaEarth/SeisKit.jl/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1840,53 +1844,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/GarretMaloney/GeothermalAI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/GarretMaloney/GeothermalAI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "Azure/ADME-Solution-Accelerators",
-      "organization": "Microsoft / Azure",
-      "domain": "Data / OSDU",
-      "tier": "Core",
-      "radar_score": 68.3,
-      "repo_url": "https://github.com/Azure/ADME-Solution-Accelerators",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Azure/ADME-Solution-Accelerators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/ADME-Solution-Accelerators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "SeequentEvo/seequent-labs-vibe-aid",
-      "organization": "Seequent",
-      "domain": "AI / Geoscience",
-      "tier": "Emerging",
-      "radar_score": 68.1,
-      "repo_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "pranay-gpt/opm-ai",
-      "organization": "pranay-gpt",
-      "domain": "AI / Reservoir",
-      "tier": "Emerging",
-      "radar_score": 67.9,
-      "repo_url": "https://github.com/pranay-gpt/opm-ai",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/pranay-gpt/opm-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/pranay-gpt/opm-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/GarretMaloney/GeothermalAI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/GarretMaloney/GeothermalAI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1894,14 +1853,59 @@
       "organization": "zahidaramai",
       "domain": "Seismic / Processing",
       "tier": "Emerging",
-      "radar_score": 67.9,
+      "radar_score": 68.2,
       "repo_url": "https://github.com/zahidaramai/sdip",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/zahidaramai/sdip/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/zahidaramai/sdip/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/zahidaramai/sdip/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/zahidaramai/sdip/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "Azure/ADME-Solution-Accelerators",
+      "organization": "Microsoft / Azure",
+      "domain": "Data / OSDU",
+      "tier": "Core",
+      "radar_score": 68.2,
+      "repo_url": "https://github.com/Azure/ADME-Solution-Accelerators",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/Azure/ADME-Solution-Accelerators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/ADME-Solution-Accelerators/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "SeequentEvo/seequent-labs-vibe-aid",
+      "organization": "Seequent",
+      "domain": "AI / Geoscience",
+      "tier": "Emerging",
+      "radar_score": 68.0,
+      "repo_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SeequentEvo/seequent-labs-vibe-aid/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "pranay-gpt/opm-ai",
+      "organization": "pranay-gpt",
+      "domain": "AI / Reservoir",
+      "tier": "Emerging",
+      "radar_score": 67.8,
+      "repo_url": "https://github.com/pranay-gpt/opm-ai",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/pranay-gpt/opm-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/pranay-gpt/opm-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1915,8 +1919,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/bpari004/UCOP_Automated-Earthquake-Catalog-Salton-Sea-Geothermal-Region/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1930,8 +1934,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/alex-kalinichenko/re/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/alex-kalinichenko/re/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/alex-kalinichenko/re/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/alex-kalinichenko/re/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1945,8 +1949,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/FanSmale/TDMF-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/FanSmale/TDMF-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/FanSmale/TDMF-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/FanSmale/TDMF-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1954,29 +1958,14 @@
       "organization": "aradfarahani",
       "domain": "Geophysics",
       "tier": "Reference",
-      "radar_score": 67.2,
+      "radar_score": 67.1,
       "repo_url": "https://github.com/aradfarahani/awesome-geophysics",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/aradfarahani/awesome-geophysics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/aradfarahani/awesome-geophysics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "ameyxd/petromcp",
-      "organization": "ameyxd",
-      "domain": "Petrophysics / Data",
-      "tier": "Emerging",
-      "radar_score": 67.2,
-      "repo_url": "https://github.com/ameyxd/petromcp",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/ameyxd/petromcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/ameyxd/petromcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/aradfarahani/awesome-geophysics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/aradfarahani/awesome-geophysics/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1990,8 +1979,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/louise-nsangou/fwi-marmousi-deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/louise-nsangou/fwi-marmousi-deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/louise-nsangou/fwi-marmousi-deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/louise-nsangou/fwi-marmousi-deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "ameyxd/petromcp",
+      "organization": "ameyxd",
+      "domain": "Petrophysics / Data",
+      "tier": "Emerging",
+      "radar_score": 67.1,
+      "repo_url": "https://github.com/ameyxd/petromcp",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/ameyxd/petromcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/ameyxd/petromcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -1999,14 +2003,14 @@
       "organization": "OilCoder",
       "domain": "AI / Petrophysics",
       "tier": "Emerging",
-      "radar_score": 67.1,
+      "radar_score": 67.0,
       "repo_url": "https://github.com/OilCoder/petro-agent",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OilCoder/petro-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OilCoder/petro-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OilCoder/petro-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OilCoder/petro-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2014,14 +2018,14 @@
       "organization": "XU-SB",
       "domain": "Seismic",
       "tier": "Research",
-      "radar_score": 67.1,
+      "radar_score": 67.0,
       "repo_url": "https://github.com/XU-SB/Optimal-Geometry-FWI",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/XU-SB/Optimal-Geometry-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/XU-SB/Optimal-Geometry-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/XU-SB/Optimal-Geometry-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/XU-SB/Optimal-Geometry-FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2029,14 +2033,29 @@
       "organization": "q299264-cyber",
       "domain": "Petrophysics / Data",
       "tier": "Emerging",
-      "radar_score": 67.1,
+      "radar_score": 67.0,
       "repo_url": "https://github.com/q299264-cyber/borehole-vug-detection",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/q299264-cyber/borehole-vug-detection/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/q299264-cyber/borehole-vug-detection/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/q299264-cyber/borehole-vug-detection/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/q299264-cyber/borehole-vug-detection/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "nhdzTVlxb/ROGII---Wellbore-Geology-Prediction",
+      "organization": "nhdzTVlxb",
+      "domain": "Drilling / Geology / AI",
+      "tier": "Emerging",
+      "radar_score": 66.9,
+      "repo_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2044,29 +2063,14 @@
       "organization": "GeostatsGuy",
       "domain": "Geostatistics",
       "tier": "Reference",
-      "radar_score": 66.6,
+      "radar_score": 66.5,
       "repo_url": "https://github.com/GeostatsGuy/GeoDataSets",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/GeostatsGuy/GeoDataSets/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/GeostatsGuy/GeoDataSets/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "mosalama74/drilling-report-qa",
-      "organization": "mosalama74",
-      "domain": "AI / Drilling",
-      "tier": "Emerging",
-      "radar_score": 66.5,
-      "repo_url": "https://github.com/mosalama74/drilling-report-qa",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/mosalama74/drilling-report-qa/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/mosalama74/drilling-report-qa/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/GeostatsGuy/GeoDataSets/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/GeostatsGuy/GeoDataSets/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2080,8 +2084,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/equinor/flownet/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/equinor/flownet/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/equinor/flownet/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/equinor/flownet/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "mosalama74/drilling-report-qa",
+      "organization": "mosalama74",
+      "domain": "AI / Drilling",
+      "tier": "Emerging",
+      "radar_score": 66.4,
+      "repo_url": "https://github.com/mosalama74/drilling-report-qa",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/mosalama74/drilling-report-qa/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/mosalama74/drilling-report-qa/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2095,8 +2114,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/andrzimin72/Drilling-Risk-Management/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/andrzimin72/Drilling-Risk-Management/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/andrzimin72/Drilling-Risk-Management/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/andrzimin72/Drilling-Risk-Management/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2110,8 +2129,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yohanesnuwara/MLGeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yohanesnuwara/MLGeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yohanesnuwara/MLGeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yohanesnuwara/MLGeo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2125,8 +2144,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/tammyreservoir/Pore-Pressure-Prediction-for-Oil-and-Gas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/tammyreservoir/Pore-Pressure-Prediction-for-Oil-and-Gas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/tammyreservoir/Pore-Pressure-Prediction-for-Oil-and-Gas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/tammyreservoir/Pore-Pressure-Prediction-for-Oil-and-Gas/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2134,44 +2153,14 @@
       "organization": "sanjaydasgupta",
       "domain": "AI / Reservoir",
       "tier": "Emerging",
-      "radar_score": 66.2,
+      "radar_score": 66.1,
       "repo_url": "https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "WilmerZhu/EASTASIA_FWI",
-      "organization": "WilmerZhu",
-      "domain": "Seismic",
-      "tier": "Research",
-      "radar_score": 66.2,
-      "repo_url": "https://github.com/WilmerZhu/EASTASIA_FWI",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/WilmerZhu/EASTASIA_FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/WilmerZhu/EASTASIA_FWI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "nhdzTVlxb/ROGII---Wellbore-Geology-Prediction",
-      "organization": "nhdzTVlxb",
-      "domain": "Drilling / Geology / AI",
-      "tier": "Emerging",
-      "radar_score": 66.1,
-      "repo_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2185,38 +2174,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "NimahMasuud/agd2026-geothermal-ai",
-      "organization": "NimahMasuud",
-      "domain": "Geothermal / AI",
-      "tier": "Emerging",
-      "radar_score": 65.8,
-      "repo_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "EugPal/reservoir-surrogate",
-      "organization": "EugPal",
-      "domain": "Reservoir / AI",
-      "tier": "Emerging",
-      "radar_score": 65.8,
-      "repo_url": "https://github.com/EugPal/reservoir-surrogate",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/EugPal/reservoir-surrogate/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/EugPal/reservoir-surrogate/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2230,23 +2189,38 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/florianwittkamp/FD_ACOUSTIC/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/florianwittkamp/FD_ACOUSTIC/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/florianwittkamp/FD_ACOUSTIC/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/florianwittkamp/FD_ACOUSTIC/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
-      "repository": "prakashkrish-DataGeek/AI-Petrovision",
-      "organization": "prakashkrish-DataGeek",
-      "domain": "AI / Petrophysics",
+      "repository": "NimahMasuud/agd2026-geothermal-ai",
+      "organization": "NimahMasuud",
+      "domain": "Geothermal / AI",
       "tier": "Emerging",
-      "radar_score": 65.5,
-      "repo_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision",
+      "radar_score": 65.7,
+      "repo_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/NimahMasuud/agd2026-geothermal-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "EugPal/reservoir-surrogate",
+      "organization": "EugPal",
+      "domain": "Reservoir / AI",
+      "tier": "Emerging",
+      "radar_score": 65.7,
+      "repo_url": "https://github.com/EugPal/reservoir-surrogate",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/EugPal/reservoir-surrogate/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/EugPal/reservoir-surrogate/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2260,8 +2234,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/hatimCanDoIt/PETROLOGIC-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/hatimCanDoIt/PETROLOGIC-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/hatimCanDoIt/PETROLOGIC-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/hatimCanDoIt/PETROLOGIC-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2275,23 +2249,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/sede-open/pyELQ/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/sede-open/pyELQ/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/sede-open/pyELQ/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/sede-open/pyELQ/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
-      "repository": "TGSAI/segy",
-      "organization": "TGSAI",
-      "domain": "Seismic / Processing",
-      "tier": "Reference",
-      "radar_score": 65.2,
-      "repo_url": "https://github.com/TGSAI/segy",
+      "repository": "prakashkrish-DataGeek/AI-Petrovision",
+      "organization": "prakashkrish-DataGeek",
+      "domain": "AI / Petrophysics",
+      "tier": "Emerging",
+      "radar_score": 65.4,
+      "repo_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/TGSAI/segy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/TGSAI/segy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/prakashkrish-DataGeek/AI-Petrovision/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2305,8 +2279,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/olivesgatech/Estimation-of-acoustic-impedance-from-seismic-data-using-temporal-convolutional-network/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "TGSAI/segy",
+      "organization": "TGSAI",
+      "domain": "Seismic / Processing",
+      "tier": "Reference",
+      "radar_score": 65.1,
+      "repo_url": "https://github.com/TGSAI/segy",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/TGSAI/segy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/TGSAI/segy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2314,14 +2303,14 @@
       "organization": "13262233692",
       "domain": "Seismic",
       "tier": "Emerging",
-      "radar_score": 65.1,
+      "radar_score": 65.0,
       "repo_url": "https://github.com/13262233692/015-seismic-fwi-engine",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/13262233692/015-seismic-fwi-engine/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/13262233692/015-seismic-fwi-engine/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/13262233692/015-seismic-fwi-engine/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/13262233692/015-seismic-fwi-engine/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2335,8 +2324,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/benjium/petra-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/benjium/petra-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/benjium/petra-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/benjium/petra-ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2350,8 +2339,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/UsmanHWU/CrewAI_Reservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/UsmanHWU/CrewAI_Reservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/UsmanHWU/CrewAI_Reservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/UsmanHWU/CrewAI_Reservoir/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2359,14 +2348,29 @@
       "organization": "LukasMosser",
       "domain": "Seismic",
       "tier": "Research",
-      "radar_score": 64.7,
+      "radar_score": 64.8,
       "repo_url": "https://github.com/LukasMosser/stochastic_seismic_waveform_inversion",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/LukasMosser/stochastic_seismic_waveform_inversion/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/LukasMosser/stochastic_seismic_waveform_inversion/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/LukasMosser/stochastic_seismic_waveform_inversion/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/LukasMosser/stochastic_seismic_waveform_inversion/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "bshin/fd-atcfwi",
+      "organization": "bshin",
+      "domain": "Seismic",
+      "tier": "Research",
+      "radar_score": 64.8,
+      "repo_url": "https://github.com/bshin/fd-atcfwi",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/bshin/fd-atcfwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/bshin/fd-atcfwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2380,23 +2384,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/F2I-Consulting/fespp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/F2I-Consulting/fespp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "bshin/fd-atcfwi",
-      "organization": "bshin",
-      "domain": "Seismic",
-      "tier": "Research",
-      "radar_score": 64.7,
-      "repo_url": "https://github.com/bshin/fd-atcfwi",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/bshin/fd-atcfwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/bshin/fd-atcfwi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/F2I-Consulting/fespp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/F2I-Consulting/fespp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2410,8 +2399,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/geosoft-as/osdu-pwls/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/geosoft-as/osdu-pwls/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/geosoft-as/osdu-pwls/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/geosoft-as/osdu-pwls/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2419,29 +2408,14 @@
       "organization": "AmirMardan",
       "domain": "Seismic / AI",
       "tier": "Research",
-      "radar_score": 64.6,
+      "radar_score": 64.5,
       "repo_url": "https://github.com/AmirMardan/paper_lowFequencyExtrapolation",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/AmirMardan/paper_lowFequencyExtrapolation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/AmirMardan/paper_lowFequencyExtrapolation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "adldi07/LAS-Analyzer",
-      "organization": "adldi07",
-      "domain": "Petrophysics",
-      "tier": "Emerging",
-      "radar_score": 64.5,
-      "repo_url": "https://github.com/adldi07/LAS-Analyzer",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/adldi07/LAS-Analyzer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/adldi07/LAS-Analyzer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/AmirMardan/paper_lowFequencyExtrapolation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/AmirMardan/paper_lowFequencyExtrapolation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2455,8 +2429,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/danielscholl/osdu-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/danielscholl/osdu-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/danielscholl/osdu-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/danielscholl/osdu-agent/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "adldi07/LAS-Analyzer",
+      "organization": "adldi07",
+      "domain": "Petrophysics",
+      "tier": "Emerging",
+      "radar_score": 64.4,
+      "repo_url": "https://github.com/adldi07/LAS-Analyzer",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/adldi07/LAS-Analyzer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/adldi07/LAS-Analyzer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2464,14 +2453,14 @@
       "organization": "Eng-qusain",
       "domain": "Drilling / AI",
       "tier": "Emerging",
-      "radar_score": 64.5,
+      "radar_score": 64.4,
       "repo_url": "https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2485,8 +2474,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/swag-kaust/ASOFI3D/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/swag-kaust/ASOFI3D/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/swag-kaust/ASOFI3D/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/swag-kaust/ASOFI3D/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2500,8 +2489,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/athasfin/smart-well-log-visualizer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/athasfin/smart-well-log-visualizer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/athasfin/smart-well-log-visualizer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/athasfin/smart-well-log-visualizer/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2515,8 +2504,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/groupeLIAMG/bh_tomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/groupeLIAMG/bh_tomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/groupeLIAMG/bh_tomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/groupeLIAMG/bh_tomo/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2530,8 +2519,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/rkkalluri-dbx/og-agentic-patterns/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/rkkalluri-dbx/og-agentic-patterns/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/rkkalluri-dbx/og-agentic-patterns/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/rkkalluri-dbx/og-agentic-patterns/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2545,8 +2534,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/LukasMosser/SNIST/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/LukasMosser/SNIST/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/LukasMosser/SNIST/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/LukasMosser/SNIST/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2554,14 +2543,14 @@
       "organization": "leocd91",
       "domain": "Geoscience / AI",
       "tier": "Reference",
-      "radar_score": 63.8,
+      "radar_score": 63.7,
       "repo_url": "https://github.com/leocd91/geoscience-ML-tutorial",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/leocd91/geoscience-ML-tutorial/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/leocd91/geoscience-ML-tutorial/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/leocd91/geoscience-ML-tutorial/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/leocd91/geoscience-ML-tutorial/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2575,8 +2564,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/OpendTect/OpendTect-ML-Dev/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/OpendTect/OpendTect-ML-Dev/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/OpendTect/OpendTect-ML-Dev/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/OpendTect/OpendTect-ML-Dev/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2590,8 +2579,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/LukasMosser/asi-pytorch/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/LukasMosser/asi-pytorch/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/LukasMosser/asi-pytorch/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/LukasMosser/asi-pytorch/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2605,8 +2594,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/anyperc3nt/vision_seismic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/anyperc3nt/vision_seismic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/anyperc3nt/vision_seismic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/anyperc3nt/vision_seismic/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2620,8 +2609,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/ezygeo-ai/3D-Seismic-Attribute/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/ezygeo-ai/3D-Seismic-Attribute/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/ezygeo-ai/3D-Seismic-Attribute/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/ezygeo-ai/3D-Seismic-Attribute/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2635,8 +2624,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Philliec459/Estimate-Core-Permeability-from-NMR-data-using-either-Map-Inversion-or-kNN/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2650,8 +2639,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/F2I-Consulting/fetpapi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/F2I-Consulting/fetpapi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/F2I-Consulting/fetpapi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/F2I-Consulting/fetpapi/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2665,8 +2654,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/luiscm17/pilot-ai-drill/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/luiscm17/pilot-ai-drill/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/luiscm17/pilot-ai-drill/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/luiscm17/pilot-ai-drill/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2674,14 +2663,14 @@
       "organization": "Ashutos0762",
       "domain": "Reservoir / AI",
       "tier": "Emerging",
-      "radar_score": 62.3,
+      "radar_score": 62.2,
       "repo_url": "https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2689,29 +2678,14 @@
       "organization": "Shanghua-Zhang",
       "domain": "Seismic",
       "tier": "Emerging",
-      "radar_score": 61.9,
+      "radar_score": 61.8,
       "repo_url": "https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "SanmTex/AI-driven-Petrophysics-Workflow",
-      "organization": "SanmTex",
-      "domain": "Petrophysics / AI",
-      "tier": "Emerging",
-      "radar_score": 61.6,
-      "repo_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2725,8 +2699,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/MattJones82/Modeling-NMR-Derived-T2-Porosity-using-Conventional-Open-Hole-Logs/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "SanmTex/AI-driven-Petrophysics-Workflow",
+      "organization": "SanmTex",
+      "domain": "Petrophysics / AI",
+      "tier": "Emerging",
+      "radar_score": 61.5,
+      "repo_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/SanmTex/AI-driven-Petrophysics-Workflow/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2734,14 +2723,14 @@
       "organization": "AadeshSalecha",
       "domain": "Geothermal / AI",
       "tier": "Emerging",
-      "radar_score": 61.3,
+      "radar_score": 61.2,
       "repo_url": "https://github.com/AadeshSalecha/geothermal-green-ai-hackathon",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/AadeshSalecha/geothermal-green-ai-hackathon/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/AadeshSalecha/geothermal-green-ai-hackathon/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/AadeshSalecha/geothermal-green-ai-hackathon/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/AadeshSalecha/geothermal-green-ai-hackathon/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2749,29 +2738,14 @@
       "organization": "yberkayozkan",
       "domain": "AI / Geophysics",
       "tier": "Emerging",
-      "radar_score": 61.1,
+      "radar_score": 61.0,
       "repo_url": "https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "Amalendu17/FWI_On_2D_Synthetic_Seismic_Data",
-      "organization": "Amalendu17",
-      "domain": "Seismic",
-      "tier": "Emerging",
-      "radar_score": 60.5,
-      "repo_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2785,8 +2759,23 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/fadhilazz/geo_ai_v3/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/fadhilazz/geo_ai_v3/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/fadhilazz/geo_ai_v3/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/fadhilazz/geo_ai_v3/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "Amalendu17/FWI_On_2D_Synthetic_Seismic_Data",
+      "organization": "Amalendu17",
+      "domain": "Seismic",
+      "tier": "Emerging",
+      "radar_score": 60.4,
+      "repo_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2800,8 +2789,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/MJRobillard/salton_trough_geothermal_ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/MJRobillard/salton_trough_geothermal_ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/MJRobillard/salton_trough_geothermal_ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/MJRobillard/salton_trough_geothermal_ai/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2809,44 +2798,14 @@
       "organization": "DivyyaM",
       "domain": "Petrophysics / AI",
       "tier": "Emerging",
-      "radar_score": 59.5,
+      "radar_score": 59.4,
       "repo_url": "https://github.com/DivyyaM/AI-BasedPermeability-Prediction",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/DivyyaM/AI-BasedPermeability-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/DivyyaM/AI-BasedPermeability-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models",
-      "organization": "Tari91",
-      "domain": "Geothermal / AI",
-      "tier": "Emerging",
-      "radar_score": 59.5,
-      "repo_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
-      "recent_issues": []
-    },
-    {
-      "repository": "MboleNgome/enhanced-oil-recovery",
-      "organization": "MboleNgome",
-      "domain": "Reservoir",
-      "tier": "Emerging",
-      "radar_score": 59.5,
-      "repo_url": "https://github.com/MboleNgome/enhanced-oil-recovery",
-      "open_7d": 0,
-      "open_180d": 0,
-      "no_response_7d": 0,
-      "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/MboleNgome/enhanced-oil-recovery/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/MboleNgome/enhanced-oil-recovery/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/DivyyaM/AI-BasedPermeability-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/DivyyaM/AI-BasedPermeability-Prediction/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2860,8 +2819,38 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Wzhang3912/opendtect-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Wzhang3912/opendtect-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Wzhang3912/opendtect-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Wzhang3912/opendtect-mcp/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models",
+      "organization": "Tari91",
+      "domain": "Geothermal / AI",
+      "tier": "Emerging",
+      "radar_score": 59.4,
+      "repo_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
+      "recent_issues": []
+    },
+    {
+      "repository": "MboleNgome/enhanced-oil-recovery",
+      "organization": "MboleNgome",
+      "domain": "Reservoir",
+      "tier": "Emerging",
+      "radar_score": 59.4,
+      "repo_url": "https://github.com/MboleNgome/enhanced-oil-recovery",
+      "open_7d": 0,
+      "open_180d": 0,
+      "no_response_7d": 0,
+      "unassigned_7d": 0,
+      "issues_7d_url": "https://github.com/MboleNgome/enhanced-oil-recovery/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/MboleNgome/enhanced-oil-recovery/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2869,14 +2858,14 @@
       "organization": "AyaAlahdl",
       "domain": "Seismic / AI",
       "tier": "Emerging",
-      "radar_score": 58.9,
+      "radar_score": 58.8,
       "repo_url": "https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline",
       "open_7d": 0,
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2890,8 +2879,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Azure/osdu-data-load-tno/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Azure/osdu-data-load-tno/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Azure/osdu-data-load-tno/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Azure/osdu-data-load-tno/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2905,8 +2894,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/yohanesnuwara/open-geoscience-repository/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/yohanesnuwara/open-geoscience-repository/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/yohanesnuwara/open-geoscience-repository/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/yohanesnuwara/open-geoscience-repository/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2920,8 +2909,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/lijingwang/DataScienceForGeosciences/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/lijingwang/DataScienceForGeosciences/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/lijingwang/DataScienceForGeosciences/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/lijingwang/DataScienceForGeosciences/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2935,8 +2924,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/hvt1609/fwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/hvt1609/fwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/hvt1609/fwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/hvt1609/fwi3d/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2950,8 +2939,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/awgeo/Volve_field_data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/awgeo/Volve_field_data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/awgeo/Volve_field_data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/awgeo/Volve_field_data/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2965,8 +2954,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/Schlumberger/geothermal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/Schlumberger/geothermal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/Schlumberger/geothermal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/Schlumberger/geothermal/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2980,8 +2969,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/pariveda/osdupy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/pariveda/osdupy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/pariveda/osdupy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/pariveda/osdupy/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     },
     {
@@ -2995,8 +2984,8 @@
       "open_180d": 0,
       "no_response_7d": 0,
       "unassigned_7d": 0,
-      "issues_7d_url": "https://github.com/micmurawski/osdu-client/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-09",
-      "issues_180d_url": "https://github.com/micmurawski/osdu-client/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-20",
+      "issues_7d_url": "https://github.com/micmurawski/osdu-client/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-09-13",
+      "issues_180d_url": "https://github.com/micmurawski/osdu-client/issues?q=is%3Aissue%20is%3Aopen%20created%3A%3E%3D2026-03-24",
       "recent_issues": []
     }
   ]
