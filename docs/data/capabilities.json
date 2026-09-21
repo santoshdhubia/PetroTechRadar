@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T15:43:06.627260+00:00",
+  "generated_at": "2026-09-21T15:53:03.303084+00:00",
   "mode": "all",
   "repository_count": 24,
   "errors": [],
@@ -398,8 +398,12 @@
         "SEG-Y I/O"
       ],
       "secondary_capabilities": [],
-      "roles": [],
-      "not_best_for": [],
+      "roles": [
+        "segy_io"
+      ],
+      "not_best_for": [
+        "interactive_3d_visualization"
+      ],
       "capability_scores": {
         "SEG-Y I/O": 10
       },
@@ -474,9 +478,12 @@
         "well data"
       ],
       "roles": [
+        "segy_io",
         "well_data_io"
       ],
-      "not_best_for": [],
+      "not_best_for": [
+        "interactive_3d_visualization"
+      ],
       "capability_scores": {
         "SEG-Y I/O": 3,
         "well data": 1
