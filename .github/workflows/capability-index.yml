@@ -1,6 +1,11 @@
 name: Build capability index
 
 on:
+  pull_request:
+    paths:
+      - "scripts/build_capability_index.py"
+      - "scripts/benchmark_function_search.py"
+      - ".github/workflows/capability-index.yml"
   workflow_dispatch:
     inputs:
       mode:
@@ -28,7 +33,7 @@ jobs:
       - name: Build function and capability index
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CAPABILITY_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'all' }}
+          CAPABILITY_MODE: ${{ github.event_name == 'pull_request' && 'test' || (github.event_name == 'workflow_dispatch' && inputs.mode || 'all') }}
         run: python scripts/build_capability_index.py
       - name: Benchmark function search usability
         run: python scripts/benchmark_function_search.py
@@ -38,10 +43,12 @@ jobs:
           import json
           c=json.load(open('docs/data/capabilities.json', encoding='utf-8'))
           f=json.load(open('docs/data/functions.json', encoding='utf-8'))
+          m=json.load(open('docs/data/function_manifest.json', encoding='utf-8'))
           b=json.load(open('docs/data/function_search_benchmark.json', encoding='utf-8'))
           print('Mode:', c['mode'])
           print('Repositories:', c['repository_count'])
-          print('Public API symbols:', f['function_count'])
+          print('Sharded public API symbols:', m['function_count'])
+          print('Legacy compatibility symbols:', f['function_count'])
           print('Errors:', len(c['errors']))
           print('Repository Top-5 accuracy:', b['summary']['repository_top5_accuracy'])
           print('Useful function Top-5 accuracy:', b['summary']['useful_function_top5_accuracy'])
@@ -50,9 +57,10 @@ jobs:
               print(' -', e['repository'], e['error'])
           PY
       - name: Commit generated index
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/capabilities.json docs/data/functions.json docs/data/function_search_benchmark.json
+          git add docs/data/capabilities.json docs/data/functions.json docs/data/search_index.json docs/data/function_manifest.json docs/data/functions/ docs/data/function_search_benchmark.json
           git diff --cached --quiet || git commit -m "Refresh repository capability index"
           git push
