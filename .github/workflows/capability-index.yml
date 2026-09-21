@@ -1,6 +1,14 @@
 name: Build capability index
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/build_capability_index.py"
+      - "scripts/benchmark_function_search.py"
+      - "docs/data/radar.json"
+      - ".github/workflows/capability-index.yml"
   pull_request:
     paths:
       - "scripts/build_capability_index.py"
@@ -57,7 +65,7 @@ jobs:
               print(' -', e['repository'], e['error'])
           PY
       - name: Commit generated index
-        if: github.event_name != 'pull_request'
+        if: github.event_name == 'push' || github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'all')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
