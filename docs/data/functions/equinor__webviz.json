@@ -1,0 +1,752 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/webviz",
+  "language": "TypeScript",
+  "function_count": 62,
+  "functions": [
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_float_array_as_float32",
+      "kind": "function",
+      "signature": "b64_encode_float_array_as_float32(input_arr)",
+      "description": "Base64 encodes an array of floating point numbers using 32bit float element size.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_float_array_as_float64",
+      "kind": "function",
+      "signature": "b64_encode_float_array_as_float64(input_arr)",
+      "description": "Base64 encodes array of floating point numbers using 64bit float element size.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_int_array_as_int32",
+      "kind": "function",
+      "signature": "b64_encode_int_array_as_int32(input_arr)",
+      "description": "Base64 encodes an array of signed integers as using 32bit int element size.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_int_array_as_smallest_size",
+      "kind": "function",
+      "signature": "b64_encode_int_array_as_smallest_size(input_arr, min_value=None, max_value=None)",
+      "description": "Base64 encodes an array of integers using the smallest possible element size.\nIf the minimum and maximum values are known, they can be specified in the min_value and max_value parameter.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_uint_array_as_smallest_size",
+      "kind": "function",
+      "signature": "b64_encode_uint_array_as_smallest_size(input_arr, max_value=None)",
+      "description": "Base64 encodes an array of unsigned integers using the smallest possible element size.\nIf the maximum value in the array is known, it can be specified in the max_value parameter.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_uint_array_as_uint32",
+      "kind": "function",
+      "signature": "b64_encode_uint_array_as_uint32(input_arr)",
+      "description": "Base64 encodes an array of unsigned integers using 32bit uint element size.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.b64.b64_encode_uint_array_as_uint8",
+      "kind": "function",
+      "signature": "b64_encode_uint_array_as_uint8(input_arr)",
+      "description": "Base64 encodes an array of unsigned integers using 8 bit uint element size.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/b64.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.background_tasks.run_in_background_task",
+      "kind": "function",
+      "signature": "run_in_background_task(coroutine)",
+      "description": "Create a background task and schedule it to run in a fire-and-forget fashion",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/background_tasks.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.exponential_backoff_timer.ExponentialBackoffTimer",
+      "kind": "class",
+      "signature": "ExponentialBackoffTimer",
+      "description": "Exponential backoff timer with jitter and a max total duration.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/exponential_backoff_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.exponential_backoff_timer.ExponentialBackoffTimer.next_delay_s",
+      "kind": "method",
+      "signature": "next_delay_s(self, clamp_to_remaining=True)",
+      "description": "Return the next delay in seconds, or None if max_total_duration_s has expired.\nIf clamp_to_remaining=True, the returned delay will not exceed the remaining time.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/exponential_backoff_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.exponential_backoff_timer.ExponentialBackoffTimer.remaining_s",
+      "kind": "method",
+      "signature": "remaining_s(self)",
+      "description": "Get remaining time before max_total_duration_s is exceeded.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/exponential_backoff_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.get_elapsed_ms",
+      "kind": "method",
+      "signature": "get_elapsed_ms(self)",
+      "description": "Will return the elapsed time up until now",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.record_elapsed",
+      "kind": "method",
+      "signature": "record_elapsed(self, metric_name)",
+      "description": "Records metric with a duration since the start",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.record_lap",
+      "kind": "method",
+      "signature": "record_lap(self, metric_name)",
+      "description": "Records metric with a duration since the last lap",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.record_lap_no_reset",
+      "kind": "method",
+      "signature": "record_lap_no_reset(self, metric_name)",
+      "description": "Records metric with a duration since the last lap. Does not reset the internal lap timer",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.to_string",
+      "kind": "method",
+      "signature": "to_string(self, include_total_elapsed=True)",
+      "description": "Returns a string representation of the metrics (in ms) suitable for logging.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.to_string_s",
+      "kind": "method",
+      "signature": "to_string_s(self, include_total_elapsed=True)",
+      "description": "Returns string representation of the metrics (in s), see to_string() for more details.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.make_metrics_string",
+      "kind": "function",
+      "signature": "make_metrics_string(perf_metrics_dict_ms, total_elapsed_ms=None)",
+      "description": "Returns a string representation of the specified metrics (in ms) suitable for logging.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.make_metrics_string_s",
+      "kind": "function",
+      "signature": "make_metrics_string_s(perf_metrics_dict_ms, total_elapsed_ms=None)",
+      "description": "Returns string representation of the metrics (in s), see make_metrics_string() for more details.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_timer.PerfTimer.elapsed_ms",
+      "kind": "method",
+      "signature": "elapsed_ms(self)",
+      "description": "Get the time elapsed since the start, in milliseconds",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_timer.PerfTimer.elapsed_s",
+      "kind": "method",
+      "signature": "elapsed_s(self)",
+      "description": "Get the time elapsed since the start, in seconds",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_timer.PerfTimer.lap_ms",
+      "kind": "method",
+      "signature": "lap_ms(self, reset_lap_timer=True)",
+      "description": "Get elapsed time since last lap, in milliseconds",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_timer.PerfTimer.lap_s",
+      "kind": "method",
+      "signature": "lap_s(self, reset_lap_timer=True)",
+      "description": "Get elapsed time since last lap, in seconds",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.timestamp_utils.iso_str_to_date_str",
+      "kind": "function",
+      "signature": "iso_str_to_date_str(iso_str)",
+      "description": "Extract the date portion from an ISO 8601 string",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/timestamp_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.timestamp_utils.iso_str_to_timestamp_utc_ms",
+      "kind": "function",
+      "signature": "iso_str_to_timestamp_utc_ms(iso_str)",
+      "description": "Convert ISO 8601 string to timestamp in milliseconds UTC\nNote that for date-time strings that do not contain timezone information, this function assumes\nthat the date-time string is in UTC",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/timestamp_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.timestamp_utils.timestamp_utc_ms_to_compact_iso_str",
+      "kind": "function",
+      "signature": "timestamp_utc_ms_to_compact_iso_str(timestamp_utc_ms)",
+      "description": "Convert integer timestamp in milliseconds a compact UTC to ISO 8601 string\nThe returned string will be one of these formats depending on the input data:\n  YYYY-MM-DDTHH:MM:SS.fffZ\n  YYYY-MM-DDTHH:MM:SSZ\n  YYYY-MM-DD",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/timestamp_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.timestamp_utils.timestamp_utc_ms_to_iso_str",
+      "kind": "function",
+      "signature": "timestamp_utc_ms_to_iso_str(timestamp_utc_ms, always_include_milliseconds=True)",
+      "description": "Convert integer timestamp in milliseconds UTC to ISO 8601 string\nThe returned string will always be one of these formats:\n  YYYY-MM-DDTHH:MM:SS.fffZ\n  YYYY-MM-DDTHH:MM:SSZ",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/timestamp_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.timestamp_utils.timestamp_utc_ms_to_iso_str_strip_tz",
+      "kind": "function",
+      "signature": "timestamp_utc_ms_to_iso_str_strip_tz(timestamp_utc_ms, always_include_milliseconds=True)",
+      "description": "Same as timestamp_utc_ms_to_iso_str(), but does not include timezone information (no trailing Z)",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/timestamp_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.type_utils.expect_type",
+      "kind": "function",
+      "signature": "expect_type(value, typ)",
+      "description": "Assert that `value` is of type `typ` and return it as that type. If not, raise a TypeError.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/type_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.auth.enforce_logged_in_middleware.EnforceLoggedInMiddleware",
+      "kind": "class",
+      "signature": "EnforceLoggedInMiddleware",
+      "description": "Pure ASGI middleware to enforce that the user is logged in",
+      "source_file": "backend_py/primary/primary/auth/enforce_logged_in_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.add_process_time_to_server_timing_middleware.AddProcessTimeToServerTimingMiddleware",
+      "kind": "class",
+      "signature": "AddProcessTimeToServerTimingMiddleware",
+      "description": "Adds a metric entry to the Server-Timing header containing the time in ms\nthat it took to process the request and generate a response",
+      "source_file": "backend_py/primary/primary/middleware/add_process_time_to_server_timing_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.CacheControlMiddleware",
+      "kind": "class",
+      "signature": "CacheControlMiddleware",
+      "description": "Adds Cache-Control header to HTTP responses.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.CacheSettings",
+      "kind": "class",
+      "signature": "CacheSettings",
+      "description": "Cache settings for an endpoint response.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.CacheTime",
+      "kind": "class",
+      "signature": "CacheTime",
+      "description": "Browser cache time durations for endpoint responses in seconds.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.StaleTime",
+      "kind": "class",
+      "signature": "StaleTime",
+      "description": "Browser cache durations for endpoint responses in seconds.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.cache_time",
+      "kind": "function",
+      "signature": "cache_time(duration, stale_while_revalidate=None)",
+      "description": "Decorator that sets browser cache time for the endpoint response using a preset duration.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.custom_cache_time",
+      "kind": "function",
+      "signature": "custom_cache_time(max_age_s, stale_while_revalidate_s)",
+      "description": "Decorator that sets a custom browser cache time for the endpoint response.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.cache_control_middleware.set_cache_time",
+      "kind": "function",
+      "signature": "set_cache_time(duration, stale_while_revalidate=None)",
+      "description": "Utility function to opt in to caching from within an endpoint at runtime.",
+      "source_file": "backend_py/primary/primary/middleware/cache_control_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.encrypted_redis_session_store.EncryptedRedisSessionStore",
+      "kind": "class",
+      "signature": "EncryptedRedisSessionStore",
+      "description": "A Redis-backed SessionStore with Fernet encryption.",
+      "source_file": "backend_py/primary/primary/middleware/encrypted_redis_session_store.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.otel_span_enrichment_middleware.OtelSpanClientAddressEnrichmentMiddleware",
+      "kind": "class",
+      "signature": "OtelSpanClientAddressEnrichmentMiddleware",
+      "description": "Middleware that enriches OpenTelemetry spans with client address information from the request.",
+      "source_file": "backend_py/primary/primary/middleware/otel_span_enrichment_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.middleware.otel_span_enrichment_middleware.OtelSpanEndUserEnrichmentMiddleware",
+      "kind": "class",
+      "signature": "OtelSpanEndUserEnrichmentMiddleware",
+      "description": "Middleware that enriches OpenTelemetry spans with end user information from the request.",
+      "source_file": "backend_py/primary/primary/middleware/otel_span_enrichment_middleware.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.persistence._utils.query_by_page",
+      "kind": "function",
+      "signature": "query_by_page(query_iterable, page_token)",
+      "description": "Cosmosdb's `by_page` returns a more narrow subtype than anticipated. This makes\nextra's like `.continuation_token` not show up in returned value's type.",
+      "source_file": "backend_py/primary/primary/persistence/_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.arrays.safe_index_get",
+      "kind": "function",
+      "signature": "safe_index_get(index, arr, default=None)",
+      "description": "Gets an item from a list, or returns default if index is out of range",
+      "source_file": "backend_py/primary/primary/utils/arrays.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.azure_service_credentials.create_credential_for_azure_services",
+      "kind": "function",
+      "signature": "create_credential_for_azure_services()",
+      "description": "Create an Azure Identity credential suitable for authenticating to Azure services such as Service Bus and Cosmos DB.",
+      "source_file": "backend_py/primary/primary/utils/azure_service_credentials.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.azure_service_credentials.log_azure_credential_env_var_status",
+      "kind": "function",
+      "signature": "log_azure_credential_env_var_status()",
+      "description": "Log the status of key Azure credential-related environment variables.\nIntended as a debugging aid to diagnose authentication failures against Azure services.",
+      "source_file": "backend_py/primary/primary/utils/azure_service_credentials.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.drogon.is_drogon_identifier",
+      "kind": "function",
+      "signature": "is_drogon_identifier(field_identifier=None, wellbore_uuid=None, strat_column_identifier=None)",
+      "description": "Checks if an element's identifier is for the drogon mock.",
+      "source_file": "backend_py/primary/primary/utils/drogon.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.exception_handlers.configure_service_level_exception_handlers",
+      "kind": "function",
+      "signature": "configure_service_level_exception_handlers(app)",
+      "description": "Add exception handler for the exceptions that are raised in the service layer",
+      "source_file": "backend_py/primary/primary/utils/exception_handlers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.exception_handlers.override_default_fastapi_exception_handlers",
+      "kind": "function",
+      "signature": "override_default_fastapi_exception_handlers(app)",
+      "description": "Override the default exception handlers provided by FastAPI",
+      "source_file": "backend_py/primary/primary/utils/exception_handlers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.query_string_utils.decode_key_val_str",
+      "kind": "function",
+      "signature": "decode_key_val_str(key_val_str)",
+      "description": "Decodes a KeyValStr into a dictionary of key-value pairs.",
+      "source_file": "backend_py/primary/primary/utils/query_string_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.query_string_utils.decode_uint_list_str",
+      "kind": "function",
+      "signature": "decode_uint_list_str(int_arr_str)",
+      "description": "Decode a UintListStr formatted string representing a list of unsigned integers.\nSingle integers are represented as themselves, while consecutive integers are represented as a <start>-<end> range.\nAll entries are separated by \"!\".",
+      "source_file": "backend_py/primary/primary/utils/query_string_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.query_string_utils.encode_as_uint_list_str",
+      "kind": "function",
+      "signature": "encode_as_uint_list_str(unsigned_int_list)",
+      "description": "Encode a list of unsigned integers into a UintListStr formatted string.\nSingle integers are represented as themselves, while consecutive integers are represented as a <start>-<end> range.\nAll entries are separated by \"!\".",
+      "source_file": "backend_py/primary/primary/utils/query_string_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.get_elapsed_ms",
+      "kind": "method",
+      "signature": "get_elapsed_ms(self)",
+      "description": "Will return the elapsed time up until now",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.record_elapsed",
+      "kind": "method",
+      "signature": "record_elapsed(self, metric_name)",
+      "description": "Records metric with a duration since the start",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.record_lap",
+      "kind": "method",
+      "signature": "record_lap(self, metric_name)",
+      "description": "Records metric with a duration since the last lap",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.record_lap_no_reset",
+      "kind": "method",
+      "signature": "record_lap_no_reset(self, metric_name)",
+      "description": "Records metric with a duration since the last lap. Does not reset the internal lap timer",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.to_string",
+      "kind": "method",
+      "signature": "to_string(self, include_total_elapsed=True)",
+      "description": "Returns a string representation of the metrics suitable for logging.",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.main.root",
+      "kind": "function",
+      "signature": "root()",
+      "description": "",
+      "source_file": "backend_py/primary/primary/main.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "backend_py.user_grid3d_ri.user_grid3d_ri.fastapi_app.root",
+      "kind": "function",
+      "signature": "root()",
+      "description": "",
+      "source_file": "backend_py/user_grid3d_ri/user_grid3d_ri/fastapi_app.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "backend_py.user_mock.user_mock.user_mock_app.root",
+      "kind": "function",
+      "signature": "root()",
+      "description": "",
+      "source_file": "backend_py/user_mock/user_mock/user_mock_app.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.exponential_backoff_timer.ExponentialBackoffTimer.elapsed_s",
+      "kind": "method",
+      "signature": "elapsed_s(self)",
+      "description": "Get elapsed time in seconds.",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/exponential_backoff_timer.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.libs.core_utils.src.webviz_core_utils.perf_metrics.PerfMetrics.reset_lap_timer",
+      "kind": "method",
+      "signature": "reset_lap_timer(self)",
+      "description": "Resets the internal lap timer",
+      "source_file": "backend_py/libs/core_utils/src/webviz_core_utils/perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "backend_py.primary.primary.utils.response_perf_metrics.ResponsePerfMetrics.reset_lap_timer",
+      "kind": "method",
+      "signature": "reset_lap_timer(self)",
+      "description": "Resets the internal lap timer",
+      "source_file": "backend_py/primary/primary/utils/response_perf_metrics.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

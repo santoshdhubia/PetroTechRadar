@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_from": "2026-08-28T15:59:32.709290+00:00",
+    "generated_from": "2026-09-21T15:37:41.728978+00:00",
     "ranking": "task-aware-v2",
     "queries": 25,
     "repository_top5_accuracy": 0.8,
@@ -360,6 +360,15 @@
         {
           "score": 13.3,
           "repository": "PyLops/pylops",
+          "name": ".claude.skills.newop.reference.operator_template.MyOperator",
+          "signature": "MyOperator",
+          "description": "One-line summary of the operator.",
+          "source_file": ".claude/skills/newop/reference/operator_template.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 13.3,
+          "repository": "PyLops/pylops",
           "name": "pylops.basicoperators.functionoperator.FunctionOperator",
           "signature": "FunctionOperator",
           "description": "Function Operator.",
@@ -382,15 +391,6 @@
           "signature": "Block",
           "description": "Block operator.",
           "source_file": "pylops/basicoperators/block.py",
-          "api_level": "primary_public"
-        },
-        {
-          "score": 12.1,
-          "repository": "PyLops/pylops",
-          "name": "pylops.basicoperators.blockdiag.BlockDiag",
-          "signature": "BlockDiag",
-          "description": "Block-diagonal operator.",
-          "source_file": "pylops/basicoperators/blockdiag.py",
           "api_level": "primary_public"
         }
       ]
@@ -687,6 +687,15 @@
         {
           "score": 13.3,
           "repository": "PyLops/pylops",
+          "name": ".claude.skills.newop.reference.operator_template.MyOperator",
+          "signature": "MyOperator",
+          "description": "One-line summary of the operator.",
+          "source_file": ".claude/skills/newop/reference/operator_template.py",
+          "api_level": "primary_public"
+        },
+        {
+          "score": 13.3,
+          "repository": "PyLops/pylops",
           "name": "pylops.basicoperators.functionoperator.FunctionOperator",
           "signature": "FunctionOperator",
           "description": "Function Operator.",
@@ -718,15 +727,6 @@
           "signature": "Block",
           "description": "Block operator.",
           "source_file": "pylops/basicoperators/block.py",
-          "api_level": "primary_public"
-        },
-        {
-          "score": 12.1,
-          "repository": "PyLops/pylops",
-          "name": "pylops.basicoperators.blockdiag.BlockDiag",
-          "signature": "BlockDiag",
-          "description": "Block-diagonal operator.",
-          "source_file": "pylops/basicoperators/blockdiag.py",
           "api_level": "primary_public"
         }
       ]

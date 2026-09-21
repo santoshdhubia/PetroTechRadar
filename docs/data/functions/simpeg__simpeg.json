@@ -1,0 +1,4845 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "simpeg/simpeg",
+  "language": "Python",
+  "function_count": 402,
+  "functions": [
+    {
+      "name": "simpeg.electromagnetics.analytics.NSEM.MT_LayeredEarth",
+      "kind": "function",
+      "signature": "MT_LayeredEarth(freq, thickness, sig, return_type='Res-Phase', chg=0.0, tau=0.0, c=0.0, mu_r=1.0, eps_r=1.0)",
+      "description": "This code compute the analytic response of a n-layered Earth to a plane wave (Magnetotellurics).\nAll physical properties arrays convention describes the layers parameters from the top layer to the bottom layer.\nThe solution is first developed in Ward and Hohmann 1988.\nSee also https://em.geosci.xyz/content/maxwell3_fdem/natural_sources/MT_N_layered_Earth.html",
+      "source_file": "simpeg/electromagnetics/analytics/NSEM.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc",
+      "kind": "class",
+      "signature": "BaseEMSrc",
+      "description": "Base class for a electromagnetic sources",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation",
+      "kind": "class",
+      "signature": "BaseEM1DSimulation",
+      "description": "Base simulation class for simulating the EM response over a 1D layered Earth\nfor a single sounding. The simulation computes the fields by solving the\nHankel transform solutions from Electromagnetic Theory for Geophysical\nApplications: Chapter 4 (Ward and Hohmann, 1988).",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_tomo_joint_with_volume.Volume",
+      "kind": "class",
+      "signature": "Volume",
+      "description": "A regularization on the volume integral of the model",
+      "source_file": "examples/20-published/plot_tomo_joint_with_volume.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data",
+      "kind": "class",
+      "signature": "Data",
+      "description": "Class for defining data in SimPEG.",
+      "source_file": "simpeg/data.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.data.SyntheticData",
+      "kind": "class",
+      "signature": "SyntheticData",
+      "description": "Synthetic data class.",
+      "source_file": "simpeg/data.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.L2DataMisfit",
+      "kind": "class",
+      "signature": "L2DataMisfit",
+      "description": "Least-squares data misfit.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.DirectiveList.inversion",
+      "kind": "method",
+      "signature": "inversion(self)",
+      "description": "Inversion object associated with the directives list.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.inversion",
+      "kind": "method",
+      "signature": "inversion(self)",
+      "description": "Inversion object associated with the directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSimulation",
+      "kind": "class",
+      "signature": "BaseEMSimulation",
+      "description": "Base electromagnetic simulation class",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.simulation",
+      "kind": "method",
+      "signature": "simulation(self)",
+      "description": "A SimPEG simulation object.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.simulation",
+      "kind": "method",
+      "signature": "simulation(self)",
+      "description": "Return simulation for all data misfits.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.TargetMisfit.target",
+      "kind": "method",
+      "signature": "target(self)",
+      "description": "The target value for the data misfit",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "docs.conf.build_contributing_redirects",
+      "kind": "function",
+      "signature": "build_contributing_redirects()",
+      "description": "Build dictionary for redirects after moving the contributors guide.",
+      "source_file": "docs/conf.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "docs.conf.build_redirects",
+      "kind": "function",
+      "signature": "build_redirects()",
+      "description": "Build redirects dictionary for sphinx-reredirects.",
+      "source_file": "docs/conf.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_booky_1D_time_freq_inv.download_and_unzip_data",
+      "kind": "function",
+      "signature": "download_and_unzip_data(url='https://storage.googleapis.com/simpeg/bookpurnong/bookpurnong_inversion.tar.gz')",
+      "description": "Download the data from the storage bucket, unzip the tar file, return\nthe directory where the data are",
+      "source_file": "examples/20-published/plot_booky_1D_time_freq_inv.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_booky_1D_time_freq_inv.run",
+      "kind": "function",
+      "signature": "run(plotIt=True, saveFig=False, cleanup=True)",
+      "description": "Run 1D inversions for a single sounding of the RESOLVE and SkyTEM\nbookpurnong data",
+      "source_file": "examples/20-published/plot_booky_1D_time_freq_inv.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.download_and_unzip_data",
+      "kind": "function",
+      "signature": "download_and_unzip_data(url='https://storage.googleapis.com/simpeg/bookpurnong/bookpurnong_inversion.tar.gz')",
+      "description": "Download the data from the storage bucket, unzip the tar file, return\nthe directory where the data are",
+      "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.resolve_1Dinversions",
+      "kind": "function",
+      "signature": "resolve_1Dinversions(mesh, dobs, src_height, freqs, m0, mref, mapping, relative=0.08, floor=1e-14, rxOffset=7.86)",
+      "description": "Perform a single 1D inversion for a RESOLVE sounding for Horizontal\nCoplanar Coil data (both real and imaginary).",
+      "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_booky_1Dstitched_resolve_inv.run",
+      "kind": "function",
+      "signature": "run(runIt=False, plotIt=True, saveIt=False, saveFig=False, cleanup=True)",
+      "description": "Run the bookpurnong 1D stitched RESOLVE inversions.",
+      "source_file": "examples/20-published/plot_booky_1Dstitched_resolve_inv.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_heagyetal2017_casing.run",
+      "kind": "function",
+      "signature": "run(plotIt=True, runTests=False, reRun=False, saveFig=False)",
+      "description": "EM Heagyetal2016 CasingFwd3DPrimSecSrc\n======================================",
+      "source_file": "examples/20-published/plot_heagyetal2017_casing.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_load_booky.download_and_unzip_data",
+      "kind": "function",
+      "signature": "download_and_unzip_data(url='https://storage.googleapis.com/simpeg/bookpurnong/bookpurnong_inversion.tar.gz')",
+      "description": "Download the data from the storage bucket, unzip the tar file, return\nthe directory where the data are",
+      "source_file": "examples/20-published/plot_load_booky.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_load_booky.run",
+      "kind": "function",
+      "signature": "run(plotIt=True, saveIt=False, saveFig=False, cleanup=True)",
+      "description": "Download and plot the Bookpurnong data. Here, we parse the data into a\ndictionary that can be easily saved and loaded into other worflows (for\nlater on when we are doing the inversion)",
+      "source_file": "examples/20-published/plot_load_booky.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.solver",
+      "kind": "method",
+      "signature": "solver(self)",
+      "description": "Numerical solver used in the forward simulation.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.with_property_mass_matrices",
+      "kind": "function",
+      "signature": "with_property_mass_matrices(property_name)",
+      "description": "This decorator will automatically populate all of the property mass matrices.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.simulation.chunk_format",
+      "kind": "function",
+      "signature": "chunk_format(self)",
+      "description": "Apply memory chunks along rows of G, either 'equal', 'row', or 'auto'",
+      "source_file": "simpeg/dask/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.utils.compute_chunk_sizes",
+      "kind": "function",
+      "signature": "compute_chunk_sizes(M, N, target_chunk_size)",
+      "description": "Compute row and collumn chunk sizes for a matrix of shape MxN,\nsuch that the chunks are below a certain threshold target_chunk_size (in Mb)",
+      "source_file": "simpeg/dask/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.fromvec",
+      "kind": "method",
+      "signature": "fromvec(self, v)",
+      "description": "Convert data to vector and assign to observed data",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.shape",
+      "kind": "method",
+      "signature": "shape(self)",
+      "description": "The shape of the array containing the observed data",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.standard_deviation",
+      "kind": "method",
+      "signature": "standard_deviation(self)",
+      "description": "Return data uncertainties; i.e. the estimates of the standard deviations of the noise.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.counter",
+      "kind": "method",
+      "signature": "counter(self)",
+      "description": "SimPEG ``Counter`` object to store iterations and run-times.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.residual",
+      "kind": "method",
+      "signature": "residual(self, m, f=None)",
+      "description": "Computes the data residual vector for a given model.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.L2DataMisfit.deriv",
+      "kind": "method",
+      "signature": "deriv(self, m, f=None)",
+      "description": "Gradient of the data misfit function evaluated for the model provided.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.L2DataMisfit.deriv2",
+      "kind": "method",
+      "signature": "deriv2(self, m, v, f=None)",
+      "description": "Hessian of the data misfit function evaluated for the model provided.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.AlphasSmoothEstimate_ByEig",
+      "kind": "class",
+      "signature": "AlphasSmoothEstimate_ByEig",
+      "description": "Estimate the alphas multipliers for the smoothness terms of the regularization\nas a multiple of the ratio between the highest eigenvalue of the\nsmallness term and the highest eigenvalue of each smoothness term of the regularization.\nThe highest eigenvalue are estimated through power iterations and Rayleigh quotient.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.AlphasSmoothEstimate_ByEig.alpha0_ratio",
+      "kind": "method",
+      "signature": "alpha0_ratio(self)",
+      "description": "the estimated Alpha_smooth is multiplied by this ratio (int or array).",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.AlphasSmoothEstimate_ByEig.n_pw_iter",
+      "kind": "method",
+      "signature": "n_pw_iter(self)",
+      "description": "Number of power iterations for estimation.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BaseBetaEstimator",
+      "kind": "class",
+      "signature": "BaseBetaEstimator",
+      "description": "Base class for estimating initial trade-off parameter (beta).",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BaseBetaEstimator.beta0_ratio",
+      "kind": "method",
+      "signature": "beta0_ratio(self)",
+      "description": "The estimated ratio is multiplied by this to obtain beta.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaEstimateMaxDerivative",
+      "kind": "class",
+      "signature": "BetaEstimateMaxDerivative",
+      "description": "Estimate initial trade-off parameter (beta) using largest derivatives.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaEstimate_ByEig",
+      "kind": "class",
+      "signature": "BetaEstimate_ByEig",
+      "description": "Estimate initial trade-off parameter (beta) by power iteration.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaEstimate_ByEig.n_pw_iter",
+      "kind": "method",
+      "signature": "n_pw_iter(self)",
+      "description": "Number of power iterations for estimating largest eigenvalues.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaSchedule",
+      "kind": "class",
+      "signature": "BetaSchedule",
+      "description": "Reduce trade-off parameter (beta) at successive iterations using a cooling schedule.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaSchedule.coolingFactor",
+      "kind": "method",
+      "signature": "coolingFactor(self)",
+      "description": "Beta is divided by this value every `coolingRate` iterations.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.DirectiveList.debug",
+      "kind": "method",
+      "signature": "debug(self)",
+      "description": "Whether or not to print debugging information",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.dmisfit",
+      "kind": "method",
+      "signature": "dmisfit(self)",
+      "description": "Data misfit associated with the directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.endIter",
+      "kind": "method",
+      "signature": "endIter(self)",
+      "description": "Update inversion parameter(s) according to directive at end of iteration.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.finish",
+      "kind": "method",
+      "signature": "finish(self)",
+      "description": "Update inversion parameter(s) according to directive at end of inversion.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.initialize",
+      "kind": "method",
+      "signature": "initialize(self)",
+      "description": "Initialize inversion parameter(s) according to directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.invProb",
+      "kind": "method",
+      "signature": "invProb(self)",
+      "description": "Inverse problem associated with the directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.opt",
+      "kind": "method",
+      "signature": "opt(self)",
+      "description": "Optimization algorithm associated with the directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.reg",
+      "kind": "method",
+      "signature": "reg(self)",
+      "description": "Regularization associated with the directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.verbose",
+      "kind": "method",
+      "signature": "verbose(self)",
+      "description": "Whether or not to print debugging information.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule",
+      "kind": "class",
+      "signature": "JointScalingSchedule",
+      "description": "For multiple data misfits only: rebalance each data misfit term\nduring the inversion when some datasets are fit, and others not\nusing the ratios of current misfits and their respective target.\nIt implements the strategy described in https://doi.org/10.1093/gji/ggaa378.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule.update_rate",
+      "kind": "method",
+      "signature": "update_rate(self)",
+      "description": "Will update the data misfit scalings after this many iterations.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule.warmingFactor",
+      "kind": "method",
+      "signature": "warmingFactor(self)",
+      "description": "Factor to adjust scaling of the data misfits by.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.AllStop",
+      "kind": "method",
+      "signature": "AllStop(self)",
+      "description": "Whether all target misfit values have been met.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.CL",
+      "kind": "method",
+      "signature": "CL(self)",
+      "description": "Whether the petrophysical misfit target was satisified.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.DM",
+      "kind": "method",
+      "signature": "DM(self)",
+      "description": "Whether the geophysical data misfit target was satisfied.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.DP",
+      "kind": "method",
+      "signature": "DP(self)",
+      "description": "Whether the GMM misfit was below the threshold.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.TriggerSmall",
+      "kind": "method",
+      "signature": "TriggerSmall(self)",
+      "description": "Whether to trigger the smallness misfit test.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.WeightsInTarget",
+      "kind": "method",
+      "signature": "WeightsInTarget(self)",
+      "description": "Whether to account for weights in the petrophysical misfit.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.chiSmall",
+      "kind": "method",
+      "signature": "chiSmall(self)",
+      "description": "The a multiplier for the target petrophysical misfit value.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.chifact",
+      "kind": "method",
+      "signature": "chifact(self)",
+      "description": "The a multiplier for the target Geophysical data misfit value.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.distance_norm",
+      "kind": "method",
+      "signature": "distance_norm(self)",
+      "description": "Distance norm to use for GMM misfit measure.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.phi_d_star",
+      "kind": "method",
+      "signature": "phi_d_star(self)",
+      "description": "The target phi_d value for the Geophysical data misfit.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.phi_ms_star",
+      "kind": "method",
+      "signature": "phi_ms_star(self)",
+      "description": "The target value for the petrophysical data misfit.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.ProjectSphericalBounds",
+      "kind": "class",
+      "signature": "ProjectSphericalBounds",
+      "description": "Trick for spherical coordinate system.\nProject :math:`\\theta` and :math:`\\phi` angles back to :math:`[-\\pi,\\pi]`\nusing back and forth conversion.\nspherical->cartesian->spherical",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveEveryIteration.file_abs_path",
+      "kind": "method",
+      "signature": "file_abs_path(self)",
+      "description": "The absolute path to the saved output file.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveEveryIteration.on_disk",
+      "kind": "method",
+      "signature": "on_disk(self)",
+      "description": "Whether this object stores information to `file_abs_path`.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveModelEveryIteration",
+      "kind": "class",
+      "signature": "SaveModelEveryIteration",
+      "description": "Saves the inversion model at the end of every iteration to a directory",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveOutputDictEveryIteration",
+      "kind": "class",
+      "signature": "SaveOutputDictEveryIteration",
+      "description": "Saves inversion parameters to a dictionary at every iteration.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveOutputEveryIteration",
+      "kind": "class",
+      "signature": "SaveOutputEveryIteration",
+      "description": "Keeps track of the objective function values.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveOutputEveryIteration.file_abs_path",
+      "kind": "method",
+      "signature": "file_abs_path(self)",
+      "description": "The absolute path to the saved log file.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.ScalingMultipleDataMisfits_ByEig",
+      "kind": "class",
+      "signature": "ScalingMultipleDataMisfits_ByEig",
+      "description": "For multiple data misfits only: multiply each data misfit term\nby the inverse of its highest eigenvalue and then\nnormalize the sum of the data misfit multipliers to one.\nThe highest eigenvalue are estimated through power iterations and Rayleigh quotient.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.ScalingMultipleDataMisfits_ByEig.chi0_ratio",
+      "kind": "method",
+      "signature": "chi0_ratio(self)",
+      "description": "the estimated Alpha_smooth is multiplied by this ratio (int or array)",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.ScalingMultipleDataMisfits_ByEig.n_pw_iter",
+      "kind": "method",
+      "signature": "n_pw_iter(self)",
+      "description": "Number of power iterations for estimation.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.TargetMisfit",
+      "kind": "class",
+      "signature": "TargetMisfit",
+      "description": "... note:: Currently this target misfit is not set up for joint inversion.\nCheck out MultiTargetMisfits",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.TargetMisfit.chifact",
+      "kind": "method",
+      "signature": "chifact(self)",
+      "description": "The a multiplier for the target data misfit value.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.TargetMisfit.phi_d_star",
+      "kind": "method",
+      "signature": "phi_d_star(self)",
+      "description": "The target phi_d value for the data misfit.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdatePreconditioner",
+      "kind": "class",
+      "signature": "UpdatePreconditioner",
+      "description": "Create a Jacobi preconditioner for the linear problem",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdatePreconditioner.update_every_iteration",
+      "kind": "method",
+      "signature": "update_every_iteration(self)",
+      "description": "Whether to update the preconditioner at every iteration.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights",
+      "kind": "class",
+      "signature": "UpdateSensitivityWeights",
+      "description": "Sensitivity weighting for linear and non-linear least-squares inverse problems.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.every_iteration",
+      "kind": "method",
+      "signature": "every_iteration(self)",
+      "description": "Update sensitivity weights when model is updated.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.initialize",
+      "kind": "method",
+      "signature": "initialize(self)",
+      "description": "Compute sensitivity weights upon starting the inversion.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.normalization_method",
+      "kind": "method",
+      "signature": "normalization_method(self)",
+      "description": "Normalization method applied to sensitivity weights.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.threshold_method",
+      "kind": "method",
+      "signature": "threshold_method(self)",
+      "description": "Threshold method for how `threshold_value` is applied:",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.threshold_value",
+      "kind": "method",
+      "signature": "threshold_value(self)",
+      "description": "Threshold value used to set minimum weighting value.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.validate",
+      "kind": "method",
+      "signature": "validate(self, directiveList)",
+      "description": "Validate directive against directives list.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.Update_Wj",
+      "kind": "class",
+      "signature": "Update_Wj",
+      "description": "Create approx-sensitivity base weighting using the probing method",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.Update_Wj.itr",
+      "kind": "method",
+      "signature": "itr(self)",
+      "description": "Which iteration to update the sensitivity.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.Update_Wj.k",
+      "kind": "method",
+      "signature": "k(self)",
+      "description": "Number of probing cycles for the estimator.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_AddMrefInSmooth",
+      "kind": "class",
+      "signature": "PGI_AddMrefInSmooth",
+      "description": "This directive is to be used with regularizations from regularization.pgi.\nIt implements the strategy described in https://doi.org/10.1093/gji/ggz389\nfor including the learned reference model, once stable, in the smoothness terms.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule",
+      "kind": "class",
+      "signature": "PGI_BetaAlphaSchedule",
+      "description": "This directive is to be used with regularizations from regularization.pgi.\nIt implements the strategy described in https://doi.org/10.1093/gji/ggz389\nfor iteratively updating beta and alpha_s for fitting the\ngeophysical and smallness targets.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.directives",
+      "kind": "method",
+      "signature": "directives(self)",
+      "description": "List of all the directives in the :class:`simpeg.inverison.BaseInversion``.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.endIter",
+      "kind": "method",
+      "signature": "endIter(self)",
+      "description": "Run after the end of each iteration in the inversion.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.multi_target_misfits_directive",
+      "kind": "method",
+      "signature": "multi_target_misfits_directive(self)",
+      "description": "``MultiTargetMisfit`` directive in the :class:`simpeg.inverison.BaseInversion``.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.pgi_regularization",
+      "kind": "method",
+      "signature": "pgi_regularization(self)",
+      "description": "PGI regularization in the :class:`simpeg.inverse_problem.BaseInvProblem``.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.pgi_update_params_directive",
+      "kind": "method",
+      "signature": "pgi_update_params_directive(self)",
+      "description": "``PGI_UpdateParam``s directive in the :class:`simpeg.inverison.BaseInversion``.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.update_previous_dmlist",
+      "kind": "method",
+      "signature": "update_previous_dmlist(self)",
+      "description": "Update the value of the ``previous_dmlist`` attribute.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.update_previous_score",
+      "kind": "method",
+      "signature": "update_previous_score(self)",
+      "description": "Update the value of the ``previous_score`` attribute.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_UpdateParameters",
+      "kind": "class",
+      "signature": "PGI_UpdateParameters",
+      "description": "This directive is to be used with regularization from regularization.pgi.\nIt updates:\n    - the reference model and weights in the smallness (L2-approximation of PGI)\n    - the GMM as a MAP estimate between the prior and the current model\nFor more details, please consult:\n - https://doi.org/10.1093/gji/ggz389",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.IRLSMetrics",
+      "kind": "class",
+      "signature": "IRLSMetrics",
+      "description": "Data class to store metrics used by the IRLS algorithm.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.SphericalUnitsWeights",
+      "kind": "class",
+      "signature": "SphericalUnitsWeights",
+      "description": "Directive to update the regularization weights to account for spherical\nparameters in radian and SI.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.SphericalUnitsWeights.update_scaling",
+      "kind": "method",
+      "signature": "update_scaling(self)",
+      "description": "Add an 'angle_scale' to the list of weights on the angle regularization for the\ndifferent block of models to account for units of radian and SI.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS",
+      "kind": "class",
+      "signature": "UpdateIRLS",
+      "description": "Directive to control the IRLS iterations for :class:`~simpeg.regularization.Sparse`.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.adjust_cooling_schedule",
+      "kind": "method",
+      "signature": "adjust_cooling_schedule(self)",
+      "description": "Adjust the cooling schedule based on the misfit.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.chifact_start",
+      "kind": "method",
+      "signature": "chifact_start(self)",
+      "description": "Target chi factor to start the IRLS process.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.chifact_target",
+      "kind": "method",
+      "signature": "chifact_target(self)",
+      "description": "Targer chi factor to maintain during the IRLS process.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.cooling_factor",
+      "kind": "method",
+      "signature": "cooling_factor(self)",
+      "description": "Beta is divided by this value every :attr:`cooling_rate` iterations.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.cooling_rate",
+      "kind": "method",
+      "signature": "cooling_rate(self)",
+      "description": "Cool beta after this number of iterations.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.endIter",
+      "kind": "method",
+      "signature": "endIter(self)",
+      "description": "Check on progress of the inversion and start/update the IRLS process.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.f_min_change",
+      "kind": "method",
+      "signature": "f_min_change(self)",
+      "description": "Target chi factor to start the IRLS process.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.initialize",
+      "kind": "method",
+      "signature": "initialize(self)",
+      "description": "Initialize the IRLS iterations with l2-norm regularization (mode:1).",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.irls_cooling_factor",
+      "kind": "method",
+      "signature": "irls_cooling_factor(self)",
+      "description": "IRLS threshold parameter (epsilon) is divided by this value every iteration.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.metrics",
+      "kind": "method",
+      "signature": "metrics(self)",
+      "description": "Various metrics used by the IRLS algorithm.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.misfit_from_chi_factor",
+      "kind": "method",
+      "signature": "misfit_from_chi_factor(self, chi_factor)",
+      "description": "Compute the target misfit from the chi factor.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.misfit_tolerance",
+      "kind": "method",
+      "signature": "misfit_tolerance(self)",
+      "description": "Tolerance on deviation from the target chi factor, as a fractional percent.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.percentile",
+      "kind": "method",
+      "signature": "percentile(self)",
+      "description": "Tolerance on deviation from the target chi factor, as a fractional percent.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.start_irls",
+      "kind": "method",
+      "signature": "start_irls(self)",
+      "description": "Start the IRLS iterations by computing the initial threshold values.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.stopping_criteria",
+      "kind": "method",
+      "signature": "stopping_criteria(self)",
+      "description": "Check for stopping criteria of max_irls_iteration or minimum change.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.MovingAndMultiTargetStopping",
+      "kind": "class",
+      "signature": "MovingAndMultiTargetStopping",
+      "description": "Directive for setting stopping criteria for a joint inversion.\nEnsures both that all target misfits are met and there is a small change in the\nmodel. Computes the percentage change of the current model from the previous model.",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.PairedBetaEstimate_ByEig",
+      "kind": "class",
+      "signature": "PairedBetaEstimate_ByEig",
+      "description": "Estimate the trade-off parameter, beta, between pairs of data misfit(s) and the\nregularization(s) as a multiple of the ratio between the highest eigenvalue of the\ndata misfit term and the highest eigenvalue of the regularization.\nThe highest eigenvalues are estimated through power iterations and Rayleigh\nquotient.",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.PairedBetaEstimate_ByEig.initialize",
+      "kind": "method",
+      "signature": "initialize(self)",
+      "description": "The initial beta is calculated by comparing the estimated\neigenvalues of :math:`J^T J` and :math:`W^T W`.\nTo estimate the eigenvector of **A**, we will use one iteration\nof the *Power Method*:",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.PairedBetaSchedule",
+      "kind": "class",
+      "signature": "PairedBetaSchedule",
+      "description": "Directive for beta cooling schedule to determine the tradeoff\nparameters when using paired data misfits and regularizations for a joint inversion.",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.SimilarityMeasureInversionDirective",
+      "kind": "class",
+      "signature": "SimilarityMeasureInversionDirective",
+      "description": "Directive for two model similiraty measure joint inversions. Sets Printers and\nStoppingCriteria.",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.SimilarityMeasureSaveOutputEveryIteration",
+      "kind": "class",
+      "signature": "SimilarityMeasureSaveOutputEveryIteration",
+      "description": "SaveOutputEveryIteration for Joint Inversions.\nSaves information on the tradeoff parameters, data misfits, regularizations,\ncoupling term, number of CG iterations, and value of cost function.",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.DC.DCAnalytic_Dipole_Dipole",
+      "kind": "function",
+      "signature": "DCAnalytic_Dipole_Dipole(txlocs, rxlocs, sigma, current=1.0, earth_type='wholespace')",
+      "description": "Analytic solution for electric potential from a dipole source",
+      "source_file": "simpeg/electromagnetics/analytics/DC.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.DC.DCAnalytic_Dipole_Pole",
+      "kind": "function",
+      "signature": "DCAnalytic_Dipole_Pole(txlocs, rxlocs, sigma, current=1.0, earth_type='wholespace')",
+      "description": "Analytic solution for electric potential from a dipole source, measured\nusing a pole Rx",
+      "source_file": "simpeg/electromagnetics/analytics/DC.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.DC.DCAnalytic_Pole_Dipole",
+      "kind": "function",
+      "signature": "DCAnalytic_Pole_Dipole(txloc, rxlocs, sigma, current=1.0, earth_type='wholespace')",
+      "description": "Analytic solution for electric potential from a postive pole Tx, measured\nusing a dipole Rx",
+      "source_file": "simpeg/electromagnetics/analytics/DC.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.DC.DCAnalytic_Pole_Pole",
+      "kind": "function",
+      "signature": "DCAnalytic_Pole_Pole(txloc, rxloc, sigma, current=1.0, earth_type='wholespace')",
+      "description": "Analytic solution for electric potential from a postive pole Tx,\nmeasured using a pole Rx",
+      "source_file": "simpeg/electromagnetics/analytics/DC.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEM.MagneticDipoleWholeSpace",
+      "kind": "function",
+      "signature": "MagneticDipoleWholeSpace(XYZ, srcLoc, sig, f, moment, fieldType='b', mu_r=1, eps_r=1, **kwargs)",
+      "description": "Analytical solution for a dipole in a whole-space.",
+      "source_file": "simpeg/electromagnetics/analytics/FDEM.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEM.hzAnalyticDipoleF",
+      "kind": "function",
+      "signature": "hzAnalyticDipoleF(r, freq, sigma, secondary=True, mu=mu_0)",
+      "description": "The analytical expression is given in Equation 4.56 in Ward and Hohmann,\n1988, and the example reproduces their Figure 4.2.",
+      "source_file": "simpeg/electromagnetics/analytics/FDEM.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.A_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "A_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Electric vector potentials from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.B_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "B_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Magnetic flux densites from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.E_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "E_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=0.0, epsr=1.0)",
+      "description": "Computing Analytic Electric fields from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.E_galvanic_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "E_galvanic_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Galvanic portion of Electric fields from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.E_inductive_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "E_inductive_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Inductive portion of Electric fields from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.H_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "H_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Magnetic fields from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.J_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "J_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Current densities from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.J_galvanic_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "J_galvanic_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Galvanic portion of Current densities from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.FDEMDipolarfields.J_inductive_from_ElectricDipoleWholeSpace",
+      "kind": "function",
+      "signature": "J_inductive_from_ElectricDipoleWholeSpace(XYZ, srcLoc, sig, f, current=1.0, length=1.0, orientation='X', kappa=1.0, epsr=1.0)",
+      "description": "Computing Inductive portion of Current densities from Electrical Dipole in a Wholespace\nTODO:\n    Add description of parameters",
+      "source_file": "simpeg/electromagnetics/analytics/FDEMDipolarfields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.TDEM.TransientMagneticDipoleWholeSpace",
+      "kind": "function",
+      "signature": "TransientMagneticDipoleWholeSpace(XYZ, srcLoc, sig, t, moment, fieldType='h', mu_r=1)",
+      "description": "Analytical solution for a dipole in a whole-space.",
+      "source_file": "simpeg/electromagnetics/analytics/TDEM.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.eval",
+      "kind": "method",
+      "signature": "eval(self, simulation)",
+      "description": "Return magnetic and electric source terms",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.evalDeriv",
+      "kind": "method",
+      "signature": "evalDeriv(self, simulation, v=None, adjoint=False)",
+      "description": "Return derivative of the magnetic and electric source terms with respect to the model.",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.s_eDeriv",
+      "kind": "method",
+      "signature": "s_eDeriv(self, simulation, v, adjoint=False)",
+      "description": "Derivative of electric source term with respect to the inversion model",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.s_mDeriv",
+      "kind": "method",
+      "signature": "s_mDeriv(self, simulation, v, adjoint=False)",
+      "description": "Derivative of magnetic source term with respect to the inversion model",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.compute_complex_mu",
+      "kind": "method",
+      "signature": "compute_complex_mu(self, frequencies)",
+      "description": "Computes the complex magnetic permeability matrix assuming a log-uniform\ndistribution of time-relaxation constants:",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.compute_complex_sigma",
+      "kind": "method",
+      "signature": "compute_complex_sigma(self, frequencies)",
+      "description": "Computes the complex conductivity matrix using Pelton's Cole-Cole model:",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.n_points_per_path",
+      "kind": "method",
+      "signature": "n_points_per_path(self)",
+      "description": "The number of integration points for each segment of line current sources.",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.fields.Fields3DCurrentDensity",
+      "kind": "class",
+      "signature": "Fields3DCurrentDensity",
+      "description": "Fields class for storing 3D current density solutions.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.fields.Fields3DElectricField",
+      "kind": "class",
+      "signature": "Fields3DElectricField",
+      "description": "Fields class for storing 3D total electric field solutions.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.fields.Fields3DMagneticField",
+      "kind": "class",
+      "signature": "Fields3DMagneticField",
+      "description": "Fields class for storing 3D magnetic field solutions.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.fields.Fields3DMagneticFluxDensity",
+      "kind": "class",
+      "signature": "Fields3DMagneticFluxDensity",
+      "description": "Fields class for storing 3D total magnetic flux density solutions.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.eval",
+      "kind": "method",
+      "signature": "eval(self, src, mesh, f)",
+      "description": "Project fields from the mesh to the receiver(s).",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.evalDeriv",
+      "kind": "method",
+      "signature": "evalDeriv(self, src, mesh, f, du_dm_v=None, v=None, adjoint=False)",
+      "description": "Derivative of the projected fields with respect to the model, times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.getP",
+      "kind": "method",
+      "signature": "getP(self, mesh, projected_grid)",
+      "description": "Get projection matrix from mesh to receivers",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointCurrentDensity",
+      "kind": "class",
+      "signature": "PointCurrentDensity",
+      "description": "Measure FDEM current density at a point.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointMagneticField",
+      "kind": "class",
+      "signature": "PointMagneticField",
+      "description": "Measure FDEM total magnetic field at a point.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointMagneticFluxDensity",
+      "kind": "class",
+      "signature": "PointMagneticFluxDensity",
+      "description": "Measure FDEM total field magnetic flux density at a point.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointMagneticFluxDensitySecondary",
+      "kind": "class",
+      "signature": "PointMagneticFluxDensitySecondary",
+      "description": "Measure FDEM secondary magnetic flux density at a point.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation",
+      "kind": "class",
+      "signature": "BaseFDEMSimulation",
+      "description": "Base finite volume FDEM simulation class.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.Jtvec",
+      "kind": "method",
+      "signature": "Jtvec(self, m, v, f=None)",
+      "description": "Compute the adjoint sensitivity matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.Jvec",
+      "kind": "method",
+      "signature": "Jvec(self, m, v, f=None)",
+      "description": "Compute the sensitivity matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.fields",
+      "kind": "method",
+      "signature": "fields(self, m=None)",
+      "description": "Compute and return the fields for the model provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.forward_only",
+      "kind": "method",
+      "signature": "forward_only(self)",
+      "description": "Whether to store the factorizations of the inverses of the system matrices.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.getJtJdiag",
+      "kind": "method",
+      "signature": "getJtJdiag(self, m, W=None, f=None)",
+      "description": "Return the diagonal of :math:`\\mathbf{J^T J}`.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.getSourceTerm",
+      "kind": "method",
+      "signature": "getSourceTerm(self, freq)",
+      "description": "Returns the discrete source terms for the frequency provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.storeJ",
+      "kind": "method",
+      "signature": "storeJ(self)",
+      "description": "Whether to compute and store the sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity",
+      "kind": "class",
+      "signature": "Simulation3DCurrentDensity",
+      "description": "3D FDEM simulation in terms of the current density.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix for the frequency provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getADeriv",
+      "kind": "method",
+      "signature": "getADeriv(self, freq, u, v, adjoint=False)",
+      "description": "Derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getADeriv_mu",
+      "kind": "method",
+      "signature": "getADeriv_mu(self, freq, u, v, adjoint=False)",
+      "description": "Permeability derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getADeriv_rho",
+      "kind": "method",
+      "signature": "getADeriv_rho(self, freq, u, v, adjoint=False)",
+      "description": "Resistivity derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right-hand sides for the given frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DCurrentDensity.getRHSDeriv",
+      "kind": "method",
+      "signature": "getRHSDeriv(self, freq, src, v, adjoint=False)",
+      "description": "Derivative of the right-hand side times a vector for a given source and frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField",
+      "kind": "class",
+      "signature": "Simulation3DElectricField",
+      "description": "3D FDEM simulation in terms of the electric field.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix for the frequency provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getADeriv",
+      "kind": "method",
+      "signature": "getADeriv(self, freq, u, v, adjoint=False)",
+      "description": "Derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getADeriv_mui",
+      "kind": "method",
+      "signature": "getADeriv_mui(self, freq, u, v, adjoint=False)",
+      "description": "Inverse permeability derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getADeriv_sigma",
+      "kind": "method",
+      "signature": "getADeriv_sigma(self, freq, u, v, adjoint=False)",
+      "description": "Conductivity derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right-hand sides for the given frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DElectricField.getRHSDeriv",
+      "kind": "method",
+      "signature": "getRHSDeriv(self, freq, src, v, adjoint=False)",
+      "description": "Derivative of the right-hand side times a vector for a given source and frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField",
+      "kind": "class",
+      "signature": "Simulation3DMagneticField",
+      "description": "3D FDEM simulation in terms of the magnetic field.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix for the frequency provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getADeriv",
+      "kind": "method",
+      "signature": "getADeriv(self, freq, u, v, adjoint=False)",
+      "description": "Derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getADeriv_mu",
+      "kind": "method",
+      "signature": "getADeriv_mu(self, freq, u, v, adjoint=False)",
+      "description": "Permeability derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getADeriv_rho",
+      "kind": "method",
+      "signature": "getADeriv_rho(self, freq, u, v, adjoint=False)",
+      "description": "Resistivity derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right-hand sides for the given frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticField.getRHSDeriv",
+      "kind": "method",
+      "signature": "getRHSDeriv(self, freq, src, v, adjoint=False)",
+      "description": "Derivative of the right-hand side times a vector for a given source and frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity",
+      "kind": "class",
+      "signature": "Simulation3DMagneticFluxDensity",
+      "description": "3D FDEM simulation in terms of the magnetic flux field.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix for the frequency provided.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getADeriv",
+      "kind": "method",
+      "signature": "getADeriv(self, freq, u, v, adjoint=False)",
+      "description": "Derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getADeriv_mui",
+      "kind": "method",
+      "signature": "getADeriv_mui(self, freq, u, v, adjoint=False)",
+      "description": "Inverse permeability derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getADeriv_sigma",
+      "kind": "method",
+      "signature": "getADeriv_sigma(self, freq, u, v, adjoint=False)",
+      "description": "Conductivity derivative operation for the system matrix times a vector.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right-hand sides for the given frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.Simulation3DMagneticFluxDensity.getRHSDeriv",
+      "kind": "method",
+      "signature": "getRHSDeriv(self, freq, src, v, adjoint=False)",
+      "description": "Derivative of the right-hand side times a vector for a given source and frequency.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation_1d.Simulation1DLayered",
+      "kind": "class",
+      "signature": "Simulation1DLayered",
+      "description": "Simulation class for simulating the FEM response over a 1D layered Earth\nfor a single sounding.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation_1d.Simulation1DLayered.dpred",
+      "kind": "method",
+      "signature": "dpred(self, m, f=None)",
+      "description": "Return predicted data.\nPredicted data, (`_pred`) are computed when\nself.fields is called.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation_1d.Simulation1DLayered.fields",
+      "kind": "method",
+      "signature": "fields(self, m)",
+      "description": "This method evaluates the Hankel transform for each source and\nreceiver and outputs it as a list. Used for computing response\nor sensitivities.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.bPrimaryDeriv",
+      "kind": "method",
+      "signature": "bPrimaryDeriv(self, simulation, v, adjoint=False)",
+      "description": "Compute derivative of primary magnetic flux density times a vector",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.ePrimaryDeriv",
+      "kind": "method",
+      "signature": "ePrimaryDeriv(self, simulation, v, adjoint=False)",
+      "description": "Compute derivative of primary electric field times a vector",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.hPrimaryDeriv",
+      "kind": "method",
+      "signature": "hPrimaryDeriv(self, simulation, v, adjoint=False)",
+      "description": "Compute derivative of primary magnetic field times a vector",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.jPrimaryDeriv",
+      "kind": "method",
+      "signature": "jPrimaryDeriv(self, simulation, v, adjoint=False)",
+      "description": "Compute derivative of primary current density times a vector",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.CircularLoop",
+      "kind": "class",
+      "signature": "CircularLoop",
+      "description": "Circular loop magnetic source calculated by taking the curl of a magnetic\nvector potential. By taking the discrete curl, we ensure that the magnetic\nflux density is divergence free (no magnetic monopoles!).",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.Mejs",
+      "kind": "method",
+      "signature": "Mejs(self, simulation)",
+      "description": "Integrated electrical source term on edges",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.Mfjs",
+      "kind": "method",
+      "signature": "Mfjs(self, simulation)",
+      "description": "Integrated electrical source term on faces",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.getRHSdc",
+      "kind": "method",
+      "signature": "getRHSdc(self, simulation)",
+      "description": "Right-hand side for galvanic source term",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole",
+      "kind": "class",
+      "signature": "MagDipole",
+      "description": "Point magnetic dipole source calculated by taking the curl of a magnetic\nvector potential. By taking the discrete curl, we ensure that the magnetic\nflux density is divergence free (no magnetic monopoles!).",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.moment",
+      "kind": "method",
+      "signature": "moment(self)",
+      "description": "Amplitude of the dipole moment of the magnetic dipole (:math:`A/m^2`)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.orientation",
+      "kind": "method",
+      "signature": "orientation(self)",
+      "description": "Orientation of the dipole as a normalized vector",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole_Bfield",
+      "kind": "class",
+      "signature": "MagDipole_Bfield",
+      "description": "Point magnetic dipole source calculated with the analytic solution for the\nfields from a magnetic dipole. No discrete curl is taken, so the magnetic\nflux density may not be strictly divergence free.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole_Bfield.bPrimary",
+      "kind": "method",
+      "signature": "bPrimary(self, simulation)",
+      "description": "The primary magnetic flux density from the analytic solution for\nmagnetic fields from a dipole",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.PrimSecMappedSigma",
+      "kind": "class",
+      "signature": "PrimSecMappedSigma",
+      "description": "Primary-Secondary Source in which a mapping is provided to put the current\nmodel onto the primary mesh. This is solved on every model update.\nThere are a lot of layers to the derivatives here!",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.RawVec",
+      "kind": "class",
+      "signature": "RawVec",
+      "description": "User-provided electric (s_e) and magnetic (s_m) source terms.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.RawVec_e",
+      "kind": "class",
+      "signature": "RawVec_e",
+      "description": "User-provided electric source term (s_e) class.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.RawVec_m",
+      "kind": "class",
+      "signature": "RawVec_m",
+      "description": "User-provided magnetic source term (s_m) class.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey.source_list",
+      "kind": "method",
+      "signature": "source_list(self)",
+      "description": "List of FDEM sources associated with the survey",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields1DPrimarySecondary",
+      "kind": "class",
+      "signature": "Fields1DPrimarySecondary",
+      "description": "Fields storage for the 1D NSEM solution.",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields3DPrimarySecondary",
+      "kind": "class",
+      "signature": "Fields3DPrimarySecondary",
+      "description": "Fields storage for the 3D NSEM solution. Labels polarizations by px and py.",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Admittance",
+      "kind": "class",
+      "signature": "Admittance",
+      "description": "Receiver class for data types derived from the 3D admittance tensor.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.ApparentConductivity",
+      "kind": "class",
+      "signature": "ApparentConductivity",
+      "description": "Receiver class for simulating apparent conductivity data (3D problems only).",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.ApparentConductivity.eval",
+      "kind": "method",
+      "signature": "eval(self, src, mesh, f)",
+      "description": "Compute receiver data from the discrete field solution.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.ApparentConductivity.evalDeriv",
+      "kind": "method",
+      "signature": "evalDeriv(self, src, mesh, f, du_dm_v=None, v=None, adjoint=False)",
+      "description": "Derivative of data with respect to the fields.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.BaseNaturalSourceRx",
+      "kind": "class",
+      "signature": "BaseNaturalSourceRx",
+      "description": "Base class for natural source electromagnetic receivers.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.BaseNaturalSourceRx.getP",
+      "kind": "method",
+      "signature": "getP(self, mesh, projected_grid, location_id=0)",
+      "description": "Get projection matrix from mesh to specified receiver locations.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.BaseNaturalSourceRx.locations",
+      "kind": "method",
+      "signature": "locations(self)",
+      "description": "Locations of the two field measurements.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.BaseNaturalSourceRx.nD",
+      "kind": "method",
+      "signature": "nD(self)",
+      "description": "Number of data associated with the receiver object.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Impedance",
+      "kind": "class",
+      "signature": "Impedance",
+      "description": "Receiver class for 1D, 2D and 3D impedance data.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Impedance.component",
+      "kind": "method",
+      "signature": "component(self)",
+      "description": "Data type; i.e. \"real\", \"imag\", \"apparent_resistivity\", \"phase\".",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Impedance.eval",
+      "kind": "method",
+      "signature": "eval(self, src, mesh, f)",
+      "description": "Compute receiver data from the discrete field solution.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Impedance.evalDeriv",
+      "kind": "method",
+      "signature": "evalDeriv(self, src, mesh, f, du_dm_v=None, v=None, adjoint=False)",
+      "description": "Derivative of data with respect to the fields.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Point3DTipper",
+      "kind": "class",
+      "signature": "Point3DTipper",
+      "description": ".. warning::\n    This class was removed in SimPEG v0.24.0.\n    Please use :class:`.natural_source.receivers.Tipper`.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.PointNaturalSource",
+      "kind": "class",
+      "signature": "PointNaturalSource",
+      "description": ".. warning::\n    This class was removed in SimPEG v0.24.0.\n    Please use :class:`.natural_source.receivers.Impedance`.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Tipper",
+      "kind": "class",
+      "signature": "Tipper",
+      "description": "Receiver class for tipper data (3D problems only).",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Tipper.locations_base",
+      "kind": "method",
+      "signature": "locations_base(self)",
+      "description": "Base station magnetic field measurement locations.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Tipper.locations_h",
+      "kind": "method",
+      "signature": "locations_h(self)",
+      "description": "Roving magnetic field measurement locations.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Tipper.orientation",
+      "kind": "method",
+      "signature": "orientation(self)",
+      "description": "Specifies the tipper element :math:`T_{ij}` corresponding to the data.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DElectricField",
+      "kind": "class",
+      "signature": "Simulation1DElectricField",
+      "description": "1D finite volume simulation for the natural source electromagnetic problem.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DElectricField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right hand side constructed using Dirichlet boundary conditions",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DMagneticField",
+      "kind": "class",
+      "signature": "Simulation1DMagneticField",
+      "description": "1D finite volume simulation for the natural source electromagnetic problem.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DPrimarySecondary",
+      "kind": "class",
+      "signature": "Simulation1DPrimarySecondary",
+      "description": "A NSEM problem solving a e formulation and primary/secondary fields decomposition.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DPrimarySecondary.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Function to return the right hand side for the system.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DPrimarySecondary.sigmaPrimary",
+      "kind": "method",
+      "signature": "sigmaPrimary(self)",
+      "description": "A background model, use for the calculation of the primary fields.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DElectricField.boundary_fields",
+      "kind": "method",
+      "signature": "boundary_fields(self, model=None)",
+      "description": "Returns the 1D field objects at the boundaries",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DElectricField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right hand side constructed using Dirichlet boundary conditions",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DMagneticField.boundary_fields",
+      "kind": "method",
+      "signature": "boundary_fields(self, model=None)",
+      "description": "Returns the 1D field objects at the boundaries",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DMagneticField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "Right hand side constructed using Dirichlet boundary conditions",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation3DPrimarySecondary",
+      "kind": "class",
+      "signature": "Simulation3DPrimarySecondary",
+      "description": "A NSEM problem solving a e formulation and a primary/secondary fields decomposition.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation3DPrimarySecondary.sigmaPrimary",
+      "kind": "method",
+      "signature": "sigmaPrimary(self)",
+      "description": "A background model, use for the calculation of the primary fields.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation_1d.Simulation1DRecursive",
+      "kind": "class",
+      "signature": "Simulation1DRecursive",
+      "description": "Simulation class for the 1D MT problem using recursive solution.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation_1d.Simulation1DRecursive.getJ",
+      "kind": "method",
+      "signature": "getJ(self, m, f=None)",
+      "description": "Compute and store the sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.Planewave",
+      "kind": "class",
+      "signature": "Planewave",
+      "description": "Source class for the 1D and pseudo-3D problems.",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary",
+      "kind": "class",
+      "signature": "PlanewaveXYPrimary",
+      "description": "NSEM planewave source for both polarizations (x and y)\nestimated from a single 1D primary models.",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.s_eDeriv",
+      "kind": "method",
+      "signature": "s_eDeriv(self, simulation, v, adjoint=False)",
+      "description": "Derivative of electric source term with respect to model",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.s_eDeriv_m",
+      "kind": "method",
+      "signature": "s_eDeriv_m(self, simulation, v, adjoint=False)",
+      "description": "Derivative of electric source term with respect to model",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.survey.Data.fromRecArray",
+      "kind": "method",
+      "signature": "fromRecArray(cls, recArray, srcType='primary')",
+      "description": "Class method that reads in a numpy record array to NSEMdata object.",
+      "source_file": "simpeg/electromagnetics/natural_source/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.survey.Data.toRecArray",
+      "kind": "method",
+      "signature": "toRecArray(self, returnType='RealImag')",
+      "description": "Returns a numpy.recarray for a SimpegNSEM impedance data object.",
+      "source_file": "simpeg/electromagnetics/natural_source/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.utils.analytic_1d.getEHfields",
+      "kind": "function",
+      "signature": "getEHfields(m1d, sigma, freq, zd, scaleUD=True, scaleValue=1)",
+      "description": "Analytic solution for MT 1D layered earth. Returns E and H fields.",
+      "source_file": "simpeg/electromagnetics/natural_source/utils/analytic_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.utils.analytic_1d.getImpedance",
+      "kind": "function",
+      "signature": "getImpedance(m1d, sigma, freq)",
+      "description": "Analytic solution for MT 1D layered earth. Returns the impedance at the surface.",
+      "source_file": "simpeg/electromagnetics/natural_source/utils/analytic_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.simulation",
+      "kind": "method",
+      "signature": "simulation(self, value)",
+      "description": "",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.DirectiveList.inversion",
+      "kind": "method",
+      "signature": "inversion(self, i)",
+      "description": "",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.inversion",
+      "kind": "method",
+      "signature": "inversion(self, i)",
+      "description": "",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.TargetMisfit.target",
+      "kind": "method",
+      "signature": "target(self, val)",
+      "description": "",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.MovingAndMultiTargetStopping.target",
+      "kind": "method",
+      "signature": "target(self)",
+      "description": "",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.MovingAndMultiTargetStopping.target",
+      "kind": "method",
+      "signature": "target(self, val)",
+      "description": "",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.PairedBetaSchedule.target",
+      "kind": "method",
+      "signature": "target(self)",
+      "description": "",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "simpeg.directives._sim_directives.PairedBetaSchedule.target",
+      "kind": "method",
+      "signature": "target(self, val)",
+      "description": "",
+      "source_file": "simpeg/directives/_sim_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "examples.07-nsem.plot_fwd_nsem_MTTipper3D.run",
+      "kind": "function",
+      "signature": "run(plotIt=True)",
+      "description": "MT: 3D: Forward\n===============",
+      "source_file": "examples/07-nsem/plot_fwd_nsem_MTTipper3D.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_load_booky.save_dict_to_hdf5",
+      "kind": "function",
+      "signature": "save_dict_to_hdf5(fname, dictionary)",
+      "description": "Save a dictionary to hdf5",
+      "source_file": "examples/20-published/plot_load_booky.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "examples.20-published.plot_tomo_joint_with_volume.Volume.knownVolume",
+      "kind": "method",
+      "signature": "knownVolume(self)",
+      "description": "known volume",
+      "source_file": "examples/20-published/plot_tomo_joint_with_volume.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation",
+      "kind": "class",
+      "signature": "BasePDESimulation",
+      "description": "Base simulation for PDE solutions.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.Mcc",
+      "kind": "method",
+      "signature": "Mcc(self)",
+      "description": "Cell center inner product matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.Me",
+      "kind": "method",
+      "signature": "Me(self)",
+      "description": "Edge inner product matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.MeI",
+      "kind": "method",
+      "signature": "MeI(self)",
+      "description": "Edge inner product inverse matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.Mf",
+      "kind": "method",
+      "signature": "Mf(self)",
+      "description": "Face inner product matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.MfI",
+      "kind": "method",
+      "signature": "MfI(self)",
+      "description": "Face inner product inverse matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.Mn",
+      "kind": "method",
+      "signature": "Mn(self)",
+      "description": "Node inner product matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.MnI",
+      "kind": "method",
+      "signature": "MnI(self)",
+      "description": "Node inner product inverse matrix.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.mesh",
+      "kind": "method",
+      "signature": "mesh(self)",
+      "description": "Mesh for the simulation.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.base.pde_simulation.BasePDESimulation.solver_opts",
+      "kind": "method",
+      "signature": "solver_opts(self)",
+      "description": "Solver-specific parameters.",
+      "source_file": "simpeg/base/pde_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.potential_fields.gravity.simulation.dask_getJtJdiag",
+      "kind": "function",
+      "signature": "dask_getJtJdiag(self, m, W=None, f=None)",
+      "description": "Return the diagonal of JtJ",
+      "source_file": "simpeg/dask/potential_fields/gravity/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.potential_fields.magnetics.simulation.dask_getJtJdiag",
+      "kind": "function",
+      "signature": "dask_getJtJdiag(self, m, W=None, f=None)",
+      "description": "Return the diagonal of JtJ",
+      "source_file": "simpeg/dask/potential_fields/magnetics/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.simulation.max_chunk_size",
+      "kind": "function",
+      "signature": "max_chunk_size(self)",
+      "description": "Largest chunk size (Mb) used by Dask",
+      "source_file": "simpeg/dask/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.dask.simulation.max_ram",
+      "kind": "function",
+      "signature": "max_ram(self)",
+      "description": "Maximum ram in (Gb)",
+      "source_file": "simpeg/dask/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.dobs",
+      "kind": "method",
+      "signature": "dobs(self)",
+      "description": "Vector of the observed data.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.nD",
+      "kind": "method",
+      "signature": "nD(self)",
+      "description": "The number of observed data",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.noise_floor",
+      "kind": "method",
+      "signature": "noise_floor(self)",
+      "description": "Noise floor of the data.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.relative_error",
+      "kind": "method",
+      "signature": "relative_error(self)",
+      "description": "Relative error of the data.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.survey",
+      "kind": "method",
+      "signature": "survey(self)",
+      "description": "The survey for this data.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.Data.tovec",
+      "kind": "method",
+      "signature": "tovec(self)",
+      "description": "Convert observed data to a vector",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data.SyntheticData.dclean",
+      "kind": "method",
+      "signature": "dclean(self)",
+      "description": "Vector of the clean synthetic data.",
+      "source_file": "simpeg/data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit",
+      "kind": "class",
+      "signature": "BaseDataMisfit",
+      "description": "Base data misfit class.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.W",
+      "kind": "method",
+      "signature": "W(self)",
+      "description": "The data weighting matrix.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "A SimPEG data object.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.debug",
+      "kind": "method",
+      "signature": "debug(self)",
+      "description": "Print debugging information.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.nD",
+      "kind": "method",
+      "signature": "nD(self)",
+      "description": "Number of data.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.nP",
+      "kind": "method",
+      "signature": "nP(self)",
+      "description": "Number of model parameters.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.data_misfit.BaseDataMisfit.shape",
+      "kind": "method",
+      "signature": "shape(self)",
+      "description": "Shape of the Jacobian.",
+      "source_file": "simpeg/data_misfit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.AlphasSmoothEstimate_ByEig.random_seed",
+      "kind": "method",
+      "signature": "random_seed(self)",
+      "description": "Random seed to initialize with.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BaseBetaEstimator.random_seed",
+      "kind": "method",
+      "signature": "random_seed(self)",
+      "description": "Random seed to initialize with.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.BetaSchedule.coolingRate",
+      "kind": "method",
+      "signature": "coolingRate(self)",
+      "description": "Cool after this number of iterations.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.DirectiveList",
+      "kind": "class",
+      "signature": "DirectiveList",
+      "description": "Directives list",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective",
+      "kind": "class",
+      "signature": "InversionDirective",
+      "description": "Base inversion directive class.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.survey",
+      "kind": "method",
+      "signature": "survey(self)",
+      "description": "Return survey for all data misfits",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.InversionDirective.validate",
+      "kind": "method",
+      "signature": "validate(self, directiveList=None)",
+      "description": "Validate directive.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule.chimax",
+      "kind": "method",
+      "signature": "chimax(self)",
+      "description": "Maximum chi factor.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule.chimin",
+      "kind": "method",
+      "signature": "chimin(self)",
+      "description": "Minimum chi factor.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.JointScalingSchedule.mode",
+      "kind": "method",
+      "signature": "mode(self)",
+      "description": "The type of update to perform.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.ToleranceTheta",
+      "kind": "method",
+      "signature": "ToleranceTheta(self)",
+      "description": "Target value for the GMM misfit.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.MultiTargetMisfits.TriggerTheta",
+      "kind": "method",
+      "signature": "TriggerTheta(self)",
+      "description": "Whether to trigger the GMM misfit test.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveEveryIteration",
+      "kind": "class",
+      "signature": "SaveEveryIteration",
+      "description": "SaveEveryIteration",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveEveryIteration.directory",
+      "kind": "method",
+      "signature": "directory(self)",
+      "description": "Directory to save results in.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveEveryIteration.name",
+      "kind": "method",
+      "signature": "name(self)",
+      "description": "Root of the filename to be saved.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveModelEveryIteration.on_disk",
+      "kind": "method",
+      "signature": "on_disk(self)",
+      "description": "This class always saves to disk.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.SaveModelEveryIteration.on_disk",
+      "kind": "method",
+      "signature": "on_disk(self, value)",
+      "description": "This class always saves to disk.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.ScalingMultipleDataMisfits_ByEig.random_seed",
+      "kind": "method",
+      "signature": "random_seed(self)",
+      "description": "Random seed to initialize with",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.endIter",
+      "kind": "method",
+      "signature": "endIter(self)",
+      "description": "Execute end of iteration.",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._directives.UpdateSensitivityWeights.update",
+      "kind": "method",
+      "signature": "update(self)",
+      "description": "Update sensitivity weights",
+      "source_file": "simpeg/directives/_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.cool_beta",
+      "kind": "method",
+      "signature": "cool_beta(self)",
+      "description": "Cool beta according to schedule.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.initialize",
+      "kind": "method",
+      "signature": "initialize(self)",
+      "description": "Initialize the directive.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._pgi_directives.PGI_BetaAlphaSchedule.warm_alpha",
+      "kind": "method",
+      "signature": "warm_alpha(self)",
+      "description": "Warm alpha according to schedule.",
+      "source_file": "simpeg/directives/_pgi_directives.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.directives._regularization.UpdateIRLS.max_irls_iterations",
+      "kind": "method",
+      "signature": "max_irls_iterations(self)",
+      "description": "Maximum irls iterations.",
+      "source_file": "simpeg/directives/_regularization.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.analytics.DC.DCAnalyticSphere",
+      "kind": "function",
+      "signature": "DCAnalyticSphere(txloc, rxloc, xc, radius, sigma, sigma1, field_type='secondary', order=12, halfspace=False)",
+      "description": "Parameters:",
+      "source_file": "simpeg/electromagnetics/analytics/DC.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSimulation.storeInnerProduct",
+      "kind": "method",
+      "signature": "storeInnerProduct(self)",
+      "description": "Whether to store inner product matrices",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.integrate",
+      "kind": "method",
+      "signature": "integrate(self)",
+      "description": "Integrated source term",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation)",
+      "description": "Electric source term",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base.BaseEMSrc.s_m",
+      "kind": "method",
+      "signature": "s_m(self, simulation)",
+      "description": "Magnetic source term",
+      "source_file": "simpeg/electromagnetics/base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.depth",
+      "kind": "method",
+      "signature": "depth(self)",
+      "description": "layer depths",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.fix_Jmatrix",
+      "kind": "method",
+      "signature": "fix_Jmatrix(self)",
+      "description": "Whether to fix the sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.hankel_filter",
+      "kind": "method",
+      "signature": "hankel_filter(self)",
+      "description": "The hankel filter used.",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.n_filter",
+      "kind": "method",
+      "signature": "n_filter(self)",
+      "description": "Length of filter",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.n_layer",
+      "kind": "method",
+      "signature": "n_layer(self)",
+      "description": "number of layers",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.base_1d.BaseEM1DSimulation.topo",
+      "kind": "method",
+      "signature": "topo(self)",
+      "description": "Topography.",
+      "source_file": "simpeg/electromagnetics/base_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.fields.FieldsFDEM",
+      "kind": "class",
+      "signature": "FieldsFDEM",
+      "description": "Base class for storing FDEM fields.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx",
+      "kind": "class",
+      "signature": "BaseRx",
+      "description": "Base FDEM receivers class.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.component",
+      "kind": "method",
+      "signature": "component(self)",
+      "description": "Data component; i.e. real or imaginary.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.data_type",
+      "kind": "method",
+      "signature": "data_type(self)",
+      "description": "The type of data for this receiver.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.orientation",
+      "kind": "method",
+      "signature": "orientation(self)",
+      "description": "Orientation of the receiver.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.BaseRx.use_source_receiver_offset",
+      "kind": "method",
+      "signature": "use_source_receiver_offset(self)",
+      "description": "Use source-receiver offset.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointElectricField",
+      "kind": "class",
+      "signature": "PointElectricField",
+      "description": "Measure FDEM electric field at a point.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.receivers.PointMagneticFieldSecondary",
+      "kind": "class",
+      "signature": "PointMagneticFieldSecondary",
+      "description": "Magnetic flux FDEM receiver",
+      "source_file": "simpeg/electromagnetics/frequency_domain/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.getJ",
+      "kind": "method",
+      "signature": "getJ(self, m, f=None)",
+      "description": "Generate the full sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation.BaseFDEMSimulation.survey",
+      "kind": "method",
+      "signature": "survey(self)",
+      "description": "The FDEM survey object.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation_1d.Simulation1DLayered.getJ",
+      "kind": "method",
+      "signature": "getJ(self, m, f=None)",
+      "description": "Get the Jacobian matrix.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.simulation_1d.Simulation1DLayered.survey",
+      "kind": "method",
+      "signature": "survey(self)",
+      "description": "The simulations survey.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc",
+      "kind": "class",
+      "signature": "BaseFDEMSrc",
+      "description": "Base FDEM source class",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.bPrimary",
+      "kind": "method",
+      "signature": "bPrimary(self, simulation)",
+      "description": "Compute primary magnetic flux density",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.ePrimary",
+      "kind": "method",
+      "signature": "ePrimary(self, simulation)",
+      "description": "Compute primary electric field",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.frequency",
+      "kind": "method",
+      "signature": "frequency(self)",
+      "description": "Source frequency",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.hPrimary",
+      "kind": "method",
+      "signature": "hPrimary(self, simulation)",
+      "description": "Compute primary magnetic field",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.BaseFDEMSrc.jPrimary",
+      "kind": "method",
+      "signature": "jPrimary(self, simulation)",
+      "description": "Compute primary current density",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.CircularLoop.current",
+      "kind": "method",
+      "signature": "current(self)",
+      "description": "Source current",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.CircularLoop.moment",
+      "kind": "method",
+      "signature": "moment(self)",
+      "description": "Dipole moment of the loop.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.CircularLoop.n_turns",
+      "kind": "method",
+      "signature": "n_turns(self)",
+      "description": "Number of turns in the loop.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.CircularLoop.radius",
+      "kind": "method",
+      "signature": "radius(self)",
+      "description": "Loop radius",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent",
+      "kind": "class",
+      "signature": "LineCurrent",
+      "description": "Line current source.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.current",
+      "kind": "method",
+      "signature": "current(self)",
+      "description": "Source current",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.location",
+      "kind": "method",
+      "signature": "location(self)",
+      "description": "Line current nodes locations",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.n_segments",
+      "kind": "method",
+      "signature": "n_segments(self)",
+      "description": "The number of line current segments.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation)",
+      "description": "Electric source term (s_m)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.LineCurrent.s_m",
+      "kind": "method",
+      "signature": "s_m(self, simulation)",
+      "description": "Magnetic source term (s_m)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.bPrimary",
+      "kind": "method",
+      "signature": "bPrimary(self, simulation)",
+      "description": "Compute primary magnetic flux density.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.hPrimary",
+      "kind": "method",
+      "signature": "hPrimary(self, simulation)",
+      "description": "Compute primary magnetic field.",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.location",
+      "kind": "method",
+      "signature": "location(self)",
+      "description": "Location of the dipole",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.mu",
+      "kind": "method",
+      "signature": "mu(self)",
+      "description": "Magnetic permeability in H/m",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation)",
+      "description": "Electric source term (s_e)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.MagDipole.s_m",
+      "kind": "method",
+      "signature": "s_m(self, simulation)",
+      "description": "Magnetic source term (s_m)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.PrimSecMappedSigma.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation, f=None)",
+      "description": "Electric source term (s_m)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.RawVec_e.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation)",
+      "description": "Electric source term (s_e)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.sources.RawVec_m.s_m",
+      "kind": "method",
+      "signature": "s_m(self, simulation)",
+      "description": "Magnetic source term (s_m)",
+      "source_file": "simpeg/electromagnetics/frequency_domain/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey",
+      "kind": "class",
+      "signature": "Survey",
+      "description": "Frequency domain electromagnetic survey",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey.frequencies",
+      "kind": "method",
+      "signature": "frequencies(self)",
+      "description": "Frequencies in the survey",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey.get_sources_by_frequency",
+      "kind": "method",
+      "signature": "get_sources_by_frequency(self, frequency)",
+      "description": "Get sources by frequency",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey.num_frequencies",
+      "kind": "method",
+      "signature": "num_frequencies(self)",
+      "description": "Number of frequencies",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.frequency_domain.survey.Survey.num_sources_by_frequency",
+      "kind": "method",
+      "signature": "num_sources_by_frequency(self)",
+      "description": "Number of sources at each frequency",
+      "source_file": "simpeg/electromagnetics/frequency_domain/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields1DElectricField",
+      "kind": "class",
+      "signature": "Fields1DElectricField",
+      "description": "Fields",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields1DMagneticField",
+      "kind": "class",
+      "signature": "Fields1DMagneticField",
+      "description": "Fields",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields2DElectricField",
+      "kind": "class",
+      "signature": "Fields2DElectricField",
+      "description": "Fields",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.fields.Fields2DMagneticField",
+      "kind": "class",
+      "signature": "Fields2DMagneticField",
+      "description": "Fields",
+      "source_file": "simpeg/electromagnetics/natural_source/fields.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Admittance.component",
+      "kind": "method",
+      "signature": "component(self)",
+      "description": "Admittance data type.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Admittance.orientation",
+      "kind": "method",
+      "signature": "orientation(self)",
+      "description": "Receiver orientation.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Impedance.orientation",
+      "kind": "method",
+      "signature": "orientation(self)",
+      "description": "Receiver orientation.",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.receivers.Tipper.component",
+      "kind": "method",
+      "signature": "component(self)",
+      "description": "Tipper data type; i.e. \"real\", \"imag\".",
+      "source_file": "simpeg/electromagnetics/natural_source/receivers.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DElectricField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DElectricField.getJ",
+      "kind": "method",
+      "signature": "getJ(self, m, f=None)",
+      "description": "Generate the full sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DMagneticField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "system matrix",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DMagneticField.getJ",
+      "kind": "method",
+      "signature": "getJ(self, m, f=None)",
+      "description": "Generate the full sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DMagneticField.getRHS",
+      "kind": "method",
+      "signature": "getRHS(self, freq)",
+      "description": "right hand side",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DPrimarySecondary.getADeriv",
+      "kind": "method",
+      "signature": "getADeriv(self, freq, u, v, adjoint=False)",
+      "description": "The derivative of A wrt sigma",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation1DPrimarySecondary.getRHSDeriv",
+      "kind": "method",
+      "signature": "getRHSDeriv(self, freq, src, v, adjoint=False)",
+      "description": "The derivative of the RHS wrt sigma",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DElectricField",
+      "kind": "class",
+      "signature": "Simulation2DElectricField",
+      "description": "A",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DElectricField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DMagneticField",
+      "kind": "class",
+      "signature": "Simulation2DMagneticField",
+      "description": "A",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation.Simulation2DMagneticField.getA",
+      "kind": "method",
+      "signature": "getA(self, freq)",
+      "description": "System matrix",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation_1d.Simulation1DRecursive.fix_Jmatrix",
+      "kind": "method",
+      "signature": "fix_Jmatrix(self)",
+      "description": "Whether to fix the sensitivity matrix.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation_1d.Simulation1DRecursive.survey",
+      "kind": "method",
+      "signature": "survey(self)",
+      "description": "The simulations survey.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.simulation_1d.Simulation1DRecursive.survey",
+      "kind": "method",
+      "signature": "survey(self, value)",
+      "description": "Define the survey.",
+      "source_file": "simpeg/electromagnetics/natural_source/simulation_1d.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.bPrimary",
+      "kind": "method",
+      "signature": "bPrimary(self, simulation)",
+      "description": "Primary magnetic field",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.ePrimary",
+      "kind": "method",
+      "signature": "ePrimary(self, simulation)",
+      "description": "Primary electric field",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.sources.PlanewaveXYPrimary.s_e",
+      "kind": "method",
+      "signature": "s_e(self, simulation)",
+      "description": "Electric source term",
+      "source_file": "simpeg/electromagnetics/natural_source/sources.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "simpeg.electromagnetics.natural_source.survey.Data",
+      "kind": "class",
+      "signature": "Data",
+      "description": "Data class for NSEMdata.",
+      "source_file": "simpeg/electromagnetics/natural_source/survey.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

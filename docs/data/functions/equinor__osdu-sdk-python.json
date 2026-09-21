@@ -1,0 +1,1761 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/osdu-sdk-python",
+  "language": "Python",
+  "function_count": 145,
+  "functions": [
+    {
+      "name": "osdu.identity._credential.environment.OsduEnvironmentCredential",
+      "kind": "class",
+      "signature": "OsduEnvironmentCredential",
+      "description": "A credential configured by environment variables.",
+      "source_file": "src/osdu/identity/_credential/environment.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential",
+      "kind": "class",
+      "signature": "OsduMsalInteractiveCredential",
+      "description": "Refresh token based client for connecting with OSDU.",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential",
+      "kind": "class",
+      "signature": "OsduTokenCredential",
+      "description": "Refresh token based client for connecting with OSDU.",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient",
+      "kind": "class",
+      "signature": "OsduClient",
+      "description": "Class for connecting with API's.",
+      "source_file": "src/osdu/client.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.server_url",
+      "kind": "method",
+      "signature": "server_url(self)",
+      "description": "Url of the API server",
+      "source_file": "src/osdu/client.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.authority",
+      "kind": "method",
+      "signature": "authority(self)",
+      "description": "Authority url for obtaining token",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.client_id",
+      "kind": "method",
+      "signature": "client_id(self)",
+      "description": "Client id used for authorisation",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.scopes",
+      "kind": "method",
+      "signature": "scopes(self)",
+      "description": "The current scopes requested",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.token_cache",
+      "kind": "method",
+      "signature": "token_cache(self)",
+      "description": "Path to persist tokens to",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.authority",
+      "kind": "method",
+      "signature": "authority(self)",
+      "description": "Authority url for obtaining token",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.client_id",
+      "kind": "method",
+      "signature": "client_id(self)",
+      "description": "Client id used for authorisation",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.scopes",
+      "kind": "method",
+      "signature": "scopes(self)",
+      "description": "The current scopes requested",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.client_id",
+      "kind": "method",
+      "signature": "client_id(self)",
+      "description": "Client id used for authorisation",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "examples.example.main",
+      "kind": "function",
+      "signature": "main()",
+      "description": "Example code for calling the osdu search endpoint",
+      "source_file": "examples/example.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.get_headers",
+      "kind": "method",
+      "signature": "get_headers(self)",
+      "description": "Get needed http headers, including authorization bearer token.",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.get_returning_json",
+      "kind": "method",
+      "signature": "get_returning_json(self, url, ok_status_codes=None)",
+      "description": "Get data from the specified url in json format.",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.post_returning_json",
+      "kind": "method",
+      "signature": "post_returning_json(self, url, data, ok_status_codes=None)",
+      "description": "Post data to the specified url and get the result in json format.",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.put_returning_json",
+      "kind": "method",
+      "signature": "put_returning_json(self, url, data, ok_status_codes=None)",
+      "description": "Post data to the specified url and get the result in json format.",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient",
+      "kind": "class",
+      "signature": "EntitlementsClient",
+      "description": "A client for working with the OSDU Entitlements API.",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.base.OsduBaseCredential",
+      "kind": "class",
+      "signature": "OsduBaseCredential",
+      "description": "Abstract base credential class for connecting with OSDU.\nIt is not intended to use this directly, rather one of it's subclasses.",
+      "source_file": "src/osdu/identity/_credential/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.base.OsduBaseCredential.get_token",
+      "kind": "method",
+      "signature": "get_token(self, **kwargs)",
+      "description": "Get access token, trying to refresh if needed.",
+      "source_file": "src/osdu/identity/_credential/base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.environment.OsduEnvironmentCredential.get_token",
+      "kind": "method",
+      "signature": "get_token(self, **kwargs)",
+      "description": "Get token, deferring to the relevant credential class",
+      "source_file": "src/osdu/identity/_credential/environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.get_token",
+      "kind": "method",
+      "signature": "get_token(self, **kwargs)",
+      "description": "Check expiration date and return access_token.",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential",
+      "kind": "class",
+      "signature": "OsduMsalNonInteractiveCredential",
+      "description": "Get token based client for connecting with OSDU.",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.get_token",
+      "kind": "method",
+      "signature": "get_token(self, **kwargs)",
+      "description": "Check expiration date and return access_token.",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity.exceptions.CredentialUnavailableError",
+      "kind": "class",
+      "signature": "CredentialUnavailableError",
+      "description": "The credential could not authenticate because required data or state is unavailable.",
+      "source_file": "src/osdu/identity/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient",
+      "kind": "class",
+      "signature": "SearchClient",
+      "description": "A client for working with the OSDU Search API.",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient.query_all_aggregated",
+      "kind": "method",
+      "signature": "query_all_aggregated(self)",
+      "description": "Returns a list of all kinds including number of records",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient.query_by_id",
+      "kind": "method",
+      "signature": "query_by_id(self, identifier, limit=None)",
+      "description": "Returns a list of all kinds including number of records",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient.query_by_kind",
+      "kind": "method",
+      "signature": "query_by_kind(self, kind, limit=None)",
+      "description": "Returns a list of all records for the given kind",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.serviceclientbase.ServiceClientBase",
+      "kind": "class",
+      "signature": "ServiceClientBase",
+      "description": "Abstract base service client class for connecting with OSDU.\nIt is not intended to use this directly, rather one of it's subclasses.",
+      "source_file": "src/osdu/serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.serviceclientbase.ServiceClientBase.api_url",
+      "kind": "method",
+      "signature": "api_url(self, extra_path=None)",
+      "description": "Get a url for the api including any specified extra path",
+      "source_file": "src/osdu/serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.serviceclientbase.ServiceClientBase.service_name",
+      "kind": "method",
+      "signature": "service_name(self)",
+      "description": "Get name of the service.\nBy default used for constructing the url unless api_url is overwridden.",
+      "source_file": "src/osdu/serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify.contains_header",
+      "kind": "function",
+      "signature": "contains_header(text)",
+      "description": "Returns whether the default header is in the passed text",
+      "source_file": "scripts/license_verify.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify.get_files_without_header",
+      "kind": "function",
+      "signature": "get_files_without_header()",
+      "description": "Get python files that don't have the default header",
+      "source_file": "scripts/license_verify.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify_pylint.LCAHeaderChecker",
+      "kind": "class",
+      "signature": "LCAHeaderChecker",
+      "description": "Check that files will always start with the required Equinor ASA\nheader",
+      "source_file": "scripts/license_verify_pylint.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify_pylint.LCAHeaderChecker.process_module",
+      "kind": "method",
+      "signature": "process_module(self, node)",
+      "description": "process a module\nthe module's content is accessible via node.stream() function",
+      "source_file": "scripts/license_verify_pylint.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify_pylint.register",
+      "kind": "function",
+      "signature": "register(linter)",
+      "description": "required method to auto register this checker",
+      "source_file": "scripts/license_verify_pylint.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_init_valid_all_parameters",
+      "kind": "method",
+      "signature": "test_init_valid_all_parameters(self, version, expected_version)",
+      "description": "Test the init method with valid values for all parameters",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential",
+      "kind": "class",
+      "signature": "TestOsduEnvironmentCredential",
+      "description": "Test cases for refresh token OSDU client",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential.test_get_token_invalid_fails",
+      "kind": "method",
+      "signature": "test_get_token_invalid_fails(self)",
+      "description": "Test incomplete setup throws exception for get_token()).",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential.test_init_invalid",
+      "kind": "method",
+      "signature": "test_init_invalid(self)",
+      "description": "Test incomplete setup doesn't assign any credentials.",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential.test_init_msal_optional",
+      "kind": "method",
+      "signature": "test_init_msal_optional(self)",
+      "description": "Test the init method for msal with optional arguments set",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential.test_init_token",
+      "kind": "method",
+      "signature": "test_init_token(self)",
+      "description": "Test the init method for token credentials",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_msal_client_credentials.TestOsduMsalNonInteractiveCredential",
+      "kind": "class",
+      "signature": "TestOsduMsalNonInteractiveCredential",
+      "description": "Test cases for refresh token OSDU client",
+      "source_file": "tests/identity/test_msal_client_credentials.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_msal_interactive.TestOsduMsalInteractiveIdentity",
+      "kind": "class",
+      "signature": "TestOsduMsalInteractiveIdentity",
+      "description": "Test cases for refresh token OSDU client",
+      "source_file": "tests/identity/test_msal_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_msal_interactive.TestOsduMsalInteractiveIdentity.test_init_defaults",
+      "kind": "method",
+      "signature": "test_init_defaults(self)",
+      "description": "Test any init method default values are set accordingly",
+      "source_file": "tests/identity/test_msal_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_token.TestTokenOsduClient",
+      "kind": "class",
+      "signature": "TestTokenOsduClient",
+      "description": "Test cases for refresh token OSDU client",
+      "source_file": "tests/identity/test_token.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_init_valid_all_parameters",
+      "kind": "method",
+      "signature": "test_init_valid_all_parameters(self, version, expected_version)",
+      "description": "Test the init method with valid values for all parameters",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_is_healthy_error",
+      "kind": "method",
+      "signature": "test_is_healthy_error(self, status_code)",
+      "description": "Test the is_healthy end point returning 404 error",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_all_aggregated_http_error",
+      "kind": "method",
+      "signature": "test_query_all_aggregated_http_error(self, _)",
+      "description": "Test query_all_aggregated http errors are propogated",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_id_http_error",
+      "kind": "method",
+      "signature": "test_query_by_id_http_error(self, _)",
+      "description": "Test query_by_id http errors are propogated",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_kind_http_error",
+      "kind": "method",
+      "signature": "test_query_by_kind_http_error(self, _)",
+      "description": "Test query_by_kind http errors are propogated",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_delete_status_codes_match_returns_ok",
+      "kind": "method",
+      "signature": "test_delete_status_codes_match_returns_ok(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test valid delete returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_delete_status_codes_mismatch_throws_exception",
+      "kind": "method",
+      "signature": "test_delete_status_codes_mismatch_throws_exception(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test delete returns exception when status-codes are provided and return doeesn't match",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_get_headers",
+      "kind": "method",
+      "signature": "test_get_headers(self, mock_get_token)",
+      "description": "Test get_headers returns expected headers",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_get_returning_json_status_codes",
+      "kind": "method",
+      "signature": "test_get_returning_json_status_codes(self, expected_status_codes)",
+      "description": "Test valid get_returning_json returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_get_status_codes_match_returns_ok",
+      "kind": "method",
+      "signature": "test_get_status_codes_match_returns_ok(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test valid get returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_get_status_codes_mismatch_throws_exception",
+      "kind": "method",
+      "signature": "test_get_status_codes_mismatch_throws_exception(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test get returns exception when status-codes are provided and return doeesn't match",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_init_defaults",
+      "kind": "method",
+      "signature": "test_init_defaults(self)",
+      "description": "Test any init method default values are set accordingly",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_post_returning_json_status_codes",
+      "kind": "method",
+      "signature": "test_post_returning_json_status_codes(self, expected_status_codes)",
+      "description": "Test valid post_returning_json returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_post_status_codes_match_returns_ok",
+      "kind": "method",
+      "signature": "test_post_status_codes_match_returns_ok(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test valid post returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_post_status_codes_mismatch_throws_exception",
+      "kind": "method",
+      "signature": "test_post_status_codes_mismatch_throws_exception(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test post returns exception when status-codes are provided and return doeesn't match",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_put_returning_json_status_codes",
+      "kind": "method",
+      "signature": "test_put_returning_json_status_codes(self, expected_status_codes)",
+      "description": "Test valid put_returning_json returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_put_status_codes_match_returns_ok",
+      "kind": "method",
+      "signature": "test_put_status_codes_match_returns_ok(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test valid put returns ok when status-codes are provided",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_put_status_codes_mismatch_throws_exception",
+      "kind": "method",
+      "signature": "test_put_status_codes_mismatch_throws_exception(self, expected_status_codes, returned_status_code, _)",
+      "description": "Test put returns exception when status-codes are provided and return doeesn't match",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_delete_required_params",
+      "kind": "method",
+      "signature": "test_valid_delete_required_params(self, url, returned_status_code, _)",
+      "description": "Test valid delete returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_get_returning_json_required_params",
+      "kind": "method",
+      "signature": "test_valid_get_returning_json_required_params(self, url, returned_status_code)",
+      "description": "Test valid get_returning_json returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_post_json_required_params",
+      "kind": "method",
+      "signature": "test_valid_post_json_required_params(self, json, returned_status_code, _)",
+      "description": "Test valid post with json returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_post_returning_json_required_params",
+      "kind": "method",
+      "signature": "test_valid_post_returning_json_required_params(self, data, returned_status_code)",
+      "description": "Test valid post_returning_json returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_post_string_required_params",
+      "kind": "method",
+      "signature": "test_valid_post_string_required_params(self, string_data, returned_status_code, _)",
+      "description": "Test valid post with string returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_put_json_required_params",
+      "kind": "method",
+      "signature": "test_valid_put_json_required_params(self, json, returned_status_code, _)",
+      "description": "Test valid put with json returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_put_string_required_params",
+      "kind": "method",
+      "signature": "test_valid_put_string_required_params(self, string_data, returned_status_code, _)",
+      "description": "Test valid put with string returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase.test_api_url",
+      "kind": "method",
+      "signature": "test_api_url(self, server_url, service_name, extra_path, valid_versions, version)",
+      "description": "Test getting the api path returns expected values",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase.test_api_url_no_extra_path",
+      "kind": "method",
+      "signature": "test_api_url_no_extra_path(self)",
+      "description": "Test getting the api path with no extra path returns expected values",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase.test_init_invalid_client",
+      "kind": "method",
+      "signature": "test_init_invalid_client(self)",
+      "description": "Test the init method with invalid client",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase.test_init_invalid_version",
+      "kind": "method",
+      "signature": "test_init_invalid_version(self)",
+      "description": "Test the init method with invalid version",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase.test_init_valid_all_parameters",
+      "kind": "method",
+      "signature": "test_init_valid_all_parameters(self, valid_versions, version, expected_version)",
+      "description": "Test the init method with valid values for all parameters",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_msal_client_credentials.TestOsduMsalNonInteractiveCredential.setUp",
+      "kind": "method",
+      "signature": "setUp(self)",
+      "description": "",
+      "source_file": "tests/identity/test_msal_client_credentials.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.credentials",
+      "kind": "method",
+      "signature": "credentials(self)",
+      "description": "Credentials used for connection",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.data_partition",
+      "kind": "method",
+      "signature": "data_partition(self)",
+      "description": "Name of the data partition",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.delete",
+      "kind": "method",
+      "signature": "delete(self, url, ok_status_codes=None)",
+      "description": "GET to a url",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.get",
+      "kind": "method",
+      "signature": "get(self, url, ok_status_codes=None)",
+      "description": "GET from the specified url",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.post",
+      "kind": "method",
+      "signature": "post(self, url, data, ok_status_codes=None)",
+      "description": "POST data to the specified url",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.put",
+      "kind": "method",
+      "signature": "put(self, url, data, ok_status_codes=None)",
+      "description": "PUT data to the specified url",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.client.OsduClient.retries",
+      "kind": "method",
+      "signature": "retries(self)",
+      "description": "Number of retries incase of http errors",
+      "source_file": "src/osdu/client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.add_group",
+      "kind": "method",
+      "signature": "add_group(self, group, description=None)",
+      "description": "Add a new group",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.add_member_to_group",
+      "kind": "method",
+      "signature": "add_member_to_group(self, member, group, role)",
+      "description": "Add member to group",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.delete_group",
+      "kind": "method",
+      "signature": "delete_group(self, group)",
+      "description": "Delete a group",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.is_healthy",
+      "kind": "method",
+      "signature": "is_healthy(self)",
+      "description": "Returns health status of the API",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.list_group_members",
+      "kind": "method",
+      "signature": "list_group_members(self, group)",
+      "description": "List members in a group",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.list_groups",
+      "kind": "method",
+      "signature": "list_groups(self)",
+      "description": "List groups",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.entitlements._client.EntitlementsClient.remove_member_from_group",
+      "kind": "method",
+      "signature": "remove_member_from_group(self, member, group)",
+      "description": "Remove member from group",
+      "source_file": "src/osdu/entitlements/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_interactive.OsduMsalInteractiveCredential.refresh_access_token",
+      "kind": "method",
+      "signature": "refresh_access_token(self)",
+      "description": "Refresh from refresh token.",
+      "source_file": "src/osdu/identity/_credential/msal_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.client_secret",
+      "kind": "method",
+      "signature": "client_secret(self)",
+      "description": "Client secret used for authorisation",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.get_token",
+      "kind": "method",
+      "signature": "get_token(self, **kwargs)",
+      "description": "return access_token.",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.msal_non_interactive.OsduMsalNonInteractiveCredential.msal_confidential_client",
+      "kind": "method",
+      "signature": "msal_confidential_client(self)",
+      "description": "The current scopes requested",
+      "source_file": "src/osdu/identity/_credential/msal_non_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.client_secret",
+      "kind": "method",
+      "signature": "client_secret(self)",
+      "description": "The currently used client secret",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.refresh_access_token",
+      "kind": "method",
+      "signature": "refresh_access_token(self)",
+      "description": "Refresh from refresh token.",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.refresh_token",
+      "kind": "method",
+      "signature": "refresh_token(self)",
+      "description": "The current refresh token",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity._credential.token.OsduTokenCredential.token_endpoint",
+      "kind": "method",
+      "signature": "token_endpoint(self)",
+      "description": "Token endpoint for refreshing token",
+      "source_file": "src/osdu/identity/_credential/token.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.identity.consts.EnvironmentVariables",
+      "kind": "class",
+      "signature": "EnvironmentVariables",
+      "description": "Environment variable names",
+      "source_file": "src/osdu/identity/consts.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient.is_healthy",
+      "kind": "method",
+      "signature": "is_healthy(self)",
+      "description": "Returns health status of the API",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.search._client.SearchClient.query",
+      "kind": "method",
+      "signature": "query(self, kind=None, identifier=None, query=None, limit=None)",
+      "description": "Query records",
+      "source_file": "src/osdu/search/_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.serviceclientbase.ServiceClientBase.service_version",
+      "kind": "method",
+      "signature": "service_version(self)",
+      "description": "Version of the api being used",
+      "source_file": "src/osdu/serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "osdu.serviceclientbase.ServiceClientBase.valid_service_versions",
+      "kind": "method",
+      "signature": "valid_service_versions(self)",
+      "description": "List of valid service versions",
+      "source_file": "src/osdu/serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "scripts.license_verify.main",
+      "kind": "function",
+      "signature": "main()",
+      "description": "Main function",
+      "source_file": "scripts/license_verify.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient",
+      "kind": "class",
+      "signature": "TestEntitlementsClient",
+      "description": "Test cases for EntitlementsClient",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_add_group_description",
+      "kind": "method",
+      "signature": "test_add_group_description(self, group, description)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_add_group_http_error",
+      "kind": "method",
+      "signature": "test_add_group_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_add_group_required_parameters",
+      "kind": "method",
+      "signature": "test_add_group_required_parameters(self, group)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_add_member_to_group",
+      "kind": "method",
+      "signature": "test_add_member_to_group(self, member, group, role)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_add_member_to_group_http_error",
+      "kind": "method",
+      "signature": "test_add_member_to_group_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_delete_group",
+      "kind": "method",
+      "signature": "test_delete_group(self, group)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_delete_group_http_error",
+      "kind": "method",
+      "signature": "test_delete_group_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_is_healthy",
+      "kind": "method",
+      "signature": "test_is_healthy(self)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_is_healthy_error",
+      "kind": "method",
+      "signature": "test_is_healthy_error(self, status_code)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_list_group_members",
+      "kind": "method",
+      "signature": "test_list_group_members(self, group)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_list_group_members_http_error",
+      "kind": "method",
+      "signature": "test_list_group_members_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_list_groups",
+      "kind": "method",
+      "signature": "test_list_groups(self)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_list_groups_http_error",
+      "kind": "method",
+      "signature": "test_list_groups_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_remove_member_from_group",
+      "kind": "method",
+      "signature": "test_remove_member_from_group(self, member, group)",
+      "description": "Test valid call returns expected values",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.TestEntitlementsClient.test_remove_member_from_group_http_error",
+      "kind": "method",
+      "signature": "test_remove_member_from_group_http_error(self, _)",
+      "description": "Test http errors are propogated",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.entitlements.test_entitlements.create_dummy_client",
+      "kind": "function",
+      "signature": "create_dummy_client(server_url='http://www.test.com')",
+      "description": "Create a dummy client",
+      "source_file": "tests/entitlements/test_entitlements.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_environment.TestOsduEnvironmentCredential.test_init_msal",
+      "kind": "method",
+      "signature": "test_init_msal(self)",
+      "description": "Test the init method for msal",
+      "source_file": "tests/identity/test_environment.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_msal_interactive.TestOsduMsalInteractiveIdentity.test_init",
+      "kind": "method",
+      "signature": "test_init(self)",
+      "description": "Test the init method",
+      "source_file": "tests/identity/test_msal_interactive.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.identity.test_token.TestTokenOsduClient.test_init",
+      "kind": "method",
+      "signature": "test_init(self)",
+      "description": "Test the init method",
+      "source_file": "tests/identity/test_token.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient",
+      "kind": "class",
+      "signature": "TestSearchClient",
+      "description": "Test cases for SearchClient",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_is_healthy",
+      "kind": "method",
+      "signature": "test_is_healthy(self)",
+      "description": "Test the is_healthy end point",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query",
+      "kind": "method",
+      "signature": "test_query(self, kind, identifier, query, limit)",
+      "description": "Test the query function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_all_aggregated",
+      "kind": "method",
+      "signature": "test_query_all_aggregated(self)",
+      "description": "Test the query_all_aggregated function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_id",
+      "kind": "method",
+      "signature": "test_query_by_id(self, identifier, limit)",
+      "description": "Test the query_by_id function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_id_defaults",
+      "kind": "method",
+      "signature": "test_query_by_id_defaults(self, identifier)",
+      "description": "Test the query_by_id function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_kind",
+      "kind": "method",
+      "signature": "test_query_by_kind(self, kind, limit)",
+      "description": "Test the query_by_kind function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_by_kind_defaults",
+      "kind": "method",
+      "signature": "test_query_by_kind_defaults(self, kind)",
+      "description": "Test the query_by_kind function",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_cant_pass_id_and_query",
+      "kind": "method",
+      "signature": "test_query_cant_pass_id_and_query(self)",
+      "description": "Test query with id and query faile",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.TestSearchClient.test_query_http_error",
+      "kind": "method",
+      "signature": "test_query_http_error(self, _)",
+      "description": "Test query http errors are propogated",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.search.test_search.create_dummy_client",
+      "kind": "function",
+      "signature": "create_dummy_client(server_url='http://www.test.com')",
+      "description": "Create a dummy client",
+      "source_file": "tests/search/test_search.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient",
+      "kind": "class",
+      "signature": "TestOsduClient",
+      "description": "Test cases for base OSDU client",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_get",
+      "kind": "method",
+      "signature": "test_get(self, url, returned_status_code, _)",
+      "description": "Test valid get returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_init",
+      "kind": "method",
+      "signature": "test_init(self)",
+      "description": "Test the init method",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.TestOsduClient.test_valid_put_returning_json_required_params",
+      "kind": "method",
+      "signature": "test_valid_put_returning_json_required_params(self, data, returned_status_code)",
+      "description": "Test valid put returns expected values",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_client.create_dummy_client",
+      "kind": "function",
+      "signature": "create_dummy_client(server_url='http://www.test.com')",
+      "description": "Create a dummy client",
+      "source_file": "tests/test_client.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.TestServiceClientBase",
+      "kind": "class",
+      "signature": "TestServiceClientBase",
+      "description": "Test cases for SearchClient",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_serviceclientbase.create_dummy_client",
+      "kind": "function",
+      "signature": "create_dummy_client(server_url='http://www.test.com')",
+      "description": "Create a dummy client",
+      "source_file": "tests/test_serviceclientbase.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

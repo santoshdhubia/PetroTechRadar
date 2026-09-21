@@ -1,0 +1,4336 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "Loop3D/LoopStructural",
+  "language": "Python",
+  "function_count": 359,
+  "functions": [
+    {
+      "name": "LoopStructural.LoopStructuralConfig",
+      "kind": "class",
+      "signature": "LoopStructuralConfig",
+      "description": "Configuration for LoopStructural package.",
+      "source_file": "LoopStructural/__init__.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.setLogging",
+      "kind": "function",
+      "signature": "setLogging(level='info', handler=None)",
+      "description": "Set the logging parameters for log file or custom handler.",
+      "source_file": "LoopStructural/__init__.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.add_sink",
+      "kind": "function",
+      "signature": "add_sink(sink, loggers)",
+      "description": "Attach a sink to every currently-registered LoopStructural logger.",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.getLogger",
+      "kind": "function",
+      "signature": "getLogger(name)",
+      "description": "Get (or create) a stdlib `logging.Logger` wired into LoopStructural's shared sinks.",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.get_levels",
+      "kind": "function",
+      "signature": "get_levels()",
+      "description": "dict for converting to logger levels from string",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.remove_sink",
+      "kind": "function",
+      "signature": "remove_sink(handler, loggers)",
+      "description": "Detach a handler previously returned by `add_sink`.",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_claudius",
+      "kind": "function",
+      "signature": "load_claudius()",
+      "description": "Model dataset sampled from 3D seismic data",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid.maximum",
+      "kind": "method",
+      "signature": "maximum(self)",
+      "description": "Calculate the maximum coordinates of the grid.",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._api.LoopInterpolator.plot",
+      "kind": "method",
+      "signature": "plot(self, ax=None, **kwargs)",
+      "description": "Plots a 2d map scalar field or 3d pyvista plot",
+      "source_file": "LoopStructural/interpolators/_api.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel",
+      "kind": "class",
+      "signature": "GeologicalModel",
+      "description": "A geological model is the recipe for building a 3D model and  can include\nthe rescaling of the model between 0 and 1.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_foliation",
+      "kind": "method",
+      "signature": "create_and_add_foliation(self, series_surface_name, index, data, interpolatortype, nelements, tol, faults, **kwargs)",
+      "description": "Create a foliation feature and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_feature_gradient",
+      "kind": "method",
+      "signature": "evaluate_feature_gradient(self, feature_name, xyz, scale=True)",
+      "description": "Evaluate the gradient of the geological feature at a location",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_feature_value",
+      "kind": "method",
+      "signature": "evaluate_feature_value(self, feature_name, xyz, scale=True)",
+      "description": "Evaluate the scalar value of the geological feature given the name at locations\nxyz",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.feature",
+      "kind": "method",
+      "signature": "feature(self)",
+      "description": "Alias of `.frame` so this builder can be used polymorphically\nalongside builders that follow the BaseBuilder `.feature` contract.",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "This is the main function that does all the work, should be called\nbefore any of the calculated attributes are accessed",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.log_to_console",
+      "kind": "function",
+      "signature": "log_to_console(level='warning')",
+      "description": "Set the level of logging to the console",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.logging.log_to_file",
+      "kind": "function",
+      "signature": "log_to_file(filename, overwrite=True, level='info')",
+      "description": "Set the logging parameters for log file",
+      "source_file": "LoopStructural/utils/logging.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid.plot",
+      "kind": "method",
+      "signature": "plot(self, pyvista_kwargs=None)",
+      "description": "Calls pyvista plot on the vtk object",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.data",
+      "kind": "method",
+      "signature": "data(self, data)",
+      "description": "Set the data array for the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.scalar_field",
+      "kind": "method",
+      "signature": "scalar_field(self, bounding_box=None)",
+      "description": "Create a scalar field for the feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.FeatureType",
+      "kind": "class",
+      "signature": "FeatureType",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold.fold_function.FoldRotationType",
+      "kind": "class",
+      "signature": "FoldRotationType",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/fold/fold_function/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold.fold_function.get_fold_rotation_profile",
+      "kind": "function",
+      "signature": "get_fold_rotation_profile(fold_rotation_type, rotation_angle=None, fold_frame_coordinate=None, **kwargs)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/fold/fold_function/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_duplex",
+      "kind": "function",
+      "signature": "load_duplex()",
+      "description": "Model dataset for synthetic duplex example",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_fault_trace",
+      "kind": "function",
+      "signature": "load_fault_trace()",
+      "description": "Load the fault trace dataset, requires geopandas",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_geological_map_data",
+      "kind": "function",
+      "signature": "load_geological_map_data()",
+      "description": "An example dataset to use the processinput data class",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_grose2018",
+      "kind": "function",
+      "signature": "load_grose2018()",
+      "description": "Model dataset for synthetic parasitic fold series",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_noddy_single_fold",
+      "kind": "function",
+      "signature": "load_noddy_single_fold()",
+      "description": "Model dataset for plunging cylindrical fold",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_tabular_intrusion",
+      "kind": "function",
+      "signature": "load_tabular_intrusion()",
+      "description": "Model dataset sampled for a model of a tabular intrusion",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_unconformity",
+      "kind": "function",
+      "signature": "load_unconformity()",
+      "description": "Model dataset sampled for a model containing an unconformity",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.normal_vector_headers",
+      "kind": "function",
+      "signature": "normal_vector_headers()",
+      "description": "Default pandas column names for location and normal vector",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.strike_dip_headers",
+      "kind": "function",
+      "signature": "strike_dip_headers()",
+      "description": "Default pandas column names for location and strike and dip",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.value_headers",
+      "kind": "function",
+      "signature": "value_headers()",
+      "description": "Default pandas column names for location and value",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.export.exporters.write_cubeface",
+      "kind": "function",
+      "signature": "write_cubeface(model, file_name, data_label, nsteps, file_format)",
+      "description": "Writes out the model as a cuboid with six rectangular surfaces",
+      "source_file": "LoopStructural/export/exporters.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.export.exporters.write_feat_surfs",
+      "kind": "function",
+      "signature": "write_feat_surfs(model, featurename, file_format=FileFormat.NUMPY, file_name=None, isovalue=0.0)",
+      "description": "Writes out features from a model as 3d surfaces",
+      "source_file": "LoopStructural/export/exporters.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.export.exporters.write_vol",
+      "kind": "function",
+      "signature": "write_vol(model, file_name, data_label, nsteps, file_format)",
+      "description": "Writes out the model as a 3d volume grid",
+      "source_file": "LoopStructural/export/exporters.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.export.geoh5.add_points_from_df",
+      "kind": "function",
+      "signature": "add_points_from_df(filename, df, name='pointset', overwrite=True, columns=None, groupname='Loop', x_col='X', y_col='Y', z_col='Z')",
+      "description": "Add points to a geoh5 file from a pandas DataFrame. The DataFrame must have columns 'name', 'X', 'Y', 'Z' for the point locations.\nAdditional columns can be added as data associated with the points.\nParameters\n----------\nfilename: str\n    Path to the geoh5 file.\ndf: pandas.DataFrame\n    DataFrame containing point data. Must have columns 'name', 'X', 'Y', 'Z'. Additional columns will be added as data.\noverwrite: bool, optional\n    Whether to overwrite existing points with the same name. Default i",
+      "source_file": "LoopStructural/export/geoh5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid",
+      "kind": "class",
+      "signature": "StructuredGrid",
+      "description": "A structured grid for storing 3D geological data.",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid.cell_centres",
+      "kind": "method",
+      "signature": "cell_centres(self)",
+      "description": "Calculate the coordinates of cell centres.",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Convert the structured grid to a dictionary representation.",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.geometry._structured_grid.StructuredGrid.vtk",
+      "kind": "method",
+      "signature": "vtk(self)",
+      "description": "Convert the structured grid to a PyVista RectilinearGrid.",
+      "source_file": "LoopStructural/geometry/_structured_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._api.LoopInterpolator.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, locations)",
+      "description": "Evaluate the gradient of the interpolator at locations",
+      "source_file": "LoopStructural/interpolators/_api.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._api.LoopInterpolator.evaluate_scalar_value",
+      "kind": "method",
+      "signature": "evaluate_scalar_value(self, locations)",
+      "description": "Evaluate the value of the interpolator at locations",
+      "source_file": "LoopStructural/interpolators/_api.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._api.LoopInterpolator.fit",
+      "kind": "method",
+      "signature": "fit(self, values=None, tangent_vectors=None, normal_vectors=None, inequality_value_constraints=None, inequality_pairs_constraints=None)",
+      "description": "Set the constraints for the interpolator and run the interpolation",
+      "source_file": "LoopStructural/interpolators/_api.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormFDIInterpolator",
+      "kind": "class",
+      "signature": "ConstantNormFDIInterpolator",
+      "description": "Constant norm interpolator using finite difference base interpolator",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormFDIInterpolator.solve_system",
+      "kind": "method",
+      "signature": "solve_system(self, solver=None, tol=None, solver_kwargs=None)",
+      "description": "Solve the system of equations for the constant norm finite difference interpolator.",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormInterpolator",
+      "kind": "class",
+      "signature": "ConstantNormInterpolator",
+      "description": "Adds a non linear constraint to an interpolator to constrain\nthe norm of the gradient to be a set value.",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormInterpolator.add_constant_norm",
+      "kind": "method",
+      "signature": "add_constant_norm(self, w)",
+      "description": "Add a constraint to the interpolator to constrain the norm of the gradient\nto be a set value",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormInterpolator.solve_system",
+      "kind": "method",
+      "signature": "solve_system(self, solver=None, tol=None, solver_kwargs=None)",
+      "description": "Solve the system of equations iteratively for the constant norm interpolator.",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormP1Interpolator",
+      "kind": "class",
+      "signature": "ConstantNormP1Interpolator",
+      "description": "Constant norm interpolator using P1 base interpolator",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._constant_norm.ConstantNormP1Interpolator.solve_system",
+      "kind": "method",
+      "signature": "solve_system(self, solver=None, tol=None, solver_kwargs=None)",
+      "description": "Solve the system of equations for the constant norm P1 interpolator.",
+      "source_file": "LoopStructural/interpolators/_constant_norm.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._discrete_fold_interpolator.DiscreteFoldInterpolator.add_fold_constraints",
+      "kind": "method",
+      "signature": "add_fold_constraints(self, fold_orientation=10.0, fold_axis_w=10.0, fold_regularisation=None, fold_normalisation=1.0, fold_norm=1.0, step=2, mask_fn=None)",
+      "description": "Parameters\n----------\nfold_orientation : double\n    weight for the fold direction/orientation in the least squares system\nfold_axis_w : double\n    weight for the fold axis in the least squares system\nfold_regularisation : list\n    weight for the fold regularisation in the least squares system\nfold_normalisation : double\n    weight for the fold norm constraint in the least squares system\nfold_norm\n    length of the interpolation norm in the least squares system\nstep: int\n    array step for adding",
+      "source_file": "LoopStructural/interpolators/_discrete_fold_interpolator.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._discrete_fold_interpolator.DiscreteFoldInterpolator.update_fold",
+      "kind": "method",
+      "signature": "update_fold(self, fold)",
+      "description": "Parameters\n----------\nfold : FoldEvent\n    a fold that contrains the geometry we are trying to add",
+      "source_file": "LoopStructural/interpolators/_discrete_fold_interpolator.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.interpolators._interpolatortype.InterpolatorType",
+      "kind": "class",
+      "signature": "InterpolatorType",
+      "description": "Enum for the different interpolator types",
+      "source_file": "LoopStructural/interpolators/_interpolatortype.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_domain_fault",
+      "kind": "method",
+      "signature": "build_domain_fault(model, fault_surface_data, nelements, interpolatortype, index, **kwargs)",
+      "description": "Parameters\n----------\nfault_surface_data : string\n    name of the domain fault data in the data frame",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_fault",
+      "kind": "method",
+      "signature": "build_fault(model, fault_name, displacement, index, data, interpolatortype, tol, fault_slip_vector, fault_normal_vector, fault_center, major_axis, minor_axis, intermediate_axis, faultfunction, faults, force_mesh_geometry, points, fault_buffer, fault_trace_anisotropy, fault_dip, fault_dip_anisotropy, fault_pitch, **kwargs)",
+      "description": "Parameters\n----------\nfault_name : string\n    name of the fault surface data in the dataframe\ndisplacement : displacement magnitude\n    displacement magnitude of the fault, in model units\nfault_data : pd.DataFrame, optional\n    data frame containing the fault data, if not specified uses the model data\nmajor_axis : [type], optional\n    [description], by default None\nminor_axis : [type], optional\n    [description], by default None\nintermediate_axis : [type], optional\n    [description], by default ",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_fold_frame",
+      "kind": "method",
+      "signature": "build_fold_frame(model, fold_frame_name, index, data, interpolatortype, nelements, tol, buffer, **kwargs)",
+      "description": "Parameters\n----------\nfold_frame_name : string\n    unique string in feature_name column\nfold_frame_data : pandas data frame\n    if not specified uses the model data\ninterpolatortype : str\n    the type of interpolator to use, default is 'FDI'\nnelements : int\n    the number of elements to use in the fold frame\ntol : float, optional\n    tolerance for the solver\nbuffer : float\n    buffer to add to the bounding box of the fold frame\n**kwargs : dict\n    additional parameters to be passed to the\n    :c",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_folded_fold_frame",
+      "kind": "method",
+      "signature": "build_folded_fold_frame(model, fold_frame_name, index, data, interpolatortype, nelements, fold_frame, tol, **kwargs)",
+      "description": "Parameters\n----------\nfold_frame_name : string\n    name of the feature to be added\nfold_frame_data : pandas data frame, optional\n    data frame containing the fold frame data, if not specified uses the model data\ninterpolatortype : str\n    the type of interpolator to use, default is 'FDI' (unused) 5/6/2025\nfold_frame : StructuralFrame, optional\n    the fold frame for the fold if not specified uses last feature added\nnelements : int\n    the number of elements to use in the fold frame\ntol : float,",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_folded_foliation",
+      "kind": "method",
+      "signature": "build_folded_foliation(model, foliation_name, index, data, interpolatortype, nelements, buffer, fold_frame, svario, tol, invert_fold_norm, **kwargs)",
+      "description": "Create a folded foliation field from data and a fold frame",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_foliation",
+      "kind": "method",
+      "signature": "build_foliation(model, series_surface_name, index, data, interpolatortype, nelements, tol, faults, **kwargs)",
+      "description": "Parameters\n----------\nseries_surface_name : string\n    corresponding to the feature_name in the data\nseries_surface_data : pd.DataFrame, optional\n    data frame containing the surface data\ninterpolatortype : str\n    the type of interpolator to use, default is 'FDI'\nnelements : int\n    the number of elements to use in the series surface\ntol : float, optional\n    tolerance for the solver, if not specified uses the model default\nfaults : list, optional\n    list of faults to be used in the series su",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.build_intrusion",
+      "kind": "method",
+      "signature": "build_intrusion(model, intrusion_name, intrusion_frame_name, intrusion_frame_parameters, intrusion_lateral_extent_model, intrusion_vertical_extent_model, geometric_scaling_parameters, **kwargs)",
+      "description": "Note\n-----\nAn intrusion in built in two main steps:\n(1) Intrusion builder: intrusion builder creates the intrusion structural frame.\n    This object is curvilinear coordinate system of the intrusion constrained with intrusion network points,\n    and flow and inflation measurements (provided by the user).\n    The intrusion network is a representation of the approximated location of roof or floor contact of the intrusion.\n    This object might be constrained using the anisotropies of the host rock",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_feature_factory.ModelFeatureFactory.validate_intrusion_inputs",
+      "kind": "method",
+      "signature": "validate_intrusion_inputs(intrusion_name, intrusion_frame_name, intrusion_data, intrusion_frame_data, intrusion_frame_parameters)",
+      "description": "Fail fast, at the `create_and_add_intrusion` boundary, with a clear\nmessage naming the missing piece -- instead of a bare `KeyError`\nseveral calls deep inside `IntrusionFrameBuilder`/`IntrusionBuilder`\nonce building has already started. See ``INTRUSIONS.md`` finding 4.",
+      "source_file": "LoopStructural/modelling/core/_model_feature_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_domain_fault_above",
+      "kind": "method",
+      "signature": "add_domain_fault_above(model, feature)",
+      "description": "Looks through the feature list and adds any domain faults to the feature. The domain fault masks everything\nwhere the fault scalar field is < 0 as being active when added to feature.",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_domain_fault_below",
+      "kind": "method",
+      "signature": "add_domain_fault_below(model, domain_fault)",
+      "description": "Looks through the feature list and adds any the domain_fault to the features\nthat already exist in the stack until an unconformity is reached. domain faults\nto the feature. The domain fault masks everything where the fault scalar field\n is < 0 as being active when added to feature.",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_faults",
+      "kind": "method",
+      "signature": "add_faults(model, feature_builder, features=None)",
+      "description": "Adds all existing faults to a geological feature builder",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_onlap_unconformity",
+      "kind": "method",
+      "signature": "add_onlap_unconformity(model, feature, value, index=None)",
+      "description": "Use an existing feature to add an unconformity to the model.",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_unconformity",
+      "kind": "method",
+      "signature": "add_unconformity(model, feature, value, index=None)",
+      "description": "Use an existing feature to add an unconformity to the model.",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._model_relationships.FeatureRelationshipManager.add_unconformity_above",
+      "kind": "method",
+      "signature": "add_unconformity_above(model, feature)",
+      "description": "Adds a region to the feature to prevent the value from being\ninterpolated where the unconformities exists above e.g.\nif there is another feature above and the unconformity is at 0\nthen the features added below (after) will only be visible where the\nuncomformity is <0",
+      "source_file": "LoopStructural/modelling/core/_model_relationships.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology",
+      "kind": "class",
+      "signature": "FaultTopology",
+      "description": "A graph representation of the relationships between faults and the\nrelationship with stratigraphic units.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.add_abutting_relationship",
+      "kind": "method",
+      "signature": "add_abutting_relationship(self, fault_name, abutting_fault)",
+      "description": "Adds an abutting relationship between two faults.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.add_faulted_relationship",
+      "kind": "method",
+      "signature": "add_faulted_relationship(self, fault_name, faulted_fault_name)",
+      "description": "Adds a faulted relationship between two faults.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.add_stratigraphy_fault_relationship",
+      "kind": "method",
+      "signature": "add_stratigraphy_fault_relationship(self, unit_name, fault_name)",
+      "description": "Adds a relationship between a stratigraphic unit and a fault.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.change_relationship_type",
+      "kind": "method",
+      "signature": "change_relationship_type(self, fault_name, related_fault_name, new_relationship_type)",
+      "description": "Changes the relationship type between two faults.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Creates a FaultTopology instance from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_fault_relationship",
+      "kind": "method",
+      "signature": "get_fault_relationship(self, fault_name, related_fault_name)",
+      "description": "Returns the relationship type between two faults.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_fault_relationships",
+      "kind": "method",
+      "signature": "get_fault_relationships(self, fault_name)",
+      "description": "Returns a list of relationships for a given fault.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_fault_stratigraphic_relationship",
+      "kind": "method",
+      "signature": "get_fault_stratigraphic_relationship(self, unit_name, fault)",
+      "description": "Returns a dictionary of fault to stratigraphic unit relationships.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_faults",
+      "kind": "method",
+      "signature": "get_faults(self)",
+      "description": "Returns a list of all faults in the topology.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_matrix",
+      "kind": "method",
+      "signature": "get_matrix(self)",
+      "description": "Returns a matrix representation of the fault relationships.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.get_stratigraphy_fault_relationships",
+      "kind": "method",
+      "signature": "get_stratigraphy_fault_relationships(self)",
+      "description": "Returns a dictionary of stratigraphic unit to fault relationships.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.remove_fault",
+      "kind": "method",
+      "signature": "remove_fault(self, fault)",
+      "description": "Removes a fault from the fault topology.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.remove_fault_relationship",
+      "kind": "method",
+      "signature": "remove_fault_relationship(self, fault_name, related_fault_name)",
+      "description": "Removes a relationship between two faults.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.remove_fault_stratigraphy_relationship",
+      "kind": "method",
+      "signature": "remove_fault_stratigraphy_relationship(self, unit_name, fault_name)",
+      "description": "Removes a relationship between a stratigraphic unit and a fault.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Returns a dictionary representation of the fault topology.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.update_fault_stratigraphy_relationship",
+      "kind": "method",
+      "signature": "update_fault_stratigraphy_relationship(self, unit_name, fault_name, flag=True)",
+      "description": "Updates the relationship between a stratigraphic unit and a fault.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.update_from_dict",
+      "kind": "method",
+      "signature": "update_from_dict(self, data)",
+      "description": "Updates the fault topology from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.add_fold_to_feature",
+      "kind": "method",
+      "signature": "add_fold_to_feature(self, feature_name, fold_frame, **kwargs)",
+      "description": "Add a fold to an already-built feature, replacing it in the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.add_onlap_unconformity",
+      "kind": "method",
+      "signature": "add_onlap_unconformity(self, feature, value, index=None)",
+      "description": "Use an existing feature to add an unconformity to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.add_unconformity",
+      "kind": "method",
+      "signature": "add_unconformity(self, feature, value, index=None)",
+      "description": "Use an existing feature to add an unconformity to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.convert_feature_to_structural_frame",
+      "kind": "method",
+      "signature": "convert_feature_to_structural_frame(self, feature_name, **kwargs)",
+      "description": "Convert an already-built feature into a structural frame, replacing it in the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_domain_fault",
+      "kind": "method",
+      "signature": "create_and_add_domain_fault(self, fault_surface_data, nelements, interpolatortype, index, **kwargs)",
+      "description": "Create a domain fault and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_feature",
+      "kind": "method",
+      "signature": "create_and_add_feature(self, feature_type, name, **params)",
+      "description": "Create a feature of the given type and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_fold_frame",
+      "kind": "method",
+      "signature": "create_and_add_fold_frame(self, fold_frame_name, index, data, interpolatortype, nelements, tol, buffer, **kwargs)",
+      "description": "Create a fold frame and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_folded_fold_frame",
+      "kind": "method",
+      "signature": "create_and_add_folded_fold_frame(self, fold_frame_name, index, data, interpolatortype, nelements, fold_frame, tol, **kwargs)",
+      "description": "Create a folded fold frame and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_folded_foliation",
+      "kind": "method",
+      "signature": "create_and_add_folded_foliation(self, foliation_name, index, data, interpolatortype, nelements, buffer, fold_frame, svario, tol, invert_fold_norm, **kwargs)",
+      "description": "Create a folded foliation and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_intrusion",
+      "kind": "method",
+      "signature": "create_and_add_intrusion(self, intrusion_name, intrusion_frame_name, intrusion_frame_parameters, intrusion_lateral_extent_model, intrusion_vertical_extent_model, geometric_scaling_parameters, **kwargs)",
+      "description": "Create an intrusion and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.data_for_feature",
+      "kind": "method",
+      "signature": "data_for_feature(self, feature_name)",
+      "description": "Get all of the data associated with a geological feature",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.dtm",
+      "kind": "method",
+      "signature": "dtm(self, dtm)",
+      "description": "Set a dtm to the model.\nThe dtm is a function that can be called for dtm(xy) where xy is\na numpy array of xy locations. The function will return an array of\nz values corresponding to the elevation at xy.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_fault_displacements",
+      "kind": "method",
+      "signature": "evaluate_fault_displacements(self, points, scale=True)",
+      "description": "Evaluate the fault displacement magnitude at each location",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_model",
+      "kind": "method",
+      "signature": "evaluate_model(self, xyz, scale)",
+      "description": "Evaluate the stratigraphic id at each location",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.evaluate_model_gradient",
+      "kind": "method",
+      "signature": "evaluate_model_gradient(self, points, scale)",
+      "description": "Evaluate the gradient of the stratigraphic column at each location",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.faults",
+      "kind": "method",
+      "signature": "faults(self)",
+      "description": "Get all of the fault features in the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.from_processor",
+      "kind": "method",
+      "signature": "from_processor(cls, processor)",
+      "description": "Builds a model from a :class:`LoopStructural.modelling.input.ProcessInputData` object\nThis object stores the observations and order of the geological features",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.from_recipe_dict",
+      "kind": "method",
+      "signature": "from_recipe_dict(cls, recipe)",
+      "description": "Rebuild a geological model from a recipe dictionary.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.from_recipe_json",
+      "kind": "method",
+      "signature": "from_recipe_json(cls, json_str)",
+      "description": "Rebuild a geological model from a JSON-formatted recipe string.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.get_feature_by_name",
+      "kind": "method",
+      "signature": "get_feature_by_name(self, feature_name)",
+      "description": "Returns a feature from the mode given a name",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.load_recipe",
+      "kind": "method",
+      "signature": "load_recipe(cls, filename)",
+      "description": "Load a geological model from a recipe JSON file.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.regular_grid",
+      "kind": "method",
+      "signature": "regular_grid(self, nsteps, shuffle, rescale, order)",
+      "description": "Return a regular grid within the model bounding box",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.rescale",
+      "kind": "method",
+      "signature": "rescale(self, points, inplace)",
+      "description": "Convert from model scale to real world scale - in the future this\nshould also do transformations?",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.scale",
+      "kind": "method",
+      "signature": "scale(self, points, inplace)",
+      "description": "Take points in UTM coordinates and reproject\ninto scaled model space",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.set_stratigraphic_column",
+      "kind": "method",
+      "signature": "set_stratigraphic_column(self, stratigraphic_column, cmap='tab20')",
+      "description": "Adds a stratigraphic column to the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.stratigraphic_column",
+      "kind": "method",
+      "signature": "stratigraphic_column(self)",
+      "description": "Get the stratigraphic column of the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.stratigraphic_column",
+      "kind": "method",
+      "signature": "stratigraphic_column(self, stratigraphic_column)",
+      "description": "Set the stratigraphic column of the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.stratigraphic_ids",
+      "kind": "method",
+      "signature": "stratigraphic_ids(self)",
+      "description": "Return a list of all stratigraphic ids in the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Convert the geological model to a json string",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.to_file",
+      "kind": "method",
+      "signature": "to_file(self, file)",
+      "description": "Save a model to a pickle file requires dill",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.to_recipe_dict",
+      "kind": "method",
+      "signature": "to_recipe_dict(self, data_reference=None)",
+      "description": "Return a YAML/JSON-friendly recipe for rebuilding the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.to_recipe_json",
+      "kind": "method",
+      "signature": "to_recipe_json(self, data_reference=None, indent=2)",
+      "description": "Return a JSON-formatted string of the recipe.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn",
+      "kind": "class",
+      "signature": "StratigraphicColumn",
+      "description": "A class representing a stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.add_basement",
+      "kind": "method",
+      "signature": "add_basement(self)",
+      "description": "Add basement unit and base unconformity to the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.add_element",
+      "kind": "method",
+      "signature": "add_element(self, element)",
+      "description": "Adds a StratigraphicColumnElement to the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.clear",
+      "kind": "method",
+      "signature": "clear(self, basement=True)",
+      "description": "Clear the stratigraphic column, removing all elements.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Creates a StratigraphicColumn from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_element_by_index",
+      "kind": "method",
+      "signature": "get_element_by_index(self, index)",
+      "description": "Retrieves an element by its index from the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_element_by_uuid",
+      "kind": "method",
+      "signature": "get_element_by_uuid(self, uuid)",
+      "description": "Retrieves an element by its uuid from the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_elements",
+      "kind": "method",
+      "signature": "get_elements(self)",
+      "description": "Returns a list of all elements in the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_group_for_unit_name",
+      "kind": "method",
+      "signature": "get_group_for_unit_name(self, unit_name)",
+      "description": "Retrieves the group for a given unit name.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_group_unit_pairs",
+      "kind": "method",
+      "signature": "get_group_unit_pairs(self)",
+      "description": "Returns a list of tuples containing group names and unit names.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_isovalues",
+      "kind": "method",
+      "signature": "get_isovalues(self, where='bottom')",
+      "description": "Returns a dictionary of isovalues for the stratigraphic units in the column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_new_id",
+      "kind": "method",
+      "signature": "get_new_id(self)",
+      "description": "Generate a new unique ID for a stratigraphic unit.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_unconformity_by_name",
+      "kind": "method",
+      "signature": "get_unconformity_by_name(self, name)",
+      "description": "Retrieves an unconformity by its name from the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.get_unit_by_name",
+      "kind": "method",
+      "signature": "get_unit_by_name(self, name)",
+      "description": "Retrieves a unit by its name from the stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.remove_unit",
+      "kind": "method",
+      "signature": "remove_unit(self, uuid)",
+      "description": "Removes a unit or unconformity from the stratigraphic column by its uuid.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Converts the stratigraphic column to a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.update_element",
+      "kind": "method",
+      "signature": "update_element(self, unit_data)",
+      "description": "Updates an existing element in the stratigraphic column with new data.\n:param unit_data: A dictionary containing the updated data for the element.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.update_from_dict",
+      "kind": "method",
+      "signature": "update_from_dict(self, data)",
+      "description": "Updates the stratigraphic column from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.update_order",
+      "kind": "method",
+      "signature": "update_order(self, new_order)",
+      "description": "Updates the order of elements in the stratigraphic column based on a new order list.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.update_unit_values",
+      "kind": "method",
+      "signature": "update_unit_values(self, observable=None, event=None, **kwargs)",
+      "description": "Updates the min and max values for each unit based on their position in the column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumnElement",
+      "kind": "class",
+      "signature": "StratigraphicColumnElement",
+      "description": "Base class for elements in a stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumnElementType",
+      "kind": "class",
+      "signature": "StratigraphicColumnElementType",
+      "description": "Enumeration for different types of elements in a stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicGroup",
+      "kind": "class",
+      "signature": "StratigraphicGroup",
+      "description": "A class representing a group of stratigraphic units.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnconformity",
+      "kind": "class",
+      "signature": "StratigraphicUnconformity",
+      "description": "A class to represent a stratigraphic unconformity, which is a surface of discontinuity in the stratigraphic record.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnconformity.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Creates a StratigraphicUnconformity from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnconformity.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Converts the stratigraphic unconformity to a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit",
+      "kind": "class",
+      "signature": "StratigraphicUnit",
+      "description": "A class representing a stratigraphic unit in the geological column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Create a StratigraphicUnit from a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.id",
+      "kind": "method",
+      "signature": "id(self, value)",
+      "description": "Set the ID of the unit and notify observers.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.max",
+      "kind": "method",
+      "signature": "max(self)",
+      "description": "Return the maximum scalar field value of the unit.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.min",
+      "kind": "method",
+      "signature": "min(self)",
+      "description": "Return the minimum scalar field value of the unit.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.thickness",
+      "kind": "method",
+      "signature": "thickness(self, value)",
+      "description": "Set the thickness of the unit and notify observers.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Convert the stratigraphic unit to a dictionary representation.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.UnconformityType",
+      "kind": "class",
+      "signature": "UnconformityType",
+      "description": "Enumeration for different types of unconformities in a stratigraphic column.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._analytical_feature.AnalyticalGeologicalFeature",
+      "kind": "class",
+      "signature": "AnalyticalGeologicalFeature",
+      "description": "Geological feature is class that is used to represent a geometrical element in a geological\nmodel. For example foliations, fault planes, fold rotation angles etc.",
+      "source_file": "LoopStructural/modelling/features/_analytical_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._analytical_feature.AnalyticalGeologicalFeature.to_json",
+      "kind": "method",
+      "signature": "to_json(self)",
+      "description": "Returns a json representation of the geological feature",
+      "source_file": "LoopStructural/modelling/features/_analytical_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.add_region",
+      "kind": "method",
+      "signature": "add_region(self, region)",
+      "description": "Adds a region where the geological feature is active to the model.",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, pos, ignore_regions=False)",
+      "description": "Evaluate the gradient of the feature at a given position.",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.evaluate_normalised_value",
+      "kind": "method",
+      "signature": "evaluate_normalised_value(self, pos)",
+      "description": "Evaluate the feature value scaling between 0 and 1",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, pos, ignore_regions=False)",
+      "description": "Evaluate the feature at a given position.",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.gradient_norm_scalar_field",
+      "kind": "method",
+      "signature": "gradient_norm_scalar_field(self, bounding_box=None)",
+      "description": "Create a scalar field for the gradient norm of the feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.max",
+      "kind": "method",
+      "signature": "max(self)",
+      "description": "Calculate the maximum value of the geological feature\nin the model",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.min",
+      "kind": "method",
+      "signature": "min(self)",
+      "description": "Calculate the min value of the geological feature\nin the model",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.surfaces",
+      "kind": "method",
+      "signature": "surfaces(self, value=None, bounding_box=None, name=None, colours=None)",
+      "description": "Find the surfaces of the geological feature at a given value",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.to_json",
+      "kind": "method",
+      "signature": "to_json(self)",
+      "description": "Returns a json representation of the geological feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.toggle_faults",
+      "kind": "method",
+      "signature": "toggle_faults(self)",
+      "description": "Turn the fault off for a feature\nThis function is only really used for debugging or creating methods\nexplanation figures",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._cross_product_geological_feature.CrossProductGeologicalFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, locations, ignore_regions=False)",
+      "description": "Calculate the gradient of the geological feature by using numpy to\ncalculate the cross\nproduct between the two existing feature gradients.\nThis means both features have to be evaluated for the locations",
+      "source_file": "LoopStructural/modelling/features/_cross_product_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._cross_product_geological_feature.CrossProductGeologicalFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, evaluation_points, ignore_regions=False)",
+      "description": "Return 0 because there is no value for this feature\nParameters\n----------\nevaluation_points",
+      "source_file": "LoopStructural/modelling/features/_cross_product_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._feature_converters.convert_feature_to_structural_frame",
+      "kind": "function",
+      "signature": "convert_feature_to_structural_frame(feature, **kwargs)",
+      "description": "Convert a geological feature to a structural frame by adding the feature to the frame",
+      "source_file": "LoopStructural/modelling/features/_feature_converters.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature",
+      "kind": "class",
+      "signature": "GeologicalFeature",
+      "description": "A geological feature representing a geometrical element in a geological model.",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, pos, ignore_regions=False, element_scale_parameter=None)",
+      "description": "Parameters\n----------\nlocations : numpy array\n    location where the gradient is being evaluated",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.evaluate_gradient_misfit",
+      "kind": "method",
+      "signature": "evaluate_gradient_misfit(self)",
+      "description": "Returns\n-------\nmisfit : np.array(N,dtype=double)\n    dot product between interpolated gradient and constraints",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, pos, ignore_regions=False, fillnan=None)",
+      "description": "Evaluate the scalar field value of the geological feature at the locations\nspecified",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.evaluate_value_misfit",
+      "kind": "method",
+      "signature": "evaluate_value_misfit(self)",
+      "description": "Returns\n-------\nmisfit : np.array(N,dtype=double)\n    difference between interpolated scalar field and value constraints",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.get_data",
+      "kind": "method",
+      "signature": "get_data(self, value_map=None)",
+      "description": "Return the data associated with this geological feature",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._geological_feature.GeologicalFeature.to_json",
+      "kind": "method",
+      "signature": "to_json(self)",
+      "description": "Return a JSON representation of the geological feature.",
+      "source_file": "LoopStructural/modelling/features/_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._lambda_geological_feature.LambdaGeologicalFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, pos, ignore_regions=False, element_scale_parameter=None)",
+      "description": "Evaluate the gradient of the underlying function at locations, applying\nany faults associated with this feature",
+      "source_file": "LoopStructural/modelling/features/_lambda_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._lambda_geological_feature.LambdaGeologicalFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, pos, ignore_regions=False)",
+      "description": "Evaluate the value of the underlying function at locations, applying\nany faults and regions associated with this feature",
+      "source_file": "LoopStructural/modelling/features/_lambda_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._projected_vector_feature.ProjectedVectorFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, locations, ignore_regions=False)",
+      "description": "Calculate the gradient of the geological feature by using numpy to\ncalculate the cross\nproduct between the two existing feature gradients.\nThis means both features have to be evaluated for the locations",
+      "source_file": "LoopStructural/modelling/features/_projected_vector_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._projected_vector_feature.ProjectedVectorFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, evaluation_points, ignore_regions=False)",
+      "description": "Return 0 because there is no value for this feature\nParameters\n----------\nevaluation_points",
+      "source_file": "LoopStructural/modelling/features/_projected_vector_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, pos, i=None, ignore_regions=False)",
+      "description": "Evaluate the gradient of the structural frame.\nCan optionally only evaluate the ith coordinate",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, pos, ignore_regions=False)",
+      "description": "Evaluate the value of the structural frame for the points.\nCan optionally only evaluate one coordinate",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.get_data",
+      "kind": "method",
+      "signature": "get_data(self, value_map=None)",
+      "description": "Return the data associated with the features in the\nstructural frame",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.set_model",
+      "kind": "method",
+      "signature": "set_model(self, model)",
+      "description": "Link the model that created the frame to the frame\nand the features that make up the frame",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.to_json",
+      "kind": "method",
+      "signature": "to_json(self)",
+      "description": "Return a json representation of the structural frame",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._unconformity_feature.UnconformityFeature.evaluate",
+      "kind": "method",
+      "signature": "evaluate(self, pos)",
+      "description": "Parameters\n----------\npos : numpy array\n    locations to evaluate whether below or above unconformity",
+      "source_file": "LoopStructural/modelling/features/_unconformity_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._unconformity_feature.UnconformityFeature.inverse",
+      "kind": "method",
+      "signature": "inverse(self)",
+      "description": "Returns an unconformity feature with the sign flipped\nThe feature is a shallow copy with the parent being set to\nthe parent of this feature",
+      "source_file": "LoopStructural/modelling/features/_unconformity_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.add_fault",
+      "kind": "method",
+      "signature": "add_fault(self, fault)",
+      "description": "Add a fault to the geological feature builder",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.up_to_date",
+      "kind": "method",
+      "signature": "up_to_date(self, callback=None)",
+      "description": "check if the feature is uptodate\nif its not update.",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._fault_builder.FaultBuilder.add_fault_trace_anisotropy",
+      "kind": "method",
+      "signature": "add_fault_trace_anisotropy(self, w=1.0)",
+      "description": "Add fault trace anisotropy to the model.",
+      "source_file": "LoopStructural/modelling/features/builders/_fault_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._fault_builder.FaultBuilder.create_data_from_geometry",
+      "kind": "method",
+      "signature": "create_data_from_geometry(self, fault_frame_data, fault_center=None, fault_normal_vector=None, fault_slip_vector=None, minor_axis=None, major_axis=None, intermediate_axis=None, w=1.0, points=False, force_mesh_geometry=False, fault_buffer=0.2, fault_trace_anisotropy=1.0, fault_dip=90, fault_dip_anisotropy=1.0, fault_pitch=None, plane_line_threshold=0.05)",
+      "description": "Generate the required data for building a fault frame with the specified parameters.",
+      "source_file": "LoopStructural/modelling/features/builders/_fault_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._fault_builder.FaultBuilder.update_geometry",
+      "kind": "method",
+      "signature": "update_geometry(self, points)",
+      "description": "Update the geometry of the fault by adjusting the origin and maximum bounds\nbased on the provided points.",
+      "source_file": "LoopStructural/modelling/features/builders/_fault_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._folded_feature_builder.FoldedFeatureBuilder.build",
+      "kind": "method",
+      "signature": "build(self, data_region=None, constrained=None, **kwargs)",
+      "description": "the main function to run the interpolation and set up the parameters",
+      "source_file": "LoopStructural/modelling/features/builders/_folded_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._folded_feature_builder.FoldedFeatureBuilder.from_feature_builder",
+      "kind": "method",
+      "signature": "from_feature_builder(cls, feature_builder, fold, **kwargs)",
+      "description": "Create a FoldedFeatureBuilder from an existing feature builder",
+      "source_file": "LoopStructural/modelling/features/builders/_folded_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._folded_feature_builder.FoldedFeatureBuilder.set_fold_axis",
+      "kind": "method",
+      "signature": "set_fold_axis(self)",
+      "description": "calculates the fold axis/ fold axis rotation and adds this to the fold",
+      "source_file": "LoopStructural/modelling/features/builders/_folded_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._folded_feature_builder.FoldedFeatureBuilder.set_fold_limb_rotation",
+      "kind": "method",
+      "signature": "set_fold_limb_rotation(self)",
+      "description": "Calculates the limb rotation of the fold and adds it to the fold object",
+      "source_file": "LoopStructural/modelling/features/builders/_folded_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.add_data_from_data_frame",
+      "kind": "method",
+      "signature": "add_data_from_data_frame(self, data_frame, overwrite=False)",
+      "description": "Extract data from a pandas dataframe with columns for",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.add_data_to_interpolator",
+      "kind": "method",
+      "signature": "add_data_to_interpolator(self, constrained=False, force_constrained=False, **kwargs)",
+      "description": "Iterates through the list of data and applies any faults active on the\ndata in the order they are added",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.add_orthogonal_feature",
+      "kind": "method",
+      "signature": "add_orthogonal_feature(self, feature, w=1.0, region=None, step=1, B=0)",
+      "description": "Add a constraint to the interpolator so that the gradient of an exisitng\nfeature is orthogonal to the feature being built. E.g. dot product\nbetween gradients should be = 0",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.build",
+      "kind": "method",
+      "signature": "build(self, data_region=None, **kwargs)",
+      "description": "Runs the interpolation and builds the geological feature",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.check_interpolation_geometry",
+      "kind": "method",
+      "signature": "check_interpolation_geometry(self, data, buffer=0.3)",
+      "description": "Check the interpolation support geometry\nto data to make sure everything fits\nApply the fault to the model grid to ensure that the support\nis big enough to capture the faulted feature.",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_data_locations",
+      "kind": "method",
+      "signature": "get_data_locations(self)",
+      "description": "Get only the location for all data points",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_value_constraints",
+      "kind": "method",
+      "signature": "get_value_constraints(self)",
+      "description": "Get the value constraints for this geological feature",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.set_interpolation_geometry",
+      "kind": "method",
+      "signature": "set_interpolation_geometry(self, origin, maximum, rotation=None)",
+      "description": "Update the interpolation support geometry to new bounding box",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.add_data_from_data_frame",
+      "kind": "method",
+      "signature": "add_data_from_data_frame(self, data_frame)",
+      "description": "extract the data for a fault from a data frame",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.add_fault",
+      "kind": "method",
+      "signature": "add_fault(self, fault)",
+      "description": "Add a fault to the geological feature builder",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.build",
+      "kind": "method",
+      "signature": "build(self, w1=1.0, w2=1.0, w3=1.0, **kwargs)",
+      "description": "Build the structural frame\nParameters\n----------\nsolver solver to use\nframe - type of frame to build StructuralFrame or FoldFrame\nw3\nw2\nw1\nkwargs",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.from_feature_builder",
+      "kind": "method",
+      "signature": "from_feature_builder(cls, feature_builder, **kwargs)",
+      "description": "Create a structural frame builder from an existing feature builder",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._structural_frame_builder.StructuralFrameBuilder.setup",
+      "kind": "method",
+      "signature": "setup(self, *args, **kwargs)",
+      "description": "Deprecated alias of `.build()`, kept for backwards compatibility.",
+      "source_file": "LoopStructural/modelling/features/builders/_structural_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.Composite",
+      "kind": "class",
+      "signature": "Composite",
+      "description": "A combination of two profiles for the positive and negative values for a coordinate.\nThis is used to model the displacement relative to the fault frame coordinate 0",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.Composite.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Create a fault profile function from a json dictionary",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.add_grad",
+      "kind": "method",
+      "signature": "add_grad(self, x, g)",
+      "description": "Add a gradient constraint to the cubic function",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.add_max",
+      "kind": "method",
+      "signature": "add_max(self, max_v)",
+      "description": "Adds a ceiling value to the funciton.\nThis is used to limit the maximum value returned\nby the function but is not a constraint for the function.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.add_min",
+      "kind": "method",
+      "signature": "add_min(self, min_v)",
+      "description": "Adds a floor value to the funciton.\nThis is used to limit the minimum value returned\nby the function but is not a constraint for the function.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.from_dict",
+      "kind": "method",
+      "signature": "from_dict(cls, data)",
+      "description": "Create a fault profile function from a json dictionary",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.set_lim",
+      "kind": "method",
+      "signature": "set_lim(self, min_x, max_x)",
+      "description": "Set the limits of the fault frame coordinate outside of which the\nfunction value is clamped to the value at the limit",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.Ones",
+      "kind": "class",
+      "signature": "Ones",
+      "description": "Returns a fault displacement value of one for the input coordinate",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.Zeros",
+      "kind": "class",
+      "signature": "Zeros",
+      "description": "Returns a fault displacement value of zero for the input coordinate",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature",
+      "kind": "class",
+      "signature": "FaultDisplacementFeature",
+      "description": "Geological feature representing fault displacement.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature.copy",
+      "kind": "method",
+      "signature": "copy(self, name=None)",
+      "description": "Create a copy of this fault displacement feature.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, location)",
+      "description": "Get the scaled displacement gradient at given locations.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature.evaluate_on_surface",
+      "kind": "method",
+      "signature": "evaluate_on_surface(self, location)",
+      "description": "Evaluate displacement specifically on the fault surface.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, location)",
+      "description": "Return the value of the fault displacement at given locations.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function_feature.FaultDisplacementFeature.get_data",
+      "kind": "method",
+      "signature": "get_data(self, value_map=None)",
+      "description": "Get data associated with this fault displacement feature.",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment",
+      "kind": "class",
+      "signature": "FaultSegment",
+      "description": "Class for representing a slip event of a fault",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.apply_to_vectors",
+      "kind": "method",
+      "signature": "apply_to_vectors(self, vector, scale_parameter=1.0)",
+      "description": "Rotates the vector through the fault displacement field",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.evaluate_gradient",
+      "kind": "method",
+      "signature": "evaluate_gradient(self, locations)",
+      "description": "Return the fault slip direction at the location",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, locations, ignore_regions=False)",
+      "description": "Return the value of the fault surface scalar field",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.set_displacement",
+      "kind": "method",
+      "signature": "set_displacement(self, displacement, scale=True)",
+      "description": "Set the fault displacement to a new value",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._fold.FoldEvent.get_deformed_orientation",
+      "kind": "method",
+      "signature": "get_deformed_orientation(self, points)",
+      "description": "Calculate the direction vectors of the fold",
+      "source_file": "LoopStructural/modelling/features/fold/_fold.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._fold.FoldEvent.get_fold_axis_orientation",
+      "kind": "method",
+      "signature": "get_fold_axis_orientation(self, points)",
+      "description": "gets the fold axis orientation for evaluation points",
+      "source_file": "LoopStructural/modelling/features/fold/_fold.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._fold.FoldEvent.rot_mat",
+      "kind": "method",
+      "signature": "rot_mat(self, axis, angle)",
+      "description": "Create a rotation matrix for axis and angle",
+      "source_file": "LoopStructural/modelling/features/fold/_fold.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._foldframe.FoldFrame.calculate_fold_axis_rotation",
+      "kind": "method",
+      "signature": "calculate_fold_axis_rotation(self, feature_builder, fold_axis=None)",
+      "description": "Calculate the fold axis rotation angle by finding the angle between the\nintersection lineation and the gradient to the 1st coordinate of the\nfold frame\nParameters\n----------\nfeature_builder - GeologicalFeatureBuilder\n    - the builder for the geological feature that is folded",
+      "source_file": "LoopStructural/modelling/features/fold/_foldframe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._foldframe.FoldFrame.calculate_fold_limb_rotation",
+      "kind": "method",
+      "signature": "calculate_fold_limb_rotation(self, feature_builder, axis=None)",
+      "description": "Calculate the fold limb rotation angle using the axis specified and\nthe normals to the folded foliation\nParameters\n----------\nfeature_builder - GeologicalFeatureBuilder\n    the feature interpolator for the folded feature that has the\n    datapoints the fold limb rotation angle is\n    going to be calculated for\naxis - GeologicalFeature\n    Optional. Fold axis feature that when queried for location\n    returns the fold axis",
+      "source_file": "LoopStructural/modelling/features/fold/_foldframe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._foldframe.FoldFrame.calculate_intersection_lineation",
+      "kind": "method",
+      "signature": "calculate_intersection_lineation(self, feature_builder)",
+      "description": "Calculate the intersection lineation by finding the cross product\nbetween the first fold frame\ncoordinate and the vector representing the normal to the folded\nfoliation\nParameters\n----------\nfeature_builder - GeologicalFeatureBuilder\n    the feature builder that contains the data points that the\n    intersection lineation is calculated for",
+      "source_file": "LoopStructural/modelling/features/fold/_foldframe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._foldframe.FoldFrame.from_structural_frame",
+      "kind": "method",
+      "signature": "from_structural_frame(cls, frame, fold=None)",
+      "description": "Create a FoldFrame from an existing StructuralFrame",
+      "source_file": "LoopStructural/modelling/features/fold/_foldframe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram",
+      "kind": "class",
+      "signature": "SVariogram",
+      "description": "The SVariogram is an experimental semi-variogram.",
+      "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.calc_semivariogram",
+      "kind": "method",
+      "signature": "calc_semivariogram(self, step=None, nsteps=None, lags=None)",
+      "description": "Calculate a semi-variogram for the x and y data for this object.\nYou can specify the lags as an array or specify the step size and\nnumber of steps.\nIf neither are specified then the lags are created to be the average\nspacing of the data",
+      "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.find_wavelengths",
+      "kind": "method",
+      "signature": "find_wavelengths(self, step=None, nsteps=None, lags=None)",
+      "description": "Picks the wavelengths of the fold by finding the maximum and\nminimums of the s-variogram\nthe fold wavelength is the first minimum but it is more reliable to\nuse the first maximum\nas the estimate of the wavelength.",
+      "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._svariogram.find_peaks_and_troughs",
+      "kind": "function",
+      "signature": "find_peaks_and_troughs(x, y)",
+      "description": "Parameters\n----------\nx np.array or list\n    x axis data for plot\ny np.array or list\n    y axis data for plot\nReturns\n-------\n(np.array, np.array)\nNotes\n-----\nReturns the loations of maxima/minima on the curve using finite\ndifference forward/backwards\nfinding the change in derivative",
+      "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.fault_network.FaultNetwork.get_fault_iterators",
+      "kind": "method",
+      "signature": "get_fault_iterators(self)",
+      "description": "Returns\n-------\niterators : list\n    list of fault iterators",
+      "source_file": "LoopStructural/modelling/input/fault_network.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.fault_network.FaultNetworkIter",
+      "kind": "class",
+      "signature": "FaultNetworkIter",
+      "description": "Iterator object to return the next oldest fault in a fault network following edges",
+      "source_file": "LoopStructural/modelling/input/fault_network.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.map2loop_processor.Map2LoopProcessor.process_downthrow_direction",
+      "kind": "method",
+      "signature": "process_downthrow_direction(self, fault_properties, fault_orientations)",
+      "description": "Helper function to update the dip direction given downthrow direction",
+      "source_file": "LoopStructural/modelling/input/map2loop_processor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.contact_orientations",
+      "kind": "method",
+      "signature": "contact_orientations(self, contact_orientations)",
+      "description": "process orientation data so strike and dip are converted to normal vectors\nscale vectors as required and convert polarity",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.contacts",
+      "kind": "method",
+      "signature": "contacts(self, contacts)",
+      "description": "Function to convert input contact to loopstructural input",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.fault_orientations",
+      "kind": "method",
+      "signature": "fault_orientations(self, fault_orientations)",
+      "description": "convert fault orientation data to vectors",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.stratigraphy_cmap",
+      "kind": "method",
+      "signature": "stratigraphy_cmap(self, supergroup='supergroup_0')",
+      "description": "create a colour map for the stratigraphy scalar field\nthis is stretched to account for unit thicknesses",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.geometric_scaling_functions.contact_pts_using_geometric_scaling",
+      "kind": "function",
+      "signature": "contact_pts_using_geometric_scaling(thickness, points_df, inflation_vector)",
+      "description": "Generate contact points for an intrusion using geometric scaling parameter and the\ninflation vector to translate the points",
+      "source_file": "LoopStructural/modelling/intrusions/geometric_scaling_functions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.geometric_scaling_functions.geometric_scaling_parameters",
+      "kind": "function",
+      "signature": "geometric_scaling_parameters(intrusion_type)",
+      "description": "Get geometric scaling parameters for a given intrusion type",
+      "source_file": "LoopStructural/modelling/intrusions/geometric_scaling_functions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.geometric_scaling_functions.thickness_from_geometric_scaling",
+      "kind": "function",
+      "signature": "thickness_from_geometric_scaling(length, intrusion_type)",
+      "description": "Calculate thickness of intrusion using geometric scaling parameters",
+      "source_file": "LoopStructural/modelling/intrusions/geometric_scaling_functions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.build",
+      "kind": "method",
+      "signature": "build(self, geometric_scaling_parameters=None, **kwargs)",
+      "description": "Main building function for intrusion.\nSet up interpolators for extent calculation\nIf SGS --> Calculates variogram and simulate thresholds along frame axes",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.create_grid_for_evaluation",
+      "kind": "method",
+      "signature": "create_grid_for_evaluation(self, spacing=None)",
+      "description": "Create the grid points in which to simulate vertical and lateral",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.prepare_data",
+      "kind": "method",
+      "signature": "prepare_data(self, geometric_scaling_parameters)",
+      "description": "Prepare the data to compute distance thresholds along the frame coordinates.\nThese distance thresholds represent the contact of the intrusion.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.set_conceptual_models_parameters",
+      "kind": "method",
+      "signature": "set_conceptual_models_parameters(self)",
+      "description": "Creates a dictionary of parameters used for conceptual models.\nThese parameters includes the basic parameters for the functions\nrepresenting the conceptual models of the intrusion geometry.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.set_data_for_extent_calculation",
+      "kind": "method",
+      "signature": "set_data_for_extent_calculation(self, intrusion_data)",
+      "description": "Set data for lateral extent (distances in c2 axis)  and vertical extent (distances in c0 axis) simulation.\ncreates a copy of the data",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.set_data_for_lateral_thresholds",
+      "kind": "method",
+      "signature": "set_data_for_lateral_thresholds(self)",
+      "description": "Sets the data for the interpolation of lateral thresholds.\nComputes conceptual and residual values",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.set_data_for_vertical_thresholds",
+      "kind": "method",
+      "signature": "set_data_for_vertical_thresholds(self)",
+      "description": "Sets the data for the interpolation of the vertical thresholds.\nComputes conceptual and residual values",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.up_to_date",
+      "kind": "method",
+      "signature": "up_to_date(self, callback=None)",
+      "description": "IntrusionBuilder doesn't own a single interpolator (its geometry is\nderived from the intrusion frame's builders), so unlike BaseBuilder\nit can't check `self._interpolator.up_to_date` -- just rebuild when\nthe `_up_to_date` flag has been cleared.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_feature.IntrusionFeature",
+      "kind": "class",
+      "signature": "IntrusionFeature",
+      "description": "Intrusion feature is a class to represent an intrusion, using a distance scalar field to the intrusion contact.\nThreshold distances are simulated along the intrusion frame coordinates, and simulation are constrained\nwith conceptual geometrical model of the lateral and vertical intrusion extent.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_feature.IntrusionFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, pos)",
+      "description": "Computes a distance scalar field to the intrusion contact (isovalue = 0).",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame.IntrusionFrame",
+      "kind": "class",
+      "signature": "IntrusionFrame",
+      "description": "A StructuralFrame built specifically to parameterise an intrusion's\ncurvilinear coordinate system, so that IntrusionFrameBuilder produces a\ntype distinguishable from a generic StructuralFrame (mirroring how\nFaultBuilder produces a FaultSegment).",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.add_contact_anisotropies",
+      "kind": "method",
+      "signature": "add_contact_anisotropies(self, series_list=None, **kwargs)",
+      "description": "Currently only used in 'Shortest path algorithm' (deprecated).\nAdd to the intrusion network the anisotropies\nexploited by the intrusion (series-type geological features)\nGiven a list of series-type features, this function evaluates contact points\non each series and compute mean value and standard deviation.\nDifferent contacts of the same series are indentify using\nclustering algortihm. Mean and std deviation values will\nbe used to identify each contact thoughout the model using\nthe indicator fun",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.add_fault",
+      "kind": "method",
+      "signature": "add_fault(self, fault)",
+      "description": "Add a fault to the geological feature builder",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.add_faults_anisotropies",
+      "kind": "method",
+      "signature": "add_faults_anisotropies(self, fault_list=None)",
+      "description": "Add to the intrusion network the anisotropies likely\nexploited by the intrusion (fault-type geological features)\nGiven a list of fault features, evaluates the contact\npoints on each fault and compute mean value and standard\ndeviation. These values will be used to identify each\nfault with the indicator function.\nIf no points in the fault, assign standard mean and std dev.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.create_constraints_for_c0",
+      "kind": "method",
+      "signature": "create_constraints_for_c0(self, **kwargs)",
+      "description": "Creates a numpy array containing (x,y,z) coordinates of synthetic points located\nin the intrusion reference contact.\nThe intrusion reference contact is the one used to build c0 of the intrusion frame.\n--- Currently only works if steps OR marginal faults are present ---",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.create_grid_for_indicator_fxs",
+      "kind": "method",
+      "signature": "create_grid_for_indicator_fxs(self, spacing=None)",
+      "description": "Create the grid points in which to evaluate the indicator functions",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.get_indicator_function_points",
+      "kind": "method",
+      "signature": "get_indicator_function_points(self, ifx_type='contacts')",
+      "description": "returns the points indicated as p[art of contact or fault anisotropies.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.indicator_function_contacts",
+      "kind": "method",
+      "signature": "indicator_function_contacts(self, delta=None)",
+      "description": "Function only used for Shortest Path method (Deprecated)\nFunction to compute indicator function for list of contacts anisotropies\nFor each point of the grid, this function assignes a 1 if contact i is present, 0 otherwise.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.indicator_function_faults",
+      "kind": "method",
+      "signature": "indicator_function_faults(self, delta=None)",
+      "description": "Function to compute indicator function for list of faults anisotropies\nFor each point of the grid, this function assignes a 1 if fault i is present, 0 otherwise.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_intrusion_frame_c0_data",
+      "kind": "method",
+      "signature": "set_intrusion_frame_c0_data(self, intrusion_data)",
+      "description": "Separate data between roof and floor contacts",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_intrusion_frame_data",
+      "kind": "method",
+      "signature": "set_intrusion_frame_data(self, intrusion_frame_data)",
+      "description": "Adds the intrusion network points as coordinate 0 data for the intrusion frame",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_intrusion_frame_parameters",
+      "kind": "method",
+      "signature": "set_intrusion_frame_parameters(self, intrusion_data, intrusion_frame_parameters, **kwargs)",
+      "description": "Set variables to create intrusion network.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_intrusion_steps_parameters",
+      "kind": "method",
+      "signature": "set_intrusion_steps_parameters(self)",
+      "description": "Use intrusion contact data (reference contact for intrusion frame) to compute the parameters related to each step.\nThe parameters are the mean and std dev values of the stratigraphic units to both sides of the step.\nThese parameters are then used to add more constraints to the intrusion framce coordinate 0",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_marginal_faults_parameters",
+      "kind": "method",
+      "signature": "set_marginal_faults_parameters(self)",
+      "description": "Use intrusion contact data (reference contact for intrusion frame) to compute the parameters related to each fault.\nThe parameters are the mean and std dev values of the stratigraphic units to the hanging wall or foot wall of the fault.\nThese parameters are then used to add more constraints to the intrusion framce coordinate 0",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._api_registry.register_external_stable",
+      "kind": "function",
+      "signature": "register_external_stable(qualname, obj, tier='stable')",
+      "description": "Register a class/function LoopStructural re-exports but doesn't define.",
+      "source_file": "LoopStructural/utils/_api_registry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._surface.LoopIsosurfacer.fit",
+      "kind": "method",
+      "signature": "fit(self, values, name=None, local=False, colours=None)",
+      "description": "Extract isosurfaces from the interpolator",
+      "source_file": "LoopStructural/utils/_surface.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._transformation.EuclideanTransformation.fit",
+      "kind": "method",
+      "signature": "fit(self, points)",
+      "description": "Fit the transformation to a point cloud\nThis function will find the main eigenvector of the point cloud\nand rotate the point cloud so that this is aligned with x",
+      "source_file": "LoopStructural/utils/_transformation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._transformation.EuclideanTransformation.fit_transform",
+      "kind": "method",
+      "signature": "fit_transform(self, points)",
+      "description": "Fit the transformation and transform the points",
+      "source_file": "LoopStructural/utils/_transformation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._transformation.EuclideanTransformation.inverse_transform",
+      "kind": "method",
+      "signature": "inverse_transform(self, points)",
+      "description": "Transform points back to the original coordinate system",
+      "source_file": "LoopStructural/utils/_transformation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils._transformation.EuclideanTransformation.transform",
+      "kind": "method",
+      "signature": "transform(self, points)",
+      "description": "Transform points using the transformation and rotation",
+      "source_file": "LoopStructural/utils/_transformation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.json_encoder.LoopJSONEncoder.default",
+      "kind": "method",
+      "signature": "default(self, obj)",
+      "description": "All jsonable loop objects should have a tojson method",
+      "source_file": "LoopStructural/utils/json_encoder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.dipdipdirection2vector",
+      "kind": "function",
+      "signature": "dipdipdirection2vector(dip_direction, dip, degrees=True)",
+      "description": "Convert dip direction and dip to a vector",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.get_dip_vector",
+      "kind": "function",
+      "signature": "get_dip_vector(strike, dip)",
+      "description": "Return the dip vector based on strike and dip angles.",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.get_strike_vector",
+      "kind": "function",
+      "signature": "get_strike_vector(strike, degrees=True)",
+      "description": "Return strike direction vector(s) from strike angle(s).",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.get_vectors",
+      "kind": "function",
+      "signature": "get_vectors(normal)",
+      "description": "Find strike and dip vectors for a normal vector.\nMakes assumption the strike vector is horizontal component and the dip is vertical.\nFound by calculating strike and and dip angle and then finding the appropriate vectors",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.gradient_from_tetrahedron",
+      "kind": "function",
+      "signature": "gradient_from_tetrahedron(tetrahedron, value)",
+      "description": "Compute the gradient of values within tetrahedral elements",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.normal_vector_to_dip_and_dip_direction",
+      "kind": "function",
+      "signature": "normal_vector_to_dip_and_dip_direction(normal_vector, degrees=True)",
+      "description": "Convert from a normal vector to dip and dip direction",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.normal_vector_to_strike_and_dip",
+      "kind": "function",
+      "signature": "normal_vector_to_strike_and_dip(normal_vector, degrees=True)",
+      "description": "Convert from a normal vector to strike and dip",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.plungeazimuth2vector",
+      "kind": "function",
+      "signature": "plungeazimuth2vector(plunge, azimuth, degrees=True)",
+      "description": "Convert plunge and plunge direction to a vector",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.regular_tetraherdron_for_points",
+      "kind": "function",
+      "signature": "regular_tetraherdron_for_points(xyz, scale_parameter)",
+      "description": "Generate regular tetrahedrons centered at given 3D points.",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.rotation",
+      "kind": "function",
+      "signature": "rotation(axis, angle)",
+      "description": "Create a rotation matrix for an axis and angle",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.regions.BaseSignRegion",
+      "kind": "class",
+      "signature": "BaseSignRegion",
+      "description": "Helper class for evaluating whether you are in the positive  region of a scalar field.\nIf its outside of the support it will interpolate the average gradient at a point on the 0 isovalue\nand calculate the distance from this. Alternatively, a point and vector can be used to save computational time",
+      "source_file": "LoopStructural/utils/regions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.regions.NegativeRegion",
+      "kind": "class",
+      "signature": "NegativeRegion",
+      "description": "Helper class for evaluating whether you are in the positive  region of a scalar field.\nIf its outside of the support it will interpolate the average gradient at a point on the 0 isovalue\nand calculate the distance from this. Alternatively, a point and vector can be used to save computational time",
+      "source_file": "LoopStructural/utils/regions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.regions.PositiveRegion",
+      "kind": "class",
+      "signature": "PositiveRegion",
+      "description": "Helper class for evaluating whether you are in the positive  region of a scalar field.\nIf its outside of the support it will interpolate the average gradient at a point on the 0 isovalue\nand calculate the distance from this. Alternatively, a point and vector can be used to save computational time",
+      "source_file": "LoopStructural/utils/regions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.utils.read_voxet",
+      "kind": "function",
+      "signature": "read_voxet(voxetname, propertyfile)",
+      "description": "Read a GOCAD property file and the geometry information from the .vo file.",
+      "source_file": "LoopStructural/utils/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.utils.strike_symbol",
+      "kind": "function",
+      "signature": "strike_symbol(strike)",
+      "description": "Create rotation vectors for geological strike symbols.",
+      "source_file": "LoopStructural/utils/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.utils.write_property_to_gocad_voxet",
+      "kind": "function",
+      "signature": "write_property_to_gocad_voxet(propertyfilename, propertyvalues)",
+      "description": "Write a numpy array to a GOCAD voxet property file format.",
+      "source_file": "LoopStructural/utils/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core._feature_registry.FeatureBuilderRegistry.create",
+      "kind": "method",
+      "signature": "create(cls, feature_type, model, name, **params)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/core/_feature_registry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicColumn.plot",
+      "kind": "method",
+      "signature": "plot(self, ax, **kwargs)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.model",
+      "kind": "method",
+      "signature": "model(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.model",
+      "kind": "method",
+      "signature": "model(self, model)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.model",
+      "kind": "method",
+      "signature": "model(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.model",
+      "kind": "method",
+      "signature": "model(self, model)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.feature",
+      "kind": "method",
+      "signature": "feature(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.model",
+      "kind": "method",
+      "signature": "model(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.model",
+      "kind": "method",
+      "signature": "model(self, model)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._base_builder.BaseBuilder.name",
+      "kind": "method",
+      "signature": "name(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_base_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.interpolator",
+      "kind": "method",
+      "signature": "interpolator(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.interpolator",
+      "kind": "method",
+      "signature": "interpolator(self, interpolator)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.FaultDisplacement.plot",
+      "kind": "method",
+      "signature": "plot(self, range=(-1, 1), axs=None)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.FaultProfileFunction.plot",
+      "kind": "method",
+      "signature": "plot(self, ax=None)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.maximum",
+      "kind": "method",
+      "signature": "maximum(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.maximum",
+      "kind": "method",
+      "signature": "maximum(self, maximum)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.origin",
+      "kind": "method",
+      "signature": "origin(self)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.origin",
+      "kind": "method",
+      "signature": "origin(self, origin)",
+      "description": "",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.helper.feature_name",
+      "kind": "function",
+      "signature": "feature_name()",
+      "description": "",
+      "source_file": "LoopStructural/utils/helper.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_grose2017",
+      "kind": "function",
+      "signature": "load_grose2017()",
+      "description": "Model dataset for Cape Conran",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_grose2019",
+      "kind": "function",
+      "signature": "load_grose2019()",
+      "description": "Model dataset for Davenport ranges",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_horizontal",
+      "kind": "function",
+      "signature": "load_horizontal()",
+      "description": "Synthetic model for horizontal layers",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_horizontal_v",
+      "kind": "function",
+      "signature": "load_horizontal_v(v=0.5)",
+      "description": "Synthetic model for horizontal layers",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_intrusion",
+      "kind": "function",
+      "signature": "load_intrusion()",
+      "description": "Model dataset for a faulted intrusion",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.datasets._base.load_laurent2016",
+      "kind": "function",
+      "signature": "load_laurent2016()",
+      "description": "Model dataset for refolded fold",
+      "source_file": "LoopStructural/datasets/_base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.export.file_formats.FileFormat",
+      "kind": "class",
+      "signature": "FileFormat",
+      "description": "Enumeration of file export formats",
+      "source_file": "LoopStructural/export/file_formats.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.fault_topology.FaultTopology.add_fault",
+      "kind": "method",
+      "signature": "add_fault(self, fault)",
+      "description": "Adds a fault to the fault topology.",
+      "source_file": "LoopStructural/modelling/core/fault_topology.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.create_and_add_fault",
+      "kind": "method",
+      "signature": "create_and_add_fault(self, fault_name, displacement, index, data, interpolatortype, tol, fault_slip_vector, fault_normal_vector, fault_center, major_axis, minor_axis, intermediate_axis, faultfunction, faults, force_mesh_geometry, points, fault_buffer, fault_trace_anisotropy, fault_dip, fault_dip_anisotropy, fault_pitch, **kwargs)",
+      "description": "Create a fault and add it to the model.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.fault_names",
+      "kind": "method",
+      "signature": "fault_names(self)",
+      "description": "Get name of all faults in the model",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.from_file",
+      "kind": "method",
+      "signature": "from_file(cls, file, allow_pickle=True)",
+      "description": "Load a geological model from file",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.geological_model.GeologicalModel.save_recipe",
+      "kind": "method",
+      "signature": "save_recipe(self, filename, data_reference=None)",
+      "description": "Save the recipe to a JSON file.",
+      "source_file": "LoopStructural/modelling/core/geological_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.id",
+      "kind": "method",
+      "signature": "id(self)",
+      "description": "Get the numeric identifier of the unit.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.core.stratigraphic_column.StratigraphicUnit.thickness",
+      "kind": "method",
+      "signature": "thickness(self)",
+      "description": "Get the thickness of the unit.",
+      "source_file": "LoopStructural/modelling/core/stratigraphic_column.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature",
+      "kind": "class",
+      "signature": "BaseFeature",
+      "description": "Base class for geological features.",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.copy",
+      "kind": "method",
+      "signature": "copy(self, name=None)",
+      "description": "Copy the feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.get_data",
+      "kind": "method",
+      "signature": "get_data(self, value_map=None)",
+      "description": "Get the data for the feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._base_geological_feature.BaseFeature.vector_field",
+      "kind": "method",
+      "signature": "vector_field(self, bounding_box=None, tolerance=0.05, scale=1.0)",
+      "description": "Create a vector field for the feature",
+      "source_file": "LoopStructural/modelling/features/_base_geological_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features._structural_frame.StructuralFrame.get_feature",
+      "kind": "method",
+      "signature": "get_feature(self, i)",
+      "description": "Return the ith feature",
+      "source_file": "LoopStructural/modelling/features/_structural_frame.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._fault_builder.FaultBuilder.add_fault_dip_anisotropy",
+      "kind": "method",
+      "signature": "add_fault_dip_anisotropy(self, w=1.0)",
+      "description": "Add fault dip anisotropy to the model.",
+      "source_file": "LoopStructural/modelling/features/builders/_fault_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._fault_builder.FaultBuilder.set_mesh_geometry",
+      "kind": "method",
+      "signature": "set_mesh_geometry(self, buffer, rotation)",
+      "description": "set the mesh geometry",
+      "source_file": "LoopStructural/modelling/features/builders/_fault_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_gradient_constraints",
+      "kind": "method",
+      "signature": "get_gradient_constraints(self)",
+      "description": "Get the gradient direction constraints",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_norm_constraints",
+      "kind": "method",
+      "signature": "get_norm_constraints(self)",
+      "description": "Get the gradient norm constraints",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_orientation_constraints",
+      "kind": "method",
+      "signature": "get_orientation_constraints(self)",
+      "description": "Get the orientation constraints",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.builders._geological_feature_builder.GeologicalFeatureBuilder.get_tangent_constraints",
+      "kind": "method",
+      "signature": "get_tangent_constraints(self)",
+      "description": "Returns\n-------\nnumpy array",
+      "source_file": "LoopStructural/modelling/features/builders/_geological_feature_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.add_cstr",
+      "kind": "method",
+      "signature": "add_cstr(self, x, y)",
+      "description": "Add a constraint to the cubic function",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_function.CubicFunction.to_dict",
+      "kind": "method",
+      "signature": "to_dict(self)",
+      "description": "Export the function to a dictionary",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_function.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.apply_to_points",
+      "kind": "method",
+      "signature": "apply_to_points(self, points, reverse=False, precomputed_gx=None)",
+      "description": "Unfault the array of points",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.evaluate",
+      "kind": "method",
+      "signature": "evaluate(self, locations)",
+      "description": "Evaluate which side of fault",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.save",
+      "kind": "method",
+      "signature": "save(self, filename, scalar_field=True, slip_vector=True, surface=True)",
+      "description": "Save the fault to a file",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fault._fault_segment.FaultSegment.set_model",
+      "kind": "method",
+      "signature": "set_model(self, model)",
+      "description": "Link a geological model to the feature",
+      "source_file": "LoopStructural/modelling/features/fault/_fault_segment.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._fold_rotation_angle_feature.FoldRotationAngleFeature.evaluate_value",
+      "kind": "method",
+      "signature": "evaluate_value(self, location)",
+      "description": "Parameters\n----------\nlocation",
+      "source_file": "LoopStructural/modelling/features/fold/_fold_rotation_angle_feature.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.features.fold._svariogram.SVariogram.initialise_lags",
+      "kind": "method",
+      "signature": "initialise_lags(self, step=None, nsteps=None)",
+      "description": "Initialise the lags for the s-variogram",
+      "source_file": "LoopStructural/modelling/features/fold/_svariogram.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.fault_network.FaultNetwork.add_connection",
+      "kind": "method",
+      "signature": "add_connection(self, fault1, fault2, properties=None)",
+      "description": "fault 1 is younger than fault2",
+      "source_file": "LoopStructural/modelling/input/fault_network.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.input.process_data.ProcessInputData.fault_locations",
+      "kind": "method",
+      "signature": "fault_locations(self, fault_locations)",
+      "description": "Convert fault traces into input",
+      "source_file": "LoopStructural/modelling/input/process_data.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_builder.IntrusionBuilder.create_geometry_using_geometric_scaling",
+      "kind": "method",
+      "signature": "create_geometry_using_geometric_scaling(self, geometric_scaling_parameters, reference_contact_data)",
+      "description": "Not currently implemented.",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.modelling.intrusions.intrusion_frame_builder.IntrusionFrameBuilder.set_model",
+      "kind": "method",
+      "signature": "set_model(self, model)",
+      "description": "Link a geological model to the feature",
+      "source_file": "LoopStructural/modelling/intrusions/intrusion_frame_builder.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.colours.random_colour",
+      "kind": "function",
+      "signature": "random_colour(n=1, cmap='tab20')",
+      "description": "Generate a list of random colours",
+      "source_file": "LoopStructural/utils/colours.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.colours.random_hex_colour",
+      "kind": "function",
+      "signature": "random_hex_colour(n=1, cmap='tab20')",
+      "description": "Generate a list of random colours",
+      "source_file": "LoopStructural/utils/colours.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.config.LoopStructuralConfig",
+      "kind": "class",
+      "signature": "LoopStructuralConfig",
+      "description": "Class to store configuration settings.",
+      "source_file": "LoopStructural/utils/config.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.helper.get_data_bounding_box",
+      "kind": "function",
+      "signature": "get_data_bounding_box(xyz, buffer)",
+      "description": "Parameters\n----------\nxyz\nbuffer",
+      "source_file": "LoopStructural/utils/helper.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.helper.get_data_bounding_box_map",
+      "kind": "function",
+      "signature": "get_data_bounding_box_map(xyz, buffer)",
+      "description": "Parameters\n----------\nxyz\nbuffer",
+      "source_file": "LoopStructural/utils/helper.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.rotate",
+      "kind": "function",
+      "signature": "rotate(vector, axis, angle)",
+      "description": "Rotate a vector about an axis",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "LoopStructural.utils.maths.strikedip2vector",
+      "kind": "function",
+      "signature": "strikedip2vector(strike, dip)",
+      "description": "Convert strike and dip to a vector",
+      "source_file": "LoopStructural/utils/maths.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

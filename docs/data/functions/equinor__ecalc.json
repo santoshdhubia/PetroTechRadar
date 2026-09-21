@@ -1,0 +1,2700 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/ecalc",
+  "language": "Python",
+  "function_count": 224,
+  "functions": [
+    {
+      "name": "ecalc_neqsim_wrapper.methods",
+      "kind": "function",
+      "signature": "methods(check_class)",
+      "description": "Print list of available methods for a java class",
+      "source_file": "src/ecalc_neqsim_wrapper/__init__.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "ecalc_cli.commands.selftest.selftest",
+      "kind": "function",
+      "signature": "selftest()",
+      "description": "Did eCalc install successfully? Go through a number of checkpoints and let user know what is ok and what is not.",
+      "source_file": "src/ecalc_cli/commands/selftest.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.feature_flags.Feature",
+      "kind": "class",
+      "signature": "Feature",
+      "description": "Class with utils for handling new (beta) and old (deprecated) features in a safe and communicative way.",
+      "source_file": "src/libecalc/common/decorators/feature_flags.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ecalc_cli.main.main",
+      "kind": "function",
+      "signature": "main()",
+      "description": "Main function to start the CLI.",
+      "source_file": "src/ecalc_cli/main.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ecalc_cli.commands.run.validate_arguments",
+      "kind": "function",
+      "signature": "validate_arguments(model_file, output_folder)",
+      "description": "Helper function used to validate the CLI run command arguments.",
+      "source_file": "src/ecalc_cli/commands/run.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.commands.show.show_yaml",
+      "kind": "function",
+      "signature": "show_yaml(model_file=typer.Argument(..., help='YAML file specifying time series inputs, facility inputs and the relationship between energy consumers.'), output_file=typer.Option(None, '--file', help='Write the data to a file with the specified name.'))",
+      "description": "Show yaml model. This will show the yaml after processing !include.",
+      "source_file": "src/ecalc_cli/commands/show.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.emission_intensity.EmissionIntensityCalculator.get_results",
+      "kind": "method",
+      "signature": "get_results(self)",
+      "description": "Calculate emission intensity results based on hydrocarbon export and emissions data.",
+      "source_file": "src/ecalc_cli/emission_intensity.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.errors.EcalcCLIError",
+      "kind": "class",
+      "signature": "EcalcCLIError",
+      "description": "Placeholder for user-facing exception handling. TODO: Add sanitation.",
+      "source_file": "src/ecalc_cli/errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.export_tsv",
+      "kind": "function",
+      "signature": "export_tsv(config, suffix, frequency, name_prefix, output_folder, model)",
+      "description": "Create tab-separated-values(tsv) file with eCalc model results.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.write_json",
+      "kind": "function",
+      "signature": "write_json(results, output_folder, name_prefix, run_info, date_format_option, simple_output)",
+      "description": "Create json of eCalc run results and write to file.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.write_output",
+      "kind": "function",
+      "signature": "write_output(output, output_file=None)",
+      "description": "Write output of eCalc run to either file, or to sys.stdout, if not specified.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.logger.CLILogConfigurator.set_log_path",
+      "kind": "method",
+      "signature": "set_log_path(self, log_path)",
+      "description": "Args:\n    log_path: Path to desired log file location.",
+      "source_file": "src/ecalc_cli/logger.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.logger.CLILogConfigurator.set_loglevel",
+      "kind": "method",
+      "signature": "set_loglevel(self, log_level)",
+      "description": "Args:\n    log_level: Desired log level for logger.",
+      "source_file": "src/ecalc_cli/logger.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.main.argument_callback",
+      "kind": "function",
+      "signature": "argument_callback(log_level=typer.Option(LogLevel.INFO.value, '--log', help='Set the loglevel.'), log_folder=typer.Option(None, '--log-folder', help='Store log files in a folder'), version=typer.Option(None, '--version', help='Show current eCalc™ version.', callback=version_callback))",
+      "description": "Args:\n    log_level: Log level of the CLI logger, defaults to INFO\n    log_folder: Path to location of log files\n    version: Option to show libecalc version.",
+      "source_file": "src/ecalc_cli/main.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.main.version_callback",
+      "kind": "function",
+      "signature": "version_callback(value)",
+      "description": "Typer helper function to print current version of libecalc.",
+      "source_file": "src/ecalc_cli/main.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheConfig",
+      "kind": "class",
+      "signature": "CacheConfig",
+      "description": "Configuration for NeqSimFluidService caches.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheName",
+      "kind": "class",
+      "signature": "CacheName",
+      "description": "Registry of all cache names used in ecalc.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService",
+      "kind": "class",
+      "signature": "CacheService",
+      "description": "Central registry for application caches.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService.clear_all",
+      "kind": "method",
+      "signature": "clear_all(cls)",
+      "description": "Clear all registered caches. Called on JVM shutdown.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService.get_all_stats",
+      "kind": "method",
+      "signature": "get_all_stats(cls)",
+      "description": "Get stats from all caches for monitoring.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.LRUCache",
+      "kind": "class",
+      "signature": "LRUCache",
+      "description": "Thread-safe LRU cache with statistics tracking.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.LRUCache.clear",
+      "kind": "method",
+      "signature": "clear(self)",
+      "description": "Clear all cached entries and reset statistics.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.LRUCache.get",
+      "kind": "method",
+      "signature": "get(self, key)",
+      "description": "Get value from cache, returns None if not found.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.exceptions.NeqsimComponentError",
+      "kind": "class",
+      "signature": "NeqsimComponentError",
+      "description": "Error raised when there's an issue with component handling in NeqSim",
+      "source_file": "src/ecalc_neqsim_wrapper/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.exceptions.NeqsimFlashCalculationError",
+      "kind": "class",
+      "signature": "NeqsimFlashCalculationError",
+      "description": "Error raised when a NeqSim flash calculation fails or returns an unusable state.",
+      "source_file": "src/ecalc_neqsim_wrapper/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.exceptions.NeqsimPhaseError",
+      "kind": "class",
+      "signature": "NeqsimPhaseError",
+      "description": "Error raised when there's an issue with phase handling in NeqSim",
+      "source_file": "src/ecalc_neqsim_wrapper/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService",
+      "kind": "class",
+      "signature": "NeqSimFluidService",
+      "description": "Centralized service for all thermodynamic operations with global caching.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.create_fluid",
+      "kind": "method",
+      "signature": "create_fluid(self, fluid_model, pressure_bara, temperature_kelvin)",
+      "description": "Create a Fluid at specified conditions via TP flash.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.create_stream_from_standard_rate",
+      "kind": "method",
+      "signature": "create_stream_from_standard_rate(self, fluid_model, pressure_bara, temperature_kelvin, standard_rate_m3_per_day)",
+      "description": "Create a fluid stream from standard volumetric rate.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.flash_ph",
+      "kind": "method",
+      "signature": "flash_ph(self, fluid_model, pressure_bara, target_enthalpy_joule_per_kg, temperature_guess_kelvin=None)",
+      "description": "PH flash to target pressure and enthalpy.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.flash_pt",
+      "kind": "method",
+      "signature": "flash_pt(self, fluid_model, pressure_bara, temperature_kelvin)",
+      "description": "TP flash returning fluid properties at specified conditions.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.instance",
+      "kind": "method",
+      "signature": "instance(cls)",
+      "description": "Get the singleton instance of the service.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.mass_rate_to_standard_rate",
+      "kind": "method",
+      "signature": "mass_rate_to_standard_rate(self, fluid_model, mass_rate_kg_per_h)",
+      "description": "Convert mass rate (kg/h) to standard volumetric rate (Sm3/day).",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.remove_liquid",
+      "kind": "method",
+      "signature": "remove_liquid(self, fluid)",
+      "description": "Remove liquid phase from fluid, returning gas-phase only.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.reset_instance",
+      "kind": "method",
+      "signature": "reset_instance(cls)",
+      "description": "Reset the singleton instance and configuration. Useful for testing.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.standard_rate_to_mass_rate",
+      "kind": "method",
+      "signature": "standard_rate_to_mass_rate(self, fluid_model, standard_rate_m3_per_day)",
+      "description": "Convert standard volumetric rate to mass rate (kg/h).",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.get_fluid_service_stats",
+      "kind": "function",
+      "signature": "get_fluid_service_stats()",
+      "description": "Get cache statistics for the fluid service caches.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimJPypeService",
+      "kind": "class",
+      "signature": "NeqsimJPypeService",
+      "description": "New version of NeqsimService using JPype, via JNeqsim\nImplemented by Neqsim Team",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimPy4JService",
+      "kind": "class",
+      "signature": "NeqsimPy4JService",
+      "description": "Legacy version of NeqsimService using Py4J\nImplemented by eCalc Team",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimPy4JService.shutdown",
+      "kind": "method",
+      "signature": "shutdown(self)",
+      "description": "Exposed as public method for testing only. In production code use context manager.",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimService.configure_py4j",
+      "kind": "method",
+      "signature": "configure_py4j(cls, config)",
+      "description": "Configure Py4J JVM settings before first use.",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimService.factory",
+      "kind": "method",
+      "signature": "factory(use_jpype=False)",
+      "description": "Factory method to create NeqsimService instance\nArgs:\n    use_jpype: If True, use JPype implementation, otherwise use legacy Py4J implementation",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.NeqsimService.reset_py4j_config",
+      "kind": "method",
+      "signature": "reset_py4j_config(cls)",
+      "description": "Reset the Py4J configuration. Useful for testing.",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.mappings.NeqsimComposition",
+      "kind": "class",
+      "signature": "NeqsimComposition",
+      "description": "Representation of a fluid composition in NeqSim format with named fields.",
+      "source_file": "src/ecalc_neqsim_wrapper/mappings.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.mappings.NeqsimComposition.items",
+      "kind": "method",
+      "signature": "items(self)",
+      "description": "Return a list of component names and their values.",
+      "source_file": "src/ecalc_neqsim_wrapper/mappings.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.mappings.map_fluid_composition_from_neqsim",
+      "kind": "function",
+      "signature": "map_fluid_composition_from_neqsim(neqsim_composition)",
+      "description": "Map the fluid composition from NeqSim format to eCalc format.",
+      "source_file": "src/ecalc_neqsim_wrapper/mappings.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.clone_gas_phase",
+      "kind": "method",
+      "signature": "clone_gas_phase(self)",
+      "description": "Clone this fluid, extracting only the gas phase.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.create_thermo_system",
+      "kind": "method",
+      "signature": "create_thermo_system(cls, composition, temperature_kelvin=STANDARD_TEMPERATURE_KELVIN, pressure_bara=STANDARD_PRESSURE_BARA, eos_model=EoSModel.SRK, mixing_rule=NEQSIM_MIXING_RULE)",
+      "description": "Initiates a NeqsimFluid that wraps both a Neqsim thermodynamic system and operations.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.json",
+      "kind": "method",
+      "signature": "json(self)",
+      "description": "An attempt to jsonify a dump of the internal NeqSim state for a given composition and properties. If it fails, an empty\nstring is returned.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.kappa",
+      "kind": "method",
+      "signature": "kappa(self)",
+      "description": "We use the non-real (ideal kappa) as used in NeqSim Compressor Chart modelling.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.set_new_pressure_and_temperature",
+      "kind": "method",
+      "signature": "set_new_pressure_and_temperature(self, new_pressure_bara, new_temperature_kelvin)",
+      "description": "TP flash to new pressure and temperature.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.volume",
+      "kind": "method",
+      "signature": "volume(self)",
+      "description": "Parameter needed for Schulz enthalpy calculations.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluidComponent",
+      "kind": "class",
+      "signature": "NeqsimFluidComponent",
+      "description": "A representation of a NeqSim Fluid Component. As a part of a composition. A\ngas or fluid, its amount and unit.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluidProperty",
+      "kind": "class",
+      "signature": "NeqsimFluidProperty",
+      "description": "A representation of a NeqSim Fluid Property. This is normally reused for the same composition\nfor many different properties. It may contain numbers and strings.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluidState",
+      "kind": "class",
+      "signature": "NeqsimFluidState",
+      "description": "A representation of a NeqSim Fluid State for a given composition and properties",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.get_GERG2008_properties",
+      "kind": "function",
+      "signature": "get_GERG2008_properties(thermodynamic_system)",
+      "description": "Getting the GERG2008 properties from NeqSim returns a list of the properties\nThis method is to help mapping these to the correct names.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.mix_neqsim_streams",
+      "kind": "function",
+      "signature": "mix_neqsim_streams(stream_composition_1, stream_composition_2, mass_rate_stream_1, mass_rate_stream_2, pressure, temperature, eos_model=EoSModel.SRK)",
+      "description": "Simplified mixing of two streams by component-wise molar balance.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_json_schema.generate_json_schema_reference",
+      "kind": "function",
+      "signature": "generate_json_schema_reference()",
+      "description": "Generate JSON schema and write to stdout",
+      "source_file": "src/generate_json_schema.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode",
+      "kind": "class",
+      "signature": "DocNode",
+      "description": "Represents a single node in the YAML configuration documentation tree.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode.description",
+      "kind": "method",
+      "signature": "description(self)",
+      "description": "Human-readable description from the pydantic field.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode.has_default_factory",
+      "kind": "method",
+      "signature": "has_default_factory(self)",
+      "description": "Whether this field uses a default_factory.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode.is_required",
+      "kind": "method",
+      "signature": "is_required(self)",
+      "description": "Whether this field is required (no default value).",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode.title",
+      "kind": "method",
+      "signature": "title(self)",
+      "description": "The YAML key title (from field_info.title, or uppercased name).",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.Example",
+      "kind": "class",
+      "signature": "Example",
+      "description": "An example YAML snippet associated with a path in the documentation tree.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.ExampleRegistry",
+      "kind": "class",
+      "signature": "ExampleRegistry",
+      "description": "Provides lookup of examples by path, and determines which fields should\nbe abbreviated with ellipsis in parent examples.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.ExampleRegistry.child_paths_for",
+      "kind": "method",
+      "signature": "child_paths_for(self, path)",
+      "description": "Get all registered paths that are descendants of the given path.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.ExampleRegistry.has_child_examples",
+      "kind": "method",
+      "signature": "has_child_examples(self, path)",
+      "description": "Check if any registered example is a descendant of this path.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.ExampleRegistry.render_example",
+      "kind": "method",
+      "signature": "render_example(self, path)",
+      "description": "Render the YAML example for a path.\nIf the example has child examples registered, those fields get '...' in the output.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.build_tree",
+      "kind": "function",
+      "signature": "build_tree(model, include_fields=None, _depth=0, _seen=None)",
+      "description": "Recursively build a documentation tree from a pydantic BaseModel.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.build_yaml_asset_tree",
+      "kind": "function",
+      "signature": "build_yaml_asset_tree(include_fields)",
+      "description": "Build a documentation tree for selected YamlAsset sections.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.generate_energy_markdown",
+      "kind": "function",
+      "signature": "generate_energy_markdown()",
+      "description": "Generate the energy network reference document.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.generate_process_markdown",
+      "kind": "function",
+      "signature": "generate_process_markdown()",
+      "description": "Generate the process reference document.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.render_tree",
+      "kind": "function",
+      "signature": "render_tree(nodes, depth=2, path='', max_sidebar_depth=6, registry=None)",
+      "description": "Render a list of DocNode into markdown text with heading hierarchy.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.ddd.value_object.value_object",
+      "kind": "function",
+      "signature": "value_object(cls)",
+      "description": "Basically 1. Telling typechecker which guarantees this decorator gives and 2. Construct the class that\ndoes exactly that.",
+      "source_file": "src/libecalc/common/ddd/value_object.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.capturer.Capturer",
+      "kind": "class",
+      "signature": "Capturer",
+      "description": "Decorator to capture values from a decorated function and optionally save to file",
+      "source_file": "src/libecalc/common/decorators/capturer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.capturer.Capturer.capture_return_values",
+      "kind": "method",
+      "signature": "capture_return_values(do_save_captured_content=False, output_directory=Path(os.getcwd()) / 'captured_data')",
+      "description": "If enabled, save the return values from decorated function to the given output directory. If disabled,\nthe function works as if the decorator is not there.",
+      "source_file": "src/libecalc/common/decorators/capturer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.capturer.Jsonable",
+      "kind": "class",
+      "signature": "Jsonable",
+      "description": "Protocol to make sure that functions that are decorated for capture\ncan be serialized to json through the json() method",
+      "source_file": "src/libecalc/common/decorators/capturer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.capturer.save",
+      "kind": "function",
+      "signature": "save(output_directory, content)",
+      "description": "A function to save serializable content. Each time this function is\ncalled the name of the file that data is dumped to (which is an integer) will be incremented with 1.\nE.g. file number one will be given the name 1.json, number two; 2.json and so on.",
+      "source_file": "src/libecalc/common/decorators/capturer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.feature_flags.Feature.deprecated",
+      "kind": "method",
+      "signature": "deprecated(message)",
+      "description": "Flag for handling deprecated features\nArgs:\n    message: Info about deprecation of feature, and (if available) instructions on usage of replacement.",
+      "source_file": "src/libecalc/common/decorators/feature_flags.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.feature_flags.Feature.experimental",
+      "kind": "method",
+      "signature": "experimental(feature_description)",
+      "description": "Flag for experimental/beta features\nArgs:\n    feature_description: Description of new feature.",
+      "source_file": "src/libecalc/common/decorators/feature_flags.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.feature_flags.FeatureToggle",
+      "kind": "class",
+      "signature": "FeatureToggle",
+      "description": "Decorator to handle 2 paths, depending on whether toggle is on or off.",
+      "source_file": "src/libecalc/common/decorators/feature_flags.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.feature_flags.FeatureToggle.experimental",
+      "kind": "method",
+      "signature": "experimental(feature_toggle, fallback)",
+      "description": "If feature_toggle is true, call current (experimental) method, if false fallback to old method.",
+      "source_file": "src/libecalc/common/decorators/feature_flags.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.discriminator_fallback.DiscriminatorWithFallback",
+      "kind": "function",
+      "signature": "DiscriminatorWithFallback(discriminator_alias, discriminator_fallback)",
+      "description": "Use if one of the objects in the Union does not contain the discriminator.",
+      "source_file": "src/libecalc/common/discriminator_fallback.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.DifferentLengthsError",
+      "kind": "class",
+      "signature": "DifferentLengthsError",
+      "description": "The data provided has incompatible lengths.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.IllegalStateException",
+      "kind": "class",
+      "signature": "IllegalStateException",
+      "description": "This exception should hopefully never occur, and indicates a bug in the code.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.IncompatibleDataError",
+      "kind": "class",
+      "signature": "IncompatibleDataError",
+      "description": "The data provided by the user is invalid.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.MissingKeyError",
+      "kind": "class",
+      "signature": "MissingKeyError",
+      "description": "The data provided is missing a required key.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.ProgrammingError",
+      "kind": "class",
+      "signature": "ProgrammingError",
+      "description": "The eCalc library has caused an error, and reached an invalid state. Likely a bug.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.graph.Graph.breadth_first_search_tree",
+      "kind": "method",
+      "signature": "breadth_first_search_tree(self, source_id)",
+      "description": "Create a tree with source as root by searching edges close to the source first. Breadth first orders the nodes\nthat are closer to the source before nodes that are further out.",
+      "source_file": "src/libecalc/common/graph.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.interpolation.setup_interpolator",
+      "kind": "function",
+      "signature": "setup_interpolator(variables, function_values, fill_value=np.nan, bounds_error=False, rescale=True)",
+      "description": "Dispatcher for 1D or N-dimensional interpolation.",
+      "source_file": "src/libecalc/common/interpolation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.interpolation.setup_interpolator_1d",
+      "kind": "function",
+      "signature": "setup_interpolator_1d(variable, function_values, fill_value=np.nan, bounds_error=False)",
+      "description": "Create a 1D interpolator for given variable and function values.",
+      "source_file": "src/libecalc/common/interpolation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.interpolation.setup_interpolator_n_dimensional",
+      "kind": "function",
+      "signature": "setup_interpolator_n_dimensional(variables, function_values, fill_value=np.nan, rescale=True)",
+      "description": "Create an N-dimensional linear interpolator for given variables and function values.",
+      "source_file": "src/libecalc/common/interpolation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.adjustment.transform_linear",
+      "kind": "function",
+      "signature": "transform_linear(values, constant=0.0, factor=1.0)",
+      "description": "Linear transformation of an array. May typically be used for energy functions to adjust a result\naccording to given energy_usage_adjustment_constant and energy_usage_adjustment_factor.",
+      "source_file": "src/libecalc/common/list/adjustment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.list_utils.array_to_list",
+      "kind": "function",
+      "signature": "array_to_list(result_array)",
+      "description": "Method to convert numpy arrays and list of numpy arrays into lists (or list of lists). Method is used recursively on lists so needs to handle None as well.",
+      "source_file": "src/libecalc/common/list/list_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.list_utils.group_data_by_value_at_index",
+      "kind": "function",
+      "signature": "group_data_by_value_at_index(index, row_based_data)",
+      "description": "Given an index of the list, group the list by the value corresponding to that index and\nreturn a dict with lists, where the keys correspond to the different values at the index provided.",
+      "source_file": "src/libecalc/common/list/list_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.list_utils.transpose",
+      "kind": "function",
+      "signature": "transpose(a)",
+      "description": "Easily transpose from row based to column based data, and other\nway around, in order to use the format that best fits a certain\npurpose to work with such a list/dataframe.",
+      "source_file": "src/libecalc/common/list/list_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.math.math_utils.MathUtil.elementwise_subtraction_by_key",
+      "kind": "method",
+      "signature": "elementwise_subtraction_by_key(this, that)",
+      "description": "For compatible dicts, with the same keys, subtract corresponding numbers in lists for each key\n:param this:\n:param that:\n:return:    a dict containing the delta/subtraction of each value for corresponding key.",
+      "source_file": "src/libecalc/common/math/math_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.math.numbers.Numbers",
+      "kind": "class",
+      "signature": "Numbers",
+      "description": "Class to handle eCalc specific logic to numbers.",
+      "source_file": "src/libecalc/common/math/numbers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.math.numbers.Numbers.format_results_to_precision",
+      "kind": "method",
+      "signature": "format_results_to_precision(result, precision)",
+      "description": "Traverse the graph_results, locate all numbers and round to the specified precision",
+      "source_file": "src/libecalc/common/math/numbers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.math.numbers.Numbers.format_to_precision",
+      "kind": "method",
+      "signature": "format_to_precision(number, precision)",
+      "description": "This method is currently only to format numbers for consistent\nreporting, and hence a string is returned, and not the number\nprimitive.",
+      "source_file": "src/libecalc/common/math/numbers.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.numeric_methods.DampState",
+      "kind": "class",
+      "signature": "DampState",
+      "description": "Holds state for adaptive under‑relaxation across iterations.",
+      "source_file": "src/libecalc/common/numeric_methods.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.numeric_methods.adaptive_pressure_update",
+      "kind": "function",
+      "signature": "adaptive_pressure_update(p_prev, p_raw, state)",
+      "description": "Return damped pressure and update state.",
+      "source_file": "src/libecalc/common/numeric_methods.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.numeric_methods.find_root",
+      "kind": "function",
+      "signature": "find_root(lower_bound, upper_bound, func, relative_convergence_tolerance=CONVERGENCE_TOLERANCE, maximum_number_of_iterations=MAXIMUM_NUMBER_OF_ITERATIONS)",
+      "description": "Root finding using scipy´s implementation of the brenth method.",
+      "source_file": "src/libecalc/common/numeric_methods.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.numeric_methods.maximize_x_given_boolean_condition_function",
+      "kind": "function",
+      "signature": "maximize_x_given_boolean_condition_function(x_min, x_max, bool_func, convergence_tolerance=CONVERGENCE_TOLERANCE, maximum_number_of_iterations=MAXIMUM_NUMBER_OF_ITERATIONS)",
+      "description": "Binary search until we reach the maximum x value constrained by x_min and x_max\nwhere we have a boolean constraint condition given as a function.",
+      "source_file": "src/libecalc/common/numeric_methods.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.numeric_methods.secant_method",
+      "kind": "function",
+      "signature": "secant_method(x0, x1, func, convergence_tolerance=CONVERGENCE_TOLERANCE, maximum_number_of_iterations=MAXIMUM_NUMBER_OF_ITERATIONS, bounded_to_input_x_interval=True)",
+      "description": "Keeping for now as fallback for root finding method above.",
+      "source_file": "src/libecalc/common/numeric_methods.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.priority_optimizer.PriorityOptimizer.optimize",
+      "kind": "method",
+      "signature": "optimize(self, priorities, evaluator)",
+      "description": "Given a list of priorities, evaluate each priority using the evaluator. If the result of an evaluation is valid\nthe priority is selected, if invalid try the next priority.",
+      "source_file": "src/libecalc/common/priority_optimizer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.run_info.RunInfo",
+      "kind": "class",
+      "signature": "RunInfo",
+      "description": "Data model for metadata about eCalc model runs.",
+      "source_file": "src/libecalc/common/run_info.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.string.string_utils.generate_id",
+      "kind": "function",
+      "signature": "generate_id(*args)",
+      "description": "Deprecated: When names were not unique, this was necessary in order to make names unique based on context/hierarchy. Now names should\nbe unique for any part of the eCalc model that supports names, and it should therefore not be needed any more.",
+      "source_file": "src/libecalc/common/string/string_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.string.string_utils.to_camel_case",
+      "kind": "function",
+      "signature": "to_camel_case(string)",
+      "description": "Convert string from snake_case to camelCase",
+      "source_file": "src/libecalc/common/string/string_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.temporal_model.TemporalModel",
+      "kind": "class",
+      "signature": "TemporalModel",
+      "description": "If data has datetime keys, convert to Period keys",
+      "source_file": "src/libecalc/common/temporal_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Frequency",
+      "kind": "class",
+      "signature": "Frequency",
+      "description": "Represents frequency/resolution of output data\nUsing the offset aliases from pandas\nYS: year start\nMS: month start\nD: calendar day.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Frequency.formatstring",
+      "kind": "method",
+      "signature": "formatstring(self)",
+      "description": "The format to write a string describing a certain period of time.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period",
+      "kind": "class",
+      "signature": "Period",
+      "description": "A period of time, defined by a start and end date.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period.get_period_indices",
+      "kind": "method",
+      "signature": "get_period_indices(self, periods)",
+      "description": "Given a list of periods, find the indices of the start and end of this objects period in the list.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period.get_periods",
+      "kind": "method",
+      "signature": "get_periods(self, periods)",
+      "description": "Given a list of periods, find those that are within this object's period.\nArgs:\n    periods: A Periods object, containing a list of Periods",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period.get_timesteps",
+      "kind": "method",
+      "signature": "get_timesteps(self, timesteps)",
+      "description": "Get all given timesteps that are within this period.\nReturns empty list if all timesteps are outside period.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period.intersection",
+      "kind": "method",
+      "signature": "intersection(first, second)",
+      "description": "Find the intersection between two periods.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Periods.create_periods",
+      "kind": "method",
+      "signature": "create_periods(times, include_before=True, include_after=True)",
+      "description": "Create periods from the provided datetimes\n:param times: the sorted times to create periods from\n:param include_before: whether to add a period that ends with the first provided datetime, i.e. define a period\nbefore the earliest provided datetime.\n:param include_after: whether to add a period that starts with the last provided datetime, i.e. define a period\nafter the latest provided datetime.\n:return:",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.create_start_and_end_dates_for_periods",
+      "kind": "function",
+      "signature": "create_start_and_end_dates_for_periods(frequency, start, end, include_start_date, include_end_date)",
+      "description": "Args:\n    frequency: The requested frequency\n    start: The start date\n    end: The end date\n    include_start_date: Whether to include the start date if it is not part of the requested frequency\n    include_end_date:  Whether to include the end date if it is not part of the requested frequency",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.default_temporal_model",
+      "kind": "function",
+      "signature": "default_temporal_model(data, default_period)",
+      "description": "Ensure the data is a time dependent dict. Also convert all dates to datetime with default time 00:00:00\n:param default_period: the period to use as default\n:param data:\n:return:",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.define_time_model_for_period",
+      "kind": "function",
+      "signature": "define_time_model_for_period(time_model_data, target_period)",
+      "description": "Process time model based on the target period.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.is_temporal_model",
+      "kind": "function",
+      "signature": "is_temporal_model(data)",
+      "description": "Check if the data is a time dependent dict. A time dependent dict is a dict where the keys are dates or periods.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.resample_periods",
+      "kind": "function",
+      "signature": "resample_periods(periods, frequency, include_start_date=True, include_end_date=True)",
+      "description": "Makes a list of periods, based on the first and last date in the original periods and the frequency",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.units.Unit",
+      "kind": "class",
+      "signature": "Unit",
+      "description": "A very simple unit registry to convert between common eCalc units.",
+      "source_file": "src/libecalc/common/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.units.Unit.rate_to_volume",
+      "kind": "method",
+      "signature": "rate_to_volume(self)",
+      "description": "For a unit describing rates, the corresponding unit for volume in a period is returned.",
+      "source_file": "src/libecalc/common/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.units.Unit.volume_to_rate",
+      "kind": "method",
+      "signature": "volume_to_rate(self)",
+      "description": "For a unit describing volume in a period, the corresponding rate unit is returned.",
+      "source_file": "src/libecalc/common/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.nan_handling.clean_nan_values",
+      "kind": "function",
+      "signature": "clean_nan_values(values)",
+      "description": "Handles NaN values in a consistent and predictable way by:",
+      "source_file": "src/libecalc/common/utils/nan_handling.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates.compute_cumulative",
+      "kind": "method",
+      "signature": "compute_cumulative(volumes)",
+      "description": "Compute cumulative volumes from a list of periodic volumes",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates.compute_cumulative_volumes_from_daily_rates",
+      "kind": "method",
+      "signature": "compute_cumulative_volumes_from_daily_rates(rates, periods)",
+      "description": "Compute cumulative production volumes based on production rates and the corresponding time periods.\nThe production rates are assumed to be constant within each period.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates.to_calendar_day",
+      "kind": "method",
+      "signature": "to_calendar_day(stream_day_rates, regularity)",
+      "description": "Convert (production) rate from stream day to calendar day.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates.to_stream_day",
+      "kind": "method",
+      "signature": "to_stream_day(calendar_day_rates, regularity)",
+      "description": "Convert (production) rate from calendar day to stream day",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates.to_volumes",
+      "kind": "method",
+      "signature": "to_volumes(rates, periods)",
+      "description": "Computes the volume in given periods from the corresponding rates.\nNote that the code does not perform any interpolation or extrapolation,\nit assumes that all periods follow each other, and that the rates are constant within each period.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.extend",
+      "kind": "method",
+      "signature": "extend(self, other)",
+      "description": "Extend the time series with another time series.\nThe two time series needs to follow immediately after each other in time.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.fill_values_for_new_periods",
+      "kind": "method",
+      "signature": "fill_values_for_new_periods(self, new_periods, fillna)",
+      "description": "Based on a consumer time function result (EnergyFunctionResult), the corresponding time vector and\nthe consumer time vector, we calculate the actual consumer (consumption) rate.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.for_period",
+      "kind": "method",
+      "signature": "for_period(self, period)",
+      "description": "The time series for a given period. The given period needs to have start and end dates that are within the\nstart and end dates of the periods in the original time series.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.merge",
+      "kind": "method",
+      "signature": "merge(self, other)",
+      "description": "Merge two TimeSeries with differing periods",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.resample",
+      "kind": "method",
+      "signature": "resample(self, freq, include_start_date=True, include_end_date=True)",
+      "description": "Resample using forward-fill This means that a value is assumed to be the same until the next observation,\ne.g. covering the whole period interval.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesBoolean.resample",
+      "kind": "method",
+      "signature": "resample(self, freq, include_start_date=True, include_end_date=True)",
+      "description": "If a period between two time steps in the return time vector contains more than one time step in the\noriginal vector, check if any of the relevant values in the time original time vector is False. Then the\nresampled value for that time step will be False.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesCalendarDayRate",
+      "kind": "class",
+      "signature": "TimeSeriesCalendarDayRate",
+      "description": "Application layer only - only calendar day rate/used for reporting\nProbably not needed, as we want to provide info on regularity etc. for the fixed calendar rate data too",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate",
+      "kind": "class",
+      "signature": "TimeSeriesRate",
+      "description": "A rate time series with can be either in RateType.STREAM_DAY (default) or RateType.CALENDAR_DAY.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.for_period",
+      "kind": "method",
+      "signature": "for_period(self, period)",
+      "description": "The time series for a given period. The given period needs to have start and end dates that are within the\nstart and end dates of the periods in the original time series.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.merge",
+      "kind": "method",
+      "signature": "merge(self, other)",
+      "description": "Merge two TimeSeries with differing periods\nArgs:\n    other:",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.reindex",
+      "kind": "method",
+      "signature": "reindex(self, new_periods)",
+      "description": "Ensure to map correct value to correct period in the final resulting time vector.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.resample",
+      "kind": "method",
+      "signature": "resample(self, freq, include_start_date=True, include_end_date=True)",
+      "description": "Resample to average rate. If a period at the given frequency spans multiple input periods, the rate will be a\nweighted average or the rates in those periods. The regularity is also recalculated to reflect the new\ntime periods.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.to_stream_day_timeseries",
+      "kind": "method",
+      "signature": "to_stream_day_timeseries(self)",
+      "description": "Convert to fixed stream day rate timeseries",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.to_volumes",
+      "kind": "method",
+      "signature": "to_volumes(self)",
+      "description": "Convert rates to volumes. After this step the time steps represents periods and should contain one more item\nthan the rates vector. This means that the last rate is ignored.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumes.cumulative",
+      "kind": "method",
+      "signature": "cumulative(self)",
+      "description": "Converts periodic volumes to cumulative volumes",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumes.resample",
+      "kind": "method",
+      "signature": "resample(self, freq, include_start_date=True, include_end_date=True)",
+      "description": "Resample the time series of period volumes to a new frequency or set of periods.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumes.to_rate",
+      "kind": "method",
+      "signature": "to_rate(self, regularity=None)",
+      "description": "Conversion from periodic volumes to average rate for each period.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumesCumulative",
+      "kind": "class",
+      "signature": "TimeSeriesVolumesCumulative",
+      "description": "This will represent the sum of the volumes in all periods up to and including each individual period.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumesCumulative.resample",
+      "kind": "method",
+      "signature": "resample(self, freq, include_start_date=True, include_end_date=True)",
+      "description": "Resample cumulative production volumes according to given frequency. Since the production rates between\ndates are assumed to be constant, the cumulative production volumes will increase linearly between dates.\nHence, linear interpolation can be used for the resampling. In particular, slinear is used in order to only\ninterpolate, not extrapolate.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesVolumesCumulative.to_volumes",
+      "kind": "method",
+      "signature": "to_volumes(self)",
+      "description": "Converts cumulative volumes to period volumes",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.variables.VariablesMap",
+      "kind": "class",
+      "signature": "VariablesMap",
+      "description": "A map of all (timeseries) variables that can be used in eCalc YAML\nA variable name has the format \"{name_of_case};{title_of_header} from the original\nfile/resource with time series, ie;",
+      "source_file": "src/libecalc/common/variables.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.variables.VariablesMap.get_subset_for_period",
+      "kind": "method",
+      "signature": "get_subset_for_period(self, period)",
+      "description": "Get variables that are active and in use for the given period only\nArgs:\n    period: The period for which the variables are needed\nReturns:\n    A VariablesMap object with the variables for the given period",
+      "source_file": "src/libecalc/common/variables.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.variables.VariablesMap.get_subset_for_timestep",
+      "kind": "method",
+      "signature": "get_subset_for_timestep(self, current_timestep)",
+      "description": "Get variables that are active and in use for the given timestep only\n:param current_timestep:\n:return:",
+      "source_file": "src/libecalc/common/variables.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.variables.VariablesMap.number_of_periods",
+      "kind": "method",
+      "signature": "number_of_periods(self)",
+      "description": "Get the number of periods covered by the time vector",
+      "source_file": "src/libecalc/common/variables.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.variables.VariablesMap.periods",
+      "kind": "method",
+      "signature": "periods(self)",
+      "description": "Get the periods covered by the time vector\nReturns:\n    A list of periods, each period is defined by two consecutive time steps in the time vector",
+      "source_file": "src/libecalc/common/variables.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.version.Version.from_string",
+      "kind": "method",
+      "signature": "from_string(cls, version_string)",
+      "description": "From any version that has either major, minor or patch in string, get the full\nversion with major, minor and patch set.",
+      "source_file": "src/libecalc/common/version.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.emission.emission_intensity.EmissionIntensity",
+      "kind": "class",
+      "signature": "EmissionIntensity",
+      "description": "A class to calculate emission intensity based on cumulative emission and hydrocarbon export data.",
+      "source_file": "src/libecalc/domain/emission/emission_intensity.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.emission.emission_intensity.EmissionIntensity.calculate_cumulative",
+      "kind": "method",
+      "signature": "calculate_cumulative(self)",
+      "description": "Calculate the cumulative emission intensity over the entire data range.",
+      "source_file": "src/libecalc/domain/emission/emission_intensity.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.emission.emission_intensity.EmissionIntensity.calculate_for_periods",
+      "kind": "method",
+      "signature": "calculate_for_periods(self)",
+      "description": "Calculate the emission intensity for each period over the entire data range.",
+      "source_file": "src/libecalc/domain/emission/emission_intensity.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.component_energy_context.ComponentEnergyContext",
+      "kind": "class",
+      "signature": "ComponentEnergyContext",
+      "description": "The context for which a component should be calculated.",
+      "source_file": "src/libecalc/domain/energy/component_energy_context.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.component_energy_context.ComponentEnergyContext.get_fuel_usage",
+      "kind": "method",
+      "signature": "get_fuel_usage(self)",
+      "description": "Get fuel usage for the component.\nReturns:",
+      "source_file": "src/libecalc/domain/energy/component_energy_context.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.component_energy_context.ComponentEnergyContext.get_power_requirement",
+      "kind": "method",
+      "signature": "get_power_requirement(self)",
+      "description": "Get power demand for the component.\nReturns:",
+      "source_file": "src/libecalc/domain/energy/component_energy_context.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_component.EnergyComponent",
+      "kind": "class",
+      "signature": "EnergyComponent",
+      "description": "A component in the energy model, aka a node in the energy graph. This might be a provider or consumer or both.",
+      "source_file": "src/libecalc/domain/energy/energy_component.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_component.EnergyComponent.is_electricity_consumer",
+      "kind": "method",
+      "signature": "is_electricity_consumer(self)",
+      "description": "Returns True if the component consumes electricity",
+      "source_file": "src/libecalc/domain/energy/energy_component.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_component.EnergyComponent.is_fuel_consumer",
+      "kind": "method",
+      "signature": "is_fuel_consumer(self)",
+      "description": "Returns True if the component consumes fuel",
+      "source_file": "src/libecalc/domain/energy/energy_component.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_component.EnergyComponent.is_provider",
+      "kind": "method",
+      "signature": "is_provider(self)",
+      "description": "Whether the energy component provides energy to other energy components.",
+      "source_file": "src/libecalc/domain/energy/energy_component.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_model.EnergyModel",
+      "kind": "class",
+      "signature": "EnergyModel",
+      "description": "Energy model contains energy components which can be consumers, providers, emitters",
+      "source_file": "src/libecalc/domain/energy/energy_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_model.EnergyModel.get_consumers",
+      "kind": "method",
+      "signature": "get_consumers(self, provider_id)",
+      "description": "Get direct consumers of the given provider.",
+      "source_file": "src/libecalc/domain/energy/energy_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.hydrocarbon_export.HydrocarbonExport",
+      "kind": "class",
+      "signature": "HydrocarbonExport",
+      "description": "Represents the hydrocarbon export functionality for an installation.",
+      "source_file": "src/libecalc/domain/hydrocarbon_export.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.hydrocarbon_export.HydrocarbonExport.default_expression_value",
+      "kind": "method",
+      "signature": "default_expression_value()",
+      "description": "Returns the default expression value for HydrocarbonExport.",
+      "source_file": "src/libecalc/domain/hydrocarbon_export.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.hydrocarbon_export.HydrocarbonExport.time_series",
+      "kind": "method",
+      "signature": "time_series(self)",
+      "description": "Returns the evaluated hydrocarbon export rates as a time series.",
+      "source_file": "src/libecalc/domain/hydrocarbon_export.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.installation.Installation.get_power_consumers",
+      "kind": "method",
+      "signature": "get_power_consumers(self)",
+      "description": "Power consumers includes both electricity consumers and mechanical power consumers",
+      "source_file": "src/libecalc/domain/installation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.Example.model",
+      "kind": "method",
+      "signature": "model(self)",
+      "description": "",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.MarkdownBuilder.build",
+      "kind": "method",
+      "signature": "build(self)",
+      "description": "",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.MarkdownBuilder.line",
+      "kind": "method",
+      "signature": "line(self, text='')",
+      "description": "",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.common.temporal_model.Model",
+      "kind": "class",
+      "signature": "Model",
+      "description": "",
+      "source_file": "src/libecalc/common/temporal_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.common.temporal_model.TemporalModel.create",
+      "kind": "method",
+      "signature": "create(cls, data, target_period)",
+      "description": "",
+      "source_file": "src/libecalc/common/temporal_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.Rates",
+      "kind": "class",
+      "signature": "Rates",
+      "description": "",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.common.version.Version",
+      "kind": "class",
+      "signature": "Version",
+      "description": "",
+      "source_file": "src/libecalc/common/version.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "libecalc.domain.installation.Installation",
+      "kind": "class",
+      "signature": "Installation",
+      "description": "",
+      "source_file": "src/libecalc/domain/installation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ecalc_cli.commands.run.run",
+      "kind": "function",
+      "signature": "run(model_file=typer.Argument(..., help='The Model YAML-file specifying time series inputs, facility inputs and the relationship between energy consumers.'), output_frequency=typer.Option(libecalc.common.time_utils.Frequency.NONE.name, '--output-frequency', '-f', '--outputfrequency', help='Frequency of output. Options are DAY, MONTH, YEAR. If not specified, it will give time steps equal to the union of all input given with INFLUENCE_TIME_VECTOR set to True. Down-sampling the result may lead to loss of data, and rates such as MW may not add up to cumulative values'), csv=typer.Option(True, '--csv/--no-csv', '-c', help='Toggle output of csv data.'), json=typer.Option(False, '--json', help='Toggle output of json output.'), output_folder=typer.Option(None, '--output-folder', '-o', '--outputfolder', help='Outputfolder. Defaults to output/ relative to the yml setup file', show_default=False), name_prefix=typer.Option(None, '--name-prefix', '-n', '--nameprefix', help='Name prefix for output data. Defaults to name of setup file.'), ltp_export=typer.Option(False, '--ltp-export', help='In addition to standard output, a specific Long Term Prognosis (LTP) file will be provided for simple export of LTP relevant data (Tabular Separated Values).'), stp_export=typer.Option(False, '--stp-export', help='In addition to standard output, a specific Short Term Prognosis (STP) file will be provided for simple export of STP relevant data (Tabular Separated Values).'), flow_diagram=typer.Option(False, '--flow-diagram', help='Output the input model formatted to be displayed in a custom flow diagram format in JSON'), detailed_output=typer.Option(False, '--detailed-output', '--detailedoutput', help='Output detailed output. When False you will get basic results such as energy usage, power, time vector.'), date_format_option=typer.Option(DateFormat.ISO_8601.value, '--date-format-option', help='Date format option. 0: \"YYYY-MM-DD HH:MM:SS\" (Accepted variant of ISO8601), 1: \"YYYYMMDD HH:MM:SS\" (ISO8601), 2: \"DD.MM.YYYY HH:MM:SS\". Default 0 (ISO 8601)'), reference_cache_size=typer.Option(None, '--reference-cache-size', help='Max entries in reference fluid cache (note: default covers most use cases). Increase for models with many compositions. Set to 0 to disable.'), flash_cache_size=typer.Option(None, '--flash-cache-size', help='Max entries in flash results cache (note: default covers most use cases). Increase for large models with many flash calculations. Set to 0 to disable.'), use_experimental_neqsim=typer.Option(False, '--use-experimental-neqsim', help='An improved implementation of Neqsim is available, but still experimental. After a short testing period this will be made default and not possible to change.'))",
+      "description": "CLI command to run a ecalc model.",
+      "source_file": "src/ecalc_cli/commands/run.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.commands.selftest.selftest_java",
+      "kind": "function",
+      "signature": "selftest_java()",
+      "description": "Check java installation.",
+      "source_file": "src/ecalc_cli/commands/selftest.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.write_flow_diagram",
+      "kind": "function",
+      "signature": "write_flow_diagram(energy_model, model_period, output_folder, name_prefix)",
+      "description": "Write FDE diagram to file.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.write_ltp_export",
+      "kind": "function",
+      "signature": "write_ltp_export(model, frequency, output_folder, name_prefix)",
+      "description": "Write LTP results to file.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.io.output.write_stp_export",
+      "kind": "function",
+      "signature": "write_stp_export(model, frequency, output_folder, name_prefix)",
+      "description": "Write STP results to file.",
+      "source_file": "src/ecalc_cli/io/output.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.logger.CLILogConfigurator",
+      "kind": "class",
+      "signature": "CLILogConfigurator",
+      "description": "Configure logging for CLIeCalc.",
+      "source_file": "src/ecalc_cli/logger.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.logger.LogLevel",
+      "kind": "class",
+      "signature": "LogLevel",
+      "description": "Valid log levels for CLI logger.",
+      "source_file": "src/ecalc_cli/logger.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_cli.types.DateFormat",
+      "kind": "class",
+      "signature": "DateFormat",
+      "description": "Supported date formats in ecalc CLI.",
+      "source_file": "src/ecalc_cli/types.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheConfig.default",
+      "kind": "method",
+      "signature": "default(cls)",
+      "description": "Return default cache configuration.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService.clear_cache",
+      "kind": "method",
+      "signature": "clear_cache(cls, name)",
+      "description": "Clear a specific cache by name.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService.create_cache",
+      "kind": "method",
+      "signature": "create_cache(cls, name, max_size=10000)",
+      "description": "Create and register a named cache.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.CacheService.get_cache",
+      "kind": "method",
+      "signature": "get_cache(cls, name)",
+      "description": "Get a cache by name.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.LRUCache.get_stats",
+      "kind": "method",
+      "signature": "get_stats(self)",
+      "description": "Get cache statistics.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.cache_service.LRUCache.put",
+      "kind": "method",
+      "signature": "put(self, key, value)",
+      "description": "Add value to cache with LRU eviction.",
+      "source_file": "src/ecalc_neqsim_wrapper/cache_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.exceptions.NeqsimError",
+      "kind": "class",
+      "signature": "NeqsimError",
+      "description": "Base class for NeqSim related errors",
+      "source_file": "src/ecalc_neqsim_wrapper/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.configure",
+      "kind": "method",
+      "signature": "configure(cls, cache_config)",
+      "description": "Configure cache sizes before first use.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.fluid_service.NeqSimFluidService.create_stream_from_mass_rate",
+      "kind": "method",
+      "signature": "create_stream_from_mass_rate(self, fluid_model, pressure_bara, temperature_kelvin, mass_rate_kg_per_h)",
+      "description": "Create a fluid stream from mass rate.",
+      "source_file": "src/ecalc_neqsim_wrapper/fluid_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.Py4JConfig",
+      "kind": "class",
+      "signature": "Py4JConfig",
+      "description": "Configuration for the Py4J JVM process.",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.java_service.Py4JConfig.default",
+      "kind": "method",
+      "signature": "default(cls)",
+      "description": "Return default Py4J configuration.",
+      "source_file": "src/ecalc_neqsim_wrapper/java_service.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.GERG2008FluidProperties",
+      "kind": "class",
+      "signature": "GERG2008FluidProperties",
+      "description": "Only added properties currently in use.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.composition",
+      "kind": "method",
+      "signature": "composition(self)",
+      "description": "Get the molar composition of the fluid.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ecalc_neqsim_wrapper.thermo.NeqsimFluid.set_new_pressure_and_enthalpy",
+      "kind": "method",
+      "signature": "set_new_pressure_and_enthalpy(self, new_pressure, new_enthalpy_joule_per_kg)",
+      "description": "PH flash to new pressure and enthalpy.",
+      "source_file": "src/ecalc_neqsim_wrapper/thermo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.DocNode.default",
+      "kind": "method",
+      "signature": "default(self)",
+      "description": "The default value, if any.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "generate_yaml_asset_docs.ExampleRegistry.get",
+      "kind": "method",
+      "signature": "get(self, path)",
+      "description": "Get an example for an exact path.",
+      "source_file": "src/generate_yaml_asset_docs.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.ddd.entity.Entity",
+      "kind": "class",
+      "signature": "Entity",
+      "description": "Base class for all DDD Entities.",
+      "source_file": "src/libecalc/common/ddd/entity.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.decorators.capturer.Jsonable.json",
+      "kind": "method",
+      "signature": "json(self)",
+      "description": "Serialize object as JSON",
+      "source_file": "src/libecalc/common/decorators/capturer.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.ColumnNotFoundException",
+      "kind": "class",
+      "signature": "ColumnNotFoundException",
+      "description": "Resource is missing column",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.EcalcError",
+      "kind": "class",
+      "signature": "EcalcError",
+      "description": "Base eCalc library exception.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.EcalcErrorType",
+      "kind": "class",
+      "signature": "EcalcErrorType",
+      "description": "Valid error types in libecalc.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.HeaderNotFoundException",
+      "kind": "class",
+      "signature": "HeaderNotFoundException",
+      "description": "Resource is missing header.",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.InvalidResourceException",
+      "kind": "class",
+      "signature": "InvalidResourceException",
+      "description": "Base exception for resource",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.errors.exceptions.NoColumnsException",
+      "kind": "class",
+      "signature": "NoColumnsException",
+      "description": "Resource contains no columns",
+      "source_file": "src/libecalc/common/errors/exceptions.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.list_utils.elementwise_multiplication",
+      "kind": "function",
+      "signature": "elementwise_multiplication(*vectors, periods)",
+      "description": "Multiply multiple vectors elementwise.",
+      "source_file": "src/libecalc/common/list/list_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.list.list_utils.elementwise_sum",
+      "kind": "function",
+      "signature": "elementwise_sum(*vectors)",
+      "description": "Sum up multiple vectors elementwise.",
+      "source_file": "src/libecalc/common/list/list_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.time_utils.Period.intersects",
+      "kind": "method",
+      "signature": "intersects(first, second)",
+      "description": "Decide if two periods intersects.",
+      "source_file": "src/libecalc/common/time_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeries.for_periods",
+      "kind": "method",
+      "signature": "for_periods(self, periods)",
+      "description": "Args:\n    periods:",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.to_calendar_day",
+      "kind": "method",
+      "signature": "to_calendar_day(self)",
+      "description": "Convert rates to calendar day rates.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesRate.to_stream_day",
+      "kind": "method",
+      "signature": "to_stream_day(self)",
+      "description": "Convert rates to stream day rates.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.common.utils.rates.TimeSeriesStreamDayRate",
+      "kind": "class",
+      "signature": "TimeSeriesStreamDayRate",
+      "description": "Domain/core layer only.",
+      "source_file": "src/libecalc/common/utils/rates.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.emitter.Emitter",
+      "kind": "class",
+      "signature": "Emitter",
+      "description": "Something that emits something.",
+      "source_file": "src/libecalc/domain/energy/emitter.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.energy.energy_model.EnergyModel.get_energy_components",
+      "kind": "method",
+      "signature": "get_energy_components(self)",
+      "description": "Get a sorted list of energy components",
+      "source_file": "src/libecalc/domain/energy/energy_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "libecalc.domain.installation.PowerConsumer.get_producer_id",
+      "kind": "method",
+      "signature": "get_producer_id(self)",
+      "description": "Producer does not always exist",
+      "source_file": "src/libecalc/domain/installation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

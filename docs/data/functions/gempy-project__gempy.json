@@ -1,0 +1,524 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "gempy-project/gempy",
+  "language": "Python",
+  "function_count": 43,
+  "functions": [
+    {
+      "name": "examples.tutorials.b_fundamentals.c03_grids.build_model",
+      "kind": "function",
+      "signature": "build_model(project_name, resolution, refinement)",
+      "description": "Build the simple fault model with a given resolution/refinement, so the\ndifference between grid configurations further down is the only thing that varies.",
+      "source_file": "examples/tutorials/b_fundamentals/c03_grids.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.DEP_xsolution.XSolution",
+      "kind": "class",
+      "signature": "XSolution",
+      "description": "This class stores the output of the interpolation and the necessary objects\nto visualize and manipulate this data using xarray as backend.",
+      "source_file": "gempy/core/data/DEP_xsolution.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.DEP_xsolution.XSolution.set_meshes",
+      "kind": "method",
+      "signature": "set_meshes(self, surfaces=None)",
+      "description": "Create xarray from the Surfaces object. In GemPy Engine we will set\nthem directly.",
+      "source_file": "gempy/core/data/DEP_xsolution.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.DEP_xsolution.XSolution.set_values",
+      "kind": "method",
+      "signature": "set_values(self, values, active_features=None, surf_properties=None)",
+      "description": "At this stage we should split values into the different grids",
+      "source_file": "gempy/core/data/DEP_xsolution.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.encoders.binary_encoder.deserialize_grid",
+      "kind": "function",
+      "signature": "deserialize_grid(binary_array, custom_grid_length, topography_length)",
+      "description": "Deserialize binary grid data into two numpy arrays.",
+      "source_file": "gempy/core/data/encoders/binary_encoder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.encoders.binary_encoder.deserialize_input_data_tables",
+      "kind": "function",
+      "signature": "deserialize_input_data_tables(binary_array, name_id_map, sp_binary_length_, ori_binary_length_)",
+      "description": "Deserializes binary data into two tables: OrientationsTable and SurfacePointsTable.",
+      "source_file": "gempy/core/data/encoders/binary_encoder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.encoders.binary_encoder.deserialize_micro_points",
+      "kind": "function",
+      "signature": "deserialize_micro_points(binary_array, metadata, name_id_map)",
+      "description": "Deserialize and validate a versioned micro-point binary section.",
+      "source_file": "gempy/core/data/encoders/binary_encoder.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.encoders.converters.instantiate_if_necessary",
+      "kind": "function",
+      "signature": "instantiate_if_necessary(data, key, type)",
+      "description": "Creates instances of the specified type for a dictionary key if the key exists and its\ncurrent type does not match the specified type. This function modifies the dictionary\nin place by converting the value associated with the key into an instance of the given\ntype.",
+      "source_file": "gempy/core/data/encoders/converters.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.custom_grid.CustomGrid",
+      "kind": "class",
+      "signature": "CustomGrid",
+      "description": "Object that contains arbitrary XYZ coordinates.",
+      "source_file": "gempy/core/data/grid_modules/custom_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.get_selection_diamond",
+      "kind": "method",
+      "signature": "get_selection_diamond(self, m_pow)",
+      "description": "get selected points for diamond step on grid z on hierarchy m",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.get_selection_square",
+      "kind": "method",
+      "signature": "get_selection_square(self, m_pow)",
+      "description": "Plot selected points for square step on grid z on hierarchy m",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.perform_diamond_step",
+      "kind": "method",
+      "signature": "perform_diamond_step(self, i, m_pow)",
+      "description": "Perform one diamond interpolation step on hierarchy m_pow",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.perform_square_step",
+      "kind": "method",
+      "signature": "perform_square_step(self, i, m_pow)",
+      "description": "Perform one square interpolation step on hierarchy m_pow",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.plot_diamond_and_square",
+      "kind": "method",
+      "signature": "plot_diamond_and_square(self, pad=False)",
+      "description": "Plot selected points for diamond and square step for all hierarchies side by side",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.random_func",
+      "kind": "method",
+      "signature": "random_func(self, i, level_shape)",
+      "description": "Define random function to adjust range for subsequent steps",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.random_initialization",
+      "kind": "method",
+      "signature": "random_initialization(self, level='highest', verbose=False)",
+      "description": "Initialize cells on speicifc hierarchy with random values",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.regular_grid.RegularGrid",
+      "kind": "class",
+      "signature": "RegularGrid",
+      "description": "Class with the methods and properties to manage 3D regular grids where the model will be interpolated.",
+      "source_file": "gempy/core/data/grid_modules/regular_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.regular_grid.RegularGrid.from_corners_box",
+      "kind": "method",
+      "signature": "from_corners_box(cls, pivot, point_x_axis, distance_point3, zmin, zmax, resolution, plot=True)",
+      "description": "Always rotate around the z axis towards the positive x axis. \nThe distance_point3 is the distance from the pivot to the point3.",
+      "source_file": "gempy/core/data/grid_modules/regular_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.regular_grid.RegularGrid.set_regular_grid",
+      "kind": "method",
+      "signature": "set_regular_grid(self, extent, resolution, transform=None)",
+      "description": "Set a regular grid into the values parameters for further computations\nArgs:\n    extent (list, np.ndarry):  [x_min, x_max, y_min, y_max, z_min, z_max]\n    resolution (list, np.ndarray): [nx, ny, nz]",
+      "source_file": "gempy/core/data/grid_modules/regular_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.sections_grid.Sections",
+      "kind": "class",
+      "signature": "Sections",
+      "description": "Object that creates a grid of cross sections between two points.",
+      "source_file": "gempy/core/data/grid_modules/sections_grid.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography",
+      "kind": "class",
+      "signature": "Topography",
+      "description": "Object to include topography in the model.\nNotes:\n    This always assumes that the topography we pass fits perfectly the extent.",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography.from_subsurface_structured_data",
+      "kind": "method",
+      "signature": "from_subsurface_structured_data(cls, structured_data, regular_grid)",
+      "description": "Creates a topography object from a subsurface structured data object",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography.from_unstructured_mesh",
+      "kind": "method",
+      "signature": "from_unstructured_mesh(cls, regular_grid, xyz_vertices)",
+      "description": "Creates a topography object from an unstructured mesh of XYZ vertices.",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography.set_values2d",
+      "kind": "method",
+      "signature": "set_values2d(self, values)",
+      "description": "Reconstruct the 2D topography (shape = resolution + [3]) from\na flat Nx3 array (or from self.values if none is provided).",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography.topography_mask",
+      "kind": "method",
+      "signature": "topography_mask(self)",
+      "description": "This method takes a topography grid of the same extent as the regular\ngrid and creates a mask of voxels",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.micro_points.MicroPointsTable",
+      "kind": "class",
+      "signature": "MicroPointsTable",
+      "description": "Micro contacts represented by local-support-to-world transforms.",
+      "source_file": "gempy/core/data/micro_points.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.validation.ModelValidationError",
+      "kind": "class",
+      "signature": "ModelValidationError",
+      "description": "Raised by GeoModel.validate() when the model is semantically invalid.",
+      "source_file": "gempy/core/data/validation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.data_manipulation._engine_factory.input_data_descriptor_from_geo_model",
+      "kind": "function",
+      "signature": "input_data_descriptor_from_geo_model(geo_model)",
+      "description": "Build an engine descriptor with finite-fault geometry in engine coordinates.",
+      "source_file": "gempy/modules/data_manipulation/_engine_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.json_io.json_operations.JsonIO",
+      "kind": "class",
+      "signature": "JsonIO",
+      "description": "Class for handling JSON I/O operations for GemPy models.",
+      "source_file": "gempy/modules/json_io/json_operations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.mesh_extranction.marching_cubes.extract_mesh_for_element",
+      "kind": "function",
+      "signature": "extract_mesh_for_element(structural_element, regular_grid, scalar_field, mask=None)",
+      "description": "Extract a mesh for a single structural element using marching cubes.",
+      "source_file": "gempy/modules/mesh_extranction/marching_cubes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.mesh_extranction.marching_cubes.set_meshes_with_marching_cubes",
+      "kind": "function",
+      "signature": "set_meshes_with_marching_cubes(model)",
+      "description": "Extract meshes for all structural elements using the marching cubes algorithm.",
+      "source_file": "gempy/modules/mesh_extranction/marching_cubes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.optimize_nuggets._optimizer.nugget_optimizer",
+      "kind": "function",
+      "signature": "nugget_optimizer(target_cond_num, engine_cfg, model, max_epochs, only_groups=None, lr=0.01, patience=10, min_impr=0.01)",
+      "description": "Optimize the nugget effect scalar to achieve a target condition number.\nReturns the final nugget effect value.",
+      "source_file": "gempy/modules/optimize_nuggets/_optimizer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.serialization.save_load.load_model",
+      "kind": "function",
+      "signature": "load_model(path)",
+      "description": "Load a GemPy geological model from a ``.gempy`` file.",
+      "source_file": "gempy/modules/serialization/save_load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.serialization.save_load.save_model",
+      "kind": "function",
+      "signature": "save_model(model, path=None, validate_serialization=True)",
+      "description": "Save a GemPy geological model to a ``.gempy`` file.",
+      "source_file": "gempy/modules/serialization/save_load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "docs.source.make_external_gallery.Example",
+      "kind": "class",
+      "signature": "Example",
+      "description": "",
+      "source_file": "docs/source/make_external_gallery.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "gempy.modules.json_io.schema.Fault",
+      "kind": "class",
+      "signature": "Fault",
+      "description": "",
+      "source_file": "gempy/modules/json_io/schema.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "gempy.modules.json_io.schema.Surface",
+      "kind": "class",
+      "signature": "Surface",
+      "description": "",
+      "source_file": "gempy/modules/json_io/schema.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "docs.source.make_external_gallery.make_example_gallery",
+      "kind": "function",
+      "signature": "make_example_gallery()",
+      "description": "Make the example gallery.",
+      "source_file": "docs/source/make_external_gallery.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.interpolate",
+      "kind": "method",
+      "signature": "interpolate(self, level='highest')",
+      "description": "Perform diamond-square interpolation",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.diamond_square.DiaomondSquare.reset_grid",
+      "kind": "method",
+      "signature": "reset_grid(self)",
+      "description": "Reset grid back to zero values",
+      "source_file": "gempy/core/data/grid_modules/diamond_square.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.core.data.grid_modules.topography.Topography.set_values",
+      "kind": "method",
+      "signature": "set_values(self, values_2d)",
+      "description": "General method to set topography",
+      "source_file": "gempy/core/data/grid_modules/topography.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.json_io.json_operations.JsonIO.load_model_from_json",
+      "kind": "method",
+      "signature": "load_model_from_json(file_path)",
+      "description": "Load a GemPy model from a JSON file.",
+      "source_file": "gempy/modules/json_io/json_operations.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "gempy.modules.json_io.json_operations.JsonIO.save_model_to_json",
+      "kind": "method",
+      "signature": "save_model_to_json(model, file_path)",
+      "description": "Save a GemPy model to a JSON file.",
+      "source_file": "gempy/modules/json_io/json_operations.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

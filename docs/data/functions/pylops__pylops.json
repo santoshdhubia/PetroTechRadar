@@ -1,0 +1,664 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "PyLops/pylops",
+  "language": "Python",
+  "function_count": 51,
+  "functions": [
+    {
+      "name": "pylops.basicoperators.firstderivative.FirstDerivative",
+      "kind": "class",
+      "signature": "FirstDerivative",
+      "description": "First derivative.",
+      "source_file": "pylops/basicoperators/firstderivative.py",
+      "api_level": "primary_public",
+      "quality_score": 12,
+      "evidence": [
+        "documentation",
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.approx_zoeppritz_pp",
+      "kind": "function",
+      "signature": "approx_zoeppritz_pp(vp1, vs1, rho1, vp0, vs0, rho0, theta1)",
+      "description": "PP reflection coefficient from the approximate Zoeppritz equation.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.zoeppritz_pp",
+      "kind": "function",
+      "signature": "zoeppritz_pp(vp1, vs1, rho1, vp0, vs0, rho0, theta1)",
+      "description": "PP reflection coefficient from the Zoeppritz scattering matrix.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.poststack.PoststackInversion",
+      "kind": "function",
+      "signature": "PoststackInversion(data, wav, m0=None, explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, epsRL1=None, **kwargs_solver)",
+      "description": "Post-stack linearized seismic inversion.",
+      "source_file": "pylops/avo/poststack.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.poststack.PoststackLinearModelling",
+      "kind": "function",
+      "signature": "PoststackLinearModelling(wav, nt0, spatdims=None, explicit=False, sparse=False, kind='centered', name=None)",
+      "description": "Post-stack linearized seismic modelling operator.",
+      "source_file": "pylops/avo/poststack.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.prestack.PrestackLinearModelling",
+      "kind": "function",
+      "signature": "PrestackLinearModelling(wav, theta, vsvp=0.5, nt0=1, spatdims=None, linearization='akirich', explicit=False, kind='centered', name=None)",
+      "description": "Pre-stack linearized seismic modelling operator.",
+      "source_file": "pylops/avo/prestack.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.prestack.PrestackWaveletModelling",
+      "kind": "function",
+      "signature": "PrestackWaveletModelling(m, theta, nwav, wavc=None, vsvp=0.5, linearization='akirich', name=None)",
+      "description": "Pre-stack linearized seismic modelling operator for wavelet.",
+      "source_file": "pylops/avo/prestack.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": ".claude.skills.newop.reference.operator_template.MyOperator",
+      "kind": "class",
+      "signature": "MyOperator",
+      "description": "One-line summary of the operator.",
+      "source_file": ".claude/skills/newop/reference/operator_template.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.AVOLinearModelling",
+      "kind": "class",
+      "signature": "AVOLinearModelling",
+      "description": "AVO Linearized modelling.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.akirichards",
+      "kind": "function",
+      "signature": "akirichards(theta, vsvp, n=1)",
+      "description": "Three terms Aki-Richards approximation.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.fatti",
+      "kind": "function",
+      "signature": "fatti(theta, vsvp, n=1)",
+      "description": "Three terms Fatti approximation.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.ps",
+      "kind": "function",
+      "signature": "ps(theta, vsvp, n=1)",
+      "description": "PS reflection coefficient",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.zoeppritz_element",
+      "kind": "function",
+      "signature": "zoeppritz_element(vp1, vs1, rho1, vp0, vs0, rho0, theta1, element='PdPu')",
+      "description": "Single element of Zoeppritz solution.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.avo.zoeppritz_scattering",
+      "kind": "function",
+      "signature": "zoeppritz_scattering(vp1, vs1, rho1, vp0, vs0, rho0, theta1)",
+      "description": "Zoeppritz solution.",
+      "source_file": "pylops/avo/avo.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.avo.prestack.PrestackInversion",
+      "kind": "function",
+      "signature": "PrestackInversion(data, theta, wav, m0=None, linearization='akirich', explicit=False, simultaneous=False, epsI=None, epsR=None, dottest=False, returnres=False, epsRL1=None, kind='centered', vsvp=0.5, **kwargs_solver)",
+      "description": "Pre-stack linearized seismic inversion.",
+      "source_file": "pylops/avo/prestack.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.block.Block",
+      "kind": "class",
+      "signature": "Block",
+      "description": "Block operator.",
+      "source_file": "pylops/basicoperators/block.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.blockdiag.BlockDiag",
+      "kind": "class",
+      "signature": "BlockDiag",
+      "description": "Block-diagonal operator.",
+      "source_file": "pylops/basicoperators/blockdiag.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.causalintegration.CausalIntegration",
+      "kind": "class",
+      "signature": "CausalIntegration",
+      "description": "Causal integration.",
+      "source_file": "pylops/basicoperators/causalintegration.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.conj.Conj",
+      "kind": "class",
+      "signature": "Conj",
+      "description": "Complex conjugate operator.",
+      "source_file": "pylops/basicoperators/conj.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.diagonal.Diagonal",
+      "kind": "class",
+      "signature": "Diagonal",
+      "description": "Diagonal operator.",
+      "source_file": "pylops/basicoperators/diagonal.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.diagonal.Diagonal.matrix",
+      "kind": "method",
+      "signature": "matrix(self)",
+      "description": "Return diagonal matrix as dense :obj:`numpy.ndarray`",
+      "source_file": "pylops/basicoperators/diagonal.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.directionalderivative.FirstDirectionalDerivative",
+      "kind": "class",
+      "signature": "FirstDirectionalDerivative",
+      "description": "First Directional derivative.",
+      "source_file": "pylops/basicoperators/directionalderivative.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.directionalderivative.SecondDirectionalDerivative",
+      "kind": "class",
+      "signature": "SecondDirectionalDerivative",
+      "description": "Second Directional derivative.",
+      "source_file": "pylops/basicoperators/directionalderivative.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.flip.Flip",
+      "kind": "class",
+      "signature": "Flip",
+      "description": "Flip along an axis.",
+      "source_file": "pylops/basicoperators/flip.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.functionoperator.FunctionOperator",
+      "kind": "class",
+      "signature": "FunctionOperator",
+      "description": "Function Operator.",
+      "source_file": "pylops/basicoperators/functionoperator.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.gradient.Gradient",
+      "kind": "class",
+      "signature": "Gradient",
+      "description": "Gradient.",
+      "source_file": "pylops/basicoperators/gradient.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.hstack.HStack",
+      "kind": "class",
+      "signature": "HStack",
+      "description": "Horizontal stacking.",
+      "source_file": "pylops/basicoperators/hstack.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.identity.Identity",
+      "kind": "class",
+      "signature": "Identity",
+      "description": "Identity operator.",
+      "source_file": "pylops/basicoperators/identity.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.imag.Imag",
+      "kind": "class",
+      "signature": "Imag",
+      "description": "Imag operator.",
+      "source_file": "pylops/basicoperators/imag.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.kronecker.Kronecker",
+      "kind": "class",
+      "signature": "Kronecker",
+      "description": "Kronecker operator.",
+      "source_file": "pylops/basicoperators/kronecker.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.laplacian.Laplacian",
+      "kind": "class",
+      "signature": "Laplacian",
+      "description": "Laplacian.",
+      "source_file": "pylops/basicoperators/laplacian.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.linearregression.LinearRegression",
+      "kind": "class",
+      "signature": "LinearRegression",
+      "description": "Linear regression.",
+      "source_file": "pylops/basicoperators/linearregression.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.matrixmult.MatrixMult",
+      "kind": "class",
+      "signature": "MatrixMult",
+      "description": "Matrix multiplication.",
+      "source_file": "pylops/basicoperators/matrixmult.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.memoizeoperator.MemoizeOperator",
+      "kind": "class",
+      "signature": "MemoizeOperator",
+      "description": "Memoize Operator.",
+      "source_file": "pylops/basicoperators/memoizeoperator.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.pad.Pad",
+      "kind": "class",
+      "signature": "Pad",
+      "description": "Pad operator.",
+      "source_file": "pylops/basicoperators/pad.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.real.Real",
+      "kind": "class",
+      "signature": "Real",
+      "description": "Real operator.",
+      "source_file": "pylops/basicoperators/real.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.regression.Regression",
+      "kind": "class",
+      "signature": "Regression",
+      "description": "Polynomial regression.",
+      "source_file": "pylops/basicoperators/regression.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.restriction.Restriction",
+      "kind": "class",
+      "signature": "Restriction",
+      "description": "Restriction (or sampling) operator.",
+      "source_file": "pylops/basicoperators/restriction.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.roll.Roll",
+      "kind": "class",
+      "signature": "Roll",
+      "description": "Roll along an axis.",
+      "source_file": "pylops/basicoperators/roll.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.secondderivative.SecondDerivative",
+      "kind": "class",
+      "signature": "SecondDerivative",
+      "description": "Second derivative.",
+      "source_file": "pylops/basicoperators/secondderivative.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.smoothing1d.Smoothing1D",
+      "kind": "class",
+      "signature": "Smoothing1D",
+      "description": "1D Smoothing.",
+      "source_file": "pylops/basicoperators/smoothing1d.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.smoothing2d.Smoothing2D",
+      "kind": "class",
+      "signature": "Smoothing2D",
+      "description": "2D Smoothing.",
+      "source_file": "pylops/basicoperators/smoothing2d.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "noxfile.build",
+      "kind": "function",
+      "signature": "build(session)",
+      "description": "Build an SDist and wheel.",
+      "source_file": "noxfile.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": ".claude.skills.newop.reference.test_template.test_MyOperator",
+      "kind": "function",
+      "signature": "test_MyOperator(par)",
+      "description": "Dot-test, forward and inversion for MyOperator",
+      "source_file": ".claude/skills/newop/reference/test_template.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.diagonal.Diagonal.todense",
+      "kind": "method",
+      "signature": "todense(self)",
+      "description": "Fast implementation of todense based on known structure of the\noperator",
+      "source_file": "pylops/basicoperators/diagonal.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.matrixmult.MatrixMult.inv",
+      "kind": "method",
+      "signature": "inv(self)",
+      "description": "Return the inverse of :math:`\\mathbf{A}`.",
+      "source_file": "pylops/basicoperators/matrixmult.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.regression.Regression.apply",
+      "kind": "method",
+      "signature": "apply(self, t, x)",
+      "description": "Return values along y-axis given certain ``t`` location(s) along\nt-axis and regression coefficients ``x``",
+      "source_file": "pylops/basicoperators/regression.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "pylops.basicoperators.restriction.Restriction.mask",
+      "kind": "method",
+      "signature": "mask(self, x)",
+      "description": "Apply mask to input signal returning a signal of same size with\nvalues at ``iava`` locations and ``0`` at other locations",
+      "source_file": "pylops/basicoperators/restriction.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": ".claude.skills.newop.reference.test_template.test_MyOperator_raises",
+      "kind": "function",
+      "signature": "test_MyOperator_raises()",
+      "description": "Check input validation of MyOperator",
+      "source_file": ".claude/skills/newop/reference/test_template.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "noxfile.lint",
+      "kind": "function",
+      "signature": "lint(session)",
+      "description": "Run the Ruff linter.",
+      "source_file": "noxfile.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "noxfile.tests",
+      "kind": "function",
+      "signature": "tests(session)",
+      "description": "Run unit tests.",
+      "source_file": "noxfile.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

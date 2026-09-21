@@ -1,0 +1,4402 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/dlisio",
+  "language": "Python",
+  "function_count": 350,
+  "functions": [
+    {
+      "name": "read",
+      "kind": "function/declaration",
+      "signature": "read(&descriptor)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 12,
+      "evidence": [
+        "package/public export",
+        "mentioned in README",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlisio.common.errorhandler.Actions",
+      "kind": "class",
+      "signature": "Actions",
+      "description": "Actions available for various specification violations",
+      "source_file": "python/dlisio/common/errorhandler.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel.curves",
+      "kind": "method",
+      "signature": "curves(self)",
+      "description": "Returns a numpy ndarray with the curves-values.",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.load",
+      "kind": "method",
+      "signature": "load(self)",
+      "description": "Force load all objects - mainly indended for debugging",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame.index",
+      "kind": "method",
+      "signature": "index(self)",
+      "description": "Mnemonic of the channel all channels in this Frame are indexed\nagainst, if any. See :attr:`Frame.index_type` for definition of\nexisting index channel.",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.load",
+      "kind": "function",
+      "signature": "load(path, error_handler=None)",
+      "description": "Loads a file and returns one filehandle pr logical file.",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.data_format_specs",
+      "kind": "method",
+      "signature": "data_format_specs(self)",
+      "description": "Data Format Specification Records (DFSR)",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "attref",
+      "kind": "struct",
+      "signature": "attref",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "basic_object",
+      "kind": "struct",
+      "signature": "basic_object",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "bswap16",
+      "kind": "function/declaration",
+      "signature": "bswap16(uint16_t x)",
+      "description": "",
+      "source_file": "external/endianness/include/endianness/endianness.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "bswap32",
+      "kind": "function/declaration",
+      "signature": "bswap32(uint32_t x)",
+      "description": "",
+      "source_file": "external/endianness/include/endianness/endianness.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "bswap64",
+      "kind": "function/declaration",
+      "signature": "bswap64(uint64_t x)",
+      "description": "",
+      "source_file": "external/endianness/include/endianness/endianness.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "component_block",
+      "kind": "struct",
+      "signature": "component_block",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dfsr",
+      "kind": "struct",
+      "signature": "dfsr",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ascii",
+      "kind": "function/declaration",
+      "signature": "dlis_ascii(const char*, int32_t* len, char* out)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_asciio",
+      "kind": "function/declaration",
+      "signature": "dlis_asciio(void*, int32_t len, const char* in, std::uint8_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_attref",
+      "kind": "function/declaration",
+      "signature": "dlis_attref(const char*, int32_t* ident1_len, char* ident1, int32_t* origin, uint8_t* copy_number, int32_t* objname_len, char* identifier, int32_t* ident2_len, char* ident2)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_attrefo",
+      "kind": "function/declaration",
+      "signature": "dlis_attrefo(void*, uint8_t ident1_len, const char* ident1, int32_t origin, uint8_t copy_number, uint8_t objname_len, const char* identifier, uint8_t ident2_len, const char* ident2)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_cdoubl",
+      "kind": "function/declaration",
+      "signature": "dlis_cdoubl(const char*, double* R, double* I)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_cdoublo",
+      "kind": "function/declaration",
+      "signature": "dlis_cdoublo(void*, double, double)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component",
+      "kind": "function/declaration",
+      "signature": "dlis_component(descriptor, &role)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component",
+      "kind": "function/declaration",
+      "signature": "dlis_component(uint8_t descriptor, int* role)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_attrib",
+      "kind": "function/declaration",
+      "signature": "dlis_component_attrib(uint8_t descriptor, int role, int* label, int* count, int* reprcode, int* units, int* value)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_object",
+      "kind": "function/declaration",
+      "signature": "dlis_component_object(descriptor, role, &obname)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_object",
+      "kind": "function/declaration",
+      "signature": "dlis_component_object(uint8_t descriptor, int role, int* obname)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_set",
+      "kind": "function/declaration",
+      "signature": "dlis_component_set(descriptor, role, &type, &name)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_set",
+      "kind": "function/declaration",
+      "signature": "dlis_component_set(uint8_t descriptor, int role, int* type, int* name)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_component_str",
+      "kind": "function/declaration",
+      "signature": "dlis_component_str(int)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_csingl",
+      "kind": "function/declaration",
+      "signature": "dlis_csingl(const char*, float* R, float* I)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_csinglo",
+      "kind": "function/declaration",
+      "signature": "dlis_csinglo(void*, float, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_dtime",
+      "kind": "function/declaration",
+      "signature": "dlis_dtime(const char*, int* Y, int* TZ, int* M, int* D, int* H, int* MN, int* S, int* MS)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_dtimeo",
+      "kind": "function/declaration",
+      "signature": "dlis_dtimeo(void*, int Y, int TZ, int M, int D, int H, int MN, int S, int MS)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_encryption_packet_info",
+      "kind": "function/declaration",
+      "signature": "dlis_encryption_packet_info(const char*, int* len, int* companycode)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_error",
+      "kind": "struct",
+      "signature": "dlis_error",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoub1",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoub1(const char*, double* V, double* A)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoub1o",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoub1o(void*, double, double)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoub2",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoub2(const char*, double* V, double* A, double* B)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoub2o",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoub2o(void*, double, double, double)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoubl",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoubl(const char*, double*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fdoublo",
+      "kind": "function/declaration",
+      "signature": "dlis_fdoublo(void*, double)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_find_sul",
+      "kind": "function/declaration",
+      "signature": "dlis_find_sul(const char* from, long long search_limit, long long* offset)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_find_vrl",
+      "kind": "function/declaration",
+      "signature": "dlis_find_vrl(const char* from, long long search_limit, long long* offset)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fshort",
+      "kind": "function/declaration",
+      "signature": "dlis_fshort(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsing1",
+      "kind": "function/declaration",
+      "signature": "dlis_fsing1(const char*, float* V, float* A)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsing1o",
+      "kind": "function/declaration",
+      "signature": "dlis_fsing1o(void*, float, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsing2",
+      "kind": "function/declaration",
+      "signature": "dlis_fsing2(const char*, float* V, float* A, float* B)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsing2o",
+      "kind": "function/declaration",
+      "signature": "dlis_fsing2o(void*, float, float, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsingl",
+      "kind": "function/declaration",
+      "signature": "dlis_fsingl(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_fsinglo",
+      "kind": "function/declaration",
+      "signature": "dlis_fsinglo(void*, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ident",
+      "kind": "function/declaration",
+      "signature": "dlis_ident(const char*, int32_t* len, char* out)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_idento",
+      "kind": "function/declaration",
+      "signature": "dlis_idento(void*, uint8_t len, const char* in)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_isingl",
+      "kind": "function/declaration",
+      "signature": "dlis_isingl(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_isinglo",
+      "kind": "function/declaration",
+      "signature": "dlis_isinglo(void*, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_lrsh",
+      "kind": "function/declaration",
+      "signature": "dlis_lrsh(const char* xs, int* length, uint8_t* attrs, int* type)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_object_fingerprint",
+      "kind": "function/declaration",
+      "signature": "dlis_object_fingerprint(int32_t type_len, const char* type, int32_t id_len, const char* id, int32_t origin, uint8_t copynum, char* fingerprint)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_object_fingerprint_size",
+      "kind": "function/declaration",
+      "signature": "dlis_object_fingerprint_size(int32_t type_len, const char* type, int32_t id_len, const char* id, int32_t origin, uint8_t copynum, int* size)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_objref",
+      "kind": "function/declaration",
+      "signature": "dlis_objref(const char*, int32_t* ident_len, char* ident, int32_t* origin, uint8_t* copy_number, int32_t* objname_len, char* identifier)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_objrefo",
+      "kind": "function/declaration",
+      "signature": "dlis_objrefo(void*, uint8_t ident_len, const char* ident, int32_t origin, uint8_t copy_number, uint8_t objname_len, const char* identifier)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_obname",
+      "kind": "function/declaration",
+      "signature": "dlis_obname(const char*, int32_t* origin, uint8_t* copy_number, int32_t* idlen, char* identifier)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_obnameo",
+      "kind": "function/declaration",
+      "signature": "dlis_obnameo(void*, int32_t origin, uint8_t copy_number, uint8_t idlen, const char* identifier)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_origin",
+      "kind": "function/declaration",
+      "signature": "dlis_origin(const char*, int32_t* out)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_origino",
+      "kind": "function/declaration",
+      "signature": "dlis_origino(void*, int32_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_pack_size",
+      "kind": "function/declaration",
+      "signature": "dlis_pack_size(const char* fmt, int* src, int* dst)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_pack_varsize",
+      "kind": "function/declaration",
+      "signature": "dlis_pack_varsize(const char* fmt, int* src, int* dst)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_packf",
+      "kind": "function/declaration",
+      "signature": "dlis_packf(const char* fmt, const void* src, void* dst)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_packflen",
+      "kind": "function/declaration",
+      "signature": "dlis_packflen(const char* fmt, const void* src, int* nread, int* nwrite)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_segment_attributes",
+      "kind": "function/declaration",
+      "signature": "dlis_segment_attributes(uint8_t, int* explicit_formatting, int* has_predecessor, int* has_successor, int* is_encrypted, int* has_encryption_packet, int* has_checksum, int* has_trailing_length, int* has_padding)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_sizeof_type",
+      "kind": "function/declaration",
+      "signature": "dlis_sizeof_type(int)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_slong",
+      "kind": "function/declaration",
+      "signature": "dlis_slong(const char*, int32_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_slongo",
+      "kind": "function/declaration",
+      "signature": "dlis_slongo(void*, int32_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_snorm",
+      "kind": "function/declaration",
+      "signature": "dlis_snorm(const char*, int16_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_snormo",
+      "kind": "function/declaration",
+      "signature": "dlis_snormo(void*, int16_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_sshort",
+      "kind": "function/declaration",
+      "signature": "dlis_sshort(const char*, int8_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_sshorto",
+      "kind": "function/declaration",
+      "signature": "dlis_sshorto(void*, int8_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_status",
+      "kind": "function/declaration",
+      "signature": "dlis_status(const char*, uint8_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_statuso",
+      "kind": "function/declaration",
+      "signature": "dlis_statuso(void*, uint8_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_sul",
+      "kind": "function/declaration",
+      "signature": "dlis_sul(const char* xs, int* seqnum, int* major, int* minor, int* layout, int64_t* maxlen, char* id)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_trim_record_segment",
+      "kind": "function/declaration",
+      "signature": "dlis_trim_record_segment(uint8_t attrs, const char* begin, const char* end, int* size)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ulong",
+      "kind": "function/declaration",
+      "signature": "dlis_ulong(const char*, uint32_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ulongo",
+      "kind": "function/declaration",
+      "signature": "dlis_ulongo(void*, uint32_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_units",
+      "kind": "function/declaration",
+      "signature": "dlis_units(const char*, int32_t*, char*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_unitso",
+      "kind": "function/declaration",
+      "signature": "dlis_unitso(void*, uint8_t len, const char* in)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_unorm",
+      "kind": "function/declaration",
+      "signature": "dlis_unorm(const char*, uint16_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_unormo",
+      "kind": "function/declaration",
+      "signature": "dlis_unormo(void*, uint16_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ushort",
+      "kind": "function/declaration",
+      "signature": "dlis_ushort(const char*, uint8_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_ushorto",
+      "kind": "function/declaration",
+      "signature": "dlis_ushorto(void*, uint8_t)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_uvari",
+      "kind": "function/declaration",
+      "signature": "dlis_uvari(const char*, int32_t* out)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_uvario",
+      "kind": "function/declaration",
+      "signature": "dlis_uvario(void*, int32_t, int width)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_vrl",
+      "kind": "function/declaration",
+      "signature": "dlis_vrl(const char* xs, int* len, int* version)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_vsingl",
+      "kind": "function/declaration",
+      "signature": "dlis_vsingl(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_vsinglo",
+      "kind": "function/declaration",
+      "signature": "dlis_vsinglo(void*, float)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_year",
+      "kind": "function/declaration",
+      "signature": "dlis_year(int)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlis_yearo",
+      "kind": "function/declaration",
+      "signature": "dlis_yearo(int)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dtime",
+      "kind": "struct",
+      "signature": "dtime",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "entry_block",
+      "kind": "struct",
+      "signature": "entry_block",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "entry_type",
+      "kind": "class",
+      "signature": "entry_type",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "eof_error",
+      "kind": "struct",
+      "signature": "eof_error",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "error_handler",
+      "kind": "struct",
+      "signature": "error_handler",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "error_severity",
+      "kind": "class",
+      "signature": "error_severity",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "file_header",
+      "kind": "struct",
+      "signature": "file_header",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "file_record",
+      "kind": "struct",
+      "signature": "file_record",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "file_trailer",
+      "kind": "struct",
+      "signature": "file_trailer",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "findsul",
+      "kind": "function/declaration",
+      "signature": "findsul(dlisio::stream&, const dl::error_handler&, bool)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "findvrl",
+      "kind": "function/declaration",
+      "signature": "findvrl(dlisio::stream&, const dl::error_handler&)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "fmtchr",
+      "kind": "class",
+      "signature": "fmtchr",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "information_record",
+      "kind": "struct",
+      "signature": "information_record",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "io_error",
+      "kind": "struct",
+      "signature": "io_error",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "iodevice",
+      "kind": "struct",
+      "signature": "iodevice",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "is_padbytes",
+      "kind": "function/declaration",
+      "signature": "is_padbytes(const char* xs, std::uint16_t n)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_byte",
+      "kind": "function/declaration",
+      "signature": "lis_byte(const char*, std::uint8_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_f16",
+      "kind": "function/declaration",
+      "signature": "lis_f16(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_f32",
+      "kind": "function/declaration",
+      "signature": "lis_f32(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_f32fix",
+      "kind": "function/declaration",
+      "signature": "lis_f32fix(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_f32low",
+      "kind": "function/declaration",
+      "signature": "lis_f32low(const char*, float*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_i16",
+      "kind": "function/declaration",
+      "signature": "lis_i16(const char*, std::int16_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_i32",
+      "kind": "function/declaration",
+      "signature": "lis_i32(const char*, std::int32_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_i8",
+      "kind": "function/declaration",
+      "signature": "lis_i8(const char*, std::int8_t*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_mask",
+      "kind": "function/declaration",
+      "signature": "lis_mask(const char*, const std::int32_t, char*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_packf",
+      "kind": "function/declaration",
+      "signature": "lis_packf(const char* fmt, const void* src, void* dst)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/pack.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_packflen",
+      "kind": "function/declaration",
+      "signature": "lis_packflen(const char* fmt, const void* src, int* nread, int* nwrite)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/pack.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_sizeof_type",
+      "kind": "function/declaration",
+      "signature": "lis_sizeof_type(int)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lis_string",
+      "kind": "function/declaration",
+      "signature": "lis_string(const char*, const std::int32_t, char*)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/types.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "logic_error",
+      "kind": "function/declaration",
+      "signature": "logic_error(\"Not implemented yet: \" + msg)",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "lrheader",
+      "kind": "struct",
+      "signature": "lrheader",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "ltell",
+      "kind": "function/declaration",
+      "signature": "ltell()",
+      "description": "",
+      "source_file": "lib/include/dlisio/file.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "matcher",
+      "kind": "struct",
+      "signature": "matcher",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "memcpy",
+      "kind": "function/declaration",
+      "signature": "memcpy(&C1, bytes, sizeof(C1))",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "memcpy",
+      "kind": "function/declaration",
+      "signature": "memcpy(C2, bytes + 2, sizeof(C2))",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "memcpy",
+      "kind": "function/declaration",
+      "signature": "memcpy(&c3, bytes + 10, sizeof(C3))",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "name",
+      "kind": "struct",
+      "signature": "name",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(std::declval< const T& >() == std::declval< const T& >())",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(std::declval< const T& >() != std::declval< const T& >())",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(std::declval< const T& >() < std::declval< const T& >())",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(std::declval< const T& >() <= std::declval< const T& >())",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(std::declval< const T& >() >= std::declval< const T& >())",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_swappable)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_eq)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_ne)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_lt)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_le)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(nothrow_ge)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(strong_typedef< Tag, T >::nothrow_swappable)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "not_found",
+      "kind": "struct",
+      "signature": "not_found",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "not_implemented",
+      "kind": "struct",
+      "signature": "not_implemented",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "object_attribute",
+      "kind": "struct",
+      "signature": "object_attribute",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "object_set",
+      "kind": "struct",
+      "signature": "object_set",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "objref",
+      "kind": "struct",
+      "signature": "objref",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "obname",
+      "kind": "struct",
+      "signature": "obname",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "pool",
+      "kind": "class",
+      "signature": "pool",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "prheader",
+      "kind": "struct",
+      "signature": "prheader",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "process_indicators",
+      "kind": "function/declaration",
+      "signature": "process_indicators(const lis::mask&)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "process_indicators",
+      "kind": "struct",
+      "signature": "process_indicators",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "ptell",
+      "kind": "function/declaration",
+      "signature": "ptell()",
+      "description": "",
+      "source_file": "lib/include/dlisio/file.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "range",
+      "kind": "struct",
+      "signature": "range",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "read_records",
+      "kind": "function/declaration",
+      "signature": "read_records(const record_index&, const record_type&)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "read_segment",
+      "kind": "function/declaration",
+      "signature": "read_segment(&buffer, &segment_len)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "record",
+      "kind": "struct",
+      "signature": "record",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "record_index",
+      "kind": "struct",
+      "signature": "record_index",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "record_info",
+      "kind": "struct",
+      "signature": "record_info",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "record_type",
+      "kind": "class",
+      "signature": "record_type",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "reel_header",
+      "kind": "struct",
+      "signature": "reel_header",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "reel_tape_record",
+      "kind": "struct",
+      "signature": "reel_tape_record",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "reel_trailer",
+      "kind": "struct",
+      "signature": "reel_trailer",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "remove",
+      "kind": "function/declaration",
+      "signature": "remove(const object_attribute&)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "report_invalid_padding",
+      "kind": "function/declaration",
+      "signature": "report_invalid_padding()",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "report_other_error",
+      "kind": "function/declaration",
+      "signature": "report_other_error()",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/dlisio.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "representation_code",
+      "kind": "class",
+      "signature": "representation_code",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/types.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "runtime_error",
+      "kind": "function/declaration",
+      "signature": "runtime_error(msg)",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "set",
+      "kind": "function/declaration",
+      "signature": "set(const object_attribute&)",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/records.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "spec_block",
+      "kind": "struct",
+      "signature": "spec_block",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "spec_block0",
+      "kind": "struct",
+      "signature": "spec_block0",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "spec_block1",
+      "kind": "struct",
+      "signature": "spec_block1",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "stream",
+      "kind": "class",
+      "signature": "stream",
+      "description": "",
+      "source_file": "lib/include/dlisio/file.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "stream_offsets",
+      "kind": "struct",
+      "signature": "stream_offsets",
+      "description": "",
+      "source_file": "lib/include/dlisio/dlis/io.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "function/declaration",
+      "signature": "strong_typedef(const T& x)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "function/declaration",
+      "signature": "strong_typedef(T&& x)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "class",
+      "signature": "strong_typedef",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "swap",
+      "kind": "function/declaration",
+      "signature": "swap(static_cast< T& >( a ), static_cast< T& >( b ))",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "tape_header",
+      "kind": "struct",
+      "signature": "tape_header",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "tape_trailer",
+      "kind": "struct",
+      "signature": "tape_trailer",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "tapemark",
+      "kind": "struct",
+      "signature": "tapemark",
+      "description": "",
+      "source_file": "lib/include/dlisio/tapemark.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "text_record",
+      "kind": "struct",
+      "signature": "text_record",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "truncation_error",
+      "kind": "struct",
+      "signature": "truncation_error",
+      "description": "",
+      "source_file": "lib/include/dlisio/exception.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "valid_rectype",
+      "kind": "function/declaration",
+      "signature": "valid_rectype(lis::byte type)",
+      "description": "",
+      "source_file": "lib/include/dlisio/lis/protocol.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "value",
+      "kind": "function/declaration",
+      "signature": "value(x)",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "value",
+      "kind": "function/declaration",
+      "signature": "value(std::move( x ))",
+      "description": "",
+      "source_file": "lib/include/dlisio/strong-typedef.hpp",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame",
+      "kind": "class",
+      "signature": "Frame",
+      "description": "Frame",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame.curves",
+      "kind": "method",
+      "signature": "curves(self, strict=True)",
+      "description": "All curves belonging to this frame",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.noformat.Noformat.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "Raw data",
+      "source_file": "python/dlisio/dlis/noformat.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.curves",
+      "kind": "function",
+      "signature": "curves(f, dfsr, sample_rate=None, strict=True)",
+      "description": "Read curves",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.lis.load.load",
+      "kind": "function",
+      "signature": "load(path, error_handler=None)",
+      "description": "Loads and indexes a LIS file",
+      "source_file": "python/dlisio/lis/load.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.common.settings.get_encodings",
+      "kind": "function",
+      "signature": "get_encodings()",
+      "description": "Get codepages to use for decoding strings",
+      "source_file": "python/dlisio/common/settings.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.common.settings.set_encodings",
+      "kind": "function",
+      "signature": "set_encodings(encodings)",
+      "description": "Set codepages to use for decoding strings",
+      "source_file": "python/dlisio/common/settings.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.basicobject.BasicObject",
+      "kind": "class",
+      "signature": "BasicObject",
+      "description": "A Basic object that all other object-types derive from",
+      "source_file": "python/dlisio/dlis/basicobject.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.calibration.Calibration",
+      "kind": "class",
+      "signature": "Calibration",
+      "description": "Calibration objects are a collection of measurements and coefficients that\ndefines the calibration process of channel objects.",
+      "source_file": "python/dlisio/dlis/calibration.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel",
+      "kind": "class",
+      "signature": "Channel",
+      "description": "A channel is a sequence of measured or computed samples that are indexed\nagainst some physical quantity e.g. depth or time. The standard supports\nmulti-dimensional samples. Each sample can be a scalar or a n-dimensional\narray. In addition to giving access to the actual curve-data, the Channel\nobject contains metadata about the curve.",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.coefficient.Coefficient",
+      "kind": "class",
+      "signature": "Coefficient",
+      "description": "Records of measurements, references, and tolerances used in the calibration\nof channels.",
+      "source_file": "python/dlisio/dlis/coefficient.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.comment.Comment",
+      "kind": "class",
+      "signature": "Comment",
+      "description": "Comment objects contains arbitrary messages that may be interesting for the\nconsumer e.g. a drilling report.",
+      "source_file": "python/dlisio/dlis/comment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.computation.Computation",
+      "kind": "class",
+      "signature": "Computation",
+      "description": "Results of computations that are more appropriately expressed as static\ninformation rather than as channels.",
+      "source_file": "python/dlisio/dlis/computation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.equipment.Equipment",
+      "kind": "class",
+      "signature": "Equipment",
+      "description": "Equipment objects contains information about individual pieces of surface\nand downhole equipment used in the acquistion of the data. Typically, tools\n(specified by the Tool object) is a composition of equipment.",
+      "source_file": "python/dlisio/dlis/equipment.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.object",
+      "kind": "method",
+      "signature": "object(self, type, name, origin=None, copynr=None)",
+      "description": "Direct access to a single object.\ndlis-objects are uniquely identifiable by the combination of\ntype, name, origin and copynumber of the object. However, in most cases\ntype and name are sufficient to identify a specific object.\nIf origin and/or copynr is omitted in the function call, and there are\nmultiple objects matching the type and name, a ValueError is raised.",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.storage_label",
+      "kind": "method",
+      "signature": "storage_label(self)",
+      "description": "Return the storage label of the physical file",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.unknowns",
+      "kind": "method",
+      "signature": "unknowns(self)",
+      "description": "Return all objects that are unknown to dlisio.",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.ObjectStore.promote",
+      "kind": "method",
+      "signature": "promote(self, attics)",
+      "description": "Promote dlisio.core.basic_objects to first-class Python objects",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.PhysicalFile.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Close the file handles of all Logical Files",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.fileheader.Fileheader",
+      "kind": "class",
+      "signature": "Fileheader",
+      "description": "The Fileheader is an identifier for the Logical File. Below follows a description of the\nrelationship between a DLIS-file, Logical File, File Set, and Storeage Set:",
+      "source_file": "python/dlisio/dlis/fileheader.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame.fmtstrchannel",
+      "kind": "method",
+      "signature": "fmtstrchannel(self, channel)",
+      "description": "Generate format-strings for one Frame channel",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.mkunique",
+      "kind": "function",
+      "signature": "mkunique(types)",
+      "description": "Append a tail to duplicated labels in types",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.group.Group",
+      "kind": "class",
+      "signature": "Group",
+      "description": "Group Objects indicate logical groupings of other Objects. A Group is\ndefined by the producer by any associations deemed useful.",
+      "source_file": "python/dlisio/dlis/group.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.apply_rp66_protocol",
+      "kind": "method",
+      "signature": "apply_rp66_protocol(self)",
+      "description": "Opens RP66 protocol (Visible Envelope part)",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.end_of_data",
+      "kind": "method",
+      "signature": "end_of_data(self)",
+      "description": "Tests for end of data which indexer is able to process",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.index_logical_file",
+      "kind": "method",
+      "signature": "index_logical_file(self)",
+      "description": "Finds LR offsets required to parse current file and LF offsets\nneeded to open the next one",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement",
+      "kind": "class",
+      "signature": "Measurement",
+      "description": "Records of measurements, references, and tolerances used to compute\ncalibration coefficients.",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.minus_tolerance",
+      "kind": "method",
+      "signature": "minus_tolerance(self)",
+      "description": "The maximum value that any sample (in samples) can fall below the\nreference and still be 'within tolerance'. Should be all non-negative\nnumbers. If this attribute is empty, the minus tolerance is implicity\ninfinite.",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.plus_tolerance",
+      "kind": "method",
+      "signature": "plus_tolerance(self)",
+      "description": "The maximum value that any sample (in samples) can exceed the\nreference and still be 'within tolerance'. Should be all non-negative\nnumbers. If this attribute is empty, the plus tolerance is implicity\ninfinite.",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.reference",
+      "kind": "method",
+      "signature": "reference(self)",
+      "description": "The nominal value of each sample in the samples attribute",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.message.Message",
+      "kind": "class",
+      "signature": "Message",
+      "description": "Textual messages tied to other data by means of time and/or position of\ntool zero point when the message was recorded",
+      "source_file": "python/dlisio/dlis/message.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.noformat.Noformat",
+      "kind": "class",
+      "signature": "Noformat",
+      "description": "Noformat objects contain description of unformatted data present in files.",
+      "source_file": "python/dlisio/dlis/noformat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.origin.Origin",
+      "kind": "class",
+      "signature": "Origin",
+      "description": "Describes the creation of the logical file.",
+      "source_file": "python/dlisio/dlis/origin.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.path.Path",
+      "kind": "class",
+      "signature": "Path",
+      "description": "Path Objects defines Channels in the Data Frames of a given Frame Type and\nare combined to define part or all of a Data Path, and variation in the\nalignment.",
+      "source_file": "python/dlisio/dlis/path.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.process.Process",
+      "kind": "class",
+      "signature": "Process",
+      "description": "Process objects describes a specific process or computation applied to input\nobjects to get output objects.",
+      "source_file": "python/dlisio/dlis/process.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.splice.Splice",
+      "kind": "class",
+      "signature": "Splice",
+      "description": "Splice describes the process of concatinating multiple channels into one.\nThe concatination is defined by the zone objects, where the first zone\nobject corresponds to the first input channel and so on. The zones must be\nmutually disjoint but the ordering is arbitrary::",
+      "source_file": "python/dlisio/dlis/splice.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.tool.Tool",
+      "kind": "class",
+      "signature": "Tool",
+      "description": "A tool is an ensembly of equiptment that as a whole provide measurements or\nservices. The list of equiptment that makes up the tool can be found in\n*tool.parts*. Tools objects also keep a list of all channels that where produced by\nthe tool in *tool.channels*.",
+      "source_file": "python/dlisio/dlis/tool.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.unknown.Unknown",
+      "kind": "class",
+      "signature": "Unknown",
+      "description": "The unknown object is intended as a fall-back object if the\nobject-type is not recognized by dlisio, e.g. vendor spesific object types",
+      "source_file": "python/dlisio/dlis/unknown.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_array",
+      "kind": "function",
+      "signature": "describe_array(buf, a, width, indent, subindent=None, writeempty=False, units='')",
+      "description": "Write a list into the buffer in a nice printable way",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_attributes",
+      "kind": "function",
+      "signature": "describe_attributes(buf, d, obj, width, indent, exclude=None)",
+      "description": "Describe attributes that first need to be retrieved from object.\nIf value is not found in objects attribute dictionary, it is assumed to be\na simple value and will be printed without any changes",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_description",
+      "kind": "function",
+      "signature": "describe_description(buf, description, width, indent, exclude)",
+      "description": "If description references a long_name objects, use its describe. Else\nprint as is.",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_sampled_attrs",
+      "kind": "function",
+      "signature": "describe_sampled_attrs(buf, attic, dims, valuekey, extras, width, indent, exclude, single=True)",
+      "description": "Describe attributes that needs to be sampled (re-shaped)",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_text",
+      "kind": "function",
+      "signature": "describe_text(buf, text, width, indent, subindent=None, units='')",
+      "description": "Wrap text with textwrapper and write to the buffer",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.parseoptions",
+      "kind": "function",
+      "signature": "parseoptions(fmt)",
+      "description": "\"Create a dict with option based fmt-string",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.remove_empties",
+      "kind": "function",
+      "signature": "remove_empties(d)",
+      "description": "Drop entries with no value. '0' is considered to be a valid value.",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.replist",
+      "kind": "function",
+      "signature": "replist(elements, mode)",
+      "description": "Customize representation of metadata objects. Elements that are not\nderived from BasicObject are represented as is.",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.dimensional.issequence",
+      "kind": "function",
+      "signature": "issequence(obj)",
+      "description": "Check if object is a sequence, but ignore string and bytes objects",
+      "source_file": "python/dlisio/dlis/utils/dimensional.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.dimensional.sampling",
+      "kind": "function",
+      "signature": "sampling(data, shape, single=False)",
+      "description": "Samplify takes a flat array and returns a structured numpy array, where\neach sample is shaped by shape, i.e. each sample may be scalar or ndarray.",
+      "source_file": "python/dlisio/dlis/utils/dimensional.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.dimensional.validshape",
+      "kind": "function",
+      "signature": "validshape(data, shape, samplecount=None)",
+      "description": "Return a valid shape that can be used to sample the data.\nFor a shape to be valid, the following relationship must hold::",
+      "source_file": "python/dlisio/dlis/utils/dimensional.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.linkage.lookup",
+      "kind": "function",
+      "signature": "lookup(lf, reftype, value)",
+      "description": "Create a fingerprint from reftype(value) and look up corresponding\nobject in the logical file.",
+      "source_file": "python/dlisio/dlis/utils/linkage.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.valuetypes.defaultvalue",
+      "kind": "function",
+      "signature": "defaultvalue(attribute)",
+      "description": "Returns a default value based on the attribute type",
+      "source_file": "python/dlisio/dlis/utils/valuetypes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.valuetypes.parsevalue",
+      "kind": "function",
+      "signature": "parsevalue(value, parse_as)",
+      "description": "All attributes arrive as lists from the core library. Parse value based\non parse_as",
+      "source_file": "python/dlisio/dlis/utils/valuetypes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.wellref.Wellref",
+      "kind": "class",
+      "signature": "Wellref",
+      "description": "Well reference defines origin of well with coordinates.",
+      "source_file": "python/dlisio/dlis/wellref.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.zone.Zone",
+      "kind": "class",
+      "signature": "Zone",
+      "description": "A Zone objects specifies a single interval in depth or time. Other objects\nuse zones to define spesific regions in wells or time intervals where the\nobject data is valid.",
+      "source_file": "python/dlisio/dlis/zone.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.curves_metadata",
+      "kind": "function",
+      "signature": "curves_metadata(dfsr, sample_rate=None, strict=True)",
+      "description": "Get the metadata corresponding to curves()",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.dfsr_dtype",
+      "kind": "function",
+      "signature": "dfsr_dtype(dfsr, sample_rate, strict=True)",
+      "description": "Crate a valid numpy.dtype for the given DFSR",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.is_index",
+      "kind": "function",
+      "signature": "is_index(i, mode)",
+      "description": "Returns true if the i-th channel is an index channel, otherwise, False",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.mkunique",
+      "kind": "function",
+      "signature": "mkunique(types)",
+      "description": "Append a tail to duplicated labels in types",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.uniform_sampling",
+      "kind": "function",
+      "signature": "uniform_sampling(dfsr)",
+      "description": "Returns True if all channels (except index channel) are sampled equally,\notherwise returns False",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.sample_rates",
+      "kind": "method",
+      "signature": "sample_rates(self)",
+      "description": "Return all sample rates used by (non-index) Channels in this DFSR",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.information_record.InformationRecord.table",
+      "kind": "method",
+      "signature": "table(self, fill=None, simple=False)",
+      "description": "Format the Information Record components as a table",
+      "source_file": "python/dlisio/lis/information_record.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.load.FileIndexer.check_for_tapemarks",
+      "kind": "method",
+      "signature": "check_for_tapemarks(self)",
+      "description": "Checks whether file is TIFed and adjusts initial offset accordingly",
+      "source_file": "python/dlisio/lis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel.frame",
+      "kind": "method",
+      "signature": "frame(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel.source",
+      "kind": "method",
+      "signature": "source(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.computation.Computation.source",
+      "kind": "method",
+      "signature": "source(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/computation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.group.Group.objects",
+      "kind": "method",
+      "signature": "objects(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/group.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.source",
+      "kind": "method",
+      "signature": "source(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.standard",
+      "kind": "method",
+      "signature": "standard(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.origin.Origin.version",
+      "kind": "method",
+      "signature": "version(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/origin.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.path.Path.frame",
+      "kind": "method",
+      "signature": "frame(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/path.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.process.Process.version",
+      "kind": "method",
+      "signature": "version(self)",
+      "description": "",
+      "source_file": "python/dlisio/dlis/process.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "dlisio.common.errorhandler.ErrorHandler",
+      "kind": "class",
+      "signature": "ErrorHandler",
+      "description": "Defines rules about error handling",
+      "source_file": "python/dlisio/common/errorhandler.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.common.open.open",
+      "kind": "function",
+      "signature": "open(path, offset=0)",
+      "description": "Open a file",
+      "source_file": "python/dlisio/common/open.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.axis.Axis",
+      "kind": "class",
+      "signature": "Axis",
+      "description": "Axis",
+      "source_file": "python/dlisio/dlis/axis.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.basicobject.BasicObject.describe",
+      "kind": "method",
+      "signature": "describe(self, width=80, indent='', exclude='er')",
+      "description": "Printable summary of the object",
+      "source_file": "python/dlisio/dlis/basicobject.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.basicobject.BasicObject.describe_attr",
+      "kind": "method",
+      "signature": "describe_attr(self, buf, width, indent, exclude)",
+      "description": "Describe the attributes of the object.",
+      "source_file": "python/dlisio/dlis/basicobject.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.basicobject.BasicObject.fingerprint",
+      "kind": "method",
+      "signature": "fingerprint(self)",
+      "description": "Object fingerprint",
+      "source_file": "python/dlisio/dlis/basicobject.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.basicobject.BasicObject.stash",
+      "kind": "method",
+      "signature": "stash(self)",
+      "description": "Attributes unknown to dlisio",
+      "source_file": "python/dlisio/dlis/basicobject.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel.dtype",
+      "kind": "method",
+      "signature": "dtype(self)",
+      "description": "dtype",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.channel.Channel.fmtstr",
+      "kind": "method",
+      "signature": "fmtstr(self)",
+      "description": "Generate format-string for Channel",
+      "source_file": "python/dlisio/dlis/channel.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.computation.Computation.values",
+      "kind": "method",
+      "signature": "values(self)",
+      "description": "Computation values",
+      "source_file": "python/dlisio/dlis/computation.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile",
+      "kind": "class",
+      "signature": "LogicalFile",
+      "description": "Logical file (LF)",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.cache_metadata",
+      "kind": "method",
+      "signature": "cache_metadata(self, cache)",
+      "description": "Toggle caching of metadata objects",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Close the file handle",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.describe",
+      "kind": "method",
+      "signature": "describe(self, width=80, indent='')",
+      "description": "Printable summary of the logical file",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.fileheader",
+      "kind": "method",
+      "signature": "fileheader(self)",
+      "description": "Return the Fileheader",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.LogicalFile.find",
+      "kind": "method",
+      "signature": "find(self, objecttype, objectname=None, matcher=None)",
+      "description": "Find objects in the logical file",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.ObjectStore",
+      "kind": "class",
+      "signature": "ObjectStore",
+      "description": "Metadata handler for LogicalFile",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.ObjectStore.clear_cache",
+      "kind": "method",
+      "signature": "clear_cache(self)",
+      "description": "Clear all cached objects",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.ObjectStore.find",
+      "kind": "method",
+      "signature": "find(self, object_type, object_name=None, matcher=None)",
+      "description": "Returns matching objects",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.PhysicalFile",
+      "kind": "class",
+      "signature": "PhysicalFile",
+      "description": "A Physical File",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.file.PhysicalFile.describe",
+      "kind": "method",
+      "signature": "describe(self, width=80, indent='')",
+      "description": "Describe",
+      "source_file": "python/dlisio/dlis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame.dtype",
+      "kind": "method",
+      "signature": "dtype(self, strict=True)",
+      "description": "dtype",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.frame.Frame.fmtstr",
+      "kind": "method",
+      "signature": "fmtstr(self)",
+      "description": "Generate format-string for Frame",
+      "source_file": "python/dlisio/dlis/frame.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer",
+      "kind": "class",
+      "signature": "FileIndexer",
+      "description": "Logical Files Indexer",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Closes parser",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.close_stream",
+      "kind": "method",
+      "signature": "close_stream(self)",
+      "description": "Closes current logical stream",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.find_sul",
+      "kind": "method",
+      "signature": "find_sul(self)",
+      "description": "Finds next SUL",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.logical_eof",
+      "kind": "method",
+      "signature": "logical_eof(self)",
+      "description": "Tests for logical EOF",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.open_stream",
+      "kind": "method",
+      "signature": "open_stream(self)",
+      "description": "Opens new logical stream",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.parse_logical_file",
+      "kind": "method",
+      "signature": "parse_logical_file(self)",
+      "description": "Parses new logical file",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.load.FileIndexer.read_sul",
+      "kind": "method",
+      "signature": "read_sul(self)",
+      "description": "Reads SUL",
+      "source_file": "python/dlisio/dlis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.longname.Longname",
+      "kind": "class",
+      "signature": "Longname",
+      "description": "Structured names of other objects.",
+      "source_file": "python/dlisio/dlis/longname.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.max_deviation",
+      "kind": "method",
+      "signature": "max_deviation(self)",
+      "description": "Maximum deviation",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.samples",
+      "kind": "method",
+      "signature": "samples(self)",
+      "description": "Measurment samples",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.measurement.Measurement.std_deviation",
+      "kind": "method",
+      "signature": "std_deviation(self)",
+      "description": "Standard deviation",
+      "source_file": "python/dlisio/dlis/measurement.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.parameter.Parameter",
+      "kind": "class",
+      "signature": "Parameter",
+      "description": "Parameter",
+      "source_file": "python/dlisio/dlis/parameter.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.parameter.Parameter.values",
+      "kind": "method",
+      "signature": "values(self)",
+      "description": "Parameter values",
+      "source_file": "python/dlisio/dlis/parameter.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.Summary",
+      "kind": "class",
+      "signature": "Summary",
+      "description": "Summary of metadata object",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_dict",
+      "kind": "function",
+      "signature": "describe_dict(buf, d, width, indent, exclude=None)",
+      "description": "Print a dict nicely into the buffer",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.describe_header",
+      "kind": "function",
+      "signature": "describe_header(buf, text, width, indent, lvl=1)",
+      "description": "Create a header or a section header",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.describe.headerinfo",
+      "kind": "function",
+      "signature": "headerinfo(obj)",
+      "description": "Get headerinfo from object",
+      "source_file": "python/dlisio/dlis/utils/describe.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.fdata.curves",
+      "kind": "function",
+      "signature": "curves(dlis, frame, dtype, pre_fmt, fmt, post_fmt)",
+      "description": "For internal use.\nReads curves for provided frame and position defined by frame format:\npre_fmt (to skip), fmt (to read), post_fmt (to skip)",
+      "source_file": "python/dlisio/dlis/utils/fdata.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation",
+        "mentioned in README",
+        "internal hint"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.linkage.isreference",
+      "kind": "function",
+      "signature": "isreference(val)",
+      "description": "Check if val is a rp66 reference typ",
+      "source_file": "python/dlisio/dlis/utils/linkage.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.matcher.exact_matcher",
+      "kind": "class",
+      "signature": "exact_matcher",
+      "description": "Exact matcher",
+      "source_file": "python/dlisio/dlis/utils/matcher.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.matcher.exact_matcher.match",
+      "kind": "method",
+      "signature": "match(pattern, candidate)",
+      "description": "Overrides dl::matcher::match",
+      "source_file": "python/dlisio/dlis/utils/matcher.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.matcher.regex_matcher",
+      "kind": "class",
+      "signature": "regex_matcher",
+      "description": "Regex matcher",
+      "source_file": "python/dlisio/dlis/utils/matcher.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.dlis.utils.matcher.regex_matcher.match",
+      "kind": "method",
+      "signature": "match(self, pattern, candidate)",
+      "description": "Overrides dl::matcher::match",
+      "source_file": "python/dlisio/dlis/utils/matcher.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.dfsr_fmtstr",
+      "kind": "function",
+      "signature": "dfsr_fmtstr(dfsr, sample_rate)",
+      "description": "Create a fmtstr for the current dfsr",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.curves.validate_dfsr",
+      "kind": "function",
+      "signature": "validate_dfsr(dfsr)",
+      "description": "Sanity check the Data Format Spec",
+      "source_file": "python/dlisio/lis/curves.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec",
+      "kind": "class",
+      "signature": "DataFormatSpec",
+      "description": "Data Format Specification Record (DFSR)",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.absent_value",
+      "kind": "method",
+      "signature": "absent_value(self)",
+      "description": "Absent Value",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.depth_mode",
+      "kind": "method",
+      "signature": "depth_mode(self)",
+      "description": "Depth Recording Mode",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.depth_reprc",
+      "kind": "method",
+      "signature": "depth_reprc(self)",
+      "description": "Datatype of depth/index channel",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.depth_units",
+      "kind": "method",
+      "signature": "depth_units(self)",
+      "description": "Units of depth/index channel",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.direction",
+      "kind": "method",
+      "signature": "direction(self)",
+      "description": "Direction of the acquisition",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.entries",
+      "kind": "method",
+      "signature": "entries(self)",
+      "description": "Entry Blocks (EB)",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.frame_size",
+      "kind": "method",
+      "signature": "frame_size(self)",
+      "description": "The size of one frame (row)",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.index_mnem",
+      "kind": "method",
+      "signature": "index_mnem(self)",
+      "description": "Mnemonic of the index",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.index_units",
+      "kind": "method",
+      "signature": "index_units(self)",
+      "description": "Units of the index",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.max_frames",
+      "kind": "method",
+      "signature": "max_frames(self)",
+      "description": "Maximum frames per Logical Record",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.optical_log_depth_units",
+      "kind": "method",
+      "signature": "optical_log_depth_units(self)",
+      "description": "Optical Log Depth Scale Units",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.record_type",
+      "kind": "method",
+      "signature": "record_type(self)",
+      "description": "Data Record Type",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.reference_point",
+      "kind": "method",
+      "signature": "reference_point(self)",
+      "description": "Data Reference Point",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.reference_point_units",
+      "kind": "method",
+      "signature": "reference_point_units(self)",
+      "description": "Reference point units",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.spacing",
+      "kind": "method",
+      "signature": "spacing(self)",
+      "description": "Frame Spacing",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.spacing_units",
+      "kind": "method",
+      "signature": "spacing_units(self)",
+      "description": "Frame Spacing Units",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.spec_block_subtype",
+      "kind": "method",
+      "signature": "spec_block_subtype(self)",
+      "description": "Spec Block Subtype",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.spec_block_type",
+      "kind": "method",
+      "signature": "spec_block_type(self)",
+      "description": "Spec Block Type",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.dataformatspec.DataFormatSpec.specs",
+      "kind": "method",
+      "signature": "specs(self)",
+      "description": "Spec Blocks (SB)",
+      "source_file": "python/dlisio/lis/dataformatspec.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.HeaderTrailer",
+      "kind": "class",
+      "signature": "HeaderTrailer",
+      "description": "Container for Header-Trailer pairs",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.HeaderTrailer.header",
+      "kind": "method",
+      "signature": "header(self)",
+      "description": "Header Record",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.HeaderTrailer.trailer",
+      "kind": "method",
+      "signature": "trailer(self)",
+      "description": "Trailer Record",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile",
+      "kind": "class",
+      "signature": "LogicalFile",
+      "description": "Logical File (LF)",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Close the file handle",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.flic_comment",
+      "kind": "method",
+      "signature": "flic_comment(self)",
+      "description": "Comment Record",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.header",
+      "kind": "method",
+      "signature": "header(self)",
+      "description": "Logical File Header",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.job_identification",
+      "kind": "method",
+      "signature": "job_identification(self)",
+      "description": "Job Identification Logical Records",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.operator_command_inputs",
+      "kind": "method",
+      "signature": "operator_command_inputs(self)",
+      "description": "Operator Command Inputs",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.operator_response_inputs",
+      "kind": "method",
+      "signature": "operator_response_inputs(self)",
+      "description": "Operator Response Inputs",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.parse_records",
+      "kind": "method",
+      "signature": "parse_records(self, rectype)",
+      "description": "Parse Explicit records of given type",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.system_outputs_to_operator",
+      "kind": "method",
+      "signature": "system_outputs_to_operator(self)",
+      "description": "System Outputs to Operator",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.tool_string_info",
+      "kind": "method",
+      "signature": "tool_string_info(self)",
+      "description": "Tool String Info Logical Records",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.trailer",
+      "kind": "method",
+      "signature": "trailer(self)",
+      "description": "Logical File Trailer",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.LogicalFile.wellsite_data",
+      "kind": "method",
+      "signature": "wellsite_data(self)",
+      "description": "Wellsite Data Logical Records",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.PhysicalFile",
+      "kind": "class",
+      "signature": "PhysicalFile",
+      "description": "Physical File - A regular file on disk",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.file.parse_record",
+      "kind": "function",
+      "signature": "parse_record(rec)",
+      "description": "Parse Explicit (or Fixed) record",
+      "source_file": "python/dlisio/lis/file.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.information_record.InformationRecord",
+      "kind": "class",
+      "signature": "InformationRecord",
+      "description": "Information Record",
+      "source_file": "python/dlisio/lis/information_record.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.information_record.InformationRecord.components",
+      "kind": "method",
+      "signature": "components(self)",
+      "description": "Component Blocks",
+      "source_file": "python/dlisio/lis/information_record.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.information_record.InformationRecord.isstructured",
+      "kind": "method",
+      "signature": "isstructured(self)",
+      "description": "Is the record structured as a table",
+      "source_file": "python/dlisio/lis/information_record.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.information_record.InformationRecord.table_name",
+      "kind": "method",
+      "signature": "table_name(self)",
+      "description": "Table name",
+      "source_file": "python/dlisio/lis/information_record.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.load.FileIndexer",
+      "kind": "class",
+      "signature": "FileIndexer",
+      "description": "Logical Files Indexer",
+      "source_file": "python/dlisio/lis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.load.FileIndexer.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Closes parser",
+      "source_file": "python/dlisio/lis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "dlisio.lis.load.FileIndexer.index_logical_file",
+      "kind": "method",
+      "signature": "index_logical_file(self)",
+      "description": "Open a file and index it.",
+      "source_file": "python/dlisio/lis/load.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

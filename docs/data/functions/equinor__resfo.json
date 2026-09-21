@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/resfo",
+  "language": "Python",
+  "function_count": 34,
+  "functions": [
+    {
+      "name": "resfo.format.Format",
+      "kind": "class",
+      "signature": "Format",
+      "description": "The format of an res file, either FORMATTED for ascii\nor UNFORMATTED for binary.",
+      "source_file": "src/resfo/format.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "resfo.read.read",
+      "kind": "function",
+      "signature": "read(filelike, fileformat=None)",
+      "description": "Read the contents of a res file and return a list of\ntuples (keyword, array). Takes the same parameters as\nlazy_read, but differs in return type",
+      "source_file": "src/resfo/read.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "resfo._formatted.read.FormattedArray",
+      "kind": "class",
+      "signature": "FormattedArray",
+      "description": "An array entry in an formatted res file.",
+      "source_file": "src/resfo/_formatted/read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._formatted.read.drop_while_space",
+      "kind": "function",
+      "signature": "drop_while_space(stream)",
+      "description": "Forwards the stream to the first non-space character.\nAssumes the stream is in text mode.",
+      "source_file": "src/resfo/_formatted/read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._formatted.write.formatted_write",
+      "kind": "function",
+      "signature": "formatted_write(stream, keyworded_arrays)",
+      "description": "Writes the list of data entries to the stream as\nformatted res.\n:param stream: File handle in text mode.\n:param keyworded_arrays: Either iterable or list of (kw, array)\n    tuples for entries to be written to the file. Also takes dictionary\n    of keyword: array pairs.",
+      "source_file": "src/resfo/_formatted/write.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._formatted.write.write_entry",
+      "kind": "function",
+      "signature": "write_entry(stream, keyword, array_like)",
+      "description": "Write the given array/keyword entry to the\nstream in the formatted res file format.\n:param stream: text-mode stream to write to.\n:param keyword: 8-character string to use for keyword.\n:param array_like: Array of values to write.",
+      "source_file": "src/resfo/_formatted/write.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._formatted.write.write_np_array",
+      "kind": "function",
+      "signature": "write_np_array(stream, array, res_type)",
+      "description": "Writes the given numpy array to the stream as\nthe given res_type.\n:param stream: stream to write to.\n:param array: Numpy array.\n:param res_type: The res type to use for the array, see\n    resfo.types.",
+      "source_file": "src/resfo/_formatted/write.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._formatted.write.write_str_list",
+      "kind": "function",
+      "signature": "write_str_list(stream, str_list)",
+      "description": "Writes the given list of strings to the res file.\nThe strings will have the length of the longest string,\nleft-padded with space and enclosed by single-quotes.",
+      "source_file": "src/resfo/_formatted/write.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._unformatted.common.bytes_in_array",
+      "kind": "function",
+      "signature": "bytes_in_array(array_length, item_type)",
+      "description": ":param array_length: Number of items in the array\n:param item_type: Type of items in the array\n:returns: Number of bytes used to store an array of\n    given type and length",
+      "source_file": "src/resfo/_unformatted/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._unformatted.common.group_len",
+      "kind": "function",
+      "signature": "group_len(type_keyword)",
+      "description": "The length of element groups in unformatted arrays.",
+      "source_file": "src/resfo/_unformatted/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._unformatted.common.item_size",
+      "kind": "function",
+      "signature": "item_size(type_keyword)",
+      "description": ":returns: The number of bytes for each element in an\n    res array of the given res type.",
+      "source_file": "src/resfo/_unformatted/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._unformatted.read.UnformattedResArray",
+      "kind": "class",
+      "signature": "UnformattedResArray",
+      "description": "An array entry in a unformatted res file.",
+      "source_file": "src/resfo/_unformatted/read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo._unformatted.read.UnformattedResArray.read_array",
+      "kind": "method",
+      "signature": "read_array(self)",
+      "description": "Read the array from the unformatted res file.\n:returns: numpy array of values.",
+      "source_file": "src/resfo/_unformatted/read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.is_eof",
+      "kind": "method",
+      "signature": "is_eof(self)",
+      "description": "Whether the position of the array is actually\nat the end of the file, in which case its keyword\nand array is None.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.parse",
+      "kind": "method",
+      "signature": "parse(cls, stream)",
+      "description": "Parse an res file from the given opened file handle.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.read_array",
+      "kind": "method",
+      "signature": "read_array(self)",
+      "description": "Read the array from the unformatted res file.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.read_type",
+      "kind": "method",
+      "signature": "read_type(self)",
+      "description": "The type given in the header of the array.\nIn case of unformatted file this will be bytes, for\nunformatted files it is str.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.update",
+      "kind": "method",
+      "signature": "update(self, keyword, array)",
+      "description": "Updates the entry with the given new data.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.errors.ResfoParsingError",
+      "kind": "class",
+      "signature": "ResfoParsingError",
+      "description": "Indicates an error occurred during reading of an res file.",
+      "source_file": "src/resfo/errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.errors.ResfoWriteError",
+      "kind": "class",
+      "signature": "ResfoWriteError",
+      "description": "Indicates an error occurred during writing of an res file.",
+      "source_file": "src/resfo/errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.format.check_correct_mode",
+      "kind": "function",
+      "signature": "check_correct_mode(stream, fileformat)",
+      "description": "Checks that the stream is the correct mode (text or binary) for the given\nfileformat.",
+      "source_file": "src/resfo/format.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.format.get_stream",
+      "kind": "function",
+      "signature": "get_stream(filepath, fileformat, mode='r')",
+      "description": "Openes the given file with the correct mode (text or binary)\nbased on fileformat.\n:param filepath: Either a filename or pathlib.Path\n:param fileformat: A resfo.Format.\n:returns: The opened file.",
+      "source_file": "src/resfo/format.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.read.lazy_read",
+      "kind": "function",
+      "signature": "lazy_read(filelike, fileformat=None)",
+      "description": "Reads the contents of an res file and generates the entries\nof that file. Each entry has a entry.read_keyword() and\nentry.read_array() method which will return the corresponding\ndata, but only upon request. This requires the user to\npay attention to when values are read as it should happen\nbefore the file is closed.",
+      "source_file": "src/resfo/read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.types.MessType",
+      "kind": "class",
+      "signature": "MessType",
+      "description": "The MESS value is a sentinell object used to signal that the type of the\narray that is to be written should be an empty array of type MESS.",
+      "source_file": "src/resfo/types.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.types.from_np_dtype",
+      "kind": "function",
+      "signature": "from_np_dtype(array)",
+      "description": ":param array: A numpy array\n:returns: The corresponding res type for the\n    given numpy array's dtype.",
+      "source_file": "src/resfo/types.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.types.is_character_type",
+      "kind": "function",
+      "signature": "is_character_type(type_str)",
+      "description": ":returns: Whether the given byte string as ascii is\n    a string res type, ie. b\"CHAR\" or b\"C016\".",
+      "source_file": "src/resfo/types.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.types.is_valid_type",
+      "kind": "function",
+      "signature": "is_valid_type(type_str)",
+      "description": ":returns: Whether the given byte string is a valid res type.",
+      "source_file": "src/resfo/types.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.types.to_np_type",
+      "kind": "function",
+      "signature": "to_np_type(type_keyword)",
+      "description": ":param type_keyword: A bytestring of a res type.\n:returns: A np dtype corresponding to the given\n    res type.",
+      "source_file": "src/resfo/types.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.write.write",
+      "kind": "function",
+      "signature": "write(filelike, contents, fileformat=Format.UNFORMATTED)",
+      "description": "Write the given contents to the given file in res format.",
+      "source_file": "src/resfo/write.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.test_unformatted_read.test_unformatted_x231_parse",
+      "kind": "function",
+      "signature": "test_unformatted_x231_parse()",
+      "description": "This test simply tests the math of the X231 reading, but\nrelies on the lazy evaluation to avoid having an array\nwith 5,000,000,000 elements follow the two records\ndefining the array.",
+      "source_file": "tests/test_unformatted_read.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray",
+      "kind": "class",
+      "signature": "ResArray",
+      "description": "An array entry in a res file.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.read_keyword",
+      "kind": "method",
+      "signature": "read_keyword(self)",
+      "description": "Read the keyword from the res file.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.array_entry.ResArray.read_length",
+      "kind": "method",
+      "signature": "read_length(self)",
+      "description": "Read the length from the res file.",
+      "source_file": "src/resfo/array_entry.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "resfo.format.guess_format",
+      "kind": "function",
+      "signature": "guess_format(filelike)",
+      "description": "Guess the format of a given filelike.",
+      "source_file": "src/resfo/format.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

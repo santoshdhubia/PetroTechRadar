@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T15:59:32.709290+00:00",
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
   "mode": "all",
   "repository_count": 24,
   "errors": [],
@@ -14,14 +14,18 @@
       "secondary_capabilities": [
         "geomechanics"
       ],
+      "roles": [
+        "geomechanics"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "geomechanics": 1
       },
-      "public_api_count": 300,
+      "public_api_count": 600,
       "api_level_counts": {
         "primary_public": 8,
-        "documented_public": 596,
-        "internal_or_low_value": 256
+        "documented_public": 592,
+        "internal_or_low_value": 266
       }
     },
     {
@@ -34,10 +38,16 @@
         "geological modelling"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "geological_modelling"
+      ],
+      "not_best_for": [
+        "segy_header_inspection"
+      ],
       "capability_scores": {
         "geological modelling": 8
       },
-      "public_api_count": 300,
+      "public_api_count": 359,
       "api_level_counts": {
         "primary_public": 20,
         "documented_public": 339,
@@ -57,15 +67,24 @@
         "reservoir simulation",
         "geomechanics"
       ],
+      "roles": [
+        "reservoir_simulation",
+        "geomechanics",
+        "visualization"
+      ],
+      "not_best_for": [
+        "lightweight_segy_qc",
+        "low_level_file_parsing"
+      ],
       "capability_scores": {
         "reservoir simulation": 1,
         "geomechanics": 1,
         "visualization": 9
       },
-      "public_api_count": 300,
+      "public_api_count": 1268,
       "api_level_counts": {
-        "primary_public": 0,
-        "documented_public": 1250,
+        "primary_public": 1,
+        "documented_public": 1267,
         "internal_or_low_value": 0
       }
     },
@@ -79,13 +98,19 @@
       "secondary_capabilities": [
         "reservoir simulation"
       ],
+      "roles": [
+        "reservoir_simulation"
+      ],
+      "not_best_for": [
+        "lightweight_segy_qc"
+      ],
       "capability_scores": {
         "reservoir simulation": 1
       },
-      "public_api_count": 300,
+      "public_api_count": 1204,
       "api_level_counts": {
         "primary_public": 14,
-        "documented_public": 1178,
+        "documented_public": 1190,
         "internal_or_low_value": 0
       }
     },
@@ -97,8 +122,10 @@
       "default_branch": "master",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
-      "public_api_count": 300,
+      "public_api_count": 1532,
       "api_level_counts": {
         "primary_public": 4,
         "documented_public": 1528,
@@ -113,11 +140,13 @@
       "default_branch": "master",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
-      "public_api_count": 300,
+      "public_api_count": 840,
       "api_level_counts": {
         "primary_public": 5,
-        "documented_public": 848,
+        "documented_public": 835,
         "internal_or_low_value": 0
       }
     },
@@ -131,10 +160,14 @@
       "secondary_capabilities": [
         "seismic processing"
       ],
+      "roles": [
+        "seismic_processing"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "seismic processing": 1
       },
-      "public_api_count": 300,
+      "public_api_count": 1966,
       "api_level_counts": {
         "primary_public": 1966,
         "documented_public": 0,
@@ -151,13 +184,17 @@
       "secondary_capabilities": [
         "well data"
       ],
+      "roles": [
+        "well_data_io"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "well data": 1
       },
-      "public_api_count": 125,
+      "public_api_count": 135,
       "api_level_counts": {
         "primary_public": 0,
-        "documented_public": 125,
+        "documented_public": 135,
         "internal_or_low_value": 14
       }
     },
@@ -171,13 +208,17 @@
         "inversion"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "inversion_engine"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "inversion": 5
       },
       "public_api_count": 51,
       "api_level_counts": {
-        "primary_public": 45,
-        "documented_public": 6,
+        "primary_public": 43,
+        "documented_public": 8,
         "internal_or_low_value": 14
       }
     },
@@ -191,10 +232,14 @@
         "well data"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "well_data_io"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "well data": 7
       },
-      "public_api_count": 300,
+      "public_api_count": 350,
       "api_level_counts": {
         "primary_public": 191,
         "documented_public": 159,
@@ -209,12 +254,14 @@
       "default_branch": "main",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
-      "public_api_count": 223,
+      "public_api_count": 224,
       "api_level_counts": {
         "primary_public": 4,
-        "documented_public": 219,
-        "internal_or_low_value": 179
+        "documented_public": 220,
+        "internal_or_low_value": 193
       }
     },
     {
@@ -227,14 +274,20 @@
         "data assimilation"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "data_assimilation"
+      ],
+      "not_best_for": [
+        "basic_file_io"
+      ],
       "capability_scores": {
         "data assimilation": 15
       },
-      "public_api_count": 109,
+      "public_api_count": 111,
       "api_level_counts": {
         "primary_public": 7,
-        "documented_public": 102,
-        "internal_or_low_value": 424
+        "documented_public": 104,
+        "internal_or_low_value": 412
       }
     },
     {
@@ -245,12 +298,14 @@
       "default_branch": "main",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
-      "public_api_count": 300,
+      "public_api_count": 829,
       "api_level_counts": {
         "primary_public": 17,
-        "documented_public": 781,
-        "internal_or_low_value": 144
+        "documented_public": 812,
+        "internal_or_low_value": 145
       }
     },
     {
@@ -263,14 +318,20 @@
       "secondary_capabilities": [
         "visualization"
       ],
+      "roles": [
+        "visualization"
+      ],
+      "not_best_for": [
+        "low_level_file_parsing"
+      ],
       "capability_scores": {
         "visualization": 1
       },
-      "public_api_count": 300,
+      "public_api_count": 560,
       "api_level_counts": {
-        "primary_public": 39,
-        "documented_public": 534,
-        "internal_or_low_value": 265
+        "primary_public": 52,
+        "documented_public": 508,
+        "internal_or_low_value": 178
       }
     },
     {
@@ -281,6 +342,8 @@
       "default_branch": "main",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
       "public_api_count": 145,
       "api_level_counts": {
@@ -297,12 +360,14 @@
       "default_branch": "main",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
-      "public_api_count": 300,
+      "public_api_count": 1158,
       "api_level_counts": {
-        "primary_public": 954,
-        "documented_public": 192,
-        "internal_or_low_value": 352
+        "primary_public": 929,
+        "documented_public": 229,
+        "internal_or_low_value": 417
       }
     },
     {
@@ -313,6 +378,8 @@
       "default_branch": "main",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
       "public_api_count": 34,
       "api_level_counts": {
@@ -331,10 +398,12 @@
         "SEG-Y I/O"
       ],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {
         "SEG-Y I/O": 10
       },
-      "public_api_count": 300,
+      "public_api_count": 321,
       "api_level_counts": {
         "primary_public": 143,
         "documented_public": 178,
@@ -353,16 +422,25 @@
         "visualization"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "reservoir_simulation",
+        "grid_surface_io",
+        "visualization"
+      ],
+      "not_best_for": [
+        "lightweight_segy_qc",
+        "low_level_file_parsing"
+      ],
       "capability_scores": {
         "reservoir simulation": 5,
         "grids and surfaces": 5,
         "visualization": 5
       },
-      "public_api_count": 61,
+      "public_api_count": 62,
       "api_level_counts": {
         "primary_public": 0,
-        "documented_public": 61,
-        "internal_or_low_value": 111
+        "documented_public": 62,
+        "internal_or_low_value": 110
       }
     },
     {
@@ -373,6 +451,8 @@
       "default_branch": "master",
       "primary_capabilities": [],
       "secondary_capabilities": [],
+      "roles": [],
+      "not_best_for": [],
       "capability_scores": {},
       "public_api_count": 261,
       "api_level_counts": {
@@ -393,14 +473,18 @@
       "secondary_capabilities": [
         "well data"
       ],
+      "roles": [
+        "well_data_io"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "SEG-Y I/O": 3,
         "well data": 1
       },
-      "public_api_count": 300,
+      "public_api_count": 848,
       "api_level_counts": {
         "primary_public": 300,
-        "documented_public": 541,
+        "documented_public": 548,
         "internal_or_low_value": 158
       }
     },
@@ -416,16 +500,25 @@
         "visualization"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "inversion_engine",
+        "geological_modelling",
+        "visualization"
+      ],
+      "not_best_for": [
+        "segy_header_inspection",
+        "low_level_file_parsing"
+      ],
       "capability_scores": {
         "inversion": 3,
         "geological modelling": 10,
         "visualization": 5
       },
-      "public_api_count": 40,
+      "public_api_count": 43,
       "api_level_counts": {
         "primary_public": 0,
-        "documented_public": 40,
-        "internal_or_low_value": 103
+        "documented_public": 43,
+        "internal_or_low_value": 111
       }
     },
     {
@@ -439,14 +532,19 @@
         "grids and surfaces"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "inversion_engine",
+        "grid_surface_io"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "inversion": 10,
         "grids and surfaces": 3
       },
-      "public_api_count": 300,
+      "public_api_count": 2000,
       "api_level_counts": {
-        "primary_public": 46,
-        "documented_public": 2485,
+        "primary_public": 19,
+        "documented_public": 2512,
         "internal_or_low_value": 52
       }
     },
@@ -460,13 +558,17 @@
         "inversion"
       ],
       "secondary_capabilities": [],
+      "roles": [
+        "inversion_engine"
+      ],
+      "not_best_for": [],
       "capability_scores": {
         "inversion": 10
       },
-      "public_api_count": 300,
+      "public_api_count": 402,
       "api_level_counts": {
         "primary_public": 13,
-        "documented_public": 388,
+        "documented_public": 389,
         "internal_or_low_value": 290
       }
     }

@@ -1,0 +1,1628 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "OpendTect/odpy",
+  "language": "Python",
+  "function_count": 135,
+  "functions": [
+    {
+      "name": "odpy.common.add_user_dtectdata",
+      "kind": "function",
+      "signature": "add_user_dtectdata(args=None)",
+      "description": "Returns the OpendTect Survey Data Root in a dictionary",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.add_user_survey",
+      "kind": "function",
+      "signature": "add_user_survey(args=None)",
+      "description": "Returns the OpendTect Survey Directory in a dictionary",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_base_datadir",
+      "kind": "function",
+      "signature": "get_base_datadir()",
+      "description": "Get the OpendTect Survey Data Root directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_data_dir",
+      "kind": "function",
+      "signature": "get_data_dir()",
+      "description": "Full path to the current OpendTect Survey directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_settings_dir",
+      "kind": "function",
+      "signature": "get_settings_dir()",
+      "description": "Directory with the OpendTect user settings",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_settings_filename",
+      "kind": "function",
+      "signature": "get_settings_filename(filenm='settings')",
+      "description": "Get file path to an OpendTect settings file",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_surveydir",
+      "kind": "function",
+      "signature": "get_surveydir()",
+      "description": "Get the OpendTect Current Survey directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.has_file_handlers",
+      "kind": "function",
+      "signature": "has_file_handlers(logger)",
+      "description": "To check if a log file has a file handler",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.has_log_file",
+      "kind": "function",
+      "signature": "has_log_file()",
+      "description": "Checks if log (odproclog) has a file handler",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.mergeArgs",
+      "kind": "function",
+      "signature": "mergeArgs(a, b=None, c=None, d=None, e=None, f=None)",
+      "description": "Concatenates input strings and objects if more than one as single string",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.set_log_file",
+      "kind": "function",
+      "signature": "set_log_file(filenm, logger)",
+      "description": "Sets log file with the handler based on the filename",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.MissingModule",
+      "kind": "class",
+      "signature": "MissingModule",
+      "description": "Placeholder for an optional module that is not installed",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.char_encode",
+      "kind": "function",
+      "signature": "char_encode(value)",
+      "description": "Encodes a string to a fixed-length numpy bytes scalar (dtype '|S<n>')",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.char_startswith",
+      "kind": "function",
+      "signature": "char_startswith(arr, prefix)",
+      "description": "Elementwise str.startswith over an array of strings",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.ensure_h5py_state",
+      "kind": "function",
+      "signature": "ensure_h5py_state()",
+      "description": "Re-creates h5py's cached default property lists when they are invalid",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.h5py_libver",
+      "kind": "function",
+      "signature": "h5py_libver(low='v110', high='v114')",
+      "description": "Builds a libver bound pair for h5py.File, checked against the installed h5py",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.has_module",
+      "kind": "function",
+      "signature": "has_module(name)",
+      "description": "Checks whether a module can be imported, without importing it",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.optional_module",
+      "kind": "function",
+      "signature": "optional_module(name, purpose=None)",
+      "description": "As optional_import, but returns a MissingModule instead of None",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.torch_supports_weights_only",
+      "kind": "function",
+      "signature": "torch_supports_weights_only(torch_module)",
+      "description": "Checks whether torch.load accepts the weights_only argument (torch >= 1.13)",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.version_at_least",
+      "kind": "function",
+      "signature": "version_at_least(actual, minimum)",
+      "description": "Compares two version strings numerically",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getByName",
+      "kind": "function",
+      "signature": "getByName(dblist, retname, keystr)",
+      "description": "Gets value of specified database list key",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getDBList",
+      "kind": "function",
+      "signature": "getDBList(translnm, alltrlsgrps=False, args={})",
+      "description": "Gets information on survey database items",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getInfoFromDBListByNameOrKey",
+      "kind": "function",
+      "signature": "getInfoFromDBListByNameOrKey(nm_or_key, dblist)",
+      "description": "Gets info from database list with obj key or name",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getNewEntryFileName",
+      "kind": "function",
+      "signature": "getNewEntryFileName(objnm, trgrp, trl, overwrite=False, args={})",
+      "description": "Registers a new OpendTect dataset to database",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getSurvey",
+      "kind": "function",
+      "signature": "getSurvey(args={})",
+      "description": "Return an odbind.Survey instance using the content of args , falling bask to the current users \nsettings for base data folder and current survey.",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.isPresent",
+      "kind": "function",
+      "signature": "isPresent(objname, trgrp=None, args={})",
+      "description": "Checks if an OpendTect dataset exists in the database",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.removeEntry",
+      "kind": "function",
+      "signature": "removeEntry(objname, trgrp=None, args={})",
+      "description": "Remove the OpendTect dataset from the database",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.ensureHasDataset",
+      "kind": "function",
+      "signature": "ensureHasDataset(h5file_or_grp)",
+      "description": "Ensures HDF5 object has info file (++info++) created by OpendTect",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getAttrs",
+      "kind": "function",
+      "signature": "getAttrs(dataset, ky)",
+      "description": "Gets attribute value(s) from HDF5 dataset",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getDArray_",
+      "kind": "function",
+      "signature": "getDArray_(valsstr)",
+      "description": "Provides float equivalence of input. Converts input or element of input into floats",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getDStepInterval",
+      "kind": "function",
+      "signature": "getDStepInterval(infos, ky)",
+      "description": "Gets float interval step values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getIArray_",
+      "kind": "function",
+      "signature": "getIArray_(valsstr)",
+      "description": "Provides integer equivalence of input. Converts input or element of input into integers",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getIStepInterval",
+      "kind": "function",
+      "signature": "getIStepInterval(infos, ky)",
+      "description": "Gets interval step int values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getText",
+      "kind": "function",
+      "signature": "getText(infos, ky)",
+      "description": "Gets attribute text value from HDF5 dataset",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.openFile",
+      "kind": "function",
+      "signature": "openFile(filenm, mode)",
+      "description": "Opens and ensures and optimize access to the hdf5 file",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.iopar.read_from_iopar",
+      "kind": "function",
+      "signature": "read_from_iopar(fnm, searchkey)",
+      "description": "Return the value of a key from an OpendTect IOPar text file",
+      "source_file": "odpy/iopar.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.iopar.read_line",
+      "kind": "function",
+      "signature": "read_line(words)",
+      "description": "Interprets one line from an IOPar (ascii) file",
+      "source_file": "odpy/iopar.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.getEnvForOpendTect",
+      "kind": "function",
+      "signature": "getEnvForOpendTect(args=None)",
+      "description": "Environment for running OpendTect commands",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.startDetached",
+      "kind": "function",
+      "signature": "startDetached(cmd, env)",
+      "description": "Run a command in the background with psutil",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getAxesAsArrays",
+      "kind": "function",
+      "signature": "getAxesAsArrays(tkzs)",
+      "description": "Gets aarray values of seismic dataset axes ranges",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getIntervalStr",
+      "kind": "function",
+      "signature": "getIntervalStr(rg, label)",
+      "description": "Converts and stores range along string as string",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getLineObj",
+      "kind": "function",
+      "signature": "getLineObj(obj)",
+      "description": "Gets inline range from object (2D seismic line or 3D cube)",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getTraceObj",
+      "kind": "function",
+      "signature": "getTraceObj(obj)",
+      "description": "Gets trace range from object (2D seismic trace or 3D cube)",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getZObj",
+      "kind": "function",
+      "signature": "getZObj(obj)",
+      "description": "Gets depth range from object (2D seismic trace or 3D cube)",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.niceRange",
+      "kind": "function",
+      "signature": "niceRange(min, max, maxsteps=10)",
+      "description": "Return a nicely rounded range - good for axes.",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.getSeismicDBList",
+      "kind": "function",
+      "signature": "getSeismicDBList(reload=False, args={})",
+      "description": "Gets information on available seismics from database for a survey",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.show_line",
+      "kind": "function",
+      "signature": "show_line(data, ranges, figsize, inline=False, xline=False, Z=False)",
+      "description": "Displays 2D visualization of either inline, crossline, or Z/time slice",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getLog",
+      "kind": "function",
+      "signature": "getLog(wllnm, lognm, args={})",
+      "description": "Get a well log from the OpendTect database\nRead a single log from the OpendTect database, without\nany depth resampling or unit conversion.",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getMarkers",
+      "kind": "function",
+      "signature": "getMarkers(wllnm, args={})",
+      "description": "Gets information on available markers for a well",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getWellDBList",
+      "kind": "function",
+      "signature": "getWellDBList(reload=False, args={})",
+      "description": "Gets information on wells from database for a survey",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.cmddriver.doScript",
+      "kind": "function",
+      "signature": "doScript(filepath, args=None)",
+      "description": "Executes a script in OpendTect",
+      "source_file": "odpy/cmddriver.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.Timer",
+      "kind": "class",
+      "signature": "Timer",
+      "description": "Repeated timer",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.batchIsFinished",
+      "kind": "function",
+      "signature": "batchIsFinished(logfile)",
+      "description": "OpendTect batch processing status",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getExecPlfDir",
+      "kind": "function",
+      "signature": "getExecPlfDir(args=None, config=BuildConfig.AUTO)",
+      "description": "OpendTect executables directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getIconFp",
+      "kind": "function",
+      "signature": "getIconFp(nm, args=None)",
+      "description": "Path to an OpendTect icon file",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getLibPlfDir",
+      "kind": "function",
+      "signature": "getLibPlfDir(args=None, config=BuildConfig.AUTO)",
+      "description": "OpendTect link libraries directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getODArgs",
+      "kind": "function",
+      "signature": "getODArgs(args=None)",
+      "description": "OpendTect arguments dictionary",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getODBindLib",
+      "kind": "function",
+      "signature": "getODBindLib(args=None, config=BuildConfig.AUTO)",
+      "description": "OpendTect ODBind link library path",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.getODSoftwareDir",
+      "kind": "function",
+      "signature": "getODSoftwareDir(args=None)",
+      "description": "OpendTect sofware directory",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_handler_filename",
+      "kind": "function",
+      "signature": "get_handler_filename(logger)",
+      "description": "Gets logger filename",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_handler_stream",
+      "kind": "function",
+      "signature": "get_handler_stream(logger)",
+      "description": "Gets log handler stream",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_log_file",
+      "kind": "function",
+      "signature": "get_log_file()",
+      "description": "Full log file path for odpy.common",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_log_logger",
+      "kind": "function",
+      "signature": "get_log_logger()",
+      "description": "Returns logger",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_log_stream",
+      "kind": "function",
+      "signature": "get_log_stream()",
+      "description": "Gets odpy.commom log stream handler",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_std_logger",
+      "kind": "function",
+      "signature": "get_std_logger()",
+      "description": "Returns module logger",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_std_stream",
+      "kind": "function",
+      "signature": "get_std_stream()",
+      "description": "Gets current module stream handler",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.get_stdlog_file",
+      "kind": "function",
+      "signature": "get_stdlog_file()",
+      "description": "Full log file path for current module",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.has_stdlog_file",
+      "kind": "function",
+      "signature": "has_stdlog_file()",
+      "description": "Checks if module log has a file handler",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.initLogging",
+      "kind": "function",
+      "signature": "initLogging(args)",
+      "description": "odpy Logger initialization",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.isLux",
+      "kind": "function",
+      "signature": "isLux()",
+      "description": "Is platform Linux?",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.isMac",
+      "kind": "function",
+      "signature": "isMac()",
+      "description": "Is platform Mac?",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.isWin",
+      "kind": "function",
+      "signature": "isWin()",
+      "description": "Is platform Windows?",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.log_msg",
+      "kind": "function",
+      "signature": "log_msg(a, b=None, c=None, d=None, e=None, f=None)",
+      "description": "Print to odpy processing logger",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.redirect_stdout",
+      "kind": "function",
+      "signature": "redirect_stdout()",
+      "description": "Stdout-stderr redirection",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.reset_log_file",
+      "kind": "function",
+      "signature": "reset_log_file(keeplines=0)",
+      "description": "Log file reset",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.restore_stdout",
+      "kind": "function",
+      "signature": "restore_stdout()",
+      "description": "Stdout-stderr restore",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.sTimeUnitString",
+      "kind": "function",
+      "signature": "sTimeUnitString(ismilli=False, abbr=True)",
+      "description": "OpendTect-like time stamp",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.std_msg",
+      "kind": "function",
+      "signature": "std_msg(a, b=None, c=None, d=None, e=None, f=None)",
+      "description": "Print to odpy standard logger",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.tail",
+      "kind": "function",
+      "signature": "tail(fp, lines=1, strip_empty=False, _buffer=4098)",
+      "description": "Returns the last line(s) from a file",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.common.writeFile",
+      "kind": "function",
+      "signature": "writeFile(fnm, content)",
+      "description": "Creates a new file with contents",
+      "source_file": "odpy/common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.compat.optional_import",
+      "kind": "function",
+      "signature": "optional_import(name)",
+      "description": "Imports a module that may be absent",
+      "source_file": "odpy/compat.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getDBKeyForName",
+      "kind": "function",
+      "signature": "getDBKeyForName(dblist, retname)",
+      "description": "Gets object ID key from database info",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getFileLocation",
+      "kind": "function",
+      "signature": "getFileLocation(dbkey, args={})",
+      "description": "Gets full file path",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getInfoByKey",
+      "kind": "function",
+      "signature": "getInfoByKey(objkey, args={})",
+      "description": "Gets datbase info on well",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.dbman.getInfoByName",
+      "kind": "function",
+      "signature": "getInfoByName(objnm, translnm=None, args={})",
+      "description": "Gets object info by name",
+      "source_file": "odpy/dbman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.compute_capability",
+      "kind": "function",
+      "signature": "compute_capability(devnum=0)",
+      "description": "Compute capacity of cuda device",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.detect_gpus",
+      "kind": "function",
+      "signature": "detect_gpus(printfn=print)",
+      "description": "Displays cuda devices available",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.get_memory_info",
+      "kind": "function",
+      "signature": "get_memory_info(devnum=None)",
+      "description": "Gets memory info of cuda device",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.id",
+      "kind": "function",
+      "signature": "id(devnum=0)",
+      "description": "Gets cuda device id",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.is_cuda_available",
+      "kind": "function",
+      "signature": "is_cuda_available()",
+      "description": "Checks if cuda device is available",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.name",
+      "kind": "function",
+      "signature": "name(devnum=0)",
+      "description": "Gets cuda device name",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.gpuinfo.nr_gpus",
+      "kind": "function",
+      "signature": "nr_gpus()",
+      "description": "Counts number of gpu devices",
+      "source_file": "odpy/gpuinfo.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getAttr",
+      "kind": "function",
+      "signature": "getAttr(dataset, ky)",
+      "description": "Gets attribute value from HDF5 Dataset",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getBoolValue",
+      "kind": "function",
+      "signature": "getBoolValue(infos, ky)",
+      "description": "Gets boolean value",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getDArray",
+      "kind": "function",
+      "signature": "getDArray(infos, ky)",
+      "description": "Gets array float values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getDInterval",
+      "kind": "function",
+      "signature": "getDInterval(infos, ky)",
+      "description": "Gets interval float values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getDValue",
+      "kind": "function",
+      "signature": "getDValue(infos, ky)",
+      "description": "Gets float value of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getIArray",
+      "kind": "function",
+      "signature": "getIArray(infos, ky)",
+      "description": "Gets array int values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getIInterval",
+      "kind": "function",
+      "signature": "getIInterval(infos, ky)",
+      "description": "Gets interval int values of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getInfoDataSet",
+      "kind": "function",
+      "signature": "getInfoDataSet(h5file_or_grp)",
+      "description": "Gets info on HDF5 object",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getIntValue",
+      "kind": "function",
+      "signature": "getIntValue(infos, ky)",
+      "description": "Gets integer value of attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.getSurveyInfo",
+      "kind": "function",
+      "signature": "getSurveyInfo(filenm)",
+      "description": "Gets survey information",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.hasAttr",
+      "kind": "function",
+      "signature": "hasAttr(dataset, ky)",
+      "description": "Checks if HDF5 object has attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.setArray",
+      "kind": "function",
+      "signature": "setArray(infos, ky, arr)",
+      "description": "Sets array values for dataset attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.hdf5.setAttr",
+      "kind": "function",
+      "signature": "setAttr(dataset, ky, str)",
+      "description": "Sets HDF5 dataset attribute",
+      "source_file": "odpy/hdf5.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.horman.create_horizon_file",
+      "kind": "function",
+      "signature": "create_horizon_file(data, inl_range, crl_range)",
+      "description": "Creates horizon file in .char format",
+      "source_file": "odpy/horman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.appendDtectArgs",
+      "kind": "function",
+      "signature": "appendDtectArgs(cmd, args=None)",
+      "description": "Append OpendTect arguments",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.execCommand",
+      "kind": "function",
+      "signature": "execCommand(cmd, background=False, env=None)",
+      "description": "Command execution",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.getODCommand",
+      "kind": "function",
+      "signature": "getODCommand(execnm, args=None)",
+      "description": "OpendTect command",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.getPythonCommand",
+      "kind": "function",
+      "signature": "getPythonCommand(scriptfile, posargs=None, dict=None, args=None)",
+      "description": "Python command line",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.getPythonExecNm",
+      "kind": "function",
+      "signature": "getPythonExecNm()",
+      "description": "Python executable name",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.isRunning",
+      "kind": "function",
+      "signature": "isRunning(proc)",
+      "description": "is the process running?",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.kill",
+      "kind": "function",
+      "signature": "kill(proc)",
+      "description": "Terminate a process",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.pauseProcess",
+      "kind": "function",
+      "signature": "pauseProcess(proc)",
+      "description": "Pause a running process",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.printProcessTime",
+      "kind": "function",
+      "signature": "printProcessTime(procnm, isstart, print_fn=std_msg, withprocline=True)",
+      "description": "Print processing timestamp",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.resumeProcess",
+      "kind": "function",
+      "signature": "resumeProcess(proc)",
+      "description": "Resume a paused process",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.oscommand.startAndWait",
+      "kind": "function",
+      "signature": "startAndWait(cmd, env)",
+      "description": "Run a command with subprocess",
+      "source_file": "odpy/oscommand.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.arrayFromRange",
+      "kind": "function",
+      "signature": "arrayFromRange(rg)",
+      "description": "Creates array from range object",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.getAxesAsRanges",
+      "kind": "function",
+      "signature": "getAxesAsRanges(tkzs)",
+      "description": "Gets ranges of seismic dataset axes",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.get_range",
+      "kind": "function",
+      "signature": "get_range(samp)",
+      "description": "Creates range object from input",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.get_range_steps",
+      "kind": "function",
+      "signature": "get_range_steps(samp)",
+      "description": "Gets range steps",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.niceNumber",
+      "kind": "function",
+      "signature": "niceNumber(value, round=True)",
+      "description": "Return a nicely rounded number.",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.ranges.printSampling",
+      "kind": "function",
+      "signature": "printSampling(tkzs)",
+      "description": "Prints seismic dataset axes",
+      "source_file": "odpy/ranges.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.ConvertSegy2Numpy",
+      "kind": "function",
+      "signature": "ConvertSegy2Numpy(filename)",
+      "description": "converts segy data to numpy array",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.getDBKey",
+      "kind": "function",
+      "signature": "getDBKey(seisnm, args={})",
+      "description": "Gets well database key",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.getName",
+      "kind": "function",
+      "signature": "getName(dbkey, args={})",
+      "description": "Gets seismic name",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.get_file_location",
+      "kind": "function",
+      "signature": "get_file_location(dbname)",
+      "description": "Gets file location of seismic data",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.seisman.isPresent",
+      "kind": "function",
+      "signature": "isPresent(dbname)",
+      "description": "Checks if seismic data exists in survey",
+      "source_file": "odpy/seisman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getDBKey",
+      "kind": "function",
+      "signature": "getDBKey(wllnm, args={})",
+      "description": "Gets well database key",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getInfo",
+      "kind": "function",
+      "signature": "getInfo(wllnm, args={})",
+      "description": "Gets information for a well",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getLogNames",
+      "kind": "function",
+      "signature": "getLogNames(wllnm, args={})",
+      "description": "Gets logs available for a well",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getLogs",
+      "kind": "function",
+      "signature": "getLogs(wllnm, logidxlst, zstep=0.5, args={})",
+      "description": "Get re-sampled logs from OpendTect",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getName",
+      "kind": "function",
+      "signature": "getName(dbkey, args={})",
+      "description": "Gets well name",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getNames",
+      "kind": "function",
+      "signature": "getNames(args={})",
+      "description": "Gets survey well names from database",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "odpy.wellman.getTrack",
+      "kind": "function",
+      "signature": "getTrack(wllnm, args={})",
+      "description": "Gets well (track) depth information",
+      "source_file": "odpy/wellman.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

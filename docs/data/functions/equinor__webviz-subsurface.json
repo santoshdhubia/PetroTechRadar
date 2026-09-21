@@ -1,0 +1,3145 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/webviz-subsurface",
+  "language": "Python",
+  "function_count": 261,
+  "functions": [
+    {
+      "name": "webviz_subsurface._components.color_picker.ColorPicker.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "Returns a table with dataframe columns and clickable color column\nAdd this to the layout of the plugin",
+      "source_file": "webviz_subsurface/_components/color_picker.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.stratigraphy_model.StratigraphyModel.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "Returns the stratigraphy if the list is not empty. If it is empty return None.",
+      "source_file": "webviz_subsurface/_models/stratigraphy_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "Returns the well attributes on the transformed format",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "The Plotly figure traces",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "The Plotly figure layout",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface.subscribe_predefined_expressions",
+      "kind": "function",
+      "signature": "subscribe_predefined_expressions(predefined_expressions, config_folder, portable)",
+      "description": "",
+      "source_file": "webviz_subsurface/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "webviz_subsurface.subscribe_scratch_ensembles",
+      "kind": "function",
+      "signature": "subscribe_scratch_ensembles(scratch_ensembles, config_folder, portable)",
+      "description": "",
+      "source_file": "webviz_subsurface/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "webviz_subsurface.subscribe_user_defined_vector_definitions",
+      "kind": "function",
+      "signature": "subscribe_user_defined_vector_definitions(user_defined_vector_definitions, config_folder, portable)",
+      "description": "",
+      "source_file": "webviz_subsurface/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.mocks.ensemble_summary_provider_dummy.EnsembleSummaryProviderDummy",
+      "kind": "class",
+      "signature": "EnsembleSummaryProviderDummy",
+      "description": "Class for EnsembleSummaryProvider mock implementations",
+      "source_file": "tests/unit_tests/mocks/ensemble_summary_provider_dummy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.plugin_tests.test_grouptree.test_add_nodetype",
+      "kind": "function",
+      "signature": "test_add_nodetype(testdata)",
+      "description": "Test functionality for the add_nodetype function",
+      "source_file": "tests/unit_tests/plugin_tests/test_grouptree.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.plugin_tests.test_well_completions.test_extract_stratigraphy",
+      "kind": "function",
+      "signature": "test_extract_stratigraphy()",
+      "description": "Checks that the merging of the layer_zone_mapping and the stratigraphy is\ncorrect and that the colors are added following the correct prioritization\nrules",
+      "source_file": "tests/unit_tests/plugin_tests/test_well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.plugin_tests.test_well_completions.test_extract_stratigraphy_errors",
+      "kind": "function",
+      "signature": "test_extract_stratigraphy_errors()",
+      "description": "Checks that a ValueError is raised when a Zone is in the layer_zone_mapping, but\nnot in the stratigraphy.",
+      "source_file": "tests/unit_tests/plugin_tests/test_well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.plugin_tests.test_well_completions.test_merge_compdat_and_connstatus",
+      "kind": "function",
+      "signature": "test_merge_compdat_and_connstatus()",
+      "description": "Tests the functionality of the merge_compdat_and_connstatus function.",
+      "source_file": "tests/unit_tests/plugin_tests/test_well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.plugin_tests.test_well_completions.test_remove_invalid_colors",
+      "kind": "function",
+      "signature": "test_remove_invalid_colors()",
+      "description": "Tests that colors that are not 6 digit hexadecimal are removed from the lyr\nparse zone list",
+      "source_file": "tests/unit_tests/plugin_tests/test_well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.provider_tests.test_ensemble_table_provider.test_create_provider_set_from_aggregated_csv_file",
+      "kind": "function",
+      "signature": "test_create_provider_set_from_aggregated_csv_file(tmp_path)",
+      "description": "This tests importing a csv file with an ensemble column with multiple\nensembles. It will return a dictionary of providers, one for each ensemble.",
+      "source_file": "tests/unit_tests/provider_tests/test_ensemble_table_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.utils_tests.test_ensemble_summary_provider_set.test_ensemble_summary_provider_set.test_vector_metadata_order",
+      "kind": "function",
+      "signature": "test_vector_metadata_order()",
+      "description": "The metadata returns first existing metadata, thereby inconsistent metadata\nwill affect result based on the order of the providers in set.",
+      "source_file": "tests/unit_tests/utils_tests/test_ensemble_summary_provider_set/test_ensemble_summary_provider_set.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.number_formatting.si_prefixed",
+      "kind": "function",
+      "signature": "si_prefixed(number, number_format='', unit='', spaced=True, locked_si_prefix=None)",
+      "description": "Formats a float as a string with SI-prefix and optionally a unit. Useful when you cannot/\ndon't want to use the Dash d3-based formatting.\nArguments:\n* `number` (float): Number to format\n* `number_format` (str): Format of the numeric part based on the Python Format Specification\nMini-Language e.g. '.3g' for 3 significant digits, '.2f' for two decimals, or '.0f' for no\ndecimals.\n* `unit` (str): String to append at the end as a unit\n* `spaced` (bool): Include a space between last numerical digit an",
+      "source_file": "webviz_subsurface/_abbreviations/number_formatting.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.reservoir_simulation.historical_vector",
+      "kind": "function",
+      "signature": "historical_vector(vector, smry_meta=None, return_historical=True)",
+      "description": "This function is trying to make a best guess on converting between historical and\nnon-historical vector names.",
+      "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_unit_reformat",
+      "kind": "function",
+      "signature": "simulation_unit_reformat(ecl_unit, unit_set='METRIC')",
+      "description": "Returns the simulation unit in a different, more human friendly, format if possible,\notherwise returns the simulation unit.\n* `ecl_unit`: Reservoir simulation vector unit to reformat\n* `unit_set`: Currently only valid option is the default \"METRIC\" (defined as in Eclipse E100)",
+      "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_base",
+      "kind": "function",
+      "signature": "simulation_vector_base(vector)",
+      "description": "Returns base name of a simulation vector on Eclipse format.\nE.g. WOPR for WOPR:OP_1 and ROIP for ROIP_REG:1.\nSome description: If a vector contains a :, the first up to 5 characters describe the vector\nbase. In that case, if the vector base name is shorter than 5 characters, _ is used to fill\nup the first five characters. Therefore splitting on first _ and limiting to max five\ncharacters to identify the base name.",
+      "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.reservoir_simulation.simulation_vector_description",
+      "kind": "function",
+      "signature": "simulation_vector_description(vector, user_defined_vector_definitions=None)",
+      "description": "Returns a more human friendly description of the simulation vector if possible,\notherwise returns the input as is.",
+      "source_file": "webviz_subsurface/_abbreviations/reservoir_simulation.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.volume_terminology.volume_description",
+      "kind": "function",
+      "signature": "volume_description(column)",
+      "description": "Return description for the column if defined",
+      "source_file": "webviz_subsurface/_abbreviations/volume_terminology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.volume_terminology.volume_simulation_vector_match",
+      "kind": "function",
+      "signature": "volume_simulation_vector_match(column)",
+      "description": "Return a list of simulation vectors that match the column\nUseful to verify/propose data to compare.",
+      "source_file": "webviz_subsurface/_abbreviations/volume_terminology.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.color_picker.ColorPicker",
+      "kind": "class",
+      "signature": "ColorPicker",
+      "description": "Component that can be added to a plugin to update colors interactively.\nThe component is rendered as a table from a provided dataframe.\n'COLOR' is a required column and is rendered as a clickable row that displays\na color picker for that row to change the color. The current colors can be\nretrieved as a list from a dcc.Store component",
+      "source_file": "webviz_subsurface/_components/color_picker.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.color_picker.ColorPicker.color_store_id",
+      "kind": "method",
+      "signature": "color_store_id(self)",
+      "description": "Dom id for the current colors. Use the 'data' attribute in a callback\nto get the list of current colors",
+      "source_file": "webviz_subsurface/_components/color_picker.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.color_picker.ColorPicker.get_color",
+      "kind": "method",
+      "signature": "get_color(self, color_list, filter_query)",
+      "description": "Helper function to use in a callback to get a single color.\nGive in the list of active colors, and a dictionary of {column:name:value}\nfor each column in the color table",
+      "source_file": "webviz_subsurface/_components/color_picker.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.parameter_filter.ParameterFilter",
+      "kind": "class",
+      "signature": "ParameterFilter",
+      "description": "Component that can be added to a plugin to filter parameters",
+      "source_file": "webviz_subsurface/_components/parameter_filter.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart",
+      "kind": "class",
+      "signature": "TornadoBarChart",
+      "description": "Creates a plotly bar figure from a TornadoData instance",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart.figure_height",
+      "kind": "method",
+      "signature": "figure_height(self)",
+      "description": "Set height of figure as a function of number of senscases(bars)",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart.get_sensitivity_colors",
+      "kind": "method",
+      "signature": "get_sensitivity_colors(self, case)",
+      "description": "Create color list for bars based on sensitivity type\nIf colors are set by sensitivity, just create a color per sensitivty.\nIf not handle scalar and mc sensitivities separately.\nFor scalar, that is sensitivities with two \"cases\", use separate colors for each case.\nFor mc, use one color.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart.range",
+      "kind": "method",
+      "signature": "range(self)",
+      "description": "Calculate x-axis range so that the reference is centered",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_data.SensitivityType",
+      "kind": "class",
+      "signature": "SensitivityType",
+      "description": "Sensitivity types used in Tornado analysis.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_data.TornadoData.calc_high_base",
+      "kind": "method",
+      "signature": "calc_high_base(low, high)",
+      "description": "From the low and high value of a parameter,\ncalculates the base (starting x value) of the bar\nvisualizing high values.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_data.TornadoData.calc_high_x",
+      "kind": "method",
+      "signature": "calc_high_x(low, high)",
+      "description": "From the low and high value of a parameter,\ncalculates the x-value (length of bar) of the bar\nvisualizing high values.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_data.TornadoData.calc_low_base",
+      "kind": "method",
+      "signature": "calc_low_base(low, high)",
+      "description": "From the low and high value of a parameter,\ncalculates the base (starting x value) of the\nbar visualizing low values.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_data.TornadoData.calc_low_x",
+      "kind": "method",
+      "signature": "calc_low_x(low, high)",
+      "description": "From the low and high value of a parameter,\ncalculates the x-value (length of bar) of the bar\nvisualizing low values.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_data.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_table.TornadoTable",
+      "kind": "class",
+      "signature": "TornadoTable",
+      "description": "Creates `data`for a `dash_table.DataTable` from a TornadaData instance.",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_table.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget.click_id",
+      "kind": "method",
+      "signature": "click_id(self)",
+      "description": "The id of the dcc.Store component that holds click data",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget.high_low_storage_id",
+      "kind": "method",
+      "signature": "high_low_storage_id(self)",
+      "description": "The id of the dcc.Store component that holds click data",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget.storage_id",
+      "kind": "method",
+      "signature": "storage_id(self)",
+      "description": "The id of the dcc.Store component that holds the tornado data",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.EclPhaseIndex",
+      "kind": "class",
+      "signature": "EclPhaseIndex",
+      "description": "Enumerator holding the different phases according\nto Eclipse file conventions",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.EclPropertyTableRawData",
+      "kind": "class",
+      "signature": "EclPropertyTableRawData",
+      "description": "A structure for storing read\nINIT file data.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.density",
+      "kind": "method",
+      "signature": "density(self, region_index, ratio, pressure)",
+      "description": "Args:\n    region_index: Index of the requested PVT region\n    ratio: Ratio values the data is requested for\n    pressure: Pressure values the data is requested for",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.density_unit",
+      "kind": "method",
+      "signature": "density_unit(self, latex=False)",
+      "description": "Args:\n    latex: True if the unit symbol shall be returned as LaTeX, False if not.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, region_index, ratio, pressure)",
+      "description": "Args:\n    region_index: Index of the requested PVT region\n    ratio: Ratio values the data is requested for\n    pressure: Pressure values the data is requested for",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.formation_volume_factor_unit",
+      "kind": "method",
+      "signature": "formation_volume_factor_unit(self, latex=False)",
+      "description": "Args:\n    latex: True if the unit symbol shall be returned as LaTeX, False if not.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.get_region",
+      "kind": "method",
+      "signature": "get_region(self, region_index)",
+      "description": "Validates and returns the region at the given region_index.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.make_interpolants_from_raw_data",
+      "kind": "method",
+      "signature": "make_interpolants_from_raw_data(raw, construct)",
+      "description": "Creates a list of interpolants from raw Eclipse table data using\nthe given construct callable.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.pressure_unit",
+      "kind": "method",
+      "signature": "pressure_unit(self, latex=False)",
+      "description": "Args:\n    latex: True if the unit symbol shall be returned as Latex, False if not.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.pvdx_unit_converter",
+      "kind": "method",
+      "signature": "pvdx_unit_converter(self)",
+      "description": "Creates a pseudo ConvertUnits object for PVDx interpolants\nthat keeps the old unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.pvtx_unit_converter",
+      "kind": "method",
+      "signature": "pvtx_unit_converter(self)",
+      "description": "Creates a tuple consisting of a callable and a pseudo ConvertUnits\nobject for PVTx interpolants which both keep the old unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.range_independent",
+      "kind": "method",
+      "signature": "range_independent(self, region_index)",
+      "description": "Gets the independent variable range of the PVT region with the given index.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.range_ratio",
+      "kind": "method",
+      "signature": "range_ratio(self, region_index)",
+      "description": "Gets the primary key (ratio) range of the PVT region with the given index.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.ratio_unit",
+      "kind": "method",
+      "signature": "ratio_unit(self, latex=False)",
+      "description": "Args:\n    latex: True if the unit symbol shall be returned as LaTeX, False if not.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.regions",
+      "kind": "method",
+      "signature": "regions(self)",
+      "description": "Returns:\nAll interpolants (one interpolant per region)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.validate_region_index",
+      "kind": "method",
+      "signature": "validate_region_index(self, region_index)",
+      "description": "Validates the given region index by ensuring that it is not out of range.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, region_index, ratio, pressure)",
+      "description": "Args:\n    region_index: Index of the requested PVT region\n    ratio: Ratio values the data is requested for\n    pressure: Pressure values the data is requested for",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation.viscosity_unit",
+      "kind": "method",
+      "signature": "viscosity_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the viscosity.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.InitFileDefinitions",
+      "kind": "class",
+      "signature": "InitFileDefinitions",
+      "description": "A namespace for constant definitions for\nreading Eclipse INIT files.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVDx",
+      "kind": "class",
+      "signature": "PVDx",
+      "description": "A base class for dead and dry gas/oil respectively.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVDx.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, pressure)",
+      "description": "Computes all formation volume factor values\nfor the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVDx.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, pressure)",
+      "description": "Computes all viscosity values for the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVTx.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, key, x)",
+      "description": "Computes formation volume factor values\nfor the given ratio and pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVTx.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, key, x)",
+      "description": "Computes viscosity values for the given ratio and pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVxx.entry_valid",
+      "kind": "method",
+      "signature": "entry_valid(x)",
+      "description": "Returns:\nTrue if the given value is valid, i.e. < 1.0e20, else False.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the density values are requested for.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the volume factor values are requested for.\n    pressure: Pressure values the volume factor values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the viscosity values are requested for.\n    pressure: Pressure values the viscosity values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.is_const_compr_index",
+      "kind": "function",
+      "signature": "is_const_compr_index()",
+      "description": "Convenient function for better readibility.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.surface_mass_density",
+      "kind": "function",
+      "signature": "surface_mass_density(ecl_file, phase, keep_unit_system=True)",
+      "description": "Extracts the surface mass density from the given Eclipse file for the given phase.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas",
+      "kind": "class",
+      "signature": "DryGas",
+      "description": "Class holding a PVT interpolant and access methods for PVT data for dry gas",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Dummy argument, only to conform to interface of base class.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Computes formation volume factor values\nfor the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independent pressure values (Pg)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Computes viscosity values for the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.create_dry_gas",
+      "kind": "method",
+      "signature": "create_dry_gas(self, raw, unit_system)",
+      "description": "Creates interpolants for dry gas from the given raw Eclipse data and uses\na dry gas unit converter based on the given unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.create_pvt_interpolants",
+      "kind": "method",
+      "signature": "create_pvt_interpolants(self, raw, unit_system)",
+      "description": "Creates interpolants for PVT data based on the type of the gas (i.e. dry or wet gas).",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.create_wet_gas",
+      "kind": "method",
+      "signature": "create_wet_gas(self, raw, unit_system)",
+      "description": "Creates interpolants for wet gas from the given raw Eclipse data and uses\na wet gas unit converter based on the given unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.dry_gas_unit_converter",
+      "kind": "method",
+      "signature": "dry_gas_unit_converter(self, unit_system)",
+      "description": "Creates a ConvertUnits object for unit conversions for dry gas.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.formation_volume_factor_unit",
+      "kind": "method",
+      "signature": "formation_volume_factor_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the formation volume factor.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.from_ecl_init_file",
+      "kind": "method",
+      "signature": "from_ecl_init_file(ecl_init_file, keep_unit_system=True)",
+      "description": "Reads the given Eclipse file and creates a Gas object from its data.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.ratio_unit",
+      "kind": "method",
+      "signature": "ratio_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the phase ratio.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.wet_gas_unit_converter",
+      "kind": "method",
+      "signature": "wet_gas_unit_converter(self, unit_system)",
+      "description": "Creates a tuple consisting of a callable and a ConvertUnits object\nfor unit conversions for wet gas.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas",
+      "kind": "class",
+      "signature": "WetGas",
+      "description": "Class holding a PVT interpolant and access methods for PVT data for wet gas",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the density values are requested for.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Computes formation volume factor values\nfor the given ratio and pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary pressure values (Pg)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Computes viscosity values for the given ratio and pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil",
+      "kind": "class",
+      "signature": "DeadOil",
+      "description": "Class holding a PVT interpolant and access methods for PVT data for dead oil",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Dummy argument, only to conform to interface of base class.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Dummy argument, only to conform to interface of base class.\n    pressure: Pressure values the volume factor values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independent pressure values (Po)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Dummy argument, only to conform to interface of base class.\n    pressure: Pressure values the viscosity values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr",
+      "kind": "class",
+      "signature": "DeadOilConstCompr",
+      "description": "Class holding a PVT interpolant and access methods for PVT data\nfor dead oil with constant compressibility",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the density values are requested for.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Computes formation volume factor values\nfor the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independent pressure values (Po).",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Computes viscosity values for the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil",
+      "kind": "class",
+      "signature": "LiveOil",
+      "description": "Class holding a PVT interpolant and access methods for PVT data for live oil",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the density values are requested for.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the volume factor values are requested for.\n    pressure: Pressure values the volume factor values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independent pressure values (Po)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Ratio (key) values the viscosity values are requested for.\n    pressure: Pressure values the viscosity values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.create_dead_oil",
+      "kind": "method",
+      "signature": "create_dead_oil(self, raw, const_compr, unit_system)",
+      "description": "Creates interpolants for dead oil (with and without constant compressibility)\nfrom the given raw Eclipse data and uses a dead oil (or pvcdo) unit converter\nbased on the given unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.create_live_oil",
+      "kind": "method",
+      "signature": "create_live_oil(self, raw, unit_system)",
+      "description": "Creates interpolants for live oil from the given raw Eclipse data and uses\na live oil unit converter based on the given unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.create_pvt_interpolants",
+      "kind": "method",
+      "signature": "create_pvt_interpolants(self, raw, is_const_compr, unit_system)",
+      "description": "Creates interpolants for PVT data based on the type of the oil\n(i.e. live, dead and dead with constant compressibility).",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.dead_oil_unit_converter",
+      "kind": "method",
+      "signature": "dead_oil_unit_converter(self, unit_system)",
+      "description": "Creates a ConvertUnits object for unit conversions for dead oil.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.formation_volume_factor_unit",
+      "kind": "method",
+      "signature": "formation_volume_factor_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the formation volume factor.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.from_ecl_init_file",
+      "kind": "method",
+      "signature": "from_ecl_init_file(ecl_init_file, keep_unit_system=False)",
+      "description": "Reads the given Eclipse file and creates an Oil object from its data.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.is_dead_oil",
+      "kind": "method",
+      "signature": "is_dead_oil(self)",
+      "description": "Checks if this fluid is dead oil with variable compressibility.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.is_dead_oil_const_compr",
+      "kind": "method",
+      "signature": "is_dead_oil_const_compr(self)",
+      "description": "Checks if this fluid is dead oil with constant compressibility.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.live_oil_unit_converter",
+      "kind": "method",
+      "signature": "live_oil_unit_converter(self, unit_system)",
+      "description": "Creates a tuple consisting of a callable and a ConvertUnits object\nfor unit conversions for live oil.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.pvcdo_unit_converter",
+      "kind": "method",
+      "signature": "pvcdo_unit_converter(self, unit_system)",
+      "description": "Creates a ConvertUnits object for unit conversions\nfor dead oil with constant compressibility.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.ratio_unit",
+      "kind": "method",
+      "signature": "ratio_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the phase ratio.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water.create_water",
+      "kind": "method",
+      "signature": "create_water(self, raw, unit_system)",
+      "description": "Creates interpolants for water from the given raw Eclipse data and uses\na water unit converter based on the given unit system.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water.formation_volume_factor_unit",
+      "kind": "method",
+      "signature": "formation_volume_factor_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the formation volume factor.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water.from_ecl_init_file",
+      "kind": "method",
+      "signature": "from_ecl_init_file(ecl_init_file, keep_unit_system=False)",
+      "description": "Reads the given Eclipse file and creates a Water object from its data.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water.ratio_unit",
+      "kind": "method",
+      "signature": "ratio_unit(self, latex=False)",
+      "description": "Creates and returns the unit symbol of the phase ratio.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water.water_unit_converter",
+      "kind": "method",
+      "signature": "water_unit_converter(self, unit_system)",
+      "description": "Creates a ConvertUnits object for unit conversions for water.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl",
+      "kind": "class",
+      "signature": "WaterImpl",
+      "description": "Class holding a PVT interpolant and access methods for PVT data for water",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl.density",
+      "kind": "method",
+      "signature": "density(self, ratio, pressure)",
+      "description": "Args:\n    ratio: Dummy argument, only to conform to interface of base class.\n    pressure: Pressure values the density values are requested for.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl.formation_volume_factor",
+      "kind": "method",
+      "signature": "formation_volume_factor(self, ratio, pressure)",
+      "description": "Computes formation volume factor values\nfor the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independent pressure values (Pw).",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl.viscosity",
+      "kind": "method",
+      "signature": "viscosity(self, ratio, pressure)",
+      "description": "Computes viscosity values for the given pressure values.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.ConvertUnits",
+      "kind": "class",
+      "signature": "ConvertUnits",
+      "description": "A structure holding callables for unit conversions.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.CreateUnitConverter",
+      "kind": "class",
+      "signature": "CreateUnitConverter",
+      "description": "Namespace for methods creating unit converters",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.CreateUnitConverter.create_converter_to_SI",
+      "kind": "method",
+      "signature": "create_converter_to_SI(uscale)",
+      "description": "Creates callable that converts a quantity from its measurement units to SI units.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.unit_system_name",
+      "kind": "function",
+      "signature": "unit_system_name(unit_system)",
+      "description": "Returns a string representation of the given unit system enum.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.fmu_input.find_sens_type",
+      "kind": "function",
+      "signature": "find_sens_type(senscase)",
+      "description": "Finds sensitivity type from sensitivty case.\nIf sensitivity case is 'p10_p90', sensitivity type is montecarlo,\nelse sensitivity type is set to 'scalar'.",
+      "source_file": "webviz_subsurface/_datainput/fmu_input.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.fmu_input.find_surfaces",
+      "kind": "function",
+      "signature": "find_surfaces(ensemble_paths, surface_folder='share/results/maps', surface_files=None, suffix='*.gri', delimiter='--')",
+      "description": "Reads surface file names stored in standard FMU format, and returns a dictionary\non the following format:\nsurface_property:\n    names:\n        - some_surface_name\n        - another_surface_name\n    dates:\n        - some_date\n        - another_date",
+      "source_file": "webviz_subsurface/_datainput/fmu_input.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.fmu_input.get_realizations",
+      "kind": "function",
+      "signature": "get_realizations(ensemble_paths, ensemble_set_name='EnsembleSet')",
+      "description": "Extracts realization info from a fmu.ensemble.EnsembleSet\nThe information extracted is the ensemble name, realization number,\nrealization local runpath, sensitivity name, sensitivity case and sensitivity type.\nThe sensitivtiy information is only relevant if a design matrix is used. If the ensemble\nis a full monte carlo / history matching run this information will be undefined.",
+      "source_file": "webviz_subsurface/_datainput/fmu_input.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.fmu_input.load_smry_meta",
+      "kind": "function",
+      "signature": "load_smry_meta(ensemble_paths, ensemble_set_name='EnsembleSet', column_keys=None)",
+      "description": "Finds metadata for the summary vectors in the ensemble set.\nNote that we assume the same units for all ensembles.\n(meaning that we update/overwrite when checking the next ensemble)",
+      "source_file": "webviz_subsurface/_datainput/fmu_input.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.from_timeseries_cumulatives.calc_from_cumulatives",
+      "kind": "function",
+      "signature": "calc_from_cumulatives(data, column_keys, time_index, time_index_input, as_rate)",
+      "description": "Calculates interval delta and average rate at given time interval `time_index`.\n`data` is a dataframe which has the columns \"DATE\", \"ENSEMBLE\", \"REAL\" and the columns\nthat you want to make the calculation for",
+      "source_file": "webviz_subsurface/_datainput/from_timeseries_cumulatives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.from_timeseries_cumulatives.rename_vec_from_cum",
+      "kind": "function",
+      "signature": "rename_vec_from_cum(vector, as_rate)",
+      "description": "This function assumes that it is a cumulative/total vector named in the Eclipse standard\nand is fairly naive when converting to rate. Based in the list in libecl\nhttps://github.com/equinor/libecl/blob/69f1ee0ddf696c87b6d85eca37eed7e8b66ac2db/        lib/ecl/smspec_node.cpp#L531-L586\nthe T identifying total/cumulative should not occur before letter 4,\nas all the listed strings are prefixed with one or two letters in the vectors.\nTherefore starting the replace at the position 3 (4th letter) to red",
+      "source_file": "webviz_subsurface/_datainput/from_timeseries_cumulatives.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.history_match.extract_mismatch",
+      "kind": "function",
+      "signature": "extract_mismatch(ens_paths, observation_file)",
+      "description": "Convert the fmu-ensemble mismatch dataframe into the the format\nsuitable for the interactive history match visualization.",
+      "source_file": "webviz_subsurface/_datainput/history_match.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.image_processing.array2d_to_png",
+      "kind": "function",
+      "signature": "array2d_to_png(tensor)",
+      "description": "The leaflet map dash component takes in pictures as base64 data\n(or as a link to an existing hosted image). I.e. for containers wanting\nto create pictures on-the-fly from numpy arrays, they have to be converted\nto base64. This is an example function of how that can be done.",
+      "source_file": "webviz_subsurface/_datainput/image_processing.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.image_processing.array_to_png",
+      "kind": "function",
+      "signature": "array_to_png(tensor, shift=True, colormap=False)",
+      "description": "The layered map dash component takes in pictures as base64 data\n(or as a link to an existing hosted image). I.e. for containers wanting\nto create pictures on-the-fly from numpy arrays, they have to be converted\nto base64. This is an example function of how that can be done.",
+      "source_file": "webviz_subsurface/_datainput/image_processing.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.inplace_volumes.extract_volumes",
+      "kind": "function",
+      "signature": "extract_volumes(ensemble_paths, volfolder, volfiles)",
+      "description": "Aggregates volumetric files from an FMU ensemble.\nFiles must be stored on standardized csv format.",
+      "source_file": "webviz_subsurface/_datainput/inplace_volumes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.units.Unit.cubic",
+      "kind": "method",
+      "signature": "cubic(unit)",
+      "description": "Computes the cubic product of the given unit.",
+      "source_file": "webviz_subsurface/_datainput/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.units.Unit.square",
+      "kind": "method",
+      "signature": "square(unit)",
+      "description": "Computes the square product of the given unit.",
+      "source_file": "webviz_subsurface/_datainput/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.units.UnitBase",
+      "kind": "class",
+      "signature": "UnitBase",
+      "description": "This is a pseudo-base-class necessary due to class Prefix requiring\na class type for operator type definitions.",
+      "source_file": "webviz_subsurface/_datainput/units.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well.get_well_layers",
+      "kind": "function",
+      "signature": "get_well_layers(wells, planned_wells, surface_name, surface, dropdown_file)",
+      "description": "Make circles around well in layered map view\nArgs:\n    wells: dictionary of  type {wellfile: xtgeo.Well(wellfile)}\n    planned_wells: dictionary of type {wellfile: xtgeo.Well(wellfile)}\n    surface_name: Name of surface\n    surface: xtgeo surface\n    dropdown_file: A well file from dropdown value\nReturns:\n    List of well layers with data for well circles and trajectory",
+      "source_file": "webviz_subsurface/_datainput/well.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.get_ecl_datafile",
+      "kind": "function",
+      "signature": "get_ecl_datafile(ensemble_path)",
+      "description": "Returns the first eclipse DATA file found in the ensemble_path.\nIf no DATA file is found it returns None.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.get_ecl_unit_system",
+      "kind": "function",
+      "signature": "get_ecl_unit_system(ensemble_path)",
+      "description": "Returns the unit system of an eclipse deck. The options are     METRIC, FIELD, LAB and PVT-M.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.read_stratigraphy",
+      "kind": "function",
+      "signature": "read_stratigraphy(ensemble_path, stratigraphy_file)",
+      "description": "Searches for a stratigraphy json file on the scratch disk.     If a file is found the content is returned as a list of dicts.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.read_well_attributes",
+      "kind": "function",
+      "signature": "read_well_attributes(ensemble_path, well_attributes_file)",
+      "description": "Searches for a well attributes json file on the scratch disk.     if one file is found it is parsed and returned as a dictionary.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.read_well_connection_status",
+      "kind": "function",
+      "signature": "read_well_connection_status(ensemble_path, well_connection_status_file)",
+      "description": "Reads csv file with well connection status data from the scratch disk.\nMerges together files from all realizations, does some fixing of the column\ndata types, and returns it as a pandas dataframe.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.read_zone_layer_mapping",
+      "kind": "function",
+      "signature": "read_zone_layer_mapping(ensemble_path, zone_layer_mapping_file)",
+      "description": "Searches for all zone->layer mapping files for an ensemble.     The files should be on lyr format and can be parsed using functionality     from res2df.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well_completions.remove_invalid_colors",
+      "kind": "function",
+      "signature": "remove_invalid_colors(zonelist)",
+      "description": "Removes colors in the zonelist from the lyr file that is not 6 digit\nhexadecimal.",
+      "source_file": "webviz_subsurface/_datainput/well_completions.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure",
+      "kind": "class",
+      "signature": "XSectionFigure",
+      "description": "Class for plotting a cross-section of a well.",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.plot_grid3d",
+      "kind": "method",
+      "signature": "plot_grid3d(self, vmin=None, vmax=None, alpha=0.7)",
+      "description": "Plot a sampled grid with gridproperty backdrop.",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.plot_statistical_surface",
+      "kind": "method",
+      "signature": "plot_statistical_surface(self, statistical_surfaces, name, fill=False)",
+      "description": "Plot statistical surfaces (p10/p90/min/max/mean) as fanchart",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.plot_surfaces",
+      "kind": "method",
+      "signature": "plot_surfaces(self, fill=False, surfaces=None, surfacenames=None)",
+      "description": "Input a surface list (ordered from top to base) , and plot them.",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.barchart.BarChart.color_bars",
+      "kind": "method",
+      "signature": "color_bars(self, selected_bar, color, opacity, color_selected='#FF1243')",
+      "description": "Set colors to the correlation plot bar,\nwith separate color for the selected bar",
+      "source_file": "webviz_subsurface/_figures/barchart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.timeseries_figure.TimeSeriesFigure.set_real_color",
+      "kind": "method",
+      "signature": "set_real_color(norm_value, mean_param_value)",
+      "description": "Return color for trace based on normalized color_col value.\nMidpoint for the colorscale is set on the average value",
+      "source_file": "webviz_subsurface/_figures/timeseries_figure.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_model.EnsembleModel",
+      "kind": "class",
+      "signature": "EnsembleModel",
+      "description": "Class to load data from a scratchensemble using fmu.ensemble",
+      "source_file": "webviz_subsurface/_models/ensemble_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_model.EnsembleModel.load_smry_meta",
+      "kind": "method",
+      "signature": "load_smry_meta(self, column_keys=None)",
+      "description": "Finds metadata for the summary vectors in the ensemble.",
+      "source_file": "webviz_subsurface/_models/ensemble_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_set_model.EnsembleSetModel",
+      "kind": "class",
+      "signature": "EnsembleSetModel",
+      "description": "Class to load and manipulate ensemble sets from given paths to\nensembles on disk",
+      "source_file": "webviz_subsurface/_models/ensemble_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_set_model.EnsembleSetModel.get_or_load_smry_cached",
+      "kind": "method",
+      "signature": "get_or_load_smry_cached(self)",
+      "description": "Either loads smry data from file or retrieves a cached copy of DataFrame.\nNote that it is imperative that the returned DataFrame be treated as read-only\nsince it will probably be shared by multiple clients.",
+      "source_file": "webviz_subsurface/_models/ensemble_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_set_model.EnsembleSetModel.load_smry_meta",
+      "kind": "method",
+      "signature": "load_smry_meta(self)",
+      "description": "Finds metadata for the summary vectors in the ensemble set.\nNote that we assume the same units for all ensembles.\n(meaning that we update/overwrite when checking the next ensemble)",
+      "source_file": "webviz_subsurface/_models/ensemble_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.gruptree_model.GruptreeModel",
+      "kind": "class",
+      "signature": "GruptreeModel",
+      "description": "Facilitates loading of gruptree tables. Can be reused in all\nplugins that are using grouptree data and extended with additional\nfunctionality and filtering options if necessary.",
+      "source_file": "webviz_subsurface/_models/gruptree_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.gruptree_model.GruptreeModel.dataframe",
+      "kind": "method",
+      "signature": "dataframe(self)",
+      "description": "Returns a dataframe that will have the following columns:\n* DATE\n* CHILD (node in tree)\n* PARENT (node in tree)\n* KEYWORD (GRUPTREE, WELSPECS or BRANPROP)\n* REAL",
+      "source_file": "webviz_subsurface/_models/gruptree_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.gruptree_model.GruptreeModel.get_filtered_dataframe",
+      "kind": "method",
+      "signature": "get_filtered_dataframe(self, terminal_node=None, excl_well_startswith=None, excl_well_endswith=None)",
+      "description": "This function returns a sub-set of the rows in the gruptree dataframe\nfiltered according to the input arguments:",
+      "source_file": "webviz_subsurface/_models/gruptree_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.gruptree_model.GruptreeModel.gruptrees_are_equal_over_reals",
+      "kind": "method",
+      "signature": "gruptrees_are_equal_over_reals(self)",
+      "description": "Returns true if gruptrees are exactly equal in all realizations.",
+      "source_file": "webviz_subsurface/_models/gruptree_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.gruptree_model.GruptreeModel.read_ensemble_gruptree",
+      "kind": "method",
+      "signature": "read_ensemble_gruptree(self, df_files=None)",
+      "description": "Reads the gruptree files for an ensemble from the scratch disk. These\nfiles can be exported in the FMU workflow using the RES2CSV\nforward model with subcommand gruptree.",
+      "source_file": "webviz_subsurface/_models/gruptree_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.inplace_volumes_model.InplaceVolumesModel.compute_property_columns",
+      "kind": "method",
+      "signature": "compute_property_columns(self, dframe, properties=None)",
+      "description": "Compute property columns. As default all property columns are computed,\nbut which properties to compute can be given as input",
+      "source_file": "webviz_subsurface/_models/inplace_volumes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.inplace_volumes_model.InplaceVolumesModel.get_df",
+      "kind": "method",
+      "signature": "get_df(self, filters=None, groups=None, parameters=None, properties=None)",
+      "description": "Function to retrieve a dataframe with volumetrics and properties, using the\n\"_get_dataframe_with_volumetrics_and_properties\" method. If FACIES is used as\na group selector, the returning dataframe will include facies fractions.\nNote if FACIES has been included as filter this filter is applied after\ncalculating facies fractions.",
+      "source_file": "webviz_subsurface/_models/inplace_volumes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.inplace_volumes_model.extract_volframe_from_tableprovider",
+      "kind": "function",
+      "signature": "extract_volframe_from_tableprovider(ensemble_paths, volfolder, volfiles, drop_failed_realizations=True)",
+      "description": "Aggregates volumetric files from an FMU ensemble\nFiles must be stored on standardized csv format.",
+      "source_file": "webviz_subsurface/_models/inplace_volumes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.inplace_volumes_model.filter_df",
+      "kind": "function",
+      "signature": "filter_df(dframe, filters)",
+      "description": "Filter dataframe using dictionary with form\n'column_name': [list of values to keep]",
+      "source_file": "webviz_subsurface/_models/inplace_volumes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.parameter_model.ParametersModel",
+      "kind": "class",
+      "signature": "ParametersModel",
+      "description": "Class to process ensemble parameter data",
+      "source_file": "webviz_subsurface/_models/parameter_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.parameter_model.ParametersModel.get_parameters_for_ensembles",
+      "kind": "method",
+      "signature": "get_parameters_for_ensembles(self, ensembles)",
+      "description": "Get the unique parameters belonging to one or more ensembles",
+      "source_file": "webviz_subsurface/_models/parameter_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.stratigraphy_model.StratigraphyModel",
+      "kind": "class",
+      "signature": "StratigraphyModel",
+      "description": "Facilitates loading of a json file with stratigraphy.",
+      "source_file": "webviz_subsurface/_models/stratigraphy_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_leaflet_model.SurfaceLeafletModel",
+      "kind": "class",
+      "signature": "SurfaceLeafletModel",
+      "description": "Class to make a wcc.LeafletMap layer from a Xtgeo RegularSurface",
+      "source_file": "webviz_subsurface/_models/surface_leaflet_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel",
+      "kind": "class",
+      "signature": "SurfaceSetModel",
+      "description": "Class to load and calculate statistical surfaces from an FMU Ensemble",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.calculate_statistical_surface",
+      "kind": "method",
+      "signature": "calculate_statistical_surface(self, name, attribute, calculation='Mean', date=None, realizations=None)",
+      "description": "Returns a Xtgeo surface instance for a calculated surface",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.dates_in_attribute",
+      "kind": "method",
+      "signature": "dates_in_attribute(self, attribute)",
+      "description": "Returns surface dates for a given attribute",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.get_realization_surface",
+      "kind": "method",
+      "signature": "get_realization_surface(self, name, attribute, realization, date=None)",
+      "description": "Returns a Xtgeo surface instance of a single realization surface",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.names_in_attribute",
+      "kind": "method",
+      "signature": "names_in_attribute(self, attribute)",
+      "description": "Returns surface names for a given attribute",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.webviz_store_realization_surfaces",
+      "kind": "method",
+      "signature": "webviz_store_realization_surfaces(self)",
+      "description": "Returns a tuple of functions to store all realization surfaces for\nwebviz store",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.webviz_store_statistical_calculation",
+      "kind": "method",
+      "signature": "webviz_store_statistical_calculation(self, calculation='Mean', realizations=None)",
+      "description": "Returns a tuple of functions to calculate statistical surfaces for\nwebviz store",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.get_statistical_surface",
+      "kind": "function",
+      "signature": "get_statistical_surface(surfaces, calculation)",
+      "description": "Calculates a statistical surface from a list of Xtgeo surface instances",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.save_statistical_surface",
+      "kind": "function",
+      "signature": "save_statistical_surface(fns, calculation)",
+      "description": "Wrapper function to store a calculated surface as BytesIO",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.save_statistical_surface_no_store",
+      "kind": "function",
+      "signature": "save_statistical_surface_no_store(fns, calculation='Mean')",
+      "description": "Wrapper function to store a calculated surface as BytesIO",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel",
+      "kind": "class",
+      "signature": "WellAttributesModel",
+      "description": "Facilitates loading of a json file with well attributes.",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.category_dict",
+      "kind": "method",
+      "signature": "category_dict(self)",
+      "description": "Returns a Dict with all possible attributes per category\non the form:\n{\n    \"welltype\":[\"oil_producer\", \"water_injector\", ...],\n    \"category2\": ...\n}",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.dataframe",
+      "kind": "method",
+      "signature": "dataframe(self)",
+      "description": "Returns the well attributes data as a dataframe with the well eclipse\nalias and categories as columns",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.dataframe_melted",
+      "kind": "method",
+      "signature": "dataframe_melted(self)",
+      "description": "Returns the well attributes data as melted dataframe, that means with\nonly three columns: WELL, CATEGORY and VALUE",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_set_model.WellSetModel.get_fence",
+      "kind": "method",
+      "signature": "get_fence(self, well_name, distance=20, atleast=5, nextend=2)",
+      "description": "Creates a fence specification from a well",
+      "source_file": "webviz_subsurface/_models/well_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_set_model.WellSetModel.wells",
+      "kind": "method",
+      "signature": "wells(self)",
+      "description": "Return a dictionary of well names and well objects",
+      "source_file": "webviz_subsurface/_models/well_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._private_plugins.surface_selector.SurfaceSelector.read_config",
+      "kind": "method",
+      "signature": "read_config(config)",
+      "description": "Reads config file either from a yaml provided file or from a dict",
+      "source_file": "webviz_subsurface/_private_plugins/surface_selector.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._private_plugins.surface_selector.SurfaceSelector.storage_id",
+      "kind": "method",
+      "signature": "storage_id(self)",
+      "description": "The id of the dcc.Store component that holds the selection",
+      "source_file": "webviz_subsurface/_private_plugins/surface_selector.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._private_plugins.surface_selector.format_date",
+      "kind": "function",
+      "signature": "format_date(date_string)",
+      "description": "Reformat date string for presentation\n20010101 => Jan 2001\n20010101_20010601 => (Jan 2001) - (June 2001)\n20010101_20010106 => (01 Jan 2001) - (06 Jan 2001)",
+      "source_file": "webviz_subsurface/_private_plugins/surface_selector.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.EnsembleFaultPolygonsProvider.attributes",
+      "kind": "method",
+      "signature": "attributes(self)",
+      "description": "Returns list of all available attributes.",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.EnsembleFaultPolygonsProvider.fault_polygons_names_for_attribute",
+      "kind": "method",
+      "signature": "fault_polygons_names_for_attribute(self, fault_polygons_attribute)",
+      "description": "Returns list of all available fault polygons names for a given attribute.",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.EnsembleFaultPolygonsProvider.get_fault_polygons",
+      "kind": "method",
+      "signature": "get_fault_polygons(self, address)",
+      "description": "Returns fault polygons for a given fault polygons address",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.EnsembleFaultPolygonsProvider.realizations",
+      "kind": "method",
+      "signature": "realizations(self)",
+      "description": "Returns list of all available realizations.",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.SimulatedFaultPolygonsAddress",
+      "kind": "class",
+      "signature": "SimulatedFaultPolygonsAddress",
+      "description": "Specifies a unique simulated fault polygon set for a given ensemble realization",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider_factory.EnsembleFaultPolygonsProviderFactory.instance",
+      "kind": "method",
+      "signature": "instance()",
+      "description": "Static method to access the singleton instance of the factory.",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider_factory.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.parameter_filter.ParameterFilter.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_components/parameter_filter.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado._tornado_bar_chart.TornadoBarChart.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_components/tornado/_tornado_bar_chart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.barchart.BarChart.data",
+      "kind": "method",
+      "signature": "data(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_figures/barchart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.barchart.BarChart.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_figures/barchart.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._private_plugins.surface_selector.SurfaceSelector.layout",
+      "kind": "method",
+      "signature": "layout(self)",
+      "description": "",
+      "source_file": "webviz_subsurface/_private_plugins/surface_selector.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "tests.unit_tests.utils_tests.test_dataframe_utils.test_assert_date_column_is_datetime_object_datetime_inconsistent_index_df",
+      "kind": "function",
+      "signature": "test_assert_date_column_is_datetime_object_datetime_inconsistent_index_df()",
+      "description": "To verify iloc usage",
+      "source_file": "tests/unit_tests/utils_tests/test_dataframe_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._abbreviations.volume_terminology.volume_unit",
+      "kind": "function",
+      "signature": "volume_unit(column)",
+      "description": "Return unit for the column if defined",
+      "source_file": "webviz_subsurface/_abbreviations/volume_terminology.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget",
+      "kind": "class",
+      "signature": "TornadoWidget",
+      "description": "### TornadoWidget",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._components.tornado.tornado_widget.TornadoWidget.ids",
+      "kind": "method",
+      "signature": "ids(self, element)",
+      "description": "Generate unique id for dom element",
+      "source_file": "webviz_subsurface/_components/tornado/tornado_widget.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.FluidImplementation",
+      "kind": "class",
+      "signature": "FluidImplementation",
+      "description": "Base class for fluid implementations",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVDx.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independents.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVDx.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVTx.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independents.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVTx.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVxx",
+      "kind": "class",
+      "signature": "PVxx",
+      "description": "A base class for PVDx and PVTx",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVxx.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns:\n    All independents.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PVxx.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns:\n    All primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase",
+      "kind": "class",
+      "signature": "PvxOBase",
+      "description": "A common base class for all fluids.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all independents.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_common.PvxOBase.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_common.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.DryGas.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas",
+      "kind": "class",
+      "signature": "Gas",
+      "description": "Class for storing PVT tables for gas",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.is_dry_gas",
+      "kind": "method",
+      "signature": "is_dry_gas(self)",
+      "description": "Checks if this fluid is dry gas.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.Gas.is_wet_gas",
+      "kind": "method",
+      "signature": "is_wet_gas(self)",
+      "description": "Checks if this fluid is wet gas.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_gas.WetGas.get_independents",
+      "kind": "method",
+      "signature": "get_independents(self)",
+      "description": "Returns all gas ratio values (Rv)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_gas.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOil.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.DeadOilConstCompr.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.LiveOil.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary key values (Rs)",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil",
+      "kind": "class",
+      "signature": "Oil",
+      "description": "Class for storing PVT tables for oil",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_oil.Oil.is_live_oil",
+      "kind": "method",
+      "signature": "is_live_oil(self)",
+      "description": "Checks if this fluid is live oil.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_oil.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.Water",
+      "kind": "class",
+      "signature": "Water",
+      "description": "Class for storing PVT tables for water",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_init_io.pvt_water.WaterImpl.get_keys",
+      "kind": "method",
+      "signature": "get_keys(self)",
+      "description": "Returns all primary keys.",
+      "source_file": "webviz_subsurface/_datainput/eclipse_init_io/pvt_water.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.EclUnitEnum",
+      "kind": "class",
+      "signature": "EclUnitEnum",
+      "description": "An enum for the different unit systems",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.EclUnits",
+      "kind": "class",
+      "signature": "EclUnits",
+      "description": "Namespace for units used in Eclipse",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.eclipse_unit.UnitSystems",
+      "kind": "class",
+      "signature": "UnitSystems",
+      "description": "Namespace for unit systems",
+      "source_file": "webviz_subsurface/_datainput/eclipse_unit.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.units.Prefix",
+      "kind": "class",
+      "signature": "Prefix",
+      "description": "Namespace for unit prefixes.",
+      "source_file": "webviz_subsurface/_datainput/units.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.units.Unit",
+      "kind": "class",
+      "signature": "Unit",
+      "description": "Namespace for units",
+      "source_file": "webviz_subsurface/_datainput/units.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well.make_well_layer",
+      "kind": "function",
+      "signature": "make_well_layer(well, name='well', zmin=0)",
+      "description": "Make LayeredMap well polyline",
+      "source_file": "webviz_subsurface/_datainput/well.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.well.make_well_layers",
+      "kind": "function",
+      "signature": "make_well_layers(wellfiles, zmin=0, max_points=100)",
+      "description": "Make layeredmap wells layer",
+      "source_file": "webviz_subsurface/_datainput/well.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.fence",
+      "kind": "method",
+      "signature": "fence(self)",
+      "description": "Set or get the fence spesification",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.plot_cube",
+      "kind": "method",
+      "signature": "plot_cube(self, cube=None, vmin=None, vmax=None, alpha=0.7, interpolation='gaussian', sampling='nearest', name='seismic')",
+      "description": "Plot a cube backdrop.",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._datainput.xsection.XSectionFigure.plot_well",
+      "kind": "method",
+      "signature": "plot_well(self, zonelogname='ZONELOG', facieslogname=None, marginal_log=None, zonemin=0)",
+      "description": "Input an XTGeo Well object and plot it.",
+      "source_file": "webviz_subsurface/_datainput/xsection.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.barchart.BarChart",
+      "kind": "class",
+      "signature": "BarChart",
+      "description": "General bar chart class.",
+      "source_file": "webviz_subsurface/_figures/barchart.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.px_figure.create_figure",
+      "kind": "function",
+      "signature": "create_figure(plot_type, **kwargs)",
+      "description": "Create subplots for selected parameters",
+      "source_file": "webviz_subsurface/_figures/px_figure.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.px_figure.hex_to_rgb",
+      "kind": "function",
+      "signature": "hex_to_rgb(hex_string, opacity=1)",
+      "description": "Converts a hex color to rgb",
+      "source_file": "webviz_subsurface/_figures/px_figure.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.scatterplot.ScatterPlot",
+      "kind": "class",
+      "signature": "ScatterPlot",
+      "description": "Class to create a general scatterplot",
+      "source_file": "webviz_subsurface/_figures/scatterplot.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.scatterplot.ScatterPlot.update_color",
+      "kind": "method",
+      "signature": "update_color(self, color, opacity)",
+      "description": "Update color for scatter plot",
+      "source_file": "webviz_subsurface/_figures/scatterplot.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._figures.timeseries_figure.TimeSeriesFigure.create_vector_observation_traces",
+      "kind": "method",
+      "signature": "create_vector_observation_traces(self)",
+      "description": "Adds observations to the plot",
+      "source_file": "webviz_subsurface/_figures/timeseries_figure.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_model.EnsembleModel.ens_folder",
+      "kind": "method",
+      "signature": "ens_folder(self)",
+      "description": "Get root folder for ensemble",
+      "source_file": "webviz_subsurface/_models/ensemble_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.ensemble_set_model.EnsembleSetModel.ens_folders",
+      "kind": "method",
+      "signature": "ens_folders(self)",
+      "description": "Get root folders for ensemble set",
+      "source_file": "webviz_subsurface/_models/ensemble_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.inplace_volumes_model.merge_csv_files",
+      "kind": "function",
+      "signature": "merge_csv_files(volframes)",
+      "description": "Merge csv files on common columns",
+      "source_file": "webviz_subsurface/_models/inplace_volumes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.attributes",
+      "kind": "method",
+      "signature": "attributes(self)",
+      "description": "Returns surface attributes",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.SurfaceSetModel.realizations",
+      "kind": "method",
+      "signature": "realizations(self)",
+      "description": "Returns surface attributes",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.surface_set_model.get_stored_surface_path",
+      "kind": "function",
+      "signature": "get_stored_surface_path(runpath)",
+      "description": "Returns path of a stored surface",
+      "source_file": "webviz_subsurface/_models/surface_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.categories",
+      "kind": "method",
+      "signature": "categories(self)",
+      "description": "List of all well attribute categories",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_attributes_model.WellAttributesModel.file_name",
+      "kind": "method",
+      "signature": "file_name(self)",
+      "description": "Returns the well attributes file name",
+      "source_file": "webviz_subsurface/_models/well_attributes_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_set_model.WellSetModel",
+      "kind": "class",
+      "signature": "WellSetModel",
+      "description": "Class to load and store Xtgeo Wells",
+      "source_file": "webviz_subsurface/_models/well_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_set_model.WellSetModel.get_well",
+      "kind": "method",
+      "signature": "get_well(self, well_name)",
+      "description": "Returns a well object given a well name",
+      "source_file": "webviz_subsurface/_models/well_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._models.well_set_model.WellSetModel.well_names",
+      "kind": "method",
+      "signature": "well_names(self)",
+      "description": "Returns list of well names",
+      "source_file": "webviz_subsurface/_models/well_set_model.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._private_plugins.surface_selector.SurfaceSelector",
+      "kind": "class",
+      "signature": "SurfaceSelector",
+      "description": "### Surface Selector",
+      "source_file": "webviz_subsurface/_private_plugins/surface_selector.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "webviz_subsurface._providers.ensemble_fault_polygons_provider.ensemble_fault_polygons_provider.EnsembleFaultPolygonsProvider.provider_id",
+      "kind": "method",
+      "signature": "provider_id(self)",
+      "description": "Returns string ID of the provider.",
+      "source_file": "webviz_subsurface/_providers/ensemble_fault_polygons_provider/ensemble_fault_polygons_provider.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

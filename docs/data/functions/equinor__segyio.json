@@ -1,0 +1,4003 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/segyio",
+  "language": "Python",
+  "function_count": 321,
+  "functions": [
+    {
+      "name": "consider",
+      "kind": "function/declaration",
+      "signature": "consider(Arg arg, Args && ... args)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "format",
+      "kind": "function/declaration",
+      "signature": "format()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ieee",
+      "kind": "function/declaration",
+      "signature": "ieee()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "iline",
+      "kind": "function/declaration",
+      "signature": "iline()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "mode",
+      "kind": "function/declaration",
+      "signature": "mode(mode)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "mode",
+      "kind": "struct",
+      "signature": "mode",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "path",
+      "kind": "struct",
+      "signature": "path",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "sorting",
+      "kind": "function/declaration",
+      "signature": "sorting()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "sorting",
+      "kind": "function/declaration",
+      "signature": "sorting(int x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "sorting",
+      "kind": "struct",
+      "signature": "sorting",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "tracecount",
+      "kind": "function/declaration",
+      "signature": "tracecount()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "with",
+      "kind": "function/declaration",
+      "signature": "with(segyio::mode x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "with",
+      "kind": "function/declaration",
+      "signature": "with(ilbyte x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "with",
+      "kind": "function/declaration",
+      "signature": "with(xlbyte x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "xline",
+      "kind": "function/declaration",
+      "signature": "xline()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "package/public export",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.depth.Depth",
+      "kind": "class",
+      "signature": "Depth",
+      "description": "The Depth implements the array interface, where every array element, the\ndepth, is a numpy.ndarray of a horizontal cut of the volume. As all arrays\nit can be random accessed, iterated over, and read strided. Please note\nthat SEG-Y data is laid out trace-by-trace on disk, so accessing horizontal\ncuts (fixed z-coordinates in a cartesian grid) is *very* inefficient.",
+      "source_file": "python/segyio/depth.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.keys",
+      "kind": "method",
+      "signature": "keys(self)",
+      "description": "D.keys() -> a set-like object providing a view on D's keys",
+      "source_file": "python/segyio/field.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.gather.Gather",
+      "kind": "class",
+      "signature": "Gather",
+      "description": "A gather is in this context the intersection of lines in a cube, i.e. all\nthe offsets at some inline/crossline intersection. The primary data type is\nnumpy.ndarray, with dimensions depending on the range of offsets specified.",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.gather.Group.header",
+      "kind": "method",
+      "signature": "header(self)",
+      "description": "A generator of the the read-only headers in this group",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.gather.Group.trace",
+      "kind": "method",
+      "signature": "trace(self)",
+      "description": "A generator of the the read-only traces in this group",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.line.Line",
+      "kind": "class",
+      "signature": "Line",
+      "description": "The Line implements the dict interface, with a fixed set of int_like keys,\nthe line numbers/labels. Data is read lazily from disk, so iteration does\nnot consume much memory, and are returned as numpy.ndarrays.",
+      "source_file": "python/segyio/line.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.line.Line.items",
+      "kind": "method",
+      "signature": "items(self)",
+      "description": "D.values() -> generator of D's (key,values), as 2-tuples",
+      "source_file": "python/segyio/line.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.line.Line.keys",
+      "kind": "method",
+      "signature": "keys(self)",
+      "description": "D.keys() -> a set-like object providing a view on D's keys",
+      "source_file": "python/segyio/line.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile",
+      "kind": "class",
+      "signature": "SegyFile",
+      "description": "This class is not meant to be instantiated directly, but rather obtained\nfrom ``segyio.open`` or ``segyio.create``.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.attributes",
+      "kind": "method",
+      "signature": "attributes(self, field)",
+      "description": "File-wide attribute (standard header word) reading",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.depth_slice",
+      "kind": "method",
+      "signature": "depth_slice(self)",
+      "description": "Interact with segy in depth slice mode (fixed z-coordinate)",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.ext_headers",
+      "kind": "method",
+      "signature": "ext_headers(self)",
+      "description": "DEPRECATED to avoid confusion with trace header extensions. Use\next_text_headers_count instead.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.header",
+      "kind": "method",
+      "signature": "header(self)",
+      "description": "Interact with segy in standard header mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.offsets",
+      "kind": "method",
+      "signature": "offsets(self)",
+      "description": "Return the array of offset names. For post-stack data, this array has a\nlength of 1",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.samples",
+      "kind": "method",
+      "signature": "samples(self)",
+      "description": "Return the array of samples with appropriate intervals.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.sorting",
+      "kind": "method",
+      "signature": "sorting(self)",
+      "description": "Inline or crossline sorting, or Falsey (None or 0) if unstructured.\nReturns\n-------",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.tracefield",
+      "kind": "method",
+      "signature": "tracefield(self)",
+      "description": "Access the trace header layouts for this SEG-Y file.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.unstructured",
+      "kind": "method",
+      "signature": "unstructured(self)",
+      "description": "If the file is unstructured, sophisticated addressing modes that\nrequire the file to represent a proper cube won't work, and only raw\ndata reading and writing is supported.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.tools.wrap",
+      "kind": "function",
+      "signature": "wrap(s, width=80)",
+      "description": "Formats the text input with newlines given the user specified width for\neach line. `wrap` will attempt to decode the input as ascii, ignoring any\nerrors, which occurs with many headers in ebcdic. To consider encoding\nerrors, decode the textual header before passing it to wrap.",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Attributes",
+      "kind": "class",
+      "signature": "Attributes",
+      "description": "File-wide attribute (header word) reading",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.FieldLayoutEntry.offset",
+      "kind": "method",
+      "signature": "offset(self)",
+      "description": "Get the byte offset of this field in the trace header.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.FieldLayoutEntry.type",
+      "kind": "method",
+      "signature": "type(self)",
+      "description": "Get the data type of the field as defined in the layout.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.HeaderLayoutEntries.names",
+      "kind": "method",
+      "signature": "names(self)",
+      "description": "List all field names in this traceheader layout.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Stanza.names",
+      "kind": "method",
+      "signature": "names(self)",
+      "description": "Get all stanza names. Names are the same as they appear in the file.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Trace",
+      "kind": "class",
+      "signature": "Trace",
+      "description": "The Trace implements the array interface, where every array element, the\ndata trace, is a numpy.ndarray. As all arrays, it can be random accessed,\niterated over, and read strided. Data is read lazily from disk, so\niteration does not consume much memory. If you want eager reading, use\nTrace.raw.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segy_binheader",
+      "kind": "function/declaration",
+      "signature": "segy_binheader(segy_datasource*, char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_binheader_map",
+      "kind": "function/declaration",
+      "signature": "segy_binheader_map(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_binheader_size",
+      "kind": "function/declaration",
+      "signature": "segy_binheader_size(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_close",
+      "kind": "function/declaration",
+      "signature": "segy_close(segy_datasource*)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_collect_metadata",
+      "kind": "function/declaration",
+      "signature": "segy_collect_metadata(segy_datasource* ds, int endianness, int encoding, int ext_textheader_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_count_lines",
+      "kind": "function/declaration",
+      "signature": "segy_count_lines(segy_datasource*, int field, int offsets, int* l1out, int* l2out)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_crossline_indices",
+      "kind": "function/declaration",
+      "signature": "segy_crossline_indices(segy_datasource*, int xl, int sorting, int inline_count, int crossline_count, int offsets, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_crossline_length",
+      "kind": "function/declaration",
+      "signature": "segy_crossline_length(int inline_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_crossline_stride",
+      "kind": "function/declaration",
+      "signature": "segy_crossline_stride(int sorting, int crossline_count, int* stride)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_datasource",
+      "kind": "struct",
+      "signature": "segy_datasource",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_delay_recoding_time",
+      "kind": "function/declaration",
+      "signature": "segy_delay_recoding_time(segy_datasource* ds, float* delay)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_encoding",
+      "kind": "function/declaration",
+      "signature": "segy_encoding(segy_datasource*, int* encoding)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_endianness",
+      "kind": "function/declaration",
+      "signature": "segy_endianness(segy_datasource* ds, int* endianness)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_entry_type_to_datatype",
+      "kind": "function/declaration",
+      "signature": "segy_entry_type_to_datatype(uint8_t entry_type)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_ext1_traceheader_default_map",
+      "kind": "function/declaration",
+      "signature": "segy_ext1_traceheader_default_map(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_ext1_traceheader_default_name_map",
+      "kind": "function/declaration",
+      "signature": "segy_ext1_traceheader_default_name_map(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_field_forall",
+      "kind": "function/declaration",
+      "signature": "segy_field_forall(segy_datasource*, int traceheader_index, const segy_entry_definition* offset_map, int field, int start, int stop, int step, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_flush",
+      "kind": "function/declaration",
+      "signature": "segy_flush(segy_datasource*)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_format",
+      "kind": "function/declaration",
+      "signature": "segy_format(const char* binheader)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_formatsize",
+      "kind": "function/declaration",
+      "signature": "segy_formatsize(int format)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_from_native",
+      "kind": "function/declaration",
+      "signature": "segy_from_native(int format, long long size, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_get_binfield",
+      "kind": "function/declaration",
+      "signature": "segy_get_binfield(const char* header, int field, segy_field_data* fd)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_get_binfield_int",
+      "kind": "function/declaration",
+      "signature": "segy_get_binfield_int(const char* header, int field, int* f)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_get_tracefield",
+      "kind": "function/declaration",
+      "signature": "segy_get_tracefield(const char* header, const segy_entry_definition* mapping, int field, segy_field_data* fd)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_get_tracefield_int",
+      "kind": "function/declaration",
+      "signature": "segy_get_tracefield_int(const char* header, int field, int* f)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_inline_indices",
+      "kind": "function/declaration",
+      "signature": "segy_inline_indices(segy_datasource*, int il, int sorting, int inline_count, int crossline_count, int offsets, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_inline_length",
+      "kind": "function/declaration",
+      "signature": "segy_inline_length(int crossline_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_inline_stride",
+      "kind": "function/declaration",
+      "signature": "segy_inline_stride(int sorting, int inline_count, int* stride)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_line_trace0",
+      "kind": "function/declaration",
+      "signature": "segy_line_trace0(int lineno, int line_length, int stride, int offsets, const int* linenos, int linenos_sz, int* traceno)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_lines_count",
+      "kind": "function/declaration",
+      "signature": "segy_lines_count(segy_datasource*, int il, int xl, int sorting, int offsets, int* il_count, int* xl_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_memopen",
+      "kind": "function/declaration",
+      "signature": "segy_memopen(unsigned char* addr, size_t size)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_mmap",
+      "kind": "function/declaration",
+      "signature": "segy_mmap(segy_datasource*)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_offset_indices",
+      "kind": "function/declaration",
+      "signature": "segy_offset_indices(segy_datasource*, int offset_field, int offsets, int* out)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_offsets",
+      "kind": "function/declaration",
+      "signature": "segy_offsets(segy_datasource*, int il, int xl, int traces, int* out)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_open",
+      "kind": "function/declaration",
+      "signature": "segy_open(const char* path, const char* mode)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_parse_layout_xml",
+      "kind": "function/declaration",
+      "signature": "segy_parse_layout_xml(const char* xml, size_t xml_size, segy_header_mapping** mappings, size_t* mappings_length)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_ext_textheader",
+      "kind": "function/declaration",
+      "signature": "segy_read_ext_textheader(segy_datasource*, int pos, char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_line",
+      "kind": "function/declaration",
+      "signature": "segy_read_line(segy_datasource* ds, int line_trace0, int line_length, int stride, int offsets, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_standard_traceheader",
+      "kind": "function/declaration",
+      "signature": "segy_read_standard_traceheader(segy_datasource*, int traceno, char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_stanza_data",
+      "kind": "function/declaration",
+      "signature": "segy_read_stanza_data(segy_datasource* ds, size_t stanza_header_length, int stanza_headerno, size_t stanza_data_size, char* stanza_data)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_stanza_header",
+      "kind": "function/declaration",
+      "signature": "segy_read_stanza_header(segy_datasource* ds, int headerno, char** stanza_name, size_t* stanza_name_length)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_textheader",
+      "kind": "function/declaration",
+      "signature": "segy_read_textheader(segy_datasource*, char *buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_read_traceheader",
+      "kind": "function/declaration",
+      "signature": "segy_read_traceheader(segy_datasource*, int traceno, int traceheader_no, const segy_entry_definition* mapping, char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_readsubtr",
+      "kind": "function/declaration",
+      "signature": "segy_readsubtr(segy_datasource*, int traceno, int start, int stop, int step, void* buf, void* rangebuf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_readtrace",
+      "kind": "function/declaration",
+      "signature": "segy_readtrace(segy_datasource*, int traceno, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_rotation_cw",
+      "kind": "function/declaration",
+      "signature": "segy_rotation_cw(segy_datasource*, int line_length, int stride, int offsets, const int* linenos, int linenos_sz, float* rotation)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_sample_indices",
+      "kind": "function/declaration",
+      "signature": "segy_sample_indices(segy_datasource*, float t0, float dt, int count, float* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_sample_interval",
+      "kind": "function/declaration",
+      "signature": "segy_sample_interval(segy_datasource*, float fallback , float* dt)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_samples",
+      "kind": "function/declaration",
+      "signature": "segy_samples(const char* binheader)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_set_binfield",
+      "kind": "function/declaration",
+      "signature": "segy_set_binfield(char* header, int field, segy_field_data fd)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_set_binfield_int",
+      "kind": "function/declaration",
+      "signature": "segy_set_binfield_int(char* header, int field, int val)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_set_tracefield",
+      "kind": "function/declaration",
+      "signature": "segy_set_tracefield(char* header, const segy_entry_definition* mapping, int field, segy_field_data fd)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_set_tracefield_int",
+      "kind": "function/declaration",
+      "signature": "segy_set_tracefield_int(char* header, int field, int val)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_sorting",
+      "kind": "function/declaration",
+      "signature": "segy_sorting(segy_datasource*, int il, int xl, int tr_offset, int* sorting)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_textheader_size",
+      "kind": "function/declaration",
+      "signature": "segy_textheader_size(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_to_native",
+      "kind": "function/declaration",
+      "signature": "segy_to_native(int format, long long size, void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_trace0",
+      "kind": "function/declaration",
+      "signature": "segy_trace0(const char* binheader, unsigned long long* trace0, int ext_textheader_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_trace_bsize",
+      "kind": "function/declaration",
+      "signature": "segy_trace_bsize(int samples)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_traceheader_default_map",
+      "kind": "function/declaration",
+      "signature": "segy_traceheader_default_map(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_traceheader_default_name_map",
+      "kind": "function/declaration",
+      "signature": "segy_traceheader_default_name_map(void)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_traceheader_names",
+      "kind": "function/declaration",
+      "signature": "segy_traceheader_names(segy_datasource* ds, char (*names)[8])",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_traceheaders",
+      "kind": "function/declaration",
+      "signature": "segy_traceheaders(const char* binheader, int* traceheader_count)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_traces",
+      "kind": "function/declaration",
+      "signature": "segy_traces(segy_datasource*, int*)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_trsize",
+      "kind": "function/declaration",
+      "signature": "segy_trsize(int format, int samples)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_write_binheader",
+      "kind": "function/declaration",
+      "signature": "segy_write_binheader(segy_datasource*, const char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_write_line",
+      "kind": "function/declaration",
+      "signature": "segy_write_line(segy_datasource* ds, int line_trace0, int line_length, int stride, int offsets, const void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_write_standard_traceheader",
+      "kind": "function/declaration",
+      "signature": "segy_write_standard_traceheader(segy_datasource*, int traceno, const char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_write_textheader",
+      "kind": "function/declaration",
+      "signature": "segy_write_textheader(segy_datasource*, int pos, const char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_write_traceheader",
+      "kind": "function/declaration",
+      "signature": "segy_write_traceheader(segy_datasource*, int traceno, int traceheader_no, const segy_entry_definition* mapping, const char* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_writesubtr",
+      "kind": "function/declaration",
+      "signature": "segy_writesubtr(segy_datasource*, int traceno, int start, int stop, int step, const void* buf, void* rangebuf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segy_writetrace",
+      "kind": "function/declaration",
+      "signature": "segy_writetrace(segy_datasource*, int traceno, const void* buf)",
+      "description": "",
+      "source_file": "lib/include/segyio/segy.h",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "package/public export",
+        "public header"
+      ]
+    },
+    {
+      "name": "segyio.binfield.BinField",
+      "kind": "class",
+      "signature": "BinField",
+      "description": "Trace header field enumerator",
+      "source_file": "python/segyio/binfield.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.create.create",
+      "kind": "function",
+      "signature": "create(filename, spec, layout_xml=None)",
+      "description": "Create a new segy file.",
+      "source_file": "python/segyio/create.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.line.Line.values",
+      "kind": "method",
+      "signature": "values(self)",
+      "description": "D.values() -> generator of D's values",
+      "source_file": "python/segyio/line.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.open.open",
+      "kind": "function",
+      "signature": "open(filename, mode='r', iline=None, xline=None, strict=True, ignore_geometry=False, endian=None, encoding=None, layout_xml=None)",
+      "description": "Open a segy file.",
+      "source_file": "python/segyio/open.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.depth_slice",
+      "kind": "method",
+      "signature": "depth_slice(self, value)",
+      "description": "depth macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.fast",
+      "kind": "method",
+      "signature": "fast(self)",
+      "description": "Access the 'fast' dimension",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.gather",
+      "kind": "method",
+      "signature": "gather(self)",
+      "description": "Interact with segy in gather mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.header",
+      "kind": "method",
+      "signature": "header(self, val)",
+      "description": "standard headers macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.iline",
+      "kind": "method",
+      "signature": "iline(self)",
+      "description": "Interact with segy in inline mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.iline",
+      "kind": "method",
+      "signature": "iline(self, value)",
+      "description": "inlines macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.ilines",
+      "kind": "method",
+      "signature": "ilines(self)",
+      "description": "Inline labels",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.mmap",
+      "kind": "method",
+      "signature": "mmap(self)",
+      "description": "Memory map the file",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.slow",
+      "kind": "method",
+      "signature": "slow(self)",
+      "description": "Access the 'slow' dimension",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.text",
+      "kind": "method",
+      "signature": "text(self)",
+      "description": "Interact with segy in text mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.trace",
+      "kind": "method",
+      "signature": "trace(self)",
+      "description": "Interact with segy in trace mode.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.trace",
+      "kind": "method",
+      "signature": "trace(self, val)",
+      "description": "traces macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.tracecount",
+      "kind": "method",
+      "signature": "tracecount(self)",
+      "description": "Number of traces in this file",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.xline",
+      "kind": "method",
+      "signature": "xline(self)",
+      "description": "Interact with segy in crossline mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.xline",
+      "kind": "method",
+      "signature": "xline(self, value)",
+      "description": "crosslines macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.xlines",
+      "kind": "method",
+      "signature": "xlines(self)",
+      "description": "Crossline labels",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.su.file.open",
+      "kind": "function",
+      "signature": "open(filename, mode='r', iline=189, xline=193, strict=True, ignore_geometry=False, endian='big')",
+      "description": "Open a seismic unix file.",
+      "source_file": "python/segyio/su/file.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.tools.cube",
+      "kind": "function",
+      "signature": "cube(f)",
+      "description": "Read a full cube from a file",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.tools.native",
+      "kind": "function",
+      "signature": "native(data, format=segyio.SegySampleFormat.IBM_FLOAT_4_BYTE, copy=True)",
+      "description": "Convert numpy array to native float",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Header",
+      "kind": "class",
+      "signature": "Header",
+      "description": "Interact with segy in header mode",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Header.iline",
+      "kind": "method",
+      "signature": "iline(self)",
+      "description": "Headers, accessed by inline",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Header.iline",
+      "kind": "method",
+      "signature": "iline(self, value)",
+      "description": "Write iterables to lines",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Header.xline",
+      "kind": "method",
+      "signature": "xline(self)",
+      "description": "Headers, accessed by crossline",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Header.xline",
+      "kind": "method",
+      "signature": "xline(self, value)",
+      "description": "Write iterables to lines",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.HeaderLayoutEntries.index",
+      "kind": "method",
+      "signature": "index(self)",
+      "description": "Get traceheader index of this layout.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.RowLayoutEntries.names",
+      "kind": "method",
+      "signature": "names(self)",
+      "description": "List all trace header names.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.trace.Text",
+      "kind": "class",
+      "signature": "Text",
+      "description": "Interact with segy in text mode",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.tracefield.TraceField",
+      "kind": "class",
+      "signature": "TraceField",
+      "description": "Trace header field enumerator",
+      "source_file": "python/segyio/tracefield.py",
+      "api_level": "primary_public",
+      "quality_score": 7,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "Trait",
+      "kind": "struct",
+      "signature": "Trait",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "apply_all",
+      "kind": "function/declaration",
+      "signature": "apply_all(Base& f, Args && ... args)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "basic_file",
+      "kind": "class",
+      "signature": "basic_file",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "binary_header",
+      "kind": "struct",
+      "signature": "binary_header",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "binary_header_reader",
+      "kind": "struct",
+      "signature": "binary_header_reader",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "buffer",
+      "kind": "function/declaration",
+      "signature": "buffer()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "buffer_resize",
+      "kind": "function/declaration",
+      "signature": "buffer_resize(std::size_t size)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "buffer_size",
+      "kind": "function/declaration",
+      "signature": "buffer_size()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "buffmt",
+      "kind": "function/declaration",
+      "signature": "buffmt(const char*)",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "call_if_exists",
+      "kind": "function/declaration",
+      "signature": "call_if_exists(F& f, Args&& ... x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "call_if_exists",
+      "kind": "function/declaration",
+      "signature": "call_if_exists(F&, Arg && ...)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "closable",
+      "kind": "struct",
+      "signature": "closable",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "close",
+      "kind": "function/declaration",
+      "signature": "close()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "config",
+      "kind": "struct",
+      "signature": "config",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "conjunction",
+      "kind": "struct",
+      "signature": "conjunction",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "copy_n_as",
+      "kind": "function/declaration",
+      "signature": "copy_n_as(int n, const void* p, OutputIt out)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "crosslinecount",
+      "kind": "function/declaration",
+      "signature": "crosslinecount()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "description",
+      "kind": "function/declaration",
+      "signature": "description()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "disable_copy",
+      "kind": "struct",
+      "signature": "disable_copy",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "disable_default",
+      "kind": "struct",
+      "signature": "disable_default",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "disable_truncate",
+      "kind": "struct",
+      "signature": "disable_truncate",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "disjunction",
+      "kind": "struct",
+      "signature": "disjunction",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errmsg",
+      "kind": "function/declaration",
+      "signature": "errmsg(int errcode, const char* msg)",
+      "description": "",
+      "source_file": "applications/apputils.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errmsg2",
+      "kind": "function/declaration",
+      "signature": "errmsg2(int errcode, const char* prelude, const char* msg)",
+      "description": "",
+      "source_file": "applications/apputils.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(const std::string& msg)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"unable to seek trace \" + std::to_string(i))",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"unable to read trace \" + std::to_string(i))",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"unable to seek binary header\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"unable to read binary header\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"seek error while determining sorting\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"read error while determining sorting\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"seek error while counting offsets\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"read error while counting offsets\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"seek error while counting lines\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"read error while counting lines\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "errnomsg",
+      "kind": "function/declaration",
+      "signature": "errnomsg(\"unable to write trace \" + std::to_string(i))",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "escape",
+      "kind": "function/declaration",
+      "signature": "escape()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "f",
+      "kind": "function/declaration",
+      "signature": "f(\"path.sgy\"_path)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "file_deleter",
+      "kind": "struct",
+      "signature": "file_deleter",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "filefmt",
+      "kind": "function/declaration",
+      "signature": "filefmt(segy_file*)",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "fmt",
+      "kind": "function/declaration",
+      "signature": "fmt()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "fmt",
+      "kind": "function/declaration",
+      "signature": "fmt(int x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "fmt",
+      "kind": "struct",
+      "signature": "fmt",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "foo",
+      "kind": "function/declaration",
+      "signature": "foo()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "g",
+      "kind": "function/declaration",
+      "signature": "g(\"path.sgy\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "get",
+      "kind": "function/declaration",
+      "signature": "get(int i, OutputIt out)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "get_bin",
+      "kind": "function/declaration",
+      "signature": "get_bin()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "get_th",
+      "kind": "function/declaration",
+      "signature": "get_th(int i)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "get_unique",
+      "kind": "function/declaration",
+      "signature": "get_unique()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "ibm",
+      "kind": "function/declaration",
+      "signature": "ibm()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "ilbyte",
+      "kind": "struct",
+      "signature": "ilbyte",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "inlinecount",
+      "kind": "function/declaration",
+      "signature": "inlinecount()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "int1",
+      "kind": "function/declaration",
+      "signature": "int1()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "int2",
+      "kind": "function/declaration",
+      "signature": "int2()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "int4",
+      "kind": "function/declaration",
+      "signature": "int4()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "is_open",
+      "kind": "function/declaration",
+      "signature": "is_open()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "know_all",
+      "kind": "function/declaration",
+      "signature": "know_all()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "know_any",
+      "kind": "function/declaration",
+      "signature": "know_any()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "noexcept",
+      "kind": "function/declaration",
+      "signature": "noexcept(false)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "offsetcount",
+      "kind": "function/declaration",
+      "signature": "offsetcount()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "open_path",
+      "kind": "function/declaration",
+      "signature": "open_path(const path&, const mode&)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "open_path",
+      "kind": "function/declaration",
+      "signature": "open_path(const segyio::path& path, const segyio::mode&)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "open_status",
+      "kind": "struct",
+      "signature": "open_status",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "openable",
+      "kind": "struct",
+      "signature": "openable",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "parseint",
+      "kind": "function/declaration",
+      "signature": "parseint(const char* str, int* x)",
+      "description": "",
+      "source_file": "applications/apputils.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "printversion",
+      "kind": "function/declaration",
+      "signature": "printversion(const char* name)",
+      "description": "",
+      "source_file": "applications/apputils.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "put",
+      "kind": "function/declaration",
+      "signature": "put(int i, InputIt in)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "readonly",
+      "kind": "function/declaration",
+      "signature": "readonly()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "readonly",
+      "kind": "struct",
+      "signature": "readonly",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "readwrite",
+      "kind": "function/declaration",
+      "signature": "readwrite()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "recreateSpec",
+      "kind": "function/declaration",
+      "signature": "recreateSpec(SegySpec* spec, const mxArray* mex_spec)",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "samplecount",
+      "kind": "function/declaration",
+      "signature": "samplecount()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segyCreateSpec",
+      "kind": "function/declaration",
+      "signature": "segyCreateSpec(SegySpec* spec, const char* file, unsigned int inline_field, unsigned int crossline_field, float t0, float dt)",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_file_deleter",
+      "kind": "struct",
+      "signature": "segy_file_deleter",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_file_format",
+      "kind": "struct",
+      "signature": "segy_file_format",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_from_native",
+      "kind": "function/declaration",
+      "signature": "segy_from_native(format, len, self->buffer())",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_get_binfield_int",
+      "kind": "function/declaration",
+      "signature": "segy_get_binfield_int(buffer, key, &f)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_get_tracefield_int",
+      "kind": "function/declaration",
+      "signature": "segy_get_tracefield_int(buffer, key, &f)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_open",
+      "kind": "function/declaration",
+      "signature": "segy_open(const segyio::path& path, const segyio::mode& mode)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segy_to_native",
+      "kind": "function/declaration",
+      "signature": "segy_to_native(format, samplecount, self->buffer())",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segyfopen",
+      "kind": "function/declaration",
+      "signature": "segyfopen(const mxArray* filename, const char* mode)",
+      "description": "",
+      "source_file": "mex/segyutil.h",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segyio.Enum",
+      "kind": "class",
+      "signature": "Enum",
+      "description": "",
+      "source_file": "python/segyio/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simple_buffer",
+      "kind": "struct",
+      "signature": "simple_buffer",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simple_handle",
+      "kind": "function/declaration",
+      "signature": "simple_handle(const simple_handle& o)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simple_handle",
+      "kind": "function/declaration",
+      "signature": "simple_handle(const segyio::path&, const segyio::mode&)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simple_handle",
+      "kind": "function/declaration",
+      "signature": "simple_handle(o.path, o.mode)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "simple_handle",
+      "kind": "class",
+      "signature": "simple_handle",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "static_assert",
+      "kind": "function/declaration",
+      "signature": "static_assert(self->template know_all< Trait1, Trait2 >(), * \"foo requires Trait1 (bar) and Trait2 (baz)\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "static_assert",
+      "kind": "function/declaration",
+      "signature": "static_assert(!any_traits< Derived, truncable >::value, \"file marked no-truncable, but trait introduces truncability\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "static_assert",
+      "kind": "function/declaration",
+      "signature": "static_assert(!any_traits< Derived, writable >::value, \"read-only file requested, but a trait introduces writability\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "static_assert",
+      "kind": "function/declaration",
+      "signature": "static_assert(any_traits< Derived, writable, write_always >::value, \"trace_writer needs a 'writable' trait\")",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "function/declaration",
+      "signature": "strong_typedef(const T& x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "function/declaration",
+      "signature": "strong_typedef(T&& x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "strong_typedef",
+      "kind": "class",
+      "signature": "strong_typedef",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "swap",
+      "kind": "function/declaration",
+      "signature": "swap(strong_typedef& a, strong_typedef& b)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "swap",
+      "kind": "function/declaration",
+      "signature": "swap(static_cast< T& >( a ), static_cast< T& >( b ))",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace0",
+      "kind": "function/declaration",
+      "signature": "trace0()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_bounds_check",
+      "kind": "struct",
+      "signature": "trace_bounds_check",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_header",
+      "kind": "struct",
+      "signature": "trace_header",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_header_reader",
+      "kind": "struct",
+      "signature": "trace_header_reader",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_meta_fromfile",
+      "kind": "struct",
+      "signature": "trace_meta_fromfile",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_reader",
+      "kind": "struct",
+      "signature": "trace_reader",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "trace_writer",
+      "kind": "struct",
+      "signature": "trace_writer",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "tracesize",
+      "kind": "function/declaration",
+      "signature": "tracesize()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "truncable",
+      "kind": "struct",
+      "signature": "truncable",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "truncate",
+      "kind": "function/declaration",
+      "signature": "truncate()",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "truncate_always",
+      "kind": "struct",
+      "signature": "truncate_always",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "unknown_error",
+      "kind": "function/declaration",
+      "signature": "unknown_error(int errc)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "unknown_error",
+      "kind": "function/declaration",
+      "signature": "unknown_error(err)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "value",
+      "kind": "function/declaration",
+      "signature": "value(x)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "value",
+      "kind": "function/declaration",
+      "signature": "value(std::move( x ))",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "volume_meta_fromfile",
+      "kind": "struct",
+      "signature": "volume_meta_fromfile",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "with_path",
+      "kind": "function/declaration",
+      "signature": "with_path(\"file.sgy\"_path)",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "writable",
+      "kind": "struct",
+      "signature": "writable",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "write_always",
+      "kind": "struct",
+      "signature": "write_always",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "xlbyte",
+      "kind": "struct",
+      "signature": "xlbyte",
+      "description": "",
+      "source_file": "lib/experimental/segyio/segyio.hpp",
+      "api_level": "documented_public",
+      "quality_score": 5,
+      "evidence": [
+        "package/public export"
+      ]
+    },
+    {
+      "name": "segyio.field.Field",
+      "kind": "class",
+      "signature": "Field",
+      "description": "The Field implements the dict interface, with a fixed set of keys. It's\nused for both binary- and trace headers. Any modifications to this\ndict_like object will be reflected on disk.",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.reload",
+      "kind": "method",
+      "signature": "reload(self)",
+      "description": "This object will read header when it is constructed, which means it\nmight be out-of-date if the file is updated through some other handle.",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.update",
+      "kind": "method",
+      "signature": "update(self, *args, **kwargs)",
+      "description": "d.update([E, ]**F) -> None.  Update D from mapping/iterable E and F.",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.field.HeaderFieldAccessor",
+      "kind": "class",
+      "signature": "HeaderFieldAccessor",
+      "description": "Same as :class:`Field`, only to be used with\n:meth:`segyio.SegyFile.traceheader` interface.",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.gather.Group",
+      "kind": "class",
+      "signature": "Group",
+      "description": "The inner representation of the Groups abstraction provided by Group.",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.gather.Group.sort",
+      "kind": "method",
+      "signature": "sort(self, fields)",
+      "description": "Sort the traces in the group, obeying the `fields` order of\nmost-to-least significant word.",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.gather.Groups",
+      "kind": "class",
+      "signature": "Groups",
+      "description": "The Groups implements the dict interface, grouping all traces that match a\ngiven `fingerprint`. The fingerprint is a signature derived from a set of\ntrace header words, called a `key`.",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.gather.Groups.normalize_keys",
+      "kind": "method",
+      "signature": "normalize_keys(items)",
+      "description": "Normalize the key representation to integers, so that they're hashable,\neven when a key is built with enumerators.",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.gather.Groups.sort",
+      "kind": "method",
+      "signature": "sort(self, fields)",
+      "description": "Reorganise the indices in all groups by fields",
+      "source_file": "python/segyio/gather.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.line.HeaderLine",
+      "kind": "class",
+      "signature": "HeaderLine",
+      "description": "The Line implements the dict interface, with a fixed set of int_like keys,\nthe line numbers/labels. The values are iterables of Field objects.",
+      "source_file": "python/segyio/line.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.dtype",
+      "kind": "method",
+      "signature": "dtype(self)",
+      "description": "The data type object of the traces. This is the format most accurate\nand efficient to exchange with the underlying file, and the data type\nyou will find the data traces.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.ext_text_headers_count",
+      "kind": "method",
+      "signature": "ext_text_headers_count(self)",
+      "description": "Number of extended textual file header records.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.interpret",
+      "kind": "method",
+      "signature": "interpret(self, ilines, xlines, offsets=None, sorting=TraceSortingFormat.INLINE_SORTING)",
+      "description": "(Re-)interpret structure on top of a file",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.collect",
+      "kind": "function",
+      "signature": "collect(itr)",
+      "description": "Collect traces or lines into one ndarray",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.from_array",
+      "kind": "function",
+      "signature": "from_array(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+      "description": "Create a new SEGY file from an n-dimentional array. Create a structured\nSEGY file with defaulted headers from a 2-, 3- or 4-dimensional array.\nilines, xlines, offsets and samples are inferred from the size of the\narray. Please refer to the documentation for functions from_array2D,\nfrom_array3D and from_array4D to see how the arrays are interpreted.",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.from_array2D",
+      "kind": "function",
+      "signature": "from_array2D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+      "description": "Create a new SEGY file from a 2D array\nCreate an structured SEGY file with defaulted headers from a 2-dimensional\narray. The file is inline-sorted and structured as a slice, i.e. it has one\niline and the xlinecount equals the tracecount. The tracecount and\nsamplecount are inferred from the size of the array. Structure-defining\nfields in the binary header and in the traceheaders are set accordingly.\nSuch fields include, but are not limited to iline, xline and offset. The\nfile also contains a defa",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.from_array3D",
+      "kind": "function",
+      "signature": "from_array3D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+      "description": "Create a new SEGY file from a 3D array\nCreate an structured SEGY file with defaulted headers from a 3-dimensional\narray. The file is inline-sorted. ilines, xlines and samples are inferred\nfrom the array. Structure-defining fields in the binary header and\nin the traceheaders are set accordingly. Such fields include, but are not\nlimited to iline, xline and offset. The file also contains a defaulted\ntextual header.",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.from_array4D",
+      "kind": "function",
+      "signature": "from_array4D(filename, data, iline=189, xline=193, format=SegySampleFormat.IBM_FLOAT_4_BYTE, dt=4000, delrt=0)",
+      "description": "Create a new SEGY file from a 4D array\nCreate an structured SEGY file with defaulted headers from a 4-dimensional\narray. The file is inline-sorted. ilines, xlines, offsets and samples are\ninferred from the array. Structure-defining fields in the binary header and\nin the traceheaders are set accordingly. Such fields include, but are not\nlimited to iline, xline and offset. The file also contains a defaulted\ntextual header.",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.metadata",
+      "kind": "function",
+      "signature": "metadata(f)",
+      "description": "Get survey structural properties and metadata",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.sample_indexes",
+      "kind": "function",
+      "signature": "sample_indexes(segyfile, t0=0.0, dt_override=None)",
+      "description": "Creates a list of values representing the samples in a trace at depth or time.\nThe list starts at *t0* and is incremented with am*dt* for the number of samples.\nIf a *dt_override* is not provided it will try to find a *dt* in the file.",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.FieldLayoutEntry",
+      "kind": "class",
+      "signature": "FieldLayoutEntry",
+      "description": "Represents a single field entry in a trace header layout.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.FieldLayoutEntry.name",
+      "kind": "method",
+      "signature": "name(self)",
+      "description": "Get the name of the field as is defined in the layout.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.FieldLayoutEntry.use_only_if_non_zero",
+      "kind": "method",
+      "signature": "use_only_if_non_zero(self)",
+      "description": "Returns the field property 'if-non-zero' stating if this field could be\nused only when its value does not equal 0.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.FileFieldAccessor",
+      "kind": "class",
+      "signature": "FileFieldAccessor",
+      "description": "Sequence of rows of trace headers in a SEG-Y file.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.HeaderLayoutEntries",
+      "kind": "class",
+      "signature": "HeaderLayoutEntries",
+      "description": "Sequence of field layout entries in a trace header.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.RawTrace",
+      "kind": "class",
+      "signature": "RawTrace",
+      "description": "Behaves exactly like trace, except reads are done eagerly and returned as\nnumpy.ndarray, instead of generators of numpy.ndarray.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.RefTrace",
+      "kind": "class",
+      "signature": "RefTrace",
+      "description": "Behaves like trace, except changes to the returned numpy arrays *are*\nreflected on disk. Operations have to be in-place on the numpy array, so\nassignment on a trace will not work.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.RefTrace.flush",
+      "kind": "method",
+      "signature": "flush(self)",
+      "description": "Commit cached writes to the file handle. Does not flush libc buffers or\nnotifies the kernel, so these changes may not immediately be visible to\nother processes.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.RowFieldAccessor",
+      "kind": "class",
+      "signature": "RowFieldAccessor",
+      "description": "Sequence of trace headers in a single trace (row).",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.RowLayoutEntries",
+      "kind": "class",
+      "signature": "RowLayoutEntries",
+      "description": "Sequence of trace header layouts in one trace (row).",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.Stanza",
+      "kind": "class",
+      "signature": "Stanza",
+      "description": "Access stanza data from extended textual headers.",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.utils.parse_trace_headers_layout",
+      "kind": "function",
+      "signature": "parse_trace_headers_layout(xml)",
+      "description": "Parse an XML string into a dict of header name: TraceHeaderLayoutEntry.",
+      "source_file": "python/segyio/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.Enum.enums",
+      "kind": "method",
+      "signature": "enums(cls)",
+      "description": "",
+      "source_file": "python/segyio/__init__.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.create.structured",
+      "kind": "function",
+      "signature": "structured(spec)",
+      "description": "",
+      "source_file": "python/segyio/create.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.binary",
+      "kind": "method",
+      "signature": "binary(cls, segyfile)",
+      "description": "",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.trace",
+      "kind": "method",
+      "signature": "trace(cls, traceno, traceheader_index, segyfile)",
+      "description": "",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.field.HeaderFieldAccessor.trace",
+      "kind": "method",
+      "signature": "trace(cls, traceno, traceheader_index, segyfile)",
+      "description": "",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.line.Line.ranges",
+      "kind": "method",
+      "signature": "ranges(self, index, offset)",
+      "description": "",
+      "source_file": "python/segyio/line.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.format",
+      "kind": "method",
+      "signature": "format(self)",
+      "description": "",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.segy.spec",
+      "kind": "class",
+      "signature": "spec",
+      "description": "",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.su.file.sufile.text",
+      "kind": "method",
+      "signature": "text(self)",
+      "description": "",
+      "source_file": "python/segyio/su/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "segyio.create.create_with",
+      "kind": "function",
+      "signature": "create_with(stream, spec, minimize_requests_number=True, layout_xml=None)",
+      "description": "Creates a segy file on stream.",
+      "source_file": "python/segyio/create.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.fetch",
+      "kind": "method",
+      "signature": "fetch(self, buf=None, traceno=None, traceheader_index=None)",
+      "description": "Fetch the header from disk",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.field.Field.flush",
+      "kind": "method",
+      "signature": "flush(self)",
+      "description": "Commit backing storage to disk",
+      "source_file": "python/segyio/field.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.open.open_from_memory",
+      "kind": "function",
+      "signature": "open_from_memory(memory_buffer, iline=None, xline=None, strict=True, ignore_geometry=False, endian=None, encoding=None, layout_xml=None)",
+      "description": "Opens a segy file from memory.",
+      "source_file": "python/segyio/open.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.open.open_with",
+      "kind": "function",
+      "signature": "open_with(stream, iline=None, xline=None, strict=True, ignore_geometry=False, endian=None, encoding=None, minimize_requests_number=True, layout_xml=None)",
+      "description": "Opens a segy file from a stream.",
+      "source_file": "python/segyio/open.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.bin",
+      "kind": "method",
+      "signature": "bin(self)",
+      "description": "Interact with segy in binary mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.bin",
+      "kind": "method",
+      "signature": "bin(self, value)",
+      "description": "Update binary header",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.close",
+      "kind": "method",
+      "signature": "close(self)",
+      "description": "Close the file",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.flush",
+      "kind": "method",
+      "signature": "flush(self)",
+      "description": "Flush the file",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.group",
+      "kind": "method",
+      "signature": "group(self, word)",
+      "description": "Get groups of traces matching a key",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.readonly",
+      "kind": "method",
+      "signature": "readonly(self)",
+      "description": "File is read-only",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.stanza",
+      "kind": "method",
+      "signature": "stanza(self)",
+      "description": "Interact with segy in stanza mode",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.traceheader",
+      "kind": "method",
+      "signature": "traceheader(self)",
+      "description": "Interact with segy in traceheader mode.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.traceheader",
+      "kind": "method",
+      "signature": "traceheader(self, val)",
+      "description": "headers macro assignment",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.segy.SegyFile.traceheader_count",
+      "kind": "method",
+      "signature": "traceheader_count(self)",
+      "description": "Total number of trace headers.",
+      "source_file": "python/segyio/segy.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.create_text_header",
+      "kind": "function",
+      "signature": "create_text_header(lines)",
+      "description": "Format textual header",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.dt",
+      "kind": "function",
+      "signature": "dt(f, fallback_dt=4000.0)",
+      "description": "Delta-time",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.resample",
+      "kind": "function",
+      "signature": "resample(f, rate=None, delay=None, micro=False, trace=True, binary=True)",
+      "description": "Resample a file",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.tools.rotation",
+      "kind": "function",
+      "signature": "rotation(f, line='fast')",
+      "description": "Find rotation of the survey",
+      "source_file": "python/segyio/tools.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.Trace.raw",
+      "kind": "method",
+      "signature": "raw(self)",
+      "description": "An eager version of Trace",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "segyio.trace.Trace.ref",
+      "kind": "method",
+      "signature": "ref(self)",
+      "description": "A write-back version of Trace",
+      "source_file": "python/segyio/trace.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}

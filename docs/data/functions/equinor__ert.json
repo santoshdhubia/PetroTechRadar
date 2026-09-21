@@ -1,0 +1,1347 @@
+{
+  "generated_at": "2026-09-21T15:37:41.728978+00:00",
+  "repository": "equinor/ert",
+  "language": "Python",
+  "function_count": 111,
+  "functions": [
+    {
+      "name": "ert.config._read_summary.read_summary",
+      "kind": "function",
+      "signature": "read_summary(summary_basename, select_keys)",
+      "description": "Reads the timeseries for the selected keys from summary files with the\ngiven basename.",
+      "source_file": "src/ert/config/_read_summary.py",
+      "api_level": "primary_public",
+      "quality_score": 9,
+      "evidence": [
+        "documentation",
+        "package/public export"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._adaptive.AdaptiveLocalizationUpdate.update",
+      "kind": "method",
+      "signature": "update(self, param_ensemble, param_config, non_zero_variance_mask)",
+      "description": "Update parameters using adaptive localization with batching.",
+      "source_file": "src/ert/analysis/_update_strategies/_adaptive.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._global.GlobalESUpdate.update",
+      "kind": "method",
+      "signature": "update(self, param_ensemble, param_config, non_zero_variance_mask)",
+      "description": "Apply the transition matrix to update parameters.",
+      "source_file": "src/ert/analysis/_update_strategies/_global.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.UpdateStrategy.update",
+      "kind": "method",
+      "signature": "update(self, param_ensemble, param_config, non_zero_variance_mask)",
+      "description": "Update parameters using this strategy's algorithm.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ert.analysis.misfit_preprocessor.main",
+      "kind": "function",
+      "signature": "main(responses, obs_errors)",
+      "description": "Perform 'Auto Scaling' to mitigate issues with correlated observations in ensemble\nsmoothers.",
+      "source_file": "src/ert/analysis/misfit_preprocessor.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStepPlugin.documentation",
+      "kind": "method",
+      "signature": "documentation()",
+      "description": "Returns the documentation for the plugin forward model",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_errors.ConfigValidationError.messages",
+      "kind": "method",
+      "signature": "messages(self, formatter=str)",
+      "description": "List of the configuration errors messages with context",
+      "source_file": "src/ert/config/parsing/config_errors.py",
+      "api_level": "primary_public",
+      "quality_score": 8,
+      "evidence": [
+        "documentation",
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "_ert.events.EnsembleEvaluationWarning",
+      "kind": "class",
+      "signature": "EnsembleEvaluationWarning",
+      "description": "This event is to indicate that something unexpected happened while\nrunning the ensemble, and that it might be stuck in an unresponsive state.",
+      "source_file": "src/_ert/events.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.forward_model_step.killed_by_oom",
+      "kind": "function",
+      "signature": "killed_by_oom(pids)",
+      "description": "Detects whether any of the processes were killed due to OOM.",
+      "source_file": "src/_ert/forward_model_runner/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.event.Event",
+      "kind": "class",
+      "signature": "Event",
+      "description": "The Event reporter forwards events, coming from the running step, added with\n\"report\" to the given connection information.",
+      "source_file": "src/_ert/forward_model_runner/reporting/event.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.message.ProcessTreeStatus",
+      "kind": "class",
+      "signature": "ProcessTreeStatus",
+      "description": "Holds processtree information that can be represented as a line of CSV data",
+      "source_file": "src/_ert/forward_model_runner/reporting/message.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.utils.file_safe_timestamp",
+      "kind": "function",
+      "signature": "file_safe_timestamp(timestamp)",
+      "description": "Convert an ISO timestamp string to a file-safe version",
+      "source_file": "src/_ert/utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._enif_update.compute_nan_masks",
+      "kind": "function",
+      "signature": "compute_nan_masks(param_arrays)",
+      "description": "Compute per-group NaN masks and the combined clean parameter matrix.",
+      "source_file": "src/ert/analysis/_enif_update.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._enif_update.prune_nan_nodes",
+      "kind": "function",
+      "signature": "prune_nan_nodes(graph, nan_mask)",
+      "description": "Remove NaN-flagged nodes from a parameter graph and relabel to 0..n-1.",
+      "source_file": "src/ert/analysis/_enif_update.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._es_update.build_strategy_map",
+      "kind": "function",
+      "signature": "build_strategy_map(parameters, param_configs, enkf_truncation, correlation_threshold, progress_callback, experiment)",
+      "description": "Build a mapping from parameter group names to update strategies.",
+      "source_file": "src/ert/analysis/_es_update.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._es_update.perform_ensemble_update",
+      "kind": "function",
+      "signature": "perform_ensemble_update(observations, observation_settings, global_scaling, ens_mask, source_ensemble, target_ensemble, progress_callback, strategy_map, rng)",
+      "description": "Orchestrate ensemble-based parameter updates using configurable strategies.",
+      "source_file": "src/ert/analysis/_es_update.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._adaptive.AdaptiveLocalizationUpdate",
+      "kind": "class",
+      "signature": "AdaptiveLocalizationUpdate",
+      "description": "Adaptive localization using correlation thresholds.",
+      "source_file": "src/ert/analysis/_update_strategies/_adaptive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._adaptive.AdaptiveLocalizationUpdate.prepare",
+      "kind": "method",
+      "signature": "prepare(self, obs_context)",
+      "description": "Initialize smoother and pre-compute matrices from observation data.",
+      "source_file": "src/ert/analysis/_update_strategies/_adaptive.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._batching.calculate_localization_batch_size",
+      "kind": "function",
+      "signature": "calculate_localization_batch_size(num_params, num_obs)",
+      "description": "Calculate a localization batch size that fits available memory.",
+      "source_file": "src/ert/analysis/_update_strategies/_batching.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._batching.split_by_batch_size",
+      "kind": "function",
+      "signature": "split_by_batch_size(arr, batch_size)",
+      "description": "Split an array into sub-arrays of a specified batch size.",
+      "source_file": "src/ert/analysis/_update_strategies/_batching.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._distance.DistanceLocalizationUpdate",
+      "kind": "class",
+      "signature": "DistanceLocalizationUpdate",
+      "description": "Distance-based localization for Field and Surface parameters.",
+      "source_file": "src/ert/analysis/_update_strategies/_distance.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._global.GlobalESUpdate.prepare",
+      "kind": "method",
+      "signature": "prepare(self, obs_context)",
+      "description": "Pre-compute assimilation factors from observation data.",
+      "source_file": "src/ert/analysis/_update_strategies/_global.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.ObservationContext",
+      "kind": "class",
+      "signature": "ObservationContext",
+      "description": "Preprocessed observation data for parameter updates.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.ObservationContext.ensemble_size",
+      "kind": "method",
+      "signature": "ensemble_size(self)",
+      "description": "Number of active realizations (inferred from responses shape).",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.ObservationLocations",
+      "kind": "class",
+      "signature": "ObservationLocations",
+      "description": "Observation location data for distance-based localization methods.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.TimedIterator",
+      "kind": "class",
+      "signature": "TimedIterator",
+      "description": "Iterator wrapper that reports progress timing via callback.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.UpdateStrategy",
+      "kind": "class",
+      "signature": "UpdateStrategy",
+      "description": "Protocol for parameter update strategies.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.UpdateStrategy.prepare",
+      "kind": "method",
+      "signature": "prepare(self, obs_context)",
+      "description": "Initialize the strategy with observation data.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis.misfit_preprocessor.cluster_responses",
+      "kind": "function",
+      "signature": "cluster_responses(responses, nr_clusters)",
+      "description": "Cluster responses using hierarchical clustering on absolute Spearman correlation.\nObservations that vary similarly across realizations, regardless of whether\nthe relationship is positive or negative, will tend to be clustered together.",
+      "source_file": "src/ert/analysis/misfit_preprocessor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis.misfit_preprocessor.get_nr_primary_components",
+      "kind": "function",
+      "signature": "get_nr_primary_components(responses, threshold)",
+      "description": "Calculate the number of principal components required\nto explain a given amount of variance in the responses.",
+      "source_file": "src/ert/analysis/misfit_preprocessor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis.misfit_preprocessor.get_scaling_factor",
+      "kind": "function",
+      "signature": "get_scaling_factor(nr_observations, nr_components)",
+      "description": "Calculate the observation-error scaling factor.",
+      "source_file": "src/ert/analysis/misfit_preprocessor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.base_model_context.get_runtime_plugins",
+      "kind": "function",
+      "signature": "get_runtime_plugins(info)",
+      "description": "Return the active runtime plugins for a pydantic validator.",
+      "source_file": "src/ert/base_model_context.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.cli.main.ErtCliError",
+      "kind": "class",
+      "signature": "ErtCliError",
+      "description": "Used for exception where the Ert command line interface should\nexit with a nonzero return code",
+      "source_file": "src/ert/cli/main.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.cli.monitor.Monitor",
+      "kind": "class",
+      "signature": "Monitor",
+      "description": "Class for tracking and outputting the progress of a simulation @model,\nwhere progress is defined as a combination of fields on @tracker.",
+      "source_file": "src/ert/cli/monitor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.cli.monitor.ansi_color",
+      "kind": "function",
+      "signature": "ansi_color(text, color)",
+      "description": "Returns the text as a colorized text for an ansi terminal.",
+      "source_file": "src/ert/cli/monitor.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._get_num_cpu.get_num_cpu_from_data_file",
+      "kind": "function",
+      "signature": "get_num_cpu_from_data_file(data_file)",
+      "description": "Reads the number of cpus required from the reservoir simulator .data file.",
+      "source_file": "src/ert/config/_get_num_cpu.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._observations.RFTObservation",
+      "kind": "class",
+      "signature": "RFTObservation",
+      "description": "Represents an RFT (Repeat Formation Tester) observation.",
+      "source_file": "src/ert/config/_observations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._observations.RFTObservation.from_csv",
+      "kind": "method",
+      "signature": "from_csv(cls, directory, observation_dict, filename, shape_registry, observed_property='PRESSURE', radius=None)",
+      "description": "Create RFT observations from a CSV file.",
+      "source_file": "src/ert/config/_observations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._observations.RFTObservation.from_obs_dict",
+      "kind": "method",
+      "signature": "from_obs_dict(cls, directory, observation_dict, shape_registry)",
+      "description": "Create RFT observations from an observation dictionary.",
+      "source_file": "src/ert/config/_observations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._observations.SeismicObservation.from_obs_dict",
+      "kind": "method",
+      "signature": "from_obs_dict(cls, directory, observation_dict, shape_registry)",
+      "description": "Create seismic observations from an observation dictionary.",
+      "source_file": "src/ert/config/_observations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._observations.make_observations",
+      "kind": "function",
+      "signature": "make_observations(directory, observation_dicts, shape_registry)",
+      "description": "Takes observation dicts and returns validated observations.",
+      "source_file": "src/ert/config/_observations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._reservoir_data_utils.SeismicData.get_too_close_coordinate_pairs",
+      "kind": "method",
+      "signature": "get_too_close_coordinate_pairs(cls, coordinates)",
+      "description": "Get pairs of indices of coordinates that are within double tolerance of each\nother.",
+      "source_file": "src/ert/config/_reservoir_data_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._reservoir_data_utils.SeismicData.resolve_pattern_filepaths",
+      "kind": "method",
+      "signature": "resolve_pattern_filepaths(basedir, pattern, on_error)",
+      "description": "Resolve all file paths matching a pattern against filenames only.",
+      "source_file": "src/ert/config/_reservoir_data_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._reservoir_data_utils.SeismicData.use_observation_locations_in_respective_responses",
+      "kind": "method",
+      "signature": "use_observation_locations_in_respective_responses(cls, responses, observations)",
+      "description": "Unify response and observation locations.",
+      "source_file": "src/ert/config/_reservoir_data_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.CircleShapeConfig",
+      "kind": "class",
+      "signature": "CircleShapeConfig",
+      "description": "Configuration for a circular (point-based) shape.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.PolygonShapeConfig",
+      "kind": "class",
+      "signature": "PolygonShapeConfig",
+      "description": "Configuration for a 2D (multi)polygonal shape.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.PolygonShapeConfig.contains",
+      "kind": "method",
+      "signature": "contains(self, east, north)",
+      "description": "Check if a point is inside any of the internal polygons.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.PolygonShapeConfig.from_file",
+      "kind": "method",
+      "signature": "from_file(cls, filepath)",
+      "description": "Create a PolygonShapeConfig from a file containing polygon vertices.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.ShapeConfig",
+      "kind": "class",
+      "signature": "ShapeConfig",
+      "description": "Base class for all shape configurations models for observations.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.ShapeRegistry",
+      "kind": "class",
+      "signature": "ShapeRegistry",
+      "description": "Registry for reusable shape configurations.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._str_to_bool.str_to_bool",
+      "kind": "function",
+      "signature": "str_to_bool(txt)",
+      "description": "This function converts text to boolean values according to the rules of\nthe FORWARD_INIT keyword.",
+      "source_file": "src/ert/config/_str_to_bool.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.analysis_module.ESSettings.correlation_threshold",
+      "kind": "method",
+      "signature": "correlation_threshold(self, ensemble_size)",
+      "description": "Decides whether to use user-defined or default threshold.",
+      "source_file": "src/ert/config/analysis_module.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.design_matrix.DesignMatrix.merge_with_existing_parameters",
+      "kind": "method",
+      "signature": "merge_with_existing_parameters(self, existing_parameters)",
+      "description": "This method merges the design matrix parameters with the existing parameters and\nreturns the new list of existing parameters.",
+      "source_file": "src/ert/config/design_matrix.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.design_matrix.convert_numeric_string_columns",
+      "kind": "function",
+      "signature": "convert_numeric_string_columns(df)",
+      "description": "Automatically convert string columns to numeric (int or float) where possible",
+      "source_file": "src/ert/config/design_matrix.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.design_matrix.read_default_values",
+      "kind": "function",
+      "signature": "read_default_values(filename, sheet_name, has_header)",
+      "description": "Construct a dict of keys and values to be used as defaults from the\nfirst two columns in a spreadsheet.",
+      "source_file": "src/ert/config/design_matrix.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_config.ErtConfig.from_file",
+      "kind": "method",
+      "signature": "from_file(cls, user_config_file)",
+      "description": "Reads the given :ref:`User Config File<List of keywords>` and the\n`Site wide configuration` and returns an ErtConfig containing the\nconfigured values specified in those files.",
+      "source_file": "src/ert/config/ert_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_script.ErtScript",
+      "kind": "class",
+      "signature": "ErtScript",
+      "description": "ErtScript is the abstract baseclass for workflow jobs and\nplugins. It provides access to the ert internals and lets\njobs implement the \"run\" function which is called when\na workflow is executed.",
+      "source_file": "src/ert/config/ert_script.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_script.ErtScript.cleanup",
+      "kind": "method",
+      "signature": "cleanup(self)",
+      "description": "Override to perform cleanup after a run.",
+      "source_file": "src/ert/config/ert_script.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_script.ErtScript.run",
+      "kind": "method",
+      "signature": "run(self, *arg, **kwarg)",
+      "description": "This method is implemented by the workflow runners\nand executed when the workflow job is called.",
+      "source_file": "src/ert/config/ert_script.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_script.ErtScript.validate",
+      "kind": "method",
+      "signature": "validate(args)",
+      "description": "If the workflow has problems it can validate against\nthe arguments on startup. If it raises ConfigValidationError\nthis will be caught and presented to the user.",
+      "source_file": "src/ert/config/ert_script.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_script.ExternalScriptError",
+      "kind": "class",
+      "signature": "ExternalScriptError",
+      "description": "Raised when an external workflow job exits with a non-zero exit code.",
+      "source_file": "src/ert/config/ert_script.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.everest_control.EverestControl",
+      "kind": "class",
+      "signature": "EverestControl",
+      "description": "Create an EverestControl for a single control variable.",
+      "source_file": "src/ert/config/everest_control.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.everest_response.EverestResponse",
+      "kind": "class",
+      "signature": "EverestResponse",
+      "description": "Base class for EVEREST response configurations.",
+      "source_file": "src/ert/config/everest_response.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStep",
+      "kind": "class",
+      "signature": "ForwardModelStep",
+      "description": "Holds information to execute one step of a forward model",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStep.check_required_keywords",
+      "kind": "method",
+      "signature": "check_required_keywords(self)",
+      "description": "Raises ConfigValidationError if not all required keywords are in\nprivate_args",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStep.validate_pre_experiment",
+      "kind": "method",
+      "signature": "validate_pre_experiment(self, fm_step_json)",
+      "description": "Raise errors pertaining to the environment not being\nas the forward model step requires it to be. For example\na missing FLOW version.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStep.validate_pre_realization_run",
+      "kind": "method",
+      "signature": "validate_pre_realization_run(self, fm_step_json)",
+      "description": "Used to validate/modify the step JSON to be run by the forward model step\nrunner. It will be called for every joblist.json created.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStepJSON",
+      "kind": "class",
+      "signature": "ForwardModelStepJSON",
+      "description": "A dictionary containing information about how a forward model step should be run\non the queue.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.ForwardModelStepValidationError",
+      "kind": "class",
+      "signature": "ForwardModelStepValidationError",
+      "description": "Thrown when the user calls the forward model incorrectly.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.SiteInstalledForwardModelStep",
+      "kind": "class",
+      "signature": "SiteInstalledForwardModelStep",
+      "description": "Represents a forward model step installed via external plugins.\nInstances of this class serialize only as references to the plugin by name, and\nthe user-provided private_args, allowing them to dynamically update when plugins\nchange, rather than being locked to a specific executable at serialization time.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.forward_model_step.UserInstalledForwardModelStep",
+      "kind": "class",
+      "signature": "UserInstalledForwardModelStep",
+      "description": "Represents a forward model step installed by a user via the ERT Config\nforward model step format provided via the INSTALL_JOB keyword.\nUser-installed forward model steps serialize with their full configuration,\nunlike site-installed steps which only serialize as references.",
+      "source_file": "src/ert/config/forward_model_step.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.gen_kw_config.GenKwOptions",
+      "kind": "class",
+      "signature": "GenKwOptions",
+      "description": "Typed representation of GEN_KW keyword options.",
+      "source_file": "src/ert/config/gen_kw_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.graph_utils.create_flattened_cube_graph",
+      "kind": "function",
+      "signature": "create_flattened_cube_graph(px, py, pz)",
+      "description": "Graph created with nodes numbered from 0 to px*py*pz\ncorresponds to the \"vectorization\" or flattening of\na 3D cube with shape (px,py,pz) in the same way as\nreshaping such a cube into a one-dimensional array.\nThe indexing scheme used to create the graph reflects\nthis flattening process",
+      "source_file": "src/ert/config/graph_utils.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_config_migrations.HistoryObservation.key",
+      "kind": "method",
+      "signature": "key(self)",
+      "description": "The :term:`summary key` to be fetched from :ref:`refcase`.",
+      "source_file": "src/ert/config/observation_config_migrations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_config_migrations.TextEdit",
+      "kind": "class",
+      "signature": "TextEdit",
+      "description": "Represents a replacement of a declaration block in a file.\nLine numbers are 1-based and inclusive.",
+      "source_file": "src/ert/config/observation_config_migrations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_config_migrations.remove_refcase_and_time_map_dependence_from_obs_config",
+      "kind": "function",
+      "signature": "remove_refcase_and_time_map_dependence_from_obs_config(config_path)",
+      "description": "Parses an ERT configuration to find observation declarations that depend on\nREFCASE or TIME_MAP and generates a set of proposed changes to remove these\ndependencies.",
+      "source_file": "src/ert/config/observation_config_migrations.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_quality_control.append_to_qc_error",
+      "kind": "function",
+      "signature": "append_to_qc_error(condition, error_message)",
+      "description": "Append error_message to qc_error if condition.",
+      "source_file": "src/ert/config/observation_quality_control.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_quality_control.ensure_qc_error_column",
+      "kind": "function",
+      "signature": "ensure_qc_error_column(df)",
+      "description": "Ensure the DataFrame has a 'qc_error' column, initializing it to null if not\npresent.",
+      "source_file": "src/ert/config/observation_quality_control.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_quality_control.qc_rft_observations",
+      "kind": "function",
+      "signature": "qc_rft_observations(observations_with_metadata)",
+      "description": "Perform quality control checks on RFT observations combined with their response\nmetadata.",
+      "source_file": "src/ert/config/observation_quality_control.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.observation_quality_control.qc_seismic_observations",
+      "kind": "function",
+      "signature": "qc_seismic_observations(observations, shape_registry)",
+      "description": "Perform quality control checks on seismic observations.",
+      "source_file": "src/ert/config/observation_quality_control.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.InvalidParameterFile",
+      "kind": "class",
+      "signature": "InvalidParameterFile",
+      "description": "Raised when a parameter file does not fulfill its\nformat requirements.",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterCardinality",
+      "kind": "class",
+      "signature": "ParameterCardinality",
+      "description": "multiple_configs_per_ensemble_dataset: multiple config instances per group, one\ndataset per ensemble",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.create_storage_datasets",
+      "kind": "method",
+      "signature": "create_storage_datasets(self, from_data, iens_active_index)",
+      "description": "Iterates over realization. It creates an xarray Dataset\nor polars DataFrame from the numpy data",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.load_parameter_graph",
+      "kind": "method",
+      "signature": "load_parameter_graph(self)",
+      "description": "Load the graph encoding Markov properties on the parameter `group`\nOften a neighbourhood graph.",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.load_parameters",
+      "kind": "method",
+      "signature": "load_parameters(self, ensemble, realizations)",
+      "description": "Load the parameter from internal storage for the given ensemble.\nMust return array of shape (number of parameters, number of realizations).",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.parameter_keys",
+      "kind": "method",
+      "signature": "parameter_keys(self)",
+      "description": "Returns a list of parameter keys within this parameter group",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.read_from_runpath",
+      "kind": "method",
+      "signature": "read_from_runpath(self, run_path, real_nr, iteration)",
+      "description": "This function is responsible for converting the parameter\nfrom the forward model to the internal ert format",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.sample_values",
+      "kind": "method",
+      "signature": "sample_values(self, global_seed, active_realizations, num_realizations)",
+      "description": "Generate reproducible standard-normal samples for active realizations.",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parameter_config.ParameterConfig.write_to_runpath",
+      "kind": "method",
+      "signature": "write_to_runpath(self, run_path, real_nr, ensemble)",
+      "description": "This function is responsible for converting the parameter\nfrom the internal ert format to the format the forward model\nexpects",
+      "source_file": "src/ert/config/parameter_config.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing._file_context_transformer.FileContextTransformer",
+      "kind": "class",
+      "signature": "FileContextTransformer",
+      "description": "Adds filename to each token,\nto ensure we have enough context for error messages",
+      "source_file": "src/ert/config/parsing/_file_context_transformer.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing._option_dict.option_dict",
+      "kind": "function",
+      "signature": "option_dict(option_list, offset)",
+      "description": "Gets the list of options given to a keywords such as GEN_DATA.",
+      "source_file": "src/ert/config/parsing/_option_dict.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing._option_dict.parse_variable_options",
+      "kind": "function",
+      "signature": "parse_variable_options(line, max_positionals)",
+      "description": "This function is responsible for taking a config line and splitting it\ninto positional arguments and named arguments in cases were the number\nof positional arguments vary.",
+      "source_file": "src/ert/config/parsing/_option_dict.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing._parse_zonemap.parse_zonemap",
+      "kind": "function",
+      "signature": "parse_zonemap(filename, content)",
+      "description": "A zonemap is a map from a simulation grids layers to a list of zone names\nthat the k-layers belongs to.",
+      "source_file": "src/ert/config/parsing/_parse_zonemap.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_errors.ConfigValidationError",
+      "kind": "class",
+      "signature": "ConfigValidationError",
+      "description": "Contains one or more configuration errors to be shown to the user.",
+      "source_file": "src/ert/config/parsing/config_errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_errors.ConfigValidationError.cli_message",
+      "kind": "method",
+      "signature": "cli_message(self)",
+      "description": "the configuration error messages as suitable for printing to cli",
+      "source_file": "src/ert/config/parsing/config_errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_errors.ConfigValidationError.from_collected",
+      "kind": "method",
+      "signature": "from_collected(cls, errors)",
+      "description": "Combine a list of ConfigValidationErrors (or ErrorInfo) into one.",
+      "source_file": "src/ert/config/parsing/config_errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_errors.ConfigValidationError.with_context",
+      "kind": "method",
+      "signature": "with_context(cls, msg, context)",
+      "description": "Create a single `ConfigValidationError` with some potential context\n(location in a file, line number etc.) with the given message.",
+      "source_file": "src/ert/config/parsing/config_errors.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.parsing.config_keywords.ConfigKeys",
+      "kind": "class",
+      "signature": "ConfigKeys",
+      "description": "Keywords that are the first word of each statement in the user config file.",
+      "source_file": "src/ert/config/parsing/config_keywords.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.file.File",
+      "kind": "class",
+      "signature": "File",
+      "description": "",
+      "source_file": "src/_ert/forward_model_runner/reporting/file.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.message.Init",
+      "kind": "class",
+      "signature": "Init",
+      "description": "",
+      "source_file": "src/_ert/forward_model_runner/reporting/message.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.message.Running",
+      "kind": "class",
+      "signature": "Running",
+      "description": "",
+      "source_file": "src/_ert/forward_model_runner/reporting/message.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "docs.ert._ext.ert_jobs.setup",
+      "kind": "function",
+      "signature": "setup(app)",
+      "description": "",
+      "source_file": "docs/ert/_ext/ert_jobs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "docs.everest._ext.everest_jobs.setup",
+      "kind": "function",
+      "signature": "setup(app)",
+      "description": "",
+      "source_file": "docs/everest/_ext/everest_jobs.py",
+      "api_level": "documented_public",
+      "quality_score": 4,
+      "evidence": [
+        "mentioned in README"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.fm_dispatch.Namespace",
+      "kind": "class",
+      "signature": "Namespace",
+      "description": "fm_dispatch argument parser namespace",
+      "source_file": "src/_ert/forward_model_runner/fm_dispatch.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "_ert.forward_model_runner.reporting.base.Reporter.report",
+      "kind": "method",
+      "signature": "report(self, msg)",
+      "description": "Report a message.",
+      "source_file": "src/_ert/forward_model_runner/reporting/base.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._global.GlobalESUpdate",
+      "kind": "class",
+      "signature": "GlobalESUpdate",
+      "description": "Global ES update without localization.",
+      "source_file": "src/ert/analysis/_update_strategies/_global.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.analysis._update_strategies._protocol.ObservationContext.num_observations",
+      "kind": "method",
+      "signature": "num_observations(self)",
+      "description": "Number of observations.",
+      "source_file": "src/ert/analysis/_update_strategies/_protocol.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.ShapeRegistry.get",
+      "kind": "method",
+      "signature": "get(self, shape_id)",
+      "description": "Retrieve a shape by its ID.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config._shapes.ShapeRegistry.register",
+      "kind": "method",
+      "signature": "register(self, shape)",
+      "description": "Register or find an existing shape.",
+      "source_file": "src/ert/config/_shapes.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.ert_plugin.CancelPluginException",
+      "kind": "class",
+      "signature": "CancelPluginException",
+      "description": "Raised when a plugin is cancelled.",
+      "source_file": "src/ert/config/ert_plugin.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    },
+    {
+      "name": "ert.config.gen_data_config.GenDataConfig.filter_on",
+      "kind": "method",
+      "signature": "filter_on(self)",
+      "description": "Filters for this response.",
+      "source_file": "src/ert/config/gen_data_config.py",
+      "api_level": "documented_public",
+      "quality_score": 3,
+      "evidence": [
+        "documentation"
+      ]
+    }
+  ]
+}
