@@ -25,9 +25,9 @@ NOT_BEST_FOR_BY_ROLE={
  'reservoir_simulation':['lightweight_segy_qc'],'visualization':['low_level_file_parsing'],
  'geological_modelling':['segy_header_inspection'],'data_assimilation':['basic_file_io']}
 def infer_roles(primary,secondary):
- caps=set(primary)|set(secondary); roles=[]
+ caps={str(x).lower() for x in (list(primary)+list(secondary))}; roles=[]
  for role,wanted in ROLE_RULES.items():
-  if caps.intersection(wanted):roles.append(role)
+  if caps.intersection({str(x).lower() for x in wanted}):roles.append(role)
  return roles
 def infer_not_best_for(roles):
  out=[]
