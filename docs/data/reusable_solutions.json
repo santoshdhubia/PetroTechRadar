@@ -1,70 +1,221 @@
 {
-  "version": 1,
+  "version": 2,
   "purpose": "Curated reusable solution repositories that can solve a substantial portion of a subsurface task without rebuilding the workflow from scratch.",
   "solutions": [
     {
       "repository": "seg/2016-ml-contest",
-      "task_tags": ["well_log_facies_classification", "lithology_classification", "blind_well_validation"],
-      "capabilities": ["facies_classification", "multiple_competition_solutions", "validation_notebooks", "benchmark_dataset", "boosted_trees", "random_forest"],
+      "task_tags": [
+        "well_log_facies_classification",
+        "lithology_classification",
+        "blind_well_validation"
+      ],
+      "capabilities": [
+        "facies_classification",
+        "multiple_competition_solutions",
+        "validation_notebooks",
+        "benchmark_dataset",
+        "boosted_trees",
+        "random_forest"
+      ],
       "language": "Python",
-      "input_formats": ["CSV"],
+      "input_formats": [
+        "CSV"
+      ],
       "install_method": "git_or_notebook",
       "ready_to_run": "medium",
       "has_examples": true,
       "has_tests": false,
       "has_environment_file": false,
       "reuse_level": "reference_and_workflow",
-      "dataset_compatibility": ["SEG_2016_facies", "Council_Grove_facies_vectors"],
-      "quick_start": ["git clone https://github.com/seg/2016-ml-contest.git", "open Facies_classification.ipynb or a team solution notebook"],
-      "notes": "Canonical SEG 2016 machine-learning contest repository with starter code, validation data and many submitted facies-classification solutions."
+      "dataset_compatibility": [
+        "SEG_2016_facies",
+        "Council_Grove_facies_vectors"
+      ],
+      "quick_start": [
+        "git clone https://github.com/seg/2016-ml-contest.git",
+        "open Facies_classification.ipynb or a team solution notebook"
+      ],
+      "notes": "Canonical SEG 2016 machine-learning contest repository with starter code, validation data and many submitted facies-classification solutions.",
+      "exact_datasets": [
+        "facies_vectors.csv",
+        "SEG_2016_facies",
+        "Council_Grove_facies_vectors"
+      ],
+      "schema_columns": [
+        "Facies",
+        "Formation",
+        "Well Name",
+        "Depth",
+        "GR",
+        "ILD_log10",
+        "DeltaPHI",
+        "PHIND",
+        "PE",
+        "NM_M",
+        "RELPOS"
+      ],
+      "direct_importability": "medium",
+      "adaptation_effort": "low",
+      "legacy_risk": "high",
+      "runtime_fit": "legacy_python_modernizable",
+      "reusable_components": [
+        "classification_utilities.py",
+        "utils.py",
+        "starter notebooks",
+        "team solution notebooks"
+      ]
     },
     {
       "repository": "artem-potlog/well-log-facies-prediction",
-      "task_tags": ["well_log_facies_classification", "blind_well_validation", "petrophysical_feature_engineering", "facies_uncertainty"],
-      "capabilities": ["group_kfold", "leave_one_well_out", "multi_scale_log_features", "vertical_smoothing", "random_forest", "uncertainty", "facies_visualization", "transition_analysis"],
+      "task_tags": [
+        "well_log_facies_classification",
+        "blind_well_validation",
+        "petrophysical_feature_engineering",
+        "facies_uncertainty"
+      ],
+      "capabilities": [
+        "group_kfold",
+        "leave_one_well_out",
+        "multi_scale_log_features",
+        "vertical_smoothing",
+        "random_forest",
+        "uncertainty",
+        "facies_visualization",
+        "transition_analysis"
+      ],
       "language": "Python",
-      "input_formats": ["Excel", "tabular_well_logs"],
+      "input_formats": [
+        "Excel",
+        "tabular_well_logs"
+      ],
       "install_method": "git_requirements_notebook",
       "ready_to_run": "high",
       "has_examples": true,
       "has_tests": false,
       "has_environment_file": true,
       "reuse_level": "full_workflow",
-      "dataset_compatibility": ["Volve_Hugin", "adaptable_tabular_well_logs"],
-      "quick_start": ["git clone https://github.com/artem-potlog/well-log-facies-prediction.git", "pip install -r requirements.txt", "jupyter notebook main_workflow_v3.ipynb"],
-      "notes": "End-to-end geoscience-aware facies workflow with leakage-safe well-grouped validation, multi-scale features, vertical smoothing and uncertainty outputs."
+      "dataset_compatibility": [
+        "Volve_Hugin",
+        "adaptable_tabular_well_logs"
+      ],
+      "quick_start": [
+        "git clone https://github.com/artem-potlog/well-log-facies-prediction.git",
+        "pip install -r requirements.txt",
+        "jupyter notebook main_workflow_v3.ipynb"
+      ],
+      "notes": "End-to-end geoscience-aware facies workflow with leakage-safe well-grouped validation, multi-scale features, vertical smoothing and uncertainty outputs.",
+      "exact_datasets": [
+        "Volve_Hugin",
+        "Dataset_logs_core_v4_cleaned.xlsx"
+      ],
+      "schema_columns": [],
+      "direct_importability": "low",
+      "adaptation_effort": "medium",
+      "legacy_risk": "low",
+      "runtime_fit": "modern_python",
+      "reusable_components": [
+        "main_workflow_v3.ipynb",
+        "requirements.txt"
+      ]
     },
     {
       "repository": "thesaltree/faciesClassification-using-ML",
-      "task_tags": ["well_log_facies_classification", "Council_Grove_facies", "blind_well_validation"],
-      "capabilities": ["facies_classification", "model_comparison", "adjacent_accuracy", "blind_well_testing", "facies_visualization"],
+      "task_tags": [
+        "well_log_facies_classification",
+        "Council_Grove_facies",
+        "blind_well_validation"
+      ],
+      "capabilities": [
+        "facies_classification",
+        "model_comparison",
+        "adjacent_accuracy",
+        "blind_well_testing",
+        "facies_visualization"
+      ],
       "language": "Python",
-      "input_formats": ["CSV", "tabular_well_logs"],
+      "input_formats": [
+        "CSV",
+        "tabular_well_logs"
+      ],
       "install_method": "git_notebook",
       "ready_to_run": "medium",
       "has_examples": true,
       "has_tests": false,
       "has_environment_file": false,
       "reuse_level": "workflow_component",
-      "dataset_compatibility": ["SEG_2016_facies", "Council_Grove_facies_vectors"],
-      "quick_start": ["git clone https://github.com/thesaltree/faciesClassification-using-ML.git", "open facies_classification.ipynb"],
-      "notes": "Facies-classification notebook for the same nine-class Council Grove problem, including multiple classifiers, blind-well testing and adjacent-accuracy evaluation."
+      "dataset_compatibility": [
+        "SEG_2016_facies",
+        "Council_Grove_facies_vectors"
+      ],
+      "quick_start": [
+        "git clone https://github.com/thesaltree/faciesClassification-using-ML.git",
+        "open facies_classification.ipynb"
+      ],
+      "notes": "Facies-classification notebook for the same nine-class Council Grove problem, including multiple classifiers, blind-well testing and adjacent-accuracy evaluation.",
+      "exact_datasets": [
+        "SEG_2016_facies",
+        "Council_Grove_facies_vectors"
+      ],
+      "schema_columns": [
+        "Facies",
+        "Formation",
+        "Well Name",
+        "Depth",
+        "GR",
+        "ILD_log10",
+        "DeltaPHI",
+        "PHIND",
+        "PE",
+        "NM_M",
+        "RELPOS"
+      ],
+      "direct_importability": "low",
+      "adaptation_effort": "medium",
+      "legacy_risk": "medium",
+      "runtime_fit": "notebook_modernizable",
+      "reusable_components": [
+        "facies_classification.ipynb"
+      ]
     },
     {
       "repository": "brendonhall/FORCE-2020-Lithology",
-      "task_tags": ["well_log_lithology_classification", "FORCE_2020_lithology"],
-      "capabilities": ["lithology_classification", "notebook_experiments"],
+      "task_tags": [
+        "well_log_lithology_classification",
+        "FORCE_2020_lithology"
+      ],
+      "capabilities": [
+        "lithology_classification",
+        "notebook_experiments"
+      ],
       "language": "Python",
-      "input_formats": ["tabular_well_logs"],
+      "input_formats": [
+        "tabular_well_logs"
+      ],
       "install_method": "git_notebook",
       "ready_to_run": "low",
       "has_examples": true,
       "has_tests": false,
       "has_environment_file": false,
       "reuse_level": "reference_only",
-      "dataset_compatibility": ["FORCE_2020"],
-      "quick_start": ["git clone https://github.com/brendonhall/FORCE-2020-Lithology.git", "inspect the notebooks for reusable lithology-classification ideas"],
-      "notes": "Reference collection of notebooks for the FORCE 2020 lithology classification challenge."
+      "dataset_compatibility": [
+        "FORCE_2020"
+      ],
+      "quick_start": [
+        "git clone https://github.com/brendonhall/FORCE-2020-Lithology.git",
+        "inspect the notebooks for reusable lithology-classification ideas"
+      ],
+      "notes": "Reference collection of notebooks for the FORCE 2020 lithology classification challenge.",
+      "exact_datasets": [
+        "FORCE_2020"
+      ],
+      "schema_columns": [],
+      "direct_importability": "low",
+      "adaptation_effort": "high",
+      "legacy_risk": "medium",
+      "runtime_fit": "reference_only",
+      "reusable_components": [
+        "challenge notebooks"
+      ]
     }
   ]
 }
