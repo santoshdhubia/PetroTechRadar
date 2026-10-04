@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-27T09:27:55.829672+00:00",
+  "generated_at": "2026-10-04T10:00:35.554012+00:00",
   "queries": 21,
-  "raw_unique": 226,
-  "new_candidates": 122,
+  "raw_unique": 229,
+  "new_candidates": 124,
   "promoted_from_review": 0,
-  "pending_review": 104,
+  "pending_review": 106,
   "watch": 16,
   "rejected": 2,
   "promoted_repositories": []

@@ -164,11 +164,11 @@ Citation metrics are sourced from **OpenAlex** and repository-health metrics fro
 
 | Paper | Journal | Year | Citations | Cit./yr | Code |
 |---|---|---:|---:|---:|---|
-| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,876** | 110.3 | [GitHub](https://github.com/obspy/obspy) |
-| Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **623** | 77.9 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
-| [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **534** | 53.4 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
-| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **438** | 36.5 | [GitHub](https://github.com/simpeg/simpeg) |
-| Mitigating local minima in full-waveform inversion by expanding the search space | Geophysical Journal International | 2013 | **333** | 23.8 | [GitHub](https://github.com/slimgroup/PenaltyMethodGJI) |
+| [ObsPy: A Python Toolbox for Seismology](https://doi.org/10.1785/gssrl.81.3.530) | Seismological Research Letters | 2010 | **1,879** | 110.5 | [GitHub](https://github.com/obspy/obspy) |
+| Deep-learning inversion: A next-generation seismic velocity model building method | GEOPHYSICS | 2019 | **620** | 77.5 | [GitHub](https://github.com/YangFangShu/FCNVMB-Deep-learning-based-seismic-velocity-model-building) |
+| [pyGIMLi: An open-source library for modelling and inversion in geophysics](https://doi.org/10.1016/j.cageo.2017.07.011) | Computers & Geosciences | 2017 | **537** | 53.7 | [GitHub](https://github.com/gimli-org/pyGIMLi) |
+| [SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications](https://doi.org/10.1016/j.cageo.2015.09.015) | Computers & Geosciences | 2015 | **439** | 36.6 | [GitHub](https://github.com/simpeg/simpeg) |
+| Mitigating local minima in full-waveform inversion by expanding the search space | Geophysical Journal International | 2013 | **334** | 23.9 | [GitHub](https://github.com/slimgroup/PenaltyMethodGJI) |
 
 **[→ View all Papers with Code](catalog/PAPERS_WITH_CODE.md)** · **[Rank by citations](catalog/TOP_CITED_PAPERS.md)**
 
