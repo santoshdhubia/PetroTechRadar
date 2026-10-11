@@ -1,6 +1,12 @@
 {
-  "refreshed_at": "2026-10-04T10:00:52.597163+00:00",
+  "refreshed_at": "2026-10-11T10:14:55.284899+00:00",
   "repository_count": 164,
-  "successful": 164,
-  "errors": []
+  "successful": 163,
+  "errors": [
+    {
+      "repository": "rasulsaxobidinov-debug/GeoThermAI-Explorer",
+      "catalog": "PETROTECHRADAR_V1.csv",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
 }
