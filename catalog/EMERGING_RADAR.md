@@ -4,53 +4,53 @@ New AI, agentic, MCP, LLM and rapid-development petroleum/subsurface projects.
 
 | Rank | Repository | Organization | Domain | Tier | Stars | Forks | Last push | Radar score |
 |---:|---|---|---|---|---:|---:|---|---:|
-| 1 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 11 | 15 | 2026-10-15 | 72.4 |
-| 2 | [danielscholl-osdu/osdu-mcp-server](https://github.com/danielscholl-osdu/osdu-mcp-server) | danielscholl-osdu | AI / OSDU | Emerging | 8 | 7 | 2026-10-05 | 71.0 |
-| 3 | [chadleong/osdu-viz](https://github.com/chadleong/osdu-viz) | chadleong | Data / OSDU | Emerging | 10 | 3 | 2026-10-08 | 70.3 |
-| 4 | [gabrielserrao/pyrestoolbox-mcp](https://github.com/gabrielserrao/pyrestoolbox-mcp) | gabrielserrao | AI / Reservoir | Emerging | 46 | 18 | 2026-03-11 | 69.8 |
-| 5 | [gabrielserrao/Claude-for-reservoir-engineering](https://github.com/gabrielserrao/Claude-for-reservoir-engineering) | gabrielserrao | AI / Reservoir | Emerging | 37 | 5 | 2026-05-21 | 69.8 |
-| 6 | [lfrincond/Seismic_Imaging26](https://github.com/lfrincond/Seismic_Imaging26) | lfrincond | Seismic | Emerging | 17 | 2 | 2026-06-02 | 68.8 |
-| 7 | [JuliaEarth/SeisKit.jl](https://github.com/JuliaEarth/SeisKit.jl) | JuliaEarth | Seismic / Processing | Emerging | 4 | 1 | 2026-09-15 | 68.5 |
-| 8 | [pranay-gpt/opm-ai](https://github.com/pranay-gpt/opm-ai) | pranay-gpt | AI / Reservoir | Emerging | 4 | 0 | 2026-10-04 | 68.2 |
-| 9 | [zahidaramai/sdip](https://github.com/zahidaramai/sdip) | zahidaramai | Seismic / Processing | Emerging | 3 | 0 | 2026-10-16 | 68.2 |
-| 10 | [SeequentEvo/seequent-labs-vibe-aid](https://github.com/SeequentEvo/seequent-labs-vibe-aid) | Seequent | AI / Geoscience | Emerging | 4 | 0 | 2026-09-09 | 67.9 |
-| 11 | [LASight/las-frontend](https://github.com/LASight/las-frontend) | LASight | Petrophysics | Emerging | 0 | 0 | 2026-10-08 | 66.8 |
-| 12 | [louise-nsangou/fwi-marmousi-deepwave](https://github.com/louise-nsangou/fwi-marmousi-deepwave) | louise-nsangou | Seismic | Emerging | 15 | 3 | 2026-02-02 | 66.7 |
-| 13 | [OilCoder/petro-agent](https://github.com/OilCoder/petro-agent) | OilCoder | AI / Petrophysics | Emerging | 3 | 0 | 2026-07-08 | 66.6 |
-| 14 | [ameyxd/petromcp](https://github.com/ameyxd/petromcp) | ameyxd | Petrophysics / Data | Emerging | 2 | 0 | 2026-08-03 | 66.6 |
-| 15 | [q299264-cyber/borehole-vug-detection](https://github.com/q299264-cyber/borehole-vug-detection) | q299264-cyber | Petrophysics / Data | Emerging | 1 | 0 | 2026-08-26 | 66.5 |
-| 16 | [nhdzTVlxb/ROGII---Wellbore-Geology-Prediction](https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction) | nhdzTVlxb | Drilling / Geology / AI | Emerging | 1 | 0 | 2026-08-17 | 66.4 |
-| 17 | [mosalama74/drilling-report-qa](https://github.com/mosalama74/drilling-report-qa) | mosalama74 | AI / Drilling | Emerging | 0 | 0 | 2026-09-10 | 66.0 |
-| 18 | [andrzimin72/Drilling-Risk-Management](https://github.com/andrzimin72/Drilling-Risk-Management) | andrzimin72 | Drilling | Emerging | 0 | 0 | 2026-08-30 | 65.8 |
-| 19 | [sanjaydasgupta/ai-skills-for-reservoir-engineering](https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering) | sanjaydasgupta | AI / Reservoir | Emerging | 2 | 0 | 2026-06-05 | 65.7 |
-| 20 | [rasulsaxobidinov-debug/GeoThermAI-Explorer](https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer) | rasulsaxobidinov-debug | Geothermal / AI | Emerging | 0 | 0 | 2026-08-13 | 65.7 |
-| 21 | [paulbruffett/oil-and-gas-semantic](https://github.com/paulbruffett/oil-and-gas-semantic) | paulbruffett | Data / AI | Emerging | 0 | 0 | 2026-07-08 | 65.6 |
-| 22 | [EugPal/reservoir-surrogate](https://github.com/EugPal/reservoir-surrogate) | EugPal | Reservoir / AI | Emerging | 0 | 0 | 2026-07-29 | 65.3 |
-| 23 | [NimahMasuud/agd2026-geothermal-ai](https://github.com/NimahMasuud/agd2026-geothermal-ai) | NimahMasuud | Geothermal / AI | Emerging | 1 | 0 | 2026-06-07 | 65.2 |
-| 24 | [hatimCanDoIt/PETROLOGIC-AI](https://github.com/hatimCanDoIt/PETROLOGIC-AI) | hatimCanDoIt | AI / Petrophysics | Emerging | 0 | 0 | 2026-07-15 | 65.0 |
-| 25 | [prakashkrish-DataGeek/AI-Petrovision](https://github.com/prakashkrish-DataGeek/AI-Petrovision) | prakashkrish-DataGeek | AI / Petrophysics | Emerging | 1 | 0 | 2026-05-20 | 64.9 |
-| 26 | [13262233692/015-seismic-fwi-engine](https://github.com/13262233692/015-seismic-fwi-engine) | 13262233692 | Seismic | Emerging | 0 | 0 | 2026-06-17 | 64.6 |
-| 27 | [benjium/petra-ai](https://github.com/benjium/petra-ai) | benjium | AI / Multi-domain | Emerging | 1 | 0 | 2026-04-18 | 64.4 |
-| 28 | [UsmanHWU/CrewAI_Reservoir](https://github.com/UsmanHWU/CrewAI_Reservoir) | UsmanHWU | AI / Reservoir | Emerging | 0 | 0 | 2026-06-08 | 64.4 |
-| 29 | [adldi07/LAS-Analyzer](https://github.com/adldi07/LAS-Analyzer) | adldi07 | Petrophysics | Emerging | 1 | 0 | 2026-03-23 | 64.0 |
-| 30 | [danielscholl/osdu-agent](https://github.com/danielscholl/osdu-agent) | danielscholl | AI / OSDU | Emerging | 0 | 1 | 2026-03-16 | 64.0 |
-| 31 | [Eng-qusain/MWD-Drilling-Optimization-AI](https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI) | Eng-qusain | Drilling / AI | Emerging | 0 | 0 | 2026-05-11 | 64.0 |
-| 32 | [athasfin/smart-well-log-visualizer](https://github.com/athasfin/smart-well-log-visualizer) | athasfin | Petrophysics | Emerging | 0 | 0 | 2026-05-02 | 63.8 |
-| 33 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | rkkalluri-dbx | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 63.5 |
-| 34 | [anyperc3nt/vision_seismic](https://github.com/anyperc3nt/vision_seismic) | anyperc3nt | Seismic / AI | Emerging | 0 | 0 | 2026-02-28 | 62.8 |
-| 35 | [luiscm17/pilot-ai-drill](https://github.com/luiscm17/pilot-ai-drill) | luiscm17 | Drilling / AI | Emerging | 1 | 0 | 2025-12-05 | 62.2 |
-| 36 | [Ashutos0762/AI-Reservoir-Property-Estimation](https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation) | Ashutos0762 | Reservoir / AI | Emerging | 1 | 0 | 2025-11-10 | 61.8 |
-| 37 | [Shanghua-Zhang/Seismic-Inversion-Deepwave](https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave) | Shanghua-Zhang | Seismic | Emerging | 0 | 0 | 2025-12-04 | 61.4 |
-| 38 | [SanmTex/AI-driven-Petrophysics-Workflow](https://github.com/SanmTex/AI-driven-Petrophysics-Workflow) | SanmTex | Petrophysics / AI | Emerging | 0 | 0 | 2025-11-13 | 61.0 |
-| 39 | [AadeshSalecha/geothermal-green-ai-hackathon](https://github.com/AadeshSalecha/geothermal-green-ai-hackathon) | AadeshSalecha | Geothermal / AI | Emerging | 0 | 0 | 2025-10-26 | 60.7 |
-| 40 | [yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant](https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant) | yberkayozkan | AI / Geophysics | Emerging | 0 | 1 | 2025-09-12 | 60.5 |
-| 41 | [Amalendu17/FWI_On_2D_Synthetic_Seismic_Data](https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data) | Amalendu17 | Seismic | Emerging | 1 | 0 | 2025-07-22 | 60.0 |
-| 42 | [fadhilazz/geo_ai_v3](https://github.com/fadhilazz/geo_ai_v3) | fadhilazz | Geothermal / AI | Emerging | 0 | 0 | 2025-08-26 | 60.0 |
-| 43 | [MJRobillard/salton_trough_geothermal_ai](https://github.com/MJRobillard/salton_trough_geothermal_ai) | MJRobillard | Geothermal / AI | Emerging | 0 | 0 | 2025-08-07 | 59.4 |
-| 44 | [Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models](https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models) | Tari91 | Geothermal / AI | Emerging | 1 | 0 | 2025-05-23 | 59.0 |
-| 45 | [DivyyaM/AI-BasedPermeability-Prediction](https://github.com/DivyyaM/AI-BasedPermeability-Prediction) | DivyyaM | Petrophysics / AI | Emerging | 2 | 0 | 2025-04-21 | 58.9 |
-| 46 | [MboleNgome/enhanced-oil-recovery](https://github.com/MboleNgome/enhanced-oil-recovery) | MboleNgome | Reservoir | Emerging | 0 | 0 | 2025-07-10 | 58.9 |
-| 47 | [AyaAlahdl/Seismic2Velocity_Submission_Pipeline](https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline) | AyaAlahdl | Seismic / AI | Emerging | 0 | 0 | 2025-06-04 | 58.4 |
+| 1 | [SeequentEvo/evo-mcp](https://github.com/SeequentEvo/evo-mcp) | Seequent | AI / Geoscience | Emerging | 12 | 15 | 2026-10-19 | 72.4 |
+| 2 | [danielscholl-osdu/osdu-mcp-server](https://github.com/danielscholl-osdu/osdu-mcp-server) | danielscholl-osdu | AI / OSDU | Emerging | 8 | 7 | 2026-10-05 | 70.9 |
+| 3 | [pranay-gpt/opm-ai](https://github.com/pranay-gpt/opm-ai) | pranay-gpt | AI / Reservoir | Emerging | 18 | 3 | 2026-10-04 | 70.8 |
+| 4 | [chadleong/osdu-viz](https://github.com/chadleong/osdu-viz) | chadleong | Data / OSDU | Emerging | 10 | 3 | 2026-10-08 | 70.2 |
+| 5 | [gabrielserrao/pyrestoolbox-mcp](https://github.com/gabrielserrao/pyrestoolbox-mcp) | gabrielserrao | AI / Reservoir | Emerging | 46 | 18 | 2026-03-11 | 69.7 |
+| 6 | [gabrielserrao/Claude-for-reservoir-engineering](https://github.com/gabrielserrao/Claude-for-reservoir-engineering) | gabrielserrao | AI / Reservoir | Emerging | 37 | 5 | 2026-05-21 | 69.7 |
+| 7 | [JuliaEarth/SeisKit.jl](https://github.com/JuliaEarth/SeisKit.jl) | JuliaEarth | Seismic / Processing | Emerging | 5 | 1 | 2026-10-22 | 69.2 |
+| 8 | [lfrincond/Seismic_Imaging26](https://github.com/lfrincond/Seismic_Imaging26) | lfrincond | Seismic | Emerging | 17 | 2 | 2026-06-02 | 68.6 |
+| 9 | [SeequentEvo/seequent-labs-vibe-aid](https://github.com/SeequentEvo/seequent-labs-vibe-aid) | Seequent | AI / Geoscience | Emerging | 4 | 0 | 2026-10-18 | 68.5 |
+| 10 | [zahidaramai/sdip](https://github.com/zahidaramai/sdip) | zahidaramai | Seismic / Processing | Emerging | 3 | 0 | 2026-10-25 | 68.2 |
+| 11 | [ameyxd/petromcp](https://github.com/ameyxd/petromcp) | ameyxd | Petrophysics / Data | Emerging | 3 | 0 | 2026-08-03 | 66.9 |
+| 12 | [LASight/las-frontend](https://github.com/LASight/las-frontend) | LASight | Petrophysics | Emerging | 0 | 0 | 2026-10-08 | 66.8 |
+| 13 | [louise-nsangou/fwi-marmousi-deepwave](https://github.com/louise-nsangou/fwi-marmousi-deepwave) | louise-nsangou | Seismic | Emerging | 16 | 3 | 2026-02-02 | 66.7 |
+| 14 | [OilCoder/petro-agent](https://github.com/OilCoder/petro-agent) | OilCoder | AI / Petrophysics | Emerging | 3 | 0 | 2026-07-08 | 66.4 |
+| 15 | [q299264-cyber/borehole-vug-detection](https://github.com/q299264-cyber/borehole-vug-detection) | q299264-cyber | Petrophysics / Data | Emerging | 1 | 0 | 2026-08-26 | 66.4 |
+| 16 | [nhdzTVlxb/ROGII---Wellbore-Geology-Prediction](https://github.com/nhdzTVlxb/ROGII---Wellbore-Geology-Prediction) | nhdzTVlxb | Drilling / Geology / AI | Emerging | 1 | 0 | 2026-08-17 | 66.3 |
+| 17 | [mosalama74/drilling-report-qa](https://github.com/mosalama74/drilling-report-qa) | mosalama74 | AI / Drilling | Emerging | 0 | 0 | 2026-09-10 | 65.9 |
+| 18 | [andrzimin72/Drilling-Risk-Management](https://github.com/andrzimin72/Drilling-Risk-Management) | andrzimin72 | Drilling | Emerging | 0 | 0 | 2026-08-30 | 65.7 |
+| 19 | [rasulsaxobidinov-debug/GeoThermAI-Explorer](https://github.com/rasulsaxobidinov-debug/GeoThermAI-Explorer) | rasulsaxobidinov-debug | Geothermal / AI | Emerging | 0 | 0 | 2026-08-13 | 65.7 |
+| 20 | [sanjaydasgupta/ai-skills-for-reservoir-engineering](https://github.com/sanjaydasgupta/ai-skills-for-reservoir-engineering) | sanjaydasgupta | AI / Reservoir | Emerging | 2 | 0 | 2026-06-05 | 65.5 |
+| 21 | [paulbruffett/oil-and-gas-semantic](https://github.com/paulbruffett/oil-and-gas-semantic) | paulbruffett | Data / AI | Emerging | 0 | 0 | 2026-07-08 | 65.5 |
+| 22 | [EugPal/reservoir-surrogate](https://github.com/EugPal/reservoir-surrogate) | EugPal | Reservoir / AI | Emerging | 0 | 0 | 2026-07-29 | 65.2 |
+| 23 | [NimahMasuud/agd2026-geothermal-ai](https://github.com/NimahMasuud/agd2026-geothermal-ai) | NimahMasuud | Geothermal / AI | Emerging | 1 | 0 | 2026-06-07 | 65.1 |
+| 24 | [hatimCanDoIt/PETROLOGIC-AI](https://github.com/hatimCanDoIt/PETROLOGIC-AI) | hatimCanDoIt | AI / Petrophysics | Emerging | 0 | 0 | 2026-07-15 | 64.9 |
+| 25 | [prakashkrish-DataGeek/AI-Petrovision](https://github.com/prakashkrish-DataGeek/AI-Petrovision) | prakashkrish-DataGeek | AI / Petrophysics | Emerging | 1 | 0 | 2026-05-20 | 64.8 |
+| 26 | [13262233692/015-seismic-fwi-engine](https://github.com/13262233692/015-seismic-fwi-engine) | 13262233692 | Seismic | Emerging | 0 | 0 | 2026-06-17 | 64.5 |
+| 27 | [benjium/petra-ai](https://github.com/benjium/petra-ai) | benjium | AI / Multi-domain | Emerging | 1 | 0 | 2026-04-18 | 64.3 |
+| 28 | [UsmanHWU/CrewAI_Reservoir](https://github.com/UsmanHWU/CrewAI_Reservoir) | UsmanHWU | AI / Reservoir | Emerging | 0 | 0 | 2026-06-08 | 64.3 |
+| 29 | [adldi07/LAS-Analyzer](https://github.com/adldi07/LAS-Analyzer) | adldi07 | Petrophysics | Emerging | 1 | 0 | 2026-03-23 | 63.9 |
+| 30 | [danielscholl/osdu-agent](https://github.com/danielscholl/osdu-agent) | danielscholl | AI / OSDU | Emerging | 0 | 1 | 2026-03-16 | 63.9 |
+| 31 | [Eng-qusain/MWD-Drilling-Optimization-AI](https://github.com/Eng-qusain/MWD-Drilling-Optimization-AI) | Eng-qusain | Drilling / AI | Emerging | 0 | 0 | 2026-05-11 | 63.9 |
+| 32 | [athasfin/smart-well-log-visualizer](https://github.com/athasfin/smart-well-log-visualizer) | athasfin | Petrophysics | Emerging | 0 | 0 | 2026-05-02 | 63.7 |
+| 33 | [rkkalluri-dbx/og-agentic-patterns](https://github.com/rkkalluri-dbx/og-agentic-patterns) | rkkalluri-dbx | AI / Multi-domain | Emerging | 0 | 0 | 2026-04-14 | 63.4 |
+| 34 | [anyperc3nt/vision_seismic](https://github.com/anyperc3nt/vision_seismic) | anyperc3nt | Seismic / AI | Emerging | 0 | 0 | 2026-02-28 | 62.7 |
+| 35 | [luiscm17/pilot-ai-drill](https://github.com/luiscm17/pilot-ai-drill) | luiscm17 | Drilling / AI | Emerging | 1 | 0 | 2025-12-05 | 62.1 |
+| 36 | [SanmTex/AI-driven-Petrophysics-Workflow](https://github.com/SanmTex/AI-driven-Petrophysics-Workflow) | SanmTex | Petrophysics / AI | Emerging | 1 | 0 | 2025-11-13 | 61.7 |
+| 37 | [Ashutos0762/AI-Reservoir-Property-Estimation](https://github.com/Ashutos0762/AI-Reservoir-Property-Estimation) | Ashutos0762 | Reservoir / AI | Emerging | 1 | 0 | 2025-11-10 | 61.7 |
+| 38 | [Shanghua-Zhang/Seismic-Inversion-Deepwave](https://github.com/Shanghua-Zhang/Seismic-Inversion-Deepwave) | Shanghua-Zhang | Seismic | Emerging | 0 | 0 | 2025-12-04 | 61.3 |
+| 39 | [AadeshSalecha/geothermal-green-ai-hackathon](https://github.com/AadeshSalecha/geothermal-green-ai-hackathon) | AadeshSalecha | Geothermal / AI | Emerging | 0 | 0 | 2025-10-26 | 60.6 |
+| 40 | [yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant](https://github.com/yberkayozkan/Seismo-Lingo-Smart-Geophysical-Assistant) | yberkayozkan | AI / Geophysics | Emerging | 0 | 1 | 2025-09-12 | 60.4 |
+| 41 | [fadhilazz/geo_ai_v3](https://github.com/fadhilazz/geo_ai_v3) | fadhilazz | Geothermal / AI | Emerging | 0 | 0 | 2025-08-26 | 59.9 |
+| 42 | [Amalendu17/FWI_On_2D_Synthetic_Seismic_Data](https://github.com/Amalendu17/FWI_On_2D_Synthetic_Seismic_Data) | Amalendu17 | Seismic | Emerging | 1 | 0 | 2025-07-22 | 59.8 |
+| 43 | [MJRobillard/salton_trough_geothermal_ai](https://github.com/MJRobillard/salton_trough_geothermal_ai) | MJRobillard | Geothermal / AI | Emerging | 0 | 0 | 2025-08-07 | 59.3 |
+| 44 | [Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models](https://github.com/Tari91/Finding-Geothermal-Energy-Sites-with-AI-driven-suitability-models) | Tari91 | Geothermal / AI | Emerging | 1 | 0 | 2025-05-23 | 58.9 |
+| 45 | [DivyyaM/AI-BasedPermeability-Prediction](https://github.com/DivyyaM/AI-BasedPermeability-Prediction) | DivyyaM | Petrophysics / AI | Emerging | 2 | 0 | 2025-04-21 | 58.8 |
+| 46 | [MboleNgome/enhanced-oil-recovery](https://github.com/MboleNgome/enhanced-oil-recovery) | MboleNgome | Reservoir | Emerging | 0 | 0 | 2025-07-10 | 58.8 |
+| 47 | [AyaAlahdl/Seismic2Velocity_Submission_Pipeline](https://github.com/AyaAlahdl/Seismic2Velocity_Submission_Pipeline) | AyaAlahdl | Seismic / AI | Emerging | 0 | 0 | 2025-06-04 | 58.3 |
 | 48 | [hvt1609/fwi3d](https://github.com/hvt1609/fwi3d) | hvt1609 | Seismic | Emerging | 0 | 0 | 2024-04-29 | 54.6 |
 
 _Generated automatically from the live curated catalogues._
