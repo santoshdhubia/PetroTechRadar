@@ -1,7 +1,7 @@
 {
-  "refreshed_at": "2026-10-25T08:39:31.855009+00:00",
+  "refreshed_at": "2026-11-01T10:44:05.250645+00:00",
   "repository_count": 164,
-  "successful": 162,
+  "successful": 161,
   "errors": [
     {
       "repository": "rasulsaxobidinov-debug/GeoThermAI-Explorer",
@@ -10,6 +10,11 @@
     },
     {
       "repository": "LASight/las-frontend",
+      "catalog": "PETROTECHRADAR_V1.csv",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "repository": "WilmerZhu/EASTASIA_FWI",
       "catalog": "PETROTECHRADAR_V1.csv",
       "error": "HTTP Error 404: Not Found"
     }
